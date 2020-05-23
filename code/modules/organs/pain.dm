@@ -71,22 +71,22 @@ mob/living/carbon/human/proc/handle_pain()
 			if(1 to 10)
 				msg =  "Tu [damaged_organ.name] [burning ? "quema" : "duele"]."
 			if(11 to 90)
-				msg = "Tu [damaged_organ.name] [burning ? "quema" : "duele"] badly!"
+				msg = "Tu [damaged_organ.name] [burning ? "quema" : "duele"] demasiado!"
 			if(91 to 10000)
-				msg = "OH DIOS! tu [damaged_organ.name] esta [burning ? "en fuego" : "doliendo terriblemente"]!"
+				msg = "OH DIOS! Tu [damaged_organ.name] esta [burning ? "en fuego" : "doliendo terriblemente"]!"
 		custom_pain(msg, maxdam, prob(10), damaged_organ, TRUE)
 	// Damage to internal organs hurts a lot.
 	for(var/obj/item/organ/internal/I in internal_organs)
 		if(prob(1) && !((I.status & ORGAN_DEAD) || BP_IS_ROBOTIC(I)) && I.damage > 5)
 			var/obj/item/organ/external/parent = get_organ(I.parent_organ)
 			var/pain = 10
-			var/message = "Sientes un pequeno dolor en tu [parent.name]"
+			var/message = "Sientes un poco de dolor en tu [parent.name]"
 			if(I.is_bruised())
 				pain = 25
 				message = "Sientes dolor en tu [parent.name]"
 			if(I.is_broken())
 				pain = 50
-				message = "Sientes un punzante dolor en tu [parent.name]"
+				message = "Sientes un dolor punzante en tu [parent.name]"
 			src.custom_pain(message, pain, affecting = parent)
 
 
