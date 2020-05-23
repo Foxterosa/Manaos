@@ -80,13 +80,13 @@ mob/living/carbon/human/proc/handle_pain()
 		if(prob(1) && !((I.status & ORGAN_DEAD) || BP_IS_ROBOTIC(I)) && I.damage > 5)
 			var/obj/item/organ/external/parent = get_organ(I.parent_organ)
 			var/pain = 10
-			var/message = "Sientes un pequeno dolor en tu [parent.name]"
+			var/message = "Sientes un poco de dolor en tu [parent.name]"
 			if(I.is_bruised())
 				pain = 25
 				message = "Sientes dolor en tu [parent.name]"
 			if(I.is_broken())
 				pain = 50
-				message = "Sientes un punzante dolor en tu [parent.name]"
+				message = "Sientes un dolor punzante en tu [parent.name]"
 			src.custom_pain(message, pain, affecting = parent)
 
 
