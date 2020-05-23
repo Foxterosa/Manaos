@@ -2,7 +2,7 @@
 	name = "graffiti"
 	icon_state = "writing1"
 	icon = 'icons/effects/writing.dmi'
-	desc = "It looks like someone has scratched something here."
+	desc = "Parece que alguien ha rayado algo por aqui."
 	gender = PLURAL
 	blend_mode = BLEND_MULTIPLY
 	color = "#000000"
