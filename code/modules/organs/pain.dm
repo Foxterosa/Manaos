@@ -71,9 +71,9 @@ mob/living/carbon/human/proc/handle_pain()
 			if(1 to 10)
 				msg =  "Tu [damaged_organ.name] [burning ? "quema" : "duele"]."
 			if(11 to 90)
-				msg = "Tu [damaged_organ.name] [burning ? "quema" : "duele"] badly!"
+				msg = "Tu [damaged_organ.name] [burning ? "quema" : "duele"] demasiado!"
 			if(91 to 10000)
-				msg = "OH DIOS! tu [damaged_organ.name] esta [burning ? "en fuego" : "doliendo terriblemente"]!"
+				msg = "OH DIOS! Tu [damaged_organ.name] esta [burning ? "en fuego" : "doliendo terriblemente"]!"
 		custom_pain(msg, maxdam, prob(10), damaged_organ, TRUE)
 	// Damage to internal organs hurts a lot.
 	for(var/obj/item/organ/internal/I in internal_organs)
