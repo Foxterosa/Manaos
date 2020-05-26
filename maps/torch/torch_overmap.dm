@@ -1,6 +1,6 @@
 /obj/effect/overmap/visitable/ship/torch
 	name = "NTSS Dagon"
-	desc = "A bluespace-capable corvette bearing markings of the NanoTrasen Surveyor Corps."
+	desc = "UnA bluespace-capable corvette bearing markings of the NanoTrasen Surveyor Corps."
 	fore_dir = WEST
 	vessel_mass = 100000
 	burn_delay = 2 SECONDS
@@ -77,7 +77,7 @@
 
 /obj/effect/overmap/visitable/ship/landable/exploration_shuttle
 	name = "NTEV Gaunt"
-	desc = "A medium-sized long-range shuttle. It bears markings of the NanoTrasen Surveyor Corps."
+	desc = "Una nave de estandar mediano. Lleva marcas de las Fuerzas de Inspeccion de NanoTrasen."
 	shuttle = "NTEV Gaunt"
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 1 SECONDS
@@ -88,7 +88,7 @@
 
 /obj/effect/overmap/visitable/ship/landable/aquila
 	name = "NTSC Byakhee"
-	desc = "A vessel escort gunship. It bears markings of the NanoTrasen Surveyor Corps."
+	desc = "Una nave escolta de buques. Lleva marcas de las Fuerzas de Inspeccion de NanoTrasen"
 	shuttle = "NTSC Byakhee"
 	vessel_mass = 20000
 	max_speed = 1/(1 SECONDS)
@@ -98,7 +98,7 @@
 
 /obj/effect/overmap/visitable/ship/landable/guppy
 	name = "NTRP Garuda"
-	desc = "A small recovery pod. It's capable of limited independant space travel. It's marked as 'NTRP Garuda'."
+	desc = "Una pequeña capsula de recuperacion. Es capaz de realizar un independiente viaje espacial con un limite. Esta marcado como 'NTRP Garuda'."
 	shuttle = "NTRP Garuda"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS
@@ -108,16 +108,16 @@
 	vessel_size = SHIP_SIZE_TINY
 
 /obj/machinery/computer/shuttle_control/explore/aquila
-	name = "Byakhee control console"
+	name = "Consola de control del Byakhee"
 	shuttle_tag = "NTSC Byakhee"
 	req_access = list(access_aquila_helm)
 
 /obj/machinery/computer/shuttle_control/explore/exploration_shuttle
-	name = "shuttle control console"
+	name = "Consola de control de nave"
 	shuttle_tag = "NTEV Gaunt"
 	req_access = list(access_expedition_shuttle_helm)
 
 /obj/machinery/computer/shuttle_control/explore/guppy
-	name = "Garuda control console"
+	name = "Consola de control del Garuda"
 	shuttle_tag = "NTRP Garuda"
 	req_access = list(access_guppy_helm)

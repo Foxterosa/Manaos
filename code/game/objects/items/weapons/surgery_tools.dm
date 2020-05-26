@@ -39,7 +39,7 @@
  * Cautery
  */
 /obj/item/weapon/cautery
-	name = "cauterizacion"
+	name = "cauterizador"
 	desc = "Esto detiene el sangrado."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "cautery"
