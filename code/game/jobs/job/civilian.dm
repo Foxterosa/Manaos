@@ -106,7 +106,7 @@
 	department_flag = SPT
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "oficiales de la compa�ia y Reguladores Corporativos"
+	supervisors = "oficiales de la compania y Reguladores Corporativos"
 	economic_power = 7
 	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_bridge)
 	minimal_access = list(access_lawyer, access_sec_doors, access_bridge)
