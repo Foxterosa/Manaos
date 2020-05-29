@@ -69,7 +69,7 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 			// Check if clothing is blocking access
 			var/obj/item/I = target.get_covering_equipped_item_by_zone(target_zone)
 			if(I && (I.item_flags & ITEM_FLAG_THICKMATERIAL))
-				to_chat(user,SPAN_NOTICE("El material que cubre esta area es demasiado grueso para hacer una cirugia."))
+				to_chat(user,SPAN_NOTICE("El material que cubre esta area es demasiado grueso para hacer una cirugia!"))
 				return FALSE
 			// Check various conditional flags.
 			if(((surgery_candidate_flags & SURGERY_NO_ROBOTIC) && BP_IS_ROBOTIC(affected)) || \
