@@ -42,7 +42,8 @@
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "el jefe de personal"
+	head_position = 1
+	supervisors = "the head of personnel"
 	economic_power = 5
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
@@ -105,7 +106,7 @@
 	department_flag = SPT
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "oficiales de la compañia y Reguladores Corporativos"
+	supervisors = "oficiales de la compania y Reguladores Corporativos"
 	economic_power = 7
 	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_bridge)
 	minimal_access = list(access_lawyer, access_sec_doors, access_bridge)

@@ -4,6 +4,7 @@
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
+	head_position = 1
 	supervisors = "the Chief Science Officer"
 	selection_color = "#68099e"
 	minimal_player_age = 4
@@ -95,7 +96,8 @@
 	                    SKILL_WEAPONS     = SKILL_EXPERT)
 
 	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
-		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
+		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, 
+		access_expedition_shuttle_helm,
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)

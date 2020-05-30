@@ -13,7 +13,7 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/claws)
 
-	description = "Los Vasilissans son una especie de personas ilustradas, se ven como gente araña. Son la unica especie que no ha sido victima de una guerra al ser descubiertas. Esto fue debido a que ya estaban en la era atomica cuando fueron encontrados por la ahora difunta NanoTrasen Surveyor Corps. Se han integrado muy bien a la sociedad interestelar, con algunos intercambios en relaciones politicas, principalmente por el hecho de que son arañas."
+	description = "Los Vasilissans son una especie de personas ilustradas, se ven como gente arana. Son la unica especie que no ha sido victima de una guerra al ser descubiertas. Esto fue debido a que ya estaban en la era atomica cuando fueron encontrados por la ahora difunta NanoTrasen Surveyor Corps. Se han integrado muy bien a la sociedad interestelar, con algunos intercambios en relaciones politicas, principalmente por el hecho de que son aranas."
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
