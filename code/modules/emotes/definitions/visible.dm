@@ -196,7 +196,7 @@
 /decl/emote/visible/dap
 	key = "dap"
 	check_restraints = TRUE
-	emote_message_3p_target = "USER choca los cinco TARGET."
+	emote_message_3p_target = "USER choca los cinco con TARGET."
 	emote_message_3p = "USER sadly can't find anybody to give daps to, and daps USER_SELF."
 
 /decl/emote/visible/signal
