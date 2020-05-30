@@ -18,7 +18,7 @@ GLOBAL_LIST_EMPTY(skills)
 
 /decl/hierarchy/skill/proc/get_cost(var/level)
 	switch(level)
-		if(SKILL_BASICo, SKILL_ADEPT)
+		if(SKILL_BASIC, SKILL_ADEPT)
 			return difficulty
 		if(SKILL_EXPERT, SKILL_PROF)
 			return 2*difficulty
@@ -122,7 +122,7 @@ GLOBAL_LIST_EMPTY(skills)
 	levels = list("Untrained" = "You are unfamiliar with exosuit controls, and if you attempt to use them you are liable to make mistakes.",
 		"Trained" = "You are proficient in exosuit operation and safety, and can use them without penalties.")
 	prerequisites = list(SKILL_EVA = SKILL_ADEPT)
-	default_max = SKILL_BASICo
+	default_max = SKILL_BASIC
 	difficulty = SKILL_AVERAGE
 
 /decl/hierarchy/skill/general/pilot
@@ -194,7 +194,7 @@ GLOBAL_LIST_EMPTY(skills)
 
 /decl/hierarchy/skill/security/combat/get_cost(var/level)
 	switch(level)
-		if(SKILL_BASICo)
+		if(SKILL_BASIC)
 			return difficulty
 		if(SKILL_ADEPT, SKILL_EXPERT)
 			return 2*difficulty
@@ -215,7 +215,7 @@ GLOBAL_LIST_EMPTY(skills)
 
 /decl/hierarchy/skill/security/weapons/get_cost(var/level)
 	switch(level)
-		if(SKILL_BASICo)
+		if(SKILL_BASIC)
 			return difficulty
 		if(SKILL_ADEPT)
 			return 2*difficulty
@@ -237,7 +237,7 @@ GLOBAL_LIST_EMPTY(skills)
 
 /decl/hierarchy/skill/security/forensics/get_cost(var/level)
 	switch(level)
-		if(SKILL_BASICo, SKILL_ADEPT, SKILL_EXPERT)
+		if(SKILL_BASIC, SKILL_ADEPT, SKILL_EXPERT)
 			return difficulty * 2
 		if(SKILL_PROF)
 			return 3 * difficulty
