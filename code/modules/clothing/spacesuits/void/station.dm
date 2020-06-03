@@ -100,7 +100,7 @@
 	item_state_slots = list(
 		slot_l_hand_str = "welding",
 		slot_r_hand_str = "welding",
-		)
+	)
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		laser = ARMOR_LASER_MINOR,
@@ -130,12 +130,12 @@
 
 /obj/item/clothing/suit/space/void/mining/prepared
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
-	
+
 /obj/item/clothing/suit/space/void/lavaland/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 1
 
-	
+
 //Medical
 /obj/item/clothing/head/helmet/space/void/medical
 	name = "medical voidsuit helmet"
