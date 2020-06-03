@@ -22,7 +22,7 @@
 	display_name = "poncho, ingenieria"
 	path = /obj/item/clothing/suit/poncho/roles/engineering
 
-'''/datum/gear/suit/space/void/lavaland
+/datum/gear/suit/space/void/lavaland
 	display_name = "traje de explorador"
 	path = /obj/item/clothing/suit/space/void/lavaland
 
