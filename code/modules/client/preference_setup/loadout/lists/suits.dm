@@ -32,7 +32,7 @@
 	display_name = "casco de explorador"
 	path = /obj/item/clothing/head/helmet/space/void/lavaland
 
-	allowed_roles = list(/datum/job/mining)'''
+	allowed_roles = list(/datum/job/mining)
 
 /datum/gear/suit/science_poncho
 	display_name = "poncho, ciencia"
