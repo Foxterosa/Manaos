@@ -21,6 +21,18 @@
 /datum/gear/suit/engineering_poncho
 	display_name = "poncho, ingenieria"
 	path = /obj/item/clothing/suit/poncho/roles/engineering
+	
+/datum/gear/suit/space/void/lavaland
+	display_name = "traje de explorador"
+	path = /obj/item/clothing/suit/space/void/lavaland
+
+	allowed_roles = list(/datum/job/mining)
+
+/datum/gear/suit/space/void/lavalandh
+	display_name = "casco de explorador"
+	path = /obj/item/clothing/head/helmet/space/void/lavaland
+
+	allowed_roles = list(/datum/job/mining)
 
 /datum/gear/suit/science_poncho
 	display_name = "poncho, ciencia"
