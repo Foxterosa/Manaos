@@ -8383,7 +8383,7 @@
 /obj/machinery/door/airlock/sol{
 	autoset_access = 0;
 	id_tag = null;
-	name = "Foundation Advisor";
+	name = "Psionic Advisor";
 	req_access = list("ACCESS_PSIADVISOR");
 	secured_wires = 1
 	},
@@ -13648,7 +13648,7 @@
 /area/bridge)
 "wN" = (
 /obj/machinery/camera/network/command{
-	c_tag = "Foundation Advisors - Office";
+	c_tag = "Psionic Advisor - Office";
 	dir = 1;
 	network = list("Command","Engineering")
 	},
@@ -15534,19 +15534,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/airlock)
-"Fg" = (
-/obj/structure/bed/chair/comfy/captain{
-	icon_state = "capchair_preview";
-	dir = 4;
-	color = "#666666"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/co)
 "Fi" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -15774,17 +15761,6 @@
 	pixel_y = 32
 	},
 /obj/machinery/computer/modular/preset/cardslot/command,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/bridge/storage)
-"GZ" = (
-/obj/machinery/firealarm{
-	dir = 2;
-	pixel_y = 24
-	},
-/obj/structure/noticeboard{
-	pixel_x = 32
-	},
-/obj/machinery/computer/robotics,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "Hb" = (
@@ -16119,16 +16095,6 @@
 /obj/item/weapon/stamp/co,
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
 /turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/co)
-"Ii" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/co)
 "Ik" = (
 /obj/machinery/button/alternate/door/bolts{
@@ -16603,19 +16569,6 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
-"Kv" = (
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
-/obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/bridge/storage)
 "KC" = (
 /obj/structure/flora/pottedplant/bamboo,
 /obj/machinery/power/apc{
@@ -18412,7 +18365,7 @@
 /obj/machinery/door/airlock/sol{
 	autoset_access = 0;
 	id_tag = "psi_door";
-	name = "Foundation Advisor";
+	name = "Psionic Advisor";
 	req_access = list("ACCESS_PSIADVISOR");
 	secured_wires = 1
 	},
@@ -18632,16 +18585,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
-"UM" = (
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
-	},
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/bridge/storage)
 "UU" = (
 /obj/effect/shuttle_landmark/ert/deck5,
 /turf/space,
@@ -27595,7 +27538,7 @@ SJ
 ev
 eP
 UY
-Fg
+aA
 Ig
 OM
 tR
@@ -28202,7 +28145,7 @@ vW
 eP
 ls
 rJ
-Ii
+bf
 Io
 Kh
 uC
@@ -28385,9 +28328,9 @@ Bz
 od
 BP
 qO
-GZ
-UM
-Kv
+cT
+bo
+bt
 qO
 qO
 yM
