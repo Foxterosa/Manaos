@@ -92,6 +92,50 @@
 /obj/item/clothing/suit/space/void/mining/prepared
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
 
+/* /obj/item/clothing/head/helmet/space/void/lavaland
+	name = "exploration voidsuit mask"
+	desc = "Una mascara unida a un casco para proteger contra el calor."
+	icon_state = "stealth_rig"
+	item_state = "explorer_helm"
+	item_state_slots = list(
+		slot_l_hand_str = "welding",
+		slot_r_hand_str = "welding",
+	)
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		laser = ARMOR_LASER_MINOR,
+		bio = ARMOR_BIO_SHIELDED,
+		)
+	light_overlay = "helmet_light_dual"
+	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+
+/obj/item/clothing/suit/space/void/lavaland
+	icon_state = "rig-explorer"
+	name = "explorer voidsuit"
+	desc = "Un traje de exploracion para terrenos con altas temperaturas. Una reliquia de otra era, adaptada para la exploracion espacial."
+	item_state_slots = list(
+		slot_l_hand_str = "syndicate-green-dark",
+		slot_r_hand_str = "syndicate-green-dark",
+	)
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		laser = ARMOR_LASER_MINOR,
+		bomb = ARMOR_BOMB_RESISTANT,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_MINOR
+		)
+	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/stack/flag,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/ore,/obj/item/device/t_scanner,/obj/item/weapon/pickaxe, /obj/item/weapon/rcd)
+
+/obj/item/clothing/suit/space/void/mining/prepared
+	helmet = /obj/item/clothing/head/helmet/space/void/mining
+
+/obj/item/clothing/suit/space/void/lavaland/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1
+*/
+
 //Medical
 /obj/item/clothing/head/helmet/space/void/medical
 	name = "medical voidsuit helmet"

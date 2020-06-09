@@ -682,8 +682,6 @@
 /obj/item/weapon/storage/belt/medical,
 /obj/item/weapon/storage/belt/medical,
 /obj/item/weapon/storage/belt/medical,
-/obj/item/weapon/storage/belt/medical,
-/obj/item/clothing/accessory/stethoscope,
 /obj/item/clothing/accessory/stethoscope,
 /obj/item/clothing/accessory/stethoscope,
 /obj/item/clothing/accessory/stethoscope,
@@ -691,11 +689,21 @@
 /obj/item/device/flashlight/pen,
 /obj/item/device/flashlight/pen,
 /obj/item/device/flashlight/pen,
+/obj/item/weapon/defibrillator/compact,
+/obj/item/device/scanner/health,
+/obj/item/device/scanner/health,
+/obj/item/device/scanner/health,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bn" = (
 /obj/structure/closet/crate/med_crate/trauma,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/weapon/storage/firstaid/trauma,
+/obj/item/weapon/storage/firstaid/trauma,
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = ""
+	},
+/obj/item/weapon/storage/pill_bottle/bicaridine,
+/obj/item/weapon/storage/pill_bottle/bicaridine,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bo" = (
@@ -953,8 +961,6 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/structure/closet/l3closet/general/multi,
-/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bQ" = (
@@ -969,7 +975,13 @@
 	icon_state = "0-4"
 	},
 /obj/structure/closet/crate/med_crate/oxyloss,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/weapon/storage/firstaid/o2,
+/obj/item/weapon/storage/firstaid/o2,
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = ""
+	},
+/obj/item/weapon/storage/pill_bottle/dexalin_plus,
+/obj/item/weapon/storage/pill_bottle/dexalin_plus,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bR" = (
@@ -981,7 +993,9 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bS" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = ""
+	},
 /obj/structure/ladder/up,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
@@ -1227,7 +1241,9 @@
 /area/storage/medical)
 "cq" = (
 /obj/structure/closet/radiation,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = ""
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "cr" = (
@@ -1597,27 +1613,20 @@
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/locker_room)
 "da" = (
-/obj/structure/table/rack,
-/obj/item/device/flashlight,
-/obj/item/device/flashlight,
-/obj/item/device/flashlight,
-/obj/item/device/radio,
-/obj/item/device/radio,
-/obj/item/device/radio,
-/obj/item/weapon/storage/box/bodybags,
-/obj/item/weapon/crowbar/prybar,
-/obj/item/weapon/crowbar/prybar,
-/obj/item/weapon/crowbar/prybar,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
-"db" = (
-/obj/structure/closet/secure_closet/medical_torch,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/l3closet/general/multi,
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = ""
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "dc" = (
 /obj/structure/closet/crate/med_crate/burn,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/weapon/storage/firstaid/fire,
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = ""
+	},
+/obj/item/weapon/storage/pill_bottle/dermaline,
+/obj/item/weapon/storage/pill_bottle/dermaline,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "dd" = (
@@ -4147,14 +4156,8 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack/shelf,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/glasses/blindfold,
-/obj/item/clothing/glasses/blindfold,
-/obj/item/clothing/glasses/blindfold,
+/obj/structure/table/rack,
+/obj/structure/bedsheetbin,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "ib" = (
@@ -6656,7 +6659,6 @@
 /obj/item/weapon/gun/launcher/syringe,
 /obj/item/weapon/storage/box/syringegun,
 /obj/item/weapon/storage/box/syringegun,
-/obj/item/weapon/defibrillator/compact,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "nc" = (
@@ -7850,9 +7852,17 @@
 /area/engineering/foyer)
 "pz" = (
 /obj/structure/closet/crate/medical,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = ""
+	},
+/obj/item/weapon/storage/firstaid/trauma,
+/obj/item/weapon/storage/firstaid/toxin,
+/obj/item/weapon/storage/firstaid/regular,
+/obj/item/weapon/storage/firstaid/o2,
+/obj/item/weapon/storage/firstaid/fire,
+/obj/item/weapon/storage/firstaid/adv,
+/obj/item/stack/nanopaste,
+/obj/item/bodybag/rescue,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "pA" = (
@@ -17594,7 +17604,16 @@
 /area/maintenance/disposal)
 "PD" = (
 /obj/structure/table/rack,
-/obj/structure/bedsheetbin,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/weapon/crowbar/prybar,
+/obj/item/weapon/crowbar/prybar,
+/obj/item/weapon/crowbar/prybar,
+/obj/item/weapon/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "PE" = (
@@ -40919,7 +40938,7 @@ aa
 aB
 bn
 bq
-db
+bq
 PD
 ee
 He
