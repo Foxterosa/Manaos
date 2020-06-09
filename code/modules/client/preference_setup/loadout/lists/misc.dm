@@ -119,12 +119,13 @@
 /datum/gear/plush_toy/New()
 	..()
 	var/plushes = list()
-	plushes["diona nymph plush"] = /obj/item/toy/plushie/nymph
-	plushes["mouse plush"] = /obj/item/toy/plushie/mouse
-	plushes["kitten plush"] = /obj/item/toy/plushie/kitten
-	plushes["lizard plush"] = /obj/item/toy/plushie/lizard
-	plushes["spider plush"] = /obj/item/toy/plushie/spider
-	plushes["farwa plush"] = /obj/item/toy/plushie/farwa
+	plushes["peluche de ninfa de Diona"] = /obj/item/toy/plushie/nymph
+	plushes["peluche de raton"] = /obj/item/toy/plushie/mouse
+	plushes["peluche de gatito"] = /obj/item/toy/plushie/kitten
+	plushes["peluche de lagarto"] = /obj/item/toy/plushie/lizard
+	plushes["peluche de arana"] = /obj/item/toy/plushie/spider
+	plushes["peluche de farwa"] = /obj/item/toy/plushie/farwa
+	plushes["peluche de kobold"] = /obj/item/toy/plushie/kobold
 	gear_tweaks += new /datum/gear_tweak/path(plushes)
 
 /datum/gear/workvisa
