@@ -85,7 +85,7 @@ GLOBAL_LIST_EMPTY(skills)
 	levels = list( "Ignorante"			= "Usualmente puedes llenar el papeleo basico con algunos errores. Tienes un vago conocimiento sobre la ley, aprendido por las noticias y experiencia personal.",
 						"Basico"				= "Estas familiarizado con el papeleo que necesitas para hacer tu trabajo, y puedes gestionarlo bien. Tienes un poco de conocimiento sobre la ley y el como se aplica en ti y quienes te rodean.",
 						"Entrenado"			= "Puedes manejar la mayoria del papeleo que te dan, incluso si no estas familiarizados con ellos. Tienes un buen entendimiento de la ley y de cualquiera regulacion o procedicimiento relevante para ti.",
-						"Experienciado"		= "Con experiencia, puedes facilmente hacer papeleo de cualquier evento, y escribir reportes cuales son limpios y entendibles. Tienes un excelente conocimiento sobre la ley, posiblemente incluyendo un entrenamiento formalmente legal.<br>- Aprendes un idioma unico.",
+						"Experimentado"		= "Con experiencia, puedes facilmente hacer papeleo de cualquier evento, y escribir reportes cuales son limpios y entendibles. Tienes un excelente conocimiento sobre la ley, posiblemente incluyendo un entrenamiento formalmente legal.<br>- Aprendes un idioma unico.",
 						"Maestro"		= "Puedes hacer que el papeleo se menee a tu gusto, y navegar a traves de las estructuras burocraticas mas bizantinas con mucha facilidad y familiaridad. Tus reportes son trabajos de literatura. Tu conocimiento sobre la ley es amplio e intimo, y puede que estes certificado para ejercer como abogado.")
 
 /decl/hierarchy/skill/organizational/bureaucracy/update_special_effects(mob/mob, level)
@@ -98,9 +98,9 @@ GLOBAL_LIST_EMPTY(skills)
 	name = "Financia"
 	desc = "Tu habilidad para manejar el dinero y las inversiones."
 	levels = list( "Ignorante"			= "Tu entendimiento sobre el dinero empieza y acaba con tu finanza personal. Si bien puedes realizar transacciones basicas, te pierdes en los detalles. Y puedes terminar estafado alguna que otra vez. <br>- Tienes algo de dinero al empezar, que va aumentando segun tu nivel.<br>- Puedes usar el verbo \"Appraise\" para ver el valor de diferentes objetos.",
-						"Basico"				= "Tienes un conocimiento limitado sobre las transacciones financieras, You have some limited understanding of financial transactions, and will generally be able to keep accurate records. You have little experience with investment, and managing large sums of money will likely go poorly for you.",
-						"Trained"			= "You are good at managing accounts, keeping records, and arranging transactions. You have some familiarity with mortgages, insurance, stocks, and bonds, but may be stumped when facing more complicated financial devices.",
-						"Experienced"		= "With your experience, you are familiar with any financial entities you may run across, and are a shrewd judge of value. More often than not, investments you make will pan out well.",
+						"Basico"				= "Tienes un conocimiento limitado sobre las transacciones financieras,  and will generally be able to keep accurate records. You have little experience with investment, and managing large sums of money will likely go poorly for you.",
+						"Trained"			= "Eres bueno manejando cuentas, manteniendo los registros, y organizando transacciones. Estas familiarizado con hipotecas, seguros, acciones y bonos. Pero puedes terminar desconcertado a la hora de enfrentarse a dispositivos financieros mas complicados.",
+						"Experimentado"		= "Con tu experiencia, eres familiar con cualquier tipo de financia With your experience, you are familiar with any financial entities you may run across, and are a shrewd judge of value. More often than not, investments you make will pan out well.",
 						"Master"		= "You have an excellent knowledge of finance, will often make brilliant investments, and have an instinctive feel for interstellar economics. Financial instruments are weapons in your hands. You likely have professional experience in the finance industry.")
 
 // Category: General
