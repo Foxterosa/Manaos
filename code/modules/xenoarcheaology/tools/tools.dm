@@ -1,5 +1,5 @@
 /obj/item/device/gps
-	name = "dispositivo de retraso posicional"
+	name = "dispositivo de retransmicion posicional"
 	desc = "Triangula las coordenadas aproximadas utilizando una red de satelite cercana."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "locator"
@@ -109,7 +109,7 @@
 		if(nearestTargetDist >= 0)
 			to_chat(user, "Energia exotica detectada en logitud de onda '[nearestTargetId]' en un radio de [nearestTargetDist]m[nearestSimpleTargetDist > 0 ? "; small anomaly detected in a radius of [nearestSimpleTargetDist]m" : ""]")
 		else if(nearestSimpleTargetDist >= 0)
-			to_chat(user, "Pequeña anomalia detectada en un radio de [nearestSimpleTargetDist]m.")
+			to_chat(user, "Pequeï¿½a anomalia detectada en un radio de [nearestSimpleTargetDist]m.")
 		else
 			to_chat(user, "Niveles bajos de radiacion detectados.")
 	else
@@ -192,7 +192,7 @@
 		dat += "Tiempo: [current.time]<br>"
 		dat += "Coordenadas: [current.coords]<br>"
 		dat += "Profundidad de la anomalia: [current.depth] cm<br>"
-		dat += "Tamaño de la anomalia: [current.clearance] cm<br>"
+		dat += "Tamaï¿½o de la anomalia: [current.clearance] cm<br>"
 		dat += "Difusion de disonancia: [current.dissonance_spread]<br>"
 		var/index = responsive_carriers.Find(current.material)
 		if(index > 0 && index <= finds_as_strings.len)
@@ -242,7 +242,7 @@
 //Radio beacon locator
 /obj/item/weapon/pinpointer/radio
 	name = "dispositivo localizador"
-	desc = "Utilizado para escanear y localizar señales en una frencuencia particular."
+	desc = "Utilizado para escanear y localizar seï¿½ales en una frencuencia particular."
 	var/tracking_freq = PUB_FREQ
 	matter = list(MATERIAL_ALUMINIUM = 1000, MATERIAL_GLASS = 500)
 
