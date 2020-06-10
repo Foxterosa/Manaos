@@ -18,7 +18,7 @@
 
 /datum/uplink_item/item/medical/stasis
 	name = "Bolsa de estasis"
-	desc = "Bolsa reusable diseñala para ralentizar las funciones de vida del ocupante, especialmente util si esta corto de peril o en un entorno hostil."
+	desc = "Bolsa reusable hecha para ralentizar las funciones de vida del ocupante, especialmente util si esta corto de peril o en un entorno hostil."
 	item_cost = 24
 	path = /obj/item/bodybag/cryobag
 

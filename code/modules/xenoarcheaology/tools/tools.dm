@@ -1,5 +1,5 @@
 /obj/item/device/gps
-	name = "dispositivo de retransmicion posicional"
+	name = "dispositivo de retransmision posicional"
 	desc = "Triangula las coordenadas aproximadas utilizando una red de satelite cercana."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "locator"
@@ -28,7 +28,7 @@
 
 /obj/item/device/measuring_tape
 	name = "cinta metrica"
-	desc = "Una cinta metalica enrollada utilziada para verificar dimensiones y longitudes."
+	desc = "Una cinta metalica enrollada utilizada para verificar dimensiones y longitudes."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "measuring"
 	origin_tech = list(TECH_MATERIAL = 1)
