@@ -1015,8 +1015,7 @@
 		message = "slides their cock into \the <b>[partner]</b>'s pussy."
 		set_is_fucking(partner, CUM_TARGET_VAGINA)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/champ1.ogg',
-						'sound/interactions/champ2.ogg'), 50, 1, -1)
+	playlewdinteractionsound(loc, pick('sound/interactions/champ1.ogg',	'sound/interactions/champ2.ogg'), 50, 1, -1)
 	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_VAGINA, partner)
 	partner.handle_post_sex(NORMAL_LUST, null, src)
