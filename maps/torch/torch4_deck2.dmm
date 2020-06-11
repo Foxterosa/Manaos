@@ -700,7 +700,7 @@
 /obj/item/weapon/storage/firstaid/trauma,
 /obj/item/weapon/storage/firstaid/trauma,
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "F8F8F8"
 	},
 /obj/item/weapon/storage/pill_bottle/bicaridine,
 /obj/item/weapon/storage/pill_bottle/bicaridine,
@@ -978,7 +978,8 @@
 /obj/item/weapon/storage/firstaid/o2,
 /obj/item/weapon/storage/firstaid/o2,
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "F8F8F8";
+	desc = "F8F8F8"
 	},
 /obj/item/weapon/storage/pill_bottle/dexalin_plus,
 /obj/item/weapon/storage/pill_bottle/dexalin_plus,
@@ -994,7 +995,7 @@
 /area/storage/medical)
 "bS" = (
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /obj/structure/ladder/up,
 /turf/simulated/floor/tiled/techfloor,
@@ -1242,7 +1243,7 @@
 "cq" = (
 /obj/structure/closet/radiation,
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
@@ -1615,7 +1616,7 @@
 "da" = (
 /obj/structure/closet/l3closet/general/multi,
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
@@ -1623,7 +1624,7 @@
 /obj/structure/closet/crate/med_crate/burn,
 /obj/item/weapon/storage/firstaid/fire,
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "F8F8F8"
 	},
 /obj/item/weapon/storage/pill_bottle/dermaline,
 /obj/item/weapon/storage/pill_bottle/dermaline,
@@ -7853,7 +7854,8 @@
 "pz" = (
 /obj/structure/closet/crate/medical,
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /obj/item/weapon/storage/firstaid/trauma,
 /obj/item/weapon/storage/firstaid/toxin,
@@ -15958,6 +15960,9 @@
 /obj/item/roller,
 /obj/item/roller,
 /obj/structure/table/rack,
+/obj/item/weapon/storage/firstaid/empty,
+/obj/item/weapon/storage/firstaid/empty,
+/obj/item/weapon/storage/firstaid/empty,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "JX" = (
