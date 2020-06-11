@@ -312,7 +312,7 @@
 					return TRUE
 	return FALSE
 
-/mob/living/proc/has_eyes(var/nintendo = REQUIRE_ANY)
+/mob/living/proc/has_eyes_lewd(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
 		var/obj/item/organ/peepee = C.getorganslot(ORGAN_SLOT_EYES)
@@ -474,7 +474,7 @@
 						message = "cums inside \the <b>[partner]</b>'s earsocket."
 						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
 				if(CUM_TARGET_EYES)
-					if(partner.has_eyes())
+					if(partner.has_eyes_lewd())
 						message = "cums on \the <b>[partner]</b>'s eyeball."
 						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
 					else
@@ -551,7 +551,7 @@
 						message = "squirts on \the <b>[partner]</b>'s earsocket."
 						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
 				if(CUM_TARGET_EYES)
-					if(partner.has_eyes())
+					if(partner.has_eyes_lewd())
 						message = "squirts on \the <b>[partner]</b>'s eyeball."
 						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
 					else
@@ -1445,9 +1445,9 @@
 
 	if(is_fucking(partner, CUM_TARGET_EYES))
 		message = "[pick(
-			"pounds into \the <b>[partner]</b>'s [has_eyes() ? "eye":"eyesocket"].",
+			"pounds into \the <b>[partner]</b>'s [has_eyes_lewd() ? "eye":"eyesocket"].",
 			"shoves their dick deep into \the <b>[partner]</b>'s skull",
-			"thrusts in and out of \the <b>[partner]</b>'s [has_eyes() ? "eye":"eyesocket"].",
+			"thrusts in and out of \the <b>[partner]</b>'s [has_eyes_lewd() ? "eye":"eyesocket"].",
 			"goes balls deep into \the <b>[partner]</b>'s cranium over and over again.")]"
 		var/client/cli = partner.client
 		var/mob/living/carbon/C = partner
@@ -1459,7 +1459,7 @@
 					C.adjustOrganLoss(ORGAN_SLOT_EYES,rand(3,7))
 					C.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(3,7))
 	else
-		message = "forcefully slides their cock inbetween \the <b>[partner]</b>'s [has_eyes() ? "eyelid":"eyesocket"]."
+		message = "forcefully slides their cock inbetween \the <b>[partner]</b>'s [has_eyes_lewd() ? "eyelid":"eyesocket"]."
 		set_is_fucking(partner, CUM_TARGET_EYES)
 
 	playlewdinteractionsound(loc, pick('sound/interactions/champ1.ogg',
@@ -1475,9 +1475,9 @@
 
 	if(is_fucking(partner, CUM_TARGET_EARS))
 		message = "[pick(
-			"pounds into \the <b>[partner]</b>'s [has_eyes() ? "ear":"earsocker"].",
+			"pounds into \the <b>[partner]</b>'s [has_eyes_lewd() ? "ear":"earsocker"].",
 			"shoves their dick deep into \the <b>[partner]</b>'s skull",
-			"thrusts in and out of \the <b>[partner]</b>'s [has_eyes() ? "ear":"eyesocket"].",
+			"thrusts in and out of \the <b>[partner]</b>'s [has_eyes_lewd() ? "ear":"eyesocket"].",
 			"goes balls deep into \the <b>[partner]</b>'s cranium over and over again.")]"
 		var/client/cli = partner.client
 		var/mob/living/carbon/C = partner

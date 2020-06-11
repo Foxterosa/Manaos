@@ -201,17 +201,17 @@
 		if(require_user_eyes)
 			switch(require_user_eyes)
 				if(REQUIRE_EXPOSED)
-					if(!user.has_eyes(REQUIRE_EXPOSED))
+					if(!user.has_eyes_lewd(REQUIRE_EXPOSED))
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Your eyes need to be exposed.</span>")
 						return FALSE
 				if(REQUIRE_ANY)
-					if(!user.has_eyes(REQUIRE_ANY))
+					if(!user.has_eyes_lewd(REQUIRE_ANY))
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>You don't have eyes.</span>")
 						return FALSE
 				if(REQUIRE_UNEXPOSED)
-					if(!user.has_eyes(REQUIRE_UNEXPOSED))
+					if(!user.has_eyes_lewd(REQUIRE_UNEXPOSED))
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Your eyes need to be unexposed.</span>")
 						return FALSE
@@ -407,17 +407,17 @@
 		if(require_target_eyes)
 			switch(require_target_eyes)
 				if(REQUIRE_EXPOSED)
-					if(!target.has_eyes(REQUIRE_EXPOSED))
+					if(!target.has_eyes_lewd(REQUIRE_EXPOSED))
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Their eyes need to be exposed.</span>")
 						return FALSE
 				if(REQUIRE_ANY)
-					if(!target.has_eyes(REQUIRE_ANY))
+					if(!target.has_eyes_lewd(REQUIRE_ANY))
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>They don't have eyes.</span>")
 						return FALSE
 				if(REQUIRE_UNEXPOSED)
-					if(!target.has_eyes(REQUIRE_UNEXPOSED))
+					if(!target.has_eyes_lewd(REQUIRE_UNEXPOSED))
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Their eyes need to be unexposed.</span>")
 						return FALSE
@@ -550,7 +550,7 @@
 				else
 					dat += "<br>...have covered ears."
 				if(!get_item_by_slot(ITEM_SLOT_EYES))
-					if(has_eyes())
+					if(has_eyes_lewd())
 						dat += "<br>...have exposed eyes."
 					else
 						dat += "<br>...have exposed eyesockets."
