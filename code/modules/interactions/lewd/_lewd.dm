@@ -763,7 +763,7 @@
 						"looks \the <b>[partner]</b>'s in the eyes as their pussy presses into a waiting tongue.",
 						"sways their hips, pushing their sex into \the <b>[partner]</b>'s face.",
 						)
-					if(partner.a_intent == INTENT_HARM)
+					if(partner.a_intent == I_HURT)
 						// src.adjustBruteLoss(5)
 						retaliation_message = pick(
 							"looks deeply displeased to be there.",
@@ -781,7 +781,7 @@
 						"looks \the <b>[partner]</b>'s in the eyes as their cock presses into a waiting tongue.",
 						"rolls their hips hard, sinking into \the <b>[partner]</b>'s mouth.",
 						)
-					if(partner.a_intent == INTENT_HARM)
+					if(partner.a_intent == I_HURT)
 						// src.adjustBruteLoss(5)
 						retaliation_message = pick(
 							"stares up from between \the [src]'s knees, trying to squirm away.",
@@ -798,7 +798,7 @@
 				"looks \the <b>[partner]</b>'s in the eyes as they're caught beneath two thighs.",
 				"rolls their hips hard against \the <b>[partner]</b>'s face.",
 				)
-			if(partner.a_intent == INTENT_HARM)
+			if(partner.a_intent == I_HURT)
 				// src.adjustBruteLoss(5)
 				retaliation_message = pick(
 					"stares up from between \the [src]'s knees, trying to squirm away.",
@@ -930,7 +930,7 @@
 				var/mob/living/H = partner
 				H.adjustOxyLoss(5)
 				//add_logs(src, partner, "attacked", src) //cmon, it's 1 in 100. how can it spam logs
-		if(partner.a_intent == INTENT_HARM)
+		if(partner.a_intent == I_HURT)
 			// src.adjustBruteLoss(5)
 			retaliation_message = pick(
 				"stares up from between \the [src]'s knees, trying to squirm away.",

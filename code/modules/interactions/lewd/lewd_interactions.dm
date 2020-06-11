@@ -174,7 +174,7 @@
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Your breasts need to be unexposed.</span>")
 						return FALSE
-		
+
 		if(require_user_feet)
 			switch(require_user_feet)
 				if(REQUIRE_EXPOSED)
@@ -192,7 +192,7 @@
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Your feet need to be unexposed.</span>")
 						return FALSE
-		
+
 		if(require_user_num_feet && (user.get_num_feet() < require_user_num_feet))
 			if(!silent)
 				to_chat(user, "<span class = 'warning'>You don't have enough feet.</span>")
@@ -290,7 +290,7 @@
 			if(!silent) //same with this
 				to_chat(user, "<span class='warning'>They're still exhausted from the last time. They need to wait [DisplayTimeText(target.get_refraction_dif(), TRUE)] until you can do that!</span>")
 			return FALSE
-		
+
 		if(require_target_penis)
 			switch(require_target_penis)
 				if(REQUIRE_EXPOSED)
@@ -308,7 +308,7 @@
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Their penis needs to be unexposed.</span>")
 						return FALSE
-					
+
 		if(require_target_balls)
 			switch(require_target_balls)
 				if(REQUIRE_EXPOSED)
@@ -380,7 +380,7 @@
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Their breasts need to be unexposed.</span>")
 						return FALSE
-		
+
 		if(require_target_feet)
 			switch(require_target_feet)
 				if(REQUIRE_EXPOSED)
@@ -398,7 +398,7 @@
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Their feet need to be unexposed.</span>")
 						return FALSE
-		
+
 		if(require_target_num_feet && (user.get_num_feet() < require_target_num_feet))
 			if(!silent)
 				to_chat(user, "<span class = 'warning'>They don't have enough feet.</span>")
@@ -475,17 +475,17 @@
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Their earsockets need to be unexposed.</span>")
 						return FALSE
-		
+
 		if(require_target_bottomless && !target.is_bottomless())
 			if(!silent)
 				to_chat(user, "<span class = 'warning'>Their clothes are in the way.</span>")
 			return FALSE
-		
+
 		if(require_target_topless && !target.is_topless())
 			if(!silent)
 				to_chat(user, "<span class = 'warning'>Their clothes are in the way.</span>")
 			return FALSE
-		
+
 		if(extreme)
 			var/client/cli = target.client
 			if(cli)
@@ -493,7 +493,7 @@
 					if(!silent)
 						to_chat(user, "<span class = 'warning'>For some reason, you don't want to do this to [target].</span>")
 					return FALSE
-		
+
 		if(require_target_bottomless && !target.is_bottomless())
 			if(!silent)
 				to_chat(user, "<span class = 'warning'>Their pants are in the way.</span>")
@@ -528,13 +528,13 @@
 	var/dat = ..()
 	if(get_refraction_dif())
 		dat += "<br>...are sexually exhausted for the time being."
-	if(a_intent == INTENT_HELP)
+	if(a_intent == I_HELP)
 		dat += "<br>...are acting gentle."
-	else if (a_intent == INTENT_DISARM)
+	else if (a_intent == I_DISARM)
 		dat += "<br>...are acting playful."
-	else if (a_intent == INTENT_GRAB)
+	else if (a_intent == I_GRAB)
 		dat += "<br>...are acting rough."
-	else if(a_intent == INTENT_HARM)
+	else if(a_intent == I_HURT)
 		dat += "<br>...are fighting anyone who comes near."
 	//Here comes the fucking weird shit.
 	if(client)

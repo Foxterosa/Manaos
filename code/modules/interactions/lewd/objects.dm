@@ -57,7 +57,7 @@
 		playsound(loc, pick('sound/interactions/bang4.ogg',
 							'sound/interactions/bang5.ogg',
 							'sound/interactions/bang6.ogg'), 70, 1, -1)
-	else if(user.a_intent == INTENT_HARM)
+	else if(user.a_intent == I_HURT)
 		return ..()
 
 /obj/item/dildo/attack_self(mob/living/carbon/human/user as mob)
@@ -138,7 +138,7 @@
 		playsound(loc, pick('sound/interactions/bang4.ogg',
 							'sound/interactions/bang5.ogg',
 							'sound/interactions/bang6.ogg'), 70, 1, -1)
-	else if(user.a_intent == INTENT_HARM)
+	else if(user.a_intent == I_HURT)
 		return ..()
 //end redds code
 

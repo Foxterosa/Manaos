@@ -86,7 +86,7 @@
 		S = new(T)
 	if(data["blood_DNA"])
 		S.add_blood_DNA(list(data["blood_DNA"] = data["blood_type"]))
-
+/*
 //aphrodisiac & anaphrodisiac
 
 /datum/reagent/drug/aphrodisiac
@@ -244,3 +244,4 @@
 	required_reagents = list(/datum/reagent/drug/aphrodisiac = 5, /datum/reagent/acetone = 1)
 	required_temp = 300
 	mix_message = "The mixture thickens and heats up slighty..."
+*/

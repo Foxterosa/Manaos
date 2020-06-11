@@ -34,7 +34,7 @@
 	. = ..()
 
 /datum/interaction/lewd/titgrope/display_interaction(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user.a_intent == INTENT_HELP)
+	if(user.a_intent == I_HELP)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[user]</b> gently gropes \the <b>[target]</b>'s breast.</font>",
 					 "<font color=purple>\The <b>[user]</b> softly squeezes \the <b>[target]</b>'s breasts.</font>",
@@ -42,7 +42,7 @@
 					 "<font color=purple>\The <b>[user]</b> runs a few fingers over \the <b>[target]</b>'s breast.</font>",
 					 "<font color=purple>\The <b>[user]</b> delicately teases \the <b>[target]</b>'s nipple.</font>",
 					 "<font color=purple>\The <b>[user]</b> traces a touch across \the <b>[target]</b>'s breast.</font>"))
-	if(user.a_intent == INTENT_HARM)
+	if(user.a_intent == I_HURT)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[user]</b> aggressively gropes \the <b>[target]</b>'s breast.</font>",
 					 "<font color=purple>\The <b>[user]</b> grabs \the <b>[target]</b>'s breasts.</font>",
@@ -50,7 +50,7 @@
 					 "<font color=purple>\The <b>[user]</b> slaps at \the <b>[target]</b>'s breasts.</font>",
 					 "<font color=purple>\The <b>[user]</b> gropes \the <b>[target]</b>'s breasts roughly.</font>"))
 	if(prob(5 + target.get_lust()))
-		if(target.a_intent == INTENT_HELP)
+		if(target.a_intent == I_HELP)
 			user.visible_message(
 				pick("<font color=purple>\The <b>[target]</b> shivers in arousal.</font>",
 					 "<font color=purple>\The <b>[target]</b> moans quietly.</font>",
@@ -60,7 +60,7 @@
 					 "<font color=purple>\The <b>[target]</b> trembles as hands run across bare skin.</font>"))
 			if(target.get_lust() < 5)
 				target.set_lust(5)
-		if(target.a_intent == INTENT_DISARM)
+		if(target.a_intent == I_DISARM)
 			if (target.restrained())
 				user.visible_message(
 					pick("<font color=purple>\The <b>[target]</b> twists playfully against the restraints.</font>",
@@ -75,12 +75,12 @@
 						 "<font color=purple>\The <b>[target]</b> teasingly laces a few fingers over <b>[user]</b>'s knuckles.</font>"))
 			if(target.get_lust() < 10)
 				target.add_lust(1)
-	if(target.a_intent == INTENT_GRAB)
+	if(target.a_intent == I_GRAB)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[target]</b> grips <b>[user]</b>'s wrist tight.</font>",
 				 "<font color=purple>\The <b>[target]</b> digs nails into <b>[user]</b>'s arm.</font>",
 				 "<font color=purple>\The <b>[target]</b> grabs <b>[user]</b>'s wrist for a second.</font>"))
-	if(target.a_intent == INTENT_HARM)
+	if(target.a_intent == I_HURT)
 		user.adjustBruteLoss(1)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[target]</b> pushes <b>[user]</b> roughly away.</font>",
@@ -101,7 +101,7 @@
 	max_distance = 1
 
 /datum/interaction/lewd/nipsuck/display_interaction(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if((user.a_intent == INTENT_HELP) || (user.a_intent == INTENT_DISARM))
+	if((user.a_intent == I_HELP) || (user.a_intent == I_DISARM))
 		user.visible_message(
 				pick("<font color=purple>\The <b>[user]</b> gently sucks on \the <b>[target]</b>'s [pick("nipple", "nipples")].</font>",
 					"<font color=purple>\The <b>[user]</b> gently nibs \the <b>[target]</b>'s [pick("nipple", "nipples")].</font>",
@@ -122,7 +122,7 @@
 					modifier = 1
 			target.reagents.add_reagent(/datum/reagent/consumable/milk, rand(1,2 * modifier))
 
-	if(user.a_intent == INTENT_HARM)
+	if(user.a_intent == I_HURT)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[user]</b> bites \the <b>[target]</b>'s [pick("nipple", "nipples")].</font>",
 					"<font color=purple>\The <b>[user]</b> aggressively sucks \the <b>[target]</b>'s [pick("nipple", "nipples")].</font>"))
@@ -142,7 +142,7 @@
 					modifier = 1
 			target.reagents.add_reagent(/datum/reagent/consumable/milk, rand(1,3 * modifier)) //aggressive sucking leads to high rewards
 
-	if(user.a_intent == INTENT_GRAB)
+	if(user.a_intent == I_GRAB)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[user]</b> sucks \the <b>[target]</b>'s [pick("nipple", "nipples")] intently.</font>",
 					"<font color=purple>\The <b>[user]</b> feasts \the <b>[target]</b>'s [pick("nipple", "nipples")].</font>",
@@ -164,7 +164,7 @@
 			target.reagents.add_reagent(/datum/reagent/consumable/milk, rand(1,3 * modifier)) //aggressive sucking leads to high rewards
 
 	if(prob(5 + target.get_lust()))
-		if(target.a_intent == INTENT_HELP)
+		if(target.a_intent == I_HELP)
 			if(!target.has_breasts())
 				user.visible_message(
 					pick("<font color=purple>\The <b>[target]</b> shivers in arousal.</font>",
@@ -184,7 +184,7 @@
 						"<font color=purple>\The <b>[target]</b> quivers in arousal as \the <b>[user]</b> delights themselves on their milk.</font>"))
 			if(target.get_lust() < 5)
 				target.set_lust(5)
-		if(target.a_intent == INTENT_DISARM)
+		if(target.a_intent == I_DISARM)
 			if (target.restrained())
 				if(!target.has_breasts())
 					user.visible_message(
@@ -214,12 +214,12 @@
 							"<font color=purple>\The <b>[target]</b> rubs their breasts against \the <b>[user]</b>'s head.</font>"))
 			if(target.get_lust() < 10)
 				target.add_lust(1)
-	if(target.a_intent == INTENT_GRAB)
+	if(target.a_intent == I_GRAB)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[target]</b> grips \the <b>[user]</b>'s head tight.</font>",
 				 "<font color=purple>\The <b>[target]</b> digs nails into \the <b>[user]</b>'s scalp.</font>",
 				 "<font color=purple>\The <b>[target]</b> grabs and shoves \the <b>[user]</b>'s head away.</font>"))
-	if(target.a_intent == INTENT_HARM)
+	if(target.a_intent == I_HURT)
 		user.adjustBruteLoss(1)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[target]</b> slaps \the <b>[user]</b> away.</font>",
