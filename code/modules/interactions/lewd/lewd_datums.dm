@@ -121,7 +121,7 @@
 				else
 					modifier = 1
 			target.reagents.add_reagent(/datum/reagent/consumable/milk, rand(1,2 * modifier))
-		
+
 	if(user.a_intent == INTENT_HARM)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[user]</b> bites \the <b>[target]</b>'s [pick("nipple", "nipples")].</font>",
@@ -141,7 +141,7 @@
 				else
 					modifier = 1
 			target.reagents.add_reagent(/datum/reagent/consumable/milk, rand(1,3 * modifier)) //aggressive sucking leads to high rewards
-	
+
 	if(user.a_intent == INTENT_GRAB)
 		user.visible_message(
 				pick("<font color=purple>\The <b>[user]</b> sucks \the <b>[target]</b>'s [pick("nipple", "nipples")] intently.</font>",
@@ -192,7 +192,7 @@
 							"<font color=purple>\The <b>[target]</b> squirms away from \the <b>[user]</b>'s mouth.</font>",
 							"<font color=purple>\The <b>[target]</b> slides back from \the <b>[user]</b>'s mouth.</font>",
 							"<font color=purple>\The <b>[target]</b> thrusts their bare chest forward into \the <b>[user]</b>'s mouth.</font>"))
-				else 
+				else
 					user.visible_message(
 						pick("<font color=purple>\The <b>[target]</b> twists playfully against the restraints.</font>",
 							"<font color=purple>\The <b>[target]</b> squirms away from \the <b>[user]</b>'s mouth.</font>",
@@ -229,8 +229,8 @@
 				 "<font color=purple>\The <b>[target]</b> elbows <b>[user]</b>'s mouth away.</font>"))
 	target.dir = get_dir(target, user)
 	user.dir = get_dir(user, target)
-	playlewdinteractionsound(user.loc, pick('modular_skyrat/sound/interactions/oral1.ogg',
-						'modular_skyrat/sound/interactions/oral2.ogg'), 70, 1, -1)
+	playlewdinteractionsound(user.loc, pick('sound/interactions/oral1.ogg',
+						'sound/interactions/oral2.ogg'), 70, 1, -1)
 	return
 
 /datum/interaction/lewd/oral
@@ -533,7 +533,7 @@
 /datum/interaction/lewd/nut_smack
 	command = "smack_nuts"
 	description = "Smack their nuts."
-	interaction_sound = 'modular_skyrat/sound/interactions/slap.ogg'
+	interaction_sound = 'sound/interactions/slap.ogg'
 	simple_message = "USER slaps TARGET's nuts!"
 	require_target_balls = REQUIRE_EXPOSED
 	needs_physical_contact = TRUE

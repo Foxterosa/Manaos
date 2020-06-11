@@ -54,9 +54,9 @@
 	if(message)
 		user.visible_message("<font color=purple>[user] [message].</font>")
 		M.handle_post_sex(5, null, user)
-		playsound(loc, pick('modular_skyrat/sound/interactions/bang4.ogg',
-							'modular_skyrat/sound/interactions/bang5.ogg',
-							'modular_skyrat/sound/interactions/bang6.ogg'), 70, 1, -1)
+		playsound(loc, pick('sound/interactions/bang4.ogg',
+							'sound/interactions/bang5.ogg',
+							'sound/interactions/bang6.ogg'), 70, 1, -1)
 	else if(user.a_intent == INTENT_HARM)
 		return ..()
 
@@ -135,9 +135,9 @@
 	if(message)
 		user.visible_message("<font color=purple>[user] [message].</font>")
 		M.handle_post_sex(5, null, user)
-		playsound(loc, pick('modular_skyrat/sound/interactions/bang4.ogg',
-							'modular_skyrat/sound/interactions/bang5.ogg',
-							'modular_skyrat/sound/interactions/bang6.ogg'), 70, 1, -1)
+		playsound(loc, pick('sound/interactions/bang4.ogg',
+							'sound/interactions/bang5.ogg',
+							'sound/interactions/bang6.ogg'), 70, 1, -1)
 	else if(user.a_intent == INTENT_HARM)
 		return ..()
 //end redds code
