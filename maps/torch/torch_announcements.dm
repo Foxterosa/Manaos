@@ -1,11 +1,11 @@
 /datum/map/torch
-	emergency_shuttle_docked_message = "Atencion a todas las manos: las pods de escape ahora estan desbloqueadas. Tienen %ETD% para abordar las pods de escape."
-	emergency_shuttle_leaving_dock = "Atencion a todas las manos: las pods de escape han sido lanzadas, llegando al punto de encuentro en %ETA%"
+	emergency_shuttle_docked_message = "Atencion a todo el personal: las pods de escape ahora estan desbloqueadas. Tienen %ETD% para abordar las pods de escape."
+	emergency_shuttle_leaving_dock = "Atencion a todo el personal: las pods de escape han sido lanzadas, llegando al punto de encuentro en %ETA%"
 
-	emergency_shuttle_called_message = "Atencion a todas las manos: los procedimientos de evacuacion de emergencia estan ahora en efecto. Las pods de escape se desbloquearan en %ETA%"
+	emergency_shuttle_called_message = "Atencion a todo el personal: los procedimientos de evacuacion de emergencia estan ahora en efecto. Las pods de escape se desbloquearan en %ETA%"
 	emergency_shuttle_called_sound = sound('sound/AI/torch/abandonship.ogg', volume = 45)
 
-	emergency_shuttle_recall_message = "Atencion a todas las manos: los procedimientos de evacuacion de emergencia han sido abortados. Vuelvan a sus condiciones normales de operacion."
+	emergency_shuttle_recall_message = "Atencion a todo el personal: los procedimientos de evacuacion de emergencia han sido abortados. Vuelvan a sus condiciones normales de operacion."
 
 	command_report_sound = sound('sound/AI/torch/commandreport.ogg', volume = 45)
 
