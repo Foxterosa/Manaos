@@ -192,7 +192,7 @@
 		dat += "Tiempo: [current.time]<br>"
 		dat += "Coordenadas: [current.coords]<br>"
 		dat += "Profundidad de la anomalia: [current.depth] cm<br>"
-		dat += "Tama�o de la anomalia: [current.clearance] cm<br>"
+		dat += "Tamano de la anomalia: [current.clearance] cm<br>"
 		dat += "Difusion de disonancia: [current.dissonance_spread]<br>"
 		var/index = responsive_carriers.Find(current.material)
 		if(index > 0 && index <= finds_as_strings.len)
