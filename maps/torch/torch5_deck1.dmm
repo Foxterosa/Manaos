@@ -14,7 +14,8 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -27,7 +28,8 @@
 	dir = 9
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -240,7 +242,8 @@
 	dir = 9
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -255,13 +258,16 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /obj/item/weapon/storage/box/syringes,
 /obj/item/weapon/storage/box/beakers/insulated,
 /obj/item/weapon/storage/box/beakers,
 /obj/item/weapon/storage/box/pillbottles,
 /obj/item/weapon/storage/box/freezer,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aat" = (
@@ -447,7 +453,8 @@
 	dir = 9
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -776,7 +783,8 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -1057,7 +1065,8 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -1662,7 +1671,8 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -2572,7 +2582,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "aew" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "";
+	color = "F8F8F8";
 	dir = 1
 	},
 /obj/machinery/alarm{
@@ -2642,7 +2652,7 @@
 /area/crew_quarters/safe_room/firstdeck)
 "aeB" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "";
+	color = "F8F8F8";
 	dir = 5
 	},
 /obj/item/device/radio/intercom/department/medbay{
@@ -2653,7 +2663,7 @@
 /area/medical/morgue/autopsy)
 "aeC" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "";
+	color = "F8F8F8";
 	dir = 10
 	},
 /obj/machinery/power/apc{
@@ -2679,7 +2689,7 @@
 /area/maintenance/firstdeck/forestarboard)
 "aeF" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "";
+	color = "F8F8F8";
 	dir = 4
 	},
 /obj/machinery/light{
@@ -2942,7 +2952,7 @@
 /area/medical/morgue/autopsy)
 "afa" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "";
+	color = "F8F8F8";
 	dir = 6
 	},
 /turf/simulated/floor/tiled/dark,
@@ -2959,7 +2969,7 @@
 /area/medical/surgery2)
 "afc" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "";
+	color = "F8F8F8";
 	dir = 9
 	},
 /turf/simulated/floor/tiled/dark,
@@ -4955,15 +4965,14 @@
 "ais" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/airlock/medical{
 	name = "Medical Staff Wing"
 	},
+/obj/effect/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "ait" = (
 /obj/machinery/door/firedoor,
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -4974,6 +4983,7 @@
 /obj/machinery/door/airlock/medical{
 	name = "Medical Staff Wing"
 	},
+/obj/effect/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "aiu" = (
@@ -5075,7 +5085,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/crematorium)
@@ -5437,7 +5447,6 @@
 /area/security/wing)
 "ajn" = (
 /obj/structure/closet/secure_closet/chemical,
-/obj/item/weapon/storage/box/pillbottles,
 /obj/item/weapon/book/manual/chemistry_recipes,
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
@@ -5446,7 +5455,8 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /obj/item/weapon/storage/box/beakers/insulated,
 /obj/item/weapon/storage/box/syringes,
@@ -5682,7 +5692,8 @@
 	pixel_y = -21
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/crematorium)
@@ -5800,7 +5811,8 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -9394,7 +9406,8 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
@@ -17917,7 +17930,7 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -18143,7 +18156,8 @@
 /area/medical/reslab)
 "cIb" = (
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
@@ -18152,7 +18166,8 @@
 	pixel_y = 24
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
@@ -18324,7 +18339,8 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/reslab)
@@ -18554,7 +18570,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
@@ -18810,6 +18827,7 @@
 	pixel_x = -24;
 	pixel_y = 6
 	},
+/obj/structure/bed/roller,
 /turf/simulated/floor/tiled/dark,
 /area/medical/reslab)
 "dFb" = (
@@ -18961,7 +18979,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/reslab)
@@ -19061,7 +19079,7 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -19681,7 +19699,7 @@
 /area/medical/sleeper)
 "fra" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = ""
+	color = "F8F8F8"
 	},
 /obj/structure/hygiene/sink{
 	pixel_y = -16
@@ -20100,7 +20118,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
@@ -21071,7 +21089,7 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -21495,7 +21513,7 @@
 	name = "Resuscitation Lab"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
@@ -23805,7 +23823,8 @@
 	icon_state = "0-4"
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
@@ -23818,7 +23837,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
@@ -24415,7 +24435,7 @@
 /area/medical/infirmary)
 "lUA" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "";
+	color = "F8F8F8";
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -24786,7 +24806,8 @@
 	icon_state = "1-8"
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
@@ -24858,7 +24879,7 @@
 	},
 /obj/structure/bed/roller,
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
@@ -24934,7 +24955,7 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -27639,7 +27660,7 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
-	color = ""
+	color = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -30551,7 +30572,8 @@
 "uLa" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue/autopsy)
@@ -30567,7 +30589,8 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -30618,7 +30641,8 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/industrial/outline/grey{
-	color = ""
+	color = "";
+	desc = "F8F8F8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
