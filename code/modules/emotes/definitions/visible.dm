@@ -342,5 +342,5 @@
 
 /decl/emote/visible/attention
 	key = "attention"
-	emote_message_3p = "USER chasquea para llamar la antencion!"
+	emote_message_3p = "USER chasquea para llamar la atencion!"
 	emote_message_3p_target = "USER chasquea sus dedos para llamar la atencion de TARGET!"
