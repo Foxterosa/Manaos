@@ -6948,7 +6948,6 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alx" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 2;
@@ -6963,6 +6962,9 @@
 	id_tag = "auxmedbay";
 	name = "Infirmary";
 	req_access = list(list("ACCESS_MEDICAL","ACCESS_MORGUE"))
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
@@ -16937,7 +16939,6 @@
 /turf/simulated/floor/reinforced,
 /area/thruster/d1starboard)
 "bdn" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 2;
@@ -16947,6 +16948,9 @@
 	opacity = 0
 	},
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "bdo" = (
