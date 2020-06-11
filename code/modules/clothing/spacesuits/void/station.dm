@@ -92,7 +92,7 @@
 /obj/item/clothing/suit/space/void/mining/prepared
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
 
-/* /obj/item/clothing/head/helmet/space/void/lavaland
+ /obj/item/clothing/head/helmet/space/void/lavaland
 	name = "exploration voidsuit mask"
 	desc = "Una mascara unida a un casco para proteger contra el calor."
 	icon_state = "stealth_rig"
@@ -134,7 +134,7 @@
 /obj/item/clothing/suit/space/void/lavaland/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 1
-*/
+
 
 //Medical
 /obj/item/clothing/head/helmet/space/void/medical
