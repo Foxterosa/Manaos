@@ -109,7 +109,7 @@
 		if(nearestTargetDist >= 0)
 			to_chat(user, "Energia exotica detectada en logitud de onda '[nearestTargetId]' en un radio de [nearestTargetDist]m[nearestSimpleTargetDist > 0 ? "; small anomaly detected in a radius of [nearestSimpleTargetDist]m" : ""]")
 		else if(nearestSimpleTargetDist >= 0)
-			to_chat(user, "Peque�a anomalia detectada en un radio de [nearestSimpleTargetDist]m.")
+			to_chat(user, "Pequeña anomalia detectada en un radio de [nearestSimpleTargetDist]m.")
 		else
 			to_chat(user, "Niveles bajos de radiacion detectados.")
 	else
@@ -242,7 +242,7 @@
 //Radio beacon locator
 /obj/item/weapon/pinpointer/radio
 	name = "dispositivo localizador"
-	desc = "Utilizado para escanear y localizar se�ales en una frencuencia particular."
+	desc = "Utilizado para escanear y localizar senales en una frencuencia particular."
 	var/tracking_freq = PUB_FREQ
 	matter = list(MATERIAL_ALUMINIUM = 1000, MATERIAL_GLASS = 500)
 
