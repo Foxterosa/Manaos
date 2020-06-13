@@ -43,13 +43,13 @@
 /datum/uplink_item/item/medical/stimpack
 	name = "Estimulante"
 	desc = " Un autoinyector que contiene multiplos quimicos para mantener a alguien vivo. Al menos hasta que termine el combate de todos modos. "
-	item_cost = 3
+	item_cost = 10
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
 
 /datum/uplink_item/item/medical/zerk
 	name = "Zerk"
 	desc = "Un autoinyector que contiene un poderosa mezcla de toxicos, una droga para la mejoria de combate. Viene en dosis de tres. "
-	item_cost = 5
+	item_cost = 15
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/zerk
 
 /datum/uplink_item/item/medical/hypeross
