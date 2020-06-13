@@ -11,7 +11,6 @@
 	return list(
 		/obj/item/weapon/storage/belt/archaeology,
 		/obj/item/weapon/storage/excavation,
-		/obj/item/device/flashlight/lantern,
 		/obj/item/device/ano_scanner,
 		/obj/item/device/depth_scanner,
 		/obj/item/device/core_sampler,
@@ -26,7 +25,7 @@
 		/obj/item/weapon/storage/bag/fossils,
 		/obj/item/weapon/hand_labeler,
 		/obj/item/taperoll/research,
-		/obj/item/device/spaceflare
+		/obj/item/weapon/shovel,
 	)
 
 /obj/structure/closet/wardrobe/ptgear
