@@ -18,7 +18,6 @@
 #define MATERIAL_MARBLE                  "marble"
 #define MATERIAL_CULT                    "cult"
 #define MATERIAL_REINFORCED_CULT         "cult2"
-#define MATERIAL_CULT_GLASS              "cult_g"
 #define MATERIAL_VOX                     "voxalloy"
 #define MATERIAL_TITANIUM                "titanium"
 #define MATERIAL_RUTILE					 "rutile"
