@@ -431,7 +431,8 @@
 	return list(/obj/item/toy/plushie/nymph,
 				/obj/item/toy/plushie/mouse,
 				/obj/item/toy/plushie/kitten,
-				/obj/item/toy/plushie/lizard)
+				/obj/item/toy/plushie/lizard,
+				/obj/item/toy/plushie/kobold)
 
 /obj/random/plushie/large
 	name = "random large plushie"

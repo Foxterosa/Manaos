@@ -125,6 +125,7 @@
 	plushes["peluche de lagarto"] = /obj/item/toy/plushie/lizard
 	plushes["peluche de arana"] = /obj/item/toy/plushie/spider
 	plushes["peluche de farwa"] = /obj/item/toy/plushie/farwa
+	plushes["peluche de kobold"] = /obj/item/toy/plushie/kobold
 	gear_tweaks += new /datum/gear_tweak/path(plushes)
 
 /datum/gear/workvisa

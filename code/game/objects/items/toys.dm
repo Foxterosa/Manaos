@@ -763,6 +763,11 @@
 	desc = "A plushie of a scaly lizard! Very controversial, after being accused as \"racist\" by some Unathi."
 	icon_state = "lizardplushie"
 
+/obj/item/toy/plushie/kobold
+	name = "kobold de peluche"
+	desc = "Un peluche de un kobold rojo, se ve abrazable, la etiqueta dice hecho por cutecorp."
+	icon_state = "koboldplushie"
+
 /obj/item/toy/plushie/spider
 	name = "spider plush"
 	desc = "A plushie of a fuzzy spider! It has eight legs - all the better to hug you with."
