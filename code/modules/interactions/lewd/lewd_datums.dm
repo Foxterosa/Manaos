@@ -120,7 +120,7 @@
 					modifier = 5
 				else
 					modifier = 1
-			target.reagents.add_reagent(/datum/reagent/consumable/milk, rand(1,2 * modifier))
+			target.reagents.add_reagent(/datum/reagent/drink/milk, rand(1,2 * modifier))
 
 	if(user.a_intent == I_HURT)
 		user.visible_message(
@@ -140,7 +140,7 @@
 					modifier = 5
 				else
 					modifier = 1
-			target.reagents.add_reagent(/datum/reagent/consumable/milk, rand(1,3 * modifier)) //aggressive sucking leads to high rewards
+			target.reagents.add_reagent(/datum/reagent/drink/milk, rand(1,3 * modifier)) //aggressive sucking leads to high rewards
 
 	if(user.a_intent == I_GRAB)
 		user.visible_message(
@@ -161,7 +161,7 @@
 					modifier = 5
 				else
 					modifier = 1
-			target.reagents.add_reagent(/datum/reagent/consumable/milk, rand(1,3 * modifier)) //aggressive sucking leads to high rewards
+			target.reagents.add_reagent(/datum/reagent/drink/milk, rand(1,3 * modifier)) //aggressive sucking leads to high rewards
 
 	if(prob(5 + target.get_lust()))
 		if(target.a_intent == I_HELP)

@@ -386,7 +386,7 @@ This saves us from having to call add_fingerprint() any time something is put in
 		return 0
 	return 1
 
-/mob/living/carbon/human/get_equipped_item(var/slot)
+/mob/living/carbon/human/get_equipped_item(slot)
 	switch(slot)
 		if(slot_back)       return back
 		if(slot_handcuffed) return handcuffed

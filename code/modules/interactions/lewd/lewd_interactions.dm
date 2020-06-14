@@ -4,7 +4,7 @@
 	description = "Slap their ass."
 	simple_message = "USER slaps TARGET right on the ass!"
 	simple_style = "danger"
-	interaction_sound = 'sound/weapons/slap.ogg'
+	interaction_sound = 'sound/interactions/slap.ogg'
 	needs_physical_contact = TRUE
 	require_ooc_consent = TRUE
 	max_distance = 1
@@ -542,14 +542,14 @@
 		var/client/ucli = LM.client
 		if(cli.prefs.extremepref != "No")
 			if(!ucli || (ucli.prefs.extremepref != "No"))
-				if(!get_item_by_slot(ITEM_SLOT_EARS))
+				if(!get_equipped_item(slot_l_ear) && !get_equipped_item(slot_r_ear))
 					if(has_ears())
 						dat += "<br>...have unprotected ears."
 					else
 						dat += "<br>...have a hole where their ears should be."
 				else
 					dat += "<br>...have covered ears."
-				if(!get_item_by_slot(ITEM_SLOT_EYES))
+				if(!get_equipped_item(slot_glasses))
 					if(has_eyes_lewd())
 						dat += "<br>...have exposed eyes."
 					else

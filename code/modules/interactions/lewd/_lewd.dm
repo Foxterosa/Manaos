@@ -210,8 +210,11 @@
 			handcount++
 		for(var/obj/item/bodypart/r_arm/R in C.bodyparts)
 			handcount++
-		if(C.get_item_by_slot(ITEM_SLOT_HANDS))
-			var/obj/item/clothing/gloves/G = C.get_item_by_slot(ITEM_SLOT_HANDS)
+		if(C.get_equipped_item(slot_l_hand))
+			var/obj/item/clothing/gloves/G = C.get_equipped_item(slot_l_hand)
+			covered = G.body_parts_covered
+		else if(C.get_equipped_item(slot_r_hand))
+			var/obj/item/clothing/gloves/G = C.get_equipped_item(slot_r_hand)
 			covered = G.body_parts_covered
 		if(covered & HANDS)
 			iscovered = TRUE
@@ -242,8 +245,8 @@
 			feetcount++
 		for(var/obj/item/bodypart/r_leg/R in C.bodyparts)
 			feetcount++
-		if(C.get_item_by_slot(ITEM_SLOT_FEET))
-			var/obj/item/clothing/shoes/S = C.get_item_by_slot(ITEM_SLOT_FEET)
+		if(C.get_equipped_item(ITEM_SLOT_FEET))
+			var/obj/item/clothing/shoes/S = C.get_equipped_item(ITEM_SLOT_FEET)
 			covered = S.body_parts_covered
 		if(covered & FEET)
 			iscovered = TRUE
@@ -277,12 +280,12 @@
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					if(C.get_item_by_slot(ITEM_SLOT_EARS))
+					if(C.get_equipped_item(ITEM_SLOT_EARS))
 						return FALSE
 					else
 						return TRUE
 				if(REQUIRE_UNEXPOSED)
-					if(!C.get_item_by_slot(ITEM_SLOT_EARS))
+					if(!C.get_equipped_item(ITEM_SLOT_EARS))
 						return FALSE
 					else
 						return TRUE
@@ -299,12 +302,12 @@
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					if(C.get_item_by_slot(ITEM_SLOT_EARS))
+					if(C.get_equipped_item(ITEM_SLOT_EARS))
 						return FALSE
 					else
 						return TRUE
 				if(REQUIRE_UNEXPOSED)
-					if(!C.get_item_by_slot(ITEM_SLOT_EARS))
+					if(!C.get_equipped_item(ITEM_SLOT_EARS) && !C.get_equipped_item(ITEM_SLOT_EARS))
 						return FALSE
 					else
 						return TRUE
@@ -321,12 +324,12 @@
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					if(C.get_item_by_slot(ITEM_SLOT_EYES))
+					if(C.get_equipped_item(slot_glasses))
 						return FALSE
 					else
 						return TRUE
 				if(REQUIRE_UNEXPOSED)
-					if(!C.get_item_by_slot(ITEM_SLOT_EYES))
+					if(!C.get_equipped_item(slot_glasses))
 						return FALSE
 					else
 						return TRUE
@@ -343,12 +346,12 @@
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					if(get_item_by_slot(ITEM_SLOT_EYES))
+					if(get_equipped_item(slot_glasses))
 						return FALSE
 					else
 						return TRUE
 				if(REQUIRE_UNEXPOSED)
-					if(!get_item_by_slot(ITEM_SLOT_EYES))
+					if(!get_equipped_item(slot_glasses))
 						return FALSE
 					else
 						return TRUE
@@ -361,7 +364,7 @@
 /mob/living/proc/is_topless()
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = src
-		if((!(H.wear_suit) || !(H.wear_suit.body_parts_covered & CHEST)) && (!(H.w_uniform) || !(H.w_uniform.body_parts_covered & CHEST)))
+		if((!(H.wear_suit) || !(H.wear_suit.body_parts_covered & BP_CHEST)) && (!(H.w_uniform) || !(H.w_uniform.body_parts_covered & BP_CHEST)))
 			return TRUE
 	else
 		return TRUE
@@ -369,7 +372,7 @@
 /mob/living/proc/is_bottomless()
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = src
-		if((!(H.wear_suit) || !(H.wear_suit.body_parts_covered & GROIN)) && (!(H.w_uniform) || !(H.w_uniform.body_parts_covered & GROIN)))
+		if((!(H.wear_suit) || !(H.wear_suit.body_parts_covered & BP_GROIN)) && (!(H.w_uniform) || !(H.w_uniform.body_parts_covered & BP_GROIN)))
 			return TRUE
 	else
 		return TRUE
@@ -409,25 +412,25 @@
 				if(CUM_TARGET_MOUTH)
 					if(partner.has_mouth() && partner.mouth_is_free())
 						message = "cums right in \the <b>[partner]</b>'s mouth."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,13))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,13))
 					else
 						message = "cums on \the <b>[partner]</b>'s face."
 				if(CUM_TARGET_THROAT)
 					if(partner.has_mouth() && partner.mouth_is_free())
 						message = "shoves deep into \the <b>[partner]</b>'s throat and cums."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(9,15))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(9,15))
 					else
 						message = "cums on \the <b>[partner]</b>'s face."
 				if(CUM_TARGET_VAGINA)
 					if(partner.is_bottomless() && partner.has_vagina())
 						message = "cums in \the <b>[partner]</b>'s pussy."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 					else
 						message = "cums on \the <b>[partner]</b>'s belly."
 				if(CUM_TARGET_ANUS)
 					if(partner.is_bottomless() && partner.has_anus())
 						message = "cums in \the <b>[partner]</b>'s asshole."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 					else
 						message = "cums on \the <b>[partner]</b>'s backside."
 				if(CUM_TARGET_HAND)
@@ -439,7 +442,7 @@
 					if(partner.is_topless() && partner.has_breasts())
 						message = "cums onto \the <b>[partner]</b>'s breasts."
 					else
-						message = "cums on \the <b>[partner]</b>'s chest and neck."
+						message = "cums on \the <b>[partner]</b>'s BP_CHEST and neck."
 				if(NUTS_TO_FACE)
 
 					if(partner.has_mouth() && partner.mouth_is_free())
@@ -469,17 +472,17 @@
 				if(CUM_TARGET_EARS)
 					if(partner.has_ears())
 						message = "cums inside \the <b>[partner]</b>'s ear."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 					else
 						message = "cums inside \the <b>[partner]</b>'s earsocket."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 				if(CUM_TARGET_EYES)
 					if(partner.has_eyes_lewd())
 						message = "cums on \the <b>[partner]</b>'s eyeball."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 					else
 						message = "cums inside \the <b>[partner]</b>'s eyesocket."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 				//
 
 				else
@@ -492,13 +495,13 @@
 				if(CUM_TARGET_MOUTH)
 					if(partner.has_mouth() && partner.mouth_is_free())
 						message = "squirts right in \the <b>[partner]</b>'s mouth."
-						partner.reagents.add_reagent(/datum/reagent/consumable/femcum, rand(8,13))
+						partner.reagents.add_reagent(/datum/reagent/drink/femcum, rand(8,13))
 					else
 						message = "squirts on \the <b>[partner]</b>'s face."
 				if(CUM_TARGET_THROAT)
 					if(partner.has_mouth() && partner.mouth_is_free())
 						message = "rubs their vagina against \the <b>[partner]</b>'s mouth and cums."
-						partner.reagents.add_reagent(/datum/reagent/consumable/femcum, rand(9,15))
+						partner.reagents.add_reagent(/datum/reagent/drink/femcum, rand(9,15))
 					else
 						message = "squirts on \the <b>[partner]</b>'s face."
 				if(CUM_TARGET_VAGINA)
@@ -509,7 +512,7 @@
 				if(CUM_TARGET_ANUS)
 					if(partner.is_bottomless() && partner.has_anus())
 						message = "squirts on \the <b>[partner]</b>'s asshole."
-						partner.reagents.add_reagent(/datum/reagent/consumable/femcum, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/femcum, rand(8,12))
 					else
 						message = "squirts on \the <b>[partner]</b>'s backside."
 				if(CUM_TARGET_HAND)
@@ -521,7 +524,7 @@
 					if(partner.is_topless() && partner.has_breasts())
 						message = "squirts onto \the <b>[partner]</b>'s breasts."
 					else
-						message = "squirts on \the <b>[partner]</b>'s chest and neck."
+						message = "squirts on \the <b>[partner]</b>'s BP_CHEST and neck."
 				if(NUTS_TO_FACE)
 
 					if(partner.has_mouth() && partner.mouth_is_free())
@@ -546,17 +549,17 @@
 				if(CUM_TARGET_EARS)
 					if(partner.has_ears())
 						message = "squirts on \the <b>[partner]</b>'s ear."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 					else
 						message = "squirts on \the <b>[partner]</b>'s earsocket."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 				if(CUM_TARGET_EYES)
 					if(partner.has_eyes_lewd())
 						message = "squirts on \the <b>[partner]</b>'s eyeball."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 					else
 						message = "squirts on \the <b>[partner]</b>'s eyesocket."
-						partner.reagents.add_reagent(/datum/reagent/consumable/semen, rand(8,12))
+						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 				//
 
 				else
@@ -857,7 +860,7 @@
 					improv = TRUE
 
 		if(improv)
-			message = "rubs their groin up and down \the <b>[partner]</b>'s face."
+			message = "rubs their BP_GROIN up and down \the <b>[partner]</b>'s face."
 
 	else
 		var/improv = FALSE
@@ -965,7 +968,7 @@
 			"roughly grinds their fat nutsack into <b>[partner]</b>'s mouth.",
 			"pulls out their saliva-covered nuts from <b>[partner]</b>'s violated mouth and then wipes off the slime onto their face."))
 	else
-		message = pick(list("wedges a digit into the side of <b>[partner]</b>'s jaw and pries it open before using their other hand to shove their whole nutsack inside!", "stands with their groin inches away from [partner]'s face, then thrusting their hips forward and smothering [partner]'s whole face with their heavy ballsack."))
+		message = pick(list("wedges a digit into the side of <b>[partner]</b>'s jaw and pries it open before using their other hand to shove their whole nutsack inside!", "stands with their BP_GROIN inches away from [partner]'s face, then thrusting their hips forward and smothering [partner]'s whole face with their heavy ballsack."))
 		set_is_fucking(partner , NUTS_TO_FACE)
 
 	/*playlewdinteractionsound(loc, pick('sound/interactions/nuts1.ogg',
@@ -1167,7 +1170,7 @@
 /mob/living/proc/do_lickfeet(mob/living/partner)
 	var/message
 
-	if(partner.get_item_by_slot(SLOT_SHOES) != null)
+	if(partner.get_equipped_item(slot_shoes) != null)
 		message = "licks \the <b>[partner]</b>'s [partner.get_shoes()]."
 	else
 		message = "licks \the <b>[partner]</b>'s [partner.has_feet() == 1 ? "foot" : "feet"]."
@@ -1183,7 +1186,7 @@
 	var/message
 
 	if(is_fucking(partner, GRINDING_FACE_WITH_FEET))
-		if(src.get_item_by_slot(SLOT_SHOES) != null)
+		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("grinds their [get_shoes()] into <b>[partner]</b>'s face.",
 				"presses their footwear down hard on <b>[partner]</b>'s face.",
 				"rubs off the dirt from their [get_shoes()] onto <b>[partner]</b>'s face."))]</span>"
@@ -1193,7 +1196,7 @@
 				"runs the soles of their bare feet against <b>[partner]</b>'s lips."))]</span>"
 
 	else if(is_fucking(partner, GRINDING_MOUTH_WITH_FEET))
-		if(src.get_item_by_slot(SLOT_SHOES) != null)
+		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("pulls their [get_shoes()] out of <b>[partner]</b>'s mouth and puts them on their face.",
 				"slowly retracts their [get_shoes()] from <b>[partner]</b>'s mouth, putting them on their face instead."))]</span>"
 		else
@@ -1203,7 +1206,7 @@
 		set_is_fucking(partner , GRINDING_FACE_WITH_FEET)
 
 	else
-		if(src.get_item_by_slot(SLOT_SHOES) != null)
+		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("plants their [get_shoes()] ontop of <b>[partner]</b>'s face.",
 				"rests their [get_shoes()] on <b>[partner]</b>'s face and presses down hard.",
 				"harshly places their [get_shoes()] atop <b>[partner]</b>'s face."))]</span>"
@@ -1228,7 +1231,7 @@
 	var/message
 
 	if(is_fucking(partner, GRINDING_MOUTH_WITH_FEET))
-		if(src.get_item_by_slot(SLOT_SHOES) != null)
+		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("roughly shoves their [get_shoes()] deeper into <b>[partner]</b>'s mouth.",
 				"harshly forces another inch of their [get_shoes()] into <b>[partner]</b>'s mouth.",
 				"presses their weight down, their [get_shoes()] prying deeper into <b>[partner]</b>'s mouth."))]</span>"
@@ -1238,7 +1241,7 @@
 				"roughly grinds their feet on <b>[partner]</b>'s tongue."))]</span>"
 
 	else if(is_fucking(partner, GRINDING_FACE_WITH_FEET))
-		if(src.get_item_by_slot(SLOT_SHOES) != null)
+		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("decides to force their [get_shoes()] deep into <b>[partner]</b>'s mouth.",
 				"pressed the tip of their [get_shoes()] against <b>[partner]</b>'s lips and shoves inwards."))]</span>"
 		else
@@ -1248,7 +1251,7 @@
 		set_is_fucking(partner , GRINDING_MOUTH_WITH_FEET)
 
 	else
-		if(src.get_item_by_slot(SLOT_SHOES) != null)
+		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("readies themselves and in one swift motion, shoves their [get_shoes()] into <b>[partner]</b>'s mouth.",
 				"grinds the tip of their [get_shoes()] against <b>[partner]</b>'s mouth before pushing themselves in."))]</span>"
 		else
@@ -1397,7 +1400,7 @@
 	do_fucking_animation(get_dir(src, partner))
 
 /mob/living/proc/get_shoes(var/singular = FALSE)
-	var/obj/A = get_item_by_slot(SLOT_SHOES)
+	var/obj/A = get_equipped_item(slot_shoes)
 	if(A)
 		var/txt = A.name
 		if(findtext (A.name,"the"))

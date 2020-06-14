@@ -1,3 +1,4 @@
+/*
 //Dildo changes.
 /obj/item/dildo
 	/*name = "dildo"
@@ -159,3 +160,4 @@
 /obj/item/pneumatic_cannon/dildo/Initialize()
 	. = ..()
 	allowed_typecache = dildo_typecache
+*/
