@@ -9553,6 +9553,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/weapon/storage/belt/holster/machete,
+/obj/item/weapon/material/hatchet/machete,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition)
 "qg" = (
@@ -9561,13 +9563,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/table/rack{
-	dir = 4
-	},
-/obj/item/weapon/storage/belt/holster/machete,
-/obj/item/weapon/storage/belt/holster/machete,
-/obj/item/weapon/storage/belt/holster/machete,
-/obj/item/weapon/storage/belt/holster/machete,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition)
 "qh" = (
@@ -9586,6 +9581,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/weapon/storage/belt/holster/machete,
+/obj/item/weapon/material/hatchet/machete,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition)
 "qk" = (
@@ -12649,21 +12646,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
-"wM" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/table/rack{
-	dir = 4
-	},
-/obj/item/weapon/material/hatchet/machete,
-/obj/item/weapon/material/hatchet/machete,
-/obj/item/weapon/material/hatchet/machete,
-/obj/item/weapon/material/hatchet/machete,
-/turf/simulated/floor/tiled/dark,
-/area/quartermaster/expedition)
 "wW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -41952,7 +41934,7 @@ qt
 WU
 Ez
 qg
-wM
+qg
 qu
 pU
 qy
