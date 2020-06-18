@@ -904,18 +904,14 @@
 /area/shuttle/petrov/security)
 "bQ" = (
 /obj/structure/table/steel_reinforced,
-/obj/machinery/power/apc/hyper{
-	dir = 4;
-	emp_hardened = 1;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/structure/cable/cyan{
-	d2 = 8;
-	icon_state = "0-8"
-	},
 /obj/random_multi/single_item/boombox,
 /obj/machinery/cell_charger,
+/obj/machinery/recharger/wallcharger{
+	dir = 8;
+	icon_state = "wrecharger0";
+	pixel_x = 23;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "bR" = (
@@ -1827,6 +1823,11 @@
 "dp" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/hologram/holopad/longrange,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "dq" = (
@@ -2025,20 +2026,10 @@
 /area/exploration_shuttle/airlock)
 "dE" = (
 /obj/structure/table/steel_reinforced,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "dF" = (
 /obj/structure/bed/chair/shuttle/blue,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/button/blast_door{
 	id_tag = "calypso_shutters";
 	name = "Protective Shutters Control";
@@ -13933,12 +13924,12 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 9
 	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/cable/cyan{
 	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d2 = 4;
+	icon_state = "1-4"
 	},
-/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "Bx" = (
@@ -18392,11 +18383,6 @@
 	pixel_x = -21
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "Sg" = (
@@ -19490,6 +19476,14 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"WE" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/guppy_hangar/start)
 "WF" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -19837,6 +19831,16 @@
 	},
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/machinery/power/apc/hyper{
+	dir = 4;
+	emp_hardened = 1;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
@@ -39914,8 +39918,8 @@ aP
 Rl
 Rd
 sJ
-Ko
 PW
+Ko
 Ko
 cj
 fS
@@ -40116,7 +40120,7 @@ cg
 xz
 xz
 xz
-xz
+WE
 dE
 dM
 YC
