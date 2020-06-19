@@ -99,21 +99,3 @@
 	minimal_access = list(access_library)
 	alt_titles = list("Periodista")
 	outfit_type = /decl/hierarchy/outfit/job/librarian
-
-/datum/job/lawyer
-	title = "Agente de Asuntos Internos"
-	department = "Soporte"
-	department_flag = SPT
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "oficiales de la compania y Reguladores Corporativos"
-	economic_power = 7
-	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_bridge)
-	minimal_access = list(access_lawyer, access_sec_doors, access_bridge)
-	minimal_player_age = 10
-	outfit_type = /decl/hierarchy/outfit/job/internal_affairs_agent
-
-/datum/job/lawyer/equip(var/mob/living/carbon/human/H)
-	. = ..()
-	if(.)
-		H.implant_loyalty(H)
