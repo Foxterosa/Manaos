@@ -26,7 +26,6 @@ var/datum/robolimb/basic_robolimb
 	var/list/applies_to_part = list() //TODO.
 	var/list/allowed_bodytypes = list(SPECIES_HUMAN,SPECIES_IPC,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_AKULA,SPECIES_VULP,SPECIES_TAJ,SPECIES_OLDUNATHI,SPECIES_PROMETHEAN)
 
-
 /datum/robolimb/bishop
 	company = "Bishop"
 	desc = "This limb has a white polymer casing with blue holo-displays."
