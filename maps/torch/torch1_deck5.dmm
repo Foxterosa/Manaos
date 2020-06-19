@@ -2026,15 +2026,17 @@
 /area/exploration_shuttle/airlock)
 "dE" = (
 /obj/structure/table/steel_reinforced,
+/obj/machinery/button/blast_door{
+	id_tag = "guppy_hatch";
+	name = "Rear Hatch Control";
+	pixel_x = 0;
+	pixel_y = 0;
+	req_access = list("ACCESS_TORCH_GUP")
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "dF" = (
 /obj/structure/bed/chair/shuttle/blue,
-/obj/machinery/button/blast_door{
-	id_tag = "calypso_shutters";
-	name = "Protective Shutters Control";
-	pixel_x = -32
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "dG" = (
@@ -2351,14 +2353,6 @@
 "ef" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/hull,
-/obj/machinery/door/blast/regular/open{
-	density = 0;
-	dir = 1;
-	icon_state = "pdoor0";
-	id_tag = "calypso_shutters";
-	name = "Protective Shutters";
-	opacity = 0
-	},
 /turf/simulated/floor/plating,
 /area/guppy_hangar/start)
 "eg" = (
@@ -19981,14 +19975,6 @@
 "YC" = (
 /obj/effect/paint/hull,
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/machinery/door/blast/regular/open{
-	density = 0;
-	dir = 1;
-	icon_state = "pdoor0";
-	id_tag = "calypso_shutters";
-	name = "Protective Shutters";
-	opacity = 0
-	},
 /turf/simulated/floor/plating,
 /area/guppy_hangar/start)
 "YE" = (
