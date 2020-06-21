@@ -2014,7 +2014,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/blue,
+/turf/simulated/floor/tiled/white,
 /area/maintenance/firstdeck/aftstarboard)
 "adt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2582,7 +2583,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "aew" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "F8F8F8";
+	color = "#F8F8F8";
 	dir = 1
 	},
 /obj/machinery/alarm{
@@ -2652,7 +2653,7 @@
 /area/crew_quarters/safe_room/firstdeck)
 "aeB" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "F8F8F8";
+	color = "#F8F8F8";
 	dir = 5
 	},
 /obj/item/device/radio/intercom/department/medbay{
@@ -2663,7 +2664,7 @@
 /area/medical/morgue/autopsy)
 "aeC" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "F8F8F8";
+	color = "#F8F8F8";
 	dir = 10
 	},
 /obj/machinery/power/apc{
@@ -2689,7 +2690,7 @@
 /area/maintenance/firstdeck/forestarboard)
 "aeF" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "F8F8F8";
+	color = "#F8F8F8";
 	dir = 4
 	},
 /obj/machinery/light{
@@ -2952,7 +2953,7 @@
 /area/medical/morgue/autopsy)
 "afa" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "F8F8F8";
+	color = "#F8F8F8";
 	dir = 6
 	},
 /turf/simulated/floor/tiled/dark,
@@ -2969,7 +2970,7 @@
 /area/medical/surgery2)
 "afc" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "F8F8F8";
+	color = "#F8F8F8";
 	dir = 9
 	},
 /turf/simulated/floor/tiled/dark,
@@ -3484,7 +3485,7 @@
 	dir = 4;
 	pixel_x = -24
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "afZ" = (
 /turf/simulated/wall/prepainted,
@@ -7064,6 +7065,7 @@
 /obj/machinery/light/spot{
 	dir = 1
 	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/wood/yew,
 /area/crew_quarters/courtroom)
 "alI" = (
@@ -7129,6 +7131,9 @@
 /obj/machinery/light_switch{
 	pixel_y = 24
 	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	level = 2
+	},
 /turf/simulated/floor/wood/yew,
 /area/crew_quarters/courtroom)
 "alO" = (
@@ -7163,12 +7168,9 @@
 "alQ" = (
 /obj/structure/bed/chair/wood/mahogany,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "alR" = (
 /obj/structure/cable/green{
@@ -7250,17 +7252,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "amc" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
-	},
 /obj/machinery/camera/network/first_deck{
 	dir = 4;
 	id_tag = "Courtroom Fore 2"
 	},
-/turf/simulated/floor/wood/yew,
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "amd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -8478,7 +8475,7 @@
 /area/command/conference)
 "aod" = (
 /obj/structure/bed/chair/wood/mahogany,
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "aoe" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -8592,7 +8589,12 @@
 /area/maintenance/firstdeck/centralstarboard)
 "aoq" = (
 /obj/structure/railing/mapped,
-/turf/simulated/floor/wood/yew,
+/obj/structure/railing/mapped{
+	dir = 4;
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "aor" = (
 /obj/effect/floor_decal/corner/yellow{
@@ -8606,7 +8608,7 @@
 "aos" = (
 /obj/structure/bed/chair/wood/mahogany,
 /obj/structure/railing/mapped,
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "aot" = (
 /obj/effect/floor_decal/corner/red{
@@ -8620,7 +8622,8 @@
 	pixel_x = -21
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/floor/wood/yew,
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "aov" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -8633,7 +8636,7 @@
 /area/security/brig/psionic)
 "aow" = (
 /obj/structure/table/woodentable_reinforced/mahogany,
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/red,
 /area/crew_quarters/courtroom)
 "aox" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -8688,7 +8691,8 @@
 	pixel_x = 21
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/floor/wood/yew,
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "aoC" = (
 /obj/machinery/door/airlock/civilian{
@@ -8705,7 +8709,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/red,
 /area/crew_quarters/courtroom)
 "aoE" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -8736,23 +8740,12 @@
 	dir = 4
 	},
 /obj/structure/bed/chair/wood/mahogany,
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/red,
 /area/crew_quarters/courtroom)
 "aoH" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/structure/bed/chair/wood/mahogany,
-/turf/simulated/floor/wood/yew,
-/area/crew_quarters/courtroom)
-"aoI" = (
-/obj/structure/table/woodentable_reinforced/mahogany,
-/obj/item/weapon/tableflag,
-/turf/simulated/floor/wood/yew,
-/area/crew_quarters/courtroom)
-"aoJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/table/woodentable_reinforced/mahogany,
 /turf/simulated/floor/wood/yew,
 /area/crew_quarters/courtroom)
 "aoK" = (
@@ -8770,35 +8763,21 @@
 	dir = 4
 	},
 /obj/structure/table/woodentable_reinforced/mahogany,
-/obj/machinery/button/alternate/door/bolts{
-	id_tag = "Courtroom";
-	name = "Door Bolt Control";
-	pixel_y = 8;
-	req_access = "ACCESS_ADJUDICATOR"
-	},
-/obj/machinery/light_switch{
-	pixel_x = 4
-	},
-/obj/machinery/button/windowtint{
-	id = "courtroom";
-	pixel_x = -4;
-	pixel_y = 0;
-	req_access = "ACCESS_ADJUDICATOR"
-	},
-/turf/simulated/floor/wood/yew,
+/obj/item/weapon/tableflag,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "aoM" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/green,
 /area/crew_quarters/courtroom)
 "aoN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/green,
 /area/crew_quarters/courtroom)
 "aoO" = (
 /obj/machinery/light{
@@ -8808,11 +8787,11 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/red,
 /area/crew_quarters/courtroom)
 "aoP" = (
 /obj/item/weapon/stool/wood,
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/red,
 /area/crew_quarters/courtroom)
 "aoQ" = (
 /obj/machinery/alarm{
@@ -8859,17 +8838,12 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/subacute)
 "aoU" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
 /obj/machinery/camera/network/first_deck{
 	dir = 8;
 	id_tag = "Courtroom Aft 2"
 	},
-/turf/simulated/floor/wood/yew,
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "aoV" = (
 /obj/machinery/light{
@@ -8879,7 +8853,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/green,
 /area/crew_quarters/courtroom)
 "aoW" = (
 /obj/machinery/door/airlock/maintenance{
@@ -11798,21 +11772,8 @@
 "atT" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
-/obj/structure/bed/chair/comfy/captain{
-	dir = 1
-	},
-/turf/simulated/floor/wood/yew,
-/area/crew_quarters/courtroom)
-"atU" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/structure/table/woodentable_reinforced/mahogany,
-/obj/item/device/radio/intercom,
-/turf/simulated/floor/wood/yew,
+/turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
 "atV" = (
 /obj/machinery/light/spot{
@@ -17971,6 +17932,20 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
+"bXR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/railing/mapped{
+	dir = 4;
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "bYb" = (
 /obj/machinery/status_display{
 	pixel_x = -32
@@ -18144,7 +18119,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/blue,
+/turf/simulated/floor/tiled/white,
 /area/maintenance/firstdeck/centralstarboard)
 "cob" = (
 /obj/structure/skele_stand,
@@ -19244,6 +19220,14 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
+"dMm" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/bed/chair/comfy/captain{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "dPA" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -19986,7 +19970,7 @@
 /area/medical/sleeper)
 "fra" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "F8F8F8"
+	color = "#F8F8F8"
 	},
 /obj/structure/hygiene/sink{
 	pixel_y = -16
@@ -20227,6 +20211,25 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
+"fKf" = (
+/obj/structure/table/woodentable_reinforced/mahogany,
+/obj/machinery/button/windowtint{
+	id = "courtroom";
+	pixel_x = -4;
+	pixel_y = 0;
+	req_access = "ACCESS_ADJUDICATOR"
+	},
+/obj/machinery/light_switch{
+	pixel_x = 4
+	},
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "Courtroom";
+	name = "Door Bolt Control";
+	pixel_y = 8;
+	req_access = "ACCESS_ADJUDICATOR"
+	},
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "fKJ" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -20333,19 +20336,19 @@
 /area/medical/counselor)
 "fPb" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "fQb" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/chemical_dispenser/bar_soft/full,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "fRb" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "fRN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -20580,7 +20583,7 @@
 	dir = 4;
 	pixel_x = -32
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "gfb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -20677,7 +20680,7 @@
 /obj/item/modular_computer/telescreen/preset/medical{
 	pixel_x = -32
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "grI" = (
 /obj/structure/table/steel,
@@ -20726,7 +20729,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "guP" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -20963,7 +20966,7 @@
 /obj/structure/table/woodentable/walnut,
 /obj/item/weapon/storage/box/glasses,
 /obj/item/weapon/material/knife/table,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "gJb" = (
 /obj/structure/cable/green{
@@ -20975,7 +20978,7 @@
 /obj/structure/bed/chair/armchair/teal{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "gLb" = (
 /obj/machinery/alarm{
@@ -21897,7 +21900,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "hUb" = (
 /obj/machinery/door/blast/shutters{
@@ -22074,6 +22077,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
+"ijW" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/green,
+/area/crew_quarters/courtroom)
 "ikZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -22345,6 +22358,15 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
+"iyx" = (
+/obj/structure/railing/mapped,
+/obj/structure/railing/mapped{
+	dir = 8;
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "izb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -23357,6 +23379,20 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
+"kaX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/railing/mapped{
+	dir = 8;
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "kcb" = (
 /obj/machinery/organ_printer/robot/mapped,
 /obj/effect/floor_decal/floordetail/edgedrain,
@@ -24427,6 +24463,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
+"lvu" = (
+/obj/structure/table/woodentable_reinforced/mahogany,
+/obj/item/device/radio/intercom,
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "lwb" = (
 /obj/structure/table/steel,
 /obj/machinery/button/blast_door{
@@ -24627,6 +24668,12 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
+"lGI" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	level = 2
+	},
+/turf/simulated/floor/wood/yew,
+/area/crew_quarters/courtroom)
 "lHb" = (
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
@@ -24704,7 +24751,7 @@
 /area/medical/infirmary)
 "lUA" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
-	color = "F8F8F8";
+	color = "#F8F8F8";
 	dir = 8
 	},
 /obj/structure/cable/green{
@@ -24772,6 +24819,16 @@
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
 /area/medical/lounge)
+"mcf" = (
+/obj/structure/bed/chair/wood/mahogany,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "mcA" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -25064,7 +25121,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "mww" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -25136,8 +25193,8 @@
 /area/medical/sleeper)
 "myb" = (
 /obj/structure/table/woodentable/walnut,
-/obj/item/pizzabox/margherita,
-/turf/simulated/floor/wood/walnut,
+/obj/item/pizzabox/vegetable,
+/turf/simulated/floor/wood/yew,
 /area/medical/lounge)
 "mAb" = (
 /obj/effect/floor_decal/corner/paleblue{
@@ -26056,6 +26113,16 @@
 /obj/effect/floor_decal/torchltdlogo,
 /turf/simulated/floor/tiled,
 /area/rnd/entry)
+"nRm" = (
+/obj/structure/bed/chair/wood/mahogany,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "nSb" = (
 /obj/effect/floor_decal/torchltdlogo{
 	icon_state = "bottomright";
@@ -26665,6 +26732,13 @@
 "oDg" = (
 /turf/simulated/wall/prepainted,
 /area/security/questioning)
+"oDT" = (
+/obj/machinery/light/spot{
+	dir = 4
+	},
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "oEb" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
 	color = "";
@@ -26706,6 +26780,11 @@
 /obj/item/sticky_pad/random,
 /turf/simulated/floor/carpet/green,
 /area/rnd/breakroom)
+"oFw" = (
+/obj/structure/table/woodentable_reinforced/mahogany,
+/obj/item/weapon/storage/briefcase,
+/turf/simulated/floor/carpet/red,
+/area/crew_quarters/courtroom)
 "oGG" = (
 /obj/structure/hygiene/shower{
 	dir = 8
@@ -27260,6 +27339,14 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
+"pxZ" = (
+/obj/structure/railing/mapped{
+	dir = 8;
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "pyb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -28249,6 +28336,10 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
+"qPH" = (
+/obj/item/weapon/stool/wood,
+/turf/simulated/floor/carpet/green,
+/area/crew_quarters/courtroom)
 "qQb" = (
 /obj/machinery/atmospherics/valve{
 	dir = 8
@@ -28274,6 +28365,13 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
+"qSj" = (
+/obj/structure/bed/chair/wood/mahogany,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "qSx" = (
 /obj/structure/closet,
 /obj/item/clothing/suit/storage/toggle/labcoat,
@@ -28801,6 +28899,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"rAj" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/red,
+/area/crew_quarters/courtroom)
 "rAu" = (
 /obj/structure/curtain/open/privacy,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -30631,6 +30735,11 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
+"tRr" = (
+/obj/structure/table/woodentable_reinforced/mahogany,
+/obj/item/weapon/storage/briefcase,
+/turf/simulated/floor/carpet/green,
+/area/crew_quarters/courtroom)
 "tRX" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -30765,6 +30874,16 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
+"uDb" = (
+/obj/structure/bed/chair/wood/mahogany,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "uDu" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "interviewwindow"
@@ -31145,6 +31264,13 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
+"vwn" = (
+/obj/machinery/light/spot{
+	dir = 8
+	},
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "vzp" = (
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/sortjunction/flipped{
@@ -31292,6 +31418,14 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
+"vRV" = (
+/obj/structure/railing/mapped{
+	dir = 4;
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue3,
+/area/crew_quarters/courtroom)
 "vTH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensicswindow"
@@ -31364,6 +31498,10 @@
 "vVe" = (
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d1starboard)
+"vVw" = (
+/obj/structure/table/woodentable_reinforced/mahogany,
+/turf/simulated/floor/carpet/green,
+/area/crew_quarters/courtroom)
 "vZK" = (
 /obj/structure/table/standard,
 /obj/item/modular_computer/laptop/preset/records,
@@ -48154,7 +48292,7 @@ ure
 aiu
 alE
 amc
-any
+vwn
 aou
 alE
 auc
@@ -48364,7 +48502,7 @@ alE
 alE
 alV
 ahq
-aoE
+rAj
 aoP
 ahq
 aPL
@@ -48556,8 +48694,8 @@ lfb
 ayi
 ggA
 ahq
-alE
-alQ
+lGI
+nRm
 aod
 aos
 alE
@@ -48759,12 +48897,12 @@ ayg
 ure
 aiA
 alE
-alQ
+mcf
 aod
 aos
 alE
 aoG
-aow
+oFw
 alE
 alV
 alE
@@ -48961,15 +49099,15 @@ bHp
 mMX
 alC
 alE
-alV
-alE
+bXR
+vRV
 aoq
 alE
 alV
 alE
-aoI
-aoL
 alE
+aoL
+fKf
 atW
 aoR
 ahq
@@ -49169,9 +49307,9 @@ aoj
 aoj
 aoH
 aoj
-aoJ
-atT
 aoj
+atT
+dMm
 atX
 aoS
 aoW
@@ -49365,15 +49503,15 @@ ayg
 fnu
 alC
 alE
+kaX
+pxZ
+iyx
+alE
 alV
 alE
-aoq
 alE
-alV
-alE
-aoI
-atU
-alE
+aoL
+lvu
 aoE
 aue
 ahq
@@ -49567,12 +49705,12 @@ lib
 ure
 aiA
 alE
-alQ
+mcf
 aod
 aos
 alE
-aoG
-aow
+ijW
+tRr
 alE
 alV
 alE
@@ -49769,12 +49907,12 @@ ayi
 ghI
 ahq
 alN
-alQ
+uDb
 aod
 aos
 alE
-aoG
-aow
+ijW
+vVw
 alE
 alV
 ahq
@@ -49971,7 +50109,7 @@ ayg
 azq
 ahq
 alH
-alQ
+qSj
 aod
 aos
 alE
@@ -49981,7 +50119,7 @@ alE
 alV
 ahq
 aoM
-aoP
+qPH
 ahq
 aPR
 aQK
@@ -50174,7 +50312,7 @@ ure
 aiu
 alE
 aoU
-aok
+oDT
 aoB
 alE
 aud
