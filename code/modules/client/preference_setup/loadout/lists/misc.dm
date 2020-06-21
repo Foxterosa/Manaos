@@ -125,6 +125,7 @@
 	plushes["peluche de lagarto"] = /obj/item/toy/plushie/lizard
 	plushes["peluche de arana"] = /obj/item/toy/plushie/spider
 	plushes["peluche de farwa"] = /obj/item/toy/plushie/farwa
+	plushes["peluche de kobold"] = /obj/item/toy/plushie/kobold
 	gear_tweaks += new /datum/gear_tweak/path(plushes)
 
 /datum/gear/workvisa
@@ -259,6 +260,19 @@
 	crosstype["cross, oro"] = /obj/item/weapon/material/cross/gold
 	gear_tweaks += new/datum/gear_tweak/path(crosstype)
 
-/datum/gear/uno
-	display_name = "baraja de UNO"
-	path = /obj/item/weapon/storage/bag/uno
+/datum/gear/cigarettes //haha copypaste go brrrrrrrr
+	display_name = "cigarette pack selection"
+	description = "A selection of cigarette packets from several cigarette brands, each containing 6 cigarettes. Got a light?"
+	cost = 1
+	path = /obj/item/weapon/storage/fancy/cigarettes
+
+/datum/gear/cigarettes/New()
+	..()
+	var/packtype = list()
+	packtype["Trans-Stellar Duty-frees"] = /obj/item/weapon/storage/fancy/cigarettes
+	packtype["Lucky Stars"] = /obj/item/weapon/storage/fancy/cigarettes/luckystars
+	packtype["Jerichos"] = /obj/item/weapon/storage/fancy/cigarettes/jerichos
+	packtype["Temperamento Menthols"] = /obj/item/weapon/storage/fancy/cigarettes/menthols
+	packtype["Carcinoma Angels"] = /obj/item/weapon/storage/fancy/cigarettes/carcinomas
+	packtype["Professional 120's"] = /obj/item/weapon/storage/fancy/cigarettes/professionals
+	gear_tweaks += new /datum/gear_tweak/path(packtype)

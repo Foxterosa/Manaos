@@ -69,3 +69,9 @@
 	desc = "Un autoinyector que contiene alkysine - una droga que actua de manera lenta capaz de revertir el daño cerebral. Muy simple, un diagrama de dibujos te asegura que no tendras ningun problema de usar este dispositivo."
 	item_cost = 2
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine
+
+/datum/uplink_item/item/medical/three_eye
+	name = "Three Eye pill bottle"
+	desc = "A pill bottle of highly illegal drugs, often overdosed on to awaken psionic latencies. A picture of a skull and a small note is attached, explaining that more than three pills cause overdose."
+	item_cost = 50
+	path = /obj/item/weapon/storage/pill_bottle/three_eye
