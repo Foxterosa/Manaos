@@ -85,19 +85,14 @@
 	set name = "Show Server Log"
 	set desc = "Shows today's server log."
 
-	var/path = browse_files("data/logs/")
-	if(!path)
+	var/path = "data/logs/[time2text(world.realtime,"YYYY/MM-Month/DD-Day")].log"
+	if( fexists(path) )
+		src << run(file(path))
+	else
+		to_chat(src, "<font color='red'>Error: view_txt_log(): File not found/Invalid path([path]).</font>")
 		return
-
-	if(file_spam_check())
-		return
-
-	message_admins("[key_name_admin(src)] accessed file: [path]")
-	src << run(file(path))
-	to_chat(src, "Attempting to send file, this may take a fair few minutes if the file is very large.")
-	return
-
 	SSstatistics.add_field_details("admin_verb","VTL") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	return
 
 //Shows today's attack log
 /datum/admins/proc/view_atk_log()
