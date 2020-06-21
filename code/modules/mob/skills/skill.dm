@@ -160,24 +160,24 @@ GLOBAL_LIST_EMPTY(skills)
 // Category: Service
 
 /decl/hierarchy/skill/service/botany
-	ID = "botany"
-	name = "Botany"
-	desc = "Describes how good a character is at growing and maintaining plants."
-	levels = list( "Ignorante"			= "You know next to nothing about plants. While you can attempt to plant, weed, or harvest, you are just as likely to kill the plant instead.",
-						"Basico"				= "You've done some gardening. You can water, weed, fertilize, plant, and harvest, and you can recognize and deal with pests. You may be a hobby gardener.<br>- You can safely plant and weed normal plants.<br>- You can tell weeds and pests apart from each other.",
-						"Trained"			= "You are proficient at botany, and can grow plants for food or oxygen production. Your plants will generally survive and prosper. You know the basicos of manipulating plant genes.<br>- You can safely plant and weed exotic plants.<br>- You can operate xenoflora machines. The sample's degradation decreases with skill level.",
-						"Experienced"		= "You're a botanist or farmer, capable of running a facility's hydroponics farms or doing botanical research. You are adept at creating custom hybrids and modified strains.",
-						"Master"		= "You're a specialized botanist. You can care for even the most exotic, fragile, or dangerous plants. You can use gene manipulation machinery with precision, and are often able to avoid the degradation of samples.")
+	ID = "botanica"
+	name = "Botanica"
+	desc = "Describe lo bueno que es un personaje en el cultivo y mantenimiento de las plantas."
+	levels = list( "Ignorante"			= "No sabes casi nada de las plantas. Puedes intentar plantar, desherbar, o cosechar, es igual de probable que termines matando en el acto a la planta.",
+						"Basico"				= "Has hecho algo de jardineria. Puedes regar, desherbar, fertilizar, plantar, y cosechar, y puedes reconocer y lidiar con pestes. Tal vez la jardineria sea solo un hobby para ti.<br>- Puedes plantar y desherbar plantas normales de forma segura.<br>- Puedes diferenciar las malas hierbas de las plagas y vicevesa.",
+						"Entrenado"			= "Eres experto en botanica, puedes cultivar plantas para la produccion de alimentos u oxigeno. Tus plantas generalmente sobreviviran y prosperaran. Sabes lo basico sobre la manipulacion de genes sobre plantas.<br>- Puedes plantar y desherbar plantas exoticas de forma segura.<br>- Puedes usar las maquinas de xenoflora. La degradacion de la muestra disminuye con el nivel de habilidad.",
+						"Experimentado"		= "Eres botanico o agricultor, capaz de dirigir cultivos hidroponicos de una instalacion o hacer una investigacion botanica. Eres un experto en la creacion de hibridos personalizados y genes modificados.",
+						"Maestro"		= "Eres un botanista especializado. Eres capaz de cuidar a las mas exoticas, fragiles, o peligrosas plantas. Puedes usar la maquina de manipulacion de genes con precision, y a menudo eres capaz de evitar la degradacion de las muestras.")
 
 /decl/hierarchy/skill/service/cooking
 	ID = "cooking"
-	name = "Cooking"
-	desc = "Describes a character's skill at preparing meals and other consumable goods. This includes mixing alcoholic beverages."
-	levels = list( "Ignorante"			= "You barely know anything about cooking, and stick to vending machines when you can. The microwave is a device of black magic to you, and you avoid it when possible.",
-						"Basico"				= "You can make simple meals and do the cooking for your family. Things like spaghetti, grilled cheese, or simple mixed drinks are your usual fare.<br>- You can safely use the blender.",
-						"Trained"			= "You can make most meals while following instructions, and they generally turn out well. You have some experience with hosting, catering, and/or bartending.<br>- You can fully operate the drink dispensers.",
-						"Experienced"		= "You can cook professionally, keeping an entire crew fed easily. Your food is tasty and you don't have a problem with tricky or complicated dishes. You can be depended on to make just about any commonly-served drink.",
-						"Master"		= "Not only are you good at cooking and mixing drinks, but you can manage a kitchen staff and cater for special events. You can safely prepare exotic foods and drinks that would be poisonous if prepared incorrectly.")
+	name = "Cocina"
+	desc = "Describe la habilidad del personaje preparando comidas y otros buenos consumibles. Esto incluye la mezcla de brebajes alcoholicos."
+	levels = list( "Ignorante"			= "Vagamente sabes algo de cocina, y te aferras a las maquinas cuando puedes. El microondas es una maquina de magia negra para ti, y lo tratas de evitar en todo lo posible.",
+						"Basico"				= "Puedes hacer comidas simples para tu familia, como spaghettis, quesos a la parrilla. Puedes hacer simples mezclas de bebidas que sueles tomar.<br>- Puedes usar la licuadora de forma segura.",
+						"Entrenado"			= "Puedes hacer la mayoria de las comidas siguiendo las instrucciones, y generalmente te salen bien. Tienes algo de experiencia sobre el hospedaje, catering y/o el bartending.<br>- Puedes usar completamente el dispensador de bebidas.",
+						"Experimentado"		= "Puedes cocinar profesionalmente, manteniendo toda la crew alimentada de forma sencilla. Tu comida es deliciosa y no tienes ningun problema con los platos dificiles o complicados. Se puede confiar en que haras cualquier bebida comunmente servida.",
+						"Maestro"		= "No solo eres bueno cocinando y mezclando bebidas, puedes manejar al personal de cocina y proveer en eventos. Puedes preparar de forma segura comidas y bebidas exoticas que podrian ser venenosas si se preparan de forma incorrecta.")
 
 // Category: Security
 
