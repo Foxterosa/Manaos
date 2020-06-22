@@ -1,4 +1,4 @@
-/*/obj/item/weapon/gun/projectile/heavysniper
+/obj/item/weapon/gun/projectile/heavysniper
 	name = "anti-materiel rifle"
 	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to be used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. \
 	Truly an anachronism from another time."
@@ -120,4 +120,3 @@
 	wielded_item_state = "z8carbine-wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
 	fire_delay = 30
-*/
