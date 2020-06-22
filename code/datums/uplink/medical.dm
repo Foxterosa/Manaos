@@ -64,6 +64,12 @@
 	item_cost = 3
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon
 
+/datum/uplink_item/item/medical/kompoton
+	name = "Kompoton"
+	desc = "An autoinjector containing an emergency dose of kompoton - a extrme organ-mending medicine, suffering guaranteed"
+	item_cost = 6
+	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton
+
 /datum/uplink_item/item/medical/alkysine
 	name = "Alkysine"
 	desc = "Un autoinyector que contiene alkysine - una droga que actua de manera lenta capaz de revertir el daño cerebral. Muy simple, un diagrama de dibujos te asegura que no tendras ningun problema de usar este dispositivo."
