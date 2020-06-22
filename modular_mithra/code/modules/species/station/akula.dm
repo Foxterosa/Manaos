@@ -15,7 +15,7 @@
 
 	description = "Una especie de modificaciones geneticas, divergente de los Tritonians, mediante la adicion de masa muscular adicional y dientes mas afilados. Aunque las dos razas son basadas en humanos con modificaciones geneticas que surgio de las condiciones de su colonia en el planeta acuatico, Koster-4, Tritonians generalmente siempre ha sido una seleccion mas popular en modificaciones geneticas, debido a las grandes necesidades dieteticas de un Akula."
 
-	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_IS_ICONBASE
+	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	sexybits_location = BP_GROIN //this is possibly my favorite variable just because of how out of place it is.
