@@ -111,7 +111,7 @@
 	handle_casings = EJECT_CASINGS
 	load_method = SINGLE_CASING
 	max_shells = 5
-	ammo_type = /obj/item/ammo_casing/rifle/rifle
+	ammo_type = /obj/item/ammo_casing/rifle
 	one_hand_penalty = 6
 	accuracy = -4
 	bulk = 8
