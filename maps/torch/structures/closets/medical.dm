@@ -44,7 +44,6 @@
 		/obj/item/device/megaphone,
 		/obj/item/weapon/reagent_containers/hypospray/vial,
 		/obj/item/clothing/accessory/storage/holster/thigh,
-		/obj/item/clothing/accessory/medal/solgov/heart,
 		/obj/item/clothing/accessory/stethoscope,
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/glasses/hud/health,

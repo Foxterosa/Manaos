@@ -206,6 +206,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "az" = (
@@ -534,6 +537,15 @@
 	pixel_x = 0;
 	pixel_y = 24
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "aZ" = (
@@ -685,6 +697,14 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
+/obj/random/coin,
+/obj/item/device/megaphone,
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "bp" = (
@@ -758,9 +778,11 @@
 	pixel_x = 24
 	},
 /obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/disposalpipe/trunk{
 	dir = 8
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
@@ -917,6 +939,12 @@
 	icon_state = "4-8"
 	},
 /obj/item/weapon/tableflag,
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "bJ" = (
@@ -975,10 +1003,9 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
-/obj/effect/floor_decal/corner/blue/three_quarters{
-	dir = 8
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/starboard)
 "bN" = (
@@ -1154,6 +1181,9 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
 /obj/effect/floor_decal/industrial/shutoff{
 	dir = 4
 	},
@@ -1232,8 +1262,13 @@
 	dir = 9
 	},
 /obj/structure/closet/emcloset,
-/obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
 "cj" = (
@@ -1330,6 +1365,9 @@
 /obj/effect/floor_decal/corner/blue{
 	icon_state = "corner_white";
 	dir = 10
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
@@ -1463,8 +1501,6 @@
 /obj/structure/noticeboard{
 	pixel_y = 30
 	},
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/device/flashlight,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "cA" = (
@@ -1771,6 +1807,15 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "cU" = (
@@ -1969,6 +2014,9 @@
 	pixel_x = 34;
 	pixel_y = -6;
 	req_access = list("ACCESS_BRIDGE")
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
@@ -2384,6 +2432,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "dU" = (
@@ -2412,6 +2463,9 @@
 /obj/machinery/camera/network/command{
 	c_tag = "Bridge";
 	dir = 1
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
@@ -2486,13 +2540,18 @@
 	req_access = list("ACCESS_BRIDGE");
 	id_tag = "bridge sensors"
 	},
-/obj/structure/table/rack,
-/obj/item/device/megaphone,
-/obj/item/device/flash,
-/obj/item/device/flash,
-/obj/item/weapon/storage/secure/briefcase,
-/obj/item/weapon/storage/secure/briefcase,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
 /obj/item/device/paicard,
+/obj/item/weapon/aicard,
+/obj/item/weapon/pinpointer,
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "ef" = (
@@ -3185,9 +3244,14 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/closet/emcloset,
-/obj/effect/floor_decal/industrial/outline/grey,
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
@@ -3471,6 +3535,22 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/machinery/vending/medals{
+	dir = 1;
+	pixel_y = -32;
+	products = list(/obj/item/clothing/accessory/medal/bronze/nanotrasen = 2, /obj/item/clothing/accessory/medal/solgov/heart, /obj/item/clothing/accessory/medal/solgov/iron/sol, /obj/item/clothing/accessory/medal/solgov/silver/sol, /obj/item/clothing/accessory/medal/solgov/silver/sword)
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/device/flashlight,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "fO" = (
@@ -3661,6 +3741,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "gc" = (
@@ -3750,6 +3833,9 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass/command{
 	name = "Bridge Storage"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
@@ -4673,6 +4759,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "hW" = (
@@ -5552,6 +5641,9 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "jz" = (
@@ -5578,6 +5670,10 @@
 	pixel_y = 34;
 	id = "bridge_starboard"
 	},
+/obj/effect/floor_decal/corner/blue{
+	icon_state = "corner_white";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "jA" = (
@@ -5598,8 +5694,10 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
 "jC" = (
@@ -6796,7 +6894,9 @@
 	dir = 9
 	},
 /obj/machinery/hologram/holopad/longrange,
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "ln" = (
@@ -8176,6 +8276,9 @@
 	pixel_y = -35;
 	id = "bridge_port"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "nK" = (
@@ -8490,6 +8593,9 @@
 	name = "Officer Quarters";
 	req_access = list("ACCESS_BRIDGE")
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "ok" = (
@@ -8518,20 +8624,18 @@
 	pixel_x = -30;
 	pixel_y = 0
 	},
-/obj/machinery/power/apc/super{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
@@ -9317,7 +9421,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#6a97b0"
+	},
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -10228,8 +10334,6 @@
 	name = "Port Bridge Blast Doors";
 	opacity = 0
 	},
-/obj/effect/floor_decal/corner/blue/three_quarters,
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
@@ -10238,7 +10342,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "qZ" = (
 /obj/machinery/light/spot{
@@ -12813,6 +12920,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "vC" = (
@@ -13127,6 +13243,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
@@ -14271,19 +14390,20 @@
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "zC" = (
-/obj/structure/table/rack,
-/obj/item/weapon/storage/box/PDAs{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/weapon/storage/box/ids,
-/obj/item/weapon/storage/box/lights/mixed,
-/obj/random/coin,
-/obj/random/firstaid,
-/obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/sign/warning/nosmoking_1{
 	pixel_x = 2;
 	pixel_y = 24
+	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/device/flash,
+/obj/item/device/flash,
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
@@ -14512,6 +14632,12 @@
 	icon_state = "corner_white";
 	dir = 8
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "An" = (
@@ -14663,7 +14789,6 @@
 	name = "Port Bridge Blast Doors";
 	opacity = 0
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
@@ -14674,7 +14799,10 @@
 	name = "Bridge Access";
 	req_access = list(list("ACCESS_BRIDGE","ACCESS_TORCH_CREW"))
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "AN" = (
 /turf/simulated/floor/tiled/dark,
@@ -15136,8 +15264,10 @@
 	name = "Bridge Interior Hallway Shutters";
 	opacity = 0
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
 "Dc" = (
@@ -15525,6 +15655,12 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 1
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "FE" = (
@@ -15631,6 +15767,12 @@
 	icon_state = "console";
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "Gj" = (
@@ -15721,6 +15863,15 @@
 	pixel_y = 32
 	},
 /obj/machinery/computer/modular/preset/cardslot/command,
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "Hb" = (
@@ -15760,6 +15911,15 @@
 /obj/item/weapon/folder/yellow,
 /obj/item/weapon/folder/white,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "Hg" = (
@@ -15864,7 +16024,6 @@
 	name = "Starboard Bridge Blast Doors";
 	opacity = 0
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
@@ -15875,7 +16034,10 @@
 	name = "Bridge Access";
 	req_access = list(list("ACCESS_BRIDGE","ACCESS_TORCH_CREW"))
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
 "Ht" = (
 /obj/item/weapon/soap,
@@ -15939,6 +16101,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "HG" = (
@@ -15973,6 +16138,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "HS" = (
@@ -15986,18 +16154,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
-"HU" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/bed/chair/comfy/blue{
-	icon_state = "comfychair_preview";
-	dir = 4
-	},
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/co)
 "Ia" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -16331,6 +16487,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "Jb" = (
@@ -16407,6 +16566,30 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/psiadvisor)
+"Js" = (
+/obj/machinery/power/apc/super{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/weapon/storage/secure/briefcase,
+/obj/item/weapon/storage/secure/briefcase,
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/dark,
+/area/bridge/storage)
 "Jt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -16854,6 +17037,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "Mj" = (
@@ -17164,6 +17350,9 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
@@ -17558,6 +17747,9 @@
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "Qv" = (
@@ -17985,6 +18177,12 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
@@ -18519,7 +18717,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "Uk" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/regular/open{
 	density = 0;
@@ -18537,12 +18734,27 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#6a97b0"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
 "Uo" = (
 /obj/structure/bed/chair/padded/green,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
+"Ur" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/bed/chair/comfy/blue{
+	icon_state = "comfychair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/office/co)
 "Us" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/sticky_pad/random{
@@ -18921,9 +19133,6 @@
 /turf/simulated/wall/titanium,
 /area/aquila/secure_storage)
 "Wv" = (
-/obj/structure/table/rack,
-/obj/item/weapon/aicard,
-/obj/item/weapon/pinpointer,
 /obj/item/weapon/storage/toolbox/mechanical,
 /obj/item/device/multitool,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -18933,6 +19142,16 @@
 	icon_state = "4-8"
 	},
 /obj/item/weapon/crowbar/brace_jack,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/weapon/storage/box/lights/mixed,
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "Ww" = (
@@ -19118,6 +19337,15 @@
 "Xz" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/guncabinet/PPE,
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "XD" = (
@@ -19125,6 +19353,9 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
@@ -27187,7 +27418,7 @@ cE
 XO
 Nu
 qO
-qO
+Js
 om
 XD
 vB
@@ -27609,7 +27840,7 @@ SJ
 ev
 eP
 UY
-HU
+Ur
 Ig
 OM
 tR
