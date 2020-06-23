@@ -2612,17 +2612,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
-"er" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/co)
 "es" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -15997,6 +15986,18 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
+"HU" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/bed/chair/comfy/blue{
+	icon_state = "comfychair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/office/co)
 "Ia" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -16499,7 +16500,6 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
-/obj/item/clothing/head/beret/solgov/health,
 /obj/item/toy/figure/cmo,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
@@ -27609,7 +27609,7 @@ SJ
 ev
 eP
 UY
-Id
+HU
 Ig
 OM
 tR
