@@ -36,7 +36,7 @@
 	if(!istype(communicator))
 		return FALSE
 	if(communicator.mob.stat != DEAD)
-		to_chat(communicator, "<span class='warning'>You're not sufficiently dead to use DSAY!</span>")
+		to_chat(communicator, "<span class='warning'>No estas suficientemente muerto para poder usar!</span>")
 		return FALSE
 	return DSAY_ASK_BASE
 
@@ -68,7 +68,7 @@
 			if(C.mob.mind.original && C.mob.mind.original.real_name)
 				realname = C.mob.mind.original.real_name
 		if(mindname && mindname != realname)
-			name = "[realname] died as [mindname]"
+			name = "[realname] ha muerto como [mindname]"
 		else
 			name = realname
 
@@ -109,7 +109,7 @@
 	if(!istype(communicator))
 		return FALSE
 	if(!communicator.holder)
-		to_chat(communicator, "<span class='warning'>You do not have sufficent permissions to use DSAY!</span>")
+		to_chat(communicator, "<span class='warning'>No tienes los suficientes pemrisos para usar DSAY!</span>")
 		return FALSE
 	return DSAY_ASK_BASE
 

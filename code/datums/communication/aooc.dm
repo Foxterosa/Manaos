@@ -14,10 +14,10 @@
 
 	if(!C.holder)
 		if(isghost(C.mob))
-			to_chat(src, "<span class='warning'>You cannot use [name] while ghosting/observing!</span>")
+			to_chat(src, "<span class='warning'>No puedes usar [name] mientras ghosteas/observas!</span>")
 			return FALSE
 		if(!(C.mob && C.mob.mind && C.mob.mind.special_role))
-			to_chat(C, "<span class='danger'>You must be an antag to use [name].</span>")
+			to_chat(C, "<span class='danger'>Debes de ser un antagonista para usar [name].</span>")
 			return FALSE
 
 /decl/communication_channel/aooc/do_communicate(var/client/C, var/message)
