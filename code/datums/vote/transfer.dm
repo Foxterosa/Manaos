@@ -41,12 +41,12 @@
 		else
 			factor = 1.4
 	choices["Initiate Crew Transfer"] = round(choices["Initiate Crew Transfer"] * factor)
-	to_world("<font color='purple'>Factor de la transefeencia de la tripulacion: [factor]</font>")
+	to_world("<font color='purple'>Factor de la transferencia de la tripulacion: [factor]</font>")
 
 /datum/vote/transfer/report_result()
 	if(..())
 		return 1
-	if(result[1] == "Inicia la transferencia de la tripulacion")
+	if(result[1] == "Iniciar la transferencia de la tripulacion")
 		init_autotransfer()
 	else if(result[1] == "Agregar antagonista")
 		SSvote.queued_auto_vote = /datum/vote/add_antagonist
