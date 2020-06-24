@@ -188,7 +188,7 @@
 
 	else if(href_list["incarn_ghost"])
 
-		mob/dead/observer/G = locate(href_list["incarn_ghost"])
+		var/mob/dead/observer/G = locate(href_list["incarn_ghost"])
 
 		G.incarnate_ghost()
 
