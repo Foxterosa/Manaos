@@ -321,7 +321,7 @@
 /client/proc/robust_dress_shop()
 	var/list/outfits = list(
 		"Naked",
-		"As Job...",
+		"As Job..."
 	)
 
 	var/list/paths = subtypesof(/decl/hierarchy/outfit - typesof(/decl/hierarchy/outfit/job))
@@ -330,7 +330,7 @@
 		if(initial(O.can_be_admin_equipped))
 			outfits[initial(O.name)] = path
 
-	var/dresscode = input("Select outfit", "Robust quick dress shop") as null|anything in outfits
+	var/dresscode = input("Select outfit", "Robust quick dress shop") as null|anything in outfits()
 	if(isnull(dresscode))
 		return
 
@@ -345,7 +345,7 @@
 			if(initial(O.can_be_admin_equipped))
 				job_outfits[initial(O.name)] = path
 
-		dresscode = input("Select job equipment", "Robust quick dress shop") as null|anything in job_outfits
+		dresscode = input("Select job equipment", "Robust quick dress shop") as null|anything in job_outfits()
 		dresscode = job_outfits[dresscode]
 		if(isnull(dresscode))
 			return
