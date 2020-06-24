@@ -325,7 +325,7 @@
 		"Custom..."
 	)
 
-	var/list/paths = subtypesof(/decl/hierarchy/outfit - typesof(/decl/hierarchy/outfit/job)
+	var/list/paths = subtypesof(/decl/hierarchy/outfit - typesof(/decl/hierarchy/outfit/job))
 	for(var/path in paths)
 		var/datum/outfit/O = path //not much to initalize here but whatever
 		if(initial(O.can_be_admin_equipped))
