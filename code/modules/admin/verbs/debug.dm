@@ -15,12 +15,6 @@
 	SSstatistics.add_field_details("admin_verb","DG2") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 // callproc moved to code/modules/admin/callproc
-/client/proc/robust_dress_shop()
-	var/list/outfits = list(
-		"Naked",
-		"As Job...",
-		"Custom..."
-	)
 
 /client/proc/Cell()
 	set category = "Debug"
@@ -331,7 +325,7 @@
 		"Custom..."
 	)
 
-	var/list/paths = subtypesof(/datum/outfit) - typesof(/datum/outfit/job)
+	var/list/paths = subtypesof(/datum/outfit/decl/hierarchy/outfit) - typesof(/datum/outfit/decl/hierarchy/outfit/job)
 	for(var/path in paths)
 		var/datum/outfit/O = path //not much to initalize here but whatever
 		if(initial(O.can_be_admin_equipped))
