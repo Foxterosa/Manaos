@@ -2,6 +2,8 @@
 Add fingerprints to items when we put them in our hands.
 This saves us from having to call add_fingerprint() any time something is put in a human's hands programmatically.
 */
+/mob/living/carbon/human/proc/equipOutfit(outfit, visualsOnly = FALSE)
+	var/datum/outfit/O = null
 
 /mob/living/carbon/human/verb/quick_equip()
 	set name = "quick-equip"
