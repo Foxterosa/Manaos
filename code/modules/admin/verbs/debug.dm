@@ -352,7 +352,6 @@
 
 	return dresscode
 
-
 /client/proc/startSinglo()
 	set category = "Debug"
 	set name = "Start Singularity"
