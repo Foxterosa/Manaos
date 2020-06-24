@@ -1,5 +1,5 @@
 /decl/communication_channel/pray
-	name = "PRAY"
+	name = "REZAR"
 	expected_communicator_type = /mob
 	log_proc = /proc/log_say
 	flags = COMMUNICATION_ADMIN_FOLLOW
@@ -14,7 +14,7 @@
 		if(M.client.holder && M.client.get_preference_value(/datum/client_preference/staff/show_chat_prayers) == GLOB.PREF_SHOW)
 			receive_communication(communicator, M, "\[<A HREF='?_src_=holder;adminspawncookie=\ref[communicator]'>SC</a>\] \[<A HREF='?_src_=holder;narrateto=\ref[communicator]'>DN</a>\]<span class='notice'>\icon[cross] <b><font color=purple>PRAY: </font>[key_name(communicator, 1)]: </b>[message]</span>")
 		else if(communicator == M) //Give it to ourselves
-			receive_communication(communicator, M, "<span class='notice'>\icon[cross] <b>You send the prayer, \"[message]\" out into the heavens.</b></span>")
+			receive_communication(communicator, M, "<span class='notice'>\icon[cross] <b>Envias la oracion, \"[message]\" a los cielos.</b></span>")
 
 /decl/communication_channel/pray/receive_communication(var/mob/communicator, var/mob/receiver, var/message)
 	..()
