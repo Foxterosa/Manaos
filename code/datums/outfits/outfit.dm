@@ -53,6 +53,7 @@ var/list/outfits_decls_by_type_
 
 	var/list/backpack_overrides
 	var/flags = OUTFIT_RESET_EQUIPMENT
+	var/can_be_admin_equipped = TRUE // Set to FALSE if your outfit requires runtime parameters
 
 /decl/hierarchy/outfit/New()
 	..()
