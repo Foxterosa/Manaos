@@ -15,7 +15,12 @@
 	SSstatistics.add_field_details("admin_verb","DG2") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 // callproc moved to code/modules/admin/callproc
-
+/client/proc/robust_dress_shop()
+	var/list/outfits = list(
+		"Naked",
+		"As Job...",
+		"Custom..."
+	)
 
 /client/proc/Cell()
 	set category = "Debug"
@@ -318,6 +323,51 @@
 		H.delete_inventory(TRUE)
 	outfit.equip(H)
 	log_and_message_admins("changed the equipment of [key_name(H)] to [outfit.name].")
+
+/client/proc/robust_dress_shop()
+	var/list/outfits = list(
+		"Naked",
+		"As Job...",
+		"Custom..."
+	)
+
+	var/list/paths = subtypesof(/datum/outfit) - typesof(/datum/outfit/job)
+	for(var/path in paths)
+		var/datum/outfit/O = path //not much to initalize here but whatever
+		if(initial(O.can_be_admin_equipped))
+			outfits[initial(O.name)] = path
+
+	var/dresscode = input("Select outfit", "Robust quick dress shop") as null|anything in outfits
+	if(isnull(dresscode))
+		return
+
+	if(outfits[dresscode])
+		dresscode = outfits[dresscode]
+
+	if(dresscode == "As Job...")
+		var/list/job_paths = subtypesof(/datum/outfit/job)
+		var/list/job_outfits = list()
+		for(var/path in job_paths)
+			var/datum/outfit/O = path
+			if(initial(O.can_be_admin_equipped))
+				job_outfits[initial(O.name)] = path
+
+		dresscode = input("Select job equipment", "Robust quick dress shop") as null|anything in job_outfits
+		dresscode = job_outfits[dresscode]
+		if(isnull(dresscode))
+			return
+
+	if(dresscode == "Custom...")
+		var/list/custom_names = list()
+		for(var/datum/outfit/D in GLOB.custom_outfits)
+			custom_names[D.name] = D
+		var/selected_name = input("Select outfit", "Robust quick dress shop") as null|anything in custom_names
+		dresscode = custom_names[selected_name]
+		if(isnull(dresscode))
+			return
+
+	return dresscode
+
 
 /client/proc/startSinglo()
 	set category = "Debug"
