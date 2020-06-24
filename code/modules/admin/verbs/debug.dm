@@ -327,8 +327,6 @@
 	var/list/paths = subtypesof(/decl/hierarchy/outfit - typesof(/decl/hierarchy/outfit/job))
 	for(var/path in paths)
 		var/decl/hierarchy/outfit/O = path //not much to initalize here but whatever
-		if(initial(O.can_be_admin_equipped))
-			outfits[initial(O.name)] = path
 
 	var/dresscode = input("Select outfit", "Robust quick dress shop") as null|anything in outfits
 	if(isnull(dresscode))
