@@ -193,9 +193,6 @@
 		var/mob/living/carbon/human/H = G.incarnate_ghost()
 		G.incarnate_ghost();
 
-		if(posttransformoutfit && istype(H))
-			H.equipOutfit(posttransformoutfit)
-
 	else if(href_list["call_shuttle"])
 
 		if(!check_rights(R_ADMIN))	return
