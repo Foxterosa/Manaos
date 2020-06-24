@@ -6,11 +6,11 @@ This saves us from having to call add_fingerprint() any time something is put in
 	var/decl/hierarchy/outfit/O = null
 
 	if(ispath(outfit))
-		O = new outfit
+	O = new outfit
 	else
-		O = outfit
-		if(!istype(O))
-			return 0
+	O = outfit
+	if(!istype(O))
+		return 0
 	if(!O)
 		return 0
 
