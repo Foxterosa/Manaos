@@ -186,8 +186,8 @@
 
 		edit_admin_permissions()
 
-		else if(href_list["incarn_ghost"])
-			if(!check_rights(R_SPAWN))
+	else if(href_list["incarn_ghost"])
+		if(!check_rights(R_SPAWN))
 			return
 
 		var/mob/observer/ghost/G = locate(href_list["incarn_ghost"])
