@@ -187,10 +187,11 @@
 		edit_admin_permissions()
 
 	else if(href_list["incarn_ghost"])
-		if(!check_rights(R_SPAWN))
-			return
+
+		var/mob/dead/observer/G = locate(href_list["incarn_ghost"])
 
 		var/mob/living/carbon/human/H = G.incarnate_ghost()
+		G.incarnate_ghost();
 
 		if(posttransformoutfit && istype(H))
 			H.equipOutfit(posttransformoutfit)
