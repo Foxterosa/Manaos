@@ -170,9 +170,8 @@ var/global/floorIsLava = 0
 				body += "<A href='?src=\ref[src];makeanimal=\ref[M]'>Re-Animalize</A> | "
 			else
 				body += "<A href='?src=\ref[src];makeanimal=\ref[M]'>Animalize</A> | "
-
 			if(istype(M))
-				body += "<A href='?_src=\ref[src];incarn_ghost=\ref[M]'>Re-incarnate</a> | "
+				body += "<A href='?src=\ref[src];incarn_ghost=\ref[M]'>Re-incarnate</A> | "
 
 			// DNA2 - Admin Hax
 			if(M.dna && iscarbon(M))
