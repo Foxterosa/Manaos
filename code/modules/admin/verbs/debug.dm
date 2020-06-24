@@ -319,7 +319,6 @@
 	log_and_message_admins("changed the equipment of [key_name(H)] to [outfit.name].")
 
 /client/proc/robust_dress_shop()
-
 	var/decl/hierarchy/outfit/dresscode = input("Select outfit.", "Select equipment.") as null|anything in outfits()
 	if(!dresscode)
 		return
