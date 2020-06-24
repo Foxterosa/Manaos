@@ -327,7 +327,7 @@
 
 	var/list/paths = subtypesof(/decl/hierarchy/outfit - typesof(/decl/hierarchy/outfit/job))
 	for(var/path in paths)
-		var/datum/outfit/O = path //not much to initalize here but whatever
+		var/decl/hierarchy/O = path //not much to initalize here but whatever
 		if(initial(O.can_be_admin_equipped))
 			outfits[initial(O.name)] = path
 
@@ -339,10 +339,10 @@
 		dresscode = outfits[dresscode]
 
 	if(dresscode == "As Job...")
-		var/list/job_paths = subtypesof(/datum/outfit/job)
+		var/list/job_paths = subtypesof(/decl/hierarchy/job)
 		var/list/job_outfits = list()
 		for(var/path in job_paths)
-			var/datum/outfit/O = path
+			var/decl/hierarchy/O = path
 			if(initial(O.can_be_admin_equipped))
 				job_outfits[initial(O.name)] = path
 
@@ -353,7 +353,7 @@
 
 	if(dresscode == "Custom...")
 		var/list/custom_names = list()
-		for(var/datum/outfit/D in GLOB.custom_outfits)
+		for(var/decl/hierarchy/D in GLOB.custom_outfits)
 			custom_names[D.name] = D
 		var/selected_name = input("Select outfit", "Robust quick dress shop") as null|anything in custom_names
 		dresscode = custom_names[selected_name]
