@@ -188,10 +188,9 @@
 
 	else if(href_list["incarn_ghost"])
 
-		var/mob/dead/observer/G = locate(href_list["incarn_ghost"])
+		mob/dead/observer/G = locate(href_list["incarn_ghost"])
 
-		var/mob/living/carbon/human/H = G.incarnate_ghost()
-		G.incarnate_ghost();
+		G.incarnate_ghost()
 
 	else if(href_list["call_shuttle"])
 
