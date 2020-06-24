@@ -1,6 +1,6 @@
 /obj/item/clothing/mask/smokable/ecig
-	name = "electronic cigarette"
-	desc = "Device with modern approach to smoking."
+	name = "cigarrillo electronico"
+	desc = "Dispositivo con utilidad para fumar."
 	icon = 'icons/obj/ecig.dmi'
 	var/active = 0
 	var/obj/item/weapon/cell/cigcell
@@ -9,7 +9,7 @@
 	var/cell_type = /obj/item/weapon/cell/device/standard
 	w_class = ITEM_SIZE_TINY
 	slot_flags = SLOT_EARS | SLOT_MASK
-	attack_verb = list("attacked", "poked", "battered")
+	attack_verb = list("atacado", "toca", "abolla")
 	body_parts_covered = 0
 	var/brightness_on = 1
 	chem_volume = 0 //ecig has no storage on its own but has reagent container created by parent obj

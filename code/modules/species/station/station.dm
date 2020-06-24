@@ -222,7 +222,7 @@
 	move_intents = list(/decl/move_intent/walk, /decl/move_intent/creep)
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/diona)
 	//primitive_form = "Nymph"
-	slowdown = 5
+	slowdown = 2.5
 	rarity_value = 3
 	hud_type = /datum/hud_data/diona
 	siemens_coefficient = 0.3
@@ -351,8 +351,8 @@
 
 /datum/species/diona/skills_from_age(age)
 	switch(age)
-		if(101 to 200)	. = 12 // age bracket before this is 46 to 100 . = 8 making this +4
-		if(201 to 300)	. = 16 // + 8
+		if(101 to 200)	. = 8 // age bracket before this is 46 to 100 . = 8 making this +4
+		if(201 to 300)	. = 8 // + 8
 		else			. = ..()
 
 // Dionaea spawned by hand or by joining will not have any

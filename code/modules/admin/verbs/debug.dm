@@ -16,7 +16,6 @@
 
 // callproc moved to code/modules/admin/callproc
 
-
 /client/proc/Cell()
 	set category = "Debug"
 	set name = "Cell"
@@ -318,6 +317,41 @@
 		H.delete_inventory(TRUE)
 	outfit.equip(H)
 	log_and_message_admins("changed the equipment of [key_name(H)] to [outfit.name].")
+
+/client/proc/robust_dress_shop()
+	var/list/outfits = list(
+		"Naked",
+		"As Job..."
+	)
+
+	var/list/paths = subtypesof(/decl/hierarchy/outfit - typesof(/decl/hierarchy/outfit/job))
+	for(var/path in paths)
+		var/decl/hierarchy/outfit/O = path //not much to initalize here but whatever
+		if(initial(O.can_be_admin_equipped))
+			outfits[initial(O.name)] = path
+
+	var/dresscode = input("Select outfit", "Robust quick dress shop") as null|anything in outfits()
+	if(isnull(dresscode))
+		return
+
+	if(outfits[dresscode])
+		dresscode = outfits[dresscode]
+
+	if(dresscode == "As Job...")
+		var/list/job_paths = subtypesof(/decl/hierarchy/outfit/job)
+		var/list/job_outfits = list()
+		for(var/path in job_paths)
+			var/decl/hierarchy/outfit/O = path
+			if(initial(O.can_be_admin_equipped))
+				job_outfits[initial(O.name)] = path
+
+		dresscode = input("Select job equipment", "Robust quick dress shop") as null|anything in job_outfits
+		dresscode = job_outfits[dresscode]
+		if(isnull(dresscode))
+			return
+
+	return dresscode
+
 
 /client/proc/startSinglo()
 	set category = "Debug"

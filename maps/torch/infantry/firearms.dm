@@ -1,7 +1,16 @@
 /////////
-// global lock
+// projectile global lock
 /////////
 /obj/item/weapon/gun/projectile/free_fire()
+	var/my_z = get_z(src)
+	if(!GLOB.using_map.station_levels.Find(my_z))
+		return TRUE
+	return ..()
+
+/////////
+// laser global lock
+/////////
+/obj/item/weapon/gun/energy/free_fire()
 	var/my_z = get_z(src)
 	if(!GLOB.using_map.station_levels.Find(my_z))
 		return TRUE
@@ -21,7 +30,8 @@
 	auto_eject = 0
 	starts_loaded = 0
 	one_hand_penalty = 6 //lower power rounds
-	req_access = list(access_infantry)
+	jam_chance = 5
+	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
@@ -31,8 +41,11 @@
 
 //sec proper
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b
-	desc = "The Hephaestus Industries Z9b Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
+	name = "Z9B Bulldog"
+	desc = "The Hephaestus Industries Z9B Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
 	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
+	jam_chance = 15
+	req_access = list(access_brig)
 	firemodes = list(
 		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
@@ -50,11 +63,20 @@
 	Additionally, it features a higher capacity."
 	charge_cost = 10
 	max_shots = 20
-	req_access = list(access_infantry)
+	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null),
 		list(mode_name="burst fire", burst=2, fire_delay=1, move_delay=1, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		)
+
+//SL's
+/obj/item/weapon/gun/energy/laser/infantry/sl
+	name = "G40C carbine"
+	desc = "A Hephaestus Industries G40C carbine, designed to kill with concentrated energy blasts. In comparison to its slighty older cousin, this features better handling."
+	firemodes = list(
+		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="burst fire", burst=4, fire_delay=1, move_delay=1, one_hand_penalty=6, burst_accuracy=null, dispersion=null),
 		)
 
 /////////
@@ -65,7 +87,7 @@
 	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
 	Additionally, it does not feature the auto-eject function of the more modern version."
 	auto_eject = 0
-	req_access = list(access_infantry)
+	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 
 	firemodes = list(
@@ -80,7 +102,7 @@
 	name = "P10"
 	desc = "The Hephaestus Industries P10 - a mass produced kinetic sidearm in widespread service with the SCGDF. It has a slide restrictor, preventing quick-draw type shooting."
 	fire_delay = 12
-	req_access = list(access_infantry)
+	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
@@ -93,7 +115,7 @@
 	name = "L7 SAW"
 	desc = "A rather traditionally made L7 SAW with a pleasantly lacquered wooden pistol grip. Has 'Aussec Armoury- 2561' engraved on the reciever. \
 	It appears to have a firing restrictor installed, to prevent firing without authorization aboard the Dagon."
-	req_access = list(access_infantry)
+	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=6, burst_accuracy=null, dispersion=null),
@@ -120,6 +142,7 @@
 /////////
 /obj/item/weapon/gun/launcher/rocket/recoilless/sec
 	name = "TVP-3"
+	desc = "A much more odd version of what the original was, this is slightly different from what the TVP-2 stood for. This incorporates a hefty locking system, increasing the weight, though ensuring safety aboard a vessel."
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED) //can't be registered, but that doesn't matter as this prevents firing regardless
 	firemodes = list(
@@ -148,7 +171,7 @@
 	max_shells = 8
 	ammo_type = /obj/item/ammo_casing/sabot
 	caliber = CALIBER_SABOT
-	req_access = list(access_brig) //changed temp
+	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	jam_chance = 25 //big ol' gun. Purely for balance.
 	firemodes = list(

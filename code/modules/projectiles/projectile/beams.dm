@@ -2,7 +2,7 @@
 	name = "laser"
 	icon_state = "laser"
 	temperature = T0C + 300
-	fire_sound='sound/weapons/Laser.ogg'
+	fire_sound='sound/weapons/Laser4.wav'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
 	damage = 30
@@ -60,7 +60,7 @@
 
 /obj/item/projectile/beam/xray/midlaser
 	damage = 30
-	armor_penetration = 50
+	armor_penetration = 60
 	distance_falloff = 1
 
 /obj/item/projectile/beam/pulse
@@ -169,7 +169,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
 	damage = 65
-	armor_penetration = 10
+	armor_penetration = 25
 	stun = 3
 	weaken = 3
 	stutter = 3
@@ -213,13 +213,15 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 15
+	damage = 35//enables it to cut off limbs without too many hits
 	sharp = 1
 	edge = 1
-	damage_type = BURN
-	life_span = 5
-	pass_flags = PASS_FLAG_TABLE
-	distance_falloff = 4
+	damage_type = BRUTE
+	life_span = 4
+	armor_penetration = 65//it's an industrial grade plasma cutter, designed to effortlessly cut through heavy material.
+	distance_falloff = 8//makes up for the damage and pen
+	shrapnel_chance_multiplier = 0.0//no thanks
+	arterial_bleed_chance_multiplier = 0.0//you too
 
 	muzzle_type = /obj/effect/projectile/trilaser/muzzle
 	tracer_type = /obj/effect/projectile/trilaser/tracer

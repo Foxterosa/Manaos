@@ -35,8 +35,8 @@
 		I.darksight_tint = DARKTINT_GOOD
 
 /datum/trait/nonconductive
-	name = "Resistive Skin"
-	desc = "Your skin has a higher electrical resistivity than normal, making you less conductive."
+	name = "Piel resistiva"
+	desc = "Su piel tiene una resistividad electrica mas alta de lo normal, lo que lo hace menos conductor."
 	cost = 2 //This effects tasers!
 	var_changes = list("siemens_coefficient" = 0.75)
 
@@ -93,7 +93,7 @@
 
 /datum/trait/commune
 	name = "Telepathy"
-	desc = "Quite simply, you've the ability to project thoughts into the minds of others. How you've come across this within the frontier of space will probably forever be a mystery. Especially so, given you're probably not a Psyker."
+	desc = "Quite simply, you've the ability to project thoughts into the minds of others. A weak psychic manifestation too minor to require action from the local authorities, unlikely to ever develop into something greater."
 	cost = 2
 /datum/trait/commune/apply(var/datum/species/S,var/mob/living/carbon/human/H)
 	..(S,H)

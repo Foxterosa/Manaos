@@ -23,6 +23,71 @@
 	icon_state = "steel"
 	},
 /area/centcom/control)
+"aaf" = (
+/obj/machinery/vending/engineering{
+	req_access = list("ACCESS_MERCHANT")
+	},
+/turf/simulated/floor/tiled,
+/area/merchant_station)
+"aag" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/door/window/brigdoor/eastright{
+	req_access = list("ACCESS_MERCHANT")
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/merchant/home)
+"aah" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/brigdoor/eastright{
+	req_access = list("ACCESS_MERCHANT")
+	},
+/obj/machinery/light,
+/obj/structure/closet/walllocker/emerglocker/south,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/merchant/home)
+"aai" = (
+/obj/machinery/door/window/brigdoor/northleft{
+	req_access = list("ACCESS_MERCHANT")
+	},
+/obj/structure/table/rack,
+/turf/simulated/floor/tiled,
+/area/shuttle/merchant/home)
+"aaj" = (
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_MERCHANT")
+	},
+/obj/structure/table/rack,
+/turf/simulated/floor/tiled,
+/area/shuttle/merchant/home)
+"aak" = (
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_MERCHANT")
+	},
+/obj/structure/table/rack,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/shuttle/merchant/home)
+"aal" = (
+/obj/machinery/portable_atmospherics/canister/air/airlock,
+/obj/machinery/atmospherics/portables_connector,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/obj/machinery/door/window/brigdoor/southright{
+	req_access = list("ACCESS_MERCHANT")
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
+	},
+/turf/simulated/floor/tiled,
+/area/shuttle/merchant/home)
 "aao" = (
 /turf/space,
 /area/shuttle/escape_pod1/centcom)
@@ -9698,21 +9763,6 @@
 /obj/structure/flora/pottedplant/minitree,
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
-"aSn" = (
-/obj/machinery/portable_atmospherics/canister/air/airlock,
-/obj/machinery/atmospherics/portables_connector,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/machinery/door/window/brigdoor/southright,
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
-/turf/simulated/floor/tiled,
-/area/shuttle/merchant/home)
 "aSo" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -9804,13 +9854,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/merchant/home)
 "aSE" = (
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/merchant/home)
-"aSF" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/machinery/door/window/brigdoor/eastright,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/merchant/home)
 "aSG" = (
@@ -10119,13 +10162,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/merchant/home)
-"aTC" = (
-/obj/structure/table/reinforced,
-/obj/machinery/door/window/brigdoor/eastright,
-/obj/machinery/light,
-/obj/structure/closet/walllocker/emerglocker/south,
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/merchant/home)
 "aTD" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 9
@@ -10217,24 +10253,6 @@
 	},
 /obj/random/clipboard,
 /turf/simulated/floor/tiled/dark,
-/area/shuttle/merchant/home)
-"aTT" = (
-/obj/machinery/door/window/brigdoor/northleft,
-/obj/structure/table/rack,
-/turf/simulated/floor/tiled,
-/area/shuttle/merchant/home)
-"aTU" = (
-/obj/machinery/door/window/brigdoor/northright,
-/obj/structure/table/rack,
-/turf/simulated/floor/tiled,
-/area/shuttle/merchant/home)
-"aTX" = (
-/obj/machinery/door/window/brigdoor/northright,
-/obj/structure/table/rack,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
 "aTY" = (
 /obj/machinery/door/airlock/external{
@@ -12615,10 +12633,6 @@
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
-"yaW" = (
-/obj/machinery/vending/engineering/bearcat,
-/turf/simulated/floor/tiled,
-/area/merchant_station)
 
 (1,1,1) = {"
 ala
@@ -20743,9 +20757,9 @@ aab
 aRC
 aRA
 aRA
-aSF
+aag
 aTh
-aTC
+aah
 aRA
 aRA
 aUv
@@ -20948,7 +20962,7 @@ aSj
 aSG
 aTi
 aTD
-aTT
+aai
 aRU
 aab
 aab
@@ -21150,7 +21164,7 @@ aSj
 aSH
 aTj
 aTE
-aTU
+aaj
 aRU
 aab
 aUO
@@ -21554,7 +21568,7 @@ aSj
 aSH
 aTk
 aTE
-aTT
+aai
 aRA
 avD
 avD
@@ -21756,7 +21770,7 @@ aSk
 aSI
 aTk
 aTE
-aTU
+aaj
 aRA
 aRn
 czt
@@ -21964,7 +21978,7 @@ aMf
 aUP
 aVl
 aVK
-yaW
+aaf
 aWI
 aXa
 aXs
@@ -22160,7 +22174,7 @@ aSm
 aSH
 aTj
 aTE
-aTT
+aai
 aRA
 aMf
 aUQ
@@ -22358,11 +22372,11 @@ aQK
 aOw
 aab
 aRA
-aSn
+aal
 aSJ
 aTl
 aTE
-aTX
+aak
 aRA
 aMf
 aUR

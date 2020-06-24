@@ -186,6 +186,21 @@
 
 		edit_admin_permissions()
 
+	else if(href_list["incarn_ghost"])
+		if(!check_rights(R_SPAWN))
+			return
+
+		var/mob/dead/observer/G = locate(href_list["incarn_ghost"])
+		if(!istype(G))
+			to_chat(usr, "This will only work on /mob/dead/observer")
+
+		var/posttransformoutfit = usr.client.robust_dress_shop()
+
+		var/mob/living/carbon/human/H = G.incarnate_ghost()
+
+		if(posttransformoutfit && istype(H))
+			H.equipOutfit(posttransformoutfit)
+
 	else if(href_list["call_shuttle"])
 
 		if(!check_rights(R_ADMIN))	return
@@ -1089,6 +1104,30 @@
 
 		to_chat(M, "<span class='warning'>You have been sent to the prison station!</span>")
 		log_and_message_admins("sent [key_name_admin(M)] to the prison station.")
+
+	else if(href_list["sendbacktolobby"])
+		if(!check_rights(R_ADMIN))
+			return
+
+		var/mob/M = locate(href_list["sendbacktolobby"])
+
+		if(!isobserver(M))
+			to_chat(usr, "<span class='notice'>You can only send ghost players back to the Lobby.</span>")
+			return
+
+		if(!M.client)
+			to_chat(usr, "<span class='warning'>[M] doesn't seem to have an active client.</span>")
+			return
+
+		if(alert(usr, "Send [key_name(M)] back to Lobby?", "Message", "Yes", "No") != "Yes")
+			return
+
+		log_admin("[key_name(usr)] has sent [key_name(M)] back to the Lobby.")
+		message_admins("[key_name(usr)] has sent [key_name(M)] back to the Lobby.")
+
+		var/mob/new_player/NP = new /mob/new_player()
+		NP.key = M.ckey
+		qdel(M)
 
 	else if(href_list["tdome1"])
 		if(!check_rights(R_FUN))	return

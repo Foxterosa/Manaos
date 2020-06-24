@@ -69,7 +69,7 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 			// Check if clothing is blocking access
 			var/obj/item/I = target.get_covering_equipped_item_by_zone(target_zone)
 			if(I && (I.item_flags & ITEM_FLAG_THICKMATERIAL))
-				to_chat(user,SPAN_NOTICE("The material covering this area is too thick for you to do surgery through!"))
+				to_chat(user,SPAN_NOTICE("El material que cubre esta area es demasiado grueso para hacer una cirugia!"))
 				return FALSE
 			// Check various conditional flags.
 			if(((surgery_candidate_flags & SURGERY_NO_ROBOTIC) && BP_IS_ROBOTIC(affected)) || \
@@ -166,8 +166,8 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 	var/germ_level = user.germ_level
 	if(user.gloves)
 		germ_level = user.gloves.germ_level
-
-	E.germ_level = max(germ_level,E.germ_level) //as funny as scrubbing microbes out with clean gloves is - no.
+	if(user.get_species() != SPECIES_ADHERENT)
+		E.germ_level = max(germ_level,E.germ_level) //as funny as scrubbing microbes out with clean gloves is - no.
 
 /obj/item/proc/do_surgery(mob/living/carbon/M, mob/living/user, fuckup_prob)
 
@@ -178,7 +178,7 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 	// Check for multi-surgery drifting.
 	var/zone = user.zone_sel.selecting
 	if(LAZYACCESS(M.surgeries_in_progress, zone))
-		to_chat(user, SPAN_WARNING("You can't operate on this area while surgery is already in progress."))
+		to_chat(user, SPAN_WARNING("No puedes operar en esta area mientras la cirugia esta en progreso."))
 		return TRUE
 
 	// What surgeries does our tool/target enable?
@@ -207,7 +207,7 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 				if(istype(src, tool))
 					GLOB.surgery_tool_exception_cache[type] = TRUE
 					return FALSE
-			to_chat(user, SPAN_WARNING("You aren't sure what you could do to \the [M] with \the [src]."))
+			to_chat(user, SPAN_WARNING("No estas muy seguro de lo que podrias hacer \the [M] con \the [src]."))
 			return TRUE
 
 	// Otherwise we can make a start on surgery!
@@ -216,7 +216,7 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 			return FALSE
 		// Double-check this in case it changed between initial check and now.
 		if(zone in M.surgeries_in_progress)
-			to_chat(user, SPAN_WARNING("You can't operate on this area while surgery is already in progress."))
+			to_chat(user, SPAN_WARNING("No puedes operar en esta area mientras la cirugia esta en progreso."))
 		else if(S.can_use(user, M, zone, src) && S.is_valid_target(M))
 			var/operation_data = S.pre_surgery_step(user, M, zone, src)
 			if(operation_data)
@@ -230,7 +230,7 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 				else if ((src in user.contents) && user.Adjacent(M))
 					S.fail_step(user, M, zone, src)
 				else
-					to_chat(user, SPAN_WARNING("You must remain close to your patient to conduct surgery."))
+					to_chat(user, SPAN_WARNING("Debes de permanecer cerca del paciente para realizar la cirugia."))
 				if(!QDELETED(M))
 					LAZYREMOVE(M.surgeries_in_progress, zone) // Clear the in-progress flag.
 					if(ishuman(M))

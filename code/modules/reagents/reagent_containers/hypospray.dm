@@ -119,6 +119,7 @@
 	desc = "A rapid and safe way to administer small amounts of drugs by untrained or trained personnel."
 	icon_state = "injector"
 	item_state = "autoinjector"
+	matter = list(MATERIAL_PLASTIC = 100, MATERIAL_GLASS = 50, MATERIAL_STEEL = 30)
 	amount_per_transfer_from_this = 5
 	volume = 5
 	origin_tech = list(TECH_MATERIAL = 2, TECH_BIO = 2)
@@ -209,6 +210,11 @@
 	name = "autoinjector (peri)"
 	band_color = COLOR_PINK
 	reagents_to_add = list(/datum/reagent/peridaxon = 10)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton
+	name = "autoinjector (kompo)"
+	band_color = COLOR_RED_LIGHT
+	reagents_to_add = list(/datum/reagent/kompoton = 10)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine
 	name = "autoinjector (alky)"

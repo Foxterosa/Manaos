@@ -106,9 +106,8 @@
 
 //projectile
 /obj/item/projectile/bullet/pistol/large
-	damage = 85
-	armor_penetration = 15
-	agony = 25
+	damage = 50
+	armor_penetration = 10
 
 //mag
 /obj/item/ammo_magazine/speedloader/large
@@ -131,7 +130,7 @@
 
 //projectile
 /obj/item/projectile/bullet/rifle/military/sec
-	damage = 60 //higher damage
+	damage = 40 //higher damage
 	armor_penetration = 5 //much worse pen - frangible bullets
 	shrapnel_chance_multiplier = 2
 	arterial_bleed_chance_multiplier = 2 //higher post pen
