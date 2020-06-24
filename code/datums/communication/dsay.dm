@@ -80,7 +80,7 @@
 		lname = "[keyname][(DM && DM.anonsay) ? "*" : (DM ? "" : "^")] ([name])"
 	else
 		if(DM && DM.anonsay)						// If the person is actually observer they have the option to be anonymous
-			lname = "Ghost of [name]"
+			lname = "Fantasma de [name]"
 		else if(DM)									// Non-anons
 			lname = "[keyname] ([name])"
 		else										// Everyone else (dead people who didn't ghost yet, etc.)
@@ -88,7 +88,7 @@
 	return "<span class='name'>[lname]</span>"
 
 /decl/dsay_communication/proc/get_message(var/client/C, var/mob/M, var/message)
-	var say_verb = pick("complains","moans","whines","laments","blubbers")
+	var say_verb = pick("se queja","gime","se lamenta","balbucea","lloriquea")
 	return "[get_name(C, M)] [say_verb], <span class='message'>\"[message]\"</span>"
 
 /decl/dsay_communication/emote/get_message(var/client/C, var/mob/M, var/message)
@@ -109,7 +109,7 @@
 	if(!istype(communicator))
 		return FALSE
 	if(!communicator.holder)
-		to_chat(communicator, "<span class='warning'>No tienes los suficientes pemrisos para usar DSAY!</span>")
+		to_chat(communicator, "<span class='warning'>No tienes los suficientes permisos para usar DSAY!</span>")
 		return FALSE
 	return DSAY_ASK_BASE
 
