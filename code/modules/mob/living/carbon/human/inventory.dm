@@ -8,7 +8,7 @@ This saves us from having to call add_fingerprint() any time something is put in
 	if(ispath(outfit))
 	O = new outfit
 	else
-	O = outfit
+		O = outfit
 	if(!istype(O))
 		return 0
 	if(!O)
