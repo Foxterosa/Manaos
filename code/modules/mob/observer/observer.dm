@@ -82,7 +82,7 @@ mob/observer/check_airflow_movable()
 		throwing = null
 		to_chat(src, "<span class='notice'>You cannot move further in this direction.</span>")
 
-/mob/dead/observer/proc/incarnate_ghost()
+/mob/observer/proc/incarnate_ghost()
 	if(!client)
 		return
 
