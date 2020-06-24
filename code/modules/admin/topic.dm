@@ -186,12 +186,11 @@
 
 		edit_admin_permissions()
 
-	else if(href_list["incarn_ghost"])
-		if(!check_rights(R_SPAWN))
+		else if(href_list["incarn_ghost"])
+			if(!check_rights(R_SPAWN))
 			return
 
 		var/mob/observer/ghost/G = locate(href_list["incarn_ghost"])
-
 		if(!istype(G))
 			to_chat(usr, "This will only work on /mob/dead/observer")
 
@@ -201,7 +200,7 @@
 		var/mob/living/carbon/human/H = G.incarnate_ghost()
 		to_chat(usr, "llegue hasta aqui xd2")
 
-		if(posttransformoutfit && istype(H))
+		if(posttransformoutfit)
 			H.equipOutfit(posttransformoutfit)
 			to_chat(usr, "llegue hasta aqui xd3")
 
