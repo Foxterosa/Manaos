@@ -190,16 +190,11 @@
 		if(!check_rights(R_SPAWN))
 			return
 
-		var/mob/dead/observer/G = locateUID(href_list["incarn_ghost"])
+		var/mob/dead/observer/G = (href_list["incarn_ghost"])
 		if(!istype(G))
 			to_chat(usr, "This will only work on /mob/dead/observer")
 
-		var/posttransformoutfit = usr.client.robust_dress_shop()
-
-		var/mob/living/carbon/human/H = G.incarnate_ghost()
-
-		if(posttransformoutfit && istype(H))
-			H.equipOutfit(posttransformoutfit)
+		incarnate_ghost()
 
 	else if(href_list["call_shuttle"])
 
