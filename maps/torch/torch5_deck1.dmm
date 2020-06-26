@@ -3590,6 +3590,26 @@
 /obj/structure/curtain/open/bed,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
+"afH" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/structure/table/glass,
+/obj/item/weapon/storage/pill_bottle/spaceacillin,
+/obj/item/weapon/storage/pill_bottle/tramadol,
+/obj/item/weapon/storage/pill_bottle/dermaline,
+/obj/item/weapon/storage/pill_bottle/dexalin_plus,
+/obj/item/weapon/storage/pill_bottle/bicaridine,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/item/weapon/storage/pill_bottle/antidexafen,
+/obj/item/weapon/storage/pill_bottle/antitox,
+/obj/item/weapon/storage/pill_bottle/citalopram,
+/obj/item/weapon/storage/pill_bottle/inaprovaline,
+/obj/item/weapon/storage/pill_bottle/paracetamol,
+/turf/simulated/floor/tiled/white,
+/area/medical/equipstorage)
 "afI" = (
 /turf/simulated/wall/prepainted,
 /area/hallway/primary/firstdeck/fore)
@@ -6599,25 +6619,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
-"akd" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/structure/table/glass,
-/obj/item/weapon/storage/pill_bottle/spaceacillin,
-/obj/item/weapon/storage/pill_bottle/tramadol,
-/obj/item/weapon/storage/pill_bottle/dermaline,
-/obj/item/weapon/storage/pill_bottle/dexalin_plus,
-/obj/item/weapon/storage/pill_bottle/bicaridine,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/item/weapon/storage/pill_bottle/antidexafen,
-/obj/item/weapon/storage/pill_bottle/antitox,
-/obj/item/weapon/storage/pill_bottle/citalopram,
-/obj/item/weapon/storage/pill_bottle/inaprovaline,
-/turf/simulated/floor/tiled/white,
-/area/medical/equipstorage)
 "ake" = (
 /obj/machinery/power/breakerbox/activated{
 	RCon_tag = "First Deck Substation Bypass"
@@ -55552,7 +55553,7 @@ aaH
 ajA
 aaU
 akO
-akd
+afH
 aan
 aaa
 abP

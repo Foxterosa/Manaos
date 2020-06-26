@@ -13,10 +13,9 @@
 
 /obj/structure/closet/l3closet/general/multi/WillContain()
 	return MERGE_ASSOCS_WITH_NUM_VALUES(..(), list(
-		/obj/item/clothing/head/bio_hood/general = 5,
-		/obj/item/clothing/mask/gas/half = 5,
-		/obj/item/clothing/suit/bio_suit/general = 5,
-		/obj/item/weapon/tank/emergency/oxygen/engi = 5
+		/obj/item/clothing/head/bio_hood/general = 2,
+		/obj/item/clothing/suit/bio_suit/general = 2,
+		/obj/item/weapon/storage/med_pouch/toxin = 2
 	))
 
 
