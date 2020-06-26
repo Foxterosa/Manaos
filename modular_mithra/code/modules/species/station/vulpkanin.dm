@@ -16,7 +16,7 @@
 
 	description = "Vulpkanin es el termino usualmente utilizado para todas las modificaciones geneticas que tengan que ver con lo canino. Modificaciones geneticas de Vulpkanin, inicialmente patentadas por VeyMed, fueron hechas populares a la mitad del siglo 22, y solo han incrementado en numero desde entonces. Es un tipo de especie tan prolifico que hay comunidades enteras de poblaciones que se reproducen de forma natural y se mantienen a si mismas. Podrias ser de cualquier parte: el espacio Sol, o la Frontera, o tal vez incluso en UCG, no se muestra bien."
 
-	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_IS_ICONBASE
+	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	sexybits_location = BP_GROIN //this is possibly my favorite variable just because of how out of place it is. - cebu | what the hell does it even do -tori | Basically it just defines where you can hit them for massive (pain) damage. An entire variable dedicated to nutshots. -cebu
