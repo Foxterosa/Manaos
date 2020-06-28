@@ -1,12 +1,12 @@
 /datum/computer_file/program/suit_sensors
 	filename = "sensormonitor"
-	filedesc = "Suit Sensors Monitoring"
+	filedesc = "Monitoreo de sensores de traje"
 	nanomodule_path = /datum/nano_module/crew_monitor
 	ui_header = "crew_green.gif"
 	program_icon_state = "crew"
 	program_key_state = "med_key"
 	program_menu_icon = "heart"
-	extended_desc = "This program connects to life signs monitoring system to provide basic information on crew health."
+	extended_desc = "Este programa se conecta al sistema de monitoreo de signos de vida para proporcionar informacion basica sobre la salud de la tripulacion."
 	required_access = access_medical
 	requires_ntnet = 1
 	network_destination = "crew lifesigns monitoring system"
