@@ -15,7 +15,7 @@
 
 	description = "Los Vasilissans son una especie de personas ilustradas, se ven como gente arana. Son la unica especie que no ha sido victima de una guerra al ser descubiertas. Esto fue debido a que ya estaban en la era atomica cuando fueron encontrados por la ahora difunta NanoTrasen Surveyor Corps. Se han integrado muy bien a la sociedad interestelar, con algunos intercambios en relaciones politicas, principalmente por el hecho de que son aranas."
 
-	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_IS_ICONBASE
+	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	sexybits_location = BP_GROIN //this is possibly my favorite variable just because of how out of place it is. - cebu | what the hell does it even do -tori | Basically it just defines where you can hit them for massive (pain) damage. An entire variable dedicated to nutshots. -cebu  | do these guys even have junk in their groin??? -cebu

@@ -12118,6 +12118,17 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/fore)
+"Mg" = (
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/machinery/light/spot{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle_ceiling/torch/air,
+/area/quartermaster/hangar/top)
 "Mh" = (
 /obj/structure/catwalk,
 /turf/simulated/open,
@@ -36167,10 +36178,10 @@ uy
 QA
 Zd
 MX
-kq
-lk
-lr
-oW
+Mg
+Cg
+WI
+vH
 Ga
 Ga
 Ga
@@ -36369,12 +36380,12 @@ in
 QA
 RC
 Mp
-lr
-lr
-lr
-oW
-Ga
-Ga
+WI
+WI
+WI
+vH
+aY
+aY
 Ga
 Ga
 Ga
@@ -36576,7 +36587,7 @@ VW
 WI
 vH
 aY
-Ga
+aY
 Ga
 Ga
 Ga

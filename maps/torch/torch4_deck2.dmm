@@ -40,6 +40,13 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod6/station)
+"ad" = (
+/obj/structure/closet/crate/med_crate/trauma,
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = "F8F8F8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "ae" = (
 /obj/effect/floor_decal/corner/yellow/half{
 	icon_state = "bordercolorhalf";
@@ -696,14 +703,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bn" = (
-/obj/structure/closet/crate/med_crate/trauma,
-/obj/item/weapon/storage/firstaid/trauma,
-/obj/item/weapon/storage/firstaid/trauma,
+/obj/structure/closet/crate/med_crate/burn,
 /obj/effect/floor_decal/industrial/outline/grey{
 	color = "F8F8F8"
 	},
-/obj/item/weapon/storage/pill_bottle/bicaridine,
-/obj/item/weapon/storage/pill_bottle/bicaridine,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bo" = (
@@ -975,14 +978,10 @@
 	icon_state = "0-4"
 	},
 /obj/structure/closet/crate/med_crate/oxyloss,
-/obj/item/weapon/storage/firstaid/o2,
-/obj/item/weapon/storage/firstaid/o2,
 /obj/effect/floor_decal/industrial/outline/grey{
 	color = "F8F8F8";
 	desc = "F8F8F8"
 	},
-/obj/item/weapon/storage/pill_bottle/dexalin_plus,
-/obj/item/weapon/storage/pill_bottle/dexalin_plus,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bR" = (
@@ -1620,14 +1619,26 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
-"dc" = (
-/obj/structure/closet/crate/med_crate/burn,
-/obj/item/weapon/storage/firstaid/fire,
-/obj/effect/floor_decal/industrial/outline/grey{
-	color = "F8F8F8"
+"db" = (
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
-/obj/item/weapon/storage/pill_bottle/dermaline,
-/obj/item/weapon/storage/pill_bottle/dermaline,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/mask/muzzle,
+/obj/structure/table/rack/shelf/steel,
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
+"dc" = (
+/obj/structure/table/rack,
+/obj/item/weapon/storage/firstaid/empty,
+/obj/item/weapon/storage/firstaid/empty,
+/obj/item/weapon/storage/firstaid/empty,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "dd" = (
@@ -4151,21 +4162,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
-"ia" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/glasses/blindfold,
-/obj/item/clothing/glasses/blindfold,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/mask/muzzle,
-/obj/structure/table/rack/shelf/steel,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "ib" = (
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
@@ -15959,17 +15955,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
-"JN" = (
-/obj/item/roller,
-/obj/item/roller,
-/obj/item/roller,
-/obj/item/roller,
-/obj/structure/table/rack,
-/obj/item/weapon/storage/firstaid/empty,
-/obj/item/weapon/storage/firstaid/empty,
-/obj/item/weapon/storage/firstaid/empty,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "JX" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/seconddeck/forestarboard)
@@ -40142,7 +40127,7 @@ ag
 aB
 aB
 bq
-JN
+dc
 pz
 ee
 eR
@@ -40946,7 +40931,7 @@ aq
 aa
 aa
 aB
-bn
+ad
 bq
 bq
 PD
@@ -41148,7 +41133,7 @@ aq
 aa
 aa
 aB
-dc
+bn
 bq
 cp
 cp
@@ -41552,7 +41537,7 @@ aq
 aa
 aa
 aB
-ia
+db
 bR
 cs
 Cl
