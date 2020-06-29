@@ -53,7 +53,7 @@
 
 /obj/machinery/body_scanconsole/attack_hand(mob/user)
 	if(!connected || (connected.stat & (NOPOWER|BROKEN)))
-		to_chat(user, "<span class='warning'>Esta consola no estA conectada a un escAner corporal en funcionamiento.</span>")
+		to_chat(user, "<span class='warning'>Esta consola no esta conectada a un escaner corporal en funcionamiento.</span>")
 		return TRUE
 	return ..()
 

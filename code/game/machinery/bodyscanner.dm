@@ -35,7 +35,7 @@
 /obj/machinery/bodyscanner/verb/move_inside()
 	set src in oview(1)
 	set category = "Object"
-	set name = "Entrar del escaner corporal"
+	set name = "Entrar al escaner corporal"
 
 	if(!user_can_move_target_inside(usr,usr))
 		return
