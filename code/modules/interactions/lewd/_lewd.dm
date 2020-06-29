@@ -31,12 +31,10 @@
 
 /proc/playlewdinteractionsound(turf/turf_source, soundin, vol as num, vary, extrarange as num ,frequency, falloff, channel = 0, pressure_affected = TRUE, sound/S, envwet = -10000, envdry = 0, manual_x, manual_y)
 	var/list/hearing_mobs
-	for(var/mob/H in get_hearers_in_view(4, turf_source))
-		if(!H.client || (H.client.prefs.toggles & LEWD_VERB_SOUNDS))
-			continue
+	for(var/mob/H in hear(4, turf_source))
 		LAZYADD(hearing_mobs, H)
 	for(var/mob/H in hearing_mobs)
-		H.playsound_local(turf_source, soundin, vol, vary, frequency, falloff)
+		H.playsound_to(turf_source, soundin, vol, vary, frequency, falloff)
 
 /mob/living
 	var/has_penis = FALSE
@@ -206,9 +204,9 @@
 		var/handcount = 0
 		var/covered = 0
 		var/iscovered = FALSE
-		for(var/obj/item/bodypart/l_arm/L in C.bodyparts)
+		if(C.organs_by_name[BP_L_ARM])
 			handcount++
-		for(var/obj/item/bodypart/r_arm/R in C.bodyparts)
+		if(C.organs_by_name[BP_R_ARM])
 			handcount++
 		if(C.get_equipped_item(slot_l_hand))
 			var/obj/item/clothing/gloves/G = C.get_equipped_item(slot_l_hand)
@@ -235,15 +233,15 @@
 				return handcount
 	return FALSE
 
-/mob/living/proc/has_feet(var/nintendo = REQUIRE_ANY)
+/mob/living/proc/has_feet(nintendo = REQUIRE_ANY)
 	if(iscarbon(src))
 		var/mob/living/carbon/C = src
 		var/feetcount = 0
 		var/covered = 0
 		var/iscovered = FALSE
-		for(var/obj/item/bodypart/l_leg/L in C.bodyparts)
+		if(C.organs_by_name[BP_L_LEG])
 			feetcount++
-		for(var/obj/item/bodypart/r_leg/R in C.bodyparts)
+		if(C.organs_by_name[BP_R_LEG])
 			feetcount++
 		if(C.get_equipped_item(ITEM_SLOT_FEET))
 			var/obj/item/clothing/shoes/S = C.get_equipped_item(ITEM_SLOT_FEET)
@@ -1432,13 +1430,7 @@
 	var/list/nope = list()
 	nope += ignored_mobs
 	for(var/mob/M in range(7, src))
-		if(M.client)
-			var/client/cli = M.client
-			if(!(cli.prefs.toggles & VERB_CONSENT)) //Note: This probably could do with a specific preference
-				nope += M
-			else if(extreme && (cli.prefs.extremepref == "No"))
-				nope += M
-		else
+		if(!M.client)
 			nope += M
 	return nope
 
@@ -1455,12 +1447,13 @@
 		var/client/cli = partner.client
 		var/mob/living/carbon/C = partner
 		if(cli && istype(C))
-			if(cli.prefs.extremeharm != "No")
-				if(prob(15))
-					C.bleed(2)
-				if(prob(25))
-					C.adjustOrganLoss(ORGAN_SLOT_EYES,rand(3,7))
-					C.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(3,7))
+			if(prob(15))
+				C.adjustBleedTicks(2)
+			if(prob(25))
+				var/obj/item/organ/internal/eyes/E = C.internal_organs_by_name[species.vision_organ]
+				if(E)
+					E.damage += rand(3,7)
+				C.adjustBrainLoss(rand(3,7))
 	else
 		message = "forcefully slides their cock inbetween \the <b>[partner]</b>'s [has_eyes_lewd() ? "eyelid":"eyesocket"]."
 		set_is_fucking(partner, CUM_TARGET_EYES)
@@ -1485,12 +1478,11 @@
 		var/client/cli = partner.client
 		var/mob/living/carbon/C = partner
 		if(cli && istype(C))
-			if(cli.prefs.extremeharm != "No")
-				if(prob(15))
-					C.bleed(2)
-				if(prob(25))
-					C.adjustOrganLoss(ORGAN_SLOT_EARS, rand(3,7))
-					C.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(3,7))
+			if(prob(15))
+				C.adjustBleedTicks(2)
+			if(prob(25))
+				C.adjustEarDamage(rand(3,7))
+				C.adjustBrainLoss(rand(3,7))
 	else
 		message = "forcefully slides their cock inside \the <b>[partner]</b>'s [has_ears() ? "ear":"earsocket"]."
 		set_is_fucking(partner, CUM_TARGET_EARS)

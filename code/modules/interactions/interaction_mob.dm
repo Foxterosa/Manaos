@@ -14,9 +14,7 @@
 	return TRUE
 
 /mob/living/carbon/human/has_mouth()
-	var/obj/item/bodypart/head/headass
-	for(var/obj/item/bodypart/head/shoeonhead in bodyparts)
-		headass = shoeonhead
+	var/obj/item/organ/external/head/headass = get_organ(BP_HEAD)
 	if(headass)
 		return TRUE
 	return FALSE
