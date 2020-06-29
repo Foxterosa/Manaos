@@ -108,7 +108,7 @@
 /obj/machinery/bodyscanner/MouseDrop_T(var/mob/target, var/mob/user)
 	if(!CanMouseDrop(target, user) || !istype(target))
 		return FALSE
-	user.visible_message("<span class='notice'>[user] ayuda a [target] a entrar en el [src].</span>", "<span class='notice'>Comienzas a ayudar a [target] a entrar en el [src].</span>")
+	user.visible_message("<span class='notice'>[user] ayuda a [target] a entrar en el [src.name].</span>", "<span class='notice'>Comienzas a ayudar a [target] a entrar en el [src.name].</span>")
 	if(!do_after(user, 30, src))
 		return
 	if(!user_can_move_target_inside(target, user))

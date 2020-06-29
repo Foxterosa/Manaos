@@ -53,7 +53,7 @@
 
 /obj/machinery/organ_printer/cannot_transition_to(path)
 	if(printing)
-		return SPAN_NOTICE("Debes esperar a que la [src] termine de imprimir primero.")
+		return SPAN_NOTICE("Debes esperar a que la [src.name] termine de imprimir primero.")
 	return ..()
 
 /obj/machinery/organ_printer/physical_attack_hand(mob/user, var/choice = null)
@@ -88,7 +88,7 @@
 
 /obj/machinery/organ_printer/proc/can_print(var/choice)
 	if(stored_matter < products[choice][2])
-		visible_message("<span class='notice'>La [src] muestra una advertencia: 'No hay suficiente materia. [stored_matter] almacenada y se necesitan [products[choice][2]].'</span>")
+		visible_message("<span class='notice'>La [src.name] muestra una advertencia: 'No hay suficiente materia. [stored_matter] almacenada y se necesitan [products[choice][2]].'</span>")
 		return 0
 	return 1
 
@@ -140,22 +140,22 @@
 	var/obj/item/organ/O = ..()
 	O.robotize()
 	O.status |= ORGAN_CUT_AWAY  // robotize() resets status to 0
-	visible_message("<span class='info'>El [src] se agita por un momento, luego escupe un [O].</span>")
+	visible_message("<span class='info'>El [src.name] se agita por un momento, luego escupe un [O].</span>")
 	return O
 
 /obj/machinery/organ_printer/robot/attackby(var/obj/item/weapon/W, var/mob/user)
 	if(istype(W, /obj/item/stack/material) && W.get_material_name() == matter_type)
 		if((max_stored_matter-stored_matter) < matter_amount_per_sheet)
-			to_chat(user, "<span class='warning'>El [src] esta muy lleno.</span>")
+			to_chat(user, "<span class='warning'>El [src.name] esta muy lleno.</span>")
 			return
 		var/obj/item/stack/S = W
 		var/space_left = max_stored_matter - stored_matter
 		var/sheets_to_take = min(S.amount, Floor(space_left/matter_amount_per_sheet))
 		if(sheets_to_take <= 0)
-			to_chat(user, "<span class='warning'>El [src] esta muy lleno.</span>")
+			to_chat(user, "<span class='warning'>El [src.name] esta muy lleno.</span>")
 			return
 		stored_matter = min(max_stored_matter, stored_matter + (sheets_to_take*matter_amount_per_sheet))
-		to_chat(user, "<span class='info'>El [src] procesa la [W]. Niveles de materia almacenada: [stored_matter]</span>")
+		to_chat(user, "<span class='info'>El [src.name] procesa la [W]. Niveles de materia almacenada: [stored_matter]</span>")
 		S.use(sheets_to_take)
 		return
 	return ..()
@@ -163,7 +163,7 @@
 
 // FLESH ORGAN PRINTER
 /obj/machinery/organ_printer/flesh
-	name = "bioprinter"
+	name = "bio-impresora"
 	desc = "Es una maquina que imprime organos de reemplazo."
 	icon_state = "bioprinter"
 	base_type = /obj/machinery/organ_printer/flesh
@@ -202,15 +202,15 @@
 		// This is a very hacky way of doing of what organ/New() does if it has an owner
 		O.w_class = max(O.w_class + mob_size_difference(O.species.mob_size, MOB_MEDIUM), 1)
 
-	visible_message("<span class='info'>La [src] se agita por un momento, inyecta su ADN almacenado en la biomasa, luego escupe un [O].</span>")
+	visible_message("<span class='info'>La [src.name] se agita por un momento, inyecta su ADN almacenado en la biomasa, luego escupe un [O].</span>")
 	return O
 
 /obj/machinery/organ_printer/flesh/physical_attack_hand(mob/user)
 	if(!loaded_dna_datum || !loaded_species)
-		visible_message("<span class='info'>La [src] muestra una advertencia: 'No se guardo ADN. Inserta una muestra de sangre.'</span>")
+		visible_message("<span class='info'>La [src.name] muestra una advertencia: 'No se guardo ADN. Inserta una muestra de sangre.'</span>")
 		return
 
-	var/choice = input("Que [loaded_species.name] organo te gustaria imprimir?") as null|anything in products
+	var/choice = input("Que organo de [loaded_species.name] te gustaria imprimir?") as null|anything in products
 
 	if(!choice)
 		return
@@ -222,12 +222,12 @@
 	for(var/path in amount_list)
 		if(istype(W, path))
 			if(max_stored_matter == stored_matter)
-				to_chat(user, "<span class='warning'>La [src] esta muy llena</span>")
+				to_chat(user, "<span class='warning'>La [src.name] esta muy llena</span>")
 				return
 			if(!user.unEquip(W))
 				return
 			stored_matter += min(amount_list[path], max_stored_matter - stored_matter)
-			to_chat(user, "<span class='info'>La [src] procesa la [W]. Niveles de biomasa: [stored_matter]</span>")
+			to_chat(user, "<span class='info'>La [src.name] procesa la [W]. Niveles de biomasa: [stored_matter]</span>")
 			qdel(W)
 
 	// DNA sample from syringe.
