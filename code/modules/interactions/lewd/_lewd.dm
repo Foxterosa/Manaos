@@ -1447,8 +1447,6 @@
 		var/client/cli = partner.client
 		var/mob/living/carbon/C = partner
 		if(cli && istype(C))
-			if(prob(15))
-				C.adjustBleedTicks(2)
 			if(prob(25))
 				var/obj/item/organ/internal/eyes/E = C.internal_organs_by_name[species.vision_organ]
 				if(E)
@@ -1478,8 +1476,6 @@
 		var/client/cli = partner.client
 		var/mob/living/carbon/C = partner
 		if(cli && istype(C))
-			if(prob(15))
-				C.adjustBleedTicks(2)
 			if(prob(25))
 				C.adjustEarDamage(rand(3,7))
 				C.adjustBrainLoss(rand(3,7))
