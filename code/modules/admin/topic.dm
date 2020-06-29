@@ -1775,7 +1775,6 @@
 		var/mob/living/carbon/human/H
 		if(ishuman(M))
 			H = M
-			btypes += "All Access"
 		var/blessing = input(owner, "How would you like to bless [M]?", "Its good to be good...", "") as null|anything in btypes
 		if(!(blessing in btypes))
 			return
@@ -1792,14 +1791,6 @@
 				M.adjustOxyLoss(-25)
 				to_chat(M,"<span class='userdanger'>You feel invigorated!</span>")
 				logmsg = "a moderate heal."
-			if("All Access")
-				var/obj/item/card/id/I = H.wear_id
-				if(I)
-					var/list/access_to_give = get_all_accesses()
-					for(var/this_access in access_to_give)
-						if(!(this_access in I.access))
-							// don't have it - add it
-							I.access |= this_access
 				else
 					to_chat(usr, "<span class='warning'>ERROR: [H] is not wearing an ID card.</span>")
 				logmsg = "all access."
@@ -1818,7 +1809,6 @@
 		if(ishuman(M))
 			H = M
 			ptypes += "Brain Damage"
-			ptypes += "Floor Cluwne"
 		var/punishment = input(owner, "How would you like to smite [M]?", "Its good to be baaaad...", "") as null|anything in ptypes
 		if(!(punishment in ptypes))
 			return
@@ -1846,12 +1836,6 @@
 			if("Brain Damage")
 				H.adjustBrainLoss(75)
 				logmsg = "75 brain damage."
-			if("Floor Cluwne")
-				var/turf/T = get_turf(M)
-				var/mob/living/simple_animal/hostile/floor_cluwne/FC = new /mob/living/simple_animal/hostile/floor_cluwne(T)
-				FC.smiting = TRUE
-				FC.Acquire_Victim(M)
-				logmsg = "floor cluwne"
 		if(logmsg)
 			log_admin("[key_name(owner)] smited [key_name(M)] with: [logmsg]")
 			message_admins("[key_name_admin(owner)] smited [key_name_admin(M)] with: [logmsg]")
