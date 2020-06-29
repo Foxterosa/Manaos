@@ -1791,9 +1791,6 @@
 				M.adjustOxyLoss(-25)
 				to_chat(M,"<span class='userdanger'>You feel invigorated!</span>")
 				logmsg = "a moderate heal."
-				else
-					to_chat(usr, "<span class='warning'>ERROR: [H] is not wearing an ID card.</span>")
-				logmsg = "all access."
 		if(logmsg)
 			log_admin("[key_name(owner)] answered [key_name(M)]'s prayer with a blessing: [logmsg]")
 			message_admins("[key_name_admin(owner)] answered [key_name_admin(M)]'s prayer with a blessing: [logmsg]")
@@ -1822,12 +1819,6 @@
 				M.Weaken(5)
 				to_chat(M, "<span class='userdanger'>The gods have punished you for your sins!</span>")
 				logmsg = "a lightning bolt."
-			if("Fire Death")
-				to_chat(M,"<span class='userdanger'>You feel hotter than usual. Maybe you should lowe-wait, is that your hand melting?</span>")
-				var/turf/simulated/T = get_turf(M)
-				new /obj/effect/hotspot(T)
-				M.adjustFireLoss(150)
-				logmsg = "a firey death."
 			if("Gib")
 				M.gib(FALSE)
 				logmsg = "gibbed."
