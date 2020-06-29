@@ -14585,7 +14585,7 @@
 "CY" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/green,
-/turf/simulated/floor/carpet/orange,
+/turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "CZ" = (
 /obj/machinery/disposal,
@@ -14791,6 +14791,10 @@
 /turf/simulated/floor/plating,
 /area/command/disperser)
 "DK" = (
+/obj/random/firstaid,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
@@ -14802,7 +14806,6 @@
 	icon_state = "techfloor_edges";
 	dir = 4
 	},
-/obj/item/weapon/storage/firstaid/stab,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "DL" = (
