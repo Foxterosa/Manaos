@@ -53,6 +53,7 @@
 /obj/item/clothing/head/helmet/space/void/mining
 	name = "mining voidsuit helmet"
 	desc = "A scuffed voidsuit helmet with a boosted communication system and reinforced armor plating."
+	item_icons = list(slot_head_str = 'icons_manaos/mob/onmob/onmob_head.dmi')
 	icon_state = "rig0-mining"
 	item_state = "mining_helm"
 	item_state_slots = list(
@@ -71,6 +72,7 @@
 	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
 
 /obj/item/clothing/suit/space/void/mining
+	item_icons = list(slot_wear_suit_str = 'icons_manaos/mob/onmob/onmob_suit.dmi')
 	icon_state = "rig-mining"
 	name = "mining voidsuit"
 	desc = "A grimy, decently armored voidsuit with purple blazes and extra insulation."
@@ -271,6 +273,7 @@
 /obj/item/clothing/head/helmet/space/void/engineering/alt
 	name = "reinforced engineering voidsuit helmet"
 	desc = "A heavy, radiation-shielded voidsuit helmet with a surprisingly comfortable interior."
+	item_icons = list(slot_head_str = 'icons_manaos/mob/onmob/onmob_head.dmi')
 	icon_state = "rig0-engineeringalt"
 	item_state = "engalt_helm"
 	armor = list(
@@ -286,6 +289,7 @@
 /obj/item/clothing/suit/space/void/engineering/alt
 	name = "reinforced engineering voidsuit"
 	desc = "A bulky industrial voidsuit. It's a few generations old, but a reliable design and radiation shielding make up for the lack of climate control."
+	item_icons = list(slot_wear_suit_str = 'icons_manaos/mob/onmob/onmob_suit.dmi')
 	icon_state = "rig-engineeringalt"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -359,6 +363,7 @@
 /obj/item/clothing/head/helmet/space/void/security/alt
 	name = "riot security voidsuit helmet"
 	desc = "A somewhat tacky voidsuit helmet, a fact mitigated by heavy armor plating."
+	item_icons = list(slot_head_str = 'icons_manaos/mob/onmob/onmob_head.dmi')
 	icon_state = "rig0-secalt"
 	item_state = "secalt_helm"
 	armor = list(
@@ -372,6 +377,7 @@
 
 /obj/item/clothing/suit/space/void/security/alt
 	name = "riot security voidsuit"
+	item_icons = list(slot_wear_suit_str = 'icons_manaos/mob/onmob/onmob_suit.dmi')
 	icon_state = "rig-secalt"
 	desc = "A heavily armored voidsuit, designed to intimidate people who find black intimidating. Surprisingly slimming."
 	armor = list(
@@ -391,6 +397,7 @@
 /obj/item/clothing/head/helmet/space/void/atmos/alt
 	name = "heavy duty atmospherics voidsuit helmet"
 	desc = "A voidsuit helmet plated with an expensive heat and radiation resistant ceramic."
+	item_icons = list(slot_head_str = 'icons_manaos/mob/onmob/onmob_head.dmi')
 	icon_state = "rig0-atmosalt"
 	item_state = "atmosalt_helm"
 	light_overlay = "hardhat_light"
@@ -398,6 +405,7 @@
 /obj/item/clothing/suit/space/void/atmos/alt
 	name = "heavy duty atmos voidsuit"
 	desc = "An expensive voidsuit, rated to withstand extreme heat and even minor radiation without exceeding room temperature within."
+	item_icons = list(slot_wear_suit_str = 'icons_manaos/mob/onmob/onmob_suit.dmi')
 	icon_state = "rig-atmosalt"
 
 /obj/item/clothing/suit/space/void/atmos/alt/prepared
