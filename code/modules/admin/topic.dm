@@ -1772,7 +1772,6 @@
 			to_chat(usr, "This can only be used on instances of type /mob/living")
 			return
 		var/btypes = list("To Arrivals", "Moderate Heal")
-		var/mob/living/carbon/human/H
 		if(ishuman(M))
 			H = M
 		var/blessing = input(owner, "How would you like to bless [M]?", "Its good to be good...", "") as null|anything in btypes
