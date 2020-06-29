@@ -138,7 +138,7 @@ var/global/floorIsLava = 0
 		body += "</table>"
 
 	if(!check_rights(R_ADMIN))
-		body += {" | <A href='?src=\ref[src]holder;Bless=[M]'>Bless</A> | <A href='?_src_=holder;Smite=[M]'>Smite</A>"}
+		body += {" | <a href='?src=holder;Bless=[M]'>Bless</a> | <a href='?_src_=holder;Smite=[M]'>Smite</a>"}
 
 	if (M.client)
 		if(!istype(M, /mob/new_player))

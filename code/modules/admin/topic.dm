@@ -186,6 +186,70 @@
 
 		edit_admin_permissions()
 
+	else if(href_list["Bless"])
+		if(!check_rights(R_ADMIN))
+			return
+		var/mob/living/carbon/human/M = locate(href_list["Bless"])
+		if(!istype(M))
+			to_chat(usr, "This can only be used on instances of type /mob/living")
+			return
+		var/btypes = list("To Arrivals", "Moderate Heal")
+		var/blessing = input(owner, "How would you like to bless [M]?", "Its good to be good...", "") as null|anything in btypes
+		if(!(blessing in btypes))
+			return
+		var/logmsg = null
+		switch(blessing)
+			if("To Arrivals")
+				M.forceMove(pick(GLOB.latejoin))
+				to_chat(M, "<span class='userdanger'>You are abruptly pulled through space!</span>")
+				logmsg = "a teleport to arrivals."
+			if("Moderate Heal")
+				M.adjustBruteLoss(-25)
+				M.adjustFireLoss(-25)
+				M.adjustToxLoss(-25)
+				M.adjustOxyLoss(-25)
+				to_chat(M,"<span class='userdanger'>You feel invigorated!</span>")
+				logmsg = "a moderate heal."
+		if(logmsg)
+			log_admin("[key_name(owner)] answered [key_name(M)]'s prayer with a blessing: [logmsg]")
+			message_admins("[key_name_admin(owner)] answered [key_name_admin(M)]'s prayer with a blessing: [logmsg]")
+	else if(href_list["Smite"])
+		if(!check_rights(R_ADMIN))
+			return
+		var/mob/living/M = locate(href_list["Smite"])
+		var/mob/living/carbon/human/H
+		if(!istype(M))
+			to_chat(usr, "This can only be used on instances of type /mob/living")
+			return
+		var/ptypes = list("Lightning bolt", "Fire Death", "Gib")
+		if(ishuman(M))
+			H = M
+			ptypes += "Brain Damage"
+		var/punishment = input(owner, "How would you like to smite [M]?", "Its good to be baaaad...", "") as null|anything in ptypes
+		if(!(punishment in ptypes))
+			return
+		var/logmsg = null
+		switch(punishment)
+			// These smiting types are valid for all living mobs
+			if("Lightning bolt")
+				M.electrocute_act(5, "Lightning Bolt", safety = TRUE, override = TRUE)
+				playsound(get_turf(M), 'sound/magic/lightningshock.ogg', 50, 1, -1)
+				M.adjustFireLoss(75)
+				M.Weaken(5)
+				to_chat(M, "<span class='userdanger'>The gods have punished you for your sins!</span>")
+				logmsg = "a lightning bolt."
+			if("Gib")
+				M.gib(FALSE)
+				logmsg = "gibbed."
+
+			// These smiting types are only valid for ishuman() mobs
+			if("Brain Damage")
+				H.adjustBrainLoss(75)
+				logmsg = "75 brain damage."
+		if(logmsg)
+			log_admin("[key_name(owner)] smited [key_name(M)] with: [logmsg]")
+			message_admins("[key_name_admin(owner)] smited [key_name_admin(M)] with: [logmsg]")
+
 	else if(href_list["incarn_ghost"])
 		if(!check_rights(R_SPAWN))
 			return
@@ -1781,69 +1845,6 @@
 		src.admincaster_feed_channel.locked = !src.admincaster_feed_channel.locked
 		src.access_news_network()
 
-	else if(href_list["Bless"])
-		if(!check_rights(R_ADMIN))
-			return
-		var/mob/living/M = locate(href_list["Bless"])
-		if(!istype(M))
-			to_chat(usr, "This can only be used on instances of type /mob/living")
-			return
-		var/btypes = list("To Arrivals", "Moderate Heal")
-		var/blessing = input(owner, "How would you like to bless [M]?", "Its good to be good...", "") as null|anything in btypes
-		if(!(blessing in btypes))
-			return
-		var/logmsg = null
-		switch(blessing)
-			if("To Arrivals")
-				M.forceMove(pick(GLOB.latejoin))
-				to_chat(M, "<span class='userdanger'>You are abruptly pulled through space!</span>")
-				logmsg = "a teleport to arrivals."
-			if("Moderate Heal")
-				M.adjustBruteLoss(-25)
-				M.adjustFireLoss(-25)
-				M.adjustToxLoss(-25)
-				M.adjustOxyLoss(-25)
-				to_chat(M,"<span class='userdanger'>You feel invigorated!</span>")
-				logmsg = "a moderate heal."
-		if(logmsg)
-			log_admin("[key_name(owner)] answered [key_name(M)]'s prayer with a blessing: [logmsg]")
-			message_admins("[key_name_admin(owner)] answered [key_name_admin(M)]'s prayer with a blessing: [logmsg]")
-	else if(href_list["Smite"])
-		if(!check_rights(R_ADMIN))
-			return
-		var/mob/living/M = locate(href_list["Smite"])
-		var/mob/living/carbon/human/H
-		if(!istype(M))
-			to_chat(usr, "This can only be used on instances of type /mob/living")
-			return
-		var/ptypes = list("Lightning bolt", "Fire Death", "Gib")
-		if(ishuman(M))
-			H = M
-			ptypes += "Brain Damage"
-		var/punishment = input(owner, "How would you like to smite [M]?", "Its good to be baaaad...", "") as null|anything in ptypes
-		if(!(punishment in ptypes))
-			return
-		var/logmsg = null
-		switch(punishment)
-			// These smiting types are valid for all living mobs
-			if("Lightning bolt")
-				M.electrocute_act(5, "Lightning Bolt", safety = TRUE, override = TRUE)
-				playsound(get_turf(M), 'sound/magic/lightningshock.ogg', 50, 1, -1)
-				M.adjustFireLoss(75)
-				M.Weaken(5)
-				to_chat(M, "<span class='userdanger'>The gods have punished you for your sins!</span>")
-				logmsg = "a lightning bolt."
-			if("Gib")
-				M.gib(FALSE)
-				logmsg = "gibbed."
-
-			// These smiting types are only valid for ishuman() mobs
-			if("Brain Damage")
-				H.adjustBrainLoss(75)
-				logmsg = "75 brain damage."
-		if(logmsg)
-			log_admin("[key_name(owner)] smited [key_name(M)] with: [logmsg]")
-			message_admins("[key_name_admin(owner)] smited [key_name_admin(M)] with: [logmsg]")
 	else if(href_list["ac_submit_new_channel"])
 		var/check = 0
 		for(var/datum/feed_channel/FC in news_network.network_channels)
