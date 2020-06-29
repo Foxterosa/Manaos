@@ -1,7 +1,7 @@
 //Also contains /obj/structure/closet/body_bag because I doubt anyone would think to look for bodybags in /object/structures
 
 /obj/item/bodybag
-	name = "bolsa para cadaveres2"
+	name = "bolsa para cadaveres"
 	desc = "Una bolsa plegada disenada para el almacenamiento y transporte de cadaveres."
 	icon = 'icons/obj/closets/bodybag.dmi'
 	icon_state = "bodybag_folded"
