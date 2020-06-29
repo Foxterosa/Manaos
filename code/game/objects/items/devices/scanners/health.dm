@@ -22,7 +22,7 @@
 		return
 
 	if ((MUTATION_CLUMSY in user.mutations) && prob(50))
-		user.visible_message("<span class='notice'>[user] ejecuta el [scanner] sobre el suelo.")
+		user.visible_message("<span class='notice'>[user] ejecuta el analizador de salud sobre el suelo.")
 		to_chat(user, "<span class='notice'><b>Resultados del escaneo del suelo:</b></span>")
 		to_chat(user, "Estado general: saludable</span>")
 		return
@@ -41,17 +41,17 @@
 				for(var/mob/living/carbon/human/L in scan_content)
 					scan_subject = L
 			else if (scan_content.len > 1)
-				to_chat(user, "<span class='warning'>El [scanner] recoge multiples lecturas dentro de [target], demasiado juntos para escanear correctamente.</span>")
+				to_chat(user, "<span class='warning'>El analizador de salud recoge multiples lecturas dentro de [target], demasiado juntos para escanear correctamente.</span>")
 				return
 			else
-				to_chat(user, "El [scanner] no detecta a nadie dentro de [target].")
+				to_chat(user, "El analizador de salud no detecta a nadie dentro de [target].")
 				return
 
 	if(!scan_subject)
 		return
 
 	if (scan_subject.isSynthetic())
-		to_chat(user, "<span class='warning'>El [scanner] esta disenado solo para pacientes humanoides organicos.</span>")
+		to_chat(user, "<span class='warning'>El analizador de salud esta disenado solo para pacientes humanoides organicos.</span>")
 		return
 
 	. = medical_scan_results(scan_subject, verbose, user.get_skill_value(SKILL_MEDICAL))
