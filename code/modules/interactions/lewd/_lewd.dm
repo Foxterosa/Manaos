@@ -23,6 +23,25 @@
 #define REQUIRE_UNEXPOSED 2
 #define REQUIRE_ANY 3
 
+
+/mob/living/carbon/proc/is_groin_exposed(list/L)
+	if(!L)
+		L = get_equipped_items()
+	for(var/A in L)
+		var/obj/item/I = A
+		if(I.body_parts_covered & LOWER_TORSO)
+			return FALSE
+	return TRUE
+
+/mob/living/carbon/proc/is_chest_exposed(list/L)
+	if(!L)
+		L = get_equipped_items()
+	for(var/A in L)
+		var/obj/item/I = A
+		if(I.body_parts_covered & UPPER_TORSO)
+			return FALSE
+	return TRUE
+
 /*--------------------------------------------------
   -------------------MOB STUFF----------------------
   --------------------------------------------------
@@ -96,18 +115,18 @@
 /mob/living/proc/has_penis(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/genital/peepee = C.getorganslot(ORGAN_SLOT_PENIS)
-		if(peepee)
+		var/obj/item/organ/genital/peepee = C.organs_by_name(BP_GROIN)
+		if(peepee && gender == MALE || gender == PLURAL)
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					if(peepee.is_exposed())
+					if(C.is_groin_exposed())
 						return TRUE
 					else
 						return FALSE
 				if(REQUIRE_UNEXPOSED)
-					if(!peepee.is_exposed())
+					if(!C.is_groin_exposed())
 						return TRUE
 					else
 						return FALSE
@@ -118,18 +137,19 @@
 /mob/living/proc/has_balls(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/genital/peepee = C.getorganslot(ORGAN_SLOT_TESTICLES)
+		var/obj/item/organ/genital/peepee = C.organs_by_name(BP_GROIN)
+		if(peepee && gender == MALE || gender == PLURAL)
 		if(peepee)
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					if(peepee.is_exposed())
+					if(C.is_groin_exposed())
 						return TRUE
 					else
 						return FALSE
 				if(REQUIRE_UNEXPOSED)
-					if(!peepee.is_exposed())
+					if(!C.is_groin_exposed())
 						return TRUE
 					else
 						return FALSE
@@ -140,18 +160,19 @@
 /mob/living/proc/has_vagina(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/genital/peepee = C.getorganslot(ORGAN_SLOT_VAGINA)
+		var/obj/item/organ/genital/peepee = C.organs_by_name(BP_GROIN)
+		if(peepee && gender == FEMAE || gender == PLURAL)
 		if(peepee)
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					if(peepee.is_exposed())
+					if(C.is_groin_exposed())
 						return TRUE
 					else
 						return FALSE
 				if(REQUIRE_UNEXPOSED)
-					if(!peepee.is_exposed())
+					if(!C.is_groin_exposed())
 						return TRUE
 					else
 						return FALSE
@@ -162,18 +183,19 @@
 /mob/living/proc/has_breasts(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/genital/peepee = C.getorganslot(ORGAN_SLOT_BREASTS)
+		var/obj/item/organ/genital/peepee = C.organs_by_name(BP_CHEST)
+		if(peepee && gender == FEMAE || gender == PLURAL)
 		if(peepee)
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					if(peepee.is_exposed())
+					if(C.is_groin_exposed())
 						return TRUE
 					else
 						return FALSE
 				if(REQUIRE_UNEXPOSED)
-					if(!peepee.is_exposed())
+					if(!C.is_groin_exposed())
 						return TRUE
 					else
 						return FALSE
@@ -362,7 +384,7 @@
 /mob/living/proc/is_topless()
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = src
-		if((!(H.wear_suit) || !(H.wear_suit.body_parts_covered & BP_CHEST)) && (!(H.w_uniform) || !(H.w_uniform.body_parts_covered & BP_CHEST)))
+		if((!(H.wear_suit) || !(H.wear_suit.body_parts_covered & UPPER_TORSO)) && (!(H.w_uniform) || !(H.w_uniform.body_parts_covered & UPPER_TORSO)))
 			return TRUE
 	else
 		return TRUE
@@ -370,7 +392,7 @@
 /mob/living/proc/is_bottomless()
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = src
-		if((!(H.wear_suit) || !(H.wear_suit.body_parts_covered & BP_GROIN)) && (!(H.w_uniform) || !(H.w_uniform.body_parts_covered & BP_GROIN)))
+		if((!(H.wear_suit) || !(H.wear_suit.body_parts_covered & LOWER_TORSO)) && (!(H.w_uniform) || !(H.w_uniform.body_parts_covered & LOWER_TORSO)))
 			return TRUE
 	else
 		return TRUE
@@ -589,10 +611,10 @@
 
 	if(multiorgasms > (sexual_potency * 0.34)) //AAAAA, WE DONT WANT NEGATIVES HERE, RE
 		refractory_period = world.time + rand(300, 900) - sexual_potency//sex cooldown
-		src.set_drugginess(rand(20, 30))
+		src.druggy += rand(20, 30)
 	else
 		refractory_period = world.time + rand(300, 900) - sexual_potency
-		src.set_drugginess(rand(5, 10))
+		src.druggy += rand(5, 10)
 	set_lust(0)
 
 /mob/living/cum(mob/living/partner, target_orifice)
