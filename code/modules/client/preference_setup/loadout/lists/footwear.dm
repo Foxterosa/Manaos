@@ -9,6 +9,10 @@
 	path = /obj/item/clothing/shoes/athletic
 	flags = GEAR_HAS_COLOR_SELECTION
 
+/datum/gear/shoes/kasumi
+	display_name = "botas de Kasumi largas"
+	path = /obj/item/clothing/shoes/kasumi
+
 /datum/gear/shoes/boots
 	display_name = "botas"
 	path = /obj/item/clothing/shoes
