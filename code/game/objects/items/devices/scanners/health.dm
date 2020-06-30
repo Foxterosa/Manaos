@@ -151,7 +151,7 @@
 		dat += "[b]Precion sanguinea:[endb] Ninguna"
 
 	// Body temperature.
-	dat += "Tempetaruta corporal: [H.bodytemperature-T0C]&deg;C ([H.bodytemperature*1.8-459.67]&deg;F)"
+	dat += "Temperatura corporal: [H.bodytemperature-T0C]&deg;C ([H.bodytemperature*1.8-459.67]&deg;F)"
 
 	// Radiation.
 	switch(H.radiation)
