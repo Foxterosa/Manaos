@@ -506,32 +506,6 @@
 	write_log_target = "had their nuts slapped by"
 
 //Weird shit section
-/datum/interaction/lewd/earfuck
-	command = "earfuck"
-	description = "Fuck their ear."
-	interaction_sound = null
-	simple_message = "USER penetrates TARGET's ear!"
-	require_user_penis = REQUIRE_EXPOSED
-	require_target_ears = REQUIRE_EXPOSED
-	max_distance = 1
-	write_log_user = "earfucked"
-	write_log_target = "had their ear fucked by"
-	extreme = TRUE
-
-/datum/interaction/lewd/earfuck/display_interaction(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	user.do_earfuck(target)
-
-/datum/interaction/lewd/earfuck/earsocketfuck
-	command = "earsocketfuck"
-	description = "Fuck their earsocket."
-	interaction_sound = null
-	simple_message = "USER penetrates TARGET's earsocket!"
-	require_user_penis = REQUIRE_EXPOSED
-	require_target_earsockets = REQUIRE_EXPOSED
-	max_distance = 1
-	write_log_user = "earsocket fucked"
-	write_log_target = "had their earsocket fucked by"
-	extreme = TRUE
 
 /datum/interaction/lewd/eyefuck
 	command = "eyefuck"
@@ -543,7 +517,7 @@
 	max_distance = 1
 	write_log_user = "eyefucked"
 	write_log_target = "had their eye fucked by"
-	extreme = TRUE
+
 
 /datum/interaction/lewd/eyefuck/display_interaction(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.do_eyefuck(target)
@@ -558,5 +532,5 @@
 	max_distance = 1
 	write_log_user = "eyesocketfucked"
 	write_log_target = "had their eyesocket fucked by"
-	extreme = TRUE
+
 //

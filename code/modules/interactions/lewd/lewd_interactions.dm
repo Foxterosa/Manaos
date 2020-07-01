@@ -41,7 +41,6 @@
 	simple_style = "danger"
 	interaction_sound = 'sound/interactions/slap.ogg'
 	needs_physical_contact = TRUE
-	require_ooc_consent = TRUE
 	max_distance = 1
 
 	write_log_user = "ass-slapped"
@@ -89,13 +88,8 @@
 
 	//"just fucking kill me" variables
 	//also the same logic as before
-	var/extreme = FALSE //Boolean. Used to hide extreme shit from those who do not want it.
-	var/require_target_ears
-	var/require_target_earsockets
 	var/require_target_eyes
 	var/require_target_eyesockets
-	var/require_user_ears
-	var/require_user_earsockets
 	var/require_user_eyes
 	var/require_user_eyesockets
 	//
@@ -268,43 +262,6 @@
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Your eyesockets need to be unexposed.</span>")
 						return FALSE
-
-		if(require_user_ears)
-			switch(require_user_ears)
-				if(REQUIRE_EXPOSED)
-					if(!user.has_ears(REQUIRE_EXPOSED))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>Your ears need to be exposed.</span>")
-						return FALSE
-				if(REQUIRE_ANY)
-					if(!user.has_ears(REQUIRE_ANY))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>You don't have ears.</span>")
-						return FALSE
-				if(REQUIRE_UNEXPOSED)
-					if(!user.has_ears(REQUIRE_UNEXPOSED))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>Your ears need to be unexposed.</span>")
-						return FALSE
-
-		if(require_user_earsockets)
-			switch(require_user_earsockets)
-				if(REQUIRE_EXPOSED)
-					if(!user.has_earsockets(REQUIRE_EXPOSED))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>Your earsockets need to be exposed.</span>")
-						return FALSE
-				if(REQUIRE_ANY)
-					if(!user.has_earsockets(REQUIRE_ANY))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>You still have eyes.</span>")
-						return FALSE
-				if(REQUIRE_UNEXPOSED)
-					if(!user.has_earsockets(REQUIRE_UNEXPOSED))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>Your earsockets need to be unexposed.</span>")
-						return FALSE
-
 		return FALSE
 	return FALSE
 
@@ -464,42 +421,6 @@
 							to_chat(user, "<span class = 'warning'>Their eyesockets need to be unexposed.</span>")
 						return FALSE
 
-		if(require_target_ears)
-			switch(require_target_ears)
-				if(REQUIRE_EXPOSED)
-					if(!target.has_ears(REQUIRE_EXPOSED))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>Their ears need to be exposed.</span>")
-						return FALSE
-				if(REQUIRE_ANY)
-					if(!target.has_ears(REQUIRE_ANY))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>They don't have ears.</span>")
-						return FALSE
-				if(REQUIRE_UNEXPOSED)
-					if(!target.has_ears(REQUIRE_UNEXPOSED))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>Their ears need to be unexposed.</span>")
-						return FALSE
-
-		if(require_target_earsockets)
-			switch(require_target_earsockets)
-				if(REQUIRE_EXPOSED)
-					if(!target.has_earsockets(REQUIRE_EXPOSED))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>Their earsockets need to be exposed.</span>")
-						return FALSE
-				if(REQUIRE_ANY)
-					if(!target.has_earsockets(REQUIRE_ANY))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>They still have eyes.</span>")
-						return FALSE
-				if(REQUIRE_UNEXPOSED)
-					if(!target.has_earsockets(REQUIRE_UNEXPOSED))
-						if(!silent)
-							to_chat(user, "<span class = 'warning'>Their earsockets need to be unexposed.</span>")
-						return FALSE
-
 		if(require_target_bottomless && !target.is_bottomless())
 			if(!silent)
 				to_chat(user, "<span class = 'warning'>Their clothes are in the way.</span>")
@@ -533,8 +454,6 @@
 	if(user.stat == DEAD)
 		to_chat(user, "<span class='warning'>You cannot do that while deceased!</span>")
 		return
-	if(extreme)
-		return "<font color='#FF0000'><b>EXTREME:</b></font> [..()]"
 	return "<font color='#FF0000'><b>LEWD:</b></font> [..()]"
 
 /mob/living/carbon/human/list_interaction_attributes(var/mob/living/LM)
@@ -554,10 +473,7 @@
 		var/client/ucli = LM.client
 		if(!ucli)
 			if(!get_equipped_item(slot_l_ear) && !get_equipped_item(slot_r_ear))
-				if(has_ears())
-					dat += "<br>...have unprotected ears."
-				else
-					dat += "<br>...have a hole where their ears should be."
+				dat += "<br>...have a hole where their ears should be."
 			else
 				dat += "<br>...have covered ears."
 			if(!get_equipped_item(slot_glasses))

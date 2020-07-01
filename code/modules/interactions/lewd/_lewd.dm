@@ -6,7 +6,6 @@
 #define CUM_TARGET_BREASTS "breasts"
 #define CUM_TARGET_FEET "feet"
 //Weird defines go here
-#define CUM_TARGET_EARS "ears"
 #define CUM_TARGET_EYES "eyes"
 //
 #define GRINDING_FACE_WITH_ANUS "faceanus"
@@ -262,8 +261,8 @@
 			feetcount++
 		if(C.organs_by_name[BP_R_LEG])
 			feetcount++
-		if(C.get_equipped_item(ITEM_SLOT_FEET))
-			var/obj/item/clothing/shoes/S = C.get_equipped_item(ITEM_SLOT_FEET)
+		if(C.get_equipped_item(slot_shoes))
+			var/obj/item/clothing/shoes/S = C.get_equipped_item(slot_shoes)
 			covered = S.body_parts_covered
 		if(covered & FEET)
 			iscovered = TRUE
@@ -287,55 +286,10 @@
 /mob/living/proc/get_num_feet()
 	return has_feet(REQUIRE_ANY)
 
-//weird procs go here
-/mob/living/proc/has_ears(var/nintendo = REQUIRE_ANY)
-	var/mob/living/carbon/C = src
-	if(istype(C))
-		var/obj/item/organ/peepee = C.getorganslot(ORGAN_SLOT_EARS)
-		if(peepee)
-			switch(nintendo)
-				if(REQUIRE_ANY)
-					return TRUE
-				if(REQUIRE_EXPOSED)
-					if(C.get_equipped_item(ITEM_SLOT_EARS))
-						return FALSE
-					else
-						return TRUE
-				if(REQUIRE_UNEXPOSED)
-					if(!C.get_equipped_item(ITEM_SLOT_EARS))
-						return FALSE
-					else
-						return TRUE
-				else
-					return TRUE
-	return FALSE
-
-/mob/living/proc/has_earsockets(var/nintendo = REQUIRE_ANY)
-	var/mob/living/carbon/C = src
-	if(istype(C))
-		var/obj/item/organ/peepee = C.getorganslot(ORGAN_SLOT_EARS)
-		if(!peepee)
-			switch(nintendo)
-				if(REQUIRE_ANY)
-					return TRUE
-				if(REQUIRE_EXPOSED)
-					if(C.get_equipped_item(ITEM_SLOT_EARS))
-						return FALSE
-					else
-						return TRUE
-				if(REQUIRE_UNEXPOSED)
-					if(!C.get_equipped_item(ITEM_SLOT_EARS) && !C.get_equipped_item(ITEM_SLOT_EARS))
-						return FALSE
-					else
-						return TRUE
-				else
-					return TRUE
-	return FALSE
-
 /mob/living/proc/has_eyes_lewd(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/peepee = C.getorganslot(ORGAN_SLOT_EYES)
+		var/obj/item/organ/peepee = C.internal_organs_by_name[BP_EYES]
 		if(peepee)
 			switch(nintendo)
 				if(REQUIRE_ANY)
@@ -357,7 +311,7 @@
 /mob/living/proc/has_eyesockets(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/peepee = C.getorganslot(ORGAN_SLOT_EYES)
+		var/obj/item/organ/peepee = C.internal_organs_by_name[BP_EYES]
 		if(!peepee)
 			switch(nintendo)
 				if(REQUIRE_ANY)
@@ -375,7 +329,6 @@
 				else
 					return TRUE
 	return FALSE
-//
 
 
 /mob/living/proc/is_topless()
@@ -486,13 +439,6 @@
 						else
 							message = "cums on the floor!"
 				//weird shit goes here
-				if(CUM_TARGET_EARS)
-					if(partner.has_ears())
-						message = "cums inside \the <b>[partner]</b>'s ear."
-						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
-					else
-						message = "cums inside \the <b>[partner]</b>'s earsocket."
-						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 				if(CUM_TARGET_EYES)
 					if(partner.has_eyes_lewd())
 						message = "cums on \the <b>[partner]</b>'s eyeball."
@@ -563,13 +509,6 @@
 						else
 							message = "squirts on the floor!"
 				//weird shit goes here
-				if(CUM_TARGET_EARS)
-					if(partner.has_ears())
-						message = "squirts on \the <b>[partner]</b>'s ear."
-						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
-					else
-						message = "squirts on \the <b>[partner]</b>'s earsocket."
-						partner.reagents.add_reagent(/datum/reagent/drink/semen, rand(8,12))
 				if(CUM_TARGET_EYES)
 					if(partner.has_eyes_lewd())
 						message = "squirts on \the <b>[partner]</b>'s eyeball."
@@ -1482,31 +1421,3 @@
 	partner.handle_post_sex(LOW_LUST, null, src)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
-
-/mob/living/proc/do_earfuck(mob/living/partner)
-	var/message
-
-	if(is_fucking(partner, CUM_TARGET_EARS))
-		message = "[pick(
-			"pounds into \the <b>[partner]</b>'s [has_eyes_lewd() ? "ear":"earsocker"].",
-			"shoves their dick deep into \the <b>[partner]</b>'s skull",
-			"thrusts in and out of \the <b>[partner]</b>'s [has_eyes_lewd() ? "ear":"eyesocket"].",
-			"goes balls deep into \the <b>[partner]</b>'s cranium over and over again.")]"
-		var/client/cli = partner.client
-		var/mob/living/carbon/C = partner
-		if(cli && istype(C))
-			if(prob(25))
-				C.adjustEarDamage(rand(3,7))
-				C.adjustBrainLoss(rand(3,7))
-	else
-		message = "forcefully slides their cock inside \the <b>[partner]</b>'s [has_ears() ? "ear":"earsocket"]."
-		set_is_fucking(partner, CUM_TARGET_EARS)
-
-	playlewdinteractionsound(loc, pick('sound/interactions/champ1.ogg',
-						'sound/interactions/champ2.ogg'), 50, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting(TRUE))
-	handle_post_sex(NORMAL_LUST, CUM_TARGET_EARS, partner)
-	partner.handle_post_sex(LOW_LUST, null, src)
-	partner.dir = get_dir(partner,src)
-	do_fucking_animation(get_dir(src, partner))
-//
