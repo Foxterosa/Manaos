@@ -69,7 +69,7 @@
 	var/refractory_period = 0
 	var/last_interaction_time = 0
 	var/datum/interaction/lewd/last_lewd_datum //Recording our last lewd datum allows us to do stuff like custom cum messages.
-											   //Yes i feel like an idiot writing this.
+	//											Yes i feel like an idiot writing this.
 	var/cleartimer //Timer for clearing the "last_lewd_datum". This prevents some oddities.
 
 /mob/living/proc/clear_lewd_datum()
