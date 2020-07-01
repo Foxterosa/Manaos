@@ -156,30 +156,3 @@ var/list/interactions
 	user.last_interaction_time = world.time + 6
 	if(interaction_sound)
 		playsound(get_turf(user), interaction_sound, 50, 1, -1)
-	return
-/*
-/atom/movable/attack_hand(mob/living/carbon/human/user)
-	. = ..()
-	if(can_buckle && buckled_mob)
-		if(user_unbuckle_mob(user))
-			return TRUE
-
-/atom/movable/MouseDrop_T(mob/living/carbon/human/M, mob/living/carbon/human/user)
-	. = ..()
-	if(can_buckle && istype(M) && !buckled_mob)
-		if(user_buckle_mob(M, user))
-			return TRUE
-
-
-/atom/movable/attack_hand(mob/living/carbon/human/user)
-	. = ..()
-	if(can_buckle && buckled_mob)
-		if(user_unbuckle_mob(user))
-			return TRUE
-
-/atom/movable/MouseDrop_T(mob/living/carbon/human/M, mob/living/carbon/human/user)
-	. = ..()
-	if(can_buckle && istype(M) && !buckled_mob)
-		if(user_buckle_mob(M, user))
-			return TRUE
-*/
