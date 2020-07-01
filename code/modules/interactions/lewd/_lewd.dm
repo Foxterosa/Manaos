@@ -927,10 +927,6 @@
 		message = pick(list("wedges a digit into the side of <b>[partner]</b>'s jaw and pries it open before using their other hand to shove their whole nutsack inside!", "stands with their BP_GROIN inches away from [partner]'s face, then thrusting their hips forward and smothering [partner]'s whole face with their heavy ballsack."))
 		set_is_fucking(partner , NUTS_TO_FACE)
 
-	/*playlewdinteractionsound(loc, pick('sound/interactions/nuts1.ogg',
-						'sound/interactions/nuts2.ogg',
-						'sound/interactions/nuts3.ogg',
-						'sound/interactions/nuts4.ogg'), 70, 1, -1)*/ //These files don't even exist but nobody noticed because double-quotes were used instead of single.
 	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
 	handle_post_sex(lust_increase, CUM_TARGET_MOUTH, partner)
 	partner.dir = get_dir(partner,src)
