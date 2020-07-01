@@ -115,7 +115,7 @@
 	var/mob/living/carbon/C = src
 	if(istype(C))
 		var/obj/item/organ/peepee = C.organs_by_name[BP_GROIN]
-		if(peepee && gender == MALE || gender == PLURAL)
+		if(peepee && (gender == MALE || gender == PLURAL))
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
@@ -137,7 +137,7 @@
 	var/mob/living/carbon/C = src
 	if(istype(C))
 		var/obj/item/organ/peepee = C.organs_by_name[BP_GROIN]
-		if(peepee && gender == MALE || gender == PLURAL)
+		if(peepee && (gender == MALE || gender == PLURAL))
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
@@ -159,7 +159,7 @@
 	var/mob/living/carbon/C = src
 	if(istype(C))
 		var/obj/item/organ/peepee = C.organs_by_name[BP_GROIN]
-		if(peepee && gender == FEMALE || gender == PLURAL)
+		if(peepee && (gender == FEMALE || gender == PLURAL))
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
@@ -181,7 +181,7 @@
 	var/mob/living/carbon/C = src
 	if(istype(C))
 		var/obj/item/organ/peepee = C.organs_by_name[BP_CHEST]
-		if(peepee && gender == FEMALE || gender == PLURAL)
+		if(peepee && (gender == FEMALE || gender == PLURAL))
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
