@@ -92,7 +92,6 @@
 	var/require_target_eyesockets
 	var/require_user_eyes
 	var/require_user_eyesockets
-	//
 
 	var/user_refractory_cost
 	var/target_refractory_cost

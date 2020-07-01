@@ -532,5 +532,3 @@
 	max_distance = 1
 	write_log_user = "eyesocketfucked"
 	write_log_target = "had their eyesocket fucked by"
-
-//
