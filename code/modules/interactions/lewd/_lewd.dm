@@ -1145,19 +1145,19 @@
 		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("grinds their [get_shoes()] into <b>[partner]</b>'s face.",
 				"presses their footwear down hard on <b>[partner]</b>'s face.",
-				"rubs off the dirt from their [get_shoes()] onto <b>[partner]</b>'s face."))]</span>"
+				"rubs off the dirt from their [get_shoes()] onto <b>[partner]</b>'s face."))]"
 		else
 			message = "[pick(list("grinds their bare feet into <b>[partner]</b>'s face.",
 				"deviously covers <b>[partner]</b>'s mouth and nose with their bare feet.",
-				"runs the soles of their bare feet against <b>[partner]</b>'s lips."))]</span>"
+				"runs the soles of their bare feet against <b>[partner]</b>'s lips."))]"
 
 	else if(is_fucking(partner, GRINDING_MOUTH_WITH_FEET))
 		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("pulls their [get_shoes()] out of <b>[partner]</b>'s mouth and puts them on their face.",
-				"slowly retracts their [get_shoes()] from <b>[partner]</b>'s mouth, putting them on their face instead."))]</span>"
+				"slowly retracts their [get_shoes()] from <b>[partner]</b>'s mouth, putting them on their face instead."))]"
 		else
 			message = "[pick(list("pulls their bare feet out of <b>[partner]</b>'s mouth and rests them on their face instead.",
-				"retracts their bare feet from <b>[partner]</b>'s mouth and grinds them into their face instead."))]</span>"
+				"retracts their bare feet from <b>[partner]</b>'s mouth and grinds them into their face instead."))]"
 
 		set_is_fucking(partner , GRINDING_FACE_WITH_FEET)
 
@@ -1165,11 +1165,11 @@
 		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("plants their [get_shoes()] ontop of <b>[partner]</b>'s face.",
 				"rests their [get_shoes()] on <b>[partner]</b>'s face and presses down hard.",
-				"harshly places their [get_shoes()] atop <b>[partner]</b>'s face."))]</span>"
+				"harshly places their [get_shoes()] atop <b>[partner]</b>'s face."))]"
 		else
 			message = "[pick(list("plants their bare feet ontop of <b>[partner]</b>'s face.",
 				"rests their feet on <b>[partner]</b>'s face, smothering them.",
-				"positions their bare feet atop <b>[partner]</b>'s face."))]</span>"
+				"positions their bare feet atop <b>[partner]</b>'s face."))]"
 
 		set_is_fucking(partner , GRINDING_FACE_WITH_FEET)
 
@@ -1190,30 +1190,30 @@
 		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("roughly shoves their [get_shoes()] deeper into <b>[partner]</b>'s mouth.",
 				"harshly forces another inch of their [get_shoes()] into <b>[partner]</b>'s mouth.",
-				"presses their weight down, their [get_shoes()] prying deeper into <b>[partner]</b>'s mouth."))]</span>"
+				"presses their weight down, their [get_shoes()] prying deeper into <b>[partner]</b>'s mouth."))]"
 		else
 			message = "[pick(list("wiggles their toes deep inside <b>[partner]</b>'s mouth.",
 				"crams their barefeet down deeper into <b>[partner]</b>'s mouth, making them gag.",
-				"roughly grinds their feet on <b>[partner]</b>'s tongue."))]</span>"
+				"roughly grinds their feet on <b>[partner]</b>'s tongue."))]"
 
 	else if(is_fucking(partner, GRINDING_FACE_WITH_FEET))
 		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("decides to force their [get_shoes()] deep into <b>[partner]</b>'s mouth.",
-				"pressed the tip of their [get_shoes()] against <b>[partner]</b>'s lips and shoves inwards."))]</span>"
+				"pressed the tip of their [get_shoes()] against <b>[partner]</b>'s lips and shoves inwards."))]"
 		else
 			message = "[pick(list("pries open <b>[partner]</b>'s mouth with their toes and shoves their bare foot in.",
-				"presses down their foot even harder, cramming their foot into <b>[partner]</b>'s mouth."))]</span>"
+				"presses down their foot even harder, cramming their foot into <b>[partner]</b>'s mouth."))]"
 
 		set_is_fucking(partner , GRINDING_MOUTH_WITH_FEET)
 
 	else
 		if(src.get_equipped_item(slot_shoes) != null)
 			message = "[pick(list("readies themselves and in one swift motion, shoves their [get_shoes()] into <b>[partner]</b>'s mouth.",
-				"grinds the tip of their [get_shoes()] against <b>[partner]</b>'s mouth before pushing themselves in."))]</span>"
+				"grinds the tip of their [get_shoes()] against <b>[partner]</b>'s mouth before pushing themselves in."))]"
 		else
 			message = "[pick(list("rubs their dirty bare feet across <b>[partner]</b>'s face before prying them into their muzzle.",
 				"forces their barefeet into <b>[partner]</b>'s mouth.",
-				"covers <b>[partner]</b>'s mouth and nose with their foot until they gasp for breath, then shoves both feet inside before they can react."))]</span>"
+				"covers <b>[partner]</b>'s mouth and nose with their foot until they gasp for breath, then shoves both feet inside before they can react."))]"
 		set_is_fucking(partner , GRINDING_MOUTH_WITH_FEET)
 
 	playlewdinteractionsound(loc, pick('sound/interactions/foot_wet1.ogg',
