@@ -483,7 +483,7 @@
 					dat += "<br>...have exposed eyesockets."
 			else
 				dat += "<br>...have covered eyes."
-	//
+
 	if(is_topless()  && is_bottomless())
 		dat += "<br>...are naked."
 	else
