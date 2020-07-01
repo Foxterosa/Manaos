@@ -5,9 +5,8 @@
 #define CUM_TARGET_HAND "hand"
 #define CUM_TARGET_BREASTS "breasts"
 #define CUM_TARGET_FEET "feet"
-//Weird defines go here
 #define CUM_TARGET_EYES "eyes"
-//
+
 #define GRINDING_FACE_WITH_ANUS "faceanus"
 #define GRINDING_FACE_WITH_FEET "facefeet"
 #define GRINDING_MOUTH_WITH_FEET "mouthfeet"
@@ -86,7 +85,6 @@
 		return 0
 	else
 		return dif
-
 
 /mob/living/proc/add_lust(add)
 	var/cur = src.get_lust() //GetLust handles per-time lust loss

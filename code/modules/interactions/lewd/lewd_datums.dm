@@ -479,7 +479,7 @@
 	write_log_target = "was smothered by"
 
 /datum/interaction/lewd/thighs/display_interaction(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target)
-    user.thigh_smother(target)
+	user.thigh_smother(target)
 
 /datum/interaction/lewd/nuts
 	command = "nut_face"
