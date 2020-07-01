@@ -160,7 +160,7 @@
 	var/mob/living/carbon/C = src
 	if(istype(C))
 		var/obj/item/organ/peepee = C.organs_by_name[BP_GROIN]
-		if(peepee && gender == FEMAE || gender == PLURAL)
+		if(peepee && gender == FEMALE || gender == PLURAL)
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
@@ -182,7 +182,7 @@
 	var/mob/living/carbon/C = src
 	if(istype(C))
 		var/obj/item/organ/peepee = C.organs_by_name[BP_CHEST]
-		if(peepee && gender == FEMAE || gender == PLURAL)
+		if(peepee && gender == FEMALE || gender == PLURAL)
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
@@ -1467,7 +1467,7 @@
 		var/mob/living/carbon/C = partner
 		if(cli && istype(C))
 			if(prob(25))
-				var/obj/item/organ/internal/eyes/E = C.internal_organs_by_name[species.vision_organ]
+				var/obj/item/organ/internal/eyes/E = C.internal_organs_by_name[BP_EYES]
 				if(E)
 					E.damage += rand(3,7)
 				C.adjustBrainLoss(rand(3,7))
