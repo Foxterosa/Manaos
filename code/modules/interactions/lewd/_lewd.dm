@@ -115,7 +115,7 @@
 /mob/living/proc/has_penis(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/genital/peepee = C.organs_by_name(BP_GROIN)
+		var/obj/item/organ/peepee = C.organs_by_name[BP_GROIN]
 		if(peepee && gender == MALE || gender == PLURAL)
 			switch(nintendo)
 				if(REQUIRE_ANY)
@@ -137,9 +137,8 @@
 /mob/living/proc/has_balls(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/genital/peepee = C.organs_by_name(BP_GROIN)
+		var/obj/item/organ/peepee = C.organs_by_name[BP_GROIN]
 		if(peepee && gender == MALE || gender == PLURAL)
-		if(peepee)
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
@@ -160,9 +159,8 @@
 /mob/living/proc/has_vagina(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/genital/peepee = C.organs_by_name(BP_GROIN)
+		var/obj/item/organ/peepee = C.organs_by_name[BP_GROIN]
 		if(peepee && gender == FEMAE || gender == PLURAL)
-		if(peepee)
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
@@ -183,19 +181,18 @@
 /mob/living/proc/has_breasts(var/nintendo = REQUIRE_ANY)
 	var/mob/living/carbon/C = src
 	if(istype(C))
-		var/obj/item/organ/genital/peepee = C.organs_by_name(BP_CHEST)
+		var/obj/item/organ/peepee = C.organs_by_name[BP_CHEST]
 		if(peepee && gender == FEMAE || gender == PLURAL)
-		if(peepee)
 			switch(nintendo)
 				if(REQUIRE_ANY)
 					return TRUE
 				if(REQUIRE_EXPOSED)
-					if(C.is_groin_exposed())
+					if(C.is_chest_exposed())
 						return TRUE
 					else
 						return FALSE
 				if(REQUIRE_UNEXPOSED)
-					if(!C.is_groin_exposed())
+					if(!C.is_chest_exposed())
 						return TRUE
 					else
 						return FALSE

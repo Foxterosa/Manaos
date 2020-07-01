@@ -81,7 +81,7 @@ var/list/interactions
 			if(!silent)
 				to_chat(user, "<span class = 'warning'>You can't do that to yourself.</span>")
 			return FALSE
-	
+
 	if(require_target_mouth)
 		if(!target.has_mouth())
 			if(!silent)
@@ -101,7 +101,7 @@ var/list/interactions
 	return TRUE
 
 /datum/interaction/proc/get_action_link_for(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	return "<a HREF='byond://?src=[REF(src)];action=1;action_user=[REF(user)];action_target=[REF(target)]'>[description]</a><br>"
+	return "<a HREF='byond://?src=\ref[src];action=1;action_user=\ref[user];action_target=\ref[target]'>[description]</a><br>"
 
 /datum/interaction/Topic(href, href_list)
 	if(..())
