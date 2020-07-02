@@ -101,7 +101,7 @@
 	var/dat = list()
 
 	if(!scan["name"])
-		return "<center><span class='bad'><strong>>ERROR DE LECTURA DEL ESCANEO</strong></span></center>"
+		return "<center><span class='bad'><strong>>ERROR DE LECTURA DEL ESCANEO1</strong></span></center>"
 
 	//Table definition and starting data block.
 	/*
