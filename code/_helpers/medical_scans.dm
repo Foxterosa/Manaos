@@ -129,7 +129,7 @@
 	/*
 		<tr><td><strong>Brain Activity:</strong></td><td>100%</td></tr>
 	*/
-	dat += "<tr><td><strong>Actividad cerebral</strong></td>"
+	dat += "<tr><td><strong>Actividad cerebral:</strong></td>"
 	switch(scan["brain_activity"])
 		if(0)
 			dat += "<td><span class='bad'>Ninguna, el paciente tiene muerte cerebral</span></td></tr>"
