@@ -806,7 +806,7 @@
 					improv = TRUE
 
 		if(improv)
-			message = "rubs their BP_GROIN up and down \the <b>[partner]</b>'s face."
+			message = "rubs their groin up and down \the <b>[partner]</b>'s face."
 
 	else
 		var/improv = FALSE
