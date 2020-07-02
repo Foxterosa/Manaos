@@ -96,6 +96,7 @@
 	var/user_refractory_cost
 	var/target_refractory_cost
 
+
 /datum/interaction/lewd/evaluate_user(mob/living/carbon/human/user, silent = TRUE)
 	if(..(user, silent))
 		if(user_not_tired && user.get_refraction_dif())
@@ -261,7 +262,7 @@
 						if(!silent)
 							to_chat(user, "<span class = 'warning'>Your eyesockets need to be unexposed.</span>")
 						return FALSE
-		return FALSE
+		return TRUE
 	return FALSE
 
 /datum/interaction/lewd/evaluate_target(mob/living/carbon/human/user, mob/living/carbon/human/target, silent = TRUE)
@@ -435,7 +436,7 @@
 				to_chat(user, "<span class = 'warning'>Their pants are in the way.</span>")
 			return FALSE
 
-		return FALSE
+		return TRUE
 	return FALSE
 
 /datum/interaction/lewd/post_interaction(mob/living/carbon/human/user, mob/living/carbon/human/target)
