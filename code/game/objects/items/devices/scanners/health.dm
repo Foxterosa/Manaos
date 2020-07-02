@@ -109,7 +109,7 @@
 					brain_result = "<span class='scan_danger'>ERROR - Organo no reconocido</span>"
 	else
 		brain_result = "<span class='scan_danger'>ERROR - Biologia no estandar</span>"
-	dat += "Brain activity: [brain_result]."
+	dat += "Actividad cerebral: [brain_result]."
 	if (H.internal_organs_by_name[BP_STACK])
 		dat += "<span class='scan_notice'>El sujeto tiene un implante de enlace neural.(</span>"
 
