@@ -45,14 +45,6 @@
   --------------------------------------------------
 */
 //I'm sorry, lewd should not have mob procs such as life() and such in it. //NO SHIT IT SHOULDNT I REMOVED THEM
-
-/proc/playlewdinteractionsound(turf/turf_source, soundin, vol as num, vary, extrarange as num ,frequency, falloff, channel = 0, pressure_affected = TRUE, sound/S, envwet = -10000, envdry = 0, manual_x, manual_y)
-	var/list/hearing_mobs
-	for(var/mob/H in hear(4, turf_source))
-		LAZYADD(hearing_mobs, H)
-	for(var/mob/H in hearing_mobs)
-		H.playsound_to(turf_source, soundin, vol, vary, frequency, falloff)
-
 /mob/living
 	var/has_penis = FALSE
 	var/has_vagina = FALSE
@@ -363,7 +355,7 @@
 	if(moan == lastmoan)
 		moan--
 	if(!is_muzzled())
-		visible_message(message = "<font color=purple><B>\The [src]</B> [pick("moans", "moans in pleasure")].</font>", ignored_mobs = get_unconsenting())
+		visible_message(message = "<font color=purple><B>\The [src]</B> [pick("moans", "moans in pleasure")].</font>")
 		//playsound(get_turf(src), "code/game/lewd/sound/interactions/moan_[gender == FEMALE ? "f" : "m"][rand(1, 7)].ogg", 70, 1, 0)
 	if(is_muzzled())//immursion
 		visible_message("<font color=purple><B>[src]</B> [pick("mimes a pleasured moan","moans in silence")].</font>")
@@ -524,20 +516,20 @@
 	else //todo: better self cum messages
 		message = "cums all over themselves!"
 	if(gender == MALE)
-		playlewdinteractionsound(loc, pick('sound/interactions/final_m1.ogg',
+		playsound(loc, pick('sound/interactions/final_m1.ogg',
 							'sound/interactions/final_m2.ogg',
 							'sound/interactions/final_m3.ogg',
 							'sound/interactions/final_m4.ogg',
 							'sound/interactions/final_m5.ogg'), 90, 1, 0)//, pitch = get_age_pitch())
 	else if(gender == FEMALE)
-		playlewdinteractionsound(loc, pick('sound/interactions/final_f1.ogg',
+		playsound(loc, pick('sound/interactions/final_f1.ogg',
 							'sound/interactions/final_f2.ogg',
 							'sound/interactions/final_f3.ogg'), 70, 1, 0)//, pitch = get_age_pitch())
 	else
-		playlewdinteractionsound(loc, pick('sound/interactions/final_f1.ogg',
+		playsound(loc, pick('sound/interactions/final_f1.ogg',
 							'sound/interactions/final_f2.ogg',
 							'sound/interactions/final_f3.ogg'), 70, 1, 0)//, pitch = get_age_pitch())
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	multiorgasms += 1
 
 	/*if(multiorgasms == 1)
@@ -686,7 +678,7 @@
 			)
 		partner.set_is_fucking(src, CUM_TARGET_MOUTH)
 
-	playlewdinteractionsound(get_turf(src), pick(	'sound/interactions/bj1.ogg',
+	playsound(get_turf(src), pick(	'sound/interactions/bj1.ogg',
 									'sound/interactions/bj2.ogg',
 									'sound/interactions/bj3.ogg',
 									'sound/interactions/bj4.ogg',
@@ -697,7 +689,7 @@
 									'sound/interactions/bj9.ogg',
 									'sound/interactions/bj10.ogg',
 									'sound/interactions/bj11.ogg'), 50, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(lust_increase, CUM_TARGET_MOUTH, src)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -781,11 +773,11 @@
 			message = "shoves their crotch into \the <b>[partner]</b>'s face."
 		set_is_fucking(partner , CUM_TARGET_MOUTH)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/oral1.ogg',
+	playsound(loc, pick('sound/interactions/oral1.ogg',
 						'sound/interactions/oral2.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	if(retaliation_message)
-		visible_message(message = "<font color=red><b>\The <b>[partner]</b></b> [retaliation_message]</font>", ignored_mobs = get_unconsenting())
+		visible_message(message = "<font color=red><b>\The <b>[partner]</b></b> [retaliation_message]</font>")
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_MOUTH, partner)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -848,9 +840,9 @@
 					'sound/interactions/foot_wet1.ogg',
 					'sound/interactions/foot_dry3.ogg')
 
-	playlewdinteractionsound(loc, file, 70, 1, -1)
+	playsound(loc, file, 70, 1, -1)
 
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 
 	handle_post_sex(lust_increase, THIGH_SMOTHERING, partner)
 
@@ -862,7 +854,7 @@
 
 
 
-	playlewdinteractionsound(loc, pick('sound/interactions/oral1.ogg',
+	playsound(loc, pick('sound/interactions/oral1.ogg',
 						'sound/interactions/oral2.ogg'), 70, 1, -1)
 
 
@@ -900,11 +892,11 @@
 		message = "forces their dick deep down \the <b>[partner]</b>'s throat"
 		set_is_fucking(partner , CUM_TARGET_THROAT)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/oral1.ogg',
+	playsound(loc, pick('sound/interactions/oral1.ogg',
 						'sound/interactions/oral2.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	if(retaliation_message)
-		visible_message(message = "<font color=red><b>\The <b>[partner]</b></b> [retaliation_message]</font>", ignored_mobs = get_unconsenting())
+		visible_message(message = "<font color=red><b>\The <b>[partner]</b></b> [retaliation_message]</font>")
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_THROAT, partner)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -925,7 +917,7 @@
 		message = pick(list("wedges a digit into the side of <b>[partner]</b>'s jaw and pries it open before using their other hand to shove their whole nutsack inside!", "stands with their BP_GROIN inches away from [partner]'s face, then thrusting their hips forward and smothering [partner]'s whole face with their heavy ballsack."))
 		set_is_fucking(partner , NUTS_TO_FACE)
 
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(lust_increase, CUM_TARGET_MOUTH, partner)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -946,10 +938,10 @@
 			"shoves their dick deep inside of \the <b>[partner]</b>'s ass, making their rear jiggle.")]"
 		set_is_fucking(partner, CUM_TARGET_ANUS)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/bang1.ogg',
+	playsound(loc, pick('sound/interactions/bang1.ogg',
 						'sound/interactions/bang2.ogg',
 						'sound/interactions/bang3.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_ANUS, partner)
 	partner.handle_post_sex(NORMAL_LUST, null, src)
 	partner.dir = get_dir(src, partner)
@@ -968,8 +960,8 @@
 		message = "slides their cock into \the <b>[partner]</b>'s pussy."
 		set_is_fucking(partner, CUM_TARGET_VAGINA)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/champ1.ogg',	'sound/interactions/champ2.ogg'), 50, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	playsound(loc, pick('sound/interactions/champ1.ogg',	'sound/interactions/champ2.ogg'), 50, 1, -1)
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_VAGINA, partner)
 	partner.handle_post_sex(NORMAL_LUST, null, src)
 	partner.dir = get_dir(partner,src)
@@ -984,10 +976,10 @@
 	else
 		message = "slides their pussy onto \the <b>[partner]</b>'s cock."
 		partner.set_is_fucking(src, CUM_TARGET_VAGINA)
-	playlewdinteractionsound(loc, pick('sound/interactions/bang1.ogg',
+	playsound(loc, pick('sound/interactions/bang1.ogg',
 						'sound/interactions/bang2.ogg',
 						'sound/interactions/bang3.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_VAGINA, src)
 	handle_post_sex(NORMAL_LUST, null, partner)
 	partner.dir = get_dir(partner,src)
@@ -1002,10 +994,10 @@
 	else
 		message = "lowers their ass onto \the <b>[partner]</b>'s cock."
 		partner.set_is_fucking(src, CUM_TARGET_ANUS)
-	playlewdinteractionsound(loc, pick('sound/interactions/bang1.ogg',
+	playsound(loc, pick('sound/interactions/bang1.ogg',
 						'sound/interactions/bang2.ogg',
 						'sound/interactions/bang3.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_ANUS, src)
 	handle_post_sex(NORMAL_LUST, null, partner)
 	partner.dir = get_dir(partner,src)
@@ -1022,10 +1014,10 @@
 	else
 		message = "presses their pussy into \the <b>[partner]</b>'s own."
 		partner.set_is_fucking(src, CUM_TARGET_VAGINA)
-	playlewdinteractionsound(loc, pick('sound/interactions/squelch1.ogg',
+	playsound(loc, pick('sound/interactions/squelch1.ogg',
 						'sound/interactions/squelch2.ogg',
 						'sound/interactions/squelch3.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_VAGINA, src)
 	handle_post_sex(NORMAL_LUST, null, partner)
 	partner.dir = get_dir(partner,src)
@@ -1034,8 +1026,8 @@
 /mob/living/proc/do_fingering(mob/living/partner)
 	visible_message(message = "<font color=purple><b>\The [src]</b> [pick("fingers \the <b>[partner]</b>.",
 		"fingers \the <b>[partner]</b>'s pussy.",
-		"fingers \the <b>[partner]</b> hard.")]</font>", ignored_mobs = get_unconsenting())
-	playlewdinteractionsound(loc, 'sound/interactions/champ_fingering.ogg', 50, 1, -1)
+		"fingers \the <b>[partner]</b> hard.")]</font>")
+	playsound(loc, 'sound/interactions/champ_fingering.ogg', 50, 1, -1)
 	partner.handle_post_sex(NORMAL_LUST, null, src)
 	partner.dir = get_dir(partner, src)
 	do_fucking_animation(get_dir(src, partner))
@@ -1043,15 +1035,15 @@
 /mob/living/proc/do_fingerass(mob/living/partner)
 	visible_message(message = "<font color=purple><b>\The [src]</b> [pick("fingers \the <b>[partner]</b>.",
 		"fingers \the <b>[partner]</b>'s asshole.",
-		"fingers \the <b>[partner]</b> hard.")]</font>", ignored_mobs = get_unconsenting())
-	playlewdinteractionsound(loc, 'sound/interactions/champ_fingering.ogg', 50, 1, -1)
+		"fingers \the <b>[partner]</b> hard.")]</font>")
+	playsound(loc, 'sound/interactions/champ_fingering.ogg', 50, 1, -1)
 	partner.handle_post_sex(NORMAL_LUST, null, src)
 	partner.dir = get_dir(partner, src)
 	do_fucking_animation(get_dir(src, partner))
 
 /mob/living/proc/do_rimjob(mob/living/partner)
-	visible_message(message = "<font color=purple><b>\The [src]</b> licks \the <b>[partner]</b>'s asshole.</font>", ignored_mobs = get_unconsenting())
-	playlewdinteractionsound(loc, 'sound/interactions/champ_fingering.ogg', 50, 1, -1)
+	visible_message(message = "<font color=purple><b>\The [src]</b> licks \the <b>[partner]</b>'s asshole.</font>")
+	playsound(loc, 'sound/interactions/champ_fingering.ogg', 50, 1, -1)
 	partner.handle_post_sex(NORMAL_LUST, null, src)
 	partner.dir = get_dir(src, partner)
 	do_fucking_animation(get_dir(src, partner))
@@ -1068,10 +1060,10 @@
 			"starts playing with \the <b>[partner]</b>'s cock")]"
 		partner.set_is_fucking(src, CUM_TARGET_HAND)
 
-	playlewdinteractionsound(src, pick('sound/interactions/bang1.ogg',
+	playsound(src, pick('sound/interactions/bang1.ogg',
 						'sound/interactions/bang2.ogg',
 						'sound/interactions/bang3.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_HAND, src)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -1089,10 +1081,10 @@
 		set_is_fucking(partner , CUM_TARGET_BREASTS)
 
 
-	playlewdinteractionsound(loc, pick('sound/interactions/bang1.ogg',
+	playsound(loc, pick('sound/interactions/bang1.ogg',
 						'sound/interactions/bang2.ogg',
 						'sound/interactions/bang3.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_BREASTS, partner)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -1109,10 +1101,10 @@
 			"squats down and plants their ass right on \the <b>[partner]</b>'s face")]"
 		set_is_fucking(partner , GRINDING_FACE_WITH_ANUS)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/squelch1.ogg',
+	playsound(loc, pick('sound/interactions/squelch1.ogg',
 						'sound/interactions/squelch2.ogg',
 						'sound/interactions/squelch3.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(LOW_LUST, null, src)
 	partner.dir = get_dir(src, partner)
 	do_fucking_animation(get_dir(src, partner))
@@ -1125,8 +1117,8 @@
 	else
 		message = "licks \the <b>[partner]</b>'s [partner.has_feet() == 1 ? "foot" : "feet"]."
 
-	playlewdinteractionsound(loc, 'sound/interactions/champ_fingering.ogg', 50, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	playsound(loc, 'sound/interactions/champ_fingering.ogg', 50, 1, -1)
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(LOW_LUST, null, src)
 	partner.dir = get_dir(src, partner)
 	do_fucking_animation(get_dir(src, partner))
@@ -1167,11 +1159,11 @@
 
 		set_is_fucking(partner , GRINDING_FACE_WITH_FEET)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/foot_dry1.ogg',
+	playsound(loc, pick('sound/interactions/foot_dry1.ogg',
 						'sound/interactions/foot_dry2.ogg',
 						'sound/interactions/foot_dry3.ogg',
 						'sound/interactions/foot_dry4.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(LOW_LUST, null, src)
 	partner.dir = get_dir(src, partner)
 	do_fucking_animation(get_dir(src, partner))
@@ -1210,10 +1202,10 @@
 				"covers <b>[partner]</b>'s mouth and nose with their foot until they gasp for breath, then shoves both feet inside before they can react."))]"
 		set_is_fucking(partner , GRINDING_MOUTH_WITH_FEET)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/foot_wet1.ogg',
+	playsound(loc, pick('sound/interactions/foot_wet1.ogg',
 						'sound/interactions/foot_wet2.ogg',
 						'sound/interactions/foot_wet3.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(LOW_LUST, null, src)
 	partner.dir = get_dir(src, partner)
 	do_fucking_animation(get_dir(src, partner))
@@ -1231,11 +1223,11 @@
 			"starts grinding their cock against \the <b>[partner]</b>'s [partner.get_shoes() ? partner.get_shoes(TRUE) : pick("foot", "sole")].")]"
 		set_is_fucking(src, CUM_TARGET_FEET)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/foot_dry1.ogg',
+	playsound(loc, pick('sound/interactions/foot_dry1.ogg',
 						'sound/interactions/foot_dry3.ogg',
 						'sound/interactions/foot_wet1.ogg',
 						'sound/interactions/foot_wet2.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, src)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -1253,11 +1245,11 @@
 			"starts grinding their cock between \the <b>[partner]</b>'s [partner.get_shoes() ? partner.get_shoes() : pick("feet", "soles")].")]"
 		set_is_fucking(src, CUM_TARGET_FEET)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/foot_dry1.ogg',
+	playsound(loc, pick('sound/interactions/foot_dry1.ogg',
 						'sound/interactions/foot_dry3.ogg',
 						'sound/interactions/foot_wet1.ogg',
 						'sound/interactions/foot_wet2.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, src)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -1275,11 +1267,11 @@
 			"starts grinding their pussy against \the <b>[partner]</b>'s [partner.get_shoes() ? partner.get_shoes(TRUE) : pick("foot", "sole")].")]"
 		set_is_fucking(src, CUM_TARGET_FEET)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/foot_dry1.ogg',
+	playsound(loc, pick('sound/interactions/foot_dry1.ogg',
 						'sound/interactions/foot_dry3.ogg',
 						'sound/interactions/foot_wet1.ogg',
 						'sound/interactions/foot_wet2.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, src)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -1296,11 +1288,11 @@
 			"starts playing around with \the <b>[partner]</b>'s cock, using their [get_shoes() ? get_shoes(TRUE) :"foot"].")]"
 		partner.set_is_fucking(src, CUM_TARGET_FEET)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/foot_dry1.ogg',
+	playsound(loc, pick('sound/interactions/foot_dry1.ogg',
 						'sound/interactions/foot_dry3.ogg',
 						'sound/interactions/foot_wet1.ogg',
 						'sound/interactions/foot_wet2.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, src)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -1318,11 +1310,11 @@
 			"starts playing around with \the <b>[partner]</b>'s cock, using their [get_shoes() ? get_shoes() : "feet"].")]"
 		partner.set_is_fucking(src, CUM_TARGET_FEET)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/foot_dry1.ogg',
+	playsound(loc, pick('sound/interactions/foot_dry1.ogg',
 						'sound/interactions/foot_dry3.ogg',
 						'sound/interactions/foot_wet1.ogg',
 						'sound/interactions/foot_wet2.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, src)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -1340,11 +1332,11 @@
 			"starts playing around with \the <b>[partner]</b>'s pussy, using their [get_shoes() ? get_shoes(TRUE) : "foot"].")]"
 		partner.set_is_fucking(src, CUM_TARGET_FEET)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/foot_dry1.ogg',
+	playsound(loc, pick('sound/interactions/foot_dry1.ogg',
 						'sound/interactions/foot_dry3.ogg',
 						'sound/interactions/foot_wet1.ogg',
 						'sound/interactions/foot_wet2.ogg'), 70, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting())
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, src)
 	partner.dir = get_dir(partner,src)
 	do_fucking_animation(get_dir(src, partner))
@@ -1378,14 +1370,6 @@
 	else
 		moan()
 
-/mob/living/proc/get_unconsenting(var/extreme = FALSE, var/list/ignored_mobs)
-	var/list/nope = list()
-	nope += ignored_mobs
-	for(var/mob/M in range(7, src))
-		if(!M.client)
-			nope += M
-	return nope
-
 //Yep, weird shit goes down here.
 /mob/living/proc/do_eyefuck(mob/living/partner)
 	var/message
@@ -1408,9 +1392,9 @@
 		message = "forcefully slides their cock inbetween \the <b>[partner]</b>'s [has_eyes_lewd() ? "eyelid":"eyesocket"]."
 		set_is_fucking(partner, CUM_TARGET_EYES)
 
-	playlewdinteractionsound(loc, pick('sound/interactions/champ1.ogg',
+	playsound(loc, pick('sound/interactions/champ1.ogg',
 						'sound/interactions/champ2.ogg'), 50, 1, -1)
-	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>", ignored_mobs = get_unconsenting(TRUE))
+	visible_message(message = "<font color=purple><b>\The [src]</b> [message]</font>")
 	handle_post_sex(NORMAL_LUST, CUM_TARGET_EYES, partner)
 	partner.handle_post_sex(LOW_LUST, null, src)
 	partner.dir = get_dir(partner,src)

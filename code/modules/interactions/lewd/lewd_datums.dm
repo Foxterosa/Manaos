@@ -193,7 +193,7 @@
 				"<font color=purple>\The <b>[target]</b> elbows <b>[user]</b>'s mouth away.</font>"))
 	target.dir = get_dir(target, user)
 	user.dir = get_dir(user, target)
-	playlewdinteractionsound(user.loc, pick('sound/interactions/oral1.ogg',
+	playsound(user.loc, pick('sound/interactions/oral1.ogg',
 						'sound/interactions/oral2.ogg'), 70, 1, -1)
 	return
 
