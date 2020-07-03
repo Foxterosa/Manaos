@@ -13,6 +13,10 @@
 	display_name = "botas de Kasumi largas"
 	path = /obj/item/clothing/shoes/kasumi
 
+/datum/gear/shoes/jrboots
+	display_name = "botas grandes"
+	path = /obj/item/clothing/shoes/jrboots
+
 /datum/gear/shoes/boots
 	display_name = "botas"
 	path = /obj/item/clothing/shoes

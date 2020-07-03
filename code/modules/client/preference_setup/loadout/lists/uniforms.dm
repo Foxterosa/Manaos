@@ -37,6 +37,10 @@
 	display_name = "traje de Joker"
 	path = /obj/item/clothing/under/jokeroutfit
 
+/datum/gear/uniform/jrsuit
+	display_name = "uniforme de jr"
+	path = /obj/item/clothing/under/jrsuit
+
 /datum/gear/uniform/suit/New()
 	..()
 	var/suits = list()

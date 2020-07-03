@@ -96,6 +96,16 @@
 	worn_state = "joker-suit_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
+/obj/item/clothing/under/jrsuit
+	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	name = "remera negra ajustada con khakis"
+	desc = "Hm, fashionable"
+	icon_state = "jr-suit"
+	item_state = "jr-suit"
+	worn_state = "jr-suit"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
 //This set of uniforms looks fairly fancy and is generally used for high-ranking NT personnel from what I've seen, so lets give them appropriate ranks.
 /obj/item/clothing/under/rank/centcom
 	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Captain.\"."
