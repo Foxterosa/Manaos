@@ -109,7 +109,7 @@
 					brain_result = "<span class='scan_danger'>ERROR - Organo no reconocido</span>"
 	else
 		brain_result = "<span class='scan_danger'>ERROR - Biologia no estandar</span>"
-	dat += "Brain activity: [brain_result]."
+	dat += "Actividad cerebral: [brain_result]."
 	if (H.internal_organs_by_name[BP_STACK])
 		dat += "<span class='scan_notice'>El sujeto tiene un implante de enlace neural.(</span>"
 
@@ -138,7 +138,7 @@
 	if(H.should_have_organ(BP_HEART))
 		if(H.get_blood_volume() <= 70)
 			dat += "<span class='scan_danger'>Perdida de sangre severa detectada.</span>"
-		var/oxygenation_string = "[H.get_blood_oxygenation()]% oxigenacion de la sangre"
+		var/oxygenation_string = "[H.get_blood_oxygenation()]% de oxigenacion en la sangre"
 		switch(H.get_blood_oxygenation())
 			if(BLOOD_VOLUME_OKAY to BLOOD_VOLUME_SAFE)
 				oxygenation_string = "<span class='scan_notice'>[oxygenation_string]</span>"
