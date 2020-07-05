@@ -157,7 +157,6 @@
 	icon_state = "jr-boots"
 	body_parts_covered = FEET
 
-
 /obj/item/clothing/shoes/clown_shoes
 	desc = "The prankster's standard-issue clowning shoes. Damn they're huge!"
 	name = "clown shoes"
