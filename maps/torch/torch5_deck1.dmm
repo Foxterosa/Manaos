@@ -2871,8 +2871,8 @@
 /area/medical/morgue/autopsy)
 "aex" = (
 /obj/machinery/computer/modular/preset/security{
-	dir = 8;
-	icon_state = "console"
+	icon_state = "console";
+	dir = 8
 	},
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -3231,8 +3231,8 @@
 /area/medical/subacute)
 "aeZ" = (
 /obj/machinery/computer/modular/preset/medical{
-	dir = 4;
-	icon_state = "console"
+	icon_state = "console";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/morgue/autopsy)
@@ -4663,7 +4663,11 @@
 	},
 /obj/machinery/sd_keyterminal{
 	pixel_x = -28;
-	pixel_y = -12
+	pixel_y = -10
+	},
+/obj/machinery/keycard_auth/torch{
+	pixel_x = -28;
+	pixel_y = 4
 	},
 /turf/simulated/floor/blackgrid,
 /area/security/nuke_storage)
@@ -4756,7 +4760,11 @@
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/sd_keyterminal{
 	pixel_x = -28;
-	pixel_y = 12
+	pixel_y = 10
+	},
+/obj/machinery/keycard_auth/torch{
+	pixel_x = -28;
+	pixel_y = -4
 	},
 /turf/simulated/floor/blackgrid,
 /area/security/nuke_storage)
@@ -6703,8 +6711,8 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
+	icon_state = "warning";
+	dir = 4
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -7499,8 +7507,8 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
+	icon_state = "warning";
+	dir = 4
 	},
 /obj/effect/landmark{
 	name = "JoinLateCyborg"
@@ -8242,8 +8250,8 @@
 /area/engineering/auxpower)
 "amx" = (
 /obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
+	icon_state = "warning";
+	dir = 4
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -8263,8 +8271,8 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
+	icon_state = "warning";
+	dir = 4
 	},
 /obj/machinery/alarm{
 	dir = 1;
@@ -8520,7 +8528,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "amV" = (
-/obj/structure/undies_wardrobe,
 /obj/machinery/camera/network/security{
 	c_tag = "Permanent Holding - Quarters";
 	dir = 8
@@ -14577,8 +14584,8 @@
 /area/security/processing)
 "aAe" = (
 /obj/machinery/computer/modular/preset/security{
-	dir = 8;
-	icon_state = "console"
+	icon_state = "console";
+	dir = 8
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 6
@@ -27050,8 +27057,8 @@
 "lym" = (
 /obj/structure/table/glass,
 /obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+	icon_state = "tube1";
+	dir = 1
 	},
 /obj/machinery/microscope,
 /turf/simulated/floor/tiled/white,
@@ -27200,8 +27207,8 @@
 	dir = 8
 	},
 /obj/machinery/computer/modular/preset/medical{
-	dir = 4;
-	icon_state = "console"
+	icon_state = "console";
+	dir = 4
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -28639,8 +28646,8 @@
 /area/rnd/entry)
 "nLb" = (
 /obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
+	icon_state = "warning";
+	dir = 4
 	},
 /obj/structure/ladder,
 /obj/effect/catwalk_plated,
@@ -30515,8 +30522,8 @@
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+	icon_state = "tube1";
+	dir = 1
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
 	color = "#aa5f61"
