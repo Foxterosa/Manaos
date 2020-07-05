@@ -303,7 +303,7 @@
 		else
 			row += "<td>"
 			if(E["brute_dam"] + E["burn_dam"] == 0)
-				row += "Ningunp</td>"
+				row += "Ninguno</td>"
 			if(skill_level < SKILL_ADEPT)
 				if(E["brute_dam"])
 					row += "<span class='bad'>Danado</span><br>"
@@ -311,9 +311,9 @@
 					row += "<span class='average'>Quemado</span></td>"
 			else
 				if(E["brute_dam"])
-					row += "<span class='bad'>[capitalize(get_wound_severity(E["brute_ratio"], (E["limb_flags"] & ORGAN_FLAG_HEALS_OVERKILL)))] dano fisico</span><br>"
+					row += "<span class='bad'>dano fisico [capitalize(get_wound_severity(E["brute_ratio"], (E["limb_flags"] & ORGAN_FLAG_HEALS_OVERKILL)))]</span><br>"
 				if(E["burn_dam"])
-					row += "<span class='average'>[capitalize(get_wound_severity(E["burn_ratio"], (E["limb_flags"] & ORGAN_FLAG_HEALS_OVERKILL)))] quemaduras</span></td>"
+					row += "<span class='average'>quemadura [capitalize(get_wound_severity(E["burn_ratio"], (E["limb_flags"] & ORGAN_FLAG_HEALS_OVERKILL)))] </span></td>"
 			if(skill_level >= SKILL_ADEPT)
 				row += "<td>"
 				row += "<span class='bad'>[english_list(E["scan_results"], nothing_text="&nbsp;")]</span>"
@@ -348,9 +348,9 @@
 			else if(I["is_bruised"])
 				row += "<td><span class='average'>Moderado</span></td>"
 			else if(I["is_damaged"])
-				row += "<td>Minor</td>"
+				row += "<td>Menor</td>"
 			else
-				row += "<td>None</td>"
+				row += "<td>Ninguno</td>"
 			row += "<td>"
 			row += "<span class='bad'>[english_list(I["scan_results"], nothing_text="&nbsp;")]</span>"
 			row += "</td></tr>"
