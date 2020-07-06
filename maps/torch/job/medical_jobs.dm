@@ -136,8 +136,8 @@
 	title = "Laboratory Technician"
 	department = "Medical"
 	department_flag = MED
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Chief Medical Officer, the Corporate Liaison and Medical Personnel"
 	selection_color = "#013d3b"
 	economic_power = 4
