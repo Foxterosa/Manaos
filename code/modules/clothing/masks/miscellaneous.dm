@@ -62,6 +62,26 @@
 	flags_inv = HIDEFACE
 	body_parts_covered = 0
 
+/obj/item/clothing/mask/kasumimask
+	item_icons = list(slot_wear_mask_str = 'icons_manaos/mob/onmob/onmob_mask.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_mask.dmi'
+	name = "mascara de kasumi"
+	desc = "They'll never see you coming pero mujer."
+	icon_state = "kasumi_mask"
+	item_state = "kasumi_mask"
+	flags_inv = HIDEFACE
+	body_parts_covered = 0
+
+/obj/item/clothing/mask/jokermask
+	item_icons = list(slot_wear_mask_str = 'icons_manaos/mob/onmob/onmob_mask.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_mask.dmi'
+	name = "mascara de Joker"
+	desc = "They'll never see you coming."
+	icon_state = "joker_mask"
+	item_state = "joker_mask"
+	flags_inv = HIDEFACE
+	body_parts_covered = 0
+
 //scarves (fit in in mask slot)
 //None of these actually have on-mob sprites...
 /obj/item/clothing/mask/bluescarf
