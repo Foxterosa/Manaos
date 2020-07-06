@@ -10,10 +10,10 @@
 		return
 	var/mob/M = C.mob ? C.mob.get_looc_mob() : null
 	if(!M)
-		to_chat(C, "<span class='danger'>You cannot use [name] without a mob.</span>")
+		to_chat(C, "<span class='danger'>No puedes usar [name] sin un mob.</span>")
 		return FALSE
 	if(!get_turf(M))
-		to_chat(C, "<span class='danger'>You cannot use [name] while in nullspace.</span>")
+		to_chat(C, "<span class='danger'>No puedes usar [name] mientras estas en nullspace.</span>")
 		return FALSE
 
 /decl/communication_channel/ooc/looc/do_communicate(var/client/C, var/message)

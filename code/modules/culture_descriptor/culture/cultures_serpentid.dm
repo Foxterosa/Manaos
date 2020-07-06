@@ -1,8 +1,8 @@
 // See specific map job files for valid jobs. They use types so cannot be compiled at this level.
 /decl/cultural_info/culture/nabber
 	name = CULTURE_NABBER_CMINUS
-	
-	description = "You have been trained to Xynergy Grade PLACEHOLDER."
+
+	description = "Has sido entrenado al Grado Xynergy de PLACEHOLDER."
 	language = LANGUAGE_NABBER
 	secondary_langs = list(
 		LANGUAGE_HUMAN_EURO,
@@ -29,12 +29,12 @@
 		LAZYADD(job_titles, initial(job.title))
 	if(!LAZYLEN(job_titles))
 		LAZYADD(job_titles, "none")
-	description = "You have been trained by Xynergy to [name]. This makes you suitable for the following roles: [english_list(job_titles)]."
+	description = "Has sido adiestrado por Xynergy a [name]. Esto te hace adecuado para los siguientes roles: [english_list(job_titles)]."
 
 	// Set up our qualifications.
 	LAZYADD(qualifications, "<b>[name]</b>")
 	for(var/role in job_titles)
-		LAZYADD(qualifications, "Safe for [role].")
+		LAZYADD(qualifications, "Entrenado para [role].")
 
 	// Add our hidden jobs since we're done building the desc.
 	if(LAZYLEN(hidden_valid_jobs))

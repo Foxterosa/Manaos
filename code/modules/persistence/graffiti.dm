@@ -2,7 +2,7 @@
 	name = "graffiti"
 	icon_state = "writing1"
 	icon = 'icons/effects/writing.dmi'
-	desc = "It looks like someone has scratched something here."
+	desc = "Parece que alguien ha rayado algo por aqui."
 	gender = PLURAL
 	blend_mode = BLEND_MULTIPLY
 	color = "#000000"
@@ -43,22 +43,22 @@
 		var/obj/item/weapon/weldingtool/welder = thing
 		if(welder.isOn() && welder.remove_fuel(0,user) && do_after(user, 5, src) && !QDELETED(src))
 			playsound(src.loc, 'sound/items/Welder2.ogg', 50, 1)
-			user.visible_message("<span class='notice'>\The [user] clears away some graffiti.</span>")
+			user.visible_message("<span class='notice'>\The [user] limpia el graffiti.</span>")
 			qdel(src)
 	else if(thing.sharp)
 
 		if(jobban_isbanned(user, "Graffiti"))
-			to_chat(user, SPAN_WARNING("You are banned from leaving persistent information across rounds."))
+			to_chat(user, SPAN_WARNING("Estas baneado por dejar informacion persistente a traves de las rondas."))
 			return
 
-		var/_message = sanitize(input("Enter an additional message to engrave.", "Graffiti") as null|text, trim = TRUE)
+		var/_message = sanitize(input("Escribe un mensaje adicional para grabar", "Graffiti") as null|text, trim = TRUE)
 		if(_message && loc && user && !user.incapacitated() && user.Adjacent(loc) && thing.loc == user)
-			user.visible_message("<span class='warning'>\The [user] begins carving something into \the [loc].</span>")
+			user.visible_message("<span class='warning'>\The [user] comienza a rayar algo en \the [loc].</span>")
 			if(do_after(user, max(20, length(_message)), src) && loc)
-				user.visible_message("<span class='danger'>\The [user] carves some graffiti into \the [loc].</span>")
+				user.visible_message("<span class='danger'>\The [user] raya algo en \the [loc].</span>")
 				message = "[message] [_message]"
 				author = user.ckey
 				if(lowertext(message) == "elbereth")
-					to_chat(user, "<span class='notice'>You feel much safer.</span>")
+					to_chat(user, "<span class='notice'>Te sientes mas seguro.</span>")
 	else
 		. = ..()

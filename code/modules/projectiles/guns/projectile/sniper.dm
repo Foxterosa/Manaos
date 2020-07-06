@@ -10,7 +10,7 @@
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
 	caliber = CALIBER_ANTIMATERIAL
-	screen_shake = 2 //extra kickback
+	screen_shake = 0 //screenshake breaks the scope.
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING
 	max_shells = 1
@@ -95,3 +95,28 @@
 	scope_zoom = 0
 	scoped_accuracy = 0
 	wielded_item_state = "boltaction-wielded"
+
+/obj/item/weapon/gun/projectile/hornetsniper
+	name = "hornet marksman rifle"
+	desc = "The Z2 Hornet, is an older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
+	icon = 'icons/obj/guns/hornet.dmi'
+	icon_state = "hornet"
+	item_state = "hornet"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
+	caliber = CALIBER_RIFLE
+	screen_shake = 0
+	handle_casings = EJECT_CASINGS
+	load_method = SINGLE_CASING
+	max_shells = 5
+	ammo_type = /obj/item/ammo_casing/rifle
+	one_hand_penalty = 6
+	accuracy = -4
+	bulk = 8
+	scoped_accuracy = 9
+	scope_zoom = 2
+	wielded_item_state = "z8carbine-wielded"
+	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
+	fire_delay = 30

@@ -149,6 +149,13 @@
 		/obj/item/ammo_magazine/speedloader/magnum
 	)
 
+/obj/item/weapon/storage/backpack/satchel/syndie_kit/magnum
+	startswith = list(
+		/obj/item/weapon/gun/projectile/pistol/magnum_pistol,
+		/obj/item/ammo_magazine/magnum
+	)
+
+
 /obj/item/weapon/storage/box/syndie_kit/toxin
 	startswith = list(
 		/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
@@ -225,3 +232,13 @@
 		/obj/item/clothing/suit/armor/pcarrier/merc,
 		/obj/item/clothing/head/helmet/merc
 	)
+
+/obj/item/weapon/storage/backpack/dufflebag/syndie/juggernaut
+	startswith = list(
+		/obj/item/clothing/suit/bomb_suit/juggernaut,
+		/obj/item/clothing/head/bomb_hood/juggernaut
+	)
+
+/obj/item/weapon/storage/backpack/dufflebag/syndie/juggernaut/Initialize()
+	. = ..()
+	make_exact_fit()

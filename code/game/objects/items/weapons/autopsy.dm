@@ -3,8 +3,8 @@
 //please preference put stuff where it's easy to find - C
 
 /obj/item/weapon/autopsy_scanner
-	name = "autopsy scanner"
-	desc = "Used to gather information on wounds."
+	name = "escaner de autopsia"
+	desc = "Se utiliza para recopilar información sobre heridas."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "autopsy_scanner"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -53,7 +53,7 @@
 			if(1)
 				W.pretend_weapon = W.weapon
 			else
-				W.pretend_weapon = pick("mechanical toolbox", "wirecutters", "revolver", "crowbar", "fire extinguisher", "tomato soup", "oxygen tank", "emergency oxygen tank", "laser", "bullet")
+				W.pretend_weapon = pick("caja de herramientas de mecanico", "cortadores de cable", "revolver", "palanca", "extintor", "sopa de tomate", "tanque de oxigeno", "tanque de oxigeno de emergencias", "laser", "bala")
 
 
 		var/datum/autopsy_data_scanner/D = wdata[V]
@@ -74,7 +74,7 @@
 /obj/item/weapon/autopsy_scanner/verb/print_data()
 	set category = "Object"
 	set src in view(usr, 1)
-	set name = "Print Data"
+	set name = "Imprimir datos"
 	if(usr.stat || !(istype(usr,/mob/living/carbon/human)))
 		to_chat(usr, "No.")
 		return
@@ -82,7 +82,7 @@
 	var/scan_data = ""
 
 	if(timeofdeath)
-		scan_data += "<b>Time of death:</b> [worldtime2stationtime(timeofdeath)]<br><br>"
+		scan_data += "<b>Hora de muerte:</b> [worldtime2stationtime(timeofdeath)]<br><br>"
 
 	var/n = 1
 	for(var/wdata_idx in wdata)
@@ -113,25 +113,25 @@
 		// total score happens to be the total damage
 		switch(total_score)
 			if(0)
-				damage_desc = "Unknown"
+				damage_desc = "Desconocido"
 			if(1 to 5)
-				damage_desc = "<font color='green'>negligible</font>"
+				damage_desc = "<font color='green'>despreciable</font>"
 			if(5 to 15)
-				damage_desc = "<font color='green'>light</font>"
+				damage_desc = "<font color='green'>ligero</font>"
 			if(15 to 30)
-				damage_desc = "<font color='orange'>moderate</font>"
+				damage_desc = "<font color='orange'>moderado</font>"
 			if(30 to 1000)
-				damage_desc = "<font color='red'>severe</font>"
+				damage_desc = "<font color='red'>severo</font>"
 
 		if(!total_score) total_score = D.organs_scanned.len
 
 		scan_data += "<b>Weapon #[n]</b><br>"
 		if(damaging_weapon)
-			scan_data += "Severity: [damage_desc]<br>"
-			scan_data += "Hits by weapon: [total_hits]<br>"
-		scan_data += "Approximate time of wound infliction: [worldtime2stationtime(age)]<br>"
-		scan_data += "Affected limbs: [D.organ_names]<br>"
-		scan_data += "Possible weapons:<br>"
+			scan_data += "Severidad: [damage_desc]<br>"
+			scan_data += "Golpes por arma: [total_hits]<br>"
+		scan_data += "Tiempo aproximado de infligir la herida: [worldtime2stationtime(age)]<br>"
+		scan_data += "Extremidades afectadas: [D.organ_names]<br>"
+		scan_data += "Posible arma:<br>"
 		for(var/weapon_name in weapon_chances)
 			scan_data += "\t[100*weapon_chances[weapon_name]/total_score]% [weapon_name]<br>"
 
@@ -140,17 +140,17 @@
 		n++
 
 	if(chemtraces.len)
-		scan_data += "<b>Trace Chemicals: </b><br>"
+		scan_data += "<b>Rastros quimicos: </b><br>"
 		for(var/chemID in chemtraces)
 			scan_data += chemID
 			scan_data += "<br>"
 
 	for(var/mob/O in viewers(usr))
-		O.show_message("<span class='notice'>\The [src] rattles and prints out a sheet of paper.</span>", 1)
+		O.show_message("<span class='notice'>El escaner traquetea e imprime una hoja de papel.</span>", 1)
 
 	sleep(10)
 
-	var/obj/item/weapon/paper/P = new(usr.loc, "<tt>[scan_data]</tt>", "Autopsy Data ([target_name])")
+	var/obj/item/weapon/paper/P = new(usr.loc, "<tt>[scan_data]</tt>", "Datos de autopsia ([target_name])")
 	if(istype(usr,/mob/living/carbon))
 		// place the item in the usr's hand if possible
 		usr.put_in_hands(P)
@@ -165,12 +165,12 @@
 
 	var/obj/item/organ/external/S = M.get_organ(user.zone_sel.selecting)
 	if(!S)
-		to_chat(usr, "<span class='warning'>You can't scan this body part.</span>")
+		to_chat(usr, "<span class='warning'>No puedes escanear esta parte del cuerpo.</span>")
 		return
 	if(!S.how_open())
-		to_chat(usr, "<span class='warning'>You have to cut [S] open first!</span>")
+		to_chat(usr, "<span class='warning'>Tienes que cortar y abrir primero.</span>")
 		return
-	M.visible_message("<span class='notice'>\The [user] scans the wounds on [M]'s [S.name] with [src]</span>")
+	M.visible_message("<span class='notice'>[user] escanea las heridas en el/la [M] de [S.name] con el escaner.</span>")
 
 	add_data(S)
 	for(var/T in M.chem_doses)
@@ -185,14 +185,14 @@
 		wdata.Cut()
 		chemtraces.Cut()
 		timeofdeath = null
-		to_chat(user, "<span class='notice'>A new patient has been registered. Purging data for previous patient.</span>")
+		to_chat(user, "<span class='notice'>Un nuevo paciente a sido registrado. Eliminando datos del paciente anterior.</span>")
 
 /obj/item/weapon/autopsy_scanner/afterattack(obj/item/organ/external/target, mob/user, proximity_flag, click_parameters)
 	if(!proximity_flag)
 		return
 	if(!istype(target))
 		return
-	
+
 	set_target(target, user)
 	add_data(target)
 

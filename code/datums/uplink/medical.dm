@@ -18,7 +18,7 @@
 
 /datum/uplink_item/item/medical/stasis
 	name = "Bolsa de estasis"
-	desc = "Bolsa reusable diseñala para ralentizar las funciones de vida del ocupante, especialmente util si esta corto de peril o en un entorno hostil."
+	desc = "Bolsa reusable hecha para ralentizar las funciones de vida del ocupante, especialmente util si esta corto de peril o en un entorno hostil."
 	item_cost = 24
 	path = /obj/item/bodybag/cryobag
 
@@ -63,6 +63,12 @@
 	desc = "Un autoinyector que contiene una dosis de emergencia de perixadona"
 	item_cost = 3
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon
+
+/datum/uplink_item/item/medical/kompoton
+	name = "Kompoton"
+	desc = "An autoinjector containing an emergency dose of kompoton - a extrme organ-mending medicine, suffering guaranteed"
+	item_cost = 6
+	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton
 
 /datum/uplink_item/item/medical/alkysine
 	name = "Alkysine"

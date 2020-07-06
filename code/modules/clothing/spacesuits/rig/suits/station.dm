@@ -10,8 +10,6 @@
 
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/briefcase, /obj/item/weapon/storage/secure/briefcase,/obj/item/weapon/storage/)
 
-	req_access = list(access_lawyer)
-
 	glove_type = null
 	helm_type = null
 	boot_type = null
@@ -62,10 +60,14 @@
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/stack/flag,/obj/item/weapon/storage/ore,/obj/item/device/t_scanner,/obj/item/weapon/pickaxe, /obj/item/weapon/rcd, /obj/item/weapon/storage/)
 
 /obj/item/clothing/head/helmet/space/rig/industrial
+	item_icons = list(slot_head_str = 'icons_manaos/mob/onmob/onmob_head.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_head.dmi'
 	camera = /obj/machinery/camera/network/mining
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 
 /obj/item/clothing/suit/space/rig/industrial
+	item_icons = list(slot_wear_suit_str = 'icons_manaos/mob/onmob/onmob_suit.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_suit.dmi'
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 
 /obj/item/clothing/shoes/magboots/rig/industrial
@@ -320,13 +322,13 @@
 	desc = "A security hardsuit designed for prolonged EVA in dangerous environments."
 	icon_state = "hazard_rig"
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_SHIELDED
 		)
 	online_slowdown = 1
 	offline_slowdown = 3

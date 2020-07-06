@@ -137,6 +137,9 @@ var/global/floorIsLava = 0
 			body += "</tr>"
 		body += "</table>"
 
+	if(!check_rights(R_ADMIN))
+		body += "<A href='?src=holder;Bless=\ref[M]'>Bless</A> | "
+
 	if (M.client)
 		if(!istype(M, /mob/new_player))
 			body += "<br><br>"
@@ -170,6 +173,8 @@ var/global/floorIsLava = 0
 				body += "<A href='?src=\ref[src];makeanimal=\ref[M]'>Re-Animalize</A> | "
 			else
 				body += "<A href='?src=\ref[src];makeanimal=\ref[M]'>Animalize</A> | "
+			if(istype(M))
+				body += "<A href='?src=\ref[src];incarn_ghost=\ref[M]'>Re-incarnate</A> | "
 
 			// DNA2 - Admin Hax
 			if(M.dna && iscarbon(M))

@@ -42,29 +42,29 @@
 		return FALSE
 
 	if(!istype(communicator, expected_communicator_type))
-		log_debug("[log_info_line(communicator)] attempted to communicate over the channel [src] but was of an unexpected type.")
+		log_debug("[log_info_line(communicator)] intenta comunicarseattempted to communicate over the channel [src] but was of an unexpected type.")
 		return FALSE
 
 	if(config_setting && !config.vars[config_setting] && !check_rights(R_INVESTIGATE,0,communicator))
-		to_chat(communicator, "<span class='danger'>[name] is globally muted.</span>")
+		to_chat(communicator, "<span class='danger'>[name] esta globalmente silenciado.</span>")
 		return FALSE
 
 	var/client/C = communicator.get_client()
 
 	if(jobban_isbanned(C.mob, name))
-		to_chat(communicator, "<span class='danger'>You cannot use [name] (banned).</span>")
+		to_chat(communicator, "<span class='danger'>No puedes usar [name] (banned).</span>")
 		return FALSE
 
 	if(can_ignore(C))
-		to_chat(communicator, "<span class='warning'>Couldn't send message - you have [name] muted.</span>")
+		to_chat(communicator, "<span class='warning'>No puedes enviar un mensaje - estas silenciado de [name].</span>")
 		return FALSE
 
 	if(C && mute_setting && (C.prefs.muted & mute_setting))
-		to_chat(communicator, "<span class='danger'>You cannot use [name] (muted).</span>")
+		to_chat(communicator, "<span class='danger'>No puedes usar [name] (muted).</span>")
 		return FALSE
 
 	if(C && (flags & COMMUNICATION_NO_GUESTS) && IsGuestKey(C.key))
-		to_chat(communicator, "<span class='danger'>Guests may not use the [name] channel.</span>")
+		to_chat(communicator, "<span class='danger'>Los invitado no pueden usar el canal de [name].</span>")
 		return FALSE
 
 	return TRUE

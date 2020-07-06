@@ -33,7 +33,7 @@
 	SSpersistence.forget_value(src, /datum/persistent/filth)
 	. = ..()
 
-/obj/effect/decal/cleanable/water_act(var/depth)
+/obj/effect/decal/cleanable/water_act(depth)
 	..()
 	qdel(src)
 

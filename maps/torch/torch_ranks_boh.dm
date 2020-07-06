@@ -30,6 +30,26 @@
 	/datum/mil_rank/marine_corps/o2,\
 	/datum/mil_rank/marine_corps/o3,\
 	)
+#define NTEF_ENLISTED_ONLY /datum/mil_branch/fleet = list(\
+	/datum/mil_rank/fleet/e1, \
+	/datum/mil_rank/fleet/e2, \
+	/datum/mil_rank/fleet/e2_exp, \
+	/datum/mil_rank/fleet/e3, \
+	/datum/mil_rank/fleet/e3_exp, \
+	/datum/mil_rank/fleet/e4, \
+	/datum/mil_rank/fleet/e5, \
+	/datum/mil_rank/fleet/e5_exp, \
+	/datum/mil_rank/fleet/e6, \
+	/datum/mil_rank/fleet/e7, \
+	/datum/mil_rank/fleet/e7_exp, \
+	/datum/mil_rank/fleet/e8, \
+	/datum/mil_rank/fleet/e9, \
+	/datum/mil_rank/fleet/e9_alt1, \
+	)
+#define SOLGOV_NO_SFP /datum/mil_branch/solgov = list(\
+	/datum/mil_rank/sol/gov, \
+	/datum/mil_rank/sol/scientist, \
+	)
 
 /datum/map/torch
 	branch_types = list(
@@ -69,32 +89,30 @@
 	)
 
 	species_to_branch_whitelist = list(
-		/datum/species/diona		= list(UNRESTRICTED),
+		/datum/species/diona		= list(UNRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/private_security),
 		/datum/species/nabber		= list(/datum/mil_branch/civilian),
-		/datum/species/skrell		= list(UNRESTRICTED, /datum/mil_branch/skrell_fleet),
-		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/unathi/yeosa	= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/adherent		= list(UNRESTRICTED),
-		/datum/species/sergal		= list(UNRESTRICTED, /datum/mil_branch/private_security),
-		/datum/species/akula		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/vasilissan	= list(UNRESTRICTED, /datum/mil_branch/private_security),
-		/datum/species/vulpkanin	= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/customhuman	= list(UNRESTRICTED, SEMIRESTRICTED),
- 		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, SEMIRESTRICTED),
-		//datum/species/tesh/		= list(UNRESTRICTED),
+		/datum/species/skrell		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/skrell_fleet),
+		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/unathi/yeosa	= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/adherent		= list(/datum/mil_branch/civilian, /datum/mil_branch/solgov),
+		/datum/species/akula		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/vulpkanin	= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/vasilissan	= list(UNRESTRICTED, /datum/mil_branch/private_security, /datum/mil_branch/solgov),
+		/datum/species/sergal		= list(UNRESTRICTED, /datum/mil_branch/private_security, /datum/mil_branch/solgov),
+		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
+ 		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/private_security),
+		/datum/species/plasmasans	= list(/datum/mil_branch/civilian, /datum/mil_branch/solgov),
 		/datum/species/vox			= list(/datum/mil_branch/alien),
 		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
 	)
 
 	species_to_rank_whitelist = list(
-		/datum/species/unathi		= list(SMC_TROOPERS_ONLY),
-		/datum/species/unathi/yeosa	= list(SMC_TROOPERS_ONLY),
-		/datum/species/humanathi	= list(SMC_TROOPERS_ONLY),
-		/datum/species/tajaran		= list(SMC_TROOPERS_ONLY),
- 		/datum/species/shapeshifter/promethean	= list(SMC_TROOPERS_ONLY)
+		/datum/species/diona		= list(SOLGOV_NO_SFP),
+		/datum/species/adherent		= list(SOLGOV_NO_SFP),
+		/datum/species/shapeshifter/promethean	= list(SOLGOV_NO_SFP),
+		/datum/species/plasmasans	= list(SOLGOV_NO_SFP)
 	)
 
 /datum/mil_branch/fleet
@@ -715,3 +733,5 @@
 #undef SEMIRESTRICTED
 #undef SMC_TROOPERS_ONLY
 #undef SMC_LIMITED_RANKS
+#undef NTEF_ENLISTED_ONLY
+#undef SOLGOV_NO_SFP

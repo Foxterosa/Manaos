@@ -542,6 +542,16 @@
 		icon_state = "spidereyes"
 		body_parts = list(BP_HEAD)
 
+	vasseyes
+		name = "Vassilisan Eyes"
+		icon_state = "vasseyes"
+		body_parts = list(BP_HEAD)
+
+	vasseyesalt
+		name = "Vassilisan Eyes (Alt)"
+		icon_state = "vasseyesalt"
+		body_parts = list(BP_HEAD)
+
 	sergaleyes
 		name = "Sergal Eyes"
 		icon_state = "eyes_sergal"
@@ -949,5 +959,11 @@
 	unathidoublehorns
 		name = "Double Unathi Horns"
 		icon_state = "unathidoublehorns"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	nose
+		name = "Colourable nose"
+		icon_state = "colornose"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)

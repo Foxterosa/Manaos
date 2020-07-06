@@ -1,12 +1,12 @@
 /decl/hierarchy/outfit/job/assistant
-	name = OUTFIT_JOB_NAME("Assistant")
+	name = OUTFIT_JOB_NAME("Asistente")
 
 /decl/hierarchy/outfit/job/service
 	l_ear = /obj/item/device/radio/headset/headset_service
 	hierarchy_type = /decl/hierarchy/outfit/job/service
 
 /decl/hierarchy/outfit/job/service/bartender
-	name = OUTFIT_JOB_NAME("Bartender")
+	name = OUTFIT_JOB_NAME("Barista")
 	uniform = /obj/item/clothing/under/rank/bartender
 	id_type = /obj/item/weapon/card/id/civilian/bartender
 	pda_type = /obj/item/modular_computer/pda
@@ -20,7 +20,7 @@
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/service/gardener
-	name = OUTFIT_JOB_NAME("Gardener")
+	name = OUTFIT_JOB_NAME("Jardinero")
 	uniform = /obj/item/clothing/under/rank/hydroponics
 	suit = /obj/item/clothing/suit/apron
 	gloves = /obj/item/clothing/gloves/thick/botany
@@ -35,30 +35,19 @@
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/hyd
 
 /decl/hierarchy/outfit/job/service/janitor
-	name = OUTFIT_JOB_NAME("Janitor")
+	name = OUTFIT_JOB_NAME("Conserje")
 	uniform = /obj/item/clothing/under/rank/janitor
 	id_type = /obj/item/weapon/card/id/civilian/janitor
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/librarian
-	name = OUTFIT_JOB_NAME("Librarian")
+	name = OUTFIT_JOB_NAME("Bibliotecario")
 	uniform = /obj/item/clothing/under/suit_jacket/red
 	id_type = /obj/item/weapon/card/id/civilian/librarian
 	pda_type = /obj/item/modular_computer/pda
 
-/decl/hierarchy/outfit/job/internal_affairs_agent
-	name = OUTFIT_JOB_NAME("Internal affairs agent")
-	l_ear = /obj/item/device/radio/headset/ia
-	uniform = /obj/item/clothing/under/rank/internalaffairs
-	suit = /obj/item/clothing/suit/storage/toggle/suit/black
-	shoes = /obj/item/clothing/shoes/brown
-	glasses = /obj/item/clothing/glasses/sunglasses/big
-	l_hand = /obj/item/weapon/storage/briefcase
-	id_type = /obj/item/weapon/card/id/civilian/internal_affairs_agent
-	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
-
 /decl/hierarchy/outfit/job/chaplain
-	name = OUTFIT_JOB_NAME("Chaplain")
+	name = OUTFIT_JOB_NAME("Capellan")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	l_hand = /obj/item/weapon/storage/bible
 	id_type = /obj/item/weapon/card/id/civilian/chaplain

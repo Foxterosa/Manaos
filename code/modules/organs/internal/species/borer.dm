@@ -28,7 +28,7 @@
 		var/obj/effect/decal/cleanable/blood/splatter/goo = locate() in get_turf(owner)
 		if(goo)
 			goo.SetName("husk ichor")
-			goo.desc = "A thick goo that reeks of decay."
+			goo.desc = "Una sustancia espesa que apesta a descomposicion."
 			goo.basecolor = "#412464"
 			goo.update_icon()
 

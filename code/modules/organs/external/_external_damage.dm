@@ -142,7 +142,7 @@ obj/item/organ/external/take_general_damage(var/amount, var/silent = FALSE)
 	if(damage_flags & DAM_SHARP)
 		organ_damage_threshold *= 0.5
 	if(laser)
-		organ_damage_threshold *= 2
+		organ_damage_threshold *= 0.8
 
 	if(!(cur_damage + damage_amt >= max_damage) && !(damage_amt >= organ_damage_threshold))
 		return FALSE
@@ -297,7 +297,7 @@ obj/item/organ/external/take_general_damage(var/amount, var/silent = FALSE)
 
 		else if(agony_amount > 0.50 * max_damage)
 			owner.visible_message("<span class='warning'>[owner] reels in pain!</span>")
-			if(has_genitals() || agony_amount > max_damage)
+			if(agony_amount > max_damage)
 				owner.Weaken(3)
 			else
 				owner.Stun(3)

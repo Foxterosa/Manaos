@@ -111,7 +111,7 @@
 	health_hud_intensity = 1.75
 	meat_type = /obj/item/weapon/reagent_containers/food/snacks/fish/octopus
 	bone_material = MATERIAL_BONE_CARTILAGE
-	genders = list(PLURAL)
+	genders = list(PLURAL, NEUTER)
 	hidden_from_codex = FALSE
 	min_age = 19
 	max_age = 90
@@ -297,7 +297,7 @@
 	flesh_color = "#907e4a"
 
 	reagent_tag = IS_DIONA
-	genders = list(PLURAL)
+	genders = list(PLURAL, NEUTER)
 
 	available_cultural_info = list(
 		TAG_CULTURE =   list(CULTURE_DIONA),
@@ -351,8 +351,8 @@
 
 /datum/species/diona/skills_from_age(age)
 	switch(age)
-		if(101 to 200)	. = 12 // age bracket before this is 46 to 100 . = 8 making this +4
-		if(201 to 300)	. = 16 // + 8
+		if(101 to 200)	. = 8 // age bracket before this is 46 to 100 . = 8 making this +4
+		if(201 to 300)	. = 8 // + 8
 		else			. = ..()
 
 // Dionaea spawned by hand or by joining will not have any
