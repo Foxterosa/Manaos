@@ -129,11 +129,6 @@
 		AttackingTarget()
 		return 1
 
-/mob/living/simple_animal/hostile/proc/AttackingTarget2()
-	SEND_SIGNAL(src, COMSIG_HOSTILE_ATTACKINGTARGET, target)
-	in_melee = TRUE
-	return target.attack_animal(src)
-
 /mob/living/simple_animal/hostile/proc/AttackingTarget()
 	face_atom(target_mob)
 	setClickCooldown(attack_delay)
