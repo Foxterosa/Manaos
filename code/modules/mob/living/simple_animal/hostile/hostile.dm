@@ -10,6 +10,8 @@
 	var/projectiletype
 	var/projectilesound
 	var/casingtype
+	var/in_melee = FALSE	//We should sidestep now
+	var/dodge_prob = 30
 	var/fire_desc = "fires" //"X fire_desc at Y!"
 	var/ranged_range = 6 //tiles of range for ranged attackers to attack
 	var/move_to_delay = 4 //delay for the automated movement.
@@ -126,6 +128,11 @@
 	if(get_dist(src, target_mob) <= 1)	//Attacking
 		AttackingTarget()
 		return 1
+
+/mob/living/simple_animal/hostile/proc/AttackingTarget2()
+	SEND_SIGNAL(src, COMSIG_HOSTILE_ATTACKINGTARGET, target)
+	in_melee = TRUE
+	return target.attack_animal(src)
 
 /mob/living/simple_animal/hostile/proc/AttackingTarget()
 	face_atom(target_mob)
