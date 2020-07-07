@@ -2901,12 +2901,6 @@
 /obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/seconddeck/central)
-"fw" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "fx" = (
 /obj/machinery/power/rad_collector,
 /turf/simulated/floor/plating,
@@ -4059,9 +4053,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/locker_room)
-"hI" = (
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "hJ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 6
@@ -10251,7 +10242,6 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/structure/table/glass,
 /obj/item/weapon/cane{
 	pixel_x = -6;
@@ -10263,11 +10253,6 @@
 	},
 /obj/item/weapon/cane,
 /obj/item/weapon/storage/box/rxglasses,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
@@ -10870,26 +10855,6 @@
 /obj/effect/floor_decal/corner/yellow,
 /turf/simulated/floor/tiled,
 /area/engineering/locker_room)
-"uJ" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/structure/table/glass,
-/obj/item/weapon/storage/pill_bottle/spaceacillin,
-/obj/item/weapon/storage/pill_bottle/tramadol,
-/obj/item/weapon/storage/pill_bottle/dermaline,
-/obj/item/weapon/storage/pill_bottle/dexalin_plus,
-/obj/item/weapon/storage/pill_bottle/bicaridine,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/item/weapon/storage/pill_bottle/antidexafen,
-/obj/item/weapon/storage/pill_bottle/antitox,
-/obj/item/weapon/storage/pill_bottle/citalopram,
-/obj/item/weapon/storage/pill_bottle/inaprovaline,
-/obj/item/weapon/storage/pill_bottle/paracetamol,
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "uL" = (
 /obj/machinery/shield_diffuser,
 /obj/machinery/door/airlock/external/escapepod{
@@ -11574,13 +11539,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
-"wJ" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "wL" = (
 /obj/random/junk,
 /obj/structure/catwalk,
@@ -11913,6 +11871,18 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
+"xV" = (
+/obj/structure/fireaxecabinet{
+	pixel_y = -32
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "xW" = (
 /obj/machinery/light/small,
 /obj/structure/bed/chair/shuttle{
@@ -12184,26 +12154,6 @@
 "yK" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
-"yL" = (
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/glasses/blindfold,
-/obj/item/clothing/mask/muzzle,
-/obj/structure/table/rack/shelf/steel,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/industrial/outline/grey{
-	color = "";
-	desc = "F8F8F8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "yN" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 8;
@@ -12445,10 +12395,6 @@
 	},
 /turf/simulated/floor/reinforced/n20,
 /area/engineering/atmos)
-"zB" = (
-/obj/effect/floor_decal/corner/paleblue,
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "zD" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	icon_state = "intact";
@@ -13289,6 +13235,16 @@
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"BF" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
+"BG" = (
+/obj/effect/floor_decal/corner/paleblue,
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "BH" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/freezer,
@@ -13595,6 +13551,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/auxsolarport)
+"CA" = (
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "CB" = (
 /obj/structure/table/steel,
 /obj/item/weapon/storage/bag/trash,
@@ -14129,12 +14088,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
-"Ee" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "Ef" = (
 /obj/structure/sign/warning/vent_port,
 /turf/simulated/wall/r_wall/hull,
@@ -14918,15 +14871,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/aftport)
-"Ga" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 9
-	},
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "Gb" = (
 /obj/effect/shuttle_landmark/torch/deck3/guppy,
 /turf/space,
@@ -15117,18 +15061,6 @@
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
-"Gy" = (
-/obj/structure/fireaxecabinet{
-	pixel_y = -32
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "GA" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters{
@@ -15142,6 +15074,13 @@
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
 /area/engineering/locker_room)
+"GD" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/paleblue,
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "GF" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -15700,20 +15639,6 @@
 "Ir" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/auxsolarport)
-"Iu" = (
-/obj/structure/closet/crate/med_crate/trauma,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/effect/floor_decal/industrial/outline/grey{
-	color = "";
-	desc = "F8F8F8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "Iy" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/structure/window/reinforced{
@@ -16458,11 +16383,24 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
-"Ly" = (
+"Lu" = (
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/mask/muzzle,
+/obj/structure/table/rack/shelf/steel,
 /obj/effect/floor_decal/corner/paleblue{
-	dir = 9
+	dir = 5
 	},
-/obj/effect/floor_decal/corner/paleblue,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = "";
+	desc = "F8F8F8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/storage/medical)
 "LD" = (
@@ -16794,6 +16732,26 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics/lower)
+"MC" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/structure/table/glass,
+/obj/item/weapon/storage/pill_bottle/spaceacillin,
+/obj/item/weapon/storage/pill_bottle/tramadol,
+/obj/item/weapon/storage/pill_bottle/dermaline,
+/obj/item/weapon/storage/pill_bottle/dexalin_plus,
+/obj/item/weapon/storage/pill_bottle/bicaridine,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/item/weapon/storage/pill_bottle/antidexafen,
+/obj/item/weapon/storage/pill_bottle/antitox,
+/obj/item/weapon/storage/pill_bottle/citalopram,
+/obj/item/weapon/storage/pill_bottle/inaprovaline,
+/obj/item/weapon/storage/pill_bottle/paracetamol,
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "ME" = (
 /obj/structure/sign/warning/vent_port,
 /turf/simulated/wall/r_wall/hull,
@@ -16820,6 +16778,12 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/maintenance/seconddeck/foreport)
+"MR" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "MS" = (
 /obj/random/junk,
 /turf/simulated/floor/airless,
@@ -17379,20 +17343,6 @@
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/wastetank)
-"OK" = (
-/obj/structure/closet/radiation,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/effect/floor_decal/industrial/outline/grey{
-	color = "";
-	desc = "F8F8F8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "OL" = (
 /obj/effect/floor_decal/corner/yellow{
 	icon_state = "corner_white";
@@ -18408,6 +18358,20 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
+"RG" = (
+/obj/structure/closet/radiation,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = "";
+	desc = "F8F8F8"
+	},
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "RI" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/effect/floor_decal/techfloor{
@@ -19554,6 +19518,20 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/vacant/prototype/control)
+"VN" = (
+/obj/structure/closet/secure_closet/medical1,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = "";
+	desc = "F8F8F8"
+	},
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "VO" = (
 /obj/structure/table/steel,
 /obj/item/weapon/book/manual/engineering_hacking,
@@ -19619,6 +19597,15 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/locker_room)
+"VZ" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/wall/prepainted,
+/area/storage/expedition)
 "Wb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /obj/structure/cable/cyan{
@@ -19790,15 +19777,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
-"Wu" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
-/turf/simulated/wall/prepainted,
-/area/storage/expedition)
 "Wv" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -20126,20 +20104,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/foyer)
-"Xw" = (
-/obj/structure/closet/secure_closet/medical1,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/effect/floor_decal/industrial/outline/grey{
-	color = "";
-	desc = "F8F8F8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/storage/medical)
 "Xx" = (
 /obj/effect/floor_decal/corner_techfloor_grid{
 	icon_state = "corner_techfloor_grid";
@@ -20165,6 +20129,15 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/maintenance/seconddeck/forestarboard)
+"Xz" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 9
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "XA" = (
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
@@ -20185,6 +20158,13 @@
 "XE" = (
 /turf/simulated/floor/tiled,
 /area/engineering/locker_room)
+"XG" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "XI" = (
 /obj/structure/catwalk,
 /obj/effect/floor_decal/industrial/warning{
@@ -20256,6 +20236,20 @@
 "XR" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/assembly/robotics/lower)
+"XS" = (
+/obj/structure/closet/crate/med_crate/trauma,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = "";
+	desc = "F8F8F8"
+	},
+/turf/simulated/floor/tiled/white,
+/area/storage/medical)
 "XV" = (
 /obj/machinery/button/blast_door{
 	desc = "A remote-control switch.";
@@ -40113,8 +40107,8 @@ aa
 aa
 aB
 tG
-Ga
-Ly
+Xz
+GD
 ee
 eR
 Ge
@@ -40314,8 +40308,8 @@ ag
 ag
 aB
 aB
-uJ
-hI
+MC
+CA
 pz
 ee
 eR
@@ -40515,10 +40509,10 @@ ag
 aB
 aB
 aB
-yL
-fw
-hI
-Iu
+Lu
+BF
+CA
+XS
 ee
 UI
 Ge
@@ -40717,9 +40711,9 @@ aa
 aB
 nb
 bP
-fw
-hI
-hI
+BF
+CA
+CA
 ef
 HT
 PO
@@ -40918,12 +40912,12 @@ aa
 aa
 aB
 bm
-hI
-hI
-hI
-hI
+CA
+CA
+CA
+CA
 Ae
-Wu
+VZ
 iJ
 cr
 cY
@@ -41120,12 +41114,12 @@ aa
 aa
 aB
 ad
-zB
-OK
+BG
+RG
 PD
-Xw
+VN
 cp
-Wu
+VZ
 bZ
 Je
 ee
@@ -41322,12 +41316,12 @@ aa
 aa
 aB
 bn
-wJ
+XG
 cp
 cp
 cp
 cp
-Wu
+VZ
 ee
 ee
 ee
@@ -41928,7 +41922,7 @@ aa
 aB
 aB
 bq
-Ee
+MR
 cp
 de
 aN
@@ -42130,7 +42124,7 @@ aB
 aB
 aM
 br
-Gy
+xV
 cp
 df
 dD
