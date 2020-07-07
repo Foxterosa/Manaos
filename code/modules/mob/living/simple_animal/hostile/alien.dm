@@ -19,18 +19,14 @@
 	melee_damage_upper = 25
 	attacktext = "slashes"
 	speak_emote = list("hisses")
-	a_intent = I_HARM
+	a_intent = I_HURT
 	attack_sound = 'sound/weapons/bladeslice.ogg'
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
 	heat_damage_per_tick = 20
 	faction = list("alien")
 	status_flags = CANPUSH
 	minbodytemp = 0
 	see_in_dark = 8
-	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
-	death_sound = 'sound/voice/hiss6.ogg'
-	deathmessage = "lets out a waning guttural screech, green blood bubbling from its maw..."
 
 /mob/living/simple_animal/hostile/alien/maid
 	name = "lusty xenomorph maid"
@@ -39,7 +35,6 @@
 	a_intent = I_HELP
 	friendly = "caresses"
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
 	icon_state = "maid"
 	icon_living = "maid"
 	icon_dead = "maid_dead"

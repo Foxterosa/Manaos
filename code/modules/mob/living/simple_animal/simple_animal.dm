@@ -59,6 +59,7 @@
 	var/melee_damage_lower = 0
 	var/melee_damage_upper = 0
 	var/attacktext = "attacked"
+	var/obj_damage = 0 //how much damage this simple animal does to objects, if any
 	var/attack_sound = null
 	var/friendly = "nuzzles"
 	var/environment_smash = 0
