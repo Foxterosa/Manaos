@@ -101,9 +101,9 @@
 	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
 	name = "remera negra ajustada con khakis"
 	desc = "Hm, fashionable"
-	icon_state = "jr-suit"
-	item_state = "jr-suit"
-	worn_state = "jr-suit"
+	icon_state = "miner_s"
+	item_state = "miner_s"
+	worn_state = "miner_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 //This set of uniforms looks fairly fancy and is generally used for high-ranking NT personnel from what I've seen, so lets give them appropriate ranks.
