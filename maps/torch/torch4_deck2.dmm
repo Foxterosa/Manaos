@@ -228,7 +228,9 @@
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/northleft{
-	name = "emergency core eject"
+	autoset_access = 1;
+	name = "emergency core eject";
+	req_access = newlist()
 	},
 /obj/machinery/button/blast_door{
 	desc = "A remote switch to open the engine core vent to space.";
@@ -4144,6 +4146,7 @@
 /area/engineering/locker_room)
 "hX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled,
 /area/engineering/locker_room)
 "hY" = (
@@ -8583,8 +8586,10 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/brigdoor/southleft{
+	autoset_access = 1;
 	dir = 4;
-	name = "Monitoring Desk"
+	name = "Monitoring Desk";
+	req_access = newlist()
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engineering_monitoring)
@@ -9412,12 +9417,12 @@
 /obj/machinery/computer/ship/engines{
 	dir = 1
 	},
-/obj/machinery/light/small,
 /obj/machinery/button/blast_door{
 	id_tag = "Atmoslockdown";
 	name = "Atmospherics Lockdown";
 	pixel_y = -25
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_monitoring)
 "sg" = (
@@ -13477,6 +13482,9 @@
 	pixel_y = -24
 	},
 /obj/machinery/light/small,
+/obj/machinery/photocopier/faxmachine{
+	department = "Engineering"
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_monitoring)
 "CD" = (
@@ -15381,12 +15389,11 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/engine_room)
 "HX" = (
-/obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 4
-	},
 /obj/structure/closet/secure_closet/engineering_electrical,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/locker_room)
 "HY" = (
@@ -18722,14 +18729,12 @@
 /area/engineering/foyer)
 "Ts" = (
 /obj/structure/table/steel_reinforced,
-/obj/machinery/photocopier/faxmachine{
-	department = "Engineering"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /obj/effect/floor_decal/corner/yellow/half{
 	icon_state = "bordercolorhalf";
 	dir = 1
 	},
+/obj/item/weapon/storage/box/donut,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_monitoring)
 "Tt" = (
@@ -18840,12 +18845,12 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "TN" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/machinery/vending/snix,
 /obj/item/modular_computer/telescreen/preset/engineering{
 	pixel_y = 32
+	},
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/locker_room)
