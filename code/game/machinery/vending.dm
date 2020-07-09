@@ -1302,7 +1302,13 @@
 					/obj/item/clothing/under/rank/clown,
 					/obj/item/clothing/under/sexyclown,
 					/obj/item/clothing/shoes/clown_shoes,
-					/obj/item/weapon/storage/backpack/clown
+					/obj/item/weapon/storage/backpack/clown,
+					/obj/item/clothing/mask/jokermask,
+					/obj/item/clothing/under/jokeroutfit,
+					/obj/item/clothing/mask/kasumimask,
+					/obj/item/clothing/under/kasumioutfit,
+					/obj/item/clothing/shoes/kasumi
+
 					)
 
 /obj/machinery/vending/hatvendor
@@ -1353,7 +1359,8 @@
 					/obj/item/clothing/shoes/white = 3,
 					/obj/item/clothing/shoes/yellow = 3,
 					/obj/item/clothing/shoes/dress/caretakershoes = 3,
-					/obj/item/clothing/shoes/sandal = 3
+					/obj/item/clothing/shoes/sandal = 3,
+					/obj/item/clothing/shoes/jrboots
 					)
 
 /obj/machinery/vending/suitvendor
@@ -1418,7 +1425,8 @@
 					/obj/item/clothing/suit/storage/toggle/bomber = 2,
 					/obj/item/clothing/suit/storage/leather_jacket = 2,
 					/obj/item/clothing/accessory/toggleable/hawaii/red = 3,
-					/obj/item/clothing/accessory/toggleable/hawaii = 3
+					/obj/item/clothing/accessory/toggleable/hawaii = 3,
+					/obj/item/clothing/under/jrsuit
 					)
 
 // eliza's attempt at a new vending machine
