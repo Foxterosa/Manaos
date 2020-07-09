@@ -1284,7 +1284,6 @@
 					/obj/item/clothing/suit/bio_suit/plaguedoctorsuit,
 					/obj/item/clothing/head/chicken,
 					/obj/item/clothing/suit/chickensuit,
-					/obj/item/clothing/under/carp,
 					/obj/item/clothing/mask/horsehead,
 					/obj/item/clothing/mask/pig,
 					/obj/item/clothing/head/ushanka,
