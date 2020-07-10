@@ -97,7 +97,6 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/jrsuit
-	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
 	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
 	name = "remera negra ajustada con khakis"
 	desc = "Hm, fashionable"
