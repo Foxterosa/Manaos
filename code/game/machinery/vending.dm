@@ -1239,35 +1239,196 @@
 	products = list(/obj/structure/closet/crate/freezer = 2, /obj/structure/closet = 3, /obj/structure/closet/crate = 3)
 
 /obj/machinery/vending/fashionvend
-	name = "Smashing Fashions"
-	desc = "For all your cheap knockoff needs."
-	product_slogans = "Look smashing for your darling!;Be rich! Dress rich!"
+	name = "Vendedor de disfraces"
+	desc = "Todo tipo de disfraces."
+	product_slogans = "Mirate encantador para tu amor."
 	icon_state = "theater"
 	vend_delay = 15
 	base_type = /obj/machinery/vending/fashionvend
-	vend_reply = "Absolutely smashing!"
-	product_ads = "Impress the love of your life!;Don't look poor, look rich!;100% authentic designers!;All sales are final!;Lowest prices guaranteed!"
-	products = list(/obj/item/weapon/mirror = 8,
-					/obj/item/weapon/haircomb = 8,
-					/obj/item/clothing/glasses/monocle = 5,
-					/obj/item/clothing/glasses/sunglasses = 5,
-					/obj/item/weapon/lipstick = 3,
-					/obj/item/weapon/lipstick/black = 3,
-					/obj/item/weapon/lipstick/purple = 3,
-					/obj/item/weapon/lipstick/jade = 3,
-					/obj/item/weapon/storage/wallet/poly = 2)
-	contraband = list(/obj/item/clothing/glasses/eyepatch = 2, /obj/item/clothing/accessory/horrible = 2)
-	premium = list(/obj/item/clothing/mask/smokable/pipe = 3)
-	prices = list(/obj/item/weapon/mirror = 60,
-					/obj/item/weapon/haircomb = 40,
-					/obj/item/clothing/glasses/monocle = 700,
-					/obj/item/clothing/glasses/sunglasses = 500,
-					/obj/item/weapon/lipstick = 100,
-					/obj/item/weapon/lipstick/black = 100,
-					/obj/item/weapon/lipstick/purple = 100,
-					/obj/item/weapon/lipstick/jade = 100,
-					/obj/item/weapon/storage/wallet/poly = 600
+	vend_reply = "Absolutamente precioso"
+	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico; Los precios mas bajos estan garantizados."
+	products = list(/obj/item/clothing/head/beret = 2,
+					/obj/item/clothing/mask/gas/mime,
+					/obj/item/clothing/mask/gas/sexymime,
+					/obj/item/clothing/under/mime,
+					/obj/item/clothing/under/sexymime,
+					/obj/item/clothing/gloves/white = 2,
+					/obj/item/clothing/accessory/suspenders,
+					/obj/item/clothing/shoes/mime,
+					/obj/item/clothing/head/bandana/familiarband,
+					/obj/item/clothing/head/pirate,
+					/obj/item/clothing/under/pirate,
+					/obj/item/clothing/glasses/eyepatch,
+					/obj/item/clothing/suit/pirate,
+					/obj/item/clothing/under/bluepyjamas = 2,
+					/obj/item/clothing/under/redpyjamas = 2,
+					/obj/item/clothing/glasses/blindfold,
+					/obj/item/clothing/glasses/monocle = 2,
+					/obj/item/clothing/glasses/sunglasses = 3,
+					/obj/item/clothing/glasses/threedglasses = 2,
+					/obj/item/clothing/head/soft/rainbow,
+					/obj/item/clothing/under/color/rainbow,
+					/obj/item/clothing/gloves/rainbow,
+					/obj/item/clothing/shoes/rainbow,
+					/obj/item/clothing/head/kitty = 2,
+					/obj/item/clothing/head/rabbitears = 2,
+					/obj/item/clothing/under/maiddress = 2,
+					/obj/item/clothing/under/schoolgirl = 4,
+					/obj/item/clothing/head/mailman,
+					/obj/item/clothing/under/rank/mailman,
+					/obj/item/clothing/head/nursehat,
+					/obj/item/clothing/under/rank/nurse,
+					/obj/item/clothing/under/rank/nursesuit,
+					/obj/item/clothing/head/plaguedoctorhat,
+					/obj/item/clothing/mask/gas/plaguedoctor,
+					/obj/item/clothing/suit/bio_suit/plaguedoctorsuit,
+					/obj/item/clothing/head/chicken,
+					/obj/item/clothing/suit/chickensuit,
+					/obj/item/clothing/mask/horsehead,
+					/obj/item/clothing/mask/pig,
+					/obj/item/clothing/head/ushanka,
+					/obj/item/clothing/under/soviet,
+					/obj/item/clothing/head/wizard/fake,
+					/obj/item/clothing/suit/wizrobe/fake,
+					/obj/item/clothing/head/wizard/marisa/fake,
+					/obj/item/clothing/suit/wizrobe/marisa/fake,
+					/obj/item/clothing/head/xenos,
+					/obj/item/clothing/suit/xenos,
+					/obj/item/clothing/mask/luchador/rudos,
+					/obj/item/clothing/mask/luchador/tecnicos,
+					/obj/item/clothing/mask/luchador,
+					/obj/item/clothing/mask/gas/clown_hat,
+					/obj/item/clothing/mask/gas/sexyclown,
+					/obj/item/clothing/under/rank/clown,
+					/obj/item/clothing/under/sexyclown,
+					/obj/item/clothing/shoes/clown_shoes,
+					/obj/item/weapon/storage/backpack/clown,
+					/obj/item/clothing/mask/jokermask,
+					/obj/item/clothing/under/jokeroutfit,
+					/obj/item/clothing/mask/kasumimask,
+					/obj/item/clothing/under/kasumioutfit,
+					/obj/item/clothing/shoes/kasumi
+
 					)
+
+/obj/machinery/vending/hatvendor
+	name = "Vendedor de sombreros"
+	desc = "Todo tipo de sombreros."
+	product_slogans = "Mirate encantador para tu amor."
+	icon_state = "hats"
+	vend_delay = 15
+	base_type = /obj/machinery/vending/hatvendor
+	vend_reply = "Absolutamente precioso"
+	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico!"
+	products = list(/obj/item/clothing/head/bandana/green,
+					/obj/item/clothing/head/beaverhat,
+					/obj/item/clothing/head/beret = 2,
+					/obj/item/clothing/head/beret/purple,
+					/obj/item/clothing/head/boaterhat,
+					/obj/item/clothing/head/cakehat,
+					/obj/item/clothing/head/cowboy_hat = 3,
+					/obj/item/clothing/head/det = 2,
+					/obj/item/clothing/head/fez = 2,
+					/obj/item/clothing/head/hairflower = 2,
+					/obj/item/clothing/head/hairflower/blue = 2,
+					/obj/item/clothing/head/hairflower/pink = 2,
+					/obj/item/clothing/head/hairflower/yellow = 2,
+					/obj/item/clothing/head/that = 3,
+					/obj/item/clothing/mask/balaclava = 2,
+					/obj/item/clothing/mask/bandana = 2
+					)
+
+/obj/machinery/vending/shoevendor
+	name = "Vendedor de zapatos"
+	desc = "Todo tipo de zapatos."
+	product_slogans = "Mirate encantador para tu amor."
+	icon_state = "shoes"
+	vend_delay = 15
+	base_type = /obj/machinery/vending/shoevendor
+	vend_reply = "Absolutamente precioso"
+	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico!"
+	products = list(/obj/item/clothing/shoes/athletic = 3,
+					/obj/item/clothing/shoes/black = 3,
+				    /obj/item/clothing/shoes/blue = 3,
+					/obj/item/clothing/shoes/brown = 3,
+					/obj/item/clothing/shoes/green = 3,
+					/obj/item/clothing/shoes/laceup = 5,
+					/obj/item/clothing/shoes/orange = 3,
+					/obj/item/clothing/shoes/purple = 3,
+					/obj/item/clothing/shoes/red = 3,
+					/obj/item/clothing/shoes/white = 3,
+					/obj/item/clothing/shoes/yellow = 3,
+					/obj/item/clothing/shoes/dress/caretakershoes = 3,
+					/obj/item/clothing/shoes/sandal = 3,
+					/obj/item/clothing/shoes/jrboots
+					)
+
+/obj/machinery/vending/suitvendor
+	name = "Vendedor de ropa"
+	desc = "Todo tipo de ropas."
+	product_slogans = "Mirate encantador para tu amor."
+	icon_state = "suits"
+	vend_delay = 15
+	base_type = /obj/machinery/vending/suitvendor
+	vend_reply = "Absolutamente precioso"
+	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico!"
+	products = list(/obj/item/clothing/accessory/black = 3,
+					/obj/item/clothing/accessory/blue = 3,
+					/obj/item/clothing/accessory/brown = 3,
+					/obj/item/clothing/accessory/red = 3,
+					/obj/item/clothing/accessory/yellow = 3,
+					/obj/item/clothing/accessory/bowtie/ugly,
+					/obj/item/clothing/accessory/cloak = 3,
+					/obj/item/clothing/suit/apron/overalls = 2,
+					/obj/item/clothing/suit/leathercoat = 2,
+					/obj/item/clothing/under/blackskirt = 2,
+					/obj/item/clothing/under/color/black = 3,
+					/obj/item/clothing/under/color/blue = 3,
+					/obj/item/clothing/under/color/brown = 3,
+					/obj/item/clothing/under/color/green = 3,
+					/obj/item/clothing/under/color/lightpurple = 3,
+					/obj/item/clothing/under/color/orange = 3,
+					/obj/item/clothing/under/color/pink = 3,
+					/obj/item/clothing/under/color/red = 3,
+					/obj/item/clothing/under/color/white = 3,
+					/obj/item/clothing/under/color/yellow = 3,
+					/obj/item/clothing/suit/poncho/colored,
+					/obj/item/clothing/under/dress/dress_fire,
+					/obj/item/clothing/under/dress/dress_orange,
+					/obj/item/clothing/under/dress/dress_saloon,
+					/obj/item/clothing/under/dress/dress_yellow,
+					/obj/item/clothing/under/dress/plaid_blue,
+					/obj/item/clothing/under/dress/plaid_purple,
+					/obj/item/clothing/under/dress/plaid_red,
+					/obj/item/clothing/under/formal_pants/black = 2,
+					/obj/item/clothing/under/formal_pants/khaki = 2,
+					/obj/item/clothing/under/formal_pants/red = 2,
+					/obj/item/clothing/under/formal_pants/tan = 2,
+					/obj/item/clothing/under/gentlesuit = 2,
+					/obj/item/clothing/under/kilt,
+					/obj/item/clothing/under/kimono = 2,
+					/obj/item/clothing/under/librarian,
+					/obj/item/clothing/under/scratch,
+					/obj/item/clothing/under/sundress,
+					/obj/item/clothing/under/sundress_white,
+					/obj/item/clothing/under/waiter,
+					/obj/item/clothing/under/lawyer/black = 2,
+					/obj/item/clothing/under/lawyer/blue = 2,
+					/obj/item/clothing/under/lawyer/bluesuit = 2,
+					/obj/item/clothing/under/lawyer/female,
+					/obj/item/clothing/under/lawyer/infil,
+					/obj/item/clothing/under/lawyer/infil/fem,
+					/obj/item/clothing/under/lawyer/purpsuit,
+					/obj/item/clothing/suit/storage/toggle/suit/purple,
+					/obj/item/clothing/suit/storage/toggle/suit/blue,
+					/obj/item/clothing/suit/storage/toggle/suit/black = 2,
+					/obj/item/clothing/suit/storage/toggle/bomber = 2,
+					/obj/item/clothing/suit/storage/leather_jacket = 2,
+					/obj/item/clothing/accessory/toggleable/hawaii/red = 3,
+					/obj/item/clothing/accessory/toggleable/hawaii = 3,
+					/obj/item/clothing/under/jrsuit
+					)
+
 // eliza's attempt at a new vending machine
 /obj/machinery/vending/games
 	name = "Good Clean Fun"
@@ -1314,10 +1475,34 @@
 				  /obj/item/weapon/tape_roll = 65
 					)
 
+/obj/machinery/vending/bathvendor
+	name = "Vendedor de trajes de bano"
+	desc = "Todo tipo de trajes de bano."
+	vend_delay = 15
+	product_slogans = "Divercion en la piscina!"
+
+	icon_state = "lavatory"
+	icon_deny = "lavatory-deny"
+	icon_vend = "lavatory-vend"
+	base_type = /obj/machinery/vending/bathvendor
+	products = list(/obj/item/clothing/mask/snorkel = 3,
+					/obj/item/clothing/shoes/swimmingfins = 3,
+					/obj/item/clothing/under/swimsuit/black = 2,
+					/obj/item/clothing/under/swimsuit/blue = 2,
+					/obj/item/clothing/under/swimsuit/green = 2,
+					/obj/item/clothing/under/swimsuit/purple = 2,
+					/obj/item/clothing/under/swimsuit/red = 2,
+					/obj/item/clothing/under/shorts/black = 2,
+					/obj/item/clothing/under/shorts/blue = 2,
+					/obj/item/clothing/under/shorts/green = 2,
+					/obj/item/clothing/under/shorts/grey = 2,
+					/obj/item/clothing/under/shorts/red
+					)
+
 //a food variant of the boda machine - It carries slavic themed foods.. Mostly beer snacks
 /obj/machinery/vending/snix
 	name = "Snix"
-	desc = "An old snack vending machine, how did it get here? And are the snacks still good?"
+	desc = "Una maquina que vende todo tipo de objetos curiosos."
 	vend_delay = 30
 	base_type = /obj/machinery/vending/snix
 	product_slogans = "Snix!"
@@ -1325,13 +1510,29 @@
 	icon_state = "snix"
 	icon_vend = "snix-vend"
 	icon_deny = "snix-deny"
-	products = list(/obj/item/weapon/reagent_containers/food/snacks/semki = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/canned/caviar = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/squid = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/croutons = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/salo = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/driedfish = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/pistachios = 7,
+	products = list(/obj/item/weapon/storage/bag/uno = 3,
+					/obj/item/weapon/pen/crayon/mime = 2,
+					/obj/item/weapon/pen/crayon/rainbow = 2,
+					/obj/item/weapon/bikehorn = 2,
+					/obj/item/device/boombox = 2,
+					/obj/item/device/camera/tvcamera = 3,
+					/obj/item/device/camera_film = 6,
+					/obj/item/weapon/storage/wallet/leather = 2,
+					/obj/item/weapon/storage/wallet/poly = 2,
+					/obj/item/toy/plushie/kobold = 2,
+					/obj/item/toy/plushie/kitten = 2,
+					/obj/item/toy/plushie/farwa = 2,
+					/obj/item/toy/plushie/spider = 2,
+					/obj/item/toy/plushie/lizard = 2,
+					/obj/item/weapon/storage/box/snappops = 3,
+					/obj/item/weapon/mirror = 2,
+					/obj/item/weapon/lipstick/black = 2,
+					/obj/item/weapon/lipstick/jade = 2,
+					/obj/item/weapon/lipstick/purple = 2,
+					/obj/item/weapon/lipstick/random = 2,
+					/obj/item/toy/sword,
+					/obj/item/toy/katana,
+					/obj/item/device/paicard
 					)
 
 	contraband = list(/obj/item/weapon/reagent_containers/food/snacks/canned/caviar/true = 1)
