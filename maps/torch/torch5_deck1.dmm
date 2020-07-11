@@ -20870,6 +20870,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
+"evh" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/sleeper)
 "ewb" = (
 /obj/structure/hygiene/sink{
 	dir = 8;
@@ -25181,6 +25187,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"jRU" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/medical/reslab)
 "jSb" = (
 /obj/effect/floor_decal/corner/research,
 /turf/simulated/floor/tiled/white,
@@ -26524,12 +26537,6 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head/aux)
-"lur" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
 "lvb" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -30390,6 +30397,12 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
+"qih" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/counselor)
 "qiL" = (
 /obj/effect/floor_decal/corner/blue/half{
 	dir = 1
@@ -30902,6 +30915,16 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/rnd/xenobiology/xenoflora)
+"qMX" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 9
+	},
+/obj/structure/curtain/open/privacy,
+/turf/simulated/floor/tiled/white,
+/area/medical/subacute)
 "qNb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 5
@@ -33589,6 +33612,15 @@
 "tCw" = (
 /turf/simulated/wall/prepainted,
 /area/medical/surgery2)
+"tCN" = (
+/obj/structure/dogbed{
+	name = "Cama de E-N"
+	},
+/mob/living/simple_animal/corgi/borgi{
+	name = "\improper E-N"
+	},
+/turf/simulated/floor/carpet/purple,
+/area/rnd/breakroom)
 "tEr" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/effect/floor_decal/corner/yellow/half{
@@ -33899,16 +33931,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
-"uxv" = (
-/obj/effect/floor_decal/corner/green{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/green{
-	dir = 9
-	},
-/obj/structure/curtain/open/privacy,
-/turf/simulated/floor/tiled/white,
-/area/medical/subacute)
 "uAB" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/medical,
@@ -34061,12 +34083,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
-"uNN" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/counselor)
 "uOZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -35166,13 +35182,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
-"xIc" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/medical/reslab)
 "xJP" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -57007,7 +57016,7 @@ eXM
 alB
 pdd
 abd
-lur
+evh
 ace
 xNn
 abq
@@ -58420,7 +58429,7 @@ dpb
 feb
 afk
 dHb
-uxv
+qMX
 scs
 fib
 ajL
@@ -58820,7 +58829,7 @@ aes
 sMO
 izW
 afn
-xIc
+jRU
 pCH
 izW
 dRb
@@ -59448,7 +59457,7 @@ tiz
 wep
 jgb
 aDt
-ozb
+tCN
 jnb
 aGG
 jYb
@@ -59843,7 +59852,7 @@ scr
 scr
 eQl
 elC
-uNN
+qih
 vsn
 scr
 aly
