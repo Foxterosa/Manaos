@@ -1307,9 +1307,8 @@
 					/obj/item/clothing/under/jokeroutfit,
 					/obj/item/clothing/mask/kasumimask,
 					/obj/item/clothing/under/kasumioutfit,
-					/obj/item/clothing/shoes/kasumi
-
-					)
+					/obj/item/clothing/shoes/kasumi)
+	contraband = list(/obj/item/clothing/under/stripper/mankini, /obj/item/clothing/under/stripper/stripper_green, /obj/item/clothing/under/stripper/stripper_pink, /obj/item/clothing/mask/muzzle = 4, /obj/item/clothing/under/harness, /obj/item/weapon/melee/whip)
 
 /obj/machinery/vending/hatvendor
 	name = "Vendedor de sombreros"
@@ -1335,8 +1334,8 @@
 					/obj/item/clothing/head/hairflower/yellow = 2,
 					/obj/item/clothing/head/that = 3,
 					/obj/item/clothing/mask/balaclava = 2,
-					/obj/item/clothing/mask/bandana = 2
-					)
+					/obj/item/clothing/mask/bandana = 2)
+	contraband = list(/obj/item/clothing/head/collectable/petehat)
 
 /obj/machinery/vending/shoevendor
 	name = "Vendedor de zapatos"
@@ -1526,13 +1525,13 @@
 					/obj/item/toy/plushie/lizard = 2,
 					/obj/item/weapon/storage/box/snappops = 3,
 					/obj/item/weapon/mirror = 2,
-					/obj/item/weapon/lipstick/black = 2,
-					/obj/item/weapon/lipstick/jade = 2,
-					/obj/item/weapon/lipstick/purple = 2,
-					/obj/item/weapon/lipstick/random = 2,
-					/obj/item/toy/sword,
-					/obj/item/toy/katana,
-					/obj/item/device/paicard
+					/obj/item/weapon/lipstick/random = 5,
+					/obj/item/clothing/accessory/locket = 2,
+					/obj/item/device/paicard,
+					/obj/item/toy/therapy_blue = 2,
+					/obj/item/toy/therapy_red = 2,
+					/obj/item/toy/therapy_yellow = 2,
+					/obj/item/toy/therapy_green = 2
 					)
 
 	contraband = list(/obj/item/weapon/reagent_containers/food/snacks/canned/caviar/true = 1)
