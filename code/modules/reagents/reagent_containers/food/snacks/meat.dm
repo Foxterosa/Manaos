@@ -75,9 +75,12 @@
 	desc = "Fresh game meat, harvested from some wild bird."
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/pug
-	name = "Carne de Pug"
+	name = "Carne de pug"
 	desc = "Sabe a... bueno... ya sabes..."
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/kanguro
-	name = "Carne de Kanguroo"
+	name = "Carne de kanguroo"
 	desc = "Sabe raro..."
+
+
+
