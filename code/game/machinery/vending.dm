@@ -1255,11 +1255,11 @@
 					/obj/item/clothing/gloves/white = 2,
 					/obj/item/clothing/accessory/suspenders,
 					/obj/item/clothing/shoes/mime,
-					/obj/item/clothing/head/bandana/familiarband,
-					/obj/item/clothing/head/pirate,
-					/obj/item/clothing/under/pirate,
-					/obj/item/clothing/glasses/eyepatch,
-					/obj/item/clothing/suit/pirate,
+					/obj/item/clothing/head/bandana/familiarband = 2,
+					/obj/item/clothing/head/pirate = 2,
+					/obj/item/clothing/under/pirate = 2,
+					/obj/item/clothing/glasses/eyepatch = 2,
+					/obj/item/clothing/suit/pirate = 2,
 					/obj/item/clothing/under/bluepyjamas = 2,
 					/obj/item/clothing/under/redpyjamas = 2,
 					/obj/item/clothing/glasses/blindfold,
@@ -1273,21 +1273,21 @@
 					/obj/item/clothing/head/kitty = 2,
 					/obj/item/clothing/head/rabbitears = 2,
 					/obj/item/clothing/under/maiddress = 2,
-					/obj/item/clothing/under/schoolgirl = 4,
+					/obj/item/clothing/under/schoolgirl = 2,
 					/obj/item/clothing/head/mailman,
 					/obj/item/clothing/under/rank/mailman,
-					/obj/item/clothing/head/nursehat,
-					/obj/item/clothing/under/rank/nurse,
-					/obj/item/clothing/under/rank/nursesuit,
-					/obj/item/clothing/head/plaguedoctorhat,
-					/obj/item/clothing/mask/gas/plaguedoctor,
-					/obj/item/clothing/suit/bio_suit/plaguedoctorsuit,
-					/obj/item/clothing/head/chicken,
-					/obj/item/clothing/suit/chickensuit,
+					/obj/item/clothing/head/nursehat = 4,
+					/obj/item/clothing/under/rank/nurse = 2,
+					/obj/item/clothing/under/rank/nursesuit = 2,
+					/obj/item/clothing/head/plaguedoctorhat = 2,
+					/obj/item/clothing/mask/gas/plaguedoctor = 2,
+					/obj/item/clothing/suit/bio_suit/plaguedoctorsuit = 2,
+					/obj/item/clothing/head/chicken = 2,
+					/obj/item/clothing/suit/chickensuit = 2,
 					/obj/item/clothing/mask/horsehead,
 					/obj/item/clothing/mask/pig,
-					/obj/item/clothing/head/ushanka,
-					/obj/item/clothing/under/soviet,
+					/obj/item/clothing/head/ushanka = 3,
+					/obj/item/clothing/under/soviet = 3,
 					/obj/item/clothing/head/wizard/fake,
 					/obj/item/clothing/suit/wizrobe/fake,
 					/obj/item/clothing/head/wizard/marisa/fake,
@@ -1307,9 +1307,8 @@
 					/obj/item/clothing/under/jokeroutfit,
 					/obj/item/clothing/mask/kasumimask,
 					/obj/item/clothing/under/kasumioutfit,
-					/obj/item/clothing/shoes/kasumi
-
-					)
+					/obj/item/clothing/shoes/kasumi)
+	contraband = list(/obj/item/clothing/under/stripper/mankini, /obj/item/clothing/under/stripper/stripper_green, /obj/item/clothing/under/stripper/stripper_pink, /obj/item/clothing/mask/muzzle = 4, /obj/item/clothing/under/harness, /obj/item/weapon/melee/whip)
 
 /obj/machinery/vending/hatvendor
 	name = "Vendedor de sombreros"
@@ -1335,8 +1334,8 @@
 					/obj/item/clothing/head/hairflower/yellow = 2,
 					/obj/item/clothing/head/that = 3,
 					/obj/item/clothing/mask/balaclava = 2,
-					/obj/item/clothing/mask/bandana = 2
-					)
+					/obj/item/clothing/mask/bandana = 2)
+	contraband = list(/obj/item/clothing/head/collectable/petehat)
 
 /obj/machinery/vending/shoevendor
 	name = "Vendedor de zapatos"
@@ -1356,7 +1355,7 @@
 					/obj/item/clothing/shoes/orange = 3,
 					/obj/item/clothing/shoes/purple = 3,
 					/obj/item/clothing/shoes/red = 3,
-					/obj/item/clothing/shoes/white = 3,
+					/obj/item/clothing/shoes/white = 4,
 					/obj/item/clothing/shoes/yellow = 3,
 					/obj/item/clothing/shoes/dress/caretakershoes = 3,
 					/obj/item/clothing/shoes/sandal = 3,
@@ -1496,7 +1495,7 @@
 					/obj/item/clothing/under/shorts/blue = 2,
 					/obj/item/clothing/under/shorts/green = 2,
 					/obj/item/clothing/under/shorts/grey = 2,
-					/obj/item/clothing/under/shorts/red
+					/obj/item/clothing/under/shorts/red = 2
 					)
 
 //a food variant of the boda machine - It carries slavic themed foods.. Mostly beer snacks
@@ -1526,13 +1525,13 @@
 					/obj/item/toy/plushie/lizard = 2,
 					/obj/item/weapon/storage/box/snappops = 3,
 					/obj/item/weapon/mirror = 2,
-					/obj/item/weapon/lipstick/black = 2,
-					/obj/item/weapon/lipstick/jade = 2,
-					/obj/item/weapon/lipstick/purple = 2,
-					/obj/item/weapon/lipstick/random = 2,
-					/obj/item/toy/sword,
-					/obj/item/toy/katana,
-					/obj/item/device/paicard
+					/obj/item/weapon/lipstick/random = 5,
+					/obj/item/clothing/accessory/locket = 2,
+					/obj/item/device/paicard,
+					/obj/item/toy/therapy_blue = 2,
+					/obj/item/toy/therapy_red = 2,
+					/obj/item/toy/therapy_yellow = 2,
+					/obj/item/toy/therapy_green = 2
 					)
 
 	contraband = list(/obj/item/weapon/reagent_containers/food/snacks/canned/caviar/true = 1)
