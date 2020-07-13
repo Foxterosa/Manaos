@@ -38,6 +38,7 @@
 		"wildlifecarp"     = new/datum/holodeck_program(/area/holodeck/source_wildlife, list()),
 		"temple"           = new/datum/holodeck_program(/area/holodeck/source_temple),
 		"plaza"            = new/datum/holodeck_program(/area/holodeck/source_plaza),
+		"lasertag"         = new/datum/holodeck_program(/area/holodeck/source_lasertag, list('sound/music/manaos/fear.ogg')),
 		"turnoff"          = new/datum/holodeck_program(/area/holodeck/source_plating, list())
 	)
 
@@ -59,7 +60,8 @@
 			"Thunderdome Court" = "thunderdomecourt",
 			"Voleyball Court"   = "voleyball",
 			"Bathhouse"         = "temple",
-			"Plaza"             = "plaza"
+			"Plaza"             = "plaza",
+			"Laser Tag"         = "lasertag"
 		)
 
 	)

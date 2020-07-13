@@ -1799,12 +1799,6 @@
 	},
 /turf/simulated/floor/holofloor/tiled,
 /area/holodeck/source_basketball)
-"ahz" = (
-/turf/simulated/floor/holofloor/beach/sand{
-	dir = 8;
-	icon_state = "beachcorner"
-	},
-/area/holodeck/source_beach)
 "ahA" = (
 /turf/simulated/floor/holofloor/beach/sand{
 	dir = 4;
@@ -2227,114 +2221,120 @@
 /turf/simulated/floor/plating,
 /area/centcom/evac)
 "ala" = (
-/turf/simulated/mineral,
-/area/space)
+/turf/simulated/wall/walnut,
+/area/beach)
 "alg" = (
-/turf/unsimulated/beach/sand{
-	density = 1;
-	opacity = 1
-	},
+/turf/simulated/floor/wood/walnut,
 /area/beach)
 "alr" = (
-/turf/unsimulated/beach/sand,
+/obj/machinery/portable_atmospherics/hydroponics,
+/turf/simulated/floor/wood/walnut,
 /area/beach)
 "als" = (
-/obj/structure/closet,
-/turf/unsimulated/beach/sand,
+/obj/machinery/seed_storage/garden{
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
 /area/beach)
 "alJ" = (
-/obj/effect/overlay/palmtree_l,
-/turf/unsimulated/beach/sand,
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/wood/walnut,
 /area/beach)
 "alK" = (
-/obj/effect/overlay/palmtree_r,
-/obj/effect/overlay/coconut,
-/turf/unsimulated/beach/sand,
+/obj/structure/hygiene/sink{
+	pixel_y = -12
+	},
+/turf/simulated/floor/tiled/freezer,
 /area/beach)
 "alX" = (
-/obj/effect/overlay/coconut,
-/turf/unsimulated/beach/sand,
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/item/weapon/reagent_containers/food/condiment/salt,
+/obj/item/weapon/reagent_containers/food/condiment/salt,
+/obj/item/weapon/reagent_containers/food/condiment/salt,
+/obj/item/weapon/reagent_containers/food/condiment/salt,
+/obj/item/weapon/reagent_containers/food/condiment/small/sugar,
+/obj/item/weapon/reagent_containers/food/condiment/small/sugar,
+/turf/simulated/floor/tiled/freezer,
 /area/beach)
 "amK" = (
-/obj/effect/overlay/palmtree_r,
-/turf/unsimulated/beach/sand,
+/obj/structure/closet/secure_closet/freezer/fridge,
+/turf/simulated/floor/tiled/freezer,
 /area/beach)
 "anb" = (
-/obj/effect/landmark{
-	name = "endgame_exit"
-	},
-/turf/unsimulated/beach/sand,
+/obj/structure/closet/secure_closet/bar_torch,
+/obj/item/clothing/accessory/storage/bandolier,
+/obj/item/weapon/gun/projectile/shotgun/pump,
+/obj/item/weapon/storage/box/ammo/shotgunshells,
+/obj/item/clothing/accessory/badge/firearm/bar,
+/obj/item/clothing/under/rank/bartender,
+/obj/item/clothing/head/chefhat,
+/obj/item/clothing/suit/chef,
+/obj/item/clothing/suit/chef/classic,
+/obj/item/clothing/under/rank/chef,
+/obj/item/clothing/shoes/white,
+/turf/simulated/floor/tiled/freezer,
 /area/beach)
 "ano" = (
-/obj/structure/table/standard,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
-/turf/unsimulated/beach/sand,
+/obj/structure/closet/crate/freezer,
+/obj/item/weapon/reagent_containers/food/condiment/barbecue,
+/obj/item/weapon/reagent_containers/food/condiment/capsaicin,
+/obj/item/weapon/reagent_containers/food/condiment/cornoil,
+/obj/item/weapon/reagent_containers/food/condiment/cream,
+/obj/item/weapon/reagent_containers/food/condiment/enzyme,
+/obj/item/weapon/reagent_containers/food/condiment/frostoil,
+/obj/item/weapon/reagent_containers/food/condiment/ketchup,
+/obj/item/weapon/reagent_containers/food/condiment/mayo,
+/obj/item/weapon/reagent_containers/food/condiment/soysauce,
+/obj/item/weapon/reagent_containers/food/condiment/vinegar,
+/obj/item/weapon/reagent_containers/food/condiment/mint,
+/obj/item/weapon/reagent_containers/food/condiment/honey,
+/obj/item/weapon/reagent_containers/food/condiment/exoticspices,
+/turf/simulated/floor/tiled/freezer,
 /area/beach)
 "anp" = (
-/obj/structure/table/standard,
-/obj/item/clothing/glasses/sunglasses,
-/obj/item/clothing/head/collectable/petehat{
-	pixel_y = 5
-	},
-/turf/unsimulated/beach/sand,
-/area/beach)
-"anP" = (
-/obj/structure/table/standard,
-/obj/item/weapon/reagent_containers/food/snacks/chips,
-/turf/unsimulated/beach/sand,
-/area/beach)
-"anQ" = (
-/obj/structure/table/standard,
-/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
-/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
-/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
-/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
-/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
-/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
-/turf/unsimulated/beach/sand,
-/area/beach)
-"anR" = (
-/obj/item/weapon/beach_ball,
-/turf/unsimulated/beach/sand,
+/obj/structure/kitchenspike,
+/turf/simulated/floor/tiled/freezer,
 /area/beach)
 "aph" = (
-/obj/structure/bed/chair,
-/obj/effect/landmark{
-	name = "endgame_exit"
+/obj/structure/window/reinforced/crescent,
+/obj/structure/window/reinforced/crescent{
+	dir = 1
 	},
-/turf/unsimulated/beach/sand,
-/area/beach)
-"api" = (
-/mob/living/simple_animal/crab/Coffee,
-/turf/unsimulated/beach/sand,
-/area/beach)
-"apA" = (
-/obj/item/clothing/head/collectable/paper,
-/turf/unsimulated/beach/sand,
+/obj/structure/window/reinforced/crescent{
+	dir = 4
+	},
+/obj/structure/grille,
+/turf/simulated/floor/wood/walnut,
 /area/beach)
 "apO" = (
-/turf/unsimulated/beach/coastline{
-	density = 1;
-	opacity = 1
-	},
+/obj/machinery/door/unpowered/simple/walnut,
+/obj/effect/floor_decal/corner/grey/diagonal,
+/turf/simulated/floor/tiled/white,
 /area/beach)
 "apP" = (
-/turf/unsimulated/beach/coastline,
+/obj/structure/table/marble,
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/item/weapon/material/bell,
+/turf/simulated/floor/tiled/white,
 /area/beach)
 "apZ" = (
-/turf/unsimulated/beach/water{
-	density = 1;
-	opacity = 1
-	},
+/obj/machinery/chemical_dispenser/bar_coffee/full,
+/obj/structure/table/marble,
+/turf/simulated/floor/wood/walnut,
 /area/beach)
 "aqa" = (
-/turf/unsimulated/beach/water,
+/obj/structure/noticeboard{
+	pixel_y = 32
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"ary" = (
+/obj/structure/sign/double/icarus/solgovflag/left{
+	dir = 8;
+	icon_state = "solgovflag-left";
+	pixel_x = 32
+	},
+/turf/simulated/floor/carpet/orange,
 /area/beach)
 "asP" = (
 /turf/unsimulated/wall,
@@ -10927,6 +10927,11 @@
 /obj/random/medical,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
+"aWq" = (
+/obj/structure/window/reinforced,
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "aWy" = (
 /obj/structure/cable{
 	d2 = 4;
@@ -11334,6 +11339,13 @@
 	icon_state = "desert1"
 	},
 /area/centcom/holding)
+"bpa" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "bpb" = (
 /obj/item/weapon/inflatable_duck,
 /turf/unsimulated/beach/sand{
@@ -11397,6 +11409,10 @@
 	icon_state = "steel"
 	},
 /area/centcom/control)
+"bvS" = (
+/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "bwb" = (
 /obj/machinery/computer/modular/preset/security,
 /obj/effect/floor_decal/corner/red{
@@ -11447,6 +11463,10 @@
 	name = "plating"
 	},
 /area/acting/backstage)
+"bCV" = (
+/obj/structure/sign/warning/smoking,
+/turf/simulated/wall/walnut,
+/area/beach)
 "bDb" = (
 /obj/machinery/bookbinder,
 /turf/unsimulated/floor{
@@ -11520,6 +11540,19 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"bTE" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"bWc" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/table/marble,
+/obj/machinery/appliance/mixer/candy,
+/turf/simulated/floor/tiled/white,
+/area/beach)
 "bXW" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/rods{
@@ -11554,6 +11587,18 @@
 	icon_state = "dark"
 	},
 /area/syndicate_elite_squad)
+"cjZ" = (
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/item/weapon/reagent_containers/food/snacks/fish,
+/obj/item/weapon/reagent_containers/food/snacks/fish,
+/obj/item/weapon/reagent_containers/food/snacks/fish,
+/obj/item/weapon/reagent_containers/food/snacks/fish,
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
+"clj" = (
+/obj/machinery/media/jukebox/old,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "cqu" = (
 /obj/structure/holostool,
 /obj/effect/floor_decal/beach{
@@ -11562,6 +11607,18 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"cwm" = (
+/obj/structure/table/rack,
+/obj/item/weapon/towel/random,
+/obj/item/weapon/towel/random,
+/obj/item/weapon/towel/random,
+/obj/item/weapon/towel/random,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"cyz" = (
+/obj/structure/bed/chair,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "czt" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -11603,16 +11660,43 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"cZm" = (
+/obj/item/weapon/broken_bottle,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "djm" = (
 /obj/item/weapon/beach_ball/holovolleyball,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"djG" = (
+/turf/simulated/floor/holofloor/beach/water,
+/area/beach)
+"djN" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/hygiene/sink/kitchen{
+	dir = 4;
+	icon_state = "sink_alt";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/white,
+/area/beach)
 "dnO" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 6
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"duy" = (
+/obj/structure/window/reinforced/crescent,
+/obj/structure/window/reinforced/crescent{
+	dir = 8
+	},
+/obj/structure/window/reinforced/crescent{
+	dir = 1
+	},
+/obj/structure/grille,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "dzK" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -11658,6 +11742,9 @@
 /obj/effect/floor_decal/beach/corner,
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"dKs" = (
+/turf/unsimulated/arena2,
+/area/beach)
 "dMH" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 10;
@@ -11679,6 +11766,15 @@
 	},
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"dUF" = (
+/obj/structure/flora/pottedplant/decorative,
+/obj/structure/sign/double/icarus/solgovflag/left{
+	dir = 8;
+	icon_state = "solgovflag-left";
+	pixel_x = 32
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "dZC" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4;
@@ -11693,6 +11789,18 @@
 "efq" = (
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_cafe)
+"ejr" = (
+/obj/item/trash/chips,
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert3"
+	},
+/area/beach)
+"ems" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
 "etB" = (
 /obj/machinery/button/blast_door{
 	id_tag = "syndicate_elite_mech_room";
@@ -11714,12 +11822,45 @@
 	},
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"eBB" = (
+/obj/machinery/door/unpowered/simple/walnut,
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"eHw" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"eQc" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"eQt" = (
+/obj/structure/bed/roller/ironingboard,
+/obj/item/weapon/ironingiron,
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
 "eRk" = (
 /obj/structure/table/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
 	icon_state = "wood_broken1"
 	},
 /area/holodeck/source_temple)
+"eVz" = (
+/obj/effect/overlay/coconut,
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert1"
+	},
+/area/beach)
+"eWI" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/table/marble,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/device/eftpos,
+/turf/simulated/floor/tiled/white,
+/area/beach)
 "fcv" = (
 /obj/structure/holostool,
 /obj/effect/floor_decal/beach{
@@ -11728,12 +11869,56 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"fdc" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/table/glass,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/britcup,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"fkF" = (
+/obj/item/weapon/inflatable_duck,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
+"fnc" = (
+/obj/effect/overlay/coconut,
+/obj/effect/overlay/palmtree_r,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "fpW" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 8
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"fqP" = (
+/obj/structure/table/standard,
+/obj/item/weapon/material/hatchet,
+/obj/item/weapon/material/minihoe,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"fqV" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"fso" = (
+/obj/machinery/door/unpowered/simple/walnut,
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"fwq" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	dir = 2;
+	icon_state = "beachcorner"
+	},
+/area/beach)
 "fxB" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -11746,6 +11931,10 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"fGV" = (
+/turf/simulated/floor/holofloor/beach/sand,
+/turf/unsimulated/palmera,
+/area/beach)
 "fJf" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -11764,12 +11953,35 @@
 /obj/random/firstaid,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
+"gch" = (
+/obj/structure/bed/double,
+/obj/item/weapon/bedsheet/browndouble,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"gfq" = (
+/obj/effect/floor_decal/corner/blue{
+	icon_state = "corner_white";
+	dir = 10
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"gfQ" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/item/weapon/storage/bag/trash,
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/tiled/white,
+/area/beach)
 "glo" = (
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
 "gnX" = (
 /turf/simulated/floor/holofloor/beach/water,
 /area/holodeck/source_temple)
+"grY" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/storage/photo_album,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "gse" = (
 /obj/structure/table/holo_woodentable,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -11780,12 +11992,70 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"gtk" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/structure/table/holotable,
+/obj/item/clothing/suit/redtag,
+/obj/item/weapon/gun/energy/lasertag/red,
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
 "gtn" = (
 /obj/structure/curtain,
 /turf/simulated/floor/holofloor/wood{
 	icon_state = "wood_broken4"
 	},
 /area/holodeck/source_temple)
+"guF" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	dir = 4;
+	icon_state = "beach"
+	},
+/area/beach)
+"gBM" = (
+/obj/structure/sign/double/icarus/solgovflag/right{
+	dir = 1;
+	icon_state = "solgovflag-right";
+	pixel_z = -32
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"gMg" = (
+/obj/machinery/vending/hydronutrients{
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"gQj" = (
+/obj/structure/flora/pottedplant/smalltree,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"gQC" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/obj/structure/closet/cabinet,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"gUA" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	dir = 1;
+	icon_state = "beachcorner"
+	},
+/area/beach)
+"gXS" = (
+/mob/living/simple_animal/hostile/retaliate/Kanguro,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
+"hes" = (
+/obj/effect/paint/black,
+/turf/simulated/wall/prepainted,
+/area/holodeck/source_lasertag)
 "hzB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -11796,6 +12066,42 @@
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_plaza)
+"hGD" = (
+/obj/structure/noticeboard{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"hJp" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/obj/structure/sign/double/icarus/solgovflag/left{
+	dir = 1;
+	icon_state = "solgovflag-left";
+	pixel_y = -32
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"hJM" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	dir = 4;
+	icon_state = "beachcorner"
+	},
+/area/beach)
+"hOx" = (
+/obj/structure/sign/double/icarus/solgovflag/right{
+	dir = 8;
+	icon_state = "solgovflag-right";
+	pixel_x = 32
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"hRC" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
+"ibR" = (
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "icO" = (
 /obj/structure/bed/chair/wood{
 	dir = 1;
@@ -11804,6 +12110,13 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"ihy" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "ikd" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/silver,
@@ -11836,6 +12149,19 @@
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/administration/centcom)
+"izJ" = (
+/obj/structure/window/reinforced/crescent{
+	dir = 8
+	},
+/obj/structure/window/reinforced/crescent{
+	dir = 1
+	},
+/obj/structure/window/reinforced/crescent{
+	dir = 4
+	},
+/obj/structure/grille,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "iBC" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -11859,6 +12185,16 @@
 	icon_state = "wood_broken6"
 	},
 /area/holodeck/source_temple)
+"iNF" = (
+/turf/unsimulated/water,
+/area/beach)
+"iRT" = (
+/obj/structure/curtain/open/bed,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "jed" = (
 /obj/effect/floor_decal/beach{
 	dir = 1;
@@ -11935,16 +12271,50 @@
 /obj/random/hardsuit,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
+"jPh" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert1"
+	},
+/area/beach)
+"jPk" = (
+/obj/machinery/vending/snack{
+	icon_state = "snack";
+	dir = 8
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "jSi" = (
 /obj/structure/table/holo_woodentable,
 /turf/simulated/floor/holofloor/tiled/stone,
 /area/holodeck/source_temple)
+"jSL" = (
+/mob/living/simple_animal/crab/Coffee,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "jXw" = (
 /obj/structure/bed/chair/wood{
 	dir = 4
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"jXA" = (
+/obj/machinery/door/unpowered/simple/walnut,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"jYk" = (
+/obj/machinery/vending/fashionvend,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"kaR" = (
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/structure/reagent_dispensers/watertank,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "kce" = (
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert4"
@@ -11970,6 +12340,18 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"koz" = (
+/obj/structure/table/marble,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"kqC" = (
+/obj/machinery/vending/boozeomat,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"ktA" = (
+/obj/machinery/vending/cigarette,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "kBT" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4;
@@ -11982,11 +12364,45 @@
 	icon_state = "dark"
 	},
 /area/syndicate_elite_squad)
+"kHU" = (
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
+"kNC" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/table/marble,
+/obj/machinery/appliance/mixer/cereal,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"kSq" = (
+/obj/structure/table/marble,
+/obj/effect/floor_decal/corner/grey/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"leM" = (
+/obj/effect/overlay/coconut,
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert2"
+	},
+/area/beach)
+"leX" = (
+/mob/living/simple_animal/crab,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "ljS" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_plaza)
+"luZ" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/machinery/door/unpowered/simple/walnut,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"lvd" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert4"
+	},
+/area/beach)
 "lwD" = (
 /obj/structure/bed/chair/wood{
 	dir = 1;
@@ -12021,6 +12437,16 @@
 	icon_state = "wood_broken3"
 	},
 /area/holodeck/source_temple)
+"lJu" = (
+/obj/structure/window/reinforced/crescent{
+	dir = 8
+	},
+/obj/structure/window/reinforced/crescent{
+	dir = 4
+	},
+/obj/structure/grille,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "lLj" = (
 /obj/machinery/recharge_station,
 /turf/simulated/floor/carpet,
@@ -12066,6 +12492,22 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"maI" = (
+/obj/machinery/vending/coffee{
+	icon_state = "coffee";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"meo" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 4
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
 "mjR" = (
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
@@ -12076,6 +12518,10 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"mmT" = (
+/obj/machinery/door/unpowered/simple/walnut,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "mmW" = (
 /obj/structure/curtain{
 	color = "#68ccab"
@@ -12084,12 +12530,23 @@
 	icon_state = "wood_broken6"
 	},
 /area/holodeck/source_temple)
+"mnB" = (
+/obj/structure/hygiene/toilet{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
 "moq" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 4
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"mpU" = (
+/obj/structure/table/woodentable/walnut,
+/obj/structure/flora/pottedplant/deskleaf,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "mrn" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 10;
@@ -12097,6 +12554,20 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"mxu" = (
+/obj/structure/table/rack/shelf,
+/obj/item/weapon/storage/box/monkeycubes,
+/obj/item/weapon/storage/box/monkeycubes,
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
+"mxT" = (
+/obj/machinery/door/unpowered/simple/walnut,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "myy" = (
 /obj/item/device/radio/intercom/syndicate{
 	dir = 2;
@@ -12106,6 +12577,16 @@
 	icon_state = "dark"
 	},
 /area/syndicate_elite_squad)
+"mIZ" = (
+/obj/machinery/door/unpowered/simple/walnut,
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
+"mNJ" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	dir = 9;
+	icon_state = "beach"
+	},
+/area/beach)
 "mRm" = (
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert1"
@@ -12138,6 +12619,16 @@
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
+"mWK" = (
+/obj/structure/closet/crate/trashcart,
+/obj/item/weapon/storage/bag/trash,
+/obj/structure/sign/double/icarus/solgovflag/right{
+	dir = 8;
+	icon_state = "solgovflag-right";
+	pixel_x = 32
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "mXz" = (
 /obj/machinery/button/blast_door{
 	dir = 1;
@@ -12148,6 +12639,14 @@
 	icon_state = "lino"
 	},
 /area/tdome/tdomeadmin)
+"naF" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/obj/structure/table/woodentable/walnut,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "niJ" = (
 /obj/structure/bed/chair/wood{
 	dir = 4
@@ -12157,6 +12656,23 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"nlk" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/table/glass,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"nmu" = (
+/obj/structure/flora/pottedplant/floorleaf,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"nqI" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
 "ntZ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -12164,6 +12680,19 @@
 /obj/structure/table/holo_woodentable,
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"nuH" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"nzo" = (
+/obj/effect/overlay/coconut,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
+"nAI" = (
+/obj/structure/table/marble,
+/obj/machinery/chemical_dispenser/bar_soft/full,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "nJl" = (
 /obj/structure/bed/chair/wood{
 	dir = 8;
@@ -12175,6 +12704,10 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"nMB" = (
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 "nQJ" = (
 /obj/machinery/door/airlock/glass/security{
 	name = "Airlock"
@@ -12187,6 +12720,15 @@
 	icon_state = "dark"
 	},
 /area/syndicate_elite_squad)
+"nTP" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 1
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
 "occ" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 6;
@@ -12194,6 +12736,23 @@
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"ohX" = (
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 1
+	},
+/obj/structure/table/holotable,
+/obj/item/clothing/suit/redtag,
+/obj/item/weapon/gun/energy/lasertag/red,
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
 "oiM" = (
 /obj/structure/closet,
 /obj/item/clothing/shoes/laceup,
@@ -12219,6 +12778,44 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"orD" = (
+/obj/structure/curtain/open/bed,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"osA" = (
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"otg" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/table/marble,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"oxV" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "beach"
+	},
+/area/beach)
+"oyM" = (
+/obj/effect/overlay/palmtree_l,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
+"oEp" = (
+/turf/unsimulated/arena1,
+/area/beach)
+"oEr" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	dir = 1;
+	icon_state = "beach"
+	},
+/area/beach)
 "oFc" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -12226,6 +12823,11 @@
 	},
 /turf/simulated/floor/holofloor/lino,
 /area/holodeck/source_meetinghall)
+"oFT" = (
+/obj/effect/overlay/palmtree_r,
+/obj/effect/overlay/coconut,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "oLN" = (
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -12250,10 +12852,27 @@
 	name = "Shuttle Bay Blast Door"
 	},
 /area/syndicate_elite_squad)
+"oSw" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"oZn" = (
+/obj/item/remains/human,
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert_dug"
+	},
+/area/beach)
 "pgJ" = (
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/tiled/stone,
 /area/holodeck/source_temple)
+"pil" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert_dug"
+	},
+/area/beach)
 "piR" = (
 /obj/structure/flora/pottedplant{
 	icon_state = "plant-22"
@@ -12276,6 +12895,32 @@
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/merchant_station)
+"pIT" = (
+/obj/structure/undies_wardrobe,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"pOA" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/pen,
+/obj/item/weapon/paper_bin,
+/obj/item/sticky_pad/random,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"pPI" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/table/marble,
+/obj/machinery/microwave,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"pRh" = (
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
+"pRS" = (
+/obj/item/weapon/storage/bag/trash,
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "pTy" = (
 /turf/simulated/shuttle/wall{
 	icon_state = "wall3"
@@ -12292,10 +12937,35 @@
 	},
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"pYi" = (
+/turf/unsimulated/arena1{
+	dir = 8
+	},
+/area/beach)
+"qaW" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"qhY" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert2"
+	},
+/turf/unsimulated/palmera,
+/area/beach)
 "qir" = (
 /obj/effect/floor_decal/stoneborder/corner,
 /turf/simulated/floor/holofloor/beach/water,
 /area/holodeck/source_temple)
+"qkS" = (
+/turf/unsimulated/arena2,
+/turf/unsimulated/palmera,
+/area/beach)
 "qoH" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8;
@@ -12303,6 +12973,20 @@
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"qqn" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/table/marble,
+/obj/item/weapon/material/knife/kitchen/cleaver,
+/obj/item/weapon/material/knife/kitchen,
+/obj/item/weapon/reagent_containers/glass/beaker/bowl,
+/obj/item/weapon/material/kitchen/rollingpin,
+/obj/item/weapon/reagent_containers/glass/beaker,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"qqK" = (
+/obj/item/weapon/beach_ball,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "quq" = (
 /obj/structure/table/holo_woodentable,
 /obj/item/weapon/reagent_containers/food/drinks/teapot{
@@ -12310,10 +12994,25 @@
 	},
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"qvO" = (
+/obj/structure/table/woodentable/walnut,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"qFU" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	dir = 8;
+	icon_state = "beach"
+	},
+/area/beach)
 "qIk" = (
 /obj/machinery/door/unpowered/simple/sandstone,
 /turf/simulated/floor/holofloor/tiled/stone,
 /area/holodeck/source_temple)
+"qLk" = (
+/obj/structure/curtain/open/shower,
+/obj/structure/hygiene/shower,
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
 "qMl" = (
 /obj/effect/floor_decal/stoneborder/corner{
 	dir = 8;
@@ -12347,6 +13046,16 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"rim" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert2"
+	},
+/area/beach)
+"rkn" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	icon_state = "desert3"
+	},
+/area/beach)
 "rms" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 9;
@@ -12356,10 +13065,36 @@
 	icon_state = "desert2"
 	},
 /area/holodeck/source_volleyball)
+"roq" = (
+/obj/structure/table/glass,
+/obj/structure/sign/double/icarus/solgovflag/right{
+	dir = 4;
+	icon_state = "solgovflag-right";
+	pixel_x = -32;
+	step_size = -32
+	},
+/obj/item/weapon/storage/candle_box,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "rqJ" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"rrw" = (
+/obj/item/device/binoculars,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
+"rrU" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"rww" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/machinery/appliance/cooker/fryer,
+/turf/simulated/floor/tiled/white,
+/area/beach)
 "rxE" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 1
@@ -12392,6 +13127,13 @@
 	icon_state = "desert2"
 	},
 /area/holodeck/source_temple)
+"rTn" = (
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
+"shQ" = (
+/obj/machinery/media/jukebox/old,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "skD" = (
 /obj/effect/floor_decal/beach{
 	dir = 8;
@@ -12400,6 +13142,17 @@
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"sol" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/machinery/vending/dinnerware,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"spW" = (
+/obj/structure/window/reinforced,
+/obj/structure/table/glass,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/diona,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "sqz" = (
 /turf/space,
 /area/syndicate_elite_squad)
@@ -12415,6 +13168,15 @@
 	icon_state = "wood_broken3"
 	},
 /area/holodeck/source_temple)
+"sKf" = (
+/obj/structure/table/marble,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"sSV" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/storage/candle_box,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "sWJ" = (
 /obj/effect/floor_decal/beach{
 	dir = 8;
@@ -12422,11 +13184,34 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"sYt" = (
+/obj/structure/table/marble,
+/obj/machinery/reagentgrinder/juicer,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"sZZ" = (
+/obj/structure/window/reinforced/crescent,
+/obj/structure/window/reinforced/crescent{
+	dir = 8
+	},
+/obj/structure/window/reinforced/crescent{
+	dir = 1
+	},
+/obj/structure/window/reinforced/crescent{
+	dir = 4
+	},
+/obj/structure/grille,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "tcf" = (
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert3"
 	},
 /area/holodeck/source_temple)
+"tdy" = (
+/obj/effect/overlay/palmtree_r,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "tff" = (
 /obj/structure/bed/chair/holochair,
 /turf/simulated/floor/holofloor/tiled/dark,
@@ -12492,10 +13277,32 @@
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
+"tUU" = (
+/obj/structure/table/marble,
+/obj/item/weapon/tableflag,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"tVb" = (
+/obj/structure/table/marble,
+/obj/machinery/reagent_temperature{
+	pixel_x = -8
+	},
+/obj/machinery/reagent_temperature/cooler{
+	pixel_x = 8
+	},
+/obj/effect/floor_decal/corner/grey/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/beach)
 "ufC" = (
 /obj/structure/table/holo_woodentable,
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"uhn" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	dir = 10;
+	icon_state = "beach"
+	},
+/area/beach)
 "uly" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/holofloor/wood,
@@ -12521,6 +13328,15 @@
 	},
 /turf/simulated/floor/holofloor/tiled/stone,
 /area/holodeck/source_temple)
+"uAp" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 4
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
 "uFd" = (
 /obj/effect/paint/red,
 /turf/simulated/wall/r_titanium,
@@ -12542,15 +13358,79 @@
 "uJY" = (
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"uKy" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"uRz" = (
+/obj/machinery/media/jukebox/old,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"uUI" = (
+/obj/effect/floor_decal/corner/blue{
+	icon_state = "corner_white";
+	dir = 10
+	},
+/obj/structure/table/holotable,
+/obj/item/clothing/suit/bluetag,
+/obj/item/weapon/gun/energy/lasertag/blue,
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"uWc" = (
+/obj/machinery/washing_machine,
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
+"uWH" = (
+/obj/structure/window/reinforced/crescent,
+/obj/structure/window/reinforced/crescent{
+	dir = 1
+	},
+/obj/structure/grille,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "vbR" = (
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"vcp" = (
+/obj/structure/solbanner,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "vgY" = (
 /obj/structure/table/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
 	icon_state = "wood_broken2"
 	},
 /area/holodeck/source_temple)
+"vjN" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"vmn" = (
+/obj/item/weapon/storage/bag/trash,
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"vxw" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"vGs" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/machinery/appliance/cooker/stove,
+/turf/simulated/floor/tiled/white,
+/area/beach)
 "vOe" = (
 /obj/effect/floor_decal/stoneborder/corner{
 	dir = 1;
@@ -12562,11 +13442,25 @@
 /obj/effect/overlay/palmtree_r,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_temple)
+"vUi" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/blue,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
 "wda" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_plaza)
+"weF" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "wjw" = (
 /obj/effect/floor_decal/stoneborder{
 	dir = 8;
@@ -12582,6 +13476,52 @@
 /obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/administration/centcom)
+"wml" = (
+/obj/machinery/vending/cola{
+	icon_state = "Cola_Machine";
+	dir = 8
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"wxT" = (
+/obj/machinery/vending/bathvendor,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"wyi" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 8
+	},
+/obj/structure/table/holotable,
+/obj/item/clothing/suit/bluetag,
+/obj/item/weapon/gun/energy/lasertag/blue,
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"wAp" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#aa5f61"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"wBF" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/heart,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/heart,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"wCn" = (
+/obj/item/device/camera,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "wCv" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -12595,6 +13535,58 @@
 "wDD" = (
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_temple)
+"wLU" = (
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
+"wVf" = (
+/turf/simulated/floor/holofloor/beach/sand{
+	dir = 6;
+	icon_state = "beach"
+	},
+/area/beach)
+"xdF" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/machinery/appliance/cooker/oven,
+/turf/simulated/floor/tiled/white,
+/area/beach)
+"xfp" = (
+/obj/structure/window/reinforced/crescent,
+/obj/structure/window/reinforced/crescent{
+	dir = 8
+	},
+/obj/structure/window/reinforced/crescent{
+	dir = 4
+	},
+/obj/structure/grille,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"xgA" = (
+/obj/structure/curtain/open/privacy,
+/turf/simulated/floor/tiled/freezer,
+/area/beach)
+"xkH" = (
+/obj/structure/bed/chair/wood/walnut,
+/obj/effect/landmark{
+	name = "endgame_exit"
+	},
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
+"xmc" = (
+/turf/unsimulated/arena1{
+	dir = 1
+	},
+/area/beach)
+"xpC" = (
+/obj/structure/window/reinforced,
+/obj/structure/table/glass,
+/obj/item/device/binoculars,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"xpJ" = (
+/obj/structure/table/marble,
+/obj/machinery/chemical_dispenser/bar_alc/full,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
 "xqW" = (
 /obj/structure/bed/chair/wood{
 	holographic = 1
@@ -12605,6 +13597,18 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"xBJ" = (
+/obj/structure/reagent_dispensers/water_cooler{
+	icon_state = "water_cooler";
+	dir = 4
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
+"xFn" = (
+/obj/structure/closet/crate/trashcart,
+/obj/item/weapon/storage/bag/trash,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/beach)
 "xHn" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8;
@@ -12613,6 +13617,26 @@
 /obj/structure/holonet/end,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"xIF" = (
+/obj/structure/closet/cabinet,
+/obj/item/device/camera,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"xKJ" = (
+/obj/structure/table/glass,
+/obj/structure/sign/double/icarus/solgovflag/left{
+	dir = 4;
+	pixel_x = -32
+	},
+/obj/item/weapon/storage/box/donut,
+/turf/simulated/floor/wood/walnut,
+/area/beach)
+"xRb" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/holodeck/source_lasertag)
 "xTc" = (
 /obj/structure/table/holo_woodentable,
 /obj/item/weapon/tray{
@@ -12633,6 +13657,12 @@
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"yhV" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach)
 
 (1,1,1) = {"
 ala
@@ -12668,19 +13698,19 @@ ala
 ala
 ala
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+qhY
+oEp
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
 aab
 aab
 aab
@@ -12840,49 +13870,49 @@ aab
 ala
 alg
 alg
+weF
 alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-apO
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+tVb
+kSq
+sKf
+vGs
+otg
+qqn
+otg
+xdF
+gfQ
+uKy
+apO
+alg
+apZ
+xpJ
+nAI
+kqC
+pRS
+ala
+ibR
+nMB
+ala
+pRS
+roq
+xKJ
+maI
+alg
+eQc
+leM
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -13042,49 +14072,49 @@ aab
 ala
 alg
 alr
-alJ
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
 alr
 alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+bWc
+nuH
+nuH
+nuH
+nuH
+djN
+nuH
+nuH
+nuH
+nuH
+ala
+aqa
+koz
+alg
+alg
+alg
+alg
+fso
+ibR
+ibR
+eBB
+alg
+alg
+alg
+alg
+alg
+aWq
+pil
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -13245,48 +14275,48 @@ ala
 alg
 alr
 alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
 alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
+luZ
+nuH
+nuH
+nuH
+nuH
+nuH
+nuH
+nuH
+nuH
+nuH
+nuH
+kSq
+alg
+sYt
+alg
+alg
+alg
+gBM
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ibR
+nMB
+ala
+shQ
+alg
+alg
+alg
+cyz
+xpC
+fwq
+wVf
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -13447,48 +14477,48 @@ ala
 alg
 alr
 alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alX
-amK
-alr
-alr
 alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+kNC
+nuH
+pPI
+otg
+otg
+sol
+otg
+rww
+eWI
+nuH
+apP
+alg
+alg
+alg
+alg
+alg
+hJp
+ala
+ibR
+ibR
+duy
+alg
+alg
+alg
+alg
+cyz
+spW
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -13649,48 +14679,48 @@ ala
 alg
 alr
 alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alX
-alr
-apA
 alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ala
+mIZ
+ala
+ala
+ala
+ala
+ala
+ala
+ala
+ala
+bCV
+tUU
+koz
+koz
+koz
+ala
+ala
+ala
+ibR
+ibR
+aph
+alg
+alg
+vxw
+vxw
+alg
+aWq
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -13851,48 +14881,48 @@ ala
 alg
 alr
 alr
-alr
-alr
-amK
-alr
-anb
-anb
-alr
-alr
-alr
-alr
-alr
 alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+amK
+rTn
+anb
+ala
+gQj
+pOA
+naF
+grY
+xBJ
+ibR
+uRz
+yhV
+yhV
+yhV
+yhV
+ibR
+ibR
+ibR
+ibR
+ibR
+ala
+oSw
+vjN
+fdc
+nlk
+vjN
+bpa
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -14051,50 +15081,50 @@ aab
 (8,1,1) = {"
 ala
 alg
-alr
-alr
-alr
-alr
-alX
-anb
-ano
-anP
-anb
-alr
-alr
-alr
-alr
 alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
+alg
+alg
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+alX
+rTn
+ano
+ala
+ktA
+ibR
+ibR
+ibR
+ibR
+ibR
+ibR
+ibR
+ibR
+ibR
+ibR
+ibR
+ibR
+ibR
+ibR
+ala
+ala
+fwq
+guF
+guF
+guF
+guF
+guF
+wVf
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -14253,50 +15283,50 @@ aab
 (9,1,1) = {"
 ala
 alg
-als
-alr
-alr
-alr
-alr
-anb
-anp
-anQ
-anb
-alr
-alr
-alr
-alr
 alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
+alg
+alg
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+cjZ
+rTn
+anp
+ala
+vmn
+ibR
+ibR
+ary
+hOx
+ibR
+nmu
+ibR
+ibR
+nmu
+ibR
+jPk
+wml
+ibR
+ibR
+ala
+jPh
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -14454,51 +15484,51 @@ aab
 "}
 (10,1,1) = {"
 ala
-alg
+fqP
 als
-alr
-alr
-alr
-alr
-alr
-anb
-anb
-alr
-alr
-alr
-aph
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
+gMg
+kaR
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+mxu
+pRh
+hRC
+ala
+ala
+mmT
+mmT
+ala
+ala
+sZZ
+ala
+mxT
+mxT
+ala
+izJ
+lJu
+xfp
+ala
+ala
+ala
+jPh
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -14656,51 +15686,51 @@ aab
 "}
 (11,1,1) = {"
 ala
-alg
-als
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ala
+ala
+ala
+ala
+ala
+ala
+ala
+ala
+ala
+ibR
+ibR
+ala
+xFn
+kHU
+oFT
+kHU
+kHU
+tdy
+jPh
+kHU
+rim
+jPh
+clj
+jPh
+jPh
+gUA
+uhn
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -14858,51 +15888,51 @@ aab
 "}
 (12,1,1) = {"
 ala
+ibR
+orD
 alg
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-aph
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ibR
+ala
+ibR
+ala
+ibR
+ala
+hGD
+ibR
+ala
+kHU
+kHU
+kHU
+rim
+kHU
+jPh
+kHU
+kHU
+eVz
+kHU
+jPh
+jPh
+wCn
+rim
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -15060,51 +16090,51 @@ aab
 "}
 (13,1,1) = {"
 ala
-alg
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-amK
-alr
-alr
-alr
-alr
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ala
+alg
+ala
+iRT
+ala
+iRT
+ala
+iRT
+ala
+ibR
+ibR
+duy
+kHU
+jPh
+kHU
+kHU
+kHU
+kHU
+qqK
+kHU
+jPh
+kHU
+kHU
+kHU
+xkH
+kHU
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -15262,51 +16292,51 @@ aab
 "}
 (14,1,1) = {"
 ala
+ibR
+orD
 alg
-als
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-aph
-alr
 alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
+alg
+weF
+alg
+alg
+alg
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ibR
+ibR
+aph
+kHU
+kHU
+leX
+kHU
+kHU
+jPh
+rkn
+kHU
+rkn
+kHU
+kHU
+kHU
+fkF
+jPh
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -15464,51 +16494,51 @@ aab
 "}
 (15,1,1) = {"
 ala
-alg
-als
-alr
-alr
-alr
-alr
-alr
-alr
-anR
-alr
-alr
-alr
-alr
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ala
+alg
+alg
+alg
+alg
+alg
+alg
+alg
+jXA
+ibR
+ibR
+ala
+vcp
+kHU
+kHU
+jPh
+kHU
+kHU
+kHU
+kHU
+kHU
+kHU
+kHU
+kHU
+xkH
+kHU
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+iNF
 aab
 aab
 aab
@@ -15666,51 +16696,51 @@ aab
 "}
 (16,1,1) = {"
 ala
+ibR
+orD
 alg
-als
-alr
-alX
+alg
 alJ
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-api
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
+jYk
+wxT
+cwm
+pIT
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ibR
+ibR
+duy
+kHU
+kHU
+jPh
+kHU
+kHU
+fnc
+jPh
+kHU
+kHU
+kHU
+jSL
+kHU
+qqK
+kHU
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+mNJ
+qFU
+pYi
 aab
 aab
 aab
@@ -15868,51 +16898,51 @@ aab
 "}
 (17,1,1) = {"
 ala
-alg
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ala
+ala
+mIZ
+ala
+ala
+ala
+ala
+ala
+ala
+ibR
+ibR
+uWH
+kHU
+kHU
+rkn
+kHU
+kHU
+rkn
+kHU
+kHU
+jPh
+kHU
+kHU
+kHU
+xkH
+kHU
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+mNJ
+hJM
+jPh
+dKs
 aab
 aab
 aab
@@ -16070,51 +17100,51 @@ aab
 "}
 (18,1,1) = {"
 ala
-alg
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+uWc
+eQt
+rTn
+rTn
+ala
+pIT
+sSV
+wBF
+ala
+ibR
+ibR
+aph
+kHU
+kHU
+kHU
+kHU
+jPh
+kHU
+kHU
+kHU
+kHU
+kHU
+kHU
+kHU
+kHU
+rim
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+mNJ
+hJM
+ejr
+kHU
+dKs
 aab
 aab
 aab
@@ -16272,51 +17302,51 @@ aab
 "}
 (19,1,1) = {"
 ala
-alg
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alJ
-alX
-alr
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
+qLk
+rTn
+rTn
+rTn
+rTn
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+xIF
+alg
+alg
+jXA
+ibR
+ibR
+ala
+vcp
+kHU
+oyM
+nzo
+kHU
+lvd
+kHU
+kHU
+oyM
+kHU
+kHU
+kHU
+xkH
+kHU
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+oEr
+rrw
+oZn
+kHU
+fGV
 aab
 aab
 aab
@@ -16474,51 +17504,51 @@ aab
 "}
 (20,1,1) = {"
 ala
-alg
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
+qLk
+rTn
+rTn
+rTn
+rTn
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+gQC
+ihy
+ihy
+ala
+ibR
+ibR
+duy
+kHU
+kHU
+kHU
+kHU
+kHU
+kHU
+jPh
+kHU
+kHU
+kHU
+rkn
+rkn
+bvS
+kHU
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+oEr
+qqK
+cZm
+kHU
+dKs
 aab
 aab
 aab
@@ -16676,51 +17706,51 @@ aab
 "}
 (21,1,1) = {"
 ala
-alg
-alr
+qLk
+rTn
 alK
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alr
-alg
-apP
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-aqa
-apZ
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+xgA
+ala
+ibR
+ibR
+ibR
+ala
+ibR
+ibR
+aph
+kHU
+kHU
+jPh
+kHU
+leX
+kHU
+kHU
+kHU
+jPh
+jPh
+kHU
+kHU
+xkH
+kHU
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+oEr
+kHU
+kHU
+rkn
+dKs
 aab
 aab
 aab
@@ -16878,51 +17908,51 @@ aab
 "}
 (22,1,1) = {"
 ala
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-alg
-apO
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
-apZ
+qLk
+rTn
+alK
 ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+mnB
+ala
+qvO
+gch
+mpU
+ala
+dUF
+mWK
+ala
+kHU
+nzo
+kHU
+kHU
+kHU
+kHU
+kHU
+kHU
+lvd
+lvd
+kHU
+kHU
+kHU
+kHU
+oxV
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+djG
+oEr
+rkn
+gXS
+nzo
+dKs
 aab
 aab
 aab
@@ -17093,38 +18123,38 @@ ala
 ala
 ala
 ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-ala
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+fGV
+dKs
+dKs
+dKs
+dKs
+dKs
+fGV
+dKs
+dKs
+dKs
+dKs
+dKs
+qkS
+dKs
+oEp
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+iNF
+xmc
+fGV
+dKs
+dKs
+fGV
 aab
 aab
 aab
@@ -30613,18 +31643,18 @@ aab
 aab
 "}
 (90,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aaa
+aaq
+aaq
+aaq
+aaq
+aaq
+aaq
+aaq
+aaq
+aaq
+aaq
+aaa
 aab
 aab
 aab
@@ -30815,18 +31845,18 @@ aab
 aab
 "}
 (91,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+meo
+ems
+ems
+hes
+bTE
+uAp
+rrU
+rrU
+rrU
+vUi
+ajo
 aab
 aab
 aab
@@ -31017,18 +32047,18 @@ aab
 aab
 "}
 (92,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+fqV
+wLU
+hes
+hes
+xRb
+hes
+hes
+wLU
+wLU
+gfq
+ajo
 aab
 aab
 aab
@@ -31219,18 +32249,18 @@ aab
 aab
 "}
 (93,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+fqV
+wLU
+wLU
+wLU
+xRb
+eHw
+hes
+wLU
+wLU
+gfq
+ajo
 aab
 aab
 aab
@@ -31421,18 +32451,18 @@ aab
 aab
 "}
 (94,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+fqV
+hes
+hes
+hes
+hes
+hes
+hes
+hes
+hes
+gfq
+ajo
 aab
 aab
 aab
@@ -31623,18 +32653,18 @@ aab
 aab
 "}
 (95,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+wAp
+wLU
+wLU
+wLU
+xRb
+hes
+wLU
+wLU
+wLU
+gfq
+ajo
 aab
 aab
 aab
@@ -31825,18 +32855,18 @@ aab
 aab
 "}
 (96,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+fqV
+hes
+hes
+wLU
+xRb
+hes
+wLU
+hes
+hes
+gfq
+ajo
 aab
 aab
 aab
@@ -32027,18 +33057,18 @@ aab
 aab
 "}
 (97,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+fqV
+wLU
+hes
+hes
+xRb
+hes
+wLU
+hes
+wLU
+gfq
+ajo
 aab
 aab
 aab
@@ -32229,18 +33259,18 @@ aab
 aab
 "}
 (98,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+gtk
+wLU
+hes
+wLU
+xRb
+hes
+wLU
+hes
+wLU
+uUI
+ajo
 aab
 aab
 aab
@@ -32431,18 +33461,18 @@ aab
 aab
 "}
 (99,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+gtk
+wLU
+hes
+wLU
+hes
+hes
+wLU
+hes
+wLU
+uUI
+ajo
 aab
 aab
 aab
@@ -32633,18 +33663,18 @@ aab
 aab
 "}
 (100,1,1) = {"
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aac
+ohX
+osA
+hes
+osA
+qaW
+nTP
+nqI
+hes
+nqI
+wyi
+ajo
 aab
 aab
 aab
@@ -32836,16 +33866,16 @@ aab
 "}
 (101,1,1) = {"
 aaa
-aaq
-aaq
-aaq
-aaq
-aaq
-aaq
-aaq
-aaq
-aaq
-aaq
+aat
+aat
+aat
+aat
+aat
+aat
+aat
+aat
+aat
+aat
 aaa
 aaq
 aaq
@@ -46386,7 +47416,7 @@ aeY
 aeY
 aft
 agb
-ahz
+ahA
 afZ
 afZ
 afZ

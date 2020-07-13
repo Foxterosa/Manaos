@@ -10,6 +10,38 @@ var/list/mining_floors = list()
 	density = 1
 	opacity = 1
 
+/turf/unsimulated/palmera
+	name = "palmera impasable"
+	icon = 'icons/misc/beach2.dmi'
+	icon_state = "palm2"
+	blocks_air = 1
+	density = 1
+	opacity = 1
+
+/turf/unsimulated/water
+	name = "agua impasable"
+	icon = 'icons/misc/beach.dmi'
+	icon_state = "seashallow"
+	blocks_air = 1
+	density = 1
+	opacity = 1
+
+/turf/unsimulated/arena1
+	name = "arena impasable"
+	icon = 'icons/misc/beach.dmi'
+	icon_state = "beach"
+	blocks_air = 1
+	density = 1
+	opacity = 1
+
+/turf/unsimulated/arena2
+	name = "arena impasable"
+	icon = 'icons/misc/beach.dmi'
+	icon_state = "desert0"
+	blocks_air = 1
+	density = 1
+	opacity = 1
+
 /turf/simulated/mineral //wall piece
 	name = "rock"
 	icon = 'icons/turf/walls.dmi'
