@@ -1395,6 +1395,10 @@
 	name = "\improper Holodeck - Plaza"
 	sound_env = SMALL_ENCLOSED
 
+/area/holodeck/source_lasertag
+	name = "\improper Holodeck - Laser Tag"
+	sound_env = ARENA
+
 // Engineering
 
 /area/engineering/atmos/storage

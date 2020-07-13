@@ -20154,16 +20154,6 @@
 /obj/item/weapon/reagent_containers/syringe/inaprovaline,
 /turf/simulated/wall/prepainted,
 /area/medical/sleeper)
-"djj" = (
-/obj/effect/floor_decal/corner/green{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/green{
-	dir = 9
-	},
-/obj/structure/curtain/open/privacy,
-/turf/simulated/floor/tiled/white,
-/area/medical/subacute)
 "djY" = (
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#6a97b0"
@@ -20535,6 +20525,16 @@
 	},
 /turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
+"dNe" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 9
+	},
+/obj/structure/curtain/open/privacy,
+/turf/simulated/floor/tiled/white,
+/area/medical/subacute)
 "dOZ" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -22499,6 +22499,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
+"gPd" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/sleeper)
 "gQb" = (
 /obj/structure/dispenser{
 	oxygentanks = 0
@@ -26134,6 +26140,12 @@
 "kXb" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 10
+	},
+/obj/structure/dogbed{
+	name = "Cama de E-N"
+	},
+/mob/living/simple_animal/corgi/borgi{
+	name = "\improper E-N"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
@@ -31472,6 +31484,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
+"rux" = (
+/obj/structure/bed/chair/office/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/counselor)
 "ruz" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -33898,12 +33916,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
-"uyS" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
 "uAB" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/medical,
@@ -34406,12 +34418,6 @@
 /obj/structure/bed/chair/wood/mahogany,
 /turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
-"vxe" = (
-/obj/structure/bed/chair/office/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/counselor)
 "vzp" = (
 /obj/structure/disposalpipe/sortjunction/flipped{
 	dir = 1;
@@ -34590,6 +34596,13 @@
 /obj/structure/bed/chair/wood/mahogany,
 /turf/simulated/floor/carpet/blue3,
 /area/crew_quarters/courtroom)
+"vST" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/medical/reslab)
 "vTH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensicswindow"
@@ -35071,13 +35084,6 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/maintenance/substation/firstdeck)
-"xku" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/medical/reslab)
 "xoV" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -57022,7 +57028,7 @@ eXM
 alB
 pdd
 abd
-uyS
+gPd
 ace
 xNn
 abq
@@ -58435,7 +58441,7 @@ dpb
 feb
 afk
 dHb
-djj
+dNe
 scs
 fib
 ajL
@@ -58835,7 +58841,7 @@ aes
 sMO
 izW
 afn
-xku
+vST
 pCH
 izW
 dRb
@@ -59656,7 +59662,7 @@ fpb
 scr
 aiV
 lHb
-vxe
+rux
 eeg
 pWW
 awM

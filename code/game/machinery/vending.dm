@@ -1486,6 +1486,7 @@
 	base_type = /obj/machinery/vending/bathvendor
 	products = list(/obj/item/clothing/mask/snorkel = 3,
 					/obj/item/clothing/shoes/swimmingfins = 3,
+					/obj/item/weapon/beach_ball = 2,
 					/obj/item/clothing/under/swimsuit/black = 2,
 					/obj/item/clothing/under/swimsuit/blue = 2,
 					/obj/item/clothing/under/swimsuit/green = 2,
@@ -1495,7 +1496,11 @@
 					/obj/item/clothing/under/shorts/blue = 2,
 					/obj/item/clothing/under/shorts/green = 2,
 					/obj/item/clothing/under/shorts/grey = 2,
-					/obj/item/clothing/under/shorts/red = 2
+					/obj/item/clothing/under/shorts/red = 2,
+					/obj/item/clothing/shoes/sandal = 6,
+					/obj/item/clothing/glasses/sunglasses = 4,
+					/obj/item/clothing/glasses/sunglasses/big = 2,
+					/obj/item/clothing/glasses/sunglasses/prescription = 2
 					)
 
 //a food variant of the boda machine - It carries slavic themed foods.. Mostly beer snacks

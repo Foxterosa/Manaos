@@ -3338,6 +3338,9 @@
 /obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/fourthdeck/starboard)
+"hM" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/quartermaster/hangar/top)
 "hO" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
@@ -3519,20 +3522,6 @@
 	},
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod2/station)
-"ih" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
-	},
-/obj/machinery/light/spot{
-	dir = 8
-	},
-/obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/lounge)
 "ij" = (
 /obj/machinery/light{
 	dir = 8
@@ -4423,6 +4412,17 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod2/station)
+"lC" = (
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/structure/disposalpipe/junction{
+	icon_state = "pipe-j2";
+	dir = 2
+	},
+/turf/simulated/floor/plating,
+/area/hallway/primary/fourthdeck/aft)
 "lD" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/reagent_dispensers/fueltank,
@@ -5538,6 +5538,12 @@
 /obj/effect/floor_decal/corner/brown{
 	icon_state = "corner_white";
 	dir = 8
+	},
+/obj/structure/dogbed{
+	name = "Cama de Sanfumm"
+	},
+/mob/living/simple_animal/corgi/pug{
+	name = "\improper Sanfumm"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/sorting)
@@ -8041,15 +8047,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
-"wo" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/table/woodentable/walnut,
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/item/weapon/board,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/lounge)
 "wp" = (
 /obj/machinery/door/blast/regular/escape_pod,
 /turf/simulated/floor/reinforced/airless,
@@ -8283,9 +8280,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/hangcheck)
-"wN" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/quartermaster/hangar/top)
 "wQ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1;
@@ -8733,11 +8727,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
-"yo" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/toolcloset,
-/turf/simulated/floor/tiled,
-/area/storage/tools)
 "yp" = (
 /turf/simulated/floor/tiled/techmaint,
 /area/quartermaster/hangar/top)
@@ -8857,6 +8846,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
+"zf" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/table/woodentable/walnut,
+/obj/effect/floor_decal/spline/fancy/wood,
+/obj/item/weapon/board,
+/turf/simulated/floor/carpet,
+/area/crew_quarters/lounge)
 "zk" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -9538,16 +9536,11 @@
 	},
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/top)
-"Co" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
-	},
-/obj/machinery/light/spot{
-	dir = 8
-	},
-/turf/simulated/floor/carpet,
-/area/crew_quarters/lounge)
+"Ch" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/toolcloset,
+/turf/simulated/floor/tiled,
+/area/storage/tools)
 "Cr" = (
 /obj/machinery/door/blast/shutters{
 	dir = 2;
@@ -10685,17 +10678,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/sorting)
-"HA" = (
-/obj/effect/catwalk_plated/dark,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/structure/disposalpipe/junction{
-	icon_state = "pipe-j2";
-	dir = 2
-	},
-/turf/simulated/floor/plating,
-/area/hallway/primary/fourthdeck/aft)
 "HB" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Lounge Maintenance"
@@ -12655,6 +12637,16 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/aft)
+"ND" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/obj/machinery/light/spot{
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/crew_quarters/lounge)
 "NG" = (
 /obj/machinery/computer/modular/preset/civilian,
 /obj/machinery/alarm{
@@ -12987,6 +12979,20 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
+"ON" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 8
+	},
+/obj/machinery/light/spot{
+	dir = 8
+	},
+/obj/machinery/light_switch{
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/carpet,
+/area/crew_quarters/lounge)
 "OO" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -14830,6 +14836,26 @@
 /obj/machinery/papershredder,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/hangcheck)
+"TF" = (
+/obj/machinery/door/airlock/civilian{
+	name = "Lounge"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/lounge)
 "TH" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 5
@@ -15430,26 +15456,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
-"Vl" = (
-/obj/machinery/door/airlock/civilian{
-	name = "Lounge"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/lounge)
 "Vm" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 5
@@ -33277,7 +33283,7 @@ aY
 aY
 Wf
 WI
-wN
+hM
 fn
 fz
 Vq
@@ -33488,7 +33494,7 @@ Li
 fa
 Vq
 IM
-ih
+ON
 Pu
 Uu
 DT
@@ -33691,7 +33697,7 @@ RY
 Vq
 PR
 TY
-wo
+zf
 Uu
 DT
 aa
@@ -34295,7 +34301,7 @@ Vq
 Vq
 Vq
 Vq
-Vl
+TF
 Vq
 Vq
 Uu
@@ -34498,7 +34504,7 @@ Hv
 PO
 jr
 OO
-Co
+ND
 Nw
 pG
 sJ
@@ -41547,7 +41553,7 @@ Ya
 Zc
 zp
 ZU
-HA
+lC
 En
 dp
 tj
@@ -42352,7 +42358,7 @@ go
 hk
 ig
 IZ
-yo
+Ch
 mS
 TP
 Pl
