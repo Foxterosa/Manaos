@@ -262,3 +262,10 @@ area/space/atmosalert()
 					sound_to(H, S)
 
 	spawn(60) .()
+
+/area/casinojack
+	name = "Hote-Casino Flamingo"
+	icon_state = "null"
+	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
