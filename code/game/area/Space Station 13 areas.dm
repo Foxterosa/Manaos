@@ -276,7 +276,7 @@ area/space/atmosalert()
 	luminosity = 1
 	dynamic_lighting = 0
 	requires_power = 0
-	req_access = list(access_bearcat)
+	req_access = list(access_brig)
 
 /area/casinojack/bar
 	name = "Hotel-Casino Flamingo Bar"
