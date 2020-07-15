@@ -21,6 +21,11 @@
 	var/list/area_usage_test_exempted_areas = list(
 		/area/beach,
 		/area/casinojack,
+		/area/casinojack/bar,
+		/area/casinojack/sec,
+		/area/casinojack/Med,
+		/area/casinojack/command,
+		/area/casinojack/principal,
 		/area/centcom,
 		/area/centcom/holding,
 		/area/centcom/specops,
