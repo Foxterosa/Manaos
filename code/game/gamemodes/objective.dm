@@ -461,3 +461,4 @@ var/global/list/all_objectives = list()
 	else
 		explanation_text = "Objetivo Libre"
 	return target
+	
