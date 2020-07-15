@@ -262,3 +262,47 @@ area/space/atmosalert()
 					sound_to(H, S)
 
 	spawn(60) .()
+
+/area/casinojack
+	name = "Hotel-Casino Flamingo"
+	icon_state = "null"
+	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
+
+/area/casinojack/sec
+	name = "Hotel-Casino Flamingo Sec"
+	icon_state = "checkpoint1"
+	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
+	req_access = list(access_brig)
+
+/area/casinojack/bar
+	name = "Hotel-Casino Flamingo Bar"
+	icon_state = "kitchen"
+	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
+	req_access = list(access_bar)
+
+/area/casinojack/command
+	name = "Hotel-Casino Flamingo Command"
+	icon_state = "bridge"
+	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
+
+/area/casinojack/principal
+	name = "Hotel-Casino Flamingo Principal"
+	icon_state = "conference"
+	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
+
+/area/casinojack/Med
+	name = "Hotel-Casino Flamingo Med"
+	icon_state = "medbay"
+	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
