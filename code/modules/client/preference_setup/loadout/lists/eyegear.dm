@@ -122,3 +122,11 @@
 /datum/gear/eyes/janitor/prescription
 	display_name = "HUD de Conserje con prescripcion"
 	path = /obj/item/clothing/glasses/hud/janitor/prescription
+
+/datum/gear/eyes/kasumimask
+	display_name = "Mascara de Kasumi"
+	path = /obj/item/clothing/mask/kasumimask
+
+/datum/gear/eyes/jokermask
+	display_name = "Mascara de Joker"
+	path = /obj/item/clothing/mask/jokermask

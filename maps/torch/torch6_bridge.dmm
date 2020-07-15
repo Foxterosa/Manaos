@@ -9188,7 +9188,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
 "oR" = (
-/obj/structure/flora/pottedplant/overgrown,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
@@ -9209,6 +9208,7 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/corner/paleblue,
+/obj/structure/flora/pottedplant/orientaltree,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
 "oS" = (
@@ -10177,8 +10177,6 @@
 "qv" = (
 /obj/structure/table/glass,
 /obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/item/weapon/pen/blue,
 /obj/item/sticky_pad/random,
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -10187,6 +10185,7 @@
 	dir = 10
 	},
 /obj/item/toy/figure/cmo,
+/obj/item/weapon/pen/multi,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
 "qw" = (

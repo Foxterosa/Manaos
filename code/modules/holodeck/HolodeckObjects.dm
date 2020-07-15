@@ -103,6 +103,7 @@
 	name = "sand"
 	icon_state = "desert0"
 	base_icon_state = "desert0"
+	footstep_type = /decl/footsteps/sand
 
 /turf/simulated/floor/holofloor/beach/coastline
 	name = "coastline"
@@ -114,6 +115,8 @@
 	name = "water"
 	icon_state = "seashallow"
 	base_icon_state = "seashallow"
+	turf_flags = TURF_IS_WET
+	footstep_type = /decl/footsteps/water
 
 /turf/simulated/floor/holofloor/desert
 	name = "desert sand"
