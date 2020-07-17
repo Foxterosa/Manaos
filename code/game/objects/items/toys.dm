@@ -575,8 +575,8 @@
 	icon_state = "mime"
 
 /obj/item/toy/figure/miner
-	name = "Shaft Miner action figure"
-	desc = "A \"Space Life\" brand Shaft Miner action figure."
+	name = "Figura de accion: Minero"
+	desc = "Una \"Space Life\" figura de accion marca minero. Hm..."
 	icon_state = "miner"
 
 /obj/item/toy/figure/ninja
