@@ -445,9 +445,9 @@
 	w_class = ITEM_SIZE_TINY
 
 /obj/item/toy/figure/cmo
-	name = "Chief Medical Officer action figure"
-	desc = "A \"Space Life\" brand Chief Medical Officer action figure."
-	icon_state = "cmo"
+	name = "figura de accion: Oficial Medico"
+	desc = "Una \"Space Life\" figura de accion marca oficial medico"
+	icon_state = "cmo1"
 
 /obj/item/toy/figure/assistant
 	name = "Assistant action figure"
@@ -460,8 +460,8 @@
 	icon_state = "atmos"
 
 /obj/item/toy/figure/bartender
-	name = "Bartender action figure"
-	desc = "A \"Space Life\" brand Bartender action figure."
+	name = "figura de accion: Bartender"
+	desc = "Una \"Space Life\" figura de accion marca bartender. Ahora con cabello 100% natural."
 	icon_state = "bartender"
 
 /obj/item/toy/figure/borg
@@ -535,8 +535,8 @@
 	icon_state = "geneticist"
 
 /obj/item/toy/figure/hop
-	name = "Head of Personel action figure"
-	desc = "A \"Space Life\" brand Head of Personel action figure."
+	name = "figura de accion: Jefe de Personal"
+	desc = "Una \"Space Life\" figura de accion marca jefe de personal. Ahora con cabello 100% natural."
 	icon_state = "hop"
 
 /obj/item/toy/figure/hos
