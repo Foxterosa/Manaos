@@ -386,7 +386,7 @@
 
 /obj/vehicle/train/med/engine
 	name = "ambulancia"
-	desc = "Un carro electrico disenado para cargar heridos."
+	desc = "Una ambulancia disenada para transportar heridos"
 	icon = 'icons/obj/vehicles.dmi'
 	icon_state = "docwagon2"
 	on = 0
@@ -397,14 +397,14 @@
 	load_offset_x = 0
 	buckle_pixel_shift = "x=0;y=0;z=7"
 
-	var/car_limit = 2		//how many cars an engine can pull before performance degrades
+	var/car_limit = 3		//how many cars an engine can pull before performance degrades
 	charge_use = 1 KILOWATTS
 	active_engines = 1
 	var/obj/item/weapon/key/med_train/key
 
 /obj/item/weapon/key/med_train
 	name = "key"
-	desc = "Una llave para una ambulancia \"Choo Choo!\"."
+	desc = "Las llave de una ambulancia."
 	icon = 'icons/obj/vehicles.dmi'
 	icon_state = "keydoc"
 	w_class = ITEM_SIZE_TINY
@@ -417,7 +417,14 @@
 	can_buckle = 1
 	buckle_dir = SOUTH
 	buckle_lying = 1
+	passenger_allowed = 1
+	locked = 0
+	var/buckling_sound = 'sound/effects/buckle.ogg'
 
+	load_item_visible = 1
+	load_offset_x = 0
+	load_offset_y = 10
+	buckle_pixel_shift= "x=0;y=10;z=0"
 
 //-------------------------------------------
 // Standard procs
@@ -448,6 +455,13 @@
 
 	return ..()
 
+/obj/vehicle/train/med/trolley/attackby(obj/item/weapon/W as obj, mob/user as mob)
+	if(open && isWirecutter(W))
+		passenger_allowed = !passenger_allowed
+		user.visible_message("<span class='notice'>[user] [passenger_allowed ? "cuts" : "mends"] a cable in [src].</span>","<span class='notice'>You [passenger_allowed ? "cut" : "mend"] the load limiter cable.</span>")
+	else
+		..()
+
 /obj/vehicle/train/med/engine/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/weapon/key/med_train))
 		if(!key)
@@ -458,7 +472,7 @@
 		return
 	..()
 
-//med trains are open topped, so there is a chance the projectile will hit the mob ridding the train instead
+//cargo trains are open topped, so there is a chance the projectile will hit the mob ridding the train instead
 /obj/vehicle/train/med/bullet_act(var/obj/item/projectile/Proj)
 	if(buckled_mob && prob(70))
 		buckled_mob.bullet_act(Proj)
@@ -470,6 +484,9 @@
 		icon_state = initial(icon_state) + "_open"
 	else
 		icon_state = initial(icon_state)
+
+/obj/vehicle/train/med/trolley/insert_cell(var/obj/item/weapon/cell/C, var/mob/living/carbon/human/H)
+	return
 
 /obj/vehicle/train/med/engine/insert_cell(var/obj/item/weapon/cell/C, var/mob/living/carbon/human/H)
 	..()
@@ -485,6 +502,11 @@
 	if(istype(D) && istype(H))
 		D.Bumped(H)		//a little hacky, but hey, it works, and respects access rights
 
+	..()
+
+/obj/vehicle/train/med/trolley/Bump(atom/Obstacle)
+	if(!lead)
+		return //so people can't knock others over by pushing a trolley around
 	..()
 
 //-------------------------------------------
@@ -523,6 +545,10 @@
 	for(var/i = 0, i < rand(1,5), i++)
 		var/def_zone = pick(parts)
 		H.apply_damage(rand(5,10), BRUTE, def_zone)
+
+/obj/vehicle/train/med/trolley/RunOver(var/mob/living/carbon/human/H)
+	..()
+	attack_log += text("\[[time_stamp()]\] <font color='red'>ran over [H.name] ([H.ckey])</font>")
 
 /obj/vehicle/train/med/engine/RunOver(var/mob/living/carbon/human/H)
 	..()
@@ -627,6 +653,71 @@
 	verbs -= /obj/vehicle/train/med/engine/verb/remove_key
 
 //-------------------------------------------
+// Loading/unloading procs
+//-------------------------------------------
+/obj/vehicle/train/med/trolley/load(var/atom/movable/C)
+	if(ismob(C) && !passenger_allowed)
+		return 0
+	if(!istype(C,/obj/structure/closet) && !istype(C, /mob/living/carbon/human))
+		return 0
+
+	//if there are any items you don't want to be able to interact with, add them to this check
+	// ~no more shielded, emitter armed death trains
+	if(istype(C, /obj/machinery))
+		load_object(C)
+	else
+		..()
+
+	if(load)
+		return 1
+
+/obj/vehicle/train/med/engine/load(var/atom/movable/C)
+	if(!istype(C, /mob/living/carbon/human))
+		return 0
+
+	return ..()
+
+//Load the object "inside" the trolley and add an overlay of it.
+//This prevents the object from being interacted with until it has
+// been unloaded. A dummy object is loaded instead so the loading
+// code knows to handle it correctly.
+/obj/vehicle/train/med/trolley/proc/load_object(var/atom/movable/C)
+	if(!isturf(C.loc)) //To prevent loading things from someone's inventory, which wouldn't get handled properly.
+		return 0
+	if(load || C.anchored)
+		return 0
+
+	var/datum/vehicle_dummy_load/dummy_load = new()
+	load = dummy_load
+
+	if(!load)
+		return
+	dummy_load.actual_load = C
+	C.forceMove(src)
+
+	if(load_item_visible)
+		C.pixel_x += load_offset_x
+		C.pixel_y += load_offset_y
+		C.plane = plane
+		C.layer = VEHICLE_LOAD_LAYER
+
+		overlays += C
+
+		//we can set these back now since we have already cloned the icon into the overlay
+		C.pixel_x = initial(C.pixel_x)
+		C.pixel_y = initial(C.pixel_y)
+		C.reset_plane_and_layer()
+
+/obj/vehicle/train/med/trolley/unload(var/mob/user, var/direction)
+	if(istype(load, /datum/vehicle_dummy_load))
+		var/datum/vehicle_dummy_load/dummy_load = load
+		load = dummy_load.actual_load
+		dummy_load.actual_load = null
+		qdel(dummy_load)
+		overlays.Cut()
+	..()
+
+//-------------------------------------------
 // Latching/unlatching procs
 //-------------------------------------------
 
@@ -668,4 +759,18 @@
 		move_delay = max(0.5, (-car_limit * active_engines) + train_length - active_engines)	//limits base overweight so you cant overspeed trains
 		move_delay *= (0.5 / max(0.5, active_engines)) * 0.5 										//overweight penalty (scaled by the number of engines)
 		move_delay += config.run_delay 														//base reference speed
-		move_delay *= 0.5																	//makes med trains 10% slower than running when not overweight
+		move_delay *= 0.5																	//makes cargo trains 10% slower than running when not overweight
+
+/obj/vehicle/train/med/trolley/update_car(var/train_length, var/active_engines)
+	src.train_length = train_length
+	src.active_engines = active_engines
+
+	if(!lead && !tow)
+		anchored = 0
+	else
+		anchored = 1
+
+
+
+
+
