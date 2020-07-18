@@ -1440,7 +1440,8 @@
 					/obj/item/clothing/suit/storage/leather_jacket = 2,
 					/obj/item/clothing/accessory/toggleable/hawaii/red = 3,
 					/obj/item/clothing/accessory/toggleable/hawaii = 3,
-					/obj/item/clothing/under/jrsuit
+					/obj/item/clothing/under/jrsuit,
+					/obj/item/clothing/gloves/fingerless = 2
 					)
 
 // eliza's attempt at a new vending machine
