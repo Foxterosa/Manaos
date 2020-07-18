@@ -595,8 +595,8 @@
 	icon_state = "rd"
 
 /obj/item/toy/figure/roboticist
-	name = "Roboticist action figure"
-	desc = "A \"Space Life\" brand Roboticist action figure."
+	name = "Figura dea accion: Robotica"
+	desc = "Una figura de accion de robotica marca \"Space Life\"."
 	icon_state = "roboticist"
 
 /obj/item/toy/figure/scientist
