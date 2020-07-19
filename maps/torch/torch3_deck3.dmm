@@ -10651,6 +10651,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
+"ud" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/lawyer_office)
 "ue" = (
 /obj/effect/floor_decal/corner/green/half,
 /obj/structure/cable/green{
@@ -13080,6 +13084,17 @@
 /obj/random/coin,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
+"yW" = (
+/obj/machinery/disposal,
+/obj/item/device/radio/intercom{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/lawyer_office)
 "yX" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/cable/green{
@@ -13517,13 +13532,6 @@
 "Ae" = (
 /turf/simulated/floor/plating,
 /area/engineering/hardstorage)
-"Af" = (
-/obj/item/weapon/storage/secure/safe{
-	pixel_x = -24;
-	pixel_y = 0
-	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/heads/office/lawyer_office)
 "Ag" = (
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
@@ -14019,6 +14027,13 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
+"Bx" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/sleep/cryo)
 "By" = (
 /obj/structure/hygiene/shower{
 	dir = 8;
@@ -14030,6 +14045,9 @@
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
+"Bz" = (
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/lawyer_office)
 "BA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -14043,6 +14061,12 @@
 /obj/effect/floor_decal/spline/fancy/wood/corner,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/c2)
+"BC" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/heads/office/lawyer_office)
 "BD" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -14269,17 +14293,6 @@
 /obj/structure/closet/cabinet,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/c2)
-"Cm" = (
-/obj/machinery/disposal,
-/obj/item/device/radio/intercom{
-	dir = 4;
-	pixel_x = -24
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/lawyer_office)
 "Cp" = (
 /turf/simulated/floor/carpet/orange,
 /area/crew_quarters_boh/cabin_main/c3)
@@ -14983,6 +14996,13 @@
 /obj/structure/undies_wardrobe,
 /turf/simulated/floor/carpet/orange,
 /area/crew_quarters_boh/cabin_main/c3)
+"Eo" = (
+/obj/item/weapon/storage/secure/safe{
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/heads/office/lawyer_office)
 "Ep" = (
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 2;
@@ -15282,12 +15302,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/thirddeck/port)
-"Fg" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/heads/office/lawyer_office)
 "Fl" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -16533,13 +16547,6 @@
 /obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
-"IH" = (
-/obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/sleep/cryo)
 "II" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -16946,6 +16953,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
+"Jv" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/lawyer_office)
 "Jw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -17346,6 +17357,27 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
+"Kj" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/civilian{
+	name = "Lawyer Office"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/crew_quarters/heads/office/lawyer_office)
 "Kk" = (
 /obj/random/junk,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -19372,9 +19404,6 @@
 /obj/effect/floor_decal/corner/green/mono,
 /turf/simulated/floor/tiled,
 /area/hydroponics)
-"Qa" = (
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/lawyer_office)
 "Qb" = (
 /obj/effect/shuttle_landmark/ninja/deck3,
 /turf/space,
@@ -19645,6 +19674,11 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/bar/storage)
+"QO" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/green,
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/heads/office/lawyer_office)
 "QQ" = (
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
@@ -20449,10 +20483,6 @@
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
-"Tx" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/lawyer_office)
 "Ty" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -20546,6 +20576,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hydroponics)
+"TM" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/sleep/cryo)
 "TO" = (
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/machinery/door/firedoor,
@@ -21072,16 +21112,6 @@
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
-"Vk" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/sleep/cryo)
 "Vl" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -22533,7 +22563,10 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
 "YZ" = (
-/obj/structure/disposalpipe/segment,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/lawyer_office)
 "Zb" = (
@@ -22697,27 +22730,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/aft)
-"Zy" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/civilian{
-	name = "Lawyer Office"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
 "Zz" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -22906,13 +22918,6 @@
 /obj/item/weapon/spirit_board,
 /turf/simulated/floor/wood/maple,
 /area/chapel/main)
-"ZX" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/lawyer_office)
 "ZY" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -37578,10 +37583,10 @@ Ou
 gy
 hn
 iY
-Af
-ZX
+Eo
+YZ
 qw
-Cm
+yW
 qD
 rd
 gy
@@ -37780,12 +37785,12 @@ Bq
 gy
 ho
 jj
-jj
+QO
 mC
-YZ
+Jv
 mF
-Qa
-Qa
+Bz
+Bz
 rq
 Bq
 BV
@@ -37984,9 +37989,9 @@ hr
 jW
 le
 nH
-Qa
-Fg
-jj
+Bz
+BC
+QO
 rg
 gy
 Bq
@@ -38186,7 +38191,7 @@ hu
 jY
 jY
 pa
-Tx
+ud
 nj
 jj
 rj
@@ -38589,7 +38594,7 @@ gz
 gz
 gy
 lx
-Zy
+Kj
 lx
 gy
 gz
@@ -39194,8 +39199,8 @@ vT
 vT
 vT
 vT
-Vk
-IH
+TM
+Bx
 vT
 vT
 uO
