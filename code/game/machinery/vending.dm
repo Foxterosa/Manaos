@@ -1334,7 +1334,16 @@
 					/obj/item/clothing/head/hairflower/yellow = 2,
 					/obj/item/clothing/head/that = 3,
 					/obj/item/clothing/mask/balaclava = 2,
-					/obj/item/clothing/mask/bandana = 2)
+					/obj/item/clothing/mask/bandana = 2,
+					/obj/item/clothing/ears/earring/dangle/diamond,
+					/obj/item/clothing/ears/earring/dangle/gold = 2,
+					/obj/item/clothing/ears/earring/dangle/iron = 3,
+					/obj/item/clothing/ears/earring/dangle/glass = 3,
+					/obj/item/clothing/ears/earring/stud/diamond,
+					/obj/item/clothing/ears/earring/stud/glass = 3,
+					/obj/item/clothing/ears/earring/stud/gold  = 2,
+					/obj/item/clothing/ears/earring/stud/iron = 3)
+
 	contraband = list(/obj/item/clothing/head/collectable/petehat)
 
 /obj/machinery/vending/shoevendor
@@ -1399,6 +1408,12 @@
 					/obj/item/clothing/under/dress/plaid_blue,
 					/obj/item/clothing/under/dress/plaid_purple,
 					/obj/item/clothing/under/dress/plaid_red,
+					/obj/item/clothing/under/wedding/bride_blue = 2,
+					/obj/item/clothing/under/wedding/bride_orange = 2,
+					/obj/item/clothing/under/wedding/bride_purple = 2,
+					/obj/item/clothing/under/wedding/bride_red = 2,
+					/obj/item/clothing/under/wedding/bride_white = 2,
+					/obj/item/clothing/under/skirt_c/dress/long/black = 2,
 					/obj/item/clothing/under/formal_pants/black = 2,
 					/obj/item/clothing/under/formal_pants/khaki = 2,
 					/obj/item/clothing/under/formal_pants/red = 2,
@@ -1500,8 +1515,7 @@
 					/obj/item/clothing/shoes/sandal = 6,
 					/obj/item/clothing/glasses/sunglasses = 4,
 					/obj/item/clothing/glasses/sunglasses/big = 2,
-					/obj/item/clothing/glasses/sunglasses/prescription = 2
-					)
+					/obj/item/clothing/glasses/sunglasses/prescription = 2)
 
 //a food variant of the boda machine - It carries slavic themed foods.. Mostly beer snacks
 /obj/machinery/vending/snix
@@ -1536,7 +1550,9 @@
 					/obj/item/toy/therapy_blue = 2,
 					/obj/item/toy/therapy_red = 2,
 					/obj/item/toy/therapy_yellow = 2,
-					/obj/item/toy/therapy_green = 2
+					/obj/item/toy/therapy_green = 2,
+					/obj/item/weapon/storage/fancy/cigar,
+					/obj/item/weapon/flame/lighter/zippo/random = 2
 					)
 
 	contraband = list(/obj/item/weapon/reagent_containers/food/snacks/canned/caviar/true = 1)
