@@ -967,3 +967,9 @@
 		icon_state = "colornose"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
+
+	motheyes
+		name = "Moth eyes"
+		icon_state = "motheyes"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
