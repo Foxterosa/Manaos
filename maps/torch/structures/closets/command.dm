@@ -155,8 +155,6 @@
 		/obj/item/clothing/glasses/sunglasses/sechud,
 		/obj/item/weapon/gun/energy/bs_secure)
 
-
-
 /obj/structure/closet/secure_closet/psiadvisor
 	name = "psionic advisor's locker"
 	req_access = list(access_psiadvisor)

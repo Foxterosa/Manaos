@@ -72,7 +72,7 @@
 		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
 		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="energyrevolverkill"),
 		)
-	req_access = list(access_bs)
+	req_access = list(access_bridge)
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 	max_shots = 10
 	recharge_time = 5
