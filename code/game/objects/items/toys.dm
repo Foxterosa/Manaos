@@ -446,8 +446,13 @@
 
 /obj/item/toy/figure/cmo
 	name = "figura de accion: Oficial Medico"
-	desc = "Una figura de accion de oficial medico marca \"Space Life\"."
+	desc = "Una figura de accion de oficial medico marca \"Space Life\". Chale..."
 	icon_state = "cmo1"
+
+/obj/item/toy/figure/cmos
+	name = "figura de accion: Oficial Medico"
+	desc = "Una figura de accion de oficial medico marca \"Space Life\"."
+	icon_state = "cmo"
 
 /obj/item/toy/figure/assistant
 	name = "Assistant action figure"
