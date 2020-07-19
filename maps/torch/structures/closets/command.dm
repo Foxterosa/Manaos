@@ -153,7 +153,7 @@
 		/obj/item/clothing/gloves/bs_combat,
 		/obj/item/weapon/storage/backpack/bs_mochila,
 		/obj/item/clothing/glasses/sunglasses/sechud,
-		/obj/item/weapon/gun/energy/revolver/secure)
+		/obj/item/weapon/gun/energy/bs_secure)
 
 
 
