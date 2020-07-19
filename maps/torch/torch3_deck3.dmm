@@ -371,9 +371,6 @@
 "aT" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/thirddeck/aftstarboard)
-"aU" = (
-/turf/simulated/wall/r_wall/hull,
-/area/space)
 "aV" = (
 /obj/structure/lattice,
 /obj/structure/grille,
@@ -10655,14 +10652,6 @@
 	},
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d3port)
-"ui" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/wall/r_wall/hull,
-/area/space)
 "uj" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -21714,7 +21703,7 @@
 /obj/structure/catwalk,
 /obj/random/junk,
 /turf/simulated/floor/plating,
-/area/maintenance/thirddeck/aftport)
+/area/maintenance/thirddeck/port)
 "WB" = (
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/gym)
@@ -22342,10 +22331,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai_monitored/storage/eva)
-"Yi" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/aftport)
 "Yj" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -35830,7 +35815,7 @@ BV
 BV
 BV
 BV
-aU
+BV
 aa
 aa
 aa
@@ -36031,8 +36016,8 @@ Oz
 BV
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -36233,8 +36218,8 @@ Yb
 BV
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -36435,8 +36420,8 @@ Yb
 BV
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -36637,8 +36622,8 @@ li
 BV
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -36839,8 +36824,8 @@ Yb
 BV
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -37041,8 +37026,8 @@ Yb
 BV
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -37243,8 +37228,8 @@ vM
 Gw
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -37445,8 +37430,8 @@ gy
 NJ
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -37647,8 +37632,8 @@ gy
 LW
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -37849,8 +37834,8 @@ rq
 Bq
 BV
 BV
-aU
-aU
+BV
+BV
 aa
 aa
 aa
@@ -38052,7 +38037,7 @@ Bq
 BV
 BV
 BV
-aU
+BV
 aa
 aa
 aa
@@ -39667,8 +39652,8 @@ GD
 Ge
 Hf
 Hf
-aU
-aU
+Hf
+Hf
 aa
 aa
 aa
@@ -39869,7 +39854,7 @@ wq
 Fc
 Vr
 Vr
-ui
+Vr
 KR
 zi
 aa
@@ -40071,7 +40056,7 @@ Lk
 EL
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -40273,7 +40258,7 @@ Lk
 EL
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -40475,7 +40460,7 @@ Lk
 EL
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -40677,7 +40662,7 @@ Lk
 EL
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -40879,7 +40864,7 @@ Lk
 EL
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -41081,7 +41066,7 @@ Lk
 EL
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -41283,7 +41268,7 @@ gt
 Uu
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -41485,7 +41470,7 @@ jk
 JL
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -41687,7 +41672,7 @@ TB
 SI
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -41889,7 +41874,7 @@ DD
 KW
 Vr
 Vr
-ui
+Vr
 KR
 zi
 aa
@@ -42091,7 +42076,7 @@ CE
 Ge
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -42293,7 +42278,7 @@ CE
 Ge
 Hf
 Hf
-aU
+Hf
 aa
 aa
 aa
@@ -43305,7 +43290,7 @@ Hh
 Hx
 Hf
 Hf
-aU
+Hf
 aa
 Qq
 HH
@@ -43487,7 +43472,7 @@ rf
 XP
 ov
 wl
-Ez
+wl
 Ts
 Ts
 BS
@@ -43689,7 +43674,7 @@ Qs
 sw
 RC
 VE
-Ez
+wl
 xg
 sQ
 Zz
@@ -44719,7 +44704,7 @@ sY
 MI
 DA
 Hf
-aU
+Hf
 aa
 Qq
 HX
@@ -45322,9 +45307,9 @@ xn
 sY
 sY
 sY
-Yi
-jZ
-jZ
+UZ
+Hf
+Hf
 aI
 aa
 aa
@@ -45525,8 +45510,8 @@ wo
 TA
 sY
 WA
-jZ
-jZ
+Hf
+Hf
 aI
 aa
 aa
@@ -45726,9 +45711,9 @@ xp
 Yt
 XE
 sY
-Yi
-jZ
-jZ
+UZ
+Hf
+Hf
 aI
 aa
 aa
@@ -45928,9 +45913,9 @@ yl
 ur
 FQ
 sY
-Yi
-jZ
-jZ
+UZ
+Hf
+Hf
 aI
 aa
 aa
@@ -46130,9 +46115,9 @@ xv
 tX
 FK
 sY
-Yi
-jZ
-jZ
+UZ
+Hf
+Hf
 aI
 aa
 aa
