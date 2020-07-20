@@ -9,6 +9,12 @@
 	name = "guantes de combate"
 	icon_state = "combat"
 	item_state = "swat_gl"
+	icon_state = "beret_centcom_officer"
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_SMALL,
+		laser = ARMOR_LASER_HANDGUNS
+		)
 
 /obj/item/clothing/gloves/cyborg
 	desc = "Beep boop borp!"
