@@ -58,7 +58,7 @@
 /obj/item/clothing/accessory/storage/webbing
 	name = "Porta juguetes"
 	desc = "lleva a tus amigos contigo cuando te sientas solo!"
-	icon_state = "webbing"
+	icon_state = "bandolier"
 	slots = 8
 /obj/item/clothing/accessory/storage/webbing/Initialize()
 	. = ..()
