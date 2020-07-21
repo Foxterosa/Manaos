@@ -1,14 +1,13 @@
 /datum/game_mode/ninja
 	name = "Ninja"
-	round_description = "¡Un agente del Clan Arana esta a bordo!"
-	extended_round_description = "¡¿Que fue eso?! ¿Fue esa una persona o tus ojos te estan engañando? \
-		No tienes idea. Ese individuo delgado y criptico es un enigma para ti y para todos tus conocimientos. \
-		Su proposito es desconocido. Su mision tambien. Como llego a este segura y aislada seccion de la galaxia,\
-		no lo sabes. Lo que si sabes es que hay un silencioso enemigo que logro pasar a traves de tus defensas\
-		y que ahora acecha las sombras con capacidades tecnologicas eones por delante de tu tiempo.\
-		Siendo capaz de evitar la omnisciencia de la IA y rivalizando las armas mas resistentes\
-		que tu gente es capaz de usar.\
-		Pisa ligero y ruega que este asesino desconocido no este buscandote a ti."
+	round_description = "An agent of the Spider Clan is onboard!"
+	extended_round_description = "What was that?! Was that a person or did your eyes just play tricks on you? \
+		You have no idea. That slim-suited, cryptic individual is an enigma to you and all of your knowledge. \
+		Their purpose is unknown. Their mission is unknown. How they arrived to this secure and isolated \
+		section of the galaxy, you don't know. What you do know is that there is a silent shadow-stalker piercing \
+		through your defenses with technological capabilities eons ahead of your time. They can avoid \
+		the omniscience of the AI and rival the most hardened weapons your people are capable of. Tread lightly and \
+		only hope this unknown assassin isn't here for you."
 	config_tag = "ninja"
 	required_players = 5
 	required_enemies = 1
