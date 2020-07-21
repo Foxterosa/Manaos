@@ -60,7 +60,9 @@
 	desc = "lleva a tus amigos contigo cuando te sientas solo!"
 	icon_state = "webbing"
 	slots = 8
-	var/can_hold = list(
+/obj/item/clothing/accessory/storage/webbing/Initialize()
+	. = ..()
+		hold.can_hold = list(
 		/obj/item/toy/figure/
 		)
 
