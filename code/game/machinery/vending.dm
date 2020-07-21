@@ -1308,7 +1308,7 @@
 					/obj/item/clothing/mask/kasumimask,
 					/obj/item/clothing/under/kasumioutfit,
 					/obj/item/clothing/shoes/kasumi)
-	contraband = list(/obj/item/clothing/under/stripper/mankini, /obj/item/clothing/under/stripper/stripper_green, /obj/item/clothing/under/stripper/stripper_pink, /obj/item/clothing/mask/muzzle = 4, /obj/item/clothing/under/harness, /obj/item/weapon/melee/whip)
+	contraband = list(/obj/item/clothing/under/stripper/mankini = 2, /obj/item/clothing/mask/muzzle = 4)
 
 /obj/machinery/vending/hatvendor
 	name = "Vendedor de sombreros"
@@ -1334,7 +1334,16 @@
 					/obj/item/clothing/head/hairflower/yellow = 2,
 					/obj/item/clothing/head/that = 3,
 					/obj/item/clothing/mask/balaclava = 2,
-					/obj/item/clothing/mask/bandana = 2)
+					/obj/item/clothing/mask/bandana = 2,
+					/obj/item/clothing/ears/earring/dangle/diamond,
+					/obj/item/clothing/ears/earring/dangle/gold = 2,
+					/obj/item/clothing/ears/earring/dangle/iron = 3,
+					/obj/item/clothing/ears/earring/dangle/glass = 3,
+					/obj/item/clothing/ears/earring/stud/diamond,
+					/obj/item/clothing/ears/earring/stud/glass = 3,
+					/obj/item/clothing/ears/earring/stud/gold  = 2,
+					/obj/item/clothing/ears/earring/stud/iron = 3)
+
 	contraband = list(/obj/item/clothing/head/collectable/petehat)
 
 /obj/machinery/vending/shoevendor
@@ -1399,6 +1408,12 @@
 					/obj/item/clothing/under/dress/plaid_blue,
 					/obj/item/clothing/under/dress/plaid_purple,
 					/obj/item/clothing/under/dress/plaid_red,
+					/obj/item/clothing/under/wedding/bride_blue = 2,
+					/obj/item/clothing/under/wedding/bride_orange = 2,
+					/obj/item/clothing/under/wedding/bride_purple = 2,
+					/obj/item/clothing/under/wedding/bride_red = 2,
+					/obj/item/clothing/under/wedding/bride_white = 2,
+					/obj/item/clothing/under/skirt_c/dress/long/black = 2,
 					/obj/item/clothing/under/formal_pants/black = 2,
 					/obj/item/clothing/under/formal_pants/khaki = 2,
 					/obj/item/clothing/under/formal_pants/red = 2,
@@ -1425,7 +1440,8 @@
 					/obj/item/clothing/suit/storage/leather_jacket = 2,
 					/obj/item/clothing/accessory/toggleable/hawaii/red = 3,
 					/obj/item/clothing/accessory/toggleable/hawaii = 3,
-					/obj/item/clothing/under/jrsuit
+					/obj/item/clothing/under/jrsuit,
+					/obj/item/clothing/gloves/fingerless = 2
 					)
 
 // eliza's attempt at a new vending machine
@@ -1500,8 +1516,7 @@
 					/obj/item/clothing/shoes/sandal = 6,
 					/obj/item/clothing/glasses/sunglasses = 4,
 					/obj/item/clothing/glasses/sunglasses/big = 2,
-					/obj/item/clothing/glasses/sunglasses/prescription = 2
-					)
+					/obj/item/clothing/glasses/sunglasses/prescription = 2)
 
 //a food variant of the boda machine - It carries slavic themed foods.. Mostly beer snacks
 /obj/machinery/vending/snix
@@ -1515,12 +1530,15 @@
 	icon_vend = "snix-vend"
 	icon_deny = "snix-deny"
 	products = list(/obj/item/weapon/storage/bag/uno = 3,
+					/obj/item/weapon/deck/cards = 3,
 					/obj/item/weapon/pen/crayon/mime = 2,
 					/obj/item/weapon/pen/crayon/rainbow = 2,
 					/obj/item/weapon/bikehorn = 2,
 					/obj/item/device/boombox = 2,
-					/obj/item/device/camera/tvcamera = 3,
+					/obj/item/device/camera/tvcamera = 2,
+					/obj/item/device/camera = 3,
 					/obj/item/device/camera_film = 6,
+					/obj/item/weapon/storage/photo_album = 2,
 					/obj/item/weapon/storage/wallet/leather = 2,
 					/obj/item/weapon/storage/wallet/poly = 2,
 					/obj/item/toy/plushie/kobold = 2,
@@ -1536,7 +1554,13 @@
 					/obj/item/toy/therapy_blue = 2,
 					/obj/item/toy/therapy_red = 2,
 					/obj/item/toy/therapy_yellow = 2,
-					/obj/item/toy/therapy_green = 2
+					/obj/item/toy/therapy_green = 2,
+					/obj/item/weapon/storage/fancy/cigar,
+					/obj/item/weapon/flame/lighter/zippo/random = 2,
+					/obj/item/toy/figure/wizard,
+					/obj/item/toy/figure/clown,
+					/obj/item/toy/water_balloon = 5,
+					/obj/item/toy/snappop = 5
 					)
 
 	contraband = list(/obj/item/weapon/reagent_containers/food/snacks/canned/caviar/true = 1)

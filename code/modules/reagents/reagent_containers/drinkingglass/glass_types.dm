@@ -241,3 +241,27 @@
 		base_name = citem.additional_data["base_name"] || base_name
 	custom_name = citem.item_name
 	custom_desc = citem.item_desc
+
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbay
+	name = "\improper Tasa de Medbay"
+	desc = "Una tasa de cafe blanca con el logo de medbay en ella."
+	icon_state = "coffeecup_med"
+	base_name = "\improper Med cup"
+
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbay
+	name = "\improper Tasa de Medbay"
+	desc = "Una tasa de cafe blanca con el logo de Medbay en ella."
+	icon_state = "coffeecup_med"
+	base_name = "\improper Med cup"
+
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbayone
+	name = "\improper Tasa de Medbay 1#"
+	desc = "Una tasa de cafe blanca de Medbay. Para el 1#."
+	icon_state = "coffeecup_medone"
+	base_name = "\improper Med cup one"
+
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbayheart
+	name = "\improper Tasa con corazon"
+	desc = "Una tasa de cafe blanca perteneciente a Medbay. Tiene un corazon en ella, ow..."
+	icon_state = "coffeecup_medheart"
+	base_name = "\improper Med cup heart"

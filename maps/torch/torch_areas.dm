@@ -1486,6 +1486,11 @@
 	icon_state = "surgery"
 	req_access = list(list(access_surgery, access_robotics_engineering))
 
+/area/medical/garaje
+	name = "\improper Garaje"
+	icon_state = "medbay4"
+	req_access = list(access_medical)
+
 // Research
 /area/assembly
 	req_access = list(access_robotics_engineering)

@@ -34,3 +34,10 @@
 
 /obj/item/clothing/gloves/rainbow/modified
 	item_flags = ITEM_FLAG_PREMODIFIED
+
+/obj/item/clothing/gloves/fingerless
+	name = "guantes sin dedos"
+	desc = "Un par de guantes. Estos no parece tener cubierto los dedos."
+	item_state = "fingerless"
+	icon_state = "fingerless"
+

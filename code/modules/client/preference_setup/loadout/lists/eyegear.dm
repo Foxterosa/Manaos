@@ -65,6 +65,11 @@
 	path = /obj/item/clothing/glasses/hud/health/visor
 	cost = 2
 
+/datum/gear/eyes/medical/sun
+	display_name = "Gafas de sol medicas"
+	path = /obj/item/clothing/glasses/hud/health/sun
+	cost = 2
+
 /datum/gear/eyes/medical/ipatch
 	display_name = "HUDpatch Medico"
 	path = /obj/item/clothing/glasses/eyepatch/hud/medical

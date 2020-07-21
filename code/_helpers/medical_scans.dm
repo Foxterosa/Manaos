@@ -286,7 +286,7 @@
 	*/
 
 	dat += "<tr><td colspan='2'><center><table class='block' border='1' width='95%'><tr><th colspan='3'>Estado del cuerpo</th></tr>"
-	dat += "<tr><th>Organ</th><th>Damage</th><th>Estado</th></tr>"
+	dat += "<tr><th>Organo</th><th>Dano</th><th>Estado</th></tr>"
 	subdat = list()
 
 	for(var/list/E in scan["external_organs"])
@@ -344,11 +344,11 @@
 			var/row = list()
 			row += "<tr><td>[I["name"]]</td>"
 			if(I["is_broken"])
-				row += "<td><span class='bad'>Severo</span></td>"
+				row += "<td><span class='bad'>severo</span></td>"
 			else if(I["is_bruised"])
-				row += "<td><span class='average'>Moderado</span></td>"
+				row += "<td><span class='average'>moderado</span></td>"
 			else if(I["is_damaged"])
-				row += "<td>Menor</td>"
+				row += "<td>menor</td>"
 			else
 				row += "<td>Ninguno</td>"
 			row += "<td>"
@@ -402,8 +402,8 @@
 
 /proc/get_severity(amount, var/tag = FALSE)
 	if(!amount)
-		return "none"
-	. = "minor"
+		return "ninguno"
+	. = "menor"
 	if(amount > 50)
 		if(tag)
 			. = "<span class='bad'>severo</span>"

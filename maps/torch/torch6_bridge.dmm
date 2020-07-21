@@ -1329,6 +1329,8 @@
 /area/crew_quarters/heads/office/xo)
 "cp" = (
 /obj/structure/table/woodentable/walnut,
+/obj/item/toy/torchmodel,
+/obj/random_multi/single_item/runtime,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "cq" = (
@@ -1927,7 +1929,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
 "dd" = (
-/obj/item/weapon/pen,
 /obj/item/weapon/stamp/xo,
 /obj/structure/table/woodentable_reinforced/walnut,
 /turf/simulated/floor/wood/walnut,
@@ -10186,6 +10187,7 @@
 	},
 /obj/item/toy/figure/cmo,
 /obj/item/weapon/pen/multi,
+/obj/item/toy/figure/cmos,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
 "qw" = (
@@ -10880,9 +10882,8 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/obj/item/toy/torchmodel,
 /obj/structure/table/woodentable_reinforced/walnut,
-/obj/random_multi/single_item/runtime,
+/obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
 "rD" = (
@@ -18141,7 +18142,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "QX" = (
-/obj/item/device/flashlight/lamp/green,
 /obj/machinery/keycard_auth/torch{
 	pixel_x = 0;
 	pixel_y = 24
@@ -18164,6 +18164,8 @@
 	pixel_x = -3;
 	pixel_y = 7
 	},
+/obj/item/toy/figure/hop,
+/obj/item/weapon/pen,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
 "Ra" = (
