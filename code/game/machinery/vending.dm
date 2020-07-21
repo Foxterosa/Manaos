@@ -1308,7 +1308,7 @@
 					/obj/item/clothing/mask/kasumimask,
 					/obj/item/clothing/under/kasumioutfit,
 					/obj/item/clothing/shoes/kasumi)
-	contraband = list(/obj/item/clothing/under/stripper/mankini, /obj/item/clothing/under/stripper/stripper_green, /obj/item/clothing/under/stripper/stripper_pink, /obj/item/clothing/mask/muzzle = 4, /obj/item/clothing/under/harness, /obj/item/weapon/melee/whip)
+	contraband = list(/obj/item/clothing/under/stripper/mankini = 2, /obj/item/clothing/mask/muzzle = 4)
 
 /obj/machinery/vending/hatvendor
 	name = "Vendedor de sombreros"
@@ -1533,8 +1533,10 @@
 					/obj/item/weapon/pen/crayon/rainbow = 2,
 					/obj/item/weapon/bikehorn = 2,
 					/obj/item/device/boombox = 2,
-					/obj/item/device/camera/tvcamera = 3,
+					/obj/item/device/camera/tvcamera = 2,
+					/obj/item/device/camera = 3,
 					/obj/item/device/camera_film = 6,
+					/obj/item/weapon/storage/photo_album = 2,
 					/obj/item/weapon/storage/wallet/leather = 2,
 					/obj/item/weapon/storage/wallet/poly = 2,
 					/obj/item/toy/plushie/kobold = 2,
