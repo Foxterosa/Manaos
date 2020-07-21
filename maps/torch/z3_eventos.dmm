@@ -2451,21 +2451,7 @@
 /turf/simulated/floor/carpet/red,
 /area/beach/sec)
 "hk" = (
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 1
-	},
 /obj/machinery/vending/security/accessory,
-/obj/effect/floor_decal/corner/red{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
 /turf/simulated/floor/carpet/red,
 /area/beach/sec)
 "hl" = (
@@ -3498,21 +3484,15 @@
 /turf/simulated/floor/carpet,
 /area/casinojack/principal)
 "jH" = (
-/obj/structure/casino/bj_table,
-/obj/structure/table/gamblingtable,
-/obj/item/weapon/deck/cards,
-/obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
+/obj/structure/bed/chair/comfy/brown{
+	dir = 4
 	},
 /turf/simulated/floor/carpet,
 /area/casinojack/principal)
 "jI" = (
-/obj/structure/casino/bj_table/bj_right,
-/obj/structure/table/gamblingtable,
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/carpet,
 /area/casinojack/principal)
@@ -3581,24 +3561,22 @@
 /turf/simulated/floor/tiled/white,
 /area/casinojack/Med)
 "jR" = (
-/obj/structure/table/woodentable_reinforced/walnut,
+/obj/structure/table/marble,
+/obj/item/weapon/reagent_containers/food/condiment/small/peppermill,
 /obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
 	pixel_x = 9;
 	pixel_y = 9
 	},
-/obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
-	},
-/turf/simulated/floor/carpet,
-/area/casinojack/principal)
+/obj/item/weapon/reagent_containers/food/condiment/ketchup,
+/obj/item/weapon/reagent_containers/food/condiment/mayo,
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/bar)
 "jS" = (
-/obj/structure/table/woodentable_reinforced/walnut,
-/obj/item/weapon/reagent_containers/food/condiment/small/peppermill,
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
 	dir = 1
 	},
+/obj/structure/table/woodentable/walnut,
 /turf/simulated/floor/carpet,
 /area/casinojack/principal)
 "jT" = (
@@ -4084,7 +4062,7 @@
 /turf/simulated/floor/carpet,
 /area/casinojack/principal)
 "kQ" = (
-/obj/structure/table/woodentable_reinforced/walnut,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/carpet,
 /area/casinojack/principal)
 "kR" = (
@@ -4329,17 +4307,12 @@
 /turf/simulated/floor/tiled/white,
 /area/casinojack/Med)
 "lo" = (
-/obj/structure/table/woodentable_reinforced/walnut,
-/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
-	pixel_x = 9;
-	pixel_y = 9
-	},
-/turf/simulated/floor/carpet,
+/obj/structure/flora/pottedplant/floorleaf,
+/turf/simulated/floor/wood/walnut,
 /area/casinojack/principal)
 "lp" = (
-/obj/structure/table/woodentable_reinforced/walnut,
-/obj/item/weapon/reagent_containers/food/condiment/small/peppermill,
-/turf/simulated/floor/carpet,
+/obj/structure/curtain/open/bed,
+/turf/simulated/floor/wood/walnut,
 /area/casinojack/principal)
 "lq" = (
 /obj/structure/table/glass,
@@ -4641,17 +4614,9 @@
 	},
 /area/beach)
 "mm" = (
-/obj/structure/table/woodentable,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 9;
-	icon_state = "spline_fancy"
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/item/weapon/storage/bag/uno,
-/turf/simulated/floor/carpet/orange,
-/area/casinojack/cuarto1)
+/obj/structure/synthesized_instrument/synthesizer/piano,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
 "mn" = (
 /obj/machinery/media/jukebox,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -5256,11 +5221,13 @@
 /turf/simulated/floor/tiled/freezer,
 /area/casinojack/cuarto3)
 "nP" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/storage/fancy/cigar,
-/obj/item/weapon/flame/lighter/zippo/random,
-/turf/simulated/floor/carpet/orange,
-/area/casinojack/cuarto4)
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/obj/structure/bed/chair,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
 "nQ" = (
 /obj/structure/bed/chair/comfy/brown{
 	dir = 8
@@ -5449,15 +5416,22 @@
 /turf/simulated/floor/tiled/freezer,
 /area/casinojack/principal)
 "or" = (
-/obj/structure/casino/oh_bandit,
-/obj/effect/floor_decal/spline/fancy/wood{
+/obj/structure/reagent_dispensers/watertank,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
+	},
+/obj/effect/floor_decal/corner/research{
 	dir = 9;
-	icon_state = "spline_fancy"
+	tag = "icon-corner_white (NORTHWEST)"
 	},
-/obj/structure/window/basic{
-	dir = 8
+/obj/effect/floor_decal/corner/research,
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
 	},
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/holofloor/tiled/dark,
 /area/casinojack/principal)
 "os" = (
 /obj/structure/casino/oh_bandit,
@@ -5468,15 +5442,8 @@
 /turf/simulated/floor/carpet,
 /area/casinojack/principal)
 "ot" = (
-/obj/structure/casino/oh_bandit,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 5;
-	icon_state = "spline_fancy"
-	},
-/obj/structure/window/basic{
-	icon_state = "window";
-	dir = 4
-	},
+/obj/structure/curtain/open/bed,
+/obj/structure/table/woodentable_reinforced/walnut,
 /turf/simulated/floor/carpet,
 /area/casinojack/principal)
 "ou" = (
@@ -5830,30 +5797,20 @@
 /turf/simulated/floor/tiled/freezer,
 /area/casinojack/principal)
 "pm" = (
-/obj/structure/casino/oh_bandit,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
-	},
-/obj/structure/window/basic{
-	dir = 8
-	},
-/turf/simulated/floor/carpet,
+/obj/structure/table/woodentable_reinforced/walnut,
+/turf/simulated/floor/wood/walnut,
 /area/casinojack/principal)
 "pn" = (
 /obj/structure/casino/oh_bandit,
 /turf/simulated/floor/carpet,
 /area/casinojack/principal)
 "po" = (
-/obj/structure/casino/oh_bandit,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4;
-	icon_state = "spline_fancy"
-	},
-/obj/structure/window/basic{
-	icon_state = "window";
-	dir = 4
-	},
-/turf/simulated/floor/carpet,
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/schoolgirl,
+/obj/item/clothing/under/schoolgirl,
+/obj/item/clothing/head/kitty,
+/obj/item/clothing/head/kitty,
+/turf/simulated/floor/wood/walnut,
 /area/casinojack/principal)
 "pp" = (
 /obj/machinery/door/airlock/glass/civilian{
@@ -5939,6 +5896,380 @@
 	dir = 8
 	},
 /area/beach)
+"pE" = (
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"pF" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/maiddress,
+/obj/item/clothing/under/maiddress,
+/obj/item/clothing/head/rabbitears,
+/obj/item/clothing/head/rabbitears,
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/principal)
+"pG" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/stripper/mankini,
+/obj/item/clothing/under/stripper/mankini,
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/principal)
+"pH" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/mask/gas/sexyclown,
+/obj/item/clothing/mask/gas/sexyclown,
+/obj/item/clothing/under/sexyclown,
+/obj/item/clothing/under/sexyclown,
+/obj/item/clothing/shoes/clown_shoes,
+/obj/item/clothing/shoes/clown_shoes,
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/principal)
+"pI" = (
+/obj/structure/closet/jcloset_torch,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
+	},
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"pJ" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/mask/gas/sexymime,
+/obj/item/clothing/mask/gas/sexymime,
+/obj/item/clothing/under/sexymime,
+/obj/item/clothing/under/sexymime,
+/obj/item/clothing/shoes/mime,
+/obj/item/clothing/shoes/mime,
+/obj/item/clothing/gloves/color/white,
+/obj/item/clothing/gloves/color/white,
+/obj/item/clothing/head/beret,
+/obj/item/clothing/head/beret,
+/obj/item/clothing/accessory/suspenders,
+/obj/item/clothing/accessory/suspenders,
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/principal)
+"pK" = (
+/obj/structure/curtain/open/bed,
+/turf/simulated/wall/prepainted,
+/area/casinojack/principal)
+"pL" = (
+/obj/structure/casino/oh_bandit,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 9;
+	icon_state = "spline_fancy"
+	},
+/obj/structure/window/basic{
+	dir = 8;
+	icon_state = "window"
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"pM" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/lava/pink,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"pN" = (
+/obj/structure/casino/oh_bandit,
+/obj/structure/window/basic{
+	icon_state = "window";
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 5;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"pO" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/lava/cyan,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"pP" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/lava/green,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"pQ" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/lava/orange,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"pR" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/lava/yellow,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"pS" = (
+/obj/structure/casino/oh_bandit,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 8
+	},
+/obj/structure/window/basic{
+	dir = 8;
+	icon_state = "window"
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"pT" = (
+/obj/structure/closet/l3closet/janitor,
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
+	},
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"pU" = (
+/obj/structure/casino/oh_bandit,
+/obj/structure/window/basic{
+	icon_state = "window";
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"pV" = (
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
+	},
+/obj/effect/floor_decal/corner/research{
+	dir = 6;
+	tag = "icon-corner_white (SOUTHEAST)"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"pW" = (
+/obj/machinery/door/blast/regular/open{
+	dir = 4;
+	id_tag = "bridge blast";
+	name = "Bridge Blast Doors"
+	},
+/obj/effect/wallframe_spawn/reinforced/polarized/no_grille{
+	id = "privacidad"
+	},
+/turf/unsimulated/floor{
+	icon_state = "plating";
+	name = "plating"
+	},
+/area/casinojack/principal)
+"pX" = (
+/obj/effect/floor_decal/corner/research{
+	dir = 9;
+	tag = "icon-corner_white (NORTHWEST)"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"pY" = (
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"pZ" = (
+/obj/effect/floor_decal/corner/research{
+	dir = 6;
+	tag = "icon-corner_white (SOUTHEAST)"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"qa" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/corner/research{
+	dir = 9;
+	tag = "icon-corner_white (NORTHWEST)"
+	},
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
+	},
+/obj/effect/floor_decal/corner/research{
+	tag = "icon-corner_white (NORTHWEST)";
+	icon_state = "corner_white";
+	dir = 4
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"qb" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
+	},
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	tag = "icon-corner_white (NORTHEAST)"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"qc" = (
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"qd" = (
+/obj/structure/janitorialcart,
+/obj/item/weapon/mop,
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"qe" = (
+/obj/structure/mopbucket,
+/obj/item/weapon/mop,
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
+	},
+/obj/effect/floor_decal/corner/research{
+	dir = 6;
+	tag = "icon-corner_white (SOUTHEAST)"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"qg" = (
+/obj/machinery/door/airlock/glass/civilian,
+/obj/effect/floor_decal/corner/research{
+	dir = 6;
+	tag = "icon-corner_white (SOUTHEAST)"
+	},
+/obj/effect/floor_decal/corner/research{
+	dir = 9;
+	tag = "icon-corner_white (NORTHWEST)"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow{
+	color = "#404040"
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/principal)
+"qm" = (
+/obj/structure/casino/bj_table,
+/obj/structure/table/gamblingtable,
+/obj/item/weapon/deck/cards,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qn" = (
+/obj/structure/casino/bj_table/bj_right,
+/obj/structure/table/gamblingtable,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qo" = (
+/obj/structure/table/woodentable,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 9;
+	icon_state = "spline_fancy"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/orange,
+/area/casinojack/cuarto1)
+"qp" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/storage/fancy/cigar,
+/obj/item/weapon/flame/lighter/zippo/random,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 9;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/carpet/orange,
+/area/casinojack/cuarto4)
+"qq" = (
+/obj/machinery/door/airlock/glass/civilian,
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/principal)
+"qr" = (
+/obj/structure/table/woodentable_reinforced/walnut,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qs" = (
+/obj/structure/bed/chair/comfy/brown,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qt" = (
+/obj/machinery/computer/arcade/orion_trail,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qu" = (
+/obj/machinery/computer/arcade/battle,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qv" = (
+/obj/structure/bed/chair/comfy/brown{
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qw" = (
+/obj/machinery/vending/cola{
+	icon_state = "Cola_Machine";
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qx" = (
+/obj/machinery/vending/snack{
+	icon_state = "snack";
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qy" = (
+/obj/machinery/vending/games{
+	icon_state = "games";
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qz" = (
+/obj/structure/bed/chair/comfy/brown{
+	dir = 1
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qA" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/instrument/guitar,
+/obj/item/device/synthesized_instrument/guitar/multi,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qB" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/synthesized_instrument/synthesizer,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"qC" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/synthesized_instrument/trumpet,
+/obj/item/device/synthesized_instrument/violin,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
 
 (1,1,1) = {"
 aa
@@ -32445,7 +32776,7 @@ ab
 ab
 ab
 ab
-gR
+ab
 gR
 gR
 gR
@@ -32836,11 +33167,11 @@ ko
 kJ
 ge
 ge
-ab
-ab
-ab
+gR
+pW
+gR
 mb
-mm
+qo
 mK
 nb
 nv
@@ -33038,10 +33369,10 @@ kp
 kp
 lc
 ge
-ab
-ab
-ab
-mc
+or
+pX
+qa
+mb
 mn
 mL
 nc
@@ -33240,10 +33571,10 @@ ho
 ho
 ld
 ge
-ab
-ab
-ab
-mc
+pE
+pY
+qb
+mb
 mo
 mM
 nd
@@ -33257,7 +33588,7 @@ lK
 gS
 gS
 gR
-gR
+ab
 ab
 ab
 ab
@@ -33442,10 +33773,10 @@ ho
 ho
 le
 ge
-ab
-ab
-ab
-mc
+pI
+pY
+qc
+mb
 mp
 mp
 mp
@@ -33458,7 +33789,7 @@ mb
 gS
 gS
 gS
-gR
+ie
 ab
 ab
 ab
@@ -33644,10 +33975,10 @@ kq
 kq
 lf
 ge
-ab
-ab
-ab
-mc
+pT
+pY
+qd
+mb
 mp
 mp
 mp
@@ -33846,9 +34177,9 @@ kr
 kK
 ge
 ge
-ab
-ab
-ab
+pV
+pZ
+qe
 mb
 mq
 mK
@@ -34049,7 +34380,7 @@ ge
 ge
 ge
 gR
-gR
+qg
 gR
 mb
 mr
@@ -34266,7 +34597,7 @@ mb
 gS
 gS
 gS
-gR
+ie
 ab
 ab
 ab
@@ -35074,7 +35405,7 @@ md
 gS
 gS
 gS
-gR
+ie
 ab
 ab
 ab
@@ -35882,7 +36213,7 @@ md
 gS
 gS
 gS
-gR
+ie
 ab
 ab
 ab
@@ -36690,7 +37021,7 @@ me
 gS
 gS
 gS
-gR
+ie
 ab
 ab
 ab
@@ -37498,7 +37829,7 @@ me
 gS
 gS
 gS
-gR
+ie
 ab
 ab
 ab
@@ -37692,7 +38023,7 @@ mD
 mW
 nq
 ny
-nP
+qp
 ok
 oG
 ny
@@ -38105,12 +38436,12 @@ lK
 gS
 gS
 gR
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+ie
+ie
+ie
+gR
+gR
 ab
 ab
 ab
@@ -38307,12 +38638,12 @@ gS
 gS
 gS
 gR
-ab
-ab
-ab
-ab
-ab
-ab
+qr
+qr
+qr
+qr
+qr
+gR
 ab
 ab
 ab
@@ -38509,12 +38840,12 @@ lJ
 gS
 gS
 gR
-ab
-ab
-ab
-ab
-ab
-ab
+lK
+qr
+qr
+qr
+lK
+gR
 ab
 ab
 ab
@@ -38711,12 +39042,12 @@ gS
 gS
 gS
 gR
-ab
-ab
-ab
-ab
-ab
-ab
+qs
+qr
+qr
+qr
+qz
+gR
 ab
 ab
 ab
@@ -38913,12 +39244,12 @@ lK
 gS
 lK
 gR
-ab
-ab
-ab
-ab
-ab
-ab
+gS
+qv
+qv
+qv
+gS
+gR
 ab
 ab
 ab
@@ -39092,11 +39423,11 @@ iT
 ji
 gQ
 gQ
-jR
+jS
 gS
 kB
-kQ
-lo
+lQ
+lQ
 jX
 gQ
 gQ
@@ -39115,12 +39446,12 @@ gR
 pp
 ic
 gR
-ab
-ab
-ab
-ab
-ab
-ab
+gS
+gS
+gS
+gS
+gS
+ie
 ab
 ab
 ab
@@ -39297,8 +39628,8 @@ gQ
 jS
 gS
 kB
-kQ
-lp
+lQ
+lQ
 jX
 gQ
 gQ
@@ -39317,12 +39648,12 @@ jh
 gQ
 jh
 gR
-ab
-ab
-ab
-ab
-ab
-ab
+qt
+gS
+gS
+gS
+qA
+ie
 ab
 ab
 ab
@@ -39519,12 +39850,12 @@ gQ
 gQ
 gQ
 gR
-ab
-ab
-ab
-ab
-ab
-ab
+qu
+gS
+gS
+gS
+qB
+ie
 ab
 ab
 ab
@@ -39720,13 +40051,13 @@ pl
 gQ
 gQ
 gQ
+gR
+gS
+gS
+gS
+gS
+qC
 ie
-ab
-ab
-ab
-ab
-ab
-ab
 ab
 ab
 ab
@@ -39922,13 +40253,13 @@ gR
 gQ
 gQ
 gQ
+qq
+gS
+gS
+gS
+gS
+gS
 ie
-ab
-ab
-ab
-ab
-ab
-ab
 ab
 ab
 ab
@@ -40102,11 +40433,11 @@ iU
 gQ
 gQ
 gQ
-jR
+jS
 gS
 kB
-kQ
-lo
+lQ
+lQ
 jX
 gQ
 gQ
@@ -40124,13 +40455,13 @@ gR
 gQ
 gQ
 gQ
-ie
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+gS
+gS
+gS
+gS
+gS
+gR
 ab
 ab
 ab
@@ -40300,15 +40631,15 @@ gJ
 gN
 hZ
 iy
-gN
+jR
 ji
 gQ
 gQ
 jS
 gS
 kB
-kQ
-lp
+lQ
+lQ
 jX
 gQ
 gQ
@@ -40326,13 +40657,13 @@ gR
 gQ
 gQ
 gQ
-ie
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+lK
+qw
+qx
+qy
+lK
+gR
 ab
 ab
 ab
@@ -40528,13 +40859,13 @@ gQ
 gQ
 gQ
 gQ
-ie
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+gR
+gR
+gR
+gR
+gR
+gR
 ab
 ab
 ab
@@ -40723,17 +41054,17 @@ gQ
 gQ
 gQ
 gQ
-lV
-gQ
-gQ
-lV
 gQ
 gQ
 gQ
-ie
-ab
-ab
-ab
+gQ
+gQ
+gQ
+gQ
+gR
+gR
+gR
+gR
 ab
 ab
 ab
@@ -40909,10 +41240,13 @@ ee
 gN
 ji
 gQ
-jG
-jW
 gQ
-jG
+gQ
+gQ
+gQ
+gQ
+lB
+kP
 jW
 gQ
 gQ
@@ -40920,20 +41254,17 @@ gQ
 gQ
 lB
 ki
-ki
-ki
-ki
-jW
-nU
-or
-oK
-pe
-pm
-oK
 jW
 gQ
-ie
-ab
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gR
+gR
 ab
 ab
 ab
@@ -41111,10 +41442,13 @@ ee
 gN
 ji
 gQ
-jH
-jX
 gQ
-jH
+gQ
+gQ
+gQ
+gQ
+nP
+qm
 jX
 gQ
 lB
@@ -41122,20 +41456,17 @@ jW
 gQ
 jU
 mg
-gS
-gS
-mg
-hE
-nU
-os
-oL
-pf
-pn
-oL
 hE
 gQ
-ie
-ab
+lV
+gQ
+gQ
+lV
+gQ
+gQ
+gQ
+gR
+gR
 ab
 ab
 ab
@@ -41313,10 +41644,13 @@ ee
 gN
 ji
 gQ
-jI
-jX
 gQ
-jI
+lB
+ki
+jW
+gQ
+nP
+qn
 jX
 gQ
 lC
@@ -41324,19 +41658,16 @@ lL
 gQ
 jU
 mh
-gS
-gS
-mh
 hE
 nU
-os
-oL
-pf
-pn
-oL
-hE
+pL
+oK
+pe
+pS
+oK
+jW
 gQ
-ie
+gR
 ab
 ab
 ab
@@ -41515,19 +41846,19 @@ ee
 gN
 ji
 gQ
-jJ
-jY
 gQ
-jJ
+jI
+mm
+hE
+gQ
+lD
+kT
 jY
 gQ
 lD
 jY
 gQ
 lD
-kj
-kj
-kj
 kj
 jY
 nU
@@ -41718,9 +42049,9 @@ iV
 ji
 gQ
 gQ
-gQ
-gQ
-gQ
+jI
+kR
+hE
 gQ
 gQ
 gQ
@@ -41919,19 +42250,19 @@ bG
 bG
 id
 gQ
-jG
-jW
 gQ
-jG
+lD
+kj
+jY
+gQ
+lB
+kP
 jW
 gQ
 lB
 jW
 gQ
 lB
-ki
-ki
-ki
 ki
 jW
 nU
@@ -41942,7 +42273,7 @@ pn
 oL
 hE
 gQ
-gR
+ie
 ab
 ab
 ab
@@ -42121,10 +42452,13 @@ hC
 gQ
 gQ
 gQ
-jH
-jX
 gQ
-jH
+gQ
+gQ
+gQ
+gQ
+nP
+qm
 jX
 gQ
 lC
@@ -42132,19 +42466,16 @@ lL
 gQ
 jU
 mg
-gS
-gS
-mg
 hE
 nU
-os
-oL
-pf
-pn
-oL
-hE
+pN
+oM
+pg
+pU
+oM
+jY
 gQ
-gR
+ie
 ab
 ab
 ab
@@ -42323,10 +42654,13 @@ gQ
 gQ
 gQ
 gQ
-jI
-jX
 gQ
-jI
+gQ
+gQ
+gQ
+gQ
+nP
+qn
 jX
 gQ
 lD
@@ -42334,20 +42668,17 @@ jY
 gQ
 jU
 mh
-gS
-gS
-mh
-hE
-nU
-os
-oL
-pf
-pn
-oL
 hE
 gQ
+lV
+gQ
+gQ
+lV
+gQ
+gQ
+gQ
 gR
-gR
+ab
 ab
 ab
 ab
@@ -42525,10 +42856,13 @@ gQ
 gQ
 gQ
 gQ
-jJ
-jY
 gQ
-jJ
+gQ
+gQ
+gQ
+gQ
+lD
+kT
 jY
 gQ
 gQ
@@ -42536,17 +42870,14 @@ gQ
 gQ
 lD
 kj
-kj
-kj
-kj
 jY
-nU
-ot
-oM
-pg
-po
-oM
-jY
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gR
 gR
@@ -42743,10 +43074,10 @@ gQ
 gQ
 gQ
 gQ
-lV
 gQ
 gQ
-lV
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -42935,19 +43266,19 @@ gR
 gR
 ic
 gR
+kQ
+kQ
+kQ
 gR
-ie
-ie
-ie
-ie
-ie
-ie
-ie
-ie
-ie
-ie
-ie
-ie
+gR
+gR
+gR
+gR
+gR
+gR
+gR
+gR
+gR
 gR
 gR
 gR
@@ -43132,26 +43463,26 @@ gQ
 jj
 gS
 gR
+lI
 gR
+gS
+gS
+lI
+gS
+gS
+gS
+lI
+gS
+gS
 gR
-gR
-gR
-gR
+lK
+gS
+kQ
+gS
+pM
+ie
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-gR
 gR
 gR
 gR
@@ -43334,24 +43665,24 @@ gQ
 gR
 gR
 gR
+gS
+kQ
+gS
+gS
+gS
+gS
+gS
+gS
+gS
+gS
+gS
+kQ
+gS
+gS
 gR
-gR
-gR
-gR
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gS
+qz
+ie
 ab
 ab
 ab
@@ -43536,24 +43867,24 @@ gQ
 jj
 gS
 gR
+gS
+gR
+gS
+gS
+gS
+gS
+gS
+gS
+gS
+gS
+gS
+gR
+gS
+gS
 gR
 gR
 gR
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gR
 ab
 ab
 ab
@@ -43738,24 +44069,24 @@ gQ
 gR
 gR
 gR
+gS
 gR
+gS
+gS
+gS
+jH
+jH
+jH
+gS
+gS
+gS
 gR
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gS
+gS
+kQ
+gS
+pO
+ie
 ab
 ab
 ab
@@ -43940,24 +44271,24 @@ gQ
 jj
 gS
 gR
+gS
 gR
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gS
+gS
+qs
+qr
+qr
+qr
+qz
+gS
+gS
+gR
+gS
+gS
+gR
+gS
+qz
+ie
 ab
 ab
 ab
@@ -44142,24 +44473,24 @@ gQ
 gR
 gR
 gR
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gS
+gR
+gS
+gS
+qs
+qr
+qr
+qr
+qz
+gS
+gS
+gR
+gS
+gS
+gR
+gR
+gR
+gR
 ab
 ab
 ab
@@ -44344,24 +44675,24 @@ gQ
 jj
 gS
 gR
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gS
+gR
+gS
+gS
+qs
+qr
+qr
+qr
+qz
+gS
+gS
+gR
+gS
+gS
+kQ
+gS
+pP
+ie
 ab
 ab
 ab
@@ -44546,24 +44877,24 @@ ie
 gR
 gR
 gR
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gS
+gR
+gS
+qs
+qr
+qr
+qr
+qr
+qr
+qz
+gS
+gR
+gS
+gS
+pK
+gS
+qz
+ie
 ab
 ab
 ab
@@ -44736,7 +45067,6 @@ bG
 bG
 bG
 bG
-bG
 ab
 ab
 ab
@@ -44748,24 +45078,25 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+gS
+gR
+lI
+qs
+qr
+qr
+qr
+qr
+qr
+qz
+lI
+gR
+gS
+gS
+gR
+gR
+gR
+gR
 ab
 ab
 ab
@@ -44949,25 +45280,25 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+kQ
+gR
+gR
+gR
+ot
+ot
+ot
+ot
+ot
+gR
+gR
+gR
+gS
+gS
+kQ
+gS
+pQ
+ie
 ab
 ab
 ab
@@ -45151,25 +45482,25 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+gQ
+gQ
+gQ
+gQ
+pm
+pm
+pm
+pm
+pm
+gQ
+gQ
+gR
+gS
+gS
+gR
+gS
+qz
+ie
 ab
 ab
 ab
@@ -45353,25 +45684,25 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+lo
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gR
+gS
+gS
+gR
+gR
+gR
+gR
 ab
 ab
 ab
@@ -45555,25 +45886,25 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+gR
+gR
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+lp
+gS
+gS
+kQ
+gS
+pR
+ie
 ab
 ab
 ab
@@ -45757,25 +46088,25 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+gS
+lp
+gQ
+gQ
+po
+pF
+pG
+pH
+pJ
+gQ
+lo
+gR
+gS
+lK
+gR
+gS
+qz
+ie
 ab
 ab
 ab
@@ -45959,25 +46290,25 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+gR
+gR
+gR
+gR
+gR
+ie
+ie
+ie
+ie
+ie
+gR
+gR
+gR
+ie
+ie
+gR
+ie
+ie
+gR
 ab
 ab
 ab
