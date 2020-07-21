@@ -1529,6 +1529,7 @@
 	icon_vend = "snix-vend"
 	icon_deny = "snix-deny"
 	products = list(/obj/item/weapon/storage/bag/uno = 3,
+					/obj/item/weapon/deck/cards = 3,
 					/obj/item/weapon/pen/crayon/mime = 2,
 					/obj/item/weapon/pen/crayon/rainbow = 2,
 					/obj/item/weapon/bikehorn = 2,
