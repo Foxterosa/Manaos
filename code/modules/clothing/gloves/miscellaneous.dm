@@ -8,8 +8,8 @@
 	desc = "Unos guantes de combates comodos."
 	name = "guantes de combate"
 	icon_state = "combat"
-	item_state = "swat_gl"
-	icon_state = "beret_centcom_officer"
+	item_state = "combat"
+	icon_state = "combat"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_SMALL,
