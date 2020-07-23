@@ -1559,14 +1559,6 @@
 					/obj/item/weapon/flame/lighter/zippo/random = 2,
 					/obj/item/toy/water_balloon = 5,
 					/obj/item/toy/snappop = 5,
-					/obj/item/toy/figure/cmo,
-					/obj/item/toy/figure/bartender,
-					/obj/item/toy/figure/hop,
-					/obj/item/toy/figure/miner,
-					/obj/item/toy/figure/wizard,
-					/obj/item/toy/figure/roboticist,
-					/obj/item/toy/figure/clown,
-					/obj/item/toy/figure/psychologist
 					)
 
 	contraband = list(/obj/item/weapon/reagent_containers/food/snacks/canned/caviar/true = 1)
