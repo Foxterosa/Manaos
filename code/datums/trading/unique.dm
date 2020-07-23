@@ -109,7 +109,7 @@
 								/obj/item/clothing/head/helmet/space/void/wizard = TRADER_THIS_TYPE,
 								/obj/item/clothing/head/wizard                   = TRADER_ALL,
 								/obj/item/clothing/suit/space/void/wizard        = TRADER_THIS_TYPE,
-								/obj/item/toy/figure/wizard                      = TRADER_THIS_TYPE,
+								/obj/item/toy/figure/sydney2                     = TRADER_THIS_TYPE,
 								/obj/item/weapon/staff                           = TRADER_ALL,
 								) //Probably see about getting some more wizard based shit
 
