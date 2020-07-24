@@ -10629,6 +10629,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
+"ud" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/lawyer_office)
 "ue" = (
 /obj/effect/floor_decal/corner/green/half,
 /obj/structure/cable/green{
@@ -12280,12 +12284,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/c3)
-"xm" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/heads/office/lawyer_office)
 "xn" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -12781,8 +12779,8 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/c3)
 "yn" = (
-/obj/structure/bed,
 /obj/item/weapon/bedsheet/brown,
+/obj/structure/bed/padded,
 /turf/simulated/floor/carpet/orange,
 /area/crew_quarters_boh/cabin_main/c1)
 "yo" = (
@@ -13053,6 +13051,17 @@
 /obj/random/coin,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
+"yW" = (
+/obj/machinery/disposal,
+/obj/item/device/radio/intercom{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/lawyer_office)
 "yX" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/cable/green{
@@ -14004,6 +14013,13 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
+"Bx" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/sleep/cryo)
 "By" = (
 /obj/structure/hygiene/shower{
 	dir = 8;
@@ -14015,6 +14031,9 @@
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
+"Bz" = (
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/lawyer_office)
 "BA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -14025,6 +14044,12 @@
 /obj/effect/floor_decal/spline/fancy/wood/corner,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/c2)
+"BC" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/heads/office/lawyer_office)
 "BD" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -14080,9 +14105,6 @@
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
-"BI" = (
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/lawyer_office)
 "BK" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -14271,17 +14293,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
-"CB" = (
-/obj/machinery/disposal,
-/obj/item/device/radio/intercom{
-	dir = 4;
-	pixel_x = -24
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/lawyer_office)
 "CE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15016,6 +15027,13 @@
 	},
 /turf/simulated/floor/carpet/orange,
 /area/crew_quarters_boh/cabin_main/c3)
+"Eo" = (
+/obj/item/weapon/storage/secure/safe{
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/heads/office/lawyer_office)
 "Ep" = (
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 2;
@@ -16514,13 +16532,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
-"Iv" = (
-/obj/item/weapon/storage/secure/safe{
-	pixel_x = -24;
-	pixel_y = 0
-	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/heads/office/lawyer_office)
 "Iw" = (
 /obj/effect/floor_decal/industrial/hatch/red,
 /obj/structure/ship_munition/disperser_charge/explosive,
@@ -16977,6 +16988,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
+"Jv" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/lawyer_office)
 "Jw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -17377,6 +17392,27 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
+"Kj" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/civilian{
+	name = "Lawyer Office"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/crew_quarters/heads/office/lawyer_office)
 "Kk" = (
 /obj/random/junk,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -18527,16 +18563,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
 "Nq" = (
-/obj/structure/bed/double{
-	icon_state = "doublebed";
-	dir = 4
-	},
-/obj/item/weapon/bedsheet/browndouble{
-	dir = 4
-	},
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/bed/double/padded,
+/obj/item/weapon/bedsheet/browndouble,
 /turf/simulated/floor/carpet/orange,
 /area/crew_quarters_boh/cabin_main/c2)
 "Ns" = (
@@ -19430,10 +19461,6 @@
 /obj/effect/shuttle_landmark/ninja/deck3,
 /turf/space,
 /area/space)
-"Qc" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/lawyer_office)
 "Qd" = (
 /obj/structure/reagent_dispensers/water_cooler{
 	icon_state = "water_cooler";
@@ -19701,12 +19728,10 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/bar/storage)
 "QO" = (
-/obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/sleep/cryo)
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/green,
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/heads/office/lawyer_office)
 "QQ" = (
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
@@ -19961,10 +19986,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/wall/r_wall/hull,
 /area/thruster/d3starboard)
-"RL" = (
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/lawyer_office)
 "RM" = (
 /obj/machinery/atmospherics/valve/digital{
 	dir = 4;
@@ -20613,26 +20634,15 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "TM" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/civilian{
-	name = "Lawyer Office"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/sleep/cryo)
 "TO" = (
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/machinery/door/firedoor,
@@ -20640,13 +20650,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/thirddeck/center)
-"TP" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/lawyer_office)
 "TQ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -22360,16 +22363,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
-"Yg" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/sleep/cryo)
 "Yh" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -22666,6 +22659,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
+"YZ" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/lawyer_office)
 "Zb" = (
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
@@ -37682,10 +37682,10 @@ Ou
 gy
 hn
 iY
-Iv
-TP
+Eo
+YZ
 qw
-CB
+yW
 qD
 rd
 gy
@@ -37884,12 +37884,12 @@ Bq
 gy
 ho
 jj
-jj
+QO
 mC
-RL
+Jv
 mF
-BI
-BI
+Bz
+Bz
 rq
 Bq
 BV
@@ -38088,9 +38088,9 @@ hr
 jW
 le
 nH
-BI
-xm
-jj
+Bz
+BC
+QO
 rg
 gy
 Bq
@@ -38290,7 +38290,7 @@ hu
 jY
 jY
 pa
-Qc
+ud
 nj
 jj
 rj
@@ -38693,7 +38693,7 @@ gz
 gz
 gy
 lx
-TM
+Kj
 lx
 gy
 gz
@@ -39298,8 +39298,8 @@ vT
 vT
 vT
 vT
-Yg
-QO
+TM
+Bx
 vT
 vT
 uO

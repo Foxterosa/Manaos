@@ -189,40 +189,15 @@
 	id_type = /obj/item/weapon/card/id/torch/crew/adjudicator
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
-//Bailiff
-/decl/hierarchy/outfit/job/torch/crew/command/bailiff
-	name = OUTFIT_JOB_NAME("Bailiff")
-	l_ear = /obj/item/device/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/syndicate/tacticool
+//Blueshield
+/decl/hierarchy/outfit/job/torch/crew/command/blueshield
+	name = OUTFIT_JOB_NAME("Blueshield")
+	l_ear = /obj/item/device/radio/headset/heads/torchexec
+	uniform = /obj/item/clothing/under/bs_uniform
 	shoes = /obj/item/clothing/shoes/dutyboots
-	suit = /obj/item/clothing/suit/storage/leather_jacket
-	id_type = /obj/item/weapon/card/id/torch/crew/bailiff
+	id_type = /obj/item/weapon/card/id/torch/crew/blueshield
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
-//Bailiff alts
-/decl/hierarchy/outfit/job/torch/crew/command/bailiff/pcrc
-	name = OUTFIT_JOB_NAME("Bailiff - PCRC")
-	uniform = /obj/item/clothing/under/pcrc
-	shoes = /obj/item/clothing/shoes/dutyboots
-	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/pcrc = 1, /obj/item/clothing/accessory/armor/helmcover/pcrc = 1)
-
-/decl/hierarchy/outfit/job/torch/crew/command/bailiff/pcrc/agent
-	name = OUTFIT_JOB_NAME("Bailiff - PCRC Agent")
-	uniform = /obj/item/clothing/under/pcrcsuit
-	shoes = /obj/item/clothing/shoes/laceup
-
-/decl/hierarchy/outfit/job/torch/crew/command/bailiff/saare
-	name = OUTFIT_JOB_NAME("Bailiff - SAARE")
-	uniform = /obj/item/clothing/under/saare
-	shoes = /obj/item/clothing/shoes/dutyboots
-	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/saare = 1, /obj/item/clothing/accessory/armor/helmcover/saare = 1)
-
-/decl/hierarchy/outfit/job/torch/crew/command/bailiff/agent
-	name = OUTFIT_JOB_NAME("Bailiff - Agent")
-	uniform = /obj/item/clothing/under/det
-	suit = /obj/item/clothing/suit/storage/toggle/agent_jacket
-	shoes = /obj/item/clothing/shoes/dress
-/***/
 
 //Lawyer
 /decl/hierarchy/outfit/job/torch/crew/service/lawyer
