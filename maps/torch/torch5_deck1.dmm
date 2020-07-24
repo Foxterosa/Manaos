@@ -14659,16 +14659,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/fore)
-"aET" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/courtroom)
 "aEU" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
@@ -21243,6 +21233,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
+"fDZ" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/courtroom)
 "fFg" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4
@@ -21458,9 +21458,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
-"fRU" = (
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/courtroom)
 "fSy" = (
 /obj/structure/lattice,
 /obj/structure/cable/green{
@@ -21702,6 +21699,9 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/lounge)
+"gdT" = (
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/courtroom)
 "gfb" = (
 /turf/simulated/floor/tiled/white,
 /area/medical/lounge)
@@ -21995,13 +21995,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/aft)
-"gyA" = (
-/obj/structure/bed/chair/comfy/blue{
-	icon_state = "comfychair_preview";
-	dir = 8
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/courtroom_private)
 "gyP" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -22398,9 +22391,6 @@
 /obj/structure/sign/warning/nosmoking_1{
 	pixel_y = 32
 	},
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "heb" = (
@@ -22421,16 +22411,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/center)
-"hfU" = (
-/obj/structure/table/woodentable_reinforced/walnut,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/courtroom)
 "hgb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -23268,13 +23248,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
-"hTK" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/obj/machinery/door/window/southleft,
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/courtroom)
 "hTT" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -24663,6 +24636,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/questioning)
+"jCe" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/courtroom)
 "jCM" = (
 /turf/simulated/wall/prepainted,
 /area/medical/morgue/autopsy)
@@ -26449,12 +26428,6 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
-"lAx" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/courtroom)
 "lAC" = (
 /obj/structure/table/standard,
 /obj/structure/closet/medical_wall/filled{
@@ -27833,6 +27806,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
+"ntS" = (
+/obj/structure/flora/pottedplant/floorleaf,
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/courtroom)
 "nub" = (
 /obj/structure/table/standard,
 /obj/machinery/power/apc{
@@ -27977,12 +27954,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bo)
-"nFu" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/courtroom)
 "nHf" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -29961,6 +29932,12 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
+"pUs" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/courtroom)
 "pUH" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -32235,6 +32212,16 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
+"soP" = (
+/obj/structure/table/woodentable_reinforced/walnut,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/courtroom)
 "spb" = (
 /obj/machinery/atmospherics/valve{
 	dir = 8
@@ -32540,6 +32527,23 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
+"sDZ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/light_switch{
+	pixel_y = 24
+	},
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters/courtroom_private)
 "sEm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -32860,6 +32864,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
+"sVd" = (
+/obj/structure/bed/chair/comfy/blue{
+	icon_state = "comfychair_preview";
+	dir = 8
+	},
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters/courtroom_private)
 "sWb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -33683,10 +33694,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
-"uph" = (
-/obj/structure/flora/pottedplant/floorleaf,
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/courtroom)
 "upB" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -34201,6 +34208,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/wing)
+"vqp" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/machinery/door/window/southleft,
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/courtroom)
 "vsn" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/corner/paleblue{
@@ -34307,15 +34321,6 @@
 	},
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d1starboard)
-"vBg" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/courtroom)
 "vBV" = (
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
@@ -35103,23 +35108,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
-"xWt" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/light_switch{
-	pixel_y = 24
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/courtroom_private)
 "xXp" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/oxygen/prechilled,
@@ -35176,6 +35164,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/firstdeck)
+"yfT" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/courtroom)
 "yiK" = (
 /obj/structure/closet/secure_closet/chemical,
 /obj/effect/floor_decal/corner/beige{
@@ -51661,7 +51658,7 @@ aos
 aos
 aos
 grW
-fRU
+gdT
 alV
 ahq
 rAj
@@ -51863,8 +51860,8 @@ lGI
 lGI
 lGI
 aow
-nFu
-vBg
+jCe
+yfT
 ahq
 ahq
 ahq
@@ -52065,9 +52062,9 @@ lGI
 hHz
 aoG
 oFw
-hTK
-vBg
-fRU
+vqp
+yfT
+gdT
 atV
 aoQ
 ahq
@@ -52269,8 +52266,8 @@ jDq
 oFw
 pCP
 aoL
-fRU
-fRU
+gdT
+gdT
 aoR
 ahq
 apa
@@ -52672,15 +52669,15 @@ wlj
 hos
 oFw
 iXC
-hfU
-fRU
-fRU
+soP
+gdT
+gdT
 aue
 ahq
-xWt
-gyA
+sDZ
+sVd
 asJ
-gyA
+sVd
 asJ
 atN
 aqG
@@ -52874,10 +52871,10 @@ wlj
 ijW
 oFw
 ojl
-vBg
-fRU
+yfT
+gdT
 aok
-uph
+ntS
 ahq
 apI
 aqG
@@ -53075,8 +53072,8 @@ lGI
 lGI
 lGI
 aow
-lAx
-vBg
+pUs
+yfT
 ahq
 ahq
 ahq
@@ -53272,12 +53269,12 @@ azq
 ahq
 alH
 lGI
-aET
-lAx
-lAx
-lAx
-lAx
-fRU
+fDZ
+pUs
+pUs
+pUs
+pUs
+gdT
 alV
 ahq
 aoM
@@ -53476,7 +53473,7 @@ alE
 aoU
 oDT
 aoB
-fRU
+gdT
 aud
 aok
 aoB
@@ -60127,7 +60124,7 @@ afc
 bpJ
 aep
 ajp
-fwb
+kQs
 scr
 scr
 asH
@@ -60329,7 +60326,7 @@ ajE
 cIb
 aep
 ajp
-kQs
+fwb
 gpI
 gpI
 gpI

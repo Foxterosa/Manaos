@@ -1273,7 +1273,6 @@
 					/obj/item/clothing/head/kitty = 2,
 					/obj/item/clothing/head/rabbitears = 2,
 					/obj/item/clothing/under/maiddress = 2,
-					/obj/item/clothing/under/maiddress2 = 2,
 					/obj/item/clothing/under/schoolgirl = 2,
 					/obj/item/clothing/head/mailman,
 					/obj/item/clothing/under/rank/mailman,
@@ -1504,7 +1503,6 @@
 	products = list(/obj/item/clothing/mask/snorkel = 3,
 					/obj/item/clothing/shoes/swimmingfins = 3,
 					/obj/item/weapon/beach_ball = 2,
-					/obj/item/weapon/inflatable_duck = 3,
 					/obj/item/clothing/under/swimsuit/black = 2,
 					/obj/item/clothing/under/swimsuit/blue = 2,
 					/obj/item/clothing/under/swimsuit/green = 2,
@@ -1559,7 +1557,7 @@
 					/obj/item/weapon/storage/fancy/cigar,
 					/obj/item/weapon/flame/lighter/zippo/random = 2,
 					/obj/item/toy/water_balloon = 5,
-					/obj/item/toy/snappop = 5,
+					/obj/item/toy/snappop = 5
 					)
 
 
