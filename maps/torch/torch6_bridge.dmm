@@ -247,7 +247,6 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/obj/structure/closet/secure_closet/blueshield,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/adjudicator)
 "aB" = (
@@ -2694,6 +2693,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/bed/chair/comfy/blue{
+	icon_state = "comfychair_preview";
+	dir = 4
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/co)
@@ -7754,7 +7757,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/carpet/blue2,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "mw" = (
 /obj/machinery/light/small{
@@ -14491,6 +14494,9 @@
 /obj/effect/shuttle_landmark/torch/deck5/guppy,
 /turf/space,
 /area/space)
+"ze" = (
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "zf" = (
 /obj/structure/bed/chair/comfy/blue{
 	icon_state = "comfychair_preview";
@@ -14575,6 +14581,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
+"zB" = (
+/obj/structure/closet/secure_closet/bs,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "zC" = (
 /obj/item/weapon/storage/box/PDAs{
 	pixel_x = 4;
@@ -16306,6 +16316,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
+"Hw" = (
+/obj/structure/curtain/black,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Hz" = (
 /obj/structure/cable/green,
 /obj/structure/cable/green{
@@ -18437,7 +18451,7 @@
 "Sa" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/weapon/tableflag,
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/carpet/blue2,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "Sb" = (
 /obj/machinery/door/airlock/hatch{
@@ -18559,6 +18573,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
+"Sq" = (
+/obj/effect/landmark/start{
+	name = "Bridge Officer"
+	},
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/blue,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "SA" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/machinery/door/blast/regular/open{
@@ -27736,9 +27758,9 @@ aa
 af
 Nu
 Sa
-ms
-ms
-mU
+ze
+ze
+Hw
 cE
 XO
 Nu
@@ -27937,9 +27959,9 @@ aa
 aa
 af
 Nu
-aL
+Sq
 mt
-mI
+zB
 Nu
 cE
 nS

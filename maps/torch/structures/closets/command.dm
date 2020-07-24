@@ -130,6 +130,31 @@
 		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
 	)
 
+/obj/structure/closet/secure_closet/bs
+	name = "armario del blueshield"
+	req_access = list(access_bs)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/command/bo
+
+/obj/structure/closet/secure_closet/bs/WillContain()
+	return list(
+		/obj/item/device/radio,
+		/obj/item/device/taperecorder,
+		/obj/item/device/flash,
+		/obj/item/device/megaphone,
+		/obj/item/weapon/folder/blue,
+		/obj/item/modular_computer/tablet/lease/preset/command,
+		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/clothing/accessory/storage/black_vest,
+		/obj/item/weapon/storage/belt/holster/security,
+		/obj/item/clothing/head/beret/centcom/bs_navy,
+		/obj/item/clothing/head/beret/centcom/bs_officer,
+		/obj/item/clothing/suit/armor/bs_coat,
+		/obj/item/clothing/suit/armor/bs_suit,
+		/obj/item/clothing/gloves/bs_combat,
+		/obj/item/weapon/storage/backpack/bs_mochila,
+		/obj/item/clothing/glasses/sunglasses/sechud,
+		/obj/item/weapon/gun/energy/bs_secure)
+
 /obj/structure/closet/secure_closet/psiadvisor
 	name = "psionic advisor's locker"
 	req_access = list(access_psiadvisor)
