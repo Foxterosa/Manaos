@@ -69,8 +69,3 @@
 	display_name = "billetera policromica"
 	path = /obj/item/weapon/storage/wallet/poly
 	cost = 2
-
-/datum/gear/storage/webbing_toy
-	display_name = "Sujeta juguetes"
-	path = /obj/item/clothing/accessory/storage/webbing
-	cost = 2

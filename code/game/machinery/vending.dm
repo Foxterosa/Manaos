@@ -1273,7 +1273,6 @@
 					/obj/item/clothing/head/kitty = 2,
 					/obj/item/clothing/head/rabbitears = 2,
 					/obj/item/clothing/under/maiddress = 2,
-					/obj/item/clothing/under/maiddress2 = 2,
 					/obj/item/clothing/under/schoolgirl = 2,
 					/obj/item/clothing/head/mailman,
 					/obj/item/clothing/under/rank/mailman,
@@ -1504,7 +1503,6 @@
 	products = list(/obj/item/clothing/mask/snorkel = 3,
 					/obj/item/clothing/shoes/swimmingfins = 3,
 					/obj/item/weapon/beach_ball = 2,
-					/obj/item/weapon/inflatable_duck = 3,
 					/obj/item/clothing/under/swimsuit/black = 2,
 					/obj/item/clothing/under/swimsuit/blue = 2,
 					/obj/item/clothing/under/swimsuit/green = 2,
@@ -1527,7 +1525,6 @@
 	vend_delay = 30
 	base_type = /obj/machinery/vending/snix
 	product_slogans = "Snix!"
-
 	icon_state = "snix"
 	icon_vend = "snix-vend"
 	icon_deny = "snix-deny"
@@ -1560,10 +1557,52 @@
 					/obj/item/weapon/storage/fancy/cigar,
 					/obj/item/weapon/flame/lighter/zippo/random = 2,
 					/obj/item/toy/water_balloon = 5,
-					/obj/item/toy/snappop = 5,
+					/obj/item/toy/snappop = 5
 					)
 
-	contraband = list(/obj/item/weapon/reagent_containers/food/snacks/canned/caviar/true = 1)
+
+/obj/machinery/vending/figurevendor
+	name = "Vendedor de figuras de accion \"Manaos\"."
+	desc = "Una maquina que vende figuras de accion de edicion limitada."
+	vend_delay = 30
+	base_type = /obj/machinery/vending/figurevendor
+	product_slogans = "Adorable!"
+	icon_state = "MagiVend"
+	icon_deny = "MagiVend-deny"
+	icon_vend = "MagiVend-vend"
+	products = list(/obj/item/toy/figure/aleph,
+				/obj/item/toy/figure/alicia,
+					/obj/item/toy/figure/alysson,
+					/obj/item/toy/figure/ana,
+					/obj/item/toy/figure/ariel,
+					/obj/item/toy/figure/arkin,
+					/obj/item/toy/figure/bruno,
+					/obj/item/toy/figure/camilo,
+					/obj/item/toy/figure/connor,
+					/obj/item/toy/figure/dana,
+					/obj/item/toy/figure/danika,
+					/obj/item/toy/figure/darkness,
+					/obj/item/toy/figure/eerika,
+					/obj/item/toy/figure/hal,
+					/obj/item/toy/figure/honkito,
+					/obj/item/toy/figure/jr,
+					/obj/item/toy/figure/kans,
+					/obj/item/toy/figure/louie,
+					/obj/item/toy/figure/manuel,
+					/obj/item/toy/figure/priscilla,
+					/obj/item/toy/figure/sam,
+					/obj/item/toy/figure/slimy,
+					/obj/item/toy/figure/smug,
+					/obj/item/toy/figure/suki,
+					/obj/item/toy/figure/sydney1,
+					/obj/item/toy/figure/sydney2,
+					/obj/item/toy/figure/uzume,
+					/obj/item/toy/figure/vaum,
+					/obj/item/toy/figure/wh,
+					/obj/item/toy/figure/zsle)
+
+
+
 
 /obj/machinery/vending/snix/on_update_icon()
 	..()

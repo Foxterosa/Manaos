@@ -230,10 +230,10 @@
 	job_access_type = /datum/job/psiadvisor
 	detail_color = COLOR_COMMAND_BLUE
 
-/obj/item/weapon/card/id/torch/crew/blueshield
+/obj/item/weapon/card/id/torch/crew/bailiff
 	color = COLOR_BOTTLE_GREEN
 	detail_color = COLOR_COMMAND_BLUE
-	job_access_type = /datum/job/blueshield
+	job_access_type = /datum/job/bailiff
 
 /obj/item/weapon/card/id/torch/contractor/service/lawyer
 	job_access_type = /datum/job/lawyer
