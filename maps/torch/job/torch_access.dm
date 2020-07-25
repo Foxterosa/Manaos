@@ -213,3 +213,9 @@
 	id = access_petrov_maint
 	desc = "NTRL Polyp Maintenance"
 	region = ACCESS_REGION_NT
+
+/var/const/access_bs = "ACCESS_BS" //209
+/datum/access/blueshield
+	id = access_bs
+	desc = "Blueshield"
+	region = ACCESS_REGION_COMMAND
