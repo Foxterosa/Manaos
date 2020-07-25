@@ -12286,7 +12286,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/c3)
+/area/crew_quarters_boh/cabin_main/cambiador)
 "xm" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -13055,6 +13055,11 @@
 /obj/random/coin,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
+"yV" = (
+/obj/structure/catwalk,
+/obj/random/trash,
+/turf/simulated/floor/plating,
+/area/thruster/d3port)
 "yX" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/cable/green{
@@ -13995,6 +14000,14 @@
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
+"Bz" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	id_tag = null;
+	name = "Cabin Three"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "BA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -14254,6 +14267,10 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
+"CA" = (
+/obj/structure/closet/secure_closet/personal/empty,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "CB" = (
 /obj/machinery/disposal,
 /obj/item/device/radio/intercom{
@@ -14959,8 +14976,12 @@
 	dir = 2;
 	pixel_y = 24
 	},
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters_boh/cabin_main/c3)
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "Ep" = (
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 2;
@@ -44559,6 +44580,7 @@ Ma
 DA
 GO
 tY
+CA
 sY
 ny
 AH
@@ -45165,6 +45187,7 @@ Hn
 xl
 tY
 zc
+Bz
 UZ
 Hf
 Hf
@@ -46781,6 +46804,7 @@ xw
 tX
 PO
 Zm
+yV
 pI
 pI
 aI
