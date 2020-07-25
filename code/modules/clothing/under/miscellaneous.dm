@@ -66,6 +66,14 @@
 	item_state = "gy_suit"
 	worn_state = "vice"
 
+/obj/item/clothing/under/maiddress2
+	name = "traje de mucama"
+	desc = "perfecto para darle a tu sirvienta."
+	icon_state = "meido_s"
+	item_state = "meido_s"
+	worn_state = "meido_s"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
 /obj/item/clothing/under/maiddress
 	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
 	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
@@ -133,6 +141,17 @@
 /obj/item/clothing/under/ert
 	name = "ERT tactical uniform"
 	desc = "A short-sleeved black uniform, paired with grey digital-camo cargo pants. It looks very tactical."
+	icon_state = "ert_uniform"
+	item_state = "bl_suit"
+	worn_state = "ert_uniform"
+	armor = list(
+		melee = ARMOR_MELEE_SMALL
+		)
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/under/bs_uniform
+	name = "uniforme tactico Blueshield"
+	desc = "Un uniforme tactico perteneciente a un Blueshield."
 	icon_state = "ert_uniform"
 	item_state = "bl_suit"
 	worn_state = "ert_uniform"

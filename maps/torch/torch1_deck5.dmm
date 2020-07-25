@@ -1964,9 +1964,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "ds" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/garden)
 "dt" = (
@@ -2141,6 +2138,7 @@
 	pixel_y = 0;
 	req_access = list("ACCESS_TORCH_GUP")
 	},
+/obj/item/toy/figure/miner,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "dF" = (
@@ -13426,9 +13424,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fifthdeck/aft)
-"xo" = (
-/turf/space,
-/area/security/infantry/armory)
 "xp" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
 	dir = 4
@@ -14767,10 +14762,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/shuttle/petrov/maint)
-"Co" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/airless,
-/area/security/infantry/armory)
 "Cp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	icon_state = "intact";
@@ -15523,9 +15514,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
-"Fi" = (
-/turf/simulated/wall/r_wall/hull,
-/area/space)
 "Fk" = (
 /turf/simulated/wall/prepainted,
 /area/hallway/primary/fifthdeck/aft)
@@ -31760,8 +31748,8 @@ aa
 aa
 aa
 aa
-xo
-Co
+aa
+BW
 If
 OE
 OE
@@ -31961,7 +31949,7 @@ aa
 aa
 aa
 aa
-xo
+aa
 If
 If
 If
@@ -31973,7 +31961,7 @@ rW
 sU
 uW
 OE
-Fi
+OE
 aa
 aa
 aa
@@ -32162,8 +32150,8 @@ aa
 aa
 aa
 aa
-xo
-xo
+aa
+aa
 If
 If
 cU
@@ -32364,8 +32352,8 @@ aa
 aa
 aa
 aa
-xo
-xo
+aa
+aa
 If
 aM
 dn
@@ -32566,7 +32554,7 @@ aa
 aa
 aa
 aa
-xo
+aa
 If
 If
 bJ
@@ -32768,7 +32756,7 @@ aa
 aa
 aa
 aa
-xo
+aa
 If
 If
 cF
@@ -32970,7 +32958,7 @@ aa
 aa
 aa
 aa
-xo
+aa
 If
 If
 cT
