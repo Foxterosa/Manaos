@@ -2751,9 +2751,6 @@
 	pixel_y = 7
 	},
 /obj/item/weapon/pen,
-/obj/item/toy/figure/secofficer{
-	desc = "A 'Space Life' brand Security Officer action figure. This one seems rather old. A small heart is sewn into the armor vest."
-	},
 /obj/item/sticky_pad/random,
 /obj/effect/floor_decal/corner/red{
 	dir = 6
@@ -10188,9 +10185,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
-/obj/item/toy/figure/cmo,
 /obj/item/weapon/pen/multi,
-/obj/item/toy/figure/cmos,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
 "qw" = (
@@ -14499,9 +14494,6 @@
 /obj/effect/shuttle_landmark/torch/deck5/guppy,
 /turf/space,
 /area/space)
-"ze" = (
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "zf" = (
 /obj/structure/bed/chair/comfy/blue{
 	icon_state = "comfychair_preview";
@@ -14538,6 +14530,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
+"zm" = (
+/obj/effect/landmark/start{
+	name = "Bridge Officer"
+	},
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/blue,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "zo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -14586,10 +14586,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
-"zB" = (
-/obj/structure/closet/secure_closet/bs,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "zC" = (
 /obj/item/weapon/storage/box/PDAs{
 	pixel_x = 4;
@@ -14906,6 +14902,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"Ar" = (
+/obj/structure/curtain/black,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Aw" = (
 /obj/structure/sign/warning/high_voltage{
 	icon_state = "shock";
@@ -15215,7 +15215,6 @@
 	dir = 10;
 	tag = "icon-corner_white (SOUTHWEST)"
 	},
-/obj/item/toy/figure/scientist,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
 "BW" = (
@@ -16113,6 +16112,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
+"GP" = (
+/obj/structure/closet/secure_closet/bs,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "GV" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
 	icon_state = "console";
@@ -16322,10 +16325,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
-"Hw" = (
-/obj/structure/curtain/black,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "Hz" = (
 /obj/structure/cable/green,
 /obj/structure/cable/green{
@@ -16446,7 +16445,6 @@
 /obj/effect/floor_decal/corner/yellow{
 	dir = 5
 	},
-/obj/item/toy/figure/ce,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/ce)
 "Ib" = (
@@ -18178,7 +18176,6 @@
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/toy/figure/hop,
 /obj/item/weapon/pen,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
@@ -18581,14 +18578,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
-"Sq" = (
-/obj/effect/landmark/start{
-	name = "Bridge Officer"
-	},
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/blue,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "SA" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/machinery/door/blast/regular/open{
@@ -18830,6 +18819,9 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
+"Tt" = (
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Tz" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -27766,9 +27758,9 @@ aa
 af
 Nu
 Sa
-ze
-ze
-Hw
+Tt
+Tt
+Ar
 cE
 XO
 Nu
@@ -27967,9 +27959,9 @@ aa
 aa
 af
 Nu
-Sq
+zm
 mt
-zB
+GP
 Nu
 cE
 nS
