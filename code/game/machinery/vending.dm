@@ -1100,6 +1100,7 @@
 	/obj/item/weapon/storage/lunchbox/nymph = 3,
 	/obj/item/weapon/storage/lunchbox/syndicate = 3,
 	/obj/item/weapon/storage/lunchbox/dais = 3,
+	/obj/item/weapon/storage/lunchbox/medbay = 3,
 	/obj/item/weapon/material/knife/kitchen/cleaver = 2,
 	/obj/item/weapon/reagent_containers/cooking_container/oven = 7, // two spare
 	/obj/item/weapon/reagent_containers/cooking_container/fryer = 4, // two spare
@@ -1562,7 +1563,7 @@
 
 
 /obj/machinery/vending/figurevendor
-	name = "Vendedor de figuras de accion \"Manaos\"."
+	name = "Vendedor de figuras de accion \"Manaos\""
 	desc = "Una maquina que vende figuras de accion de edicion limitada."
 	vend_delay = 30
 	base_type = /obj/machinery/vending/figurevendor
