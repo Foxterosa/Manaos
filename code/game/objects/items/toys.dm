@@ -606,7 +606,7 @@
 
 /obj/item/toy/figure/arkin
 	name = "figura de accion: Arkin"
-	desc = "Una figura de accion de Arkin marca \"Manaos\"."
+	desc = "Una figura de accion de Arkin marca \"Manaos\". Huele a nicotina."
 	icon_state = "arkin"
 
 /obj/item/toy/figure/smug
@@ -691,7 +691,7 @@
 
 /obj/item/toy/figure/connor
 	name = "figura de accion: Connor"
-	desc = "Una figura de accion de Connor marca \"Manaos\"."
+	desc = "Una figura de accion de Connor marca \"Manaos\".  Tiene \"wetskrell.nt\" escrito y tachado."
 	icon_state = "connor"
 
 /obj/item/toy/figure/camilo
@@ -753,6 +753,21 @@
 	name = "figura de accion: Sam"
 	desc = "Una figura de accion de Sam marca \"Manaos\"."
 	icon_state = "sam"
+
+/obj/item/toy/figure/duck
+	name = "figura de accion: Duck"
+	desc = "Una figura de accion de Duck marca \"Manaos\". *sighs..."
+	icon_state = "duck"
+
+/obj/item/toy/figure/area
+	name = "figura de accion: Area"
+	desc = "Una figura de accion de Area marca \"Manaos\". Huele a sangre."
+	icon_state = "area"
+
+/obj/item/toy/figure/vlad
+	name = "figura de accion: Vlad"
+	desc = "Una figura de accion de Vlad marca \"Manaos\". C20-R viene por separado"
+	icon_state = "vlad"
 
 
 

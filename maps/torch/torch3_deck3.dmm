@@ -12122,14 +12122,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
-"wX" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock{
-	id_tag = null;
-	name = "Cabin Three"
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "wY" = (
 /obj/machinery/camera/network/third_deck{
 	c_tag = "Cryogenic Storage - Fore Starboard";
@@ -12714,6 +12706,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/cambiador)
@@ -13786,11 +13782,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/aftport)
-"Be" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/device/flashlight/lamp/green,
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/heads/office/lawyer_office)
 "Bf" = (
 /obj/structure/closet/secure_closet/bar_torch,
 /obj/item/clothing/accessory/badge/firearm/bar,
@@ -14879,11 +14870,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/cambiador)
-"Eo" = (
-/obj/structure/catwalk,
-/obj/random/trash,
-/turf/simulated/floor/plating,
-/area/thruster/d3port)
 "Ep" = (
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 2;
@@ -15395,6 +15381,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
+"FI" = (
+/obj/structure/closet/secure_closet/personal/empty,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "FK" = (
 /obj/effect/floor_decal/corner/blue,
 /obj/effect/floor_decal/corner/blue{
@@ -16431,6 +16421,12 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/command/disperser)
+"Iz" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "IA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
@@ -19788,6 +19784,14 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
+"Rx" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	id_tag = null;
+	name = "Cabin Three"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "Rz" = (
 /obj/machinery/icecream_vat,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -20248,6 +20252,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
+"SZ" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "Tb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -20589,6 +20597,11 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/carpet/orange,
 /area/crew_quarters_boh/cabin_main/cambiador)
+"TW" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/green,
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/heads/office/lawyer_office)
 "TX" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate/freezer,
@@ -21114,12 +21127,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
-"Vq" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "Vr" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -21981,10 +21988,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
-"Xm" = (
-/obj/structure/closet/secure_closet/personal/empty,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "Xn" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 5
@@ -22315,6 +22318,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
+"Yl" = (
+/obj/structure/catwalk,
+/obj/random/trash,
+/turf/simulated/floor/plating,
+/area/thruster/d3port)
 "Ym" = (
 /turf/simulated/floor/carpet/blue2,
 /area/command/captainmess)
@@ -37793,7 +37801,7 @@ Bq
 gy
 ho
 jj
-Be
+TW
 mC
 RL
 mF
@@ -37999,7 +38007,7 @@ le
 nH
 BI
 xm
-Be
+TW
 rg
 gy
 Bq
@@ -44466,7 +44474,7 @@ Ma
 DA
 GO
 tY
-Xm
+FI
 sY
 ny
 AH
@@ -44668,7 +44676,7 @@ YM
 XT
 GO
 tY
-Xm
+FI
 sY
 VP
 fu
@@ -45071,9 +45079,9 @@ sY
 Rj
 Hn
 xl
-Vq
+Iz
 zc
-wX
+Rx
 UZ
 Hf
 Hf
@@ -45472,7 +45480,7 @@ wb
 WO
 VH
 Wf
-tY
+SZ
 yp
 tY
 wo
@@ -46690,7 +46698,7 @@ xw
 Yt
 PO
 sY
-Eo
+Yl
 pI
 pI
 aI

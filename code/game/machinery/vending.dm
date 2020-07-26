@@ -1574,6 +1574,7 @@
 					/obj/item/toy/figure/alicia,
 					/obj/item/toy/figure/alysson,
 					/obj/item/toy/figure/ana,
+					/obj/item/toy/figure/area,
 					/obj/item/toy/figure/ariel,
 					/obj/item/toy/figure/arkin,
 					/obj/item/toy/figure/bruno,
@@ -1581,6 +1582,7 @@
 					/obj/item/toy/figure/connor,
 					/obj/item/toy/figure/dana,
 					/obj/item/toy/figure/darkness,
+					/obj/item/toy/figure/duck,
 					/obj/item/toy/figure/hal,
 					/obj/item/toy/figure/honkito,
 					/obj/item/toy/figure/jr,
@@ -1598,6 +1600,9 @@
 					/obj/item/toy/figure/vaum,
 					/obj/item/toy/figure/wh,
 					/obj/item/toy/figure/zsle)
+
+	contraband = list(/obj/item/toy/figure/vlad)
+
 
 
 

@@ -2898,16 +2898,18 @@
 	dir = 8;
 	pixel_x = 21
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
 	},
-/obj/structure/table/standard,
+/obj/structure/closet/secure_closet/medical_torch,
+/obj/item/modular_computer/tablet,
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = "";
+	desc = "F8F8F8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
 "aeD" = (
@@ -12590,6 +12592,13 @@
 	dir = 6
 	},
 /obj/machinery/suit_storage_unit/medical/alt,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = "";
+	desc = "F8F8F8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
 "auh" = (
@@ -18230,9 +18239,10 @@
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d1starboard)
 "bdW" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
 "bhb" = (
@@ -20012,6 +20022,11 @@
 /obj/effect/floor_decal/corner/paleblue{
 	icon_state = "corner_white";
 	dir = 1
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "garaje";
+	name = "Control del Garaje";
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
@@ -22498,7 +22513,6 @@
 /obj/item/roller{
 	pixel_y = 8
 	},
-/obj/item/roller,
 /obj/structure/table/rack{
 	dir = 8
 	},
@@ -24911,16 +24925,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
-"jVW" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
-	},
-/obj/structure/bed/chair/office/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/medical/reslab)
 "jWb" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/corner/research{
@@ -26976,9 +26980,6 @@
 	pixel_x = 0;
 	pixel_y = 22
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
@@ -26987,10 +26988,7 @@
 	dir = 8
 	},
 /obj/structure/table/standard,
-/obj/machinery/button/blast_door{
-	id_tag = "garaje";
-	name = "Control del Garaje"
-	},
+/obj/machinery/cell_charger,
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
 "mtB" = (
@@ -28657,9 +28655,6 @@
 /area/medical/infirmreception)
 "ovZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
@@ -28668,6 +28663,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
 "owb" = (
@@ -28913,6 +28909,14 @@
 	},
 /obj/machinery/light,
 /obj/machinery/suit_cycler,
+/obj/effect/floor_decal/corner/paleblue{
+	icon_state = "corner_white";
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/outline/grey{
+	color = "";
+	desc = "F8F8F8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
 "oMb" = (
@@ -29854,12 +29858,14 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
 	},
-/obj/effect/floor_decal/industrial/outline/grey{
-	color = "";
-	desc = "F8F8F8"
+/obj/structure/table/rack{
+	dir = 8
 	},
-/obj/vehicle/train/med/trolley{
-	dir = 2
+/obj/item/roller{
+	pixel_y = 16
+	},
+/obj/item/roller{
+	pixel_y = 16
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
@@ -30338,6 +30344,10 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "qsE" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	level = 2
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
 "qtb" = (
@@ -34446,6 +34456,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/wing)
+"vNT" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/medical/reslab)
 "vTH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensicswindow"
@@ -58915,7 +58935,7 @@ uvu
 adt
 izW
 aak
-jVW
+vNT
 dkt
 izW
 cIb
