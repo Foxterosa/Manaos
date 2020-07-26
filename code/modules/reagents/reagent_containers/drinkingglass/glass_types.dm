@@ -276,4 +276,5 @@
 	name = "\improper Tasa con corazon"
 	desc = "Una tasa de cafe blanca perteneciente a Medbay. Tiene un corazon en ella, ow..."
 	icon_state = "coffeecup_medheart"
+	item_state = "coffee_med"
 	base_name = "\improper Med cup heart"
