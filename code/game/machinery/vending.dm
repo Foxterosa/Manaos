@@ -1586,6 +1586,7 @@
 					/obj/item/toy/figure/dana,
 					/obj/item/toy/figure/darkness,
 					/obj/item/toy/figure/duck,
+					/obj/item/toy/figure/franco,
 					/obj/item/toy/figure/hal,
 					/obj/item/toy/figure/honkito,
 					/obj/item/toy/figure/jr,

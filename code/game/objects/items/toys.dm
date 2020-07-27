@@ -819,6 +819,11 @@
 	desc = "Una figura de accion de Vlad marca \"Manaos\". C20-R viene por separado"
 	icon_state = "vlad"
 
+/obj/item/toy/figure/franco
+	name = "figura de accion: Franco"
+	desc = "Una figura de accion de Franco marca \"Manaos\"."
+	icon_state = "franco"
+
 
 
 /obj/item/toy/therapy_red

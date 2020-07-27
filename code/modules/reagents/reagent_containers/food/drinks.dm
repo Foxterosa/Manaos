@@ -215,6 +215,9 @@
 	possible_transfer_amounts = null
 	volume = 15
 	center_of_mass = "x=16;y=12"
+/obj/item/weapon/reagent_containers/food/drinks/mate/feed_sound(var/mob/user)
+	playsound(user.loc, 'sound/items/mate.ogg', rand(10, 50), 1)
+
 
 /obj/item/weapon/reagent_containers/food/drinks/mate_med
 	name = "porongo"
@@ -225,6 +228,9 @@
 	possible_transfer_amounts = null
 	volume = 15
 	center_of_mass = "x=16;y=12"
+/obj/item/weapon/reagent_containers/food/drinks/mate_med/feed_sound(var/mob/user)
+	playsound(user.loc, 'sound/items/mate.ogg', rand(10, 50), 1)
+
 
 
 //////////////////////////pitchers, pots, flasks and cups //
