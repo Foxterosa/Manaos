@@ -125,8 +125,44 @@
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat
 
 /datum/gear/suit/wintercoat_dais
-	display_name = "abrigo de invierno, DAIS"
+	display_name = "Abrigo de invierno, DAIS"
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/dais
+
+/datum/gear/suit/wintercoat_capitan
+	display_name = "Abrigo de invierno, capitan"
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/captain
+
+/datum/gear/suit/wintercoat_cargo
+	display_name = "Abrigo de invierno, cargo"
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/cargo
+
+/datum/gear/suit/wintercoat_ingenieria
+	display_name = "Abrigo de invierno, ingenieria"
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/engineering
+
+/datum/gear/suit/wintercoat_atmos
+	display_name = "Abrigo de invierno, atmosfericos"
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/engineering/atmos
+
+/datum/gear/suit/wintercoat_botanica
+	display_name = "Abrigo de invierno, botanica"
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/hydro
+
+/datum/gear/suit/wintercoat_medicina
+	display_name = "Abrigo de invierno, medicina"
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/medical
+
+/datum/gear/suit/wintercoat_mineria
+	display_name = "Abrigo de invierno, mineria"
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/miner
+
+/datum/gear/suit/wintercoat_ciencias
+	display_name = "Abrigo de invierno, ciencias"
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/science
+
+/datum/gear/suit/wintercoat_seguridad
+	display_name = "Abrigo de invierno, seguridad"
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/security
 
 /datum/gear/suit/track
 	display_name = "chaquetas deportivas"
