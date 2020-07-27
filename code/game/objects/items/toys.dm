@@ -445,8 +445,13 @@
 	w_class = ITEM_SIZE_TINY
 
 /obj/item/toy/figure/cmo
-	name = "Chief Medical Officer action figure"
-	desc = "A \"Space Life\" brand Chief Medical Officer action figure."
+	name = "figura de accion: Oficial Medico"
+	desc = "Una figura de accion de oficial medico marca \"Space Life\". Chale..."
+	icon_state = "cmo1"
+
+/obj/item/toy/figure/cmos
+	name = "figura de accion: Oficial Medico"
+	desc = "Una figura de accion de oficial medico marca \"Space Life\"."
 	icon_state = "cmo"
 
 /obj/item/toy/figure/assistant
@@ -460,8 +465,8 @@
 	icon_state = "atmos"
 
 /obj/item/toy/figure/bartender
-	name = "Bartender action figure"
-	desc = "A \"Space Life\" brand Bartender action figure."
+	name = "figura de accion: Bartender"
+	desc = "Una figura de accion de bartender marca \"Space Life\". Ahora con cabello 100% natural."
 	icon_state = "bartender"
 
 /obj/item/toy/figure/borg
@@ -535,8 +540,8 @@
 	icon_state = "geneticist"
 
 /obj/item/toy/figure/hop
-	name = "Head of Personel action figure"
-	desc = "A \"Space Life\" brand Head of Personel action figure."
+	name = "figura de accion: Jefe de Personal"
+	desc = "Una figura de accion del jefe de personal marca \"Space Life\". Ahora con cabello 100% natural."
 	icon_state = "hop"
 
 /obj/item/toy/figure/hos
@@ -575,8 +580,8 @@
 	icon_state = "mime"
 
 /obj/item/toy/figure/miner
-	name = "Shaft Miner action figure"
-	desc = "A \"Space Life\" brand Shaft Miner action figure."
+	name = "Figura de accion: Minero"
+	desc = "Una figura de accion de minero marca \"Space Life\". Hm..."
 	icon_state = "miner"
 
 /obj/item/toy/figure/ninja
@@ -585,8 +590,8 @@
 	icon_state = "ninja"
 
 /obj/item/toy/figure/wizard
-	name = "Wizard action figure"
-	desc = "A \"Space Life\" brand Wizard action figure."
+	name = "Figura de accion: Mago"
+	desc = "Una figura de accion de mago marca \"Space Life\"."
 	icon_state = "wizard"
 
 /obj/item/toy/figure/rd
@@ -595,8 +600,8 @@
 	icon_state = "rd"
 
 /obj/item/toy/figure/roboticist
-	name = "Roboticist action figure"
-	desc = "A \"Space Life\" brand Roboticist action figure."
+	name = "Figura dea accion: Robotica"
+	desc = "Una figura de accion de robotica marca \"Space Life\"."
 	icon_state = "roboticist"
 
 /obj/item/toy/figure/scientist
@@ -620,8 +625,8 @@
 	icon_state = "warden"
 
 /obj/item/toy/figure/psychologist
-	name = "Psychologist action figure"
-	desc = "A \"Space Life\" brand Psychologist action figure."
+	name = "Figura de accion: Psicologo"
+	desc = "Una figura de accion de psicologo marca \"Space Life\"."
 	icon_state = "psychologist"
 
 /obj/item/toy/figure/paramedic

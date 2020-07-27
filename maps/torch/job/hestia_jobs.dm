@@ -249,18 +249,18 @@
 	return "You are the Adjudicator. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
 
 
-/datum/job/bailiff
-	title = "Bailiff"
+/datum/job/blueshield
+	title = "Blueshield"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Adjudicator"
+	supervisors = "Command"
 	selection_color = "#3d3d7f"
 	economic_power = 12
 	minimal_player_age = 5
 	minimum_character_age = list(SPECIES_HUMAN = 19)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bailiff
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/blueshield
 	allowed_branches = list(/datum/mil_branch/civilian,
 							/datum/mil_branch/solgov)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor,
@@ -274,32 +274,14 @@
 	                    SKILL_WEAPONS     = SKILL_MAX,
 	                    SKILL_FORENSICS   = SKILL_MAX)
 
-	alt_titles = list(
-		"Court Officer",
-		"Judicial Assistant"
-	)
-	skill_points = 20
+	skill_points = 25
 	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
-			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
+			            access_bridge, access_cargo, access_solgov_crew, access_hangar, access_bs)
 	defer_roundstart_spawn = TRUE
 
-/datum/job/bailiff/is_position_available()
-	if(..())
-		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Adjudicator")
-				return TRUE
-	return FALSE
+/datum/job/blueshield/get_description_blurb()
+	return "Eres un Blueshield, te encargas de proteger la vida del personal de Alto riesgo abordo del NTSS Dagon, NO eres seguridad. Respondes directamente al comandante oficial y a Comando Central."
 
-/datum/job/bailiff/get_description_blurb()
-	return "You are the Bailiff. Your task is to assist and protect the Adjudicator in his endeavours. Do not intervene with security matters, the protection of your client is your first concern. Good luck."
-
-/datum/job/bailiff/post_equip_rank(var/mob/person, var/alt_title)
-	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Bailiff")]"]"
-	for(var/mob/M in GLOB.player_list)
-		if(M.client && M.mind)
-			if(M.mind.assigned_role == "Adjudicator")
-				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
-	..()
 
 /datum/job/lawyer
 	title = "Lawyer"
