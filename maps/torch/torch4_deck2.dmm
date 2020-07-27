@@ -443,8 +443,12 @@
 	},
 /obj/structure/table/rack,
 /obj/item/weapon/rig/medical/equipped,
-/obj/machinery/door/window/brigdoor/southleft{
-	name = "suit storage"
+/obj/machinery/door/window/eastright{
+	base_state = "left";
+	dir = 2;
+	does_spin = 1;
+	icon_state = "left";
+	name = "Medical Reception"
 	},
 /turf/simulated/floor/tiled/white,
 /area/storage/medical)

@@ -144,10 +144,6 @@
 /area/crew_quarters/safe_room/thirddeck
 	name = "\improper Third Deck Safe Room"
 
-/area/crew_quarters/laundry
-	name = "\improper Laundry Room"
-	icon_state = "Sleep"
-
 /area/crew_quarters/garden
 	name = "\improper Ship Garden"
 
@@ -1763,8 +1759,8 @@
 	name = "\improper Cabin Two"
 	icon_state = "Sleep"
 
-/area/crew_quarters_boh/cabin_main/c3
-	name = "\improper Cabin Three"
+/area/crew_quarters_boh/cabin_main/cambiador
+	name = "\improper Cambiador"
 	icon_state = "Sleep"
 
 /area/crew_quarters_boh/cabin_main/janitorial
