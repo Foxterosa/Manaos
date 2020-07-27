@@ -97,7 +97,7 @@
 /datum/gear/suit/wintercoat_medicina
 	allowed_roles = MEDICAL_ROLES
 
-/datum/gear/suit/wintercoat_minero
+/datum/gear/suit/wintercoat_mineria
 	allowed_roles = list(/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining)
 
 /datum/gear/suit/wintercoat_seguridad
