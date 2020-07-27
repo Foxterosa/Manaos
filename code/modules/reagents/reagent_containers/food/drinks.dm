@@ -206,6 +206,26 @@
 	else
 		icon_state = "water_cup_e"
 
+/obj/item/weapon/reagent_containers/food/drinks/mate
+	name = "porongo"
+	desc = "Un recipiente unicamente para tomar mate. Una bombilla sale de esta."
+	icon = 'icons/obj/drink_glasses/coffecup.dmi'
+	icon_state = "mate"
+	item_state = "mate"
+	possible_transfer_amounts = null
+	volume = 15
+	center_of_mass = "x=16;y=12"
+
+/obj/item/weapon/reagent_containers/food/drinks/mate_med
+	name = "porongo"
+	desc = "Un recipiente con una bombilla unicamente para tomar mate. Esta tiene el logo de Medbay en ella."
+	icon = 'icons/obj/drink_glasses/coffecup.dmi'
+	icon_state = "mate_med"
+	item_state = "mate_med"
+	possible_transfer_amounts = null
+	volume = 15
+	center_of_mass = "x=16;y=12"
+
 
 //////////////////////////pitchers, pots, flasks and cups //
 //Note by Darem: This code handles the mixing of drinks. New drinks go in three places: In Chemistry-Reagents.dm (for the drink

@@ -636,7 +636,9 @@
 					/obj/item/weapon/reagent_containers/food/condiment/mint = 2,
 					/obj/item/weapon/reagent_containers/food/drinks/ice = 10,
 					/obj/item/weapon/glass_extra/stick = 15,
-					/obj/item/weapon/glass_extra/straw = 15)
+					/obj/item/weapon/glass_extra/straw = 15,
+					/obj/item/weapon/reagent_containers/food/condiment/yerba = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/mate = 5)
 	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/bottle/premiumwine = 3,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/premiumvodka = 3,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/patron = 5,

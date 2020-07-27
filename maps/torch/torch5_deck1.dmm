@@ -5416,6 +5416,7 @@
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbayheart,
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbay,
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbay,
+/obj/item/weapon/reagent_containers/food/drinks/mate_med,
 /turf/simulated/floor/wood/walnut,
 /area/medical/equipstorage)
 "aix" = (
@@ -29467,6 +29468,16 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/aft)
+"puV" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/medical/reslab)
 "pvb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /obj/machinery/smartfridge,
@@ -34456,16 +34467,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/wing)
-"vNT" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
-	},
-/obj/structure/bed/chair/office/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/medical/reslab)
 "vTH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensicswindow"
@@ -58935,7 +58936,7 @@ uvu
 adt
 izW
 aak
-vNT
+puV
 dkt
 izW
 cIb
