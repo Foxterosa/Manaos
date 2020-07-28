@@ -107,3 +107,6 @@
 	berets["field operation beret"] = /obj/item/clothing/head/beret/solgov/expedition/branch
 	berets["observatory beret"] = /obj/item/clothing/head/beret/solgov/expedition/branch/observatory
 	gear_tweaks += new/datum/gear_tweak/path(berets)
+
+/datum/gear/head/enfermerag1
+	allowed_roles = MEDICAL_ROLES

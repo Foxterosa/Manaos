@@ -10784,6 +10784,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
+"uy" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "uz" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -17607,6 +17613,10 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/reinforced/airless,
 /area/thruster/d3port)
+"Lf" = (
+/obj/structure/closet/secure_closet/personal/empty,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "Lg" = (
 /obj/random/drinkbottle,
 /obj/structure/closet/crate/freezer/rations,
@@ -17893,14 +17903,6 @@
 /obj/effect/floor_decal/corner/grey/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
-"LL" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock{
-	id_tag = null;
-	name = "Cabin Three"
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "LM" = (
 /obj/effect/floor_decal/spline/fancy/black{
 	icon_state = "spline_fancy";
@@ -18263,10 +18265,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
-"MY" = (
-/obj/structure/closet/secure_closet/personal/empty,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "MZ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -19339,6 +19337,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
+"Ql" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/green,
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/heads/office/lawyer_office)
 "Qm" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -19909,6 +19912,18 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
+"RZ" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "Sa" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
@@ -20414,6 +20429,14 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hydroponics)
+"Tz" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	id_tag = null;
+	name = "Cabin Three"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "TA" = (
 /obj/effect/floor_decal/corner/blue,
 /obj/effect/floor_decal/corner/blue{
@@ -21107,12 +21130,6 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/thirddeck/port)
-"Vu" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "Vv" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -21312,18 +21329,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
-"VN" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4;
-	icon_state = "spline_fancy"
-	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "VO" = (
 /obj/effect/wallframe_spawn/no_grille,
 /obj/machinery/door/blast/shutters{
@@ -21438,11 +21443,6 @@
 /obj/structure/stairs/west,
 /turf/simulated/floor/plating,
 /area/engineering/hardstorage)
-"Wa" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/device/flashlight/lamp/green,
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/heads/office/lawyer_office)
 "Wb" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/gym)
@@ -21810,6 +21810,11 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/item/weapon/reagent_containers/food/snacks/meat/chicken,
+/obj/item/weapon/reagent_containers/food/snacks/meat/chicken,
+/obj/item/weapon/reagent_containers/food/snacks/meat/chicken,
+/obj/item/weapon/reagent_containers/food/snacks/meat/chicken,
+/obj/item/weapon/reagent_containers/food/snacks/meat/chicken,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "WW" = (
@@ -22480,6 +22485,11 @@
 /obj/machinery/portable_atmospherics/hydroponics,
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
+"YO" = (
+/obj/structure/catwalk,
+/obj/random/trash,
+/turf/simulated/floor/plating,
+/area/thruster/d3port)
 "YP" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -22861,11 +22871,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
-"ZQ" = (
-/obj/structure/catwalk,
-/obj/random/trash,
-/turf/simulated/floor/plating,
-/area/thruster/d3port)
 "ZR" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 1;
@@ -37796,7 +37801,7 @@ Bq
 gy
 ho
 jj
-Wa
+Ql
 mC
 RL
 mF
@@ -38002,7 +38007,7 @@ le
 nH
 BI
 xm
-Wa
+Ql
 rg
 gy
 Bq
@@ -44469,7 +44474,7 @@ Ma
 DA
 GO
 tY
-MY
+Lf
 sY
 ny
 AH
@@ -44671,7 +44676,7 @@ YM
 XT
 GO
 tY
-MY
+Lf
 sY
 VP
 fu
@@ -45074,9 +45079,9 @@ sY
 Rj
 Hn
 xl
-Vu
+uy
 zc
-LL
+Tz
 UZ
 Hf
 Hf
@@ -45678,7 +45683,7 @@ vr
 wU
 sY
 Cp
-VN
+RZ
 xp
 Yt
 XE
@@ -46693,7 +46698,7 @@ xw
 Yt
 PO
 sY
-ZQ
+YO
 pI
 pI
 aI

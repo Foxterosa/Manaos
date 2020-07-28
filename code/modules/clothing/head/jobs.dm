@@ -198,3 +198,9 @@
 	name = "beret"
 	desc = "A simple, solid color beret. This one has no emblems or insignia on it."
 	icon_state = "beret_white"
+
+/obj/item/clothing/head/enfermera1
+	name = "gorro de enfermera"
+	desc = "Un gorro que te identifica como enfermera del lugar."
+	icon_state = "nurse1"
+	item_state = "nurse1"
