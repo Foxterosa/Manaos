@@ -16,7 +16,7 @@
 	color = "";
 	desc = "F8F8F8"
 	},
-/obj/structure/closet/wardrobe/medic_torch,
+/obj/structure/closet/wardrobe/enfermera,
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "aac" = (
@@ -2904,12 +2904,12 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
 	},
-/obj/structure/closet/secure_closet/medical_torch,
 /obj/item/modular_computer/tablet,
 /obj/effect/floor_decal/industrial/outline/grey{
 	color = "";
 	desc = "F8F8F8"
 	},
+/obj/structure/closet/secure_closet/paramedico,
 /turf/simulated/floor/tiled/white,
 /area/medical/garaje)
 "aeD" = (
@@ -29468,16 +29468,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/aft)
-"puV" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
-	},
-/obj/structure/bed/chair/office/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/medical/reslab)
 "pvb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /obj/machinery/smartfridge,
@@ -29521,6 +29511,16 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
+"pxK" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/medical/reslab)
 "pyb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -58936,7 +58936,7 @@ uvu
 adt
 izW
 aak
-puV
+pxK
 dkt
 izW
 cIb
