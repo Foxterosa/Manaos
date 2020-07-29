@@ -741,10 +741,10 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	if(sprite_resize)
 		switch(character.descriptors["height"])
 			if(1)
-				character.size_multiplier = 0.80
+				character.size_multiplier = 0.75
 			if(2)
 				character.size_multiplier = 0.90
 			if(4)
 				character.size_multiplier = 1.10
 			if(5)
-				character.size_multiplier = 1.20
+				character.size_multiplier = 1.25

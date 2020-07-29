@@ -44,6 +44,7 @@
 	w_class = ITEM_SIZE_TINY
 	storage_slots = 108
 	max_storage_space = 250
+	can_hold = list(/obj/item/weapon/uno)
 
 /obj/item/weapon/storage/bag/cardholder/withcards
 	icon_state = "holder_f" // One starts with cards to be used as the initial deck.
