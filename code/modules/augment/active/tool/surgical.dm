@@ -9,7 +9,9 @@
 		/obj/item/weapon/hemostat,
 		/obj/item/weapon/retractor,
 		/obj/item/weapon/scalpel,
-		/obj/item/weapon/surgicaldrill
+		/obj/item/weapon/surgicaldrill,
+		/obj/item/weapon/bonegel,
+		/obj/item/weapon/FixOVein
 	)
 
 /obj/item/organ/internal/augment/active/polytool/surgical/left

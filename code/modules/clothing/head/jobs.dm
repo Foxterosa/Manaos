@@ -201,6 +201,12 @@
 
 /obj/item/clothing/head/enfermera1
 	name = "gorro de enfermera"
-	desc = "Un gorro que te identifica como enfermera del lugar."
-	icon_state = "nurse1"
-	item_state = "nurse1"
+	desc = "Un gorro que te identifica como la enfermera del lugar."
+	icon_state = "nurse1_s"
+	item_state = "nurse1_s"
+
+/obj/item/clothing/head/enfermera2
+	name = "gorro de enfermera"
+	desc = "Un gorro que te identifica como la enfermera del lugar."
+	icon_state = "nurse_cmo_s"
+	item_state = "nurse_cmo_s"

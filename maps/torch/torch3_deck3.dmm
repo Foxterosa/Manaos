@@ -10784,12 +10784,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
-"uy" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "uz" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -11574,13 +11568,6 @@
 	dir = 8;
 	icon_state = "alarm0";
 	pixel_x = 24
-	},
-/obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/hatch/yellow{
-	color = "#8daf6a"
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters_boh/cabin_main)
@@ -12723,8 +12710,9 @@
 /obj/effect/floor_decal/corner/green{
 	dir = 10
 	},
-/obj/structure/disposalpipe/junction{
-	dir = 8
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters_boh/cabin_main)
@@ -14143,6 +14131,11 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters_boh/cabin_main)
+"Cn" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/device/flashlight/lamp/green,
+/turf/simulated/floor/carpet/orange,
+/area/crew_quarters/heads/office/lawyer_office)
 "Cp" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4;
@@ -18085,9 +18078,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/ai_monitored/storage/eva)
 "Mp" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/green{
 	dir = 10
 	},
@@ -18248,6 +18238,11 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/galley)
+"MV" = (
+/obj/structure/catwalk,
+/obj/random/trash,
+/turf/simulated/floor/plating,
+/area/thruster/d3port)
 "MW" = (
 /obj/machinery/atmospherics/binary/passive_gate/on{
 	dir = 1;
@@ -19337,11 +19332,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
-"Ql" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/device/flashlight/lamp/green,
-/turf/simulated/floor/carpet/orange,
-/area/crew_quarters/heads/office/lawyer_office)
 "Qm" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -19912,18 +19902,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
-"RZ" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4;
-	icon_state = "spline_fancy"
-	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "Sa" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
@@ -20429,14 +20407,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hydroponics)
-"Tz" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock{
-	id_tag = null;
-	name = "Cabin Three"
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters_boh/cabin_main/cambiador)
 "TA" = (
 /obj/effect/floor_decal/corner/blue,
 /obj/effect/floor_decal/corner/blue{
@@ -21130,6 +21100,18 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/thirddeck/port)
+"Vt" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "Vv" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -21580,6 +21562,14 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
+"Wq" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	id_tag = null;
+	name = "Cabin Three"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "Wr" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -22485,11 +22475,6 @@
 /obj/machinery/portable_atmospherics/hydroponics,
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
-"YO" = (
-/obj/structure/catwalk,
-/obj/random/trash,
-/turf/simulated/floor/plating,
-/area/thruster/d3port)
 "YP" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -22844,6 +22829,12 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/reinforced/airless,
 /area/thruster/d3port)
+"ZJ" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters_boh/cabin_main/cambiador)
 "ZK" = (
 /obj/machinery/vending/cigarette{
 	dir = 8
@@ -37801,7 +37792,7 @@ Bq
 gy
 ho
 jj
-Ql
+Cn
 mC
 RL
 mF
@@ -38007,7 +37998,7 @@ le
 nH
 BI
 xm
-Ql
+Cn
 rg
 gy
 Bq
@@ -45079,9 +45070,9 @@ sY
 Rj
 Hn
 xl
-uy
+ZJ
 zc
-Tz
+Wq
 UZ
 Hf
 Hf
@@ -45683,7 +45674,7 @@ vr
 wU
 sY
 Cp
-RZ
+Vt
 xp
 Yt
 XE
@@ -46698,7 +46689,7 @@ xw
 Yt
 PO
 sY
-YO
+MV
 pI
 pI
 aI
