@@ -7148,6 +7148,7 @@
 	dir = 4
 	},
 /obj/machinery/hologram/holopad,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engineering_monitoring)
 "og" = (
@@ -13193,6 +13194,10 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Medical Storage";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/storage/medical)
 "BG" = (
@@ -16377,6 +16382,10 @@
 "LL" = (
 /obj/structure/closet/secure_closet/engineering_welding,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/camera/network/engineering{
+	c_tag = "Engineering - Engineering Bay";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/locker_room)
 "LM" = (
@@ -18280,6 +18289,9 @@
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/camera/network/engineering{
+	c_tag = "Engineering - Locker Room 1"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "Rq" = (
