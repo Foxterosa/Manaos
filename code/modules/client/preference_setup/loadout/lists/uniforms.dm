@@ -213,7 +213,3 @@
 /datum/gear/uniform/frontier
 	display_name = "ropa de frontera"
 	path = /obj/item/clothing/under/frontier
-
-/datum/gear/uniform/enfermera1
-	display_name = "Vestido de enfermera"
-	path = /obj/item/clothing/under/rank/enfermera1

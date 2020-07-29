@@ -112,7 +112,7 @@
 	req_access = list(access_medical_equip)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
-/obj/structure/closet/secure_closet/medical_torch/WillContain()
+/obj/structure/closet/secure_closet/paramedico/WillContain()
 	return list(
 		/obj/item/clothing/under/sterile,
 		/obj/item/clothing/accessory/storage/white_vest,
@@ -140,10 +140,15 @@
 	name = "armario de enfermeras"
 	closet_appearance = /decl/closet_appearance/wardrobe/white
 
-/obj/structure/closet/wardrobe/medic_torch/WillContain()
+/obj/structure/closet/wardrobe/enfermera/WillContain()
 	return list(
-		/obj/item/clothing/head/enfermera1 = 3,
-		/obj/item/clothing/under/rank/enfermera1 = 3
+		/obj/item/clothing/head/enfermera1 = 2,
+		/obj/item/clothing/under/rank/enfermera1 = 2,
+		/obj/item/clothing/head/enfermera2 = 2,
+		/obj/item/clothing/under/rank/enfermera2 = 2,
+		/obj/item/clothing/head/nursehat = 4,
+		/obj/item/clothing/under/rank/nurse = 2,
+		/obj/item/clothing/under/rank/nursesuit = 2
 	)
 
 /obj/structure/closet/wardrobe/medic_torch

@@ -169,7 +169,3 @@
 	display_name = "balaclava"
 	path = /obj/item/clothing/mask/balaclava
 	slot = slot_wear_mask
-
-/datum/gear/head/enfermerag1
-	display_name = "Gorro de enfermera"
-	path = /obj/item/clothing/head/enfermera1
