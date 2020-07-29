@@ -104,6 +104,18 @@
 		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
+/obj/item/clothing/under/rank/enfermera1
+	desc = "Un comodo vestido para trabajar en la enfermeria. Esperemos que no te toque asistir una operacion."
+	name = "vestido de enfermera"
+	icon_state = "nurse_inf_s"
+	item_state = "nurse_inf_s"
+	worn_state = "nurse_inf_s"
+	permeability_coefficient = 0.50
+	armor = list(
+		bio = ARMOR_BIO_MINOR
+		)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
 /obj/item/clothing/under/rank/orderly
 	desc = "A white suit to be worn by medical attendants."
 	name = "orderly's uniform"

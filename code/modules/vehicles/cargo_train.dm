@@ -415,7 +415,7 @@
 	icon_state = "ambulance"
 	anchored = 1
 	can_buckle = 1
-	buckle_dir = SOUTH
+	buckle_dir = 0
 	buckle_lying = 1
 	passenger_allowed = 1
 	locked = 0
@@ -423,8 +423,8 @@
 
 	load_item_visible = 1
 	load_offset_x = 0
-	load_offset_y = 10
-	buckle_pixel_shift= "x=0;y=10;z=0"
+	load_offset_y = 7
+	buckle_pixel_shift= "x=0;y=7;z=0"
 
 //-------------------------------------------
 // Standard procs

@@ -19,10 +19,12 @@
 
 /obj/item/weapon/storage/firstaid/empty
 	icon_state = "firstaid"
+	item_state = "firstaid"
 	name = "botiquin (empty)"
 
 /obj/item/weapon/storage/firstaid/regular
 	icon_state = "firstaid"
+	item_state = "firstaid"
 
 	startswith = list(
 		/obj/item/stack/medical/bruise_pack = 2,
@@ -35,50 +37,38 @@
 /obj/item/weapon/storage/firstaid/trauma
 	name = "botiquin para traumas"
 	desc = "Es un botiquin medico de emergencia para cuando las personas traen armas balisticas a una pelea con laser."
-	icon_state = "radfirstaid"
-	item_state = "firstaid-ointment"
+	icon_state = "trauma"
+	item_state = "trauma"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/trauma = 4
 		)
 
-/obj/item/weapon/storage/firstaid/trauma/New()
-	..()
-	icon_state = pick("radfirstaid", "radfirstaid2")
-
 /obj/item/weapon/storage/firstaid/fire
 	name = "botiquin para quemaduras"
 	desc = "Es un botiquin medico de emergencia para los que les encanta jugar con laser."
 	icon_state = "ointment"
-	item_state = "firstaid-ointment"
+	item_state = "ointment"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/burn = 4
 		)
 
-/obj/item/weapon/storage/firstaid/fire/New()
-	..()
-	icon_state = pick("ointment","firefirstaid")
-
 /obj/item/weapon/storage/firstaid/toxin
 	name = "botiquin anti-toxinas"
 	desc = "Se usa para tratar cuando tiene una gran cantidad de toxinas en su cuerpo."
 	icon_state = "antitoxin"
-	item_state = "firstaid-toxin"
+	item_state = "antitoxin"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/toxin = 4
 		)
 
-/obj/item/weapon/storage/firstaid/toxin/New()
-	..()
-	icon_state = pick("antitoxin","antitoxfirstaid","antitoxfirstaid2","antitoxfirstaid3")
-
 /obj/item/weapon/storage/firstaid/o2
 	name = "botiquin para privacion de o2"
 	desc = "Una caja llena de golosinas de oxigeno."
 	icon_state = "o2"
-	item_state = "firstaid-o2"
+	item_state = "o2"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/oxyloss = 4
@@ -88,7 +78,7 @@
 	name = "botiquin de primeros auxilios avanzado"
 	desc = "Contiene tratamientos medicos avanzados."
 	icon_state = "purplefirstaid"
-	item_state = "firstaid-advanced"
+	item_state = "purplefirstaid"
 
 	startswith = list(
 		/obj/item/weapon/storage/pill_bottle/assorted,
@@ -101,7 +91,7 @@
 	name = "botiquin de combate"
 	desc = "Contiene tratamientos medicos avanzados."
 	icon_state = "bezerk"
-	item_state = "firstaid-advanced"
+	item_state = "bezerk"
 
 	startswith = list(
 		/obj/item/weapon/storage/pill_bottle/bicaridine,
@@ -117,7 +107,7 @@
 	name = "botiquin de estabilizacion"
 	desc = "Contiene un poco de todo."
 	icon_state = "stabfirstaid"
-	item_state = "firstaid-advanced"
+	item_state = "stabfirstaid"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/trauma,
@@ -169,7 +159,7 @@
 	name = "botiquin anti-radiacion"
 	desc = "Es un botiquin medico de emergencia para cuando las personas ignoran a la IA sobre la radiacion."
 	icon_state = "radaid"
-	item_state = "firstaid-ointment"
+	item_state = "radaid"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/radiation = 4
