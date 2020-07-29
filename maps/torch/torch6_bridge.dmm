@@ -6868,7 +6868,7 @@
 	},
 /obj/item/device/radio/intercom/locked/ai_private{
 	dir = 1;
-	pixel_y = -22
+	pixel_y = -28
 	},
 /obj/item/device/radio/intercom/custom{
 	pixel_y = 22
@@ -8514,6 +8514,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/machinery/hologram/holopad,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "nS" = (
@@ -15756,6 +15757,13 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
+"EI" = (
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge - Commanding Officer";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/co)
 "EJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -15942,6 +15950,10 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
+"FJ" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/bridge/storage)
 "FK" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
@@ -19360,6 +19372,9 @@
 "VW" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/captain,
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge - CO's Quarters"
+	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cobed)
 "VY" = (
@@ -27791,7 +27806,7 @@ RV
 Mz
 Yz
 Pt
-Pt
+EI
 An
 uy
 hk
@@ -28175,7 +28190,7 @@ JR
 qO
 zC
 dE
-Tl
+FJ
 Hf
 ee
 Wv

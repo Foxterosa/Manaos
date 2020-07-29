@@ -984,6 +984,10 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
 	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Medical Storage";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/storage/medical)
 "bQ" = (
@@ -13194,10 +13198,6 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
-/obj/machinery/camera/network/medbay{
-	c_tag = "Infirmary - Medical Storage";
-	dir = 4
-	},
 /turf/simulated/floor/tiled/white,
 /area/storage/medical)
 "BG" = (
@@ -18312,6 +18312,13 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"Rz" = (
+/obj/machinery/camera/network/second_deck{
+	c_tag = "Second Deck - Fore";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/seconddeck/fore)
 "RE" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
@@ -33200,7 +33207,7 @@ it
 bI
 yx
 xR
-xR
+Rz
 wT
 iM
 xS

@@ -238,6 +238,10 @@
 	color = "";
 	desc = "F8F8F8"
 	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Locker Room 2";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "aas" = (
@@ -5979,7 +5983,7 @@
 	dir = 8
 	},
 /obj/machinery/camera/network/medbay{
-	c_tag = "Infirmary - Medical Storage";
+	c_tag = "Infirmary - Locker Room 1";
 	dir = 4
 	},
 /obj/structure/table/woodentable/walnut,
@@ -19195,6 +19199,10 @@
 /obj/item/weapon/storage/box/bodybags,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
+"cqP" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/security/brig/perma)
 "csb" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/blue,
@@ -24980,6 +24988,14 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
+"kbf" = (
+/obj/effect/floor_decal/corner/research{
+	dir = 10;
+	tag = "icon-corner_white (SOUTHWEST)"
+	},
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/white,
+/area/rnd/xenobiology)
 "kcb" = (
 /obj/machinery/organ_printer/robot/mapped,
 /obj/effect/floor_decal/floordetail/edgedrain,
@@ -34788,6 +34804,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
+"wtZ" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/carpet/orange,
+/area/medical/equipstorage)
 "wvY" = (
 /obj/structure/morgue{
 	dir = 8
@@ -47148,7 +47168,7 @@ aFV
 abn
 ahf
 prt
-prt
+cqP
 ala
 qfy
 prt
@@ -55188,7 +55208,7 @@ aan
 aan
 aax
 aaG
-atb
+wtZ
 atb
 asZ
 aan
@@ -56256,7 +56276,7 @@ aUF
 sQb
 sVb
 tab
-bce
+kbf
 aVM
 aUE
 tsb
