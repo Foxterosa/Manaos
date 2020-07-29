@@ -2831,5 +2831,3 @@
 	result = /datum/reagent/drink/mate
 	required_reagents = list(/datum/reagent/nutriment/yerba = 2, /datum/reagent/water = 1)
 	result_amount = 3
-	minimum_temperature = 40 CELSIUS
-	maximum_temperature = (40 CELSIUS) + 100

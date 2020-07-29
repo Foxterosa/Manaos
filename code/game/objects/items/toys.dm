@@ -824,6 +824,11 @@
 	desc = "Una figura de accion de Franco marca \"Manaos\"."
 	icon_state = "franco"
 
+/obj/item/toy/figure/angelina
+	name = "figura de accion: Angelina"
+	desc = "Una figura de accion de Angelina marca \"Manaos\"."
+	icon_state = "angelina"
+
 
 
 /obj/item/toy/therapy_red

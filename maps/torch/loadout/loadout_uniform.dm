@@ -87,6 +87,3 @@
 
 /datum/gear/uniform/corp_exec_jacket
 	allowed_roles = list(/datum/job/liaison, /datum/job/bodyguard)
-
-/datum/gear/uniform/enfermera1
-	allowed_roles = MEDICAL_ROLES

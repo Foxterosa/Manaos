@@ -415,6 +415,7 @@
 				/obj/item/toy/figure/alicia,
 				/obj/item/toy/figure/alysson,
 				/obj/item/toy/figure/ana,
+				/obj/item/toy/figure/angelina,
 				/obj/item/toy/figure/area,
 				/obj/item/toy/figure/ariel,
 				/obj/item/toy/figure/arkin,
