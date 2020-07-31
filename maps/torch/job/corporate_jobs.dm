@@ -18,9 +18,28 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/workplace_liaison
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/ntr)
-	min_skill = list(   SKILL_BUREAUCRACY	= SKILL_EXPERT,
-	                    SKILL_FINANCE		= SKILL_BASIC)
-	skill_points = 20
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 32
 	access = list(access_liaison, access_maint_tunnels, access_medical,
 						access_engine, access_research, access_bridge,
 						access_cargo, access_solgov_crew, access_hangar,
@@ -52,20 +71,33 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_EVA         = SKILL_BASIC,
-	                    SKILL_COMBAT      = SKILL_BASIC,
-	                    SKILL_WEAPONS     = SKILL_ADEPT,
-	                    SKILL_FORENSICS   = SKILL_BASIC)
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
 	alt_titles = list(
 		"Union Enforcer" = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/union,
 		"Executive Assistant",
 		"Asset Protection Agent"
 	)
-	skill_points = 20
+	skill_points = 32
 	access = list(access_liaison, access_maint_tunnels, access_security, access_medical,
 						access_engine, access_research, access_bridge,
 						access_cargo, access_solgov_crew, access_hangar,

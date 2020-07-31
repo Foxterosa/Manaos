@@ -15,12 +15,28 @@
 	alt_titles = list(
 		"Forensics Trainee"
 		)
-	min_skill = list(   SKILL_EVA         = SKILL_ADEPT,
-	                    SKILL_COMBAT      = SKILL_BASIC)
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
-	skill_points = 16
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 32
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
@@ -65,16 +81,28 @@
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-						SKILL_EVA         = SKILL_ADEPT,
-						SKILL_PILOT       = SKILL_BASIC,
-						SKILL_COMBAT      = SKILL_ADEPT,
-						SKILL_WEAPONS     = SKILL_ADEPT)
-
-	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
-						SKILL_WEAPONS     = SKILL_MAX,
-						SKILL_EVA		  = SKILL_MAX)
-
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 60
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 
@@ -94,18 +122,28 @@
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 22)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
-	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
-						SKILL_ELECTRICAL   = SKILL_ADEPT,
-						SKILL_MEDICAL      = SKILL_BASIC,
-						SKILL_COMBAT       = SKILL_ADEPT,
-						SKILL_WEAPONS      = SKILL_ADEPT)
-
-	max_skill = list(	SKILL_COMBAT       = SKILL_MAX,
-						SKILL_WEAPONS      = SKILL_MAX,
-						SKILL_EVA		   = SKILL_MAX,
-						SKILL_CONSTRUCTION = SKILL_MAX,
-						SKILL_ELECTRICAL   = SKILL_MAX)
-
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 44
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e3,
@@ -141,14 +179,28 @@
 	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
-	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
-						SKILL_WEAPONS      = SKILL_ADEPT,
-						SKILL_EVA          = SKILL_BASIC)
-
-	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
-						SKILL_WEAPONS     = SKILL_MAX,
-						SKILL_EVA		  = SKILL_MAX)
-
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 36
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
@@ -188,16 +240,28 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/foundationadvisor)
-	min_skill = list(
-		SKILL_BUREAUCRACY = SKILL_EXPERT,
-		SKILL_FINANCE = SKILL_ADEPT,
-		SKILL_MEDICAL = SKILL_BASIC
-	)
-	max_skill = list(
-		SKILL_COMBAT     = SKILL_EXPERT,
-		SKILL_WEAPONS     = SKILL_EXPERT
-	)
-	skill_points = 30
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 36
 	access = list(access_psiadvisor, access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks,
 				access_eva, access_bridge, access_cargo, access_RC_announce, access_solgov_crew, access_hangar)
 	minimal_access = list()
@@ -235,9 +299,28 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/adjudicator
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
-	                    SKILL_FINANCE     = SKILL_BASIC)
-	skill_points = 20
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 32
 	minimum_character_age = list(SPECIES_HUMAN = 28)
 
 	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
@@ -265,16 +348,28 @@
 							/datum/mil_branch/solgov)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor,
 						 /datum/mil_rank/sol/agent)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_EVA         = SKILL_BASIC,
-	                    SKILL_COMBAT      = SKILL_BASIC,
-	                    SKILL_WEAPONS     = SKILL_ADEPT,
-	                    SKILL_FORENSICS   = SKILL_BASIC)
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
-
-	skill_points = 25
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 36
 	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar, access_bs)
 	defer_roundstart_spawn = TRUE
@@ -295,9 +390,28 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/lawyer
 	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor, /datum/mil_rank/sol/gov)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
-	                    SKILL_FINANCE     = SKILL_BASIC)
-	skill_points = 20
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 32
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 
 	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_solgov_crew)

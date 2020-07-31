@@ -42,38 +42,115 @@ GLOBAL_LIST_EMPTY(skills)
 /decl/hierarchy/skill/organizational
 	name = "Organizativo"
 	ID	 = "1"
-	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
+/decl/hierarchy/skill/organizational/get_cost(var/level)
+	switch(level)
+		if(SKILL_BASIC)
+			return 1*difficulty
+		if(SKILL_ADEPT)
+			return 2*difficulty
+		if(SKILL_EXPERT)
+			return 3*difficulty
+		if(SKILL_PROF)
+			return 4*difficulty
+		else
+			return 0
 
 /decl/hierarchy/skill/general
 	name = "General"
 	ID	 = "2"
-	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
+/decl/hierarchy/skill/general/get_cost(var/level)
+	switch(level)
+		if(SKILL_BASIC)
+			return 1*difficulty
+		if(SKILL_ADEPT)
+			return 2*difficulty
+		if(SKILL_EXPERT)
+			return 3*difficulty
+		if(SKILL_PROF)
+			return 4*difficulty
+		else
+			return 0
 
 /decl/hierarchy/skill/service
 	name = "Servicio"
 	ID	 = "service"
-	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
+/decl/hierarchy/skill/service/get_cost(var/level)
+	switch(level)
+		if(SKILL_BASIC)
+			return 1*difficulty
+		if(SKILL_ADEPT)
+			return 2*difficulty
+		if(SKILL_EXPERT)
+			return 3*difficulty
+		if(SKILL_PROF)
+			return 4*difficulty
+		else
+			return 0
 
 /decl/hierarchy/skill/security
 	name = "Seguridad"
 	ID	 = "security"
-	default_max = SKILL_EXPERT
+/decl/hierarchy/skill/security/get_cost(var/level)
+	switch(level)
+		if(SKILL_BASIC)
+			return 1*difficulty
+		if(SKILL_ADEPT)
+			return 2*difficulty
+		if(SKILL_EXPERT)
+			return 3*difficulty
+		if(SKILL_PROF)
+			return 4*difficulty
+		else
+			return 0
 
 /decl/hierarchy/skill/engineering
 	name = "Ingenieria"
 	ID	 = "engineering"
+/decl/hierarchy/skill/engineering/get_cost(var/level)
+	switch(level)
+		if(SKILL_BASIC)
+			return 1*difficulty
+		if(SKILL_ADEPT)
+			return 2*difficulty
+		if(SKILL_EXPERT)
+			return 3*difficulty
+		if(SKILL_PROF)
+			return 4*difficulty
+		else
+			return 0
+
 
 /decl/hierarchy/skill/research
 	name = "Research"
 	ID	 = "research"
+/decl/hierarchy/skill/research/get_cost(var/level)
+	switch(level)
+		if(SKILL_BASIC)
+			return 1*difficulty
+		if(SKILL_ADEPT)
+			return 2*difficulty
+		if(SKILL_EXPERT)
+			return 3*difficulty
+		if(SKILL_PROF)
+			return 4*difficulty
+		else
+			return 0
 
 /decl/hierarchy/skill/medical
 	name = "Medico"
 	ID	 = "medical"
-	difficulty = SKILL_HARD
+/decl/hierarchy/skill/medical/get_cost(var/level)
+	switch(level)
+		if(SKILL_BASIC)
+			return 1*difficulty
+		if(SKILL_ADEPT)
+			return 2*difficulty
+		if(SKILL_EXPERT)
+			return 3*difficulty
+		if(SKILL_PROF)
+			return 4*difficulty
+		else
+			return 0
 
 // ONLY SKILL DEFINITIONS BELOW THIS LINE
 // Category: Organizational
@@ -134,8 +211,6 @@ GLOBAL_LIST_EMPTY(skills)
 						"Entrenado"			= "Eres un piloto entrenado, puedes manejar de forma segura una diminuta nave hasta un corvette. Puedes estar en periodos de tiempo extensos para pilotar una nave espacial, y estas especializado en las habilidades de las diferentes naves. Puedes hacer el mantenimiento basico en los buques diminutos, y realizar la mayoria de las maniobras basicas. Puedes usar una nave espacial armada. Hacer calculos basicos relativos al pilotaje. Las habilidades de este nivel son tipicos para los nuevos pilotos. Probablemente hayas recibido un entrentamiento formal de pilotaje.<br>- Puedes operar grandes naves sin errores. <br>- Puedes evitar completamente a los meteoritos con poca velocidad usando cualquier nave espacial.",
 						"Experimentado"		= "Eres un piloto experimentado, y puedes tomar el timon de muchos tipos de naves con seguridad. Probablemente podrias vivir en una nave, y eres un experto en esencialmente todo lo relacionado a embarcaciones espaciales. no solo puedes volar una nave, si no que puedes hacer maniobras complicadas y hacer calculos relacionados sobre pilotaje de una nave espacial y su mantenimiento. Las habilidades de este nivel son tipicos para los pilotos experimentados. Has recibio un entrenamiento formal de pilotaje.<br>- Puedes evadir completamente los meteoritos en velocidad normal mientras usas naves espaciales reducidas.",
 						"Maestro"		= "No solo eres un piloto excepcional, pero has dominado las funciones de la navegacion estelar y el trazado del salto bluespace. Tienes experiencia haciendo maniobras complejas, manejando escuadrones de naves menores, y operando en entornos hostiles.<br>- Puedes evadir completamente los meteoritos en velocidad normal usando cualquier tipo de nave.<br>- Menos meteoritos golpearan la nave espacial mientras pasas por campo de meteoritos.")
-	difficulty = SKILL_AVERAGE
-	default_max = SKILL_ADEPT
 
 /decl/hierarchy/skill/general/hauling
 	ID = "hauling"
@@ -146,6 +221,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Entrenado"			= "Tienes la suficiente fuerza y destreza para las tareas mas dificiles, y puedes trabajar por un periodo de tiempo largo sin sin cansarte.",
 						"Experimentado"		= "Tienes experiencia con trabajo pesado en condiciones fisicas dificiles, estas en excelente forma. Sueles ir al gimnasio con frecuencia.",
 						"Maestro"		= "En adicion a tu excelente fuerza y resistencia, tienes mucha experiencia con las exigencias fisicas especificas de tu trabajo. Puede que tengas experiencia competitiva con algun deporte.")
+
 
 /decl/hierarchy/skill/general/computer
 	ID = "computer"
@@ -190,18 +266,6 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You have had close-combat training, and can easily defeat Ignorante opponents. Close combat may not be your specialty, and you don't engage in it more than needed, but you know how to handle yourself in a fight.<br>- You can parry with weapons. This increases with level.<br>- You can do grab maneuvers (pinning, dislocating).<br>- You can grab targets when leaping at them and not fall over, if your species is able to do so.",
 						"Experienced"		= "You're good at hand-to-hand combat. You've trained explicitly in a martial art or as a close combatant as part of a military or police unit. You can use weaponry competently and you can think strategically and quickly in a melee. You're in good shape and you spend time training.",
 						"Master"		= "You specialize in hand-to-hand combat. You're well-trained in a practical martial art, and in good shape. You spend a lot of time practicing. You can take on just about anyone, use just about any weapon, and usually come out on top. You may be a professional athlete or special forces member.")
-	default_max = SKILL_EXPERT
-
-/decl/hierarchy/skill/security/combat/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC)
-			return difficulty
-		if(SKILL_ADEPT, SKILL_EXPERT)
-			return 2*difficulty
-		if(SKILL_PROF)
-			return 4*difficulty
-		else
-			return 0
 
 /decl/hierarchy/skill/security/weapons
 	ID = "weapons"
@@ -213,17 +277,6 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You've used firearms and other ranged weapons in high-stress situations, and your skills have become automatic. Your aim is good.",
 						"Master"		= "You are an exceptional shot with a variety of weapons, from simple to exotic. You use a weapon as naturally as though it were a part of your own body. You may be a sniper or special forces operator of some kind.<br>- You get extra accuracy for sniper rifles.<br>- You automatically eject shells from bolt-action firearms and shotguns.")
 
-/decl/hierarchy/skill/security/weapons/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC)
-			return difficulty
-		if(SKILL_ADEPT)
-			return 2*difficulty
-		if(SKILL_EXPERT, SKILL_PROF)
-			return 4*difficulty
-		else
-			return 0
-
 /decl/hierarchy/skill/security/forensics
 	ID = "forensics"
 	name = "Forensics"
@@ -233,16 +286,6 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are trained in collecting forensic evidence - fibers, fingerprints, the works. You know how autopsies are done, and might've assisted performing one.<br>- You can more easily detect fingerprints.<br>- You no longer contaminate evidence.",
 						"Experienced"		= "You're a pathologist, or detective. You've seen your share of bizarre cases, and spent a lot of time putting pieces of forensic puzzle together, so you're faster now.<br>- You can notice additional details upon examining, such as fibers, partial prints, and gunshot residue.",
 						"Master"		= "You're a big name in forensic science. You might be an investigator who cracked a famous case, or you published papers on new methods of forensics. Either way, if there's a forensic trail, you will find it, period.<br>- You can notice traces of wiped off blood.")
-
-
-/decl/hierarchy/skill/security/forensics/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC, SKILL_ADEPT, SKILL_EXPERT)
-			return difficulty * 2
-		if(SKILL_PROF)
-			return 3 * difficulty
-		else
-			return 0
 
 // Category: Engineering
 
@@ -255,7 +298,6 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can build, repair, or dismantle most things, but will occasionally make mistakes and have things not come out the way you expected.<br>- You can construct items from Bronze, Gold, Osmium, Plasteel, Platinum, Reinforced Glass, Sandstone, Silver, Deuterium, Metallic Hydrogen, Phoron, Phoron Glass, Tritium, and Uranium.<br>- You can construct furnitures.<br>- You can construct simple objects such as light fixtures, crude weapons, and wall-mounted frames.<br>- You can safely use the plasmacutter to deconstruct structures.",
 						"Experienced"		= "You know how to seal a breach, rebuild broken piping, and repair major damage. You know the basicos of structural engineering.<br>- You can construct items from Osmium-Carbide Plasteel, Titanium, Diamond and make complex objects such as machine and weapon frames.",
 						"Master"		= "You are a construction worker or engineer. You could pretty much rebuild the installation or ship from the ground up, given supplies, and you're efficient and skilled at repairing damage.")
-	difficulty = SKILL_EASY
 
 /decl/hierarchy/skill/engineering/electrical
 	ID = "electrical"
@@ -286,7 +328,6 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can set up the engine, and you probably won't botch it up too badly. You know how to protect yourself from radiation in the engine room. You can read the engine monitors and keep the engine going. An engine malfunction may stump you, but you can probably work out how to fix it... let's just hope you do so quickly enough to prevent serious damage.",
 						"Experienced"		= "You have years of experience with engines, and can set them up quickly and reliably. You're familiar with engine types other than the one you work with.<br>- You can fully read the SM monitor readings.<br>- You can examine the SM directly for its integrity.",
 						"Master"		= "Your engine is your baby and you know every minute detail of its workings. You can optimize the engine and you probably have your own favorite custom setup. You could build an engine from the ground up. When things go wrong, you know exactly what has happened and how to fix the problem. You can safely handle singularities and supermatter.<br>- You can examine the SM directly for an approximate number of its EER.")
-	difficulty = SKILL_HARD
 
 // Category: Research
 

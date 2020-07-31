@@ -15,16 +15,28 @@
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o1
 	)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_EVA         = SKILL_ADEPT,
-	                    SKILL_SCIENCE     = SKILL_ADEPT,
-	                    SKILL_PILOT       = SKILL_BASIC)
-
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX,
-	                    SKILL_COMBAT      = SKILL_EXPERT,
-	                    SKILL_WEAPONS     = SKILL_EXPERT)
-	skill_points = 22
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 40
 
 	access = list(
 		access_pathfinder, access_explorer, access_eva, access_maint_tunnels, access_bridge, access_emergency_storage,
@@ -66,12 +78,28 @@
 	 access_guppy, access_hangar, access_maint_tunnels, access_guppy_helm, access_expedition_shuttle, access_expedition_shuttle_helm, access_pilot,
 		access_solgov_crew, access_eva, access_explorer,
 	)
-	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
-						SKILL_PILOT = SKILL_ADEPT)
-
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
-
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 32
 /datum/job/explorer
 	title = "Explorer"
 	department = "Exploration"
@@ -88,15 +116,31 @@
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/ec/e5
 	)
-	min_skill = list(   SKILL_EVA = SKILL_BASIC)
-
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX,
-	                    SKILL_COMBAT      = SKILL_EXPERT,
-	                    SKILL_WEAPONS     = SKILL_EXPERT)
+	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
+	                    SKILL_FINANCE      = SKILL_MAX,
+	                    SKILL_EVA          = SKILL_MAX,
+	                    SKILL_MECH         = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_HAULING      = SKILL_MAX,
+	                    SKILL_COMPUTER     = SKILL_MAX,
+	                    SKILL_BOTANY       = SKILL_MAX,
+	                    SKILL_COOKING      = SKILL_MAX,
+	                    SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_FORENSICS    = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_SCIENCE      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_MAX,
+	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	skill_points = 32
 
 	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
-		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, 
+		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
 		access_expedition_shuttle_helm,
 	)
 
