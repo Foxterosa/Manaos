@@ -26,28 +26,16 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/civ/contractor
 	)
-	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
-	                    SKILL_FINANCE      = SKILL_MAX,
-	                    SKILL_EVA          = SKILL_MAX,
-	                    SKILL_MECH         = SKILL_MAX,
-	                    SKILL_PILOT        = SKILL_MAX,
-	                    SKILL_HAULING      = SKILL_MAX,
-	                    SKILL_COMPUTER     = SKILL_MAX,
-	                    SKILL_BOTANY       = SKILL_MAX,
-	                    SKILL_COOKING      = SKILL_MAX,
-	                    SKILL_COMBAT       = SKILL_MAX,
-	                    SKILL_WEAPONS      = SKILL_MAX,
-	                    SKILL_FORENSICS    = SKILL_MAX,
-	                    SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX,
-	                    SKILL_DEVICES      = SKILL_MAX,
-	                    SKILL_SCIENCE      = SKILL_MAX,
-	                    SKILL_MEDICAL      = SKILL_MAX,
-	                    SKILL_ANATOMY      = SKILL_MAX,
-	                    SKILL_CHEMISTRY    = SKILL_MAX)
-	skill_points = 52
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_MEDICAL     = SKILL_EXPERT,
+	                    SKILL_ANATOMY     = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY   = SKILL_BASIC,
+	                    SKILL_DEVICES     = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
+	                    SKILL_ANATOMY     = SKILL_MAX,
+	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	skill_points = 20
 
 	access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
 			            access_crematorium, access_chemistry, access_surgery,
@@ -83,34 +71,20 @@
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/civ/contractor
 	)
-	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
-	                    SKILL_FINANCE      = SKILL_MAX,
-	                    SKILL_EVA          = SKILL_MAX,
-	                    SKILL_MECH         = SKILL_MAX,
-	                    SKILL_PILOT        = SKILL_MAX,
-	                    SKILL_HAULING      = SKILL_MAX,
-	                    SKILL_COMPUTER     = SKILL_MAX,
-	                    SKILL_BOTANY       = SKILL_MAX,
-	                    SKILL_COOKING      = SKILL_MAX,
-	                    SKILL_COMBAT       = SKILL_MAX,
-	                    SKILL_WEAPONS      = SKILL_MAX,
-	                    SKILL_FORENSICS    = SKILL_MAX,
-	                    SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX,
-	                    SKILL_DEVICES      = SKILL_MAX,
-	                    SKILL_SCIENCE      = SKILL_MAX,
-	                    SKILL_MEDICAL      = SKILL_MAX,
-	                    SKILL_ANATOMY      = SKILL_MAX,
-	                    SKILL_CHEMISTRY    = SKILL_MAX)
-	skill_points = 40
+	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
+	                    SKILL_MEDICAL = SKILL_BASIC,
+	                    SKILL_ANATOMY = SKILL_BASIC)
+
+	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
+	                    SKILL_CHEMISTRY   = SKILL_MAX)
+
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_eva, access_surgery, access_medical_equip, access_solgov_crew, access_hangar)
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
+	skill_points = 22
 
 /datum/job/medical_trainee
 	title = "Medical Trainee"
@@ -136,29 +110,19 @@
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2
 	)
+
+	skill_points = 4
 	no_skill_buffs = TRUE
-	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
-	                    SKILL_FINANCE      = SKILL_MAX,
-	                    SKILL_EVA          = SKILL_MAX,
-	                    SKILL_MECH         = SKILL_MAX,
-	                    SKILL_PILOT        = SKILL_MAX,
-	                    SKILL_HAULING      = SKILL_MAX,
-	                    SKILL_COMPUTER     = SKILL_MAX,
-	                    SKILL_BOTANY       = SKILL_MAX,
-	                    SKILL_COOKING      = SKILL_MAX,
-	                    SKILL_COMBAT       = SKILL_MAX,
-	                    SKILL_WEAPONS      = SKILL_MAX,
-	                    SKILL_FORENSICS    = SKILL_MAX,
-	                    SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX,
-	                    SKILL_DEVICES      = SKILL_MAX,
-	                    SKILL_SCIENCE      = SKILL_MAX,
-	                    SKILL_MEDICAL      = SKILL_MAX,
-	                    SKILL_ANATOMY      = SKILL_MAX,
-	                    SKILL_CHEMISTRY    = SKILL_MAX)
-	skill_points = 44
+
+	min_skill = list(   SKILL_EVA     = SKILL_ADEPT,
+	                    SKILL_HAULING = SKILL_ADEPT,
+	                    SKILL_MEDICAL = SKILL_EXPERT,
+	                    SKILL_ANATOMY = SKILL_BASIC)
+
+	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
+	                    SKILL_ANATOMY     = SKILL_MAX,
+	                    SKILL_CHEMISTRY   = SKILL_MAX)
+
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_surgery, access_medical_equip, access_solgov_crew)
 
@@ -182,28 +146,14 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/chemist
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
-	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
-	                    SKILL_FINANCE      = SKILL_MAX,
-	                    SKILL_EVA          = SKILL_MAX,
-	                    SKILL_MECH         = SKILL_MAX,
-	                    SKILL_PILOT        = SKILL_MAX,
-	                    SKILL_HAULING      = SKILL_MAX,
-	                    SKILL_COMPUTER     = SKILL_MAX,
-	                    SKILL_BOTANY       = SKILL_MAX,
-	                    SKILL_COOKING      = SKILL_MAX,
-	                    SKILL_COMBAT       = SKILL_MAX,
-	                    SKILL_WEAPONS      = SKILL_MAX,
-	                    SKILL_FORENSICS    = SKILL_MAX,
-	                    SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX,
-	                    SKILL_DEVICES      = SKILL_MAX,
-	                    SKILL_SCIENCE      = SKILL_MAX,
-	                    SKILL_MEDICAL      = SKILL_MAX,
-	                    SKILL_ANATOMY      = SKILL_MAX,
-	                    SKILL_CHEMISTRY    = SKILL_MAX)
-	skill_points = 40
+	min_skill = list(   SKILL_MEDICAL   = SKILL_ADEPT,
+	                    SKILL_CHEMISTRY = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_MEDICAL     = SKILL_ADEPT,
+						SKILL_ANATOMY	  = SKILL_ADEPT,
+	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	skill_points = 16
+
 	access = list(access_medical, access_maint_tunnels, access_emergency_storage, access_medical_equip, access_solgov_crew, access_chemistry,
 	 						access_virology, access_morgue, access_crematorium)
 	minimal_access = list()
@@ -229,28 +179,13 @@
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/fleet/o1,
 		/datum/mil_rank/ec/o1)
-	max_skill = list(   SKILL_BUREAUCRACY  = SKILL_MAX,
-	                    SKILL_FINANCE      = SKILL_MAX,
-	                    SKILL_EVA          = SKILL_MAX,
-	                    SKILL_MECH         = SKILL_MAX,
-	                    SKILL_PILOT        = SKILL_MAX,
-	                    SKILL_HAULING      = SKILL_MAX,
-	                    SKILL_COMPUTER     = SKILL_MAX,
-	                    SKILL_BOTANY       = SKILL_MAX,
-	                    SKILL_COOKING      = SKILL_MAX,
-	                    SKILL_COMBAT       = SKILL_MAX,
-	                    SKILL_WEAPONS      = SKILL_MAX,
-	                    SKILL_FORENSICS    = SKILL_MAX,
-	                    SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX,
-	                    SKILL_DEVICES      = SKILL_MAX,
-	                    SKILL_SCIENCE      = SKILL_MAX,
-	                    SKILL_MEDICAL      = SKILL_MAX,
-	                    SKILL_ANATOMY      = SKILL_MAX,
-	                    SKILL_CHEMISTRY    = SKILL_MAX)
-	skill_points = 32
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_BASIC,
+		SKILL_MEDICAL     = SKILL_BASIC
+	)
+	max_skill = list(
+		SKILL_MEDICAL     = SKILL_MAX
+	)
 	access = list(access_medical, access_psychiatrist, access_maint_tunnels, access_solgov_crew, access_medical_equip, access_virology)
 	minimal_access = list()
 	software_on_spawn = list(
