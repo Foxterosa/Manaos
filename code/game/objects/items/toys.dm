@@ -768,6 +768,18 @@
 	name = "figura de accion: Vaum"
 	desc = "Una figura de accion de Vaum marca \"Manaos\"."
 	icon_state = "vaum"
+	var/cooldown = 0
+/obj/item/toy/figure/vaum/attack_self(mob/user as mob)
+	if(cooldown < world.time - 8)
+		playsound(user, 'sound/voice/chime.ogg', 20, 1)
+		cooldown = world.time
+/obj/item/toy/figure/vaum/attack_hand(mob/user as mob)
+	if(loc == user)
+		if(cooldown < world.time - 8)
+			playsound(user, 'sound/voice/chime.ogg', 20, 1)
+			cooldown = world.time
+			return
+	..()
 
 /obj/item/toy/figure/eerika
 	name = "figura de accion: Eerika"

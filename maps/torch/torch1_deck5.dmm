@@ -1703,6 +1703,12 @@
 	},
 /obj/item/device/geiger,
 /obj/item/device/geiger,
+/obj/item/inflatable/door,
+/obj/item/inflatable/door,
+/obj/item/inflatable/door,
+/obj/item/inflatable/wall,
+/obj/item/inflatable/wall,
+/obj/item/inflatable/wall,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "cW" = (
@@ -2131,17 +2137,15 @@
 /area/exploration_shuttle/airlock)
 "dE" = (
 /obj/structure/table/steel_reinforced,
-/obj/machinery/button/blast_door{
-	id_tag = "guppy_hatch";
-	name = "Rear Hatch Control";
-	pixel_x = 0;
-	pixel_y = 0;
-	req_access = list("ACCESS_TORCH_GUP")
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "dF" = (
 /obj/structure/bed/chair/shuttle/blue,
+/obj/machinery/button/blast_door{
+	id_tag = "garuda";
+	name = "Protective Shutters Control";
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "dG" = (
@@ -2469,6 +2473,14 @@
 "ef" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/hull,
+/obj/machinery/door/blast/regular/open{
+	density = 0;
+	dir = 1;
+	icon_state = "pdoor0";
+	id_tag = "garuda";
+	name = "Protective Shutters";
+	opacity = 0
+	},
 /turf/simulated/floor/plating,
 /area/guppy_hangar/start)
 "eg" = (
@@ -14087,10 +14099,6 @@
 	icon_state = "walnut_broken0"
 	},
 /area/vacant/bar)
-"zM" = (
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/quartermaster/exploration)
 "zO" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/r_n_d/destructive_analyzer,
@@ -18562,15 +18570,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
-"Rh" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/quartermaster/expedition)
 "Ri" = (
 /obj/machinery/door/airlock/research{
 	id_tag = null;
@@ -19320,6 +19319,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/petrov/maint)
+"Ua" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/expedition)
 "Um" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -19780,6 +19788,18 @@
 /obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
 /area/shuttle/petrov/isolation)
+"Wm" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/corner/brown{
+	dir = 10
+	},
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/storage)
 "Wn" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
@@ -20152,6 +20172,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/petrov/maint)
+"XR" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/exploration)
 "XS" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -20336,18 +20360,6 @@
 /obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
-"Yp" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/floor_decal/corner/brown{
-	dir = 10
-	},
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/quartermaster/storage)
 "Yr" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -20380,6 +20392,14 @@
 "YC" = (
 /obj/effect/paint/hull,
 /obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/machinery/door/blast/regular/open{
+	density = 0;
+	dir = 1;
+	icon_state = "pdoor0";
+	id_tag = "garuda";
+	name = "Protective Shutters";
+	opacity = 0
+	},
 /turf/simulated/floor/plating,
 /area/guppy_hangar/start)
 "YE" = (
@@ -35437,7 +35457,7 @@ kL
 hl
 iP
 kg
-zM
+XR
 ki
 jD
 eu
@@ -42290,7 +42310,7 @@ qt
 WU
 Ez
 qg
-Rh
+Ua
 qu
 pU
 qy
@@ -42508,7 +42528,7 @@ os
 OG
 ox
 iF
-Yp
+Wm
 Ym
 Ym
 Ym
