@@ -5579,9 +5579,6 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/structure/sign/double/icarus/solgovflag/right{
 	dir = 8;
 	icon_state = "solgovflag-right";
@@ -6258,6 +6255,9 @@
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 26
+	},
+/obj/machinery/light{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/mess)
@@ -15062,6 +15062,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/ce)
+"Ba" = (
+/obj/structure/curtain/black,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Bp" = (
 /obj/effect/floor_decal/corner/red/full,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -15582,10 +15586,6 @@
 "DN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/bridge/aft)
-"DT" = (
-/obj/structure/closet/secure_closet/bs,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "DY" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -15910,6 +15910,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
+"FD" = (
+/obj/effect/landmark/start{
+	name = "Bridge Officer"
+	},
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/blue,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "FE" = (
 /obj/machinery/computer/modular/preset/engineering{
 	dir = 1
@@ -16446,9 +16454,6 @@
 /obj/effect/paint/hull,
 /turf/simulated/floor/plating,
 /area/aquila/cockpit)
-"Ic" = (
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "Id" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17398,6 +17403,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
+"MR" = (
+/obj/structure/closet/secure_closet/bs,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "MU" = (
 /obj/machinery/light{
 	dir = 4
@@ -17730,14 +17739,6 @@
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
 /area/aquila/maintenance)
-"Ol" = (
-/obj/effect/landmark/start{
-	name = "Bridge Officer"
-	},
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/blue,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "Om" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -17857,6 +17858,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/fore)
+"Ph" = (
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Pt" = (
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
@@ -18868,13 +18872,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"TO" = (
-/obj/machinery/camera/network/command{
-	c_tag = "Bridge - Commanding Officer";
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/co)
 "TQ" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -19086,6 +19083,13 @@
 /obj/structure/bed/chair/padded/green,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
+"Up" = (
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge - Commanding Officer";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/co)
 "Us" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/sticky_pad/random{
@@ -19303,6 +19307,10 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/secure_storage)
+"Vz" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/bridge/storage)
 "VB" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -19693,10 +19701,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
-"XF" = (
-/obj/structure/curtain/black,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "XI" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/hull,
@@ -20144,10 +20148,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
-"ZG" = (
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/bridge/storage)
 "ZI" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -27776,9 +27776,9 @@ aa
 af
 Nu
 Sa
-Ic
-Ic
-XF
+Ph
+Ph
+Ba
 cE
 XO
 Nu
@@ -27805,7 +27805,7 @@ RV
 Mz
 Yz
 Pt
-TO
+Up
 An
 uy
 hk
@@ -27977,9 +27977,9 @@ aa
 aa
 af
 Nu
-Ol
+FD
 mt
-DT
+MR
 Nu
 cE
 nS
@@ -28189,7 +28189,7 @@ JR
 qO
 zC
 dE
-ZG
+Vz
 Hf
 ee
 Wv

@@ -14565,6 +14565,15 @@
 /obj/machinery/atmospherics/pipe/manifold/visible,
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/petrov/maint)
+"BA" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/expedition)
 "BC" = (
 /turf/simulated/wall/r_wall/hull,
 /area/rnd/canister)
@@ -17949,14 +17958,9 @@
 /obj/structure/table/rack{
 	dir = 4
 	},
-/obj/item/stack/material/glass/ten,
-/obj/item/stack/material/glass/reinforced{
-	amount = 30
-	},
-/obj/item/stack/material/glass/reinforced{
-	amount = 30
-	},
-/obj/item/stack/material/glass/ten,
+/obj/item/stack/material/glass/reinforced/fifty,
+/obj/item/stack/material/glass/phoronrglass/fifty,
+/obj/item/stack/material/plasteel/fifty,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/storage)
 "Oz" = (
@@ -18601,6 +18605,10 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/reinforced/airless,
 /area/shuttle/petrov/rnd)
+"Ro" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/exploration)
 "Rr" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 8
@@ -19319,15 +19327,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/petrov/maint)
-"Ua" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/quartermaster/expedition)
 "Um" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -19788,18 +19787,6 @@
 /obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
 /area/shuttle/petrov/isolation)
-"Wm" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/floor_decal/corner/brown{
-	dir = 10
-	},
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/quartermaster/storage)
 "Wn" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
@@ -20172,10 +20159,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/petrov/maint)
-"XR" = (
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/quartermaster/exploration)
 "XS" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -20280,16 +20263,6 @@
 /obj/structure/table/rack{
 	dir = 4
 	},
-/obj/item/stack/material/steel{
-	amount = 30
-	},
-/obj/item/stack/material/plasteel{
-	amount = 20
-	},
-/obj/item/stack/material/aluminium/ten,
-/obj/item/stack/material/plastic/ten,
-/obj/item/stack/material/plastic/ten,
-/obj/item/stack/material/aluminium/ten,
 /obj/effect/floor_decal/corner/brown{
 	dir = 6
 	},
@@ -20299,6 +20272,10 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/aluminium/fifty,
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/storage)
 "Yj" = (
@@ -20415,6 +20392,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/petrov/security)
+"YF" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/corner/brown{
+	dir = 10
+	},
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/storage)
 "YG" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -35457,7 +35446,7 @@ kL
 hl
 iP
 kg
-XR
+Ro
 ki
 jD
 eu
@@ -42310,7 +42299,7 @@ qt
 WU
 Ez
 qg
-Ua
+BA
 qu
 pU
 qy
@@ -42528,7 +42517,7 @@ os
 OG
 ox
 iF
-Wm
+YF
 Ym
 Ym
 Ym
