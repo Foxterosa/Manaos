@@ -161,7 +161,7 @@
 	return "You are an Engineer Trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard."
 
 /datum/job/roboticist
-	title = "Roboticist"
+	title = "Robotista"
 	department = "Ingenieria"
 	department_flag = ENG
 
