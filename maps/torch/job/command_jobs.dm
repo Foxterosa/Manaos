@@ -323,7 +323,7 @@
 	return "Eres el Asesor Superior Alistado. Eres la persona de mayor rango alistada en la nave. Sigues de forma directa las ordenes del Oficial Comandante. Les aconsejas sobre las preocupaciones de los alistados, proporcionas experiencia y asesoramiento a los oficiales. Eres responsable de asegurar la disciplina y buena conducta entre los reclutas, asi como de avisar a los oficiales de cualquiera problema y \"asesorarles\" sobre los errores que pueden cometer. Tambien te encargas de varias tareas en nombre del OC y OE. Eres alguien experienciado y conoces las regulaciones mejor que nadie."
 
 /datum/job/bridgeofficer
-	title = "Oficial de Bridge"
+	title = "Oficial de Puente"
 	department = "Soporte"
 	department_flag = SPT
 	total_positions = 3
