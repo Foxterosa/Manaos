@@ -93,7 +93,7 @@
 	return "Eres el Oficial Ejecutivo. Eres un Oficial superior con experiencia, el segundo en comandar y en ser responsable sobre el funcionamiento de la nave bajo tu oficial al mando. En su ausencia, puedes tomar su puesto. Tu deber principal es dirigir a los jefes de cada departamento y tambien los que no lo son. Tambien eres responsable de los contratistas y pasajeros que se encuentran abordo de la nave. Considera al Asesor Superior Alistado y a los Oficiales de Puente a tu disposicion."
 
 /datum/job/rd
-	title = "Oficial Jefe de Ciencias"
+	title = "Oficial Cientifico en Jefe"
 	supervisors = "the Commanding Officer"
 	economic_power = 20
 	minimal_player_age = 6
@@ -236,7 +236,7 @@
 	return "Eres el Oficial Ingeniero en Jefe. Manejas el departamento de ingenieria. Eres responsable del Ingeniero Senior quien es tu mano izquierda y (deberia ser) un habilidoso y experimentado ingeniero. Maneja tus ingenieros, asegura que el buque se mantenga con energia, que las brechas esten reparadas y los problemas resueltos. Aconseja al OC en asuntos de Ingenieria. Tambien eres responsable de mantenimiento y control de cualquiere buque sintetico. Eres un Ingeniero experimentado con una gran de conocimientos teoricos. Deberias de conocer las regulaciones de los buques en un nivel razonable."
 
 /datum/job/hos
-	title = "Jefe de Seguridad"
+	title = "Oficial Maestro de Seguridad en Jefe"
 	supervisors = "Oficial Comandante y Oficial Ejecutivo"
 	economic_power = 8
 	minimal_player_age = 14
@@ -275,7 +275,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/hos/get_description_blurb()
-	return "Eres el Jefe de Seguridad. Manejas la seguridad de la nave tanto como el Maestro de Armas y la Policia Militar, como el Guardian de Brig y el Tecnico Forense. Mantienes la nave a salvo. Te encargas de los asuntos de seguridad externos e internos. Eres la ley, sigues las ordenes del Oficial Comandante y el Oficial Ejecutivo. Se espera que tengas conocimiento del SCMJ, la ley solar y los procedimientos de cada alerta."
+	return "Eres el Oficial Maestro de Seguridad en Jefe. Manejas la seguridad de la nave tanto como el Maestro de Armas y la Policia Militar, como el Guardian de Brig y el Tecnico Forense. Mantienes la nave a salvo. Te encargas de los asuntos de seguridad externos e internos. Eres la ley, sigues las ordenes del Oficial Comandante y el Oficial Ejecutivo. Se espera que tengas conocimiento del SCMJ, la ley solar y los procedimientos de cada alerta."
 
 /datum/job/sea
 	title = "Asesor Superior Alistado"

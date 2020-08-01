@@ -2,7 +2,7 @@
 	title = "Guardian de Brig"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Jefe de Seguridad"
+	supervisors = "Oficial Maestro de Seguridad en Jefe"
 	economic_power = 5
 	minimal_player_age = 6
 	minimum_character_age = list(SPECIES_HUMAN = 27)
@@ -40,7 +40,7 @@
 	title = "Tecnico Forense"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Jefe de Seguridad"
+	supervisors = "Oficial Maestro de Seguridad en Jefe"
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
@@ -88,7 +88,7 @@
 	title = "Maestro de Armas"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "el Jefe de Seguridad"
+	supervisors = "el Oficial Maestro de Seguridad en Jefe"
 	economic_power = 4
 	minimal_player_age = 3
 	minimum_character_age = list(SPECIES_HUMAN = 18)
