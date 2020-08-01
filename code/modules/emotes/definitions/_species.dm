@@ -61,6 +61,10 @@
 		/decl/emote/visible/ascent_dazzle
 	)
 
+/datum/species/shapeshifter/promethean
+	default_emotes = list(
+		/decl/emote/audible/squish)
+
 /mob/living/carbon/human/set_species(var/new_species, var/default_colour = 1)
 	. = ..()
 	update_emotes()

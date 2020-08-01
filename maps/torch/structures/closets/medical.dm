@@ -26,7 +26,7 @@
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
 /obj/structure/closet/secure_closet/CMO_torch
-	name = "chief medical officer's locker"
+	name = "armario del oficial medico"
 	req_access = list(access_cmo)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical/cmo
 
@@ -59,7 +59,7 @@
 	)
 
 /obj/structure/closet/secure_closet/medical_torchsenior
-	name = "physician's locker"
+	name = "armrio de medico"
 	req_access = list(access_senmed)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical/physician
 
@@ -86,15 +86,38 @@
 	)
 
 /obj/structure/closet/secure_closet/medical_torch
-	name = "medical technician's locker"
+	name = "armario de tecnico medico"
 	req_access = list(access_medical_equip)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
 /obj/structure/closet/secure_closet/medical_torch/WillContain()
 	return list(
 		/obj/item/clothing/under/sterile,
+		RANDOM_SCRUBS = 2,
+		/obj/item/clothing/shoes/white,
+		/obj/item/device/radio/headset/headset_med,
+		/obj/item/device/radio/headset/headset_corpsman/alt,
+		/obj/item/clothing/suit/storage/toggle/labcoat/coat,
+		/obj/item/weapon/storage/belt/medical,
+		/obj/item/device/scanner/health,
+		/obj/item/clothing/glasses/hud/health,
+		/obj/item/weapon/storage/firstaid/adv,
+		/obj/item/weapon/material/knife/folding/swiss,
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med))
+	)
+
+/obj/structure/closet/secure_closet/paramedico
+	name = "armario del paramedico"
+	req_access = list(access_medical_equip)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
+
+/obj/structure/closet/secure_closet/paramedico/WillContain()
+	return list(
+		/obj/item/clothing/under/sterile,
 		/obj/item/clothing/accessory/storage/white_vest,
 		/obj/item/clothing/suit/storage/toggle/fr_jacket,
+		/obj/item/clothing/suit/storage/toggle/fr_jacket/ems,
 		/obj/item/clothing/shoes/white,
 		/obj/item/device/radio/headset/headset_med,
 		/obj/item/device/radio/headset/headset_corpsman/alt,
@@ -111,6 +134,21 @@
 		/obj/item/weapon/material/knife/folding/swiss,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med))
+	)
+
+/obj/structure/closet/wardrobe/enfermera
+	name = "armario de enfermeras"
+	closet_appearance = /decl/closet_appearance/wardrobe/white
+
+/obj/structure/closet/wardrobe/enfermera/WillContain()
+	return list(
+		/obj/item/clothing/head/enfermera1 = 2,
+		/obj/item/clothing/under/rank/enfermera1 = 2,
+		/obj/item/clothing/head/enfermera2 = 2,
+		/obj/item/clothing/under/rank/enfermera2 = 2,
+		/obj/item/clothing/head/nursehat = 4,
+		/obj/item/clothing/under/rank/nurse = 2,
+		/obj/item/clothing/under/rank/nursesuit = 2
 	)
 
 /obj/structure/closet/wardrobe/medic_torch

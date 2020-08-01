@@ -1,24 +1,24 @@
 //Makes sure we don't get any merchant antags as a balance concern. Can also be used for future Torch specific antag restrictions.
 /datum/antagonist/changeling
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/captain, /datum/job/hop, /datum/job/submap)
 
 /datum/antagonist/godcultist
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/merchant, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/adjudicator, /datum/job/blueshield, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
 
 /datum/antagonist/cultist
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/merchant, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/adjudicator, /datum/job/blueshield, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
 
 /datum/antagonist/loyalists
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/adjudicator, /datum/job/blueshield, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
 
 /datum/antagonist/revolutionary
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/adjudicator, /datum/job/blueshield, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
 
 /datum/antagonist/traitor
-	blacklisted_jobs = list(/datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/ai, /datum/job/cyborg, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/merchant, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/ai, /datum/job/cyborg, /datum/job/adjudicator, /datum/job/blueshield, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
 
 /datum/antagonist/renegade
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt,/datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/adjudicator, /datum/job/blueshield, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt,/datum/job/submap)
 
 /datum/antagonist/ert
 	var/sic //Second-In-Command

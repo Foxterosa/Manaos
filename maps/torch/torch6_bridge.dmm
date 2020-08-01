@@ -247,7 +247,6 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/obj/structure/closet/secure_closet/blueshield,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/adjudicator)
 "aB" = (
@@ -2694,6 +2693,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/bed/chair/comfy/blue{
+	icon_state = "comfychair_preview";
+	dir = 4
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/co)
@@ -6865,7 +6868,7 @@
 	},
 /obj/item/device/radio/intercom/locked/ai_private{
 	dir = 1;
-	pixel_y = -22
+	pixel_y = -28
 	},
 /obj/item/device/radio/intercom/custom{
 	pixel_y = 22
@@ -7754,7 +7757,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/carpet/blue2,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "mw" = (
 /obj/machinery/light/small{
@@ -8511,6 +8514,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/machinery/hologram/holopad,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "nS" = (
@@ -10208,7 +10212,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
-/obj/item/weapon/storage/lunchbox/heart,
+/obj/item/weapon/storage/lunchbox/medbay,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
 "qy" = (
@@ -15425,6 +15429,10 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/bridge/fore)
+"CI" = (
+/obj/structure/curtain/black,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "CN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/bridge/aftport)
@@ -15749,6 +15757,13 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
+"EI" = (
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge - Commanding Officer";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/co)
 "EJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -15793,6 +15808,14 @@
 /obj/item/clothing/accessory/medal/solgov/heart,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
+"ET" = (
+/obj/effect/landmark/start{
+	name = "Bridge Officer"
+	},
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/blue,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "EV" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
@@ -15927,6 +15950,10 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
+"FJ" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/bridge/storage)
 "FK" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
@@ -15950,6 +15977,9 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"FX" = (
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Ga" = (
 /obj/effect/floor_decal/corner/yellow{
 	icon_state = "corner_white";
@@ -17298,6 +17328,10 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
 	},
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge - Bridge Storage";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "Mj" = (
@@ -17839,6 +17873,10 @@
 "Pt" = (
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
+"Pz" = (
+/obj/structure/closet/secure_closet/bs,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "PB" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -18437,7 +18475,7 @@
 "Sa" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/weapon/tableflag,
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/carpet/blue2,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "Sb" = (
 /obj/machinery/door/airlock/hatch{
@@ -19334,6 +19372,9 @@
 "VW" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/captain,
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge - CO's Quarters"
+	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cobed)
 "VY" = (
@@ -27736,9 +27777,9 @@ aa
 af
 Nu
 Sa
-ms
-ms
-mU
+FX
+FX
+CI
 cE
 XO
 Nu
@@ -27765,7 +27806,7 @@ RV
 Mz
 Yz
 Pt
-Pt
+EI
 An
 uy
 hk
@@ -27937,9 +27978,9 @@ aa
 aa
 af
 Nu
-aL
+ET
 mt
-mI
+Pz
 Nu
 cE
 nS
@@ -28149,7 +28190,7 @@ JR
 qO
 zC
 dE
-Tl
+FJ
 Hf
 ee
 Wv

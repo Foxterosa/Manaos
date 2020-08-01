@@ -1763,10 +1763,6 @@
 	name = "\improper Cambiador"
 	icon_state = "Sleep"
 
-/area/crew_quarters_boh/cabin_main/laundry
-	name = "\improper Laundry Room"
-	icon_state = "Sleep"
-
 /area/crew_quarters_boh/cabin_main/janitorial
 	name = "\improper Cabin Janitorial"
 	icon_state = "janitor"

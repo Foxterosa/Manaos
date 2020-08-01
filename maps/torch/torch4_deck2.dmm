@@ -443,8 +443,12 @@
 	},
 /obj/structure/table/rack,
 /obj/item/weapon/rig/medical/equipped,
-/obj/machinery/door/window/brigdoor/southleft{
-	name = "suit storage"
+/obj/machinery/door/window/eastright{
+	base_state = "left";
+	dir = 2;
+	does_spin = 1;
+	icon_state = "left";
+	name = "Medical Reception"
 	},
 /turf/simulated/floor/tiled/white,
 /area/storage/medical)
@@ -979,6 +983,10 @@
 "bP" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
+	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Medical Storage";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/storage/medical)
@@ -7144,6 +7152,7 @@
 	dir = 4
 	},
 /obj/machinery/hologram/holopad,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engineering_monitoring)
 "og" = (
@@ -16373,6 +16382,10 @@
 "LL" = (
 /obj/structure/closet/secure_closet/engineering_welding,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/camera/network/engineering{
+	c_tag = "Engineering - Engineering Bay";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/locker_room)
 "LM" = (
@@ -18276,6 +18289,9 @@
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/camera/network/engineering{
+	c_tag = "Engineering - Locker Room 1"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "Rq" = (
@@ -18296,6 +18312,13 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"Rz" = (
+/obj/machinery/camera/network/second_deck{
+	c_tag = "Second Deck - Fore";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/seconddeck/fore)
 "RE" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
@@ -33184,7 +33207,7 @@ it
 bI
 yx
 xR
-xR
+Rz
 wT
 iM
 xS

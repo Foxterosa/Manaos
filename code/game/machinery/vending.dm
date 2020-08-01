@@ -636,7 +636,9 @@
 					/obj/item/weapon/reagent_containers/food/condiment/mint = 2,
 					/obj/item/weapon/reagent_containers/food/drinks/ice = 10,
 					/obj/item/weapon/glass_extra/stick = 15,
-					/obj/item/weapon/glass_extra/straw = 15)
+					/obj/item/weapon/glass_extra/straw = 15,
+					/obj/item/weapon/reagent_containers/food/condiment/yerba = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/mate = 5)
 	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/bottle/premiumwine = 3,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/premiumvodka = 3,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/patron = 5,
@@ -1100,6 +1102,7 @@
 	/obj/item/weapon/storage/lunchbox/nymph = 3,
 	/obj/item/weapon/storage/lunchbox/syndicate = 3,
 	/obj/item/weapon/storage/lunchbox/dais = 3,
+	/obj/item/weapon/storage/lunchbox/medbay = 3,
 	/obj/item/weapon/material/knife/kitchen/cleaver = 2,
 	/obj/item/weapon/reagent_containers/cooking_container/oven = 7, // two spare
 	/obj/item/weapon/reagent_containers/cooking_container/fryer = 4, // two spare
@@ -1562,7 +1565,7 @@
 
 
 /obj/machinery/vending/figurevendor
-	name = "Vendedor de figuras de accion \"Manaos\"."
+	name = "Vendedor de figuras de accion \"Manaos\""
 	desc = "Una maquina que vende figuras de accion de edicion limitada."
 	vend_delay = 30
 	base_type = /obj/machinery/vending/figurevendor
@@ -1571,18 +1574,20 @@
 	icon_deny = "MagiVend-deny"
 	icon_vend = "MagiVend-vend"
 	products = list(/obj/item/toy/figure/aleph,
-				/obj/item/toy/figure/alicia,
+					/obj/item/toy/figure/alicia,
 					/obj/item/toy/figure/alysson,
 					/obj/item/toy/figure/ana,
+					/obj/item/toy/figure/angelina,
+					/obj/item/toy/figure/area,
 					/obj/item/toy/figure/ariel,
 					/obj/item/toy/figure/arkin,
 					/obj/item/toy/figure/bruno,
 					/obj/item/toy/figure/camilo,
 					/obj/item/toy/figure/connor,
 					/obj/item/toy/figure/dana,
-					/obj/item/toy/figure/danika,
 					/obj/item/toy/figure/darkness,
-					/obj/item/toy/figure/eerika,
+					/obj/item/toy/figure/duck,
+					/obj/item/toy/figure/franco,
 					/obj/item/toy/figure/hal,
 					/obj/item/toy/figure/honkito,
 					/obj/item/toy/figure/jr,
@@ -1600,6 +1605,9 @@
 					/obj/item/toy/figure/vaum,
 					/obj/item/toy/figure/wh,
 					/obj/item/toy/figure/zsle)
+
+	contraband = list(/obj/item/toy/figure/vlad)
+
 
 
 

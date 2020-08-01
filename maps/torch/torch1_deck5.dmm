@@ -1964,9 +1964,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "ds" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/garden)
 "dt" = (
@@ -6697,6 +6694,7 @@
 	pixel_y = 0;
 	rcon_setting = 2
 	},
+/obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark,
 /area/command/pilot)
 "lk" = (
@@ -11315,6 +11313,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark,
 /area/security/infantry)
 "st" = (
@@ -13426,9 +13425,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fifthdeck/aft)
-"xo" = (
-/turf/space,
-/area/security/infantry/armory)
 "xp" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
 	dir = 4
@@ -14091,6 +14087,10 @@
 	icon_state = "walnut_broken0"
 	},
 /area/vacant/bar)
+"zM" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/exploration)
 "zO" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/r_n_d/destructive_analyzer,
@@ -14767,10 +14767,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/shuttle/petrov/maint)
-"Co" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/airless,
-/area/security/infantry/armory)
 "Cp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	icon_state = "intact";
@@ -15523,9 +15519,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
-"Fi" = (
-/turf/simulated/wall/r_wall/hull,
-/area/space)
 "Fk" = (
 /turf/simulated/wall/prepainted,
 /area/hallway/primary/fifthdeck/aft)
@@ -18102,6 +18095,7 @@
 /area/exploration_shuttle/cargo)
 "Pd" = (
 /obj/random_multi/single_item/runtime,
+/obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/exploration)
 "Pe" = (
@@ -18568,6 +18562,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"Rh" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/expedition)
 "Ri" = (
 /obj/machinery/door/airlock/research{
 	id_tag = null;
@@ -20333,6 +20336,18 @@
 /obj/random_multi/single_item/poppy,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
+"Yp" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/corner/brown{
+	dir = 10
+	},
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/storage)
 "Yr" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -31760,8 +31775,8 @@ aa
 aa
 aa
 aa
-xo
-Co
+aa
+BW
 If
 OE
 OE
@@ -31961,7 +31976,7 @@ aa
 aa
 aa
 aa
-xo
+aa
 If
 If
 If
@@ -31973,7 +31988,7 @@ rW
 sU
 uW
 OE
-Fi
+OE
 aa
 aa
 aa
@@ -32162,8 +32177,8 @@ aa
 aa
 aa
 aa
-xo
-xo
+aa
+aa
 If
 If
 cU
@@ -32364,8 +32379,8 @@ aa
 aa
 aa
 aa
-xo
-xo
+aa
+aa
 If
 aM
 dn
@@ -32566,7 +32581,7 @@ aa
 aa
 aa
 aa
-xo
+aa
 If
 If
 bJ
@@ -32768,7 +32783,7 @@ aa
 aa
 aa
 aa
-xo
+aa
 If
 If
 cF
@@ -32970,7 +32985,7 @@ aa
 aa
 aa
 aa
-xo
+aa
 If
 If
 cT
@@ -35422,7 +35437,7 @@ kL
 hl
 iP
 kg
-fH
+zM
 ki
 jD
 eu
@@ -42275,7 +42290,7 @@ qt
 WU
 Ez
 qg
-qg
+Rh
 qu
 pU
 qy
@@ -42493,7 +42508,7 @@ os
 OG
 ox
 iF
-Ax
+Yp
 Ym
 Ym
 Ym

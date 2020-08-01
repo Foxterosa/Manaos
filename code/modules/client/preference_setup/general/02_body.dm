@@ -29,6 +29,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	var/disabilities = 0
 
 	var/has_cortical_stack = FALSE
+	var/sprite_resize = FALSE
 	var/equip_preview_mob = EQUIP_PREVIEW_ALL
 
 	var/icon/bgstate = "000"
@@ -63,6 +64,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	from_file(S["rlimb_data"], pref.rlimb_data)
 	from_file(S["body_markings"], pref.body_markings)
 	from_file(S["has_cortical_stack"], pref.has_cortical_stack)
+	from_file(S["sprite_resize"], pref.sprite_resize)
 	from_file(S["body_descriptors"], pref.body_descriptors)
 	pref.preview_icon = null
 	from_file(S["bgstate"], pref.bgstate)
@@ -91,6 +93,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	to_file(S["rlimb_data"], pref.rlimb_data)
 	to_file(S["body_markings"], pref.body_markings)
 	to_file(S["has_cortical_stack"], pref.has_cortical_stack)
+	to_file(S["sprite_resize"], pref.sprite_resize)
 	to_file(S["body_descriptors"], pref.body_descriptors)
 	to_file(S["bgstate"], pref.bgstate)
 
@@ -110,6 +113,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	pref.g_eyes			= sanitize_integer(pref.g_eyes, 0, 255, initial(pref.g_eyes))
 	pref.b_eyes			= sanitize_integer(pref.b_eyes, 0, 255, initial(pref.b_eyes))
 	pref.b_type			= sanitize_text(pref.b_type, initial(pref.b_type))
+	pref.sprite_resize = sanitize_bool(pref.sprite_resize, initial(pref.sprite_resize))
 	pref.has_cortical_stack = sanitize_bool(pref.has_cortical_stack, initial(pref.has_cortical_stack))
 
 	if(!pref.species || !(pref.species in playable_species))
@@ -173,6 +177,11 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 			. += pref.has_cortical_stack ? "present." : "<b>not present.</b>"
 			. += " \[<a href='byond://?src=\ref[src];toggle_stack=1'>toggle</a>\]"
 		. += "<br>"
+
+	. += "Sprite Resize: "
+	. += pref.sprite_resize ? "<b>Yes.</b>" : "No."
+	. += " \[<a href='byond://?src=\ref[src];toggle_resize=1'>toggle</a>\]<br>"
+
 	. += "Blood Type: <a href='?src=\ref[src];blood_type=1'>[pref.b_type]</a><br>"
 
 	if(has_flag(mob_species, HAS_BASE_SKIN_COLOURS))
@@ -336,6 +345,10 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 					return TOPIC_REFRESH
 	else if(href_list["toggle_stack"])
 		pref.has_cortical_stack = !pref.has_cortical_stack
+		return TOPIC_REFRESH
+
+	else if(href_list["toggle_resize"])
+		pref.sprite_resize = !pref.sprite_resize
 		return TOPIC_REFRESH
 
 	else if(href_list["blood_type"])
@@ -722,3 +735,16 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 			var/status = pref.organ_data[name]
 			if(status in list("assisted","mechanical"))
 				pref.organ_data[name] = null
+
+/datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = FALSE)
+	..()
+	if(sprite_resize)
+		switch(character.descriptors["height"])
+			if(1)
+				character.size_multiplier = 0.75
+			if(2)
+				character.size_multiplier = 0.90
+			if(4)
+				character.size_multiplier = 1.10
+			if(5)
+				character.size_multiplier = 1.25
