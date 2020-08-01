@@ -490,7 +490,7 @@
 /////////
 /datum/job/flag
 	title = "Flag Officer"
-	department = "Support"
+	department = "Soporte"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1

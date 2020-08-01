@@ -2,8 +2,8 @@
 // Cadet
 /////////
 /datum/job/seccadet
-	title = "Security Cadet"
-	department = "Security"
+	title = "Cadete de Seguridad"
+	department = "Seguridad"
 	department_flag = SEC
 	total_positions = 2
 	spawn_positions = 2
@@ -13,7 +13,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	selection_color = "#601c1c"
 	alt_titles = list(
-		"Forensics Trainee"
+		"Aprendiz de Forense"
 		)
 	min_skill = list(   SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_COMBAT      = SKILL_BASIC)
@@ -39,7 +39,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant)
 
 /datum/job/seccadetn/get_description_blurb()
-	return "You're either a new hire, or a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
+	return "Eres un nuevo empleado, o un nuevo aprendiz a bordo del [GLOB.using_map.full_name]. Todo el mundo es tu superior, y como tal, es mejor que los escuches."
 
 /datum/job/squad_lead
 	allowed_branches = list(/datum/mil_branch/marine_corps)
@@ -51,8 +51,8 @@
 			            access_infcom, access_inftech, access_aquila, access_eva)
 
 /datum/job/squad_lead
-	title = "Squad Lead"
-	department = "Infantry"
+	title = "Lider de Escuadron"
+	department = "Infanteria"
 	department_flag = INF
 	head_position = 1
 	total_positions = 1
@@ -79,12 +79,12 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/squad_lead/get_description_blurb()
-	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Squad Leader. Your duty is to organize and lead the small infantry squad to support the Pathfinder. You command Marines in your Squad. You make sure that expedition has the firepower it needs. Once on the away mission, your duty is to ensure that the worst doesn't become reality."
+	return "<span class='warning'>NO eres seguridad. Ignorar esto puede conllevar a un Jobban o algo peor...</span> - Eres el Lider de Escuadron. Tu trabajo es organizar y liderar un reducido grupo de infanteria para apoyar al Jefe de Exploradores. Comandas a los Marines en tu Escuadron. Te aseguras que la expedicion tenga las armas de fuego que necesite. Una vez en la mision, tu deber sera asegurarte de que lo peor no se pueda hacer realidad."
 
 /datum/job/combat_tech
-	title = "Combat Technician"
-	supervisors = "the Squad Leader"
-	department = "Infantry"
+	title = "Tecnico en Combate"
+	department = "el Lider de Escuadron"
+	department = "Infanteria"
 	department_flag = INF
 	total_positions = 1
 	spawn_positions = 1
@@ -116,27 +116,27 @@
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_inftech, access_aquila, access_eva)
 	alt_titles = list(
-		"Combat Engineer",
-		"Combat Medic")
+		"Ingeniero de Combate",
+		"Medico de Combate")
 
 /datum/job/combat_tech/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
+			if(M.client && M.mind && M.mind.assigned_role == "Lider de Escuadron")
 				return TRUE
 	return FALSE
 
 /datum/job/combat_tech/get_description_blurb()
-	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
+	return "<span class='warning'>NO eres seguridad. Ignorar esto puede conllevar a un Jobban o algo peor...</span> - Eres el unico Tecnico de Combate en el escuadron. Tu trabajo es proveer tanto tu asistencia militar como demoliciones tacticas, en caso de ser necesarias. Puedes asumir el mando si no hay un Lider de Escuadron presente."
 
 /datum/job/grunt
 	title = "Rifleman"
-	department = "Infantry"
+	department = "Infanteria"
 	department_flag = INF
 	total_positions = 4
 	spawn_positions = 4
 	minimal_player_age = 6
-	supervisors = "the Combat Technician and Squad Leader"
+	supervisors = "el Tecnico en Combate y el Lider de Escuadron"
 	selection_color = "#557e38"
 	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)
@@ -162,21 +162,21 @@
 			            access_aquila, access_eva)
 	alt_titles = list(
 		"Grunt",
-		"Trooper")
+		"Soldado")
 
 /datum/job/grunt/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
+			if(M.client && M.mind && M.mind.assigned_role == "Lider de Escuadron")
 				return TRUE
 	return FALSE
 
 /datum/job/grunt/get_description_blurb()
-	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
+	return "<span class='warning'>NO eres seguridad. Ignorar esto puede conllevar a un Jobban o algo peor...</span> - Eres un Marine! Tu deber es escuchar al Lider de Escuadron. Si no esta presente, el Tecnico de Combate puede mandar. Recibe las ordenes y haz lo mejor que puedas para no morir!. Oorah!"
 
 /datum/job/psiadvisor
-	title = "Psionic Advisor"
-	department = "Support"
+	title = "Asesor Psionico"
+	department = "Soporte"
 	department_flag = SPT
 	selection_color = "#2f2f7f"
 	total_positions = 1
@@ -207,15 +207,15 @@
 	)
 
 	alt_titles = list(
-		"Nanotrasen Psionic Operative" = /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/nt,
-		"Foundation Agent")
+		"Operativo Psionico de Nanotrasen" = /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/nt,
+		"Agente de la Fundacion")
 
 /datum/job/psiadvisor/equip(var/mob/living/carbon/human/H)
 	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT, "[PSI_COERCION]" = PSI_RANK_OPERANT, "[PSI_PSYCHOKINESIS]" = PSI_RANK_OPERANT, "[PSI_ENERGISTICS]" = PSI_RANK_OPERANT)
 	return ..()
 
 /datum/job/psiadvisor/get_description_blurb()
-	return "You are the Psionic Advisor, an agent of either the Foundation or Nanotrasen Psionic Corps. Alongside the Counselor, you're the only other individual with known and authorized Psionic abilities aboard the NTSS Dagon. Your main responsibility is advising the Commanding Officer on psionic matters. \
+	return "Eres el Asesor Psionico, un agente de la Fundacion o del Cuerpo Psionico de Nanotrasen. Junto con el Psiquiatra, you're the only other individual with known and authorized Psionic abilities aboard the NTSS Dagon. Your main responsibility is advising the Commanding Officer on psionic matters. \
 	Secondly, you're to assist the crew or Research on psionic matters, or guide any newly emergent crew that awaken with psionic abilities."
 
 /*
@@ -223,8 +223,8 @@
 */
 
 /datum/job/adjudicator
-	title = "Adjudicator"
-	department = "Support"
+	title = "Adjudicador"
+	department = "Soporte"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
@@ -246,16 +246,16 @@
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
 /datum/job/adjudicator/get_description_blurb()
-	return "You are the Adjudicator. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
+	return "Eres el Adjudicador. Tu trabajo es You are the Adjudicator. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
 
 
 /datum/job/blueshield
 	title = "Blueshield"
-	department = "Support"
+	department = "Soporte"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Command"
+	supervisors = "Comando"
 	selection_color = "#3d3d7f"
 	economic_power = 12
 	minimal_player_age = 5
@@ -284,12 +284,12 @@
 
 
 /datum/job/lawyer
-	title = "Lawyer"
-	department = "Service"
+	title = "Abogado"
+	department = "Servicio"
 	department_flag = SRV
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Adjudicator, The Galilei Convention and the Ship Regulations"
+	supervisors = "el Adujicador, Convencion de Galilei y las Regulaciones de la Nave/Navales"
 	economic_power = 10
 	minimal_player_age = 2
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/lawyer
@@ -305,4 +305,4 @@
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
 /datum/job/lawyer/get_description_blurb()
-	return "You are a lawyer. Your job is to prosecute or defend your client depending on the circumstances."
+	return "Eres un Abogado. tu trabajo es procesar o defender a tu cliente dependiendo de las circunstancias."

@@ -1,6 +1,6 @@
 /datum/job/senior_scientist
-	title = "Senior Researcher"
-	department = "Science"
+	title = "Investigador Senior"
+	department = "Ciencias"
 	department_flag = SCI
 
 	total_positions = 1
@@ -87,7 +87,7 @@
 
 /datum/job/scientist_assistant
 	title = "Research Assistant"
-	department = "Science"
+	department = "Ciencias"
 	department_flag = SCI
 	total_positions = 4
 	spawn_positions = 4
