@@ -984,7 +984,8 @@
 		/obj/item/weapon/storage/box/evidence = 6,
 		/obj/item/weapon/tape_roll = 2,
 		/obj/item/ammo_magazine/pistol/double/pepperball = 6,
-		/obj/item/ammo_magazine/pistol/double/rubber = 2)
+		/obj/item/ammo_magazine/pistol/double/rubber = 2,
+		/obj/item/clothing/mask/gas/death_commando = 3)
 	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,/obj/item/weapon/storage/box/donut = 2)
 
 /obj/machinery/vending/hydronutrients
