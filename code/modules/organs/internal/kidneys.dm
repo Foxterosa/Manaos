@@ -11,7 +11,7 @@
 
 /obj/item/organ/internal/kidneys/robotize()
 	. = ..()
-	icon_state = "rinones-protesis"
+	icon_state = "kidneys-prosthetic"
 
 /obj/item/organ/internal/kidneys/Process()
 	..()
