@@ -140,7 +140,7 @@
 	var/obj/item/organ/O = ..()
 	O.robotize()
 	O.status |= ORGAN_CUT_AWAY  // robotize() resets status to 0
-	visible_message("<span class='info'>El [src.name] se agita por un momento, luego escupe un [O].</span>")
+	visible_message("<span class='info'>El [src.name] se agita por un momento, luego escupe un [O.name].</span>")
 	return O
 
 /obj/machinery/organ_printer/robot/attackby(var/obj/item/weapon/W, var/mob/user)
@@ -155,7 +155,7 @@
 			to_chat(user, "<span class='warning'>El [src.name] esta muy lleno.</span>")
 			return
 		stored_matter = min(max_stored_matter, stored_matter + (sheets_to_take*matter_amount_per_sheet))
-		to_chat(user, "<span class='info'>El [src.name] procesa la [W]. Niveles de materia almacenada: [stored_matter]</span>")
+		to_chat(user, "<span class='info'>El [src.name] procesa la [W.name]. Niveles de materia almacenada: [stored_matter]</span>")
 		S.use(sheets_to_take)
 		return
 	return ..()

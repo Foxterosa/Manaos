@@ -24,7 +24,7 @@
 
 /obj/item/organ/internal/heart/robotize()
 	. = ..()
-	icon_state = "protesis-corazon"
+	icon_state = "heart-prosthetic"
 
 /obj/item/organ/internal/heart/Process()
 	if(owner)

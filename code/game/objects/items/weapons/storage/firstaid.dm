@@ -326,7 +326,7 @@
 	wrapper_color = COLOR_GRAY
 
 /obj/item/weapon/storage/pill_bottle/antidexafen
-	name = "bote de pastillas (Medicina fria)"
+	name = "bote de pastillas (Medicina para el resfriado)"
 	desc = "Medicina para el resfriado todo en uno. 15u dosis por pastilla. Seguro para bebes como tu!"
 
 	startswith = list(/obj/item/weapon/reagent_containers/pill/antidexafen = 21)
@@ -340,7 +340,7 @@
 	wrapper_color = "#a2819e"
 
 /obj/item/weapon/storage/pill_bottle/assorted
-	name = "bote de pastillas (Clasificado)"
+	name = "bote de pastillas (Variadas)"
 	desc = "Comunmente encontrado en paramedicos, estas botellas de pildoras surtidas contienen todos los elementos basicos."
 
 	startswith = list(
