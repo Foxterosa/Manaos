@@ -128,8 +128,8 @@
 	job_access_type = /datum/job/bartender
 
 
-/obj/item/weapon/card/id/torch/crew/magistrado
-	job_access_type = /datum/job/magistrado
+/obj/item/weapon/card/id/torch/crew/adjudicator
+	job_access_type = /datum/job/adjudicator
 	detail_color = COLOR_COMMAND_BLUE
 
 /obj/item/weapon/card/id/torch/crew/sea
