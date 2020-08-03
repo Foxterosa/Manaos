@@ -158,7 +158,7 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/engineer_trainee/get_description_blurb()
-	return "You are an Engineer Trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard."
+	return "Eres un Aprendiz de Ingeniero. Estas aprendiendo como operar varios sistemas de ingenieria de parte del personal de ingenieria superior. Sigues las ordenes del resto de ingenieros a bordo."
 
 /datum/job/roboticist
 	title = "Robotista"
@@ -169,12 +169,12 @@
 	spawn_positions = 2
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
-	supervisors = "the Chief Engineer and the Corporate Liaison."
+	supervisors = "el Oficial Ingeniero en Jefe y el Corporate Liaison."
 	selection_color = "#5b4d20"
 	economic_power = 6
 	alt_titles = list(
-		"Mechsuit Technician",
-		"Biomechanical Technician"
+		"Tecnico de Mechas",
+		"Tecnico Biomecanico"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(/datum/mil_branch/civilian)
@@ -201,4 +201,4 @@
 	minimal_access = list()
 
 /datum/job/roboticist/get_description_blurb()
-	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Corporate Liaison and the Chief Engineer."
+	return "Eres el Robotista. Eres responsable en la reparacion, actualizacion y el manejo de sinteticos de la nave (como robots). Tambien eres responsable de la produccion de exo-trajes (mechas) y de bots para varios departamentos. Respondes al Corporate Liaison y el Oficial Ingeniero en Jefe."

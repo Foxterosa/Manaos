@@ -11,7 +11,7 @@
 	minimal_player_age = 3
 	minimum_character_age = list(SPECIES_HUMAN = 30)
 	alt_titles = list(
-		"Research Supervisor")
+		"Investigador Supervisor")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -39,21 +39,21 @@
 	skill_points = 20
 
 /datum/job/scientist
-	title = "Scientist"
+	title = "Cientifico"
 	total_positions = 6
 	spawn_positions = 6
-	supervisors = "the Chief Science Officer and the Workplace Liaison"
+	supervisors = "el Oficial Cientifico en Jefe y el Workplace Liaison"
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	minimal_player_age = 0
 	alt_titles = list(
-		"Xenoarcheologist",
-		"Anomalist",
-		"Researcher",
-		"Xenobiologist",
-		"Xenobotanist",
+		"Xenoarqueologista",
+		"Anomalista",
+		"Investigador",
+		"Xenobiologo",
+		"Xenobotanico",
 		"Circuitry Designer",
-		"Chemical Researcher"
+		"Investigador Quimico"
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -86,7 +86,7 @@
 	skill_points = 20
 
 /datum/job/scientist_assistant
-	title = "Research Assistant"
+	title = "Investigador Asistente"
 	department = "Ciencias"
 	department_flag = SCI
 	total_positions = 4
@@ -96,9 +96,9 @@
 	economic_power = 3
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
-		"Custodian" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor,
-		"Testing Assistant" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/testsubject,
-		"Intern",
+		"Custodiante" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor,
+		"Asistente de pruebas" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/testsubject,
+		"Interno",
 		"Clerk",
 		"Field Assistant")
 
