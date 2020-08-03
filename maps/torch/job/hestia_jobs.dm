@@ -219,11 +219,11 @@
 	Secondly, you're to assist the crew or Research on psionic matters, or guide any newly emergent crew that awaken with psionic abilities."
 
 /*
-	Adjudicator
+	Magistrado
 */
 
-/datum/job/adjudicator
-	title = "Adjudicador"
+/datum/job/magistrado
+	title = "Magistrado"
 	department = "Soporte"
 	department_flag = SPT
 	total_positions = 1
@@ -232,7 +232,7 @@
 	selection_color = "#2f2f7f"
 	economic_power = 15
 	minimal_player_age = 7
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/adjudicator
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/magistrado
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
@@ -240,12 +240,12 @@
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 28)
 
-	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
+	access = list(access_magistrado, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
-/datum/job/adjudicator/get_description_blurb()
+/datum/job/magistrado/get_description_blurb()
 
 /datum/job/blueshield
 	title = "Blueshield"
@@ -273,7 +273,7 @@
 	                    SKILL_FORENSICS   = SKILL_MAX)
 
 	skill_points = 25
-	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
+	access = list(access_magistrado, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar, access_bs)
 	defer_roundstart_spawn = TRUE
 

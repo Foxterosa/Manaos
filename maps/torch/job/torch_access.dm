@@ -62,10 +62,10 @@
 	region = ACCESS_REGION_COMMAND
 	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO and RD cannot enter
 
-/var/const/access_adjudicator = "ACCESS_ADJUDICATOR" //85
-/datum/access/adjudicator
-	id = access_adjudicator
-	desc = "Adjudicator"
+/var/const/access_magistrado = "ACCESS_ADJUDICATOR" //85
+/datum/access/magistrado
+	id = access_magistrado
+	desc = "Magistrado"
 	region = ACCESS_REGION_COMMAND
 	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO cannot enter
 
