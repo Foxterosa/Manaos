@@ -73,7 +73,6 @@
 		/obj/item/device/radio/headset/headset_med/alt,
 		/obj/item/taperoll/medical,
 		/obj/item/weapon/storage/belt/medical,
-		/obj/item/clothing/mask/surgical,
 		/obj/item/device/scanner/health,
 		/obj/item/clothing/accessory/stethoscope,
 		/obj/item/device/flashlight/pen,
