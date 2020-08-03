@@ -228,7 +228,7 @@
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Central Command The Galilei Convention and the Ship Regulations"
+	supervisors = "Comando Central, Convencion de Galilei y las Regulaciones de la Nave/Navales"
 	selection_color = "#2f2f7f"
 	economic_power = 15
 	minimal_player_age = 7
@@ -246,8 +246,6 @@
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
 /datum/job/adjudicator/get_description_blurb()
-	return "Eres el Adjudicador. Tu trabajo es You are the Adjudicator. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
-
 
 /datum/job/blueshield
 	title = "Blueshield"
