@@ -179,14 +179,14 @@
 	H.set_id_info(regis_card)
 	H.equip_to_slot_or_store_or_drop(regis_card)
 
-//Adjudicator
-/decl/hierarchy/outfit/job/torch/crew/adjudicator
-	name = OUTFIT_JOB_NAME("Adjudicator")
+//Magistrado
+/decl/hierarchy/outfit/job/torch/crew/magistrado
+	name = OUTFIT_JOB_NAME("Magistrado")
 	l_ear = /obj/item/device/radio/headset/headset_com
 	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	shoes = /obj/item/clothing/shoes/laceup
-	id_type = /obj/item/weapon/card/id/torch/crew/adjudicator
+	id_type = /obj/item/weapon/card/id/torch/crew/magistrado
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
 //Blueshield
