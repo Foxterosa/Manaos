@@ -73,3 +73,14 @@
 /obj/item/weapon/reagent_containers/food/snacks/meat/chicken/game
 	name = "game bird piece"
 	desc = "Fresh game meat, harvested from some wild bird."
+
+/obj/item/weapon/reagent_containers/food/snacks/meat/pug
+	name = "Carne de pug"
+	desc = "Sabe a... bueno... ya sabes..."
+
+/obj/item/weapon/reagent_containers/food/snacks/meat/kanguro
+	name = "Carne de kanguroo"
+	desc = "Sabe raro..."
+
+
+

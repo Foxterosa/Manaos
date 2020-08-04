@@ -7,6 +7,5 @@
 		/music_track/hlife,
 		/music_track/gangstapara,
 		/music_track/acecombat,
-		/music_track/hollowfaces,
-		/music_track/theyfearyou
+		/music_track/hollowfaces
 	)

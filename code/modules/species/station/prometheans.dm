@@ -24,7 +24,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 	swap_flags =       MONKEY|SLIME|SIMPLE_ANIMAL
 	push_flags =       MONKEY|SLIME|SIMPLE_ANIMAL
 	species_flags =    SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_MINOR_CUT
-	appearance_flags = HAS_SKIN_COLOR | HAS_EYE_COLOR | HAS_HAIR_COLOR | RADIATION_GLOWS
+	appearance_flags = HAS_SKIN_COLOR | HAS_EYE_COLOR | HAS_HAIR_COLOR | RADIATION_GLOWS | HAS_UNDERWEAR
 	spawn_flags =      SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS | SPECIES_NO_LACE
 
 	breath_type = null
@@ -34,11 +34,11 @@ var/datum/species/shapeshifter/promethean/prometheans
 	blood_volume =        600
 	min_age =             18
 	max_age =             125
-	brute_mod =           0.8
-	burn_mod =            1.2
-	toxins_mod =          0.1
+	brute_mod =           1
+	burn_mod =            1.5
+	toxins_mod =          0.5
 	oxy_mod =             0
-	total_health =        400
+	total_health =        200
 	siemens_coefficient = -1
 	rarity_value =        5
 	slowdown = 0.5

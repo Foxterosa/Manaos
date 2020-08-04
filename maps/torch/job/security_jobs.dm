@@ -1,8 +1,8 @@
 /datum/job/warden
-	title = "Brig Chief"
+	title = "Guardian de Brig"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief of Security"
+	supervisors = "Oficial Maestro de Seguridad en Jefe"
 	economic_power = 5
 	minimal_player_age = 6
 	minimum_character_age = list(SPECIES_HUMAN = 27)
@@ -37,16 +37,16 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/detective
-	title = "Forensic Technician"
+	title = "Tecnico Forense"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief of Security"
+	supervisors = "Oficial Maestro de Seguridad en Jefe"
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	skill_points = 18
 	alt_titles = list(
-		"Criminal Investigator"
+		"Investigador Criminal"
 	)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
 	allowed_branches = list(
@@ -85,10 +85,10 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/officer
-	title = "Master at Arms"
+	title = "Maestro de Armas"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Chief of Security"
+	supervisors = "el Oficial Maestro de Seguridad en Jefe"
 	economic_power = 4
 	minimal_player_age = 3
 	minimum_character_age = list(SPECIES_HUMAN = 18)

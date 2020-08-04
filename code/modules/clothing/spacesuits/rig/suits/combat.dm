@@ -95,11 +95,13 @@
 
 /obj/item/clothing/head/helmet/space/rig/military
 	item_icons = list(slot_head_str = 'icons_manaos/mob/onmob/onmob_head.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_head.dmi'
 	light_overlay = "helmet_light_dual_green"
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 
 /obj/item/clothing/suit/space/rig/military
 	item_icons = list(slot_wear_suit_str = 'icons_manaos/mob/onmob/onmob_suit.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_suit.dmi'
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 
 /obj/item/clothing/shoes/magboots/rig/military

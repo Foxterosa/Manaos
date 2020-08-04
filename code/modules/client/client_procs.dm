@@ -380,7 +380,16 @@
 		'html/images/daislogo.png',
 		'html/images/eclogo.png',
 		'html/images/fleetlogo.png',
-		'html/images/sfplogo.png'
+		'html/images/sfplogo.png',
+		'html/images/medlogo.png',
+		'html/images/seclogo.png',
+		'html/images/explogo.png',
+		'html/images/servlogo.png',
+		'html/images/civlogo.png',
+		'html/images/englogo.png',
+		'html/images/reslogo.png',
+		'html/images/suplogo.png',
+		'html/images/roblogo.png'
 		)
 
 	var/decl/asset_cache/asset_cache = decls_repository.get_decl(/decl/asset_cache)

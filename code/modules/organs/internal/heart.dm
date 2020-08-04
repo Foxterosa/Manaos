@@ -9,7 +9,7 @@
 	var/beat_sound = 'sound/effects/singlebeat.ogg'
 	var/tmp/next_blood_squirt = 0
 	damage_reduction = 0.7
-	relative_size = 5
+	relative_size = 25
 	max_damage = 45
 	var/open
 	var/list/external_pump
@@ -24,7 +24,7 @@
 
 /obj/item/organ/internal/heart/robotize()
 	. = ..()
-	icon_state = "protesis-corazon"
+	icon_state = "heart-prosthetic"
 
 /obj/item/organ/internal/heart/Process()
 	if(owner)

@@ -31,7 +31,7 @@ exactly 10 "/obj text paths" '"/obj'
 exactly 8 "/turf text paths" '"/turf'
 exactly 1 "world<< uses" 'world<<|world[[:space:]]<<'
 exactly 43 "world.log<< uses" 'world.log<<|world.log[[:space:]]<<'
-exactly 477 "<< uses" '(?<!<)<<(?!<)' -P
+exactly 479 "<< uses" '(?<!<)<<(?!<)' -P
 exactly 0 "incorrect indentations" '^( {4,})' -P
 exactly 28 "text2path uses" 'text2path'
 exactly 3 "update_icon() override" '/update_icon\((.*)\)'  -P
@@ -45,7 +45,7 @@ while read -r file; do
 	case "$ftype" in
 		ASCII)
 			continue;;
-		UTF-8)
+		ISO-8859-1)
 			if diff -d "$file" <(<"$file" iconv -c -f utf8 -t iso8859-1 2>/dev/null | tr -d $'\x7F-\x9F' | iconv -c -f iso8859-1 -t utf8 2>/dev/null); then
 				continue
 			else

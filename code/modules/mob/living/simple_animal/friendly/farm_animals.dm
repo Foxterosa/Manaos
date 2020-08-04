@@ -292,3 +292,29 @@ var/global/chicken_count = 0
 			qdel(src)
 	else
 		return PROCESS_KILL
+
+/mob/living/simple_animal/hostile/retaliate/Kanguro
+	name = "Kanguro"
+	desc = "Ese es... n-no puede ser..."
+	icon_state = "kangaroo"
+	icon_living = "kangaroo"
+	icon_dead = "kangaroo_dead"
+	emote_see = list("sacude su cabeza", "mira alrededor")
+	speak_chance = 1
+	turns_per_move = 5
+	see_in_dark = 6
+	response_help  = "pets"
+	response_disarm = "gently pushes aside"
+	response_harm   = "kicks"
+	faction = "kanguro"
+	attacktext = "golpeo"
+	health = 40
+	melee_damage_lower = 1
+	melee_damage_upper = 5
+
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/kanguro
+	meat_amount = 4
+	bone_amount = 8
+	skin_amount = 8
+
+	var/datum/reagents/udder = null

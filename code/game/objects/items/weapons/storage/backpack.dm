@@ -422,6 +422,15 @@
 		slot_r_hand_str = "securitypack",
 		)
 
+/obj/item/weapon/storage/backpack/bs_mochila
+	name = "mochila de blueshield"
+	desc = "Una mochila peteneciente a los blueshield."
+	icon_state = "blueshieldpack"
+	item_state_slots = list(
+		slot_l_hand_str = "securitypack",
+		slot_r_hand_str = "securitypack",
+		)
+
 //Commander
 /obj/item/weapon/storage/backpack/ert/commander
 	name = "emergency response team commander backpack"

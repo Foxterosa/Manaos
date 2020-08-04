@@ -61,11 +61,13 @@
 
 /obj/item/clothing/head/helmet/space/rig/industrial
 	item_icons = list(slot_head_str = 'icons_manaos/mob/onmob/onmob_head.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_head.dmi'
 	camera = /obj/machinery/camera/network/mining
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 
 /obj/item/clothing/suit/space/rig/industrial
 	item_icons = list(slot_wear_suit_str = 'icons_manaos/mob/onmob/onmob_suit.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_suit.dmi'
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 
 /obj/item/clothing/shoes/magboots/rig/industrial
@@ -83,7 +85,8 @@
 		/obj/item/rig_module/device/orescanner,
 		/obj/item/rig_module/device/rcd,
 		/obj/item/rig_module/vision/meson,
-		/obj/item/rig_module/cooling_unit
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/maneuvering_jets
 		)
 
 /obj/item/weapon/rig/eva

@@ -65,6 +65,11 @@
 	path = /obj/item/clothing/glasses/hud/health/visor
 	cost = 2
 
+/datum/gear/eyes/medical/sun
+	display_name = "Gafas de sol medicas"
+	path = /obj/item/clothing/glasses/hud/health/sun
+	cost = 2
+
 /datum/gear/eyes/medical/ipatch
 	display_name = "HUDpatch Medico"
 	path = /obj/item/clothing/glasses/eyepatch/hud/medical
@@ -122,3 +127,11 @@
 /datum/gear/eyes/janitor/prescription
 	display_name = "HUD de Conserje con prescripcion"
 	path = /obj/item/clothing/glasses/hud/janitor/prescription
+
+/datum/gear/eyes/kasumimask
+	display_name = "Mascara de Kasumi"
+	path = /obj/item/clothing/mask/kasumimask
+
+/datum/gear/eyes/jokermask
+	display_name = "Mascara de Joker"
+	path = /obj/item/clothing/mask/jokermask

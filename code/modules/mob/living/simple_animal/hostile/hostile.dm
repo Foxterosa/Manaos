@@ -10,6 +10,8 @@
 	var/projectiletype
 	var/projectilesound
 	var/casingtype
+	var/in_melee = FALSE	//We should sidestep now
+	var/dodge_prob = 30
 	var/fire_desc = "fires" //"X fire_desc at Y!"
 	var/ranged_range = 6 //tiles of range for ranged attackers to attack
 	var/move_to_delay = 4 //delay for the automated movement.

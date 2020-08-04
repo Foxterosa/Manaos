@@ -22,12 +22,16 @@
 		/obj/item/weapon/storage/box/autoinjectors,
 		/obj/item/weapon/storage/box/syringes,
 		/obj/item/weapon/reagent_containers/dropper = 2,
-		/obj/item/weapon/reagent_containers/glass/beaker = 2,
-		/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline = 2,
-		/obj/item/weapon/reagent_containers/glass/bottle/antitoxin = 2,
-		/obj/random/firstaid,
 		/obj/item/weapon/storage/box/masks,
-		/obj/item/weapon/storage/box/gloves
+		/obj/item/weapon/storage/box/gloves,
+		/obj/item/weapon/storage/box/beakers/insulated,
+		/obj/item/weapon/storage/box/beakers,
+		/obj/item/weapon/storage/box/syringes,
+		/obj/item/weapon/storage/box/pillbottles,
+		/obj/item/weapon/storage/box/monkeycubes,
+		/obj/item/weapon/storage/box/freezer,
+		/obj/item/stack/nanopaste
+
 	)
 
 /obj/structure/closet/secure_closet/medical2
@@ -125,9 +129,13 @@
 
 /obj/structure/closet/secure_closet/chemical/WillContain()
 	return list(
-		/obj/item/weapon/storage/box/pillbottles = 2,
+		/obj/item/weapon/storage/box/pillbottles,
 		/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,
-		/obj/random/medical = 12
+		/obj/item/weapon/storage/box/beakers,
+		/obj/item/weapon/storage/box/syringes,
+		/obj/item/weapon/storage/box/beakers/insulated,
+		/obj/item/weapon/book/manual/chemistry_recipes
+
 	)
 
 /obj/structure/closet/secure_closet/medical_wall
