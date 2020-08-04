@@ -1,13 +1,13 @@
 /datum/job/chaplain
-	title = "Chaplain"
-	department = "Service"
+	title = "Capellan"
+	department = "Servicio"
 	department_flag = SRV
 	total_positions = 1
 	spawn_positions = 1
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	economic_power = 5
 	minimal_player_age = 0
-	supervisors = "the Executive Officer"
+	department = "el Oficial Ejecutivo"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/chaplain
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
@@ -23,12 +23,12 @@
 	minimal_access = list()
 
 /datum/job/janitor
-	title = "Sanitation Technician"
-	department = "Service"
+	title = "Tecnico de Higiene"
+	department = "Servicio"
 	department_flag = SRV
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Executive Officer"
+	department = "el Oficial Ejecutivo"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
 		"Janitor")
@@ -52,17 +52,17 @@
 	minimal_access = list()
 
 /datum/job/chef
-	title = "Cook"
-	department = "Service"
+	title = "Cocinero"
+	department = "Servicio"
 	department_flag = SRV
 	total_positions = 2
 	spawn_positions = 2
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	supervisors = "the Executive Officer"
+	department = "el Oficial Ejecutivo"
 	alt_titles = list(
 		"Chef",
-		"Culinary Specialist",
-		"Apprentice Chef"
+		"Especialista Culinario",
+		"Aprendiz de Chef"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/cook
 	allowed_branches = list(
@@ -85,19 +85,19 @@
 
 /datum/job/bartender
 	title = "Bartender"
-	department = "Service"
+	department = "Servicio"
 	department_flag = SRV
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Executive Officer and the Corporate Liaison"
+	supervisors = "the Executive Officer y el Corporate Liaison"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/bartender
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	alt_titles = list(
-		"Mixologist",
+		"Mixologo",
 		"Barista",
-		"Apprentice Bartender"
+		"Aprendiz de Bartender"
 		)
 	access = list(access_hydroponics, access_bar, access_solgov_crew, access_kitchen, access_commissary, access_maint_tunnels)
 	minimal_access = list()
@@ -106,12 +106,12 @@
 	                    SKILL_CHEMISTRY = SKILL_BASIC)
 
 /datum/job/crew
-	title = "Crewman"
-	department = "Service"
+	title = "Tripulante"
+	department = "Servicio"
 	department_flag = SRV
 	total_positions = 10
 	spawn_positions = 10
-	supervisors = "the Executive Officer and SolGov Personnel"
+	supervisors = "el Oficial Ejecutivo y el Personal Solgov"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(

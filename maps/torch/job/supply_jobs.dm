@@ -1,6 +1,6 @@
 /datum/job/qm
-	title = "Deck Officer"
-	department = "Supply"
+	title = "Oficial de Hangar"
+	department = "Suministro"
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
@@ -38,12 +38,12 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/cargo_tech
-	title = "Deck Technician"
-	department = "Supply"
+	title = "Tecnico de Cargo"
+	department = "Suministro"
 	department_flag = SUP
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Deck Officer"
+	supervisors = "el Oficial de Hangar"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech
 	allowed_branches = list(
@@ -75,17 +75,17 @@
 
 /datum/job/mining
 	title = "Prospector"
-	department = "Supply"
+	department = "Suministro"
 	department_flag = SUP
 	total_positions = 4
 	spawn_positions = 2
-	supervisors = "the Deck Officer, the Corporate Liaison"
+	supervisors = "el Oficial de Cubierta, el Corporate Liaison"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
-		"Drill Technician",
-		"Shaft Miner",
-		"Salvage Technician")
+		"Tecnico del Taladr",
+		"Minero",
+		"Tecnico de Salvamiento")
 	min_skill = list(   SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_EVA     = SKILL_BASIC,
 	                    SKILL_PILOT   = SKILL_BASIC)
