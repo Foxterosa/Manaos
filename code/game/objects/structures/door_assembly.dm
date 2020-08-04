@@ -111,7 +111,7 @@
 				if(do_after(user, 40,src))
 					if(!src || !WT.isOn()) return
 					to_chat(user, "<span class='notice'>You dissasembled the airlock assembly!</span>")
-					new /obj/item/stack/material/glass/reinforced(src.loc, 1)
+					new /obj/item/stack/material/steel(src.loc, 4)
 					qdel (src)
 		else
 			to_chat(user, "<span class='notice'>You need more welding fuel.</span>")
@@ -183,7 +183,7 @@
 
 	else if(istype(W, /obj/item/stack/material) && !glass)
 		var/obj/item/stack/material/S = W
-		var/material_name = S.get_material_name()
+		var/material_name = S.get_material_name()		
 		if (S)
 			if (S.get_amount() >= 1)
 				if(material_name == MATERIAL_GLASS && S.reinf_material)
