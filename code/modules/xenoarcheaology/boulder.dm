@@ -54,7 +54,7 @@
 		if(!do_after(user, P.digspeed))
 			return
 
-		to_chat(user, "<span class='notice'>Termians de [P.drill_verb] [src].</span>")
+		to_chat(user, "<span class='notice'>Terminas de [P.drill_verb] [src].</span>")
 		excavation_level += P.excavation_amount
 
 		if(excavation_level > 200)
@@ -74,7 +74,7 @@
 						X.my_effect.artifact_id = artifact_find.artifact_id
 				src.visible_message("<span class='warning'>\The [src] de repente se desmorona.</span>")
 			else
-				user.visible_message("<span class='warning'>\The [src] de repente se desmorona.</span>", "<span class='notice'>\The [src] ha sido reducido bajo la cuidadosa excavación, pero no habia nada de interes dentro.</span>")
+				user.visible_message("<span class='warning'>\The [src] de repente se desmorona.</span>", "<span class='notice'>\The [src] ha sido reducido bajo la cuidadosa excavaciÃ³n, pero no habia nada de interes dentro.</span>")
 			qdel(src)
 
 /obj/structure/boulder/Bumped(AM)
