@@ -262,8 +262,8 @@
 	worn_state = "black_suit"
 
 /obj/item/clothing/under/suit_jacket/really_black
-	name = "executive suit"
-	desc = "A formal black suit and red tie, intended for the galaxy's finest."
+	name = "traje de ejecutivo"
+	desc = "Un traje negro formal y corbata roja, destinado a los mejores de la galaxia."
 	icon_state = "really_black_suit"
 	item_state = "jensensuit"
 	worn_state = "really_black_suit"
@@ -810,4 +810,11 @@
 	name = "kimono"
 	icon_state = "kimono"
 	worn_state = "kimono"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/under/kimono
+	desc = "A traditional robe with remarkably long sleeves, mostly worn by women. <i>Sugoi.</i>"
+	name = "kimono"
+	icon_state = "jwig_s"
+	worn_state = "jwig_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS

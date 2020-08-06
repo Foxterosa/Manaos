@@ -676,7 +676,7 @@
 
 /area/crew_quarters/heads/office/magistrado
 	icon_state = "heads_sr"
-	name = "\improper Command - Magistrado's Office"
+	name = "\improper Command - Oficina del Magistrado"
 	req_access = list(access_magistrado)
 
 /area/crew_quarters/heads/office/sea

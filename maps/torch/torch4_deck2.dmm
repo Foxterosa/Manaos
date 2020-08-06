@@ -3123,6 +3123,11 @@
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/plastic/fifty,
 /obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/aluminium/fifty,
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics/lower)
 "gi" = (
@@ -19648,6 +19653,13 @@
 /obj/effect/floor_decal/corner/brown,
 /turf/simulated/floor/tiled,
 /area/maintenance/seconddeck/foreport)
+"Wy" = (
+/obj/machinery/camera/network/second_deck{
+	c_tag = "Second Deck - Fore";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/seconddeck/fore)
 "WA" = (
 /obj/structure/sign/warning/compressed_gas{
 	icon_state = "hikpa";
@@ -20542,13 +20554,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
-"Zm" = (
-/obj/machinery/camera/network/second_deck{
-	c_tag = "Second Deck - Fore";
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/hallway/primary/seconddeck/fore)
 "Zo" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -33119,7 +33124,7 @@ it
 bI
 yx
 xR
-Zm
+Wy
 wT
 iM
 xS

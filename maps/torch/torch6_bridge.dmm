@@ -2326,7 +2326,6 @@
 "dL" = (
 /obj/structure/closet/secure_closet/engineering_chief_torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/clothing/suit/storage/hooded/wintercoat/engineering,
 /obj/effect/floor_decal/corner/yellow{
 	icon_state = "corner_white";
 	dir = 10
@@ -4519,7 +4518,6 @@
 /obj/item/ammo_magazine/magnum/rubber,
 /obj/item/ammo_magazine/magnum/rubber,
 /obj/structure/closet/secure_closet/cos,
-/obj/item/clothing/suit/storage/hooded/wintercoat/security,
 /obj/effect/floor_decal/corner/red{
 	dir = 6
 	},
@@ -7078,7 +7076,6 @@
 "lv" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/secure_closet/RD_torch,
-/obj/item/clothing/suit/storage/hooded/wintercoat/science,
 /obj/effect/floor_decal/corner/research{
 	tag = "icon-corner_white (NORTHEAST)";
 	icon_state = "corner_white";
@@ -12643,6 +12640,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
+/obj/random/clipboard,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/magistrado)
 "uO" = (
@@ -15062,10 +15060,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/ce)
-"Ba" = (
-/obj/structure/curtain/black,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "Bp" = (
 /obj/effect/floor_decal/corner/red/full,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -15795,7 +15789,6 @@
 	color = "";
 	desc = "F8F8F8"
 	},
-/obj/item/clothing/suit/storage/hooded/wintercoat/medical,
 /obj/item/clothing/accessory/medal/solgov/heart,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
@@ -15910,14 +15903,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
-"FD" = (
-/obj/effect/landmark/start{
-	name = "Bridge Officer"
-	},
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/blue,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "FE" = (
 /obj/machinery/computer/modular/preset/engineering{
 	dir = 1
@@ -17241,6 +17226,14 @@
 /obj/item/weapon/material/ashtray/glass,
 /turf/simulated/floor/carpet/blue2,
 /area/bridge/meeting_room)
+"LR" = (
+/obj/effect/landmark/start{
+	name = "Bridge Officer"
+	},
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/blue,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Mb" = (
 /obj/machinery/computer/modular/preset/cardslot{
 	icon_state = "computer";
@@ -17403,10 +17396,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
-"MR" = (
-/obj/structure/closet/secure_closet/bs,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "MU" = (
 /obj/machinery/light{
 	dir = 4
@@ -17858,9 +17847,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/fore)
-"Ph" = (
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "Pt" = (
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
@@ -18054,6 +18040,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
+"Qn" = (
+/obj/structure/closet/secure_closet/bs,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Qp" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "captaindoorfore";
@@ -18584,6 +18574,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
+"St" = (
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge - Commanding Officer";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/co)
 "SA" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/machinery/door/blast/regular/open{
@@ -18662,6 +18659,10 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/medical)
+"SR" = (
+/obj/structure/curtain/black,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "SU" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -18810,10 +18811,6 @@
 "Tl" = (
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
-"Tm" = (
-/obj/structure/closet/secure_closet/bodyguard,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/office/cl/backroom)
 "To" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
@@ -19083,13 +19080,6 @@
 /obj/structure/bed/chair/padded/green,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
-"Up" = (
-/obj/machinery/camera/network/command{
-	c_tag = "Bridge - Commanding Officer";
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/co)
 "Us" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/sticky_pad/random{
@@ -19163,6 +19153,10 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
+"UO" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/bridge/storage)
 "UU" = (
 /obj/effect/shuttle_landmark/ert/deck5,
 /turf/space,
@@ -19307,10 +19301,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/secure_storage)
-"Vz" = (
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/bridge/storage)
 "VB" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -19492,6 +19482,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
+"Wn" = (
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Ws" = (
 /obj/effect/paint/red,
 /turf/simulated/wall/titanium,
@@ -27776,9 +27769,9 @@ aa
 af
 Nu
 Sa
-Ph
-Ph
-Ba
+Wn
+Wn
+SR
 cE
 XO
 Nu
@@ -27805,7 +27798,7 @@ RV
 Mz
 Yz
 Pt
-Up
+St
 An
 uy
 hk
@@ -27977,9 +27970,9 @@ aa
 aa
 af
 Nu
-FD
+LR
 mt
-MR
+Qn
 Nu
 cE
 nS
@@ -28189,7 +28182,7 @@ JR
 qO
 zC
 dE
-Vz
+UO
 Hf
 ee
 Wv
@@ -33235,7 +33228,7 @@ al
 bi
 dk
 zp
-Tm
+dn
 bA
 nN
 zS
