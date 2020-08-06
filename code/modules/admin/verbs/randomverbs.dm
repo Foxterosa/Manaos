@@ -784,7 +784,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(!istype(H))
 		to_chat(usr, "This can only be used on instances of type /mob/living/carbon/human")
 		return
-	if(!istype(H.l_ear, /obj/item/radio/headset) && !istype(H.r_ear, /obj/item/radio/headset))
+	if(!istype(H.l_ear, /obj/item/device/radio/headset) && !istype(H.r_ear, /obj/item/device/radio/headset))
 		to_chat(usr, "The person you are trying to contact is not wearing a headset")
 		return
 
@@ -794,14 +794,14 @@ Traitors and the like can also be revived with the previous role mostly intact.
 			return
 
 	message_admins("[key_name_admin(src)] has started answering [key_name_admin(H)]'s [sender] request.")
-	var/input = clean_input("Please enter a message to reply to [key_name(H)] via their headset.", "Outgoing message from [sender]", "")
+	var/input = input("Please enter a message to reply to [key_name(H)] via their headset.", "Outgoing message from [sender]", "")
 	if(!input)
 		message_admins("[key_name_admin(src)] decided not to answer [key_name_admin(H)]'s [sender] request.")
 		return
 
 	log_admin("[key_name(src)] replied to [key_name(H)]'s [sender] message with the message [input].")
 	message_admins("[key_name_admin(src)] replied to [key_name_admin(H)]'s [sender] message with: \"[input]\"")
-	to_chat(H, "<span class='boldannounce'>Incoming priority transmission from [sender == "Syndicate" ? "your benefactor" : "Central Command"].</span>")
+	to_chat(H, "<span class='boldannounce'>Incoming priority transmission from [sender == "Syndicate" ? "your benefactor" : "Central Command"].  </span>")
 
 /client/proc/toggle_view_range()
 	set category = "Special Verbs"
