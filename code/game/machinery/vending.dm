@@ -903,15 +903,23 @@
 	base_type = /obj/machinery/vending/medical
 	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
 	req_access = list(access_medical_equip)
-	products = list(/obj/item/weapon/reagent_containers/glass/bottle/antitoxin = 4,/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline = 4,
-					/obj/item/weapon/reagent_containers/glass/bottle/stoxin = 4,/obj/item/weapon/reagent_containers/glass/bottle/toxin = 4,
-					/obj/item/weapon/reagent_containers/syringe/antiviral = 4,/obj/item/weapon/reagent_containers/syringe = 12,
-					/obj/item/device/scanner/health = 5,/obj/item/weapon/reagent_containers/glass/beaker = 4, /obj/item/weapon/reagent_containers/dropper = 2,
-					/obj/item/stack/medical/advanced/bruise_pack = 3, /obj/item/stack/medical/advanced/ointment = 3, /obj/item/stack/medical/splint = 2,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 4)
-	contraband = list(/obj/item/clothing/mask/chewable/candy/lolli/meds = 8,
-					/obj/item/weapon/reagent_containers/pill/tox = 3,/obj/item/weapon/reagent_containers/pill/stox = 4,/obj/item/weapon/reagent_containers/pill/antitox = 6,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 2)
+	products = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine = 5,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane = 5,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene = 5,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin = 5,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 5,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/adrenaline = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad = 3,
+					/obj/item/weapon/reagent_containers/syringe/antiviral = 5,
+					/obj/item/stack/medical/advanced/bruise_pack = 5,
+					/obj/item/stack/medical/advanced/ointment = 5,
+					/obj/item/stack/medical/splint = 5,
+					/obj/item/device/scanner/health = 5)
+	contraband = list(/obj/item/weapon/reagent_containers/pill/stox = 5,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton = 2)
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
 
 
@@ -934,15 +942,12 @@
 	base_type = /obj/machinery/vending/wallmed1
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	products = list(
-		/obj/item/stack/medical/bruise_pack = 3,
-		/obj/item/stack/medical/ointment = 3,
-		/obj/item/weapon/reagent_containers/pill/paracetamol = 4,
 		/obj/item/weapon/storage/med_pouch/trauma,
 		/obj/item/weapon/storage/med_pouch/burn,
 		/obj/item/weapon/storage/med_pouch/oxyloss,
-		/obj/item/weapon/storage/med_pouch/toxin
+		/obj/item/weapon/storage/med_pouch/toxin,
+		/obj/item/weapon/storage/med_pouch/radiation
 		)
-	contraband = list(/obj/item/weapon/reagent_containers/syringe/antitoxin = 4,/obj/item/weapon/reagent_containers/syringe/antiviral = 4,/obj/item/weapon/reagent_containers/pill/tox = 1)
 
 /obj/machinery/vending/wallmed2
 	name = "NanoMed Mini"
@@ -954,16 +959,12 @@
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	base_type = /obj/machinery/vending/wallmed2
 	products = list(
-		/obj/item/weapon/reagent_containers/hypospray/autoinjector = 5,
-		/obj/item/stack/medical/bruise_pack = 4,
-		/obj/item/stack/medical/ointment = 4,
 		/obj/item/weapon/storage/med_pouch/trauma,
 		/obj/item/weapon/storage/med_pouch/burn,
 		/obj/item/weapon/storage/med_pouch/oxyloss,
 		/obj/item/weapon/storage/med_pouch/toxin,
 		/obj/item/weapon/storage/med_pouch/radiation
 		)
-	contraband = list(/obj/item/weapon/reagent_containers/pill/tox = 3, /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 2)
 
 /obj/machinery/vending/security
 	name = "SecTech"

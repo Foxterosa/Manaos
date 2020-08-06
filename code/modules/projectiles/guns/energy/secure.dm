@@ -93,7 +93,7 @@
 		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
 	list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="energyrevolverstun"),
 		)
-	req_access = list(access_magistrado)
+	req_access = list(access_bridge)
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 	max_shots = 4
 	recharge_time = 5
