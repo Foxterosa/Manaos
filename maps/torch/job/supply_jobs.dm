@@ -1,6 +1,6 @@
 /datum/job/qm
-	title = "Deck Officer"
-	department = "Supply"
+	title = "Oficial de Hangar"
+	department = "Suministro"
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
@@ -38,12 +38,12 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/cargo_tech
-	title = "Deck Technician"
-	department = "Supply"
+	title = "Tecnico de Cargo"
+	department = "Suministro"
 	department_flag = SUP
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Deck Officer"
+	supervisors = "el Oficial de Hangar"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech
 	allowed_branches = list(
@@ -75,17 +75,17 @@
 
 /datum/job/mining
 	title = "Prospector"
-	department = "Supply"
+	department = "Suministro"
 	department_flag = SUP
 	total_positions = 4
 	spawn_positions = 2
-	supervisors = "the Deck Officer, the Corporate Liaison"
+	supervisors = "el Oficial de Cubierta, el Corporate Liaison"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
-		"Drill Technician",
-		"Shaft Miner",
-		"Salvage Technician")
+		"Tecnico del Taladr",
+		"Minero",
+		"Tecnico de Salvamiento")
 	min_skill = list(   SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_EVA     = SKILL_BASIC,
 	                    SKILL_PILOT   = SKILL_BASIC)
@@ -97,5 +97,5 @@
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_mining, access_mining_office, access_mining_station,
-						access_expedition_shuttle, access_guppy, access_hangar, access_guppy_helm, access_solgov_crew, access_cargo, access_eva)
+						access_expedition_shuttle, access_guppy, access_hangar, access_guppy_helm, access_solgov_crew, access_cargo, access_eva, access_cargo_bot, access_mailsorting)
 	minimal_access = list()

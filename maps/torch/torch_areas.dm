@@ -674,10 +674,10 @@
 	name = "\improper Command - CL's Backroom"
 	req_access = list(access_liaison)
 
-/area/crew_quarters/heads/office/adjudicator
+/area/crew_quarters/heads/office/magistrado
 	icon_state = "heads_sr"
-	name = "\improper Command - Adjudicator's Office"
-	req_access = list(access_adjudicator)
+	name = "\improper Command - Magistrado's Office"
+	req_access = list(access_magistrado)
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"

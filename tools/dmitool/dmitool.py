@@ -45,7 +45,7 @@ def info(filepath):
         raise Exception("dmitool execution failed")
 
     result = {}
-    data = stdout.decode('UTF-8').split(os.linesep)[1:]
+    data = stdout.decode('ISO-8859-1').split(os.linesep)[1:]
     # for s in data: print s
 
     # parse header line

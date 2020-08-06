@@ -248,7 +248,7 @@
 	pixel_y = 23
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "aB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -1472,8 +1472,8 @@
 	},
 /obj/structure/table/glass,
 /obj/item/weapon/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
+	pixel_x = 0;
+	pixel_y = 0
 	},
 /obj/item/weapon/pen,
 /obj/item/weapon/pen/red,
@@ -1486,8 +1486,6 @@
 /obj/structure/noticeboard{
 	pixel_y = 30
 	},
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/device/flashlight,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "cA" = (
@@ -4041,8 +4039,8 @@
 /obj/item/modular_computer/tablet/lease/preset/command,
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
-	id_tag = "adjudicator";
-	name = "Adjudicator's Office Door Control";
+	id_tag = "magistrado";
+	name = "Magistrado's Office Door Control";
 	pixel_x = 27;
 	pixel_y = 5;
 	req_access = list("ACCESS_ADJUDICATOR")
@@ -4054,7 +4052,7 @@
 	range = 11
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "gw" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
@@ -5581,9 +5579,6 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/structure/sign/double/icarus/solgovflag/right{
 	dir = 8;
 	icon_state = "solgovflag-right";
@@ -6260,6 +6255,9 @@
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 26
+	},
+/obj/machinery/light{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/mess)
@@ -8989,10 +8987,10 @@
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
 /obj/effect/landmark/start{
-	name = "Adjudicator"
+	name = "Magistrado"
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "oD" = (
 /obj/effect/floor_decal/corner/blue{
 	icon_state = "corner_white";
@@ -10257,7 +10255,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "qC" = (
 /obj/machinery/power/terminal{
 	icon_state = "term";
@@ -11519,7 +11517,7 @@
 	id = "sgr_windows"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "sI" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -11533,7 +11531,7 @@
 	id = "sgr_windows"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "sJ" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/office/cl)
@@ -11543,7 +11541,7 @@
 /area/turret_protected/ai)
 "sL" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "sM" = (
 /obj/item/device/radio/intercom/locked/ai_private{
 	dir = 8;
@@ -11587,7 +11585,7 @@
 	dir = 1
 	},
 /turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "sQ" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -11918,16 +11916,16 @@
 	id = "sgr_windows"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "tt" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "tu" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "tv" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -11939,7 +11937,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "tw" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -11965,7 +11963,7 @@
 	pixel_y = 26
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "tz" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/sticky_pad/random,
@@ -11974,7 +11972,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "tA" = (
 /obj/item/weapon/paper_bin,
 /obj/item/weapon/pen/multi,
@@ -12292,7 +12290,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "uh" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -12302,13 +12300,13 @@
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "ui" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "uj" = (
 /obj/structure/bed/chair/padded/blue,
 /obj/structure/cable/green{
@@ -12321,7 +12319,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "uk" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -12332,11 +12330,11 @@
 	},
 /obj/machinery/door/airlock/sol{
 	id_tag = null;
-	name = "Adjudicator";
+	name = "Magistrado";
 	secured_wires = 1
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "ul" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -12349,7 +12347,7 @@
 	pixel_y = -24
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "um" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -12364,9 +12362,9 @@
 	pixel_x = 36;
 	pixel_y = 0
 	},
-/obj/item/documents/adjudicator,
+/obj/item/documents/magistrado,
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "uo" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine{
@@ -12486,7 +12484,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "uA" = (
 /obj/machinery/computer/robotics{
 	dir = 1
@@ -12634,7 +12632,7 @@
 	network = list("Command","Security")
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "uN" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/weapon/paper_bin{
@@ -12646,7 +12644,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "uO" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/structure/cable/green{
@@ -12660,7 +12658,7 @@
 	},
 /obj/item/weapon/tableflag,
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "uP" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/computer/ship/navigation/telescreen{
@@ -13044,7 +13042,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "vw" = (
 /obj/effect/floor_decal/corner/blue,
 /obj/structure/cable/green{
@@ -13400,10 +13398,10 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "vY" = (
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "vZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -13778,7 +13776,7 @@
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine{
 	anchored = 1;
-	department = "Adjudicator"
+	department = "Magistrado"
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -13786,7 +13784,7 @@
 	},
 /obj/machinery/light,
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "wE" = (
 /obj/structure/table/woodentable/walnut,
 /obj/structure/sign/double/icarus/solgovflag/right{
@@ -13808,7 +13806,7 @@
 	pixel_y = -4
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "wH" = (
 /obj/item/weapon/bedsheet/browndouble{
 	dir = 4
@@ -15064,6 +15062,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/ce)
+"Ba" = (
+/obj/structure/curtain/black,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Bp" = (
 /obj/effect/floor_decal/corner/red/full,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -15429,10 +15431,6 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/bridge/fore)
-"CI" = (
-/obj/structure/curtain/black,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "CN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/bridge/aftport)
@@ -15617,7 +15615,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "Eb" = (
 /obj/machinery/camera/network/engineering{
 	c_tag = "Shield Generator - Bridge Deck"
@@ -15757,13 +15755,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
-"EI" = (
-/obj/machinery/camera/network/command{
-	c_tag = "Bridge - Commanding Officer";
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/co)
 "EJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -15808,14 +15799,6 @@
 /obj/item/clothing/accessory/medal/solgov/heart,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
-"ET" = (
-/obj/effect/landmark/start{
-	name = "Bridge Officer"
-	},
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/blue,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "EV" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
@@ -15927,6 +15910,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
+"FD" = (
+/obj/effect/landmark/start{
+	name = "Bridge Officer"
+	},
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/blue,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "FE" = (
 /obj/machinery/computer/modular/preset/engineering{
 	dir = 1
@@ -15950,10 +15941,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
-"FJ" = (
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/bridge/storage)
 "FK" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
@@ -15977,9 +15964,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"FX" = (
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "Ga" = (
 /obj/effect/floor_decal/corner/yellow{
 	icon_state = "corner_white";
@@ -17419,6 +17403,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
+"MR" = (
+/obj/structure/closet/secure_closet/bs,
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "MU" = (
 /obj/machinery/light{
 	dir = 4
@@ -17870,13 +17858,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/fore)
+"Ph" = (
+/turf/simulated/floor/carpet/blue2,
+/area/crew_quarters_boh/cabin_main/officerbunk)
 "Pt" = (
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
-"Pz" = (
-/obj/structure/closet/secure_closet/bs,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "PB" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -18160,7 +18147,7 @@
 	},
 /obj/item/weapon/book/manual/solgov_law,
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "QW" = (
 /obj/machinery/computer/ship/engines{
 	icon_state = "computer";
@@ -18249,7 +18236,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "Rg" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -18538,7 +18525,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "Sg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -18662,7 +18649,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "SN" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
@@ -19096,6 +19083,13 @@
 /obj/structure/bed/chair/padded/green,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
+"Up" = (
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge - Commanding Officer";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/co)
 "Us" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/sticky_pad/random{
@@ -19313,6 +19307,10 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/secure_storage)
+"Vz" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/bridge/storage)
 "VB" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -19515,6 +19513,7 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
+/obj/item/device/flashlight,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "Ww" = (
@@ -19914,8 +19913,8 @@
 /area/crew_quarters/heads/office/xo)
 "YC" = (
 /obj/machinery/door/airlock/sol{
-	id_tag = "adjudicator";
-	name = "Adjudicator";
+	id_tag = "magistrado";
+	name = "Magistrado";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -19932,7 +19931,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "YI" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/forestarboard)
@@ -20054,7 +20053,7 @@
 	pixel_y = -2
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/adjudicator)
+/area/crew_quarters/heads/office/magistrado)
 "Zh" = (
 /obj/structure/table/steel,
 /obj/machinery/cell_charger,
@@ -27777,9 +27776,9 @@ aa
 af
 Nu
 Sa
-FX
-FX
-CI
+Ph
+Ph
+Ba
 cE
 XO
 Nu
@@ -27806,7 +27805,7 @@ RV
 Mz
 Yz
 Pt
-EI
+Up
 An
 uy
 hk
@@ -27978,9 +27977,9 @@ aa
 aa
 af
 Nu
-ET
+FD
 mt
-Pz
+MR
 Nu
 cE
 nS
@@ -28190,7 +28189,7 @@ JR
 qO
 zC
 dE
-FJ
+Vz
 Hf
 ee
 Wv

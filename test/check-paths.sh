@@ -45,7 +45,7 @@ while read -r file; do
 	case "$ftype" in
 		ASCII)
 			continue;;
-		UTF-8)
+		ISO-8859-1)
 			if diff -d "$file" <(<"$file" iconv -c -f utf8 -t iso8859-1 2>/dev/null | tr -d $'\x7F-\x9F' | iconv -c -f iso8859-1 -t utf8 2>/dev/null); then
 				continue
 			else

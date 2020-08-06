@@ -237,7 +237,7 @@
 			if(1)
 				owner.emote("twitch")
 			if(2 to 3)
-				owner.say("[prob(50) ? ";" : ""][pick("MIERDA", "PIS", "JODER", "COÑO", "CHUPAPOLLAS", "HIJO DE PUTA", "TETAS")]")
+				owner.say("[prob(50) ? ";" : ""][pick("MIERDA", "PIS", "JODER", "CHUPAPOLLAS", "HIJO DE PUTA", "TETAS")]")
 		owner.make_jittery(100)
 	else if((owner.disabilities & NERVOUS) && prob(10))
 		owner.stuttering = max(10, owner.stuttering)

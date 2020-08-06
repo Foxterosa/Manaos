@@ -1,6 +1,6 @@
 /datum/job/liaison
 	title = "Workplace Liaison"
-	department = "Support"
+	department = "Soporte"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
@@ -40,7 +40,7 @@
 
 /datum/job/bodyguard
 	title = "Loss Prevention Associate"
-	department = "Support"
+	department = "Soporte"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1

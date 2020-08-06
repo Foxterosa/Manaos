@@ -12,7 +12,7 @@
 
 /obj/item/organ/internal/liver/robotize()
 	. = ..()
-	icon_state = "higado-protesis"
+	icon_state = "liver-prosthetic"
 
 /obj/item/organ/internal/liver/Process()
 

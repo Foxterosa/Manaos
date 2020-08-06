@@ -59,7 +59,7 @@
 	)
 
 /obj/structure/closet/secure_closet/medical_torchsenior
-	name = "armrio de medico"
+	name = "armario de medico"
 	req_access = list(access_senmed)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical/physician
 
@@ -73,7 +73,6 @@
 		/obj/item/device/radio/headset/headset_med/alt,
 		/obj/item/taperoll/medical,
 		/obj/item/weapon/storage/belt/medical,
-		/obj/item/clothing/mask/surgical,
 		/obj/item/device/scanner/health,
 		/obj/item/clothing/accessory/stethoscope,
 		/obj/item/device/flashlight/pen,
@@ -108,7 +107,7 @@
 	)
 
 /obj/structure/closet/secure_closet/paramedico
-	name = "armario del paramedico"
+	name = "armario de paramedico"
 	req_access = list(access_medical_equip)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
