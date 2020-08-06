@@ -917,9 +917,10 @@
 					/obj/item/stack/medical/splint = 5,
 					/obj/item/device/scanner/health = 5)
 	contraband = list(/obj/item/weapon/reagent_containers/pill/stox = 5,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 2,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross = 2,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton = 2)
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon = 3)
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
 
 
