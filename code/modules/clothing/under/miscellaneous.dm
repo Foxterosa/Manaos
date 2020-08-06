@@ -811,10 +811,3 @@
 	icon_state = "kimono"
 	worn_state = "kimono"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-
-/obj/item/clothing/under/kimono
-	desc = "A traditional robe with remarkably long sleeves, mostly worn by women. <i>Sugoi.</i>"
-	name = "kimono"
-	icon_state = "jwig_s"
-	worn_state = "jwig_s"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS

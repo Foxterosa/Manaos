@@ -720,6 +720,8 @@
 	color = "";
 	desc = "F8F8F8"
 	},
+/obj/item/weapon/storage/belt/medical/emt,
+/obj/item/weapon/storage/belt/medical/emt,
 /turf/simulated/floor/tiled/white,
 /area/storage/medical)
 "bn" = (
@@ -11380,6 +11382,13 @@
 	},
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod5/station)
+"wq" = (
+/obj/machinery/camera/network/second_deck{
+	c_tag = "Second Deck - Fore";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/seconddeck/fore)
 "wu" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -19653,13 +19662,6 @@
 /obj/effect/floor_decal/corner/brown,
 /turf/simulated/floor/tiled,
 /area/maintenance/seconddeck/foreport)
-"Wy" = (
-/obj/machinery/camera/network/second_deck{
-	c_tag = "Second Deck - Fore";
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/hallway/primary/seconddeck/fore)
 "WA" = (
 /obj/structure/sign/warning/compressed_gas{
 	icon_state = "hikpa";
@@ -33124,7 +33126,7 @@ it
 bI
 yx
 xR
-Wy
+wq
 wT
 iM
 xS
