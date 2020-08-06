@@ -82,7 +82,7 @@ GLOBAL_LIST_EMPTY(skills)
 	ID = "bureaucracy"
 	name = "Burocracia"
 	desc = "Tu habilidad para escribir y rellenar papeleo, navegar en organizaciones de papeleo complejas, y entender leyes y regulaciones."
-	levels = list( "Ignorante"			= "Usualmente puedes llenar el papeleo basico con algunos errores. Tienes un vago conocimiento sobre la ley, aprendido por las noticias y experiencia personal.",
+	levels = list( "Ignorante"			= "Usualmente puedes llenar el papeleo básico con algunos errores. Tienes un vago conocimiento sobre la ley, aprendido por las noticias y experiencia personal.",
 						"Basico"				= "Estas familiarizado con el papeleo que necesitas para hacer tu trabajo, y puedes gestionarlo bien. Tienes un poco de conocimiento sobre la ley y el como se aplica en ti y quienes te rodean.",
 						"Entrenado"			= "Puedes manejar la mayoria del papeleo que te dan, incluso si no estas familiarizados con ellos. Tienes un buen entendimiento de la ley y de cualquiera regulacion o procedicimiento relevante para ti.",
 						"Experimentado"		= "Con experiencia, puedes facilmente hacer papeleo de cualquier evento, y escribir reportes cuales son limpios y entendibles. Tienes un excelente conocimiento sobre la ley, posiblemente incluyendo un entrenamiento formalmente legal.<br>- Aprendes un idioma unico.",
