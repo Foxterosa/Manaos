@@ -2265,7 +2265,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/machinery/vending/cola{
-	dir = 4;
+	dir = 8;
 	icon_state = "Cola_Machine"
 	},
 /turf/simulated/floor/tiled,
@@ -15782,6 +15782,10 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/airlock)
+"Fh" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/airless,
+/area/space)
 "Fi" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -17437,6 +17441,10 @@
 	},
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
+"Ns" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/reinforced/airless,
+/area/space)
 "Nt" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/cable/green{
@@ -19758,9 +19766,6 @@
 	pixel_y = 0
 	},
 /obj/effect/floor_decal/industrial/warning/fulltile,
-/obj/machinery/atm{
-	pixel_x = 32
-	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Yr" = (
@@ -39162,7 +39167,7 @@ aa
 aa
 aa
 aa
-aa
+Ns
 ad
 ad
 ah
@@ -39361,10 +39366,10 @@ ad
 ad
 ad
 ad
-aa
-aa
-aa
-aa
+ad
+ad
+ad
+ad
 ad
 ad
 ah
@@ -39563,10 +39568,10 @@ ad
 ad
 ad
 ad
-hW
-aa
-aa
-aa
+hU
+ad
+ad
+ad
 ad
 ad
 ah
@@ -39766,9 +39771,9 @@ ad
 ad
 ad
 hU
-aa
-aa
-aa
+ad
+ad
+ad
 ad
 ad
 ah
@@ -39969,8 +39974,8 @@ ad
 ad
 hU
 ad
-aa
-aa
+ad
+ad
 ad
 ad
 ah
@@ -40171,7 +40176,7 @@ ad
 ad
 hU
 ad
-aa
+ad
 ad
 ad
 ad
@@ -40373,7 +40378,7 @@ ad
 ad
 hU
 ad
-aa
+ad
 ad
 ad
 ad
@@ -41787,7 +41792,7 @@ ad
 ad
 hU
 ad
-aa
+ad
 ad
 ad
 ad
@@ -41989,7 +41994,7 @@ ad
 ad
 hU
 ad
-aa
+ad
 ad
 ad
 ad
@@ -42191,7 +42196,7 @@ ad
 ad
 hU
 ad
-aa
+ad
 ad
 ad
 ad
@@ -42392,8 +42397,8 @@ ad
 ad
 ad
 hU
-aa
-aa
+ad
+ad
 ad
 ad
 ad
@@ -42593,9 +42598,9 @@ ad
 ad
 ad
 ad
-hW
-aa
-aa
+hU
+ad
+ad
 ad
 ad
 ad
@@ -42795,8 +42800,8 @@ ad
 ad
 ad
 ad
-aa
-aa
+ad
+ad
 ad
 ad
 ad
@@ -42992,13 +42997,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+ad
+ad
+ad
+ad
+ad
+ad
+ad
 ad
 ad
 ad
@@ -43200,7 +43205,7 @@ aa
 aa
 aa
 aa
-aa
+Fh
 ad
 ad
 ad
