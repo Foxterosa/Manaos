@@ -493,7 +493,7 @@
 		to_chat(H, "Your NanoUI Resource files have been refreshed")
 
 		log_admin("[key_name(usr)] resent the NanoUI resource files to [key_name(H)] ")
-	
+
 	else if(href_list["fix_vue"])
 		if(!check_rights(R_DEBUG)) return
 
