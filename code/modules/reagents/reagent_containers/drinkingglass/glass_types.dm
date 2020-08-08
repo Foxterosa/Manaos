@@ -265,13 +265,6 @@
 	item_state = "coffee_med"
 	base_name = "\improper Med cup"
 
-/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbayone
-	name = "\improper Tasa de Medbay 1#"
-	desc = "Una tasa de cafe blanca de Medbay. Para el 1#."
-	icon_state = "coffeecup_medone"
-	item_state = "coffee_med"
-	base_name = "\improper Med cup one"
-
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbayheart
 	name = "\improper Tasa con corazon"
 	desc = "Una tasa de cafe blanca perteneciente a Medbay. Tiene un corazon en ella, ow..."

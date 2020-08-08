@@ -664,19 +664,14 @@
 	name = "\improper Command - CoS' Office"
 	req_access = list(access_hos)
 
-/area/crew_quarters/heads/office/cl
+/area/crew_quarters/heads/office/representative
 	icon_state = "heads_cl"
-	name = "\improper Command - CL's Office"
-	req_access = list(access_liaison)
-
-/area/crew_quarters/heads/office/cl/backroom
-	icon_state = "heads_cl"
-	name = "\improper Command - CL's Backroom"
-	req_access = list(access_liaison)
+	name = "\improper Comando - Representante de Sol Gov"
+	req_access = list(access_captain)
 
 /area/crew_quarters/heads/office/magistrado
 	icon_state = "heads_sr"
-	name = "\improper Command - Magistrado's Office"
+	name = "\improper Command - Oficina del Magistrado"
 	req_access = list(access_magistrado)
 
 /area/crew_quarters/heads/office/sea
@@ -1105,8 +1100,8 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_crematorium)
 
-/area/medical/lounge
-	name = "\improper Staff Lounge"
+/area/medical/recepcion
+	name = "\improper recepcion"
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
 
