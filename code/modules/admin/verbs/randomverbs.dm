@@ -801,7 +801,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 	log_admin("[key_name(src)] replied to [key_name(H)]'s [sender] message with the message [input].")
 	message_admins("[key_name_admin(src)] replied to [key_name_admin(H)]'s [sender] message with: \"[input]\"")
-	to_chat(H, "<span class='boldannounce'>Incoming priority transmission from [sender == "Syndicate" ? "your benefactor" : "Central Command"]. Message as follows : </span><span class = 'notice'> [input]  </span>")
+	to_chat(H, "<span class='boldannounce'>Atención, transmisión prioritaria entrante de [sender == "Syndicate" ? "tu benefactor" : "Comando Central"]... La comunicación es : </span><span class = 'notice'> [input]  </span>")
 
 /client/proc/toggle_view_range()
 	set category = "Special Verbs"
