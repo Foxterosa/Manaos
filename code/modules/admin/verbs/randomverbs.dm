@@ -770,7 +770,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 */
 
 /client/proc/cmd_admin_headset_message(mob/M)
-	set category = "Event"
+	set category = "Fun"
 	set name = "Headset Message"
 
 	admin_headset_message(M)
