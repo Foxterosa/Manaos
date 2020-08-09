@@ -90,4 +90,4 @@
 	desc = "A cheap Martian knock-off of a classic law enforcement firearm. Uses .38-special rounds."
 	name = "\improper .38 Mars Special"
 	icon_state = "detective"
-	ammo_type = /obj/item/ammo_cassing/pistol/magnum/detective
+	ammo_type = /obj/item/ammo_casing/pistol/magnum/detective
