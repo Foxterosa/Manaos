@@ -30,7 +30,7 @@
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/detective
 	matter = list(MATERIAL_STEEL = 1440)
 	max_ammo = 6
-	multriple_sprites = 1
+	multiple_sprites = 1
 
 /obj/item/ammo_magazine/speedloader/small
 	name = "speed loader"

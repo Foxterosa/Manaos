@@ -44,7 +44,7 @@
 	icon_state = "magnumcasing"
 	spent_icon = "magnumcasing-spent"
 
-/obj/item/ammo_cassing/pistol/magnum/detective
+/obj/item/ammo_casing/pistol/magnum/detective
 	name = "Bala de bajo poder, para controlar posbiles intrometidos..."
 	projectile_type = /obj/item/projectile/bullet/pistol/rev38
 	icon_state = "detectivecasing"
