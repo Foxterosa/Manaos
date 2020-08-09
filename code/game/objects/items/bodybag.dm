@@ -1,8 +1,8 @@
 //Also contains /obj/structure/closet/body_bag because I doubt anyone would think to look for bodybags in /object/structures
 
 /obj/item/bodybag
-	name = "body bag"
-	desc = "A folded bag designed for the storage and transportation of cadavers."
+	name = "bolsa para cadaveres"
+	desc = "Una bolsa plegada disenada para el almacenamiento y transporte de cadaveres."
 	icon = 'icons/obj/closets/bodybag.dmi'
 	icon_state = "bodybag_folded"
 	w_class = ITEM_SIZE_SMALL
@@ -13,8 +13,8 @@
 
 
 /obj/item/weapon/storage/box/bodybags
-	name = "body bags"
-	desc = "This box contains body bags."
+	name = "bolsas para cadaveres"
+	desc = "Esta caja contiene bolsas para cadaveres."
 	icon_state = "bodybags"
 	New()
 		..()
@@ -28,8 +28,8 @@
 
 
 /obj/structure/closet/body_bag
-	name = "body bag"
-	desc = "A plastic bag designed for the storage and transportation of cadavers."
+	name = "bolsa para cadaveres"
+	desc = "Una bolsa de plastico disenada para el almacenamiento y transporte de cadaveres."
 	icon = 'icons/obj/closets/bodybag.dmi'
 	closet_appearance = null
 	open_sound = 'sound/items/zip.ogg'
@@ -59,7 +59,7 @@
 	else if(isWirecutter(W))
 		src.SetName("body bag")
 		has_label = FALSE
-		to_chat(user, "You cut the tag off \the [src].")
+		to_chat(user, "Cortaste la etiqueta de la [src].")
 		src.update_icon()
 		return
 
@@ -87,7 +87,7 @@
 	if(!(ishuman(user) || isrobot(user)))	return 0
 	if(opened)	return 0
 	if(contents.len)	return 0
-	visible_message("[user] folds up the [name]")
+	visible_message("[user] dobla la [name]")
 	. = new item_path(get_turf(src))
 	qdel(src)
 
@@ -97,8 +97,8 @@
 		fold(usr)
 
 /obj/item/robot_rack/body_bag
-	name = "stasis bag rack"
-	desc = "A rack for carrying folded stasis bags and body bags."
+	name = "estante para bolsas de estasis"
+	desc = "Un estante para transportar bolsas de estasis plegadas y bolsas para cadaveres."
 	icon = 'icons/obj/closets/cryobag.dmi'
 	icon_state = "bodybag_folded"
 	object_type = /obj/item/bodybag

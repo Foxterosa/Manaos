@@ -156,7 +156,7 @@
 				log_admin("[key_name_admin(usr)] added a random goal to [key_name(current)].")
 			var/did_generate_goal = generate_goals(assigned_job, TRUE, 1)
 			if(did_generate_goal)
-				to_chat(current, SPAN_NOTICE("You have received a new goal. Use <b>Show Goals</b> to view it."))
+				to_chat(current, SPAN_NOTICE("Has recibido un nuevo objetivo. Usa <b>Show Goals</b> para poder verlo."))
 		return TRUE // To avoid 'you are not an admin' spam.
 
 	if(href_list["remove_memory"])
@@ -172,10 +172,10 @@
 
 		if(goal && can_modify)
 			if(usr == current)
-				to_chat(current, SPAN_NOTICE("<b>You have abandoned your goal:</b> '[goal.summarize(FALSE, FALSE)]'."))
+				to_chat(current, SPAN_NOTICE("<b>Has abandonado tu meta:</b> '[goal.summarize(FALSE, FALSE)]'."))
 			else
-				to_chat(usr, SPAN_NOTICE("<b>You have removed a goal from \the [current]:</b> '[goal.summarize(FALSE, FALSE)]'."))
-				to_chat(current, SPAN_NOTICE("<b>A goal has been removed:</b> '[goal.summarize(FALSE, FALSE)]'."))
+				to_chat(usr, SPAN_NOTICE("<b>Has borrado un objetivo a \the [current]:</b> '[goal.summarize(FALSE, FALSE)]'."))
+				to_chat(current, SPAN_NOTICE("<b>Un objetivo ha sido quitado:</b> '[goal.summarize(FALSE, FALSE)]'."))
 			qdel(goal)
 		return TRUE
 
@@ -191,9 +191,9 @@
 			if(goals)
 				goal = goals[LAZYLEN(goals)]
 				if(usr == current)
-					to_chat(usr, SPAN_NOTICE("<b>You have re-rolled a goal. Your new goal is:</b> '[goal.summarize(FALSE, FALSE)]'."))
+					to_chat(usr, SPAN_NOTICE("<b>Has reemplazado un objetivo. Tu nuevo objetivo es:</b> '[goal.summarize(FALSE, FALSE)]'."))
 				else
-					to_chat(usr, SPAN_NOTICE("<b>You have re-rolled a goal for \the [current]. Their new goal is:</b> '[goal.summarize(FALSE, FALSE)]'."))
+					to_chat(usr, SPAN_NOTICE("<b>Has reemplazado un objetivo por \the [current]. Tu nuevo objetivo es:</b> '[goal.summarize(FALSE, FALSE)]'."))
 					to_chat(current, SPAN_NOTICE("<b>A goal has been re-rolled. Your new goal is:</b> '[goal.summarize(FALSE, FALSE)]'."))
 		return TRUE
 
@@ -213,7 +213,7 @@
 			if(antag.add_antagonist(src, 1, 1, 0, 1, 1)) // Ignore equipment and role type for this.
 				log_admin("[key_name_admin(usr)] made [key_name(src)] into a [antag.role_text].")
 			else
-				to_chat(usr, "<span class='warning'>[src] could not be made into a [antag.role_text]!</span>")
+				to_chat(usr, "<span class='warning'>[src] No pudiste convertirte en [antag.role_text]!</span>")
 
 	else if(href_list["remove_antagonist"])
 		var/datum/antagonist/antag = GLOB.all_antag_types_[href_list["remove_antagonist"]]
@@ -248,7 +248,7 @@
 			return
 
 		var/datum/goal/ambition/ambition = SSgoals.ambitions[src]
-		var/new_ambition = input("Enter a new ambition", "Memory", ambition ? html_decode(ambition.description) : "") as null|message
+		var/new_ambition = input("Poner una nueva ambicion", "Memory", ambition ? html_decode(ambition.description) : "") as null|message
 		if(isnull(new_ambition))
 			return
 		new_ambition = sanitize(new_ambition)
@@ -257,15 +257,15 @@
 				if(!ambition)
 					ambition = new /datum/goal/ambition(mind)
 				ambition.description = new_ambition
-				to_chat(mind.current, "<span class='warning'>Your ambitions have been changed by higher powers, they are now: [ambition.description]</span>")
+				to_chat(mind.current, "<span class='warning'>Tus ambiciones han sido cambiadas por grandes poderes, ahora ellos son: [ambition.description]</span>")
 				log_and_message_admins("made [key_name(mind.current)]'s ambitions be '[ambition.description]'.")
 			else
-				to_chat(mind.current, "<span class='warning'>Your ambitions have been unmade by higher powers.</span>")
+				to_chat(mind.current, "<span class='warning'>Tus ambiciones han sido desechadas por grandes poderes.</span>")
 				log_and_message_admins("has cleared [key_name(mind.current)]'s ambitions.")
 				if(ambition)
 					qdel(ambition)
 		else
-			to_chat(usr, "<span class='warning'>The mind has ceased to be.</span>")
+			to_chat(usr, "<span class='warning'>La mente ha cesado.</span>")
 
 	else if (href_list["obj_edit"] || href_list["obj_add"])
 		var/datum/objective/objective
@@ -310,11 +310,11 @@
 
 				var/objective_path = text2path("/datum/objective/[new_obj_type]")
 				var/mob/living/M = new_target
-				if (!istype(M) || !M.mind || new_target == "Free objective")
+				if (!istype(M) || !M.mind || new_target == "Objetivo libre")
 					new_objective = new objective_path
 					new_objective.owner = src
 					new_objective:target = null
-					new_objective.explanation_text = "Free objective"
+					new_objective.explanation_text = "Objetivo libre"
 				else
 					new_objective = new objective_path
 					new_objective.owner = src
@@ -359,18 +359,18 @@
 				switch(new_obj_type)
 					if("download")
 						new_objective = new /datum/objective/download
-						new_objective.explanation_text = "Download [target_number] research levels."
+						new_objective.explanation_text = "Descargando [target_number] niveles de investigacion."
 					if("capture")
 						new_objective = new /datum/objective/capture
-						new_objective.explanation_text = "Accumulate [target_number] capture points."
+						new_objective.explanation_text = "Acumulando[target_number] puntos de captura."
 					if("absorb")
 						new_objective = new /datum/objective/absorb
-						new_objective.explanation_text = "Absorb [target_number] compatible genomes."
+						new_objective.explanation_text = "Absorviendo [target_number] genomas compatibles."
 				new_objective.owner = src
 				new_objective.target_amount = target_number
 
 			if ("custom")
-				var/expl = sanitize(input("Custom objective:", "Objective", objective ? objective.explanation_text : "") as text|null)
+				var/expl = sanitize(input("Objetivo personalizado:", "Objective", objective ? objective.explanation_text : "") as text|null)
 				if (!expl) return
 				new_objective = new /datum/objective
 				new_objective.owner = src
@@ -459,17 +459,17 @@
 				if (usr.client.holder.rights & R_FUN)
 					var/obj/item/device/uplink/suplink = find_syndicate_uplink()
 					if(!suplink)
-						to_chat(usr, "<span class='warning'>Failed to find an uplink.</span>")
+						to_chat(usr, "<span class='warning'>Fallo en encontrar un uplink.</span>")
 						return
 					var/crystals = suplink.uses
-					crystals = input("Amount of telecrystals for [key]","Operative uplink", crystals) as null|num
+					crystals = input("Cantidad de telecristales para key]","Operative uplink", crystals) as null|num
 					if (!isnull(crystals) && !QDELETED(suplink))
 						suplink.uses = crystals
 						log_and_message_admins("set the telecrystals for [key] to [crystals]")
 
 	else if (href_list["obj_announce"])
 		var/obj_count = 1
-		to_chat(current, "<span class='notice'>Your current objectives:</span>")
+		to_chat(current, "<span class='notice'>Tus objetivos actuales son:</span>")
 		for(var/datum/objective/objective in objectives)
 			to_chat(current, "<B>Objective #[obj_count]</B>: [objective.explanation_text]")
 			obj_count++

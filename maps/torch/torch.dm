@@ -171,6 +171,7 @@
 	#include "torch6_bridge.dmm"
 	#include "z1_admin.dmm"
 	#include "z2_transit.dmm"
+	#include "z3_eventos.dmm"
 
 	#include "../away/empty.dmm"
 	#include "../away/ascent/ascent.dm"
@@ -192,7 +193,6 @@
 	#include "../away/voxship/voxship.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
 
-	#include "../../code/datums/music_tracks/chasing_time.dm"
 
 	#define using_map_DATUM /datum/map/torch
 

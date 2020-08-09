@@ -1,5 +1,5 @@
 /datum/persistent/paper
-	name = "paper"
+	name = "papel"
 	entries_expire_at = 50
 	has_admin_data = TRUE
 	var/paper_type = /obj/item/weapon/paper

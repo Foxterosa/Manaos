@@ -150,17 +150,41 @@
 	desc = "A white beret adorned with the crest of corporate asset protection. For asset protection leaders that are more inclined towards style than safety."
 	icon_state = "beret_corporate_white"
 
+/obj/item/clothing/head/beret/centcom/bs_officer
+	name = "boina de oficial"
+	desc = "Una boina negra adornada con el escudo, un escudo plateado de cometa con una espada grabada, de las fuerzas de seguridad de Nanotrasen, anunciando al mundo que el usuario es un defensor de Nanotrasen."
+	icon_state = "beret_centcom_officer"
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_SMALL,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_MINOR
+		)
+
+/obj/item/clothing/head/beret/centcom/bs_navy
+	name = "boina de oficial navy azul"
+	desc = "Una boina azul marino adornada con el escudo, un escudo de plata de cometa con una espada grabada, de las fuerzas de seguridad de Nanotrasen, anunciando al mundo que el usuario es un defensor de Nanotrasen."
+	icon_state = "beret_centcom_officer_navy"
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_SMALL,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_MINOR
+		)
+
 /obj/item/clothing/head/beret/deathsquad
 	name = "heavy asset protection beret"
 	desc = "An armored red beret adorned with the crest of corporate asset protection. Doesn't sacrifice style or safety."
 	icon_state = "beret_red"
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH, 
-		bullet = ARMOR_BALLISTIC_RIFLE, 
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RIFLE,
 		laser = ARMOR_LASER_HANDGUNS,
-		energy = ARMOR_ENERGY_SMALL, 
-		bomb = ARMOR_BOMB_PADDED, 
-		bio = ARMOR_BIO_RESISTANT, 
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_RESISTANT,
 		rad = ARMOR_RAD_MINOR
 	)
 	siemens_coefficient = 0.9
@@ -174,3 +198,15 @@
 	name = "beret"
 	desc = "A simple, solid color beret. This one has no emblems or insignia on it."
 	icon_state = "beret_white"
+
+/obj/item/clothing/head/enfermera1
+	name = "gorro de enfermera"
+	desc = "Un gorro que te identifica como la enfermera del lugar."
+	icon_state = "nurse1_s"
+	item_state = "nurse1_s"
+
+/obj/item/clothing/head/enfermera2
+	name = "gorro de enfermera"
+	desc = "Un gorro que te identifica como la enfermera del lugar."
+	icon_state = "nurse_cmo_s"
+	item_state = "nurse_cmo_s"

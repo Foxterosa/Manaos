@@ -203,3 +203,51 @@
 				for(var/i in list(1,2,4,8,4,2,1,2,4,8,4,2,1,2,4,8,4,2))
 					set_dir(i)
 					sleep(1)
+
+/mob/living/simple_animal/corgi/pug
+	name = "\improper Pug"
+	real_name = "Pug"
+	desc = "Es un pug."
+	icon_state = "pug"
+	icon_living = "pug"
+	icon_dead = "pug_dead"
+	speak = list("YAP", "Woof!", "Bark!", "AUUUUUU")
+	speak_emote = list("barks", "woofs")
+	emote_hear = list("barks", "woofs", "yaps","pants")
+	emote_see = list("sacude su cabeza", "mira alrededor")
+	speak_chance = 1
+	turns_per_move = 10
+	response_help  = "pets"
+	response_disarm = "bops"
+	response_harm   = "kicks"
+	see_in_dark = 5
+	mob_size = 8
+	possession_candidate = 1
+	pass_flags = PASS_FLAG_TABLE
+
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/pug
+	meat_amount = 2
+
+/mob/living/simple_animal/corgi/borgi
+	name = "\improper Borgi"
+	real_name = "Borgi"
+	desc = "Mmh... me recuerda a... alguien..."
+	icon_state = "borgi"
+	icon_living = "borgi"
+	icon_dead = "borgi_dead"
+	speak = list("YAP", "Woof!", "Bark!", "AUUUUUU")
+	speak_emote = list("barks", "woofs")
+	emote_hear = list("barks", "woofs", "yaps","pants")
+	emote_see = list("sacude su cabeza", "mira alrededor")
+	speak_chance = 1
+	turns_per_move = 10
+	response_help  = "pets"
+	response_disarm = "bops"
+	response_harm   = "kicks"
+	see_in_dark = 5
+	mob_size = 8
+	possession_candidate = 1
+	pass_flags = PASS_FLAG_TABLE
+
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/syntiflesh
+	meat_amount = 3

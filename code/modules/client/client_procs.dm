@@ -380,7 +380,16 @@
 		'html/images/daislogo.png',
 		'html/images/eclogo.png',
 		'html/images/fleetlogo.png',
-		'html/images/sfplogo.png'
+		'html/images/sfplogo.png',
+		'html/images/medlogo.png',
+		'html/images/seclogo.png',
+		'html/images/explogo.png',
+		'html/images/servlogo.png',
+		'html/images/civlogo.png',
+		'html/images/englogo.png',
+		'html/images/reslogo.png',
+		'html/images/suplogo.png',
+		'html/images/roblogo.png'
 		)
 
 	var/decl/asset_cache/asset_cache = decls_repository.get_decl(/decl/asset_cache)
@@ -413,3 +422,63 @@ client/verb/character_setup()
 	var/mob/living/M = mob
 	if(istype(M))
 		M.OnMouseDrag(src_object, over_object, src_location, over_location, src_control, over_control, params)
+
+/client/proc/activate_darkmode()
+	/* Rpane */
+	winset(src, "rpane.textb", "background-color=#40628a;text-color=#FFFFFF")
+	winset(src, "rpane.infob", "background-color=#40628a;text-color=#FFFFFF")
+	winset(src, "rpane.wikib", "background-color=#40628a;text-color=#FFFFFF")
+	winset(src, "rpane.forumb", "background-color=#40628a;text-color=#FFFFFF")
+	winset(src, "rpane.rulesb", "background-color=#40628a;text-color=#FFFFFF")
+	winset(src, "rpane.githubb", "background-color=#40628a;text-color=#FFFFFF")
+	/* Mainwindow */
+	winset(src, "mainwindow.saybutton", "background-color=#40628a;text-color=#FFFFFF")
+	winset(src, "mainwindow.mebutton", "background-color=#40628a;text-color=#FFFFFF")
+	///// UI ELEMENTS /////
+	/* Mainwindow */
+	winset(src, "mainwindow", "background-color=#272727")
+	winset(src, "mainwindow.mainvsplit", "background-color=#272727")
+	winset(src, "mainwindow.tooltip", "background-color=#272727")
+	/* Outputwindow */
+	winset(src, "outputwindow.browseroutput", "background-color=#272727")
+	/* Rpane */
+	winset(src, "rpane", "background-color=#272727")
+	winset(src, "rpane.rpanewindow", "background-color=#272727")
+	/* Browserwindow */
+	winset(src, "browserwindow", "background-color=#272727")
+	winset(src, "browserwindow.browser", "background-color=#272727")
+	/* Infowindow */
+	winset(src, "infowindow", "background-color=#272727;text-color=#FFFFFF")
+	winset(src, "infowindow.info", "background-color=#272727;text-color=#FFFFFF;highlight-color=#009900;tab-text-color=#FFFFFF;tab-background-color=#272727")
+	// NOTIFY USER
+	to_chat(src, "<span class='notice'>Modo Oscuro activado</span>")
+
+/client/proc/deactivate_darkmode()
+	/* Rpane */
+	winset(src, "rpane.textb", "background-color=none;text-color=#000000")
+	winset(src, "rpane.infob", "background-color=none;text-color=#000000")
+	winset(src, "rpane.wikib", "background-color=none;text-color=#000000")
+	winset(src, "rpane.forumb", "background-color=none;text-color=#000000")
+	winset(src, "rpane.rulesb", "background-color=none;text-color=#000000")
+	winset(src, "rpane.githubb", "background-color=none;text-color=#000000")
+	/* Mainwindow */
+	winset(src, "mainwindow.saybutton", "background-color=none;text-color=#000000")
+	winset(src, "mainwindow.mebutton", "background-color=none;text-color=#000000")
+	///// UI ELEMENTS /////
+	/* Mainwindow */
+	winset(src, "mainwindow", "background-color=none")
+	winset(src, "mainwindow.mainvsplit", "background-color=none")
+	winset(src, "mainwindow.tooltip", "background-color=none")
+	/* Outputwindow */
+	winset(src, "outputwindow.browseroutput", "background-color=none")
+	/* Rpane */
+	winset(src, "rpane", "background-color=none")
+	winset(src, "rpane.rpanewindow", "background-color=none")
+	/* Browserwindow */
+	winset(src, "browserwindow", "background-color=none")
+	winset(src, "browserwindow.browser", "background-color=none")
+	/* Infowindow */
+	winset(src, "infowindow", "background-color=none;text-color=#000000")
+	winset(src, "infowindow.info", "background-color=none;text-color=#000000;highlight-color=#007700;tab-text-color=#000000;tab-background-color=none")
+	///// NOTIFY USER /////
+	to_chat(src, "<span class='notice'>Modo Oscuro desactivado</span>") // what a sick fuck

@@ -69,36 +69,36 @@ mob/living/carbon/human/proc/handle_pain()
 		var/msg
 		switch(maxdam)
 			if(1 to 10)
-				msg =  "Your [damaged_organ.name] [burning ? "burns" : "hurts"]."
+				msg =  "Tu [damaged_organ.name] [burning ? "quema" : "duele"]."
 			if(11 to 90)
-				msg = "Your [damaged_organ.name] [burning ? "burns" : "hurts"] badly!"
+				msg = "Tu [damaged_organ.name] [burning ? "quema" : "duele"] demasiado!"
 			if(91 to 10000)
-				msg = "OH GOD! Your [damaged_organ.name] is [burning ? "on fire" : "hurting terribly"]!"
+				msg = "OH DIOS! Tu [damaged_organ.name] esta [burning ? "en fuego" : "doliendo terriblemente"]!"
 		custom_pain(msg, maxdam, prob(10), damaged_organ, TRUE)
 	// Damage to internal organs hurts a lot.
 	for(var/obj/item/organ/internal/I in internal_organs)
 		if(prob(1) && !((I.status & ORGAN_DEAD) || BP_IS_ROBOTIC(I)) && I.damage > 5)
 			var/obj/item/organ/external/parent = get_organ(I.parent_organ)
 			var/pain = 10
-			var/message = "You feel a dull pain in your [parent.name]"
+			var/message = "Sientes un poco de dolor en tu [parent.name]"
 			if(I.is_bruised())
 				pain = 25
-				message = "You feel a pain in your [parent.name]"
+				message = "Sientes dolor en tu [parent.name]"
 			if(I.is_broken())
 				pain = 50
-				message = "You feel a sharp pain in your [parent.name]"
+				message = "Sientes un dolor punzante en tu [parent.name]"
 			src.custom_pain(message, pain, affecting = parent)
 
 
 	if(prob(1))
 		switch(getToxLoss())
 			if(5 to 17)
-				custom_pain("Your body stings slightly.", getToxLoss())
+				custom_pain("Tu cuerpo pica un poco.", getToxLoss())
 			if(17 to 35)
-				custom_pain("Your body stings.", getToxLoss())
+				custom_pain("Tu cuerpo pica.", getToxLoss())
 			if(35 to 60)
-				custom_pain("Your body stings strongly.", getToxLoss())
+				custom_pain("Tu cuerpo pica mucho.", getToxLoss())
 			if(60 to 100)
-				custom_pain("Your whole body hurts badly.", getToxLoss())
+				custom_pain("Todo tu cuerpo te duele mucho.", getToxLoss())
 			if(100 to INFINITY)
-				custom_pain("Your body aches all over, it's driving you mad.", getToxLoss())
+				custom_pain("Te duele todo el cuerpo a tal punto que te vuelve loco", getToxLoss())

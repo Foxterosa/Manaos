@@ -82,3 +82,16 @@ mob/observer/check_airflow_movable()
 		throwing = null
 		to_chat(src, "<span class='notice'>You cannot move further in this direction.</span>")
 
+/mob/observer/proc/incarnate_ghost()
+	if(!client)
+		return
+
+	var/mob/living/carbon/human/new_char = new(get_turf(src))
+	client.prefs.copy_to(new_char)
+	if(mind)
+		mind.active = TRUE
+		mind.transfer_to(new_char)
+	else
+		new_char.key = key
+
+	return new_char

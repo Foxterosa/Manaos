@@ -34,9 +34,10 @@
 	var/stop_automated_movement_when_pulled = 1 //When set to 1 this stops the animal from moving when someone is pulling it.
 
 	//Interaction
-	var/response_help   = "tries to help"
-	var/response_disarm = "tries to disarm"
-	var/response_harm   = "tries to hurt"
+	var/response_help   = "pokes"
+	var/response_disarm = "shoves"
+	var/response_harm   = "hits"
+	var/force_threshold = 0 //Minimum force required to deal any damage
 	var/harm_intent_damage = 3
 	var/can_escape = FALSE // 'smart' simple animals such as human enemies, or things small, big, sharp or strong enough to power out of a net
 
@@ -58,6 +59,7 @@
 	var/melee_damage_lower = 0
 	var/melee_damage_upper = 0
 	var/attacktext = "attacked"
+	var/obj_damage = 0 //how much damage this simple animal does to objects, if any
 	var/attack_sound = null
 	var/friendly = "nuzzles"
 	var/environment_smash = 0
