@@ -9,7 +9,7 @@
 	selection_color = "#68099e"
 	minimal_player_age = 4
 	economic_power = 7
-	minimum_character_age = list(SPECIES_HUMAN = 21)
+	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/exploration/pathfinder
 	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 	allowed_ranks = list(
@@ -96,7 +96,8 @@
 	                    SKILL_WEAPONS     = SKILL_EXPERT)
 
 	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
-		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
+		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, 
+		access_expedition_shuttle_helm,
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)

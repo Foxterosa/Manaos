@@ -57,6 +57,48 @@
 	req_access = list(list(access_brig, access_heads))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 
+/obj/item/weapon/gun/energy/bs_secure
+	name = "revolver avanzado BS-650-S"
+	desc = "El BS-650-S es un revolver avanzado  utilizado por los oficiales Blueshield."
+	icon = 'icons/obj/guns/energy_revolver.dmi'
+	icon_state = "energyrevolverstun100"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns_secure.dmi',
+		)
+	modifystate = "energyrevolverstun"
+	item_state = null
+	firemodes = list(
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="energyrevolverkill"),
+		)
+	req_access = list(access_bridge)
+	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
+	max_shots = 10
+	recharge_time = 5
+	self_recharge = 2
+
+/obj/item/weapon/gun/energy/mag_secure
+	name = "lawyer-x3ph"
+	desc = "Una pistola de energía de pequeño tamaño hecha para defensa personal, en la parte posterior hay escrito: \"Que la ley te acompañe...\" Tiene solo 2 cargos de desactivador."
+	icon = 'icons/obj/guns/energy_revolver.dmi'
+	icon_state = "energyrevolverstun100"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns_secure.dmi',
+		)
+	modifystate = "energyrevolverstun"
+	item_state = null
+	firemodes = list(
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
+	list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="energyrevolverstun"),
+		)
+	req_access = list(access_bridge)
+	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
+	max_shots = 4
+	recharge_time = 5
+	self_recharge = 2
+
 /obj/item/weapon/gun/energy/gun/secure/mounted
 	name = "robot energy gun"
 	desc = "A robot-mounted equivalent of the LAEP90-S, which is always registered to its owner."

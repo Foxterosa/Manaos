@@ -2,7 +2,7 @@
 /obj/machinery/bodyscanner
 	var/mob/living/carbon/human/occupant
 	var/locked
-	name = "Body Scanner"
+	name = "Escaner corporal"
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "body_scanner_0"
 	density = 1
@@ -25,7 +25,7 @@
 /obj/machinery/bodyscanner/verb/eject()
 	set src in oview(1)
 	set category = "Object"
-	set name = "Eject Body Scanner"
+	set name = "Eyectar del escaner corporal"
 
 	if (usr.incapacitated())
 		return
@@ -35,7 +35,7 @@
 /obj/machinery/bodyscanner/verb/move_inside()
 	set src in oview(1)
 	set category = "Object"
-	set name = "Enter Body Scanner"
+	set name = "Entrar al escaner corporal"
 
 	if(!user_can_move_target_inside(usr,usr))
 		return
@@ -78,13 +78,13 @@
 	if(!istype(user) || !istype(target))
 		return FALSE
 	if(occupant)
-		to_chat(user, "<span class='warning'>The scanner is already occupied!</span>")
+		to_chat(user, "<span class='warning'>El escaner ya esta ocupado</span>")
 		return FALSE
 	if(target.abiotic())
-		to_chat(user, "<span class='warning'>The subject cannot have abiotic items on.</span>")
+		to_chat(user, "<span class='warning'>El sujeto no puede tener elementos abioticos.</span>")
 		return FALSE
 	if(target.buckled)
-		to_chat(user, "<span class='warning'>Unbuckle the subject before attempting to move them.</span>")
+		to_chat(user, "<span class='warning'>Desabroche al sujeto antes de intentar moverlo.</span>")
 		return FALSE
 
 	target.forceMove(src)
@@ -108,7 +108,7 @@
 /obj/machinery/bodyscanner/MouseDrop_T(var/mob/target, var/mob/user)
 	if(!CanMouseDrop(target, user) || !istype(target))
 		return FALSE
-	user.visible_message("<span class='notice'>\The [user] begins placing \the [target] into \the [src].</span>", "<span class='notice'>You start placing \the [target] into \the [src].</span>")
+	user.visible_message("<span class='notice'>[user] ayuda a [target] a entrar en el [src.name].</span>", "<span class='notice'>Comienzas a ayudar a [target] a entrar en el [src.name].</span>")
 	if(!do_after(user, 30, src))
 		return
 	if(!user_can_move_target_inside(target, user))

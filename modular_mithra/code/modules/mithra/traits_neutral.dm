@@ -20,8 +20,8 @@
 	excludes = list(/datum/trait/hot_blooded)
 
 /datum/trait/hot_blooded
-	name = "Hot-blooded"
-	desc = "Your body is capable of more vigourous endothermoregulation, causing your average body temperature to be higher than normal."
+	name = "Sangre caliente"
+	desc = "Su cuerpo es capaz de una endoregulación termica mas vigorosa, lo que hace que su temperatura corporal promedio sea mas alta de lo normal."
 	cost = 0
 	var_changes = list("body_temperature" = 313, "heat_discomfort_level" = 320)
 	excludes = list(/datum/trait/cold_blooded)

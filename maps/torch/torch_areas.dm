@@ -144,10 +144,6 @@
 /area/crew_quarters/safe_room/thirddeck
 	name = "\improper Third Deck Safe Room"
 
-/area/crew_quarters/laundry
-	name = "\improper Laundry Room"
-	icon_state = "Sleep"
-
 /area/crew_quarters/garden
 	name = "\improper Ship Garden"
 
@@ -668,20 +664,15 @@
 	name = "\improper Command - CoS' Office"
 	req_access = list(access_hos)
 
-/area/crew_quarters/heads/office/cl
+/area/crew_quarters/heads/office/representative
 	icon_state = "heads_cl"
-	name = "\improper Command - CL's Office"
-	req_access = list(access_liaison)
+	name = "\improper Comando - Representante de Sol Gov"
+	req_access = list(access_captain)
 
-/area/crew_quarters/heads/office/cl/backroom
-	icon_state = "heads_cl"
-	name = "\improper Command - CL's Backroom"
-	req_access = list(access_liaison)
-
-/area/crew_quarters/heads/office/adjudicator
+/area/crew_quarters/heads/office/magistrado
 	icon_state = "heads_sr"
-	name = "\improper Command - Adjudicator's Office"
-	req_access = list(access_adjudicator)
+	name = "\improper Command - Oficina del Magistrado"
+	req_access = list(access_magistrado)
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
@@ -1109,8 +1100,8 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_crematorium)
 
-/area/medical/lounge
-	name = "\improper Staff Lounge"
+/area/medical/recepcion
+	name = "\improper recepcion"
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
 
@@ -1395,6 +1386,10 @@
 	name = "\improper Holodeck - Plaza"
 	sound_env = SMALL_ENCLOSED
 
+/area/holodeck/source_lasertag
+	name = "\improper Holodeck - Laser Tag"
+	sound_env = ARENA
+
 // Engineering
 
 /area/engineering/atmos/storage
@@ -1481,6 +1476,11 @@
 	name = "\improper Operating Theatre 2"
 	icon_state = "surgery"
 	req_access = list(list(access_surgery, access_robotics_engineering))
+
+/area/medical/garaje
+	name = "\improper Garaje"
+	icon_state = "medbay4"
+	req_access = list(access_medical)
 
 // Research
 /area/assembly
@@ -1677,6 +1677,30 @@
 	name = "\improper Thunderdome (Observer.)"
 	icon_state = "purple"
 
+/area/security/infantry
+	name = "\improper Infantry Prep"
+	icon_state = "crew_quarters"
+	sound_env = MEDIUM_SOFTFLOOR
+	req_access = list(access_infantry)
+
+/area/security/infantry/gear
+	name = "\improper Technician Prep"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_inftech)
+
+/area/security/infantry/com
+	name = "\improper Squad Leader Prep"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_infcom)
+
+/area/security/infantry/armory
+	name = "\improper Infantry Hard Storage"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_infcom)
+
 /area/defturrets
 	name = "\improper Anti-Boarding Control"
 	icon_state = "security_sub"
@@ -1730,8 +1754,8 @@
 	name = "\improper Cabin Two"
 	icon_state = "Sleep"
 
-/area/crew_quarters_boh/cabin_main/c3
-	name = "\improper Cabin Three"
+/area/crew_quarters_boh/cabin_main/cambiador
+	name = "\improper Cambiador"
 	icon_state = "Sleep"
 
 /area/crew_quarters_boh/cabin_main/janitorial

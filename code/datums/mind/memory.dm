@@ -3,7 +3,7 @@
 
 /mob/proc/StoreMemory(var/memory, var/options)
 	if(!mind)
-		return "There is no mind to store a memory in."
+		return "No hay ninguna mente para almacenar una memoria."
 	. = mind.StoreMemory(memory, options)
 
 /datum/mind/proc/StoreMemory(var/memory, var/options)
@@ -16,7 +16,7 @@
 
 	LAZYREMOVE(memories, memory)
 	memory.creation_source.Log("removed a memory")
-	to_chat(remover, SPAN_NOTICE("You have removed a memory."))
+	to_chat(remover, SPAN_NOTICE("Has borrado una memoria."))
 	ShowMemory(remover)
 
 /datum/mind/proc/ClearMemories(var/list/tags)
@@ -54,7 +54,7 @@
 		var/datum/memory/M = mem
 		var/owner_name = M.OwnerName()
 		if(owner_name != last_owner_name)
-			output += "<B>[current.real_name]'s Memories</B><HR>"
+			output += "<B>Memorias de [current.real_name]</B><HR>"
 			last_owner_name = owner_name
 		output += "[M.memory] <a href='?src=\ref[src];remove_memory=\ref[M]'>\[Remove\]</a>"
 
@@ -165,7 +165,7 @@
 			relevant_memories++
 
 	if(relevant_memories > memory_limit)
-		return "Memory limit reached. A maximum of [memory_limit] user added memories allowed."
+		return "Limite de memoria alcanzada. Se permite al usuario un maximo de [memory_limit]."
 
 // System memory handling
 /decl/memory_options/system
@@ -179,15 +179,15 @@
 ********/
 
 /mob/verb/ShowMemories()
-	set name = "Notes"
+	set name = "Notas"
 	set category = "IC"
 	if(mind)
 		mind.ShowMemory(src)
 	else
-		to_chat(src, SPAN_WARNING("There is no mind to retrieve stored memories from."))
+		to_chat(src, SPAN_WARNING("No hay ninguna mente para recuperar los recuerdos almacenados."))
 
 /mob/verb/AddMemory(var/msg as message)
-	set name = "Add Note"
+	set name = "Agregar nota"
 	set category = "IC"
 
 	msg = sanitize(msg,extra = FALSE)
@@ -196,4 +196,4 @@
 		if(error)
 			to_chat(src, SPAN_WARNING(error))
 		else
-			to_chat(src, SPAN_NOTICE("Note added - View it with the 'Notes' verb"))
+			to_chat(src, SPAN_NOTICE("Nota añadida - Miralo en el verbo 'Notas'"))

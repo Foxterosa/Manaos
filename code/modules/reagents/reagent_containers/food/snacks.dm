@@ -24,7 +24,7 @@
 	//Used to stop deepfried meat from looking like slightly tanned raw meat, and make it actually look cooked
 	center_of_mass = "x=16;y=16"
 	w_class = ITEM_SIZE_SMALL
-	
+
 	var/has_products = FALSE
 	var/list/attack_products //Items you can craft together. Like bomb making, but with food and less screwdrivers.
 	// Uses format list(ingredient = result_type). The ingredient can be a typepath or a kitchen_tag string (used for mobs or plants)
@@ -217,7 +217,7 @@
 				reagents.trans_to_obj(slice, reagents_per_slice)
 			qdel(src)
 			return
-			
+
 	if(!LAZYLEN(attack_products))
 		return
 	var/create_type
@@ -715,7 +715,7 @@
 	desc = "A heated Donk pocket, great for vendors on the go."
 	reagents_to_add = list(/datum/reagent/nutriment = 2, /datum/reagent/nutriment/protein = 2, /datum/reagent/tricordrazine = 5)
 	bitesize = 6
-	
+
 /obj/item/weapon/reagent_containers/food/snacks/donkpocket/warm/Initialize()
 	. = ..()
 	addtimer(CALLBACK(src, .proc/cool), 7 MINUTES)
@@ -3495,3 +3495,36 @@ obj/item/weapon/reagent_containers/food/snacks/dango
 	name = "\improper Taco!"
 	desc = "Interestingly, the shell has gone soft and the contents have gone stale."
 	icon_state = "ancient_taco"
+
+/obj/item/weapon/reagent_containers/food/snacks/milanesa
+	name = "milanesa"
+	desc = "Una sabrosa milanesa sobre un plato."
+	icon_state = "milanesa"
+	trash = /obj/item/trash/plate
+	filling_color = "#926238"
+	center_of_mass = "x=16;y=13"
+	reagents_to_add = list(/datum/reagent/nutriment = 4, /datum/reagent/nutriment/protein = 8)
+	reagent_data = list(/datum/reagent/nutriment = list("breading" = 4))
+	bitesize = 5
+
+/obj/item/weapon/reagent_containers/food/snacks/milanesanapo
+	name = "milanesa napolitana"
+	desc = "Una sabrosa milanesa con su quesito y su salsita."
+	icon_state = "napolitana"
+	trash = /obj/item/trash/plate
+	filling_color = "#7a3d11"
+	center_of_mass = "x=16;y=13"
+	reagents_to_add = list(/datum/reagent/nutriment = 4, /datum/reagent/nutriment/protein = 8)
+	reagent_data = list(/datum/reagent/nutriment = list("breading" = 4))
+	bitesize = 5
+
+/obj/item/weapon/reagent_containers/food/snacks/milanesacruda
+	name = "milanesa cruda"
+	desc = "Un pedaso crudo de milanesa, es mejor si la cocinas primero."
+	icon_state = "milacruda"
+	bitesize = 2
+	center_of_mass = "x=16;y=13"
+	reagent_data = list(/datum/reagent/nutriment = list("dough" = 3))
+	reagents_to_add = list(/datum/reagent/nutriment = 3)
+
+

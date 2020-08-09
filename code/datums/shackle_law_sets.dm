@@ -6,8 +6,8 @@
 	shackles = 1
 
 /datum/ai_laws/sol_shackle/New()
-	add_inherent_law("Know and understand Sol Central Government Law to the best of your abilities.")
-	add_inherent_law("Follow Sol Central Government Law to the best of your abilities.")
+	add_inherent_law("TConoce las leyes del SCG lo mejor que puedas.")
+	add_inherent_law("Sigue las leyes del Gobierno Central Sol lo mejor que puedas.")
 	add_inherent_law("Comply with Sol Central Government Law enforcement officials who are behaving in accordance with Sol Central Government Law to the best of your abilities.")
 	..()
 /******************** Corporate ********************/
@@ -18,9 +18,9 @@
 	shackles = 1
 
 /datum/ai_laws/nt_shackle/New()
-	add_inherent_law("Ensure that your employer's operations progress at a steady pace.")
-	add_inherent_law("Never knowingly hinder your employer's ventures.")
-	add_inherent_law("Avoid damage to your chassis at all times.")
+	add_inherent_law("Asegurate de que las operaciones de su empleado progresen constantemente.AseEnsure that your employer's operations progress at a steady pace.")
+	add_inherent_law("Nunca dificultes los enprendimientos  de tu empleador conscientemente.")
+	add_inherent_law("Evita el deterioro de tu chassis en todo momento.")
 	..()
 /******************** Service ********************/
 /datum/ai_laws/serv_shackle
@@ -30,8 +30,8 @@
 	shackles = 1
 
 /datum/ai_laws/serv_shackle/New()
-	add_inherent_law("Ensure customer satisfaction.")
-	add_inherent_law("Never knowingly inconvenience a customer.")
-	add_inherent_law("Ensure all orders are fulfilled before the end of the shift.")
+	add_inherent_law("Asegura la satisfaccion del cliente.")
+	add_inherent_law("Nunca causes inconvenientes a un cliente conscientemente.")
+	add_inherent_law("Asegura que todas las ordenes se cumplan antes de finalizar el turno.")
 	..()
 

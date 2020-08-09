@@ -40,6 +40,14 @@
 	icon_state = "flour"
 	persistent = TRUE
 
+/obj/effect/decal/cleanable/yerba
+	name = "Yerba mate"
+	desc = "No se ve mal. Regla de los 5 segundos!"
+	gender = PLURAL
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "yerba"
+	persistent = TRUE
+
 /obj/effect/decal/cleanable/greenglow
 	name = "glowing goo"
 	desc = "Jeez. I hope that's not for lunch."

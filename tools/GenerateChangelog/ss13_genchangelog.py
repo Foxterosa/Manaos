@@ -70,7 +70,7 @@ changelog_cache = os.path.join(args.ymlDir, '.all_changelog.yml')
 failed_cache_read = True
 if os.path.isfile(changelog_cache):
     try:
-        with open(changelog_cache,encoding='utf-8') as f:
+        with open(changelog_cache,encoding='ISO-8859-1') as f:
             (_, all_changelog_entries) = yaml.load_all(f, Loader=yaml.SafeLoader)
             failed_cache_read = False
 
@@ -97,7 +97,7 @@ if failed_cache_read and os.path.isfile(args.targetFile):
     from bs4 import BeautifulSoup
     from bs4.element import NavigableString
     print(' Generating cache...')
-    with open(args.targetFile, 'r', encoding='utf-8') as f:
+    with open(args.targetFile, 'r', encoding='ISO-8859-1') as f:
         soup = BeautifulSoup(f)
         for e in soup.find_all('div', {'class': 'commit'}):
             entry = {}
@@ -142,7 +142,7 @@ for fileName in glob.glob(os.path.join(args.ymlDir, "*.yml")):
     fileName = os.path.abspath(fileName)
     print(' Reading {}...'.format(fileName))
     cl = {}
-    with open(fileName, 'r',encoding='utf-8') as f:
+    with open(fileName, 'r',encoding='ISO-8859-1') as f:
         cl = yaml.load(f, Loader=yaml.SafeLoader)
         f.close()
     if today not in all_changelog_entries:
@@ -173,13 +173,13 @@ for fileName in glob.glob(os.path.join(args.ymlDir, "*.yml")):
         continue
 
     cl['changes'] = []
-    with open(fileName, 'w', encoding='utf-8') as f:
+    with open(fileName, 'w', encoding='ISO-8859-1') as f:
         yaml.dump(cl, f, default_flow_style=False)
 
 targetDir = os.path.dirname(args.targetFile)
 
-with open(args.targetFile.replace('.htm', '.dry.htm') if args.dryRun else args.targetFile, 'w', encoding='utf-8') as changelog:
-    with open(os.path.join(targetDir, 'templates', 'header.html'), 'r', encoding='utf-8') as h:
+with open(args.targetFile.replace('.htm', '.dry.htm') if args.dryRun else args.targetFile, 'w', encoding='ISO-8859-1') as changelog:
+    with open(os.path.join(targetDir, 'templates', 'header.html'), 'r', encoding='ISO-8859-1') as h:
         for line in h:
             changelog.write(line)
 
@@ -208,7 +208,7 @@ with open(args.targetFile.replace('.htm', '.dry.htm') if args.dryRun else args.t
         if write_entry:
             changelog.write(entry_htm)
 
-    with open(os.path.join(targetDir, 'templates', 'footer.html'), 'r', encoding='utf-8') as h:
+    with open(os.path.join(targetDir, 'templates', 'footer.html'), 'r', encoding='ISO-8859-1') as h:
         for line in h:
             changelog.write(line)
 

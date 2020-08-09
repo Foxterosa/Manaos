@@ -1,5 +1,5 @@
 /datum/persistent/filth/trash
-	name = "trash"
+	name = "basura"
 
 /datum/persistent/filth/trash/CheckTurfContents(var/turf/T, var/list/tokens)
 	var/too_much_trash = 0

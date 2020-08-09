@@ -1,6 +1,6 @@
 /datum/vote/restart
-	name = "restart"
-	choices = list("Restart Round","Continue Playing")
+	name = "reiniciar"
+	choices = list("Reiniciar ronda","Continuar jugando")
 	priorities = list("First")
 	weights = list(1)
 	results_length = 1
@@ -12,10 +12,10 @@
 
 /datum/vote/restart/handle_default_votes()
 	var/non_voters = ..()
-	choices["Continue Playing"] += non_voters
+	choices["Continuar jugando"] += non_voters
 
 /datum/vote/restart/report_result()
 	if(..())
 		return 1
-	if(result[1] == "Restart Round")
+	if(result[1] == "Reiniciar ronda")
 		SSvote.restart_world()
