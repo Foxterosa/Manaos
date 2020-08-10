@@ -171,8 +171,8 @@
 
 /decl/emote/visible/smile
 	key = "smile"
-	emote_message_3p_target = "USER sonrie a TARGET."
-	emote_message_3p = "USER sonrie."
+	emote_message_3p_target = "USER sonríe a TARGET."
+	emote_message_3p = "USER sonríe."
 
 /decl/emote/visible/pale
 	key = "pale"
