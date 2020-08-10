@@ -1,10 +1,10 @@
 /decl/cultural_info/culture/generic
 	name = CULTURE_OTHER
-	description = "You are from one of the many small, relatively unknown cultures scattered across the galaxy."
+	description = "Eres de una de las culturas reducidas y relativamente desconocidas dispersadas a traves de la galaxia."
 
 /decl/cultural_info/culture/human
 	name = CULTURE_HUMAN
-	description = "You are from one of various planetary cultures of humankind."
+	description = "Eres de una de las varias culturas planetarias humanas."
 	secondary_langs = list(
 		LANGUAGE_HUMAN_EURO,
 		LANGUAGE_HUMAN_CHINESE,
@@ -20,125 +20,125 @@
 
 /decl/cultural_info/culture/human/martian_surfacer
 	name = CULTURE_HUMAN_MARTIAN
-	description = "You are from the surface of Mars. Raised in one of the many farming communities or one of the great cities such as Olympus. Most of the surfacers \
-	are known as Monsians, the largest cultural group on the planet. Most Surfacers have had a decent upbringing and represent the \
-	average level of comfort expected in Sol space. Most surfacers are like many across the galaxy, though a few harbour rivalries with other Martian cultural \
-	groups or are generally overly proud of their heritage, as is the case with the Gideons, to the point that they constantly refer to it."
+	description = "Eres de la superficie de Marte. Creciste en una de las muchas comunidades rurales o en una de las grandes ciudades como Olympus. La mayoria de los \
+	habitantes superficiales son llamados Monsians, el mayor grupo cultural del planeta. La mayoria de los Superficiales tuvieron una crianza decente y vivieron en el nivel \
+	esperado de confort del espacio Solar. Muchos superficiales son como otros a traves de la galaxia, pero algunos tienen rivalidades con otros grupos culturales marcianos \
+	o son demasiado orgullosos de su patrimonio, como es el caso con los Gideons, orgullosos al punto de no parar de hablar de su herencia."
 	economic_power = 1
 
 /decl/cultural_info/culture/human/martian_tunneller
 	name = CULTURE_HUMAN_MARSTUN
-	description = "You are one of the people of the UnderCities of Mars. The UnderCities, originally built as 'temporary' living space while the cities above them \
-	were constructed, have since grown far beyond their original scope and have now spread out underneath the red planet. Tunnellers, despite typically having access \
-	to the same amenities and services as Surfacers are somewhat poorer than their aboveground brethren as a result of their less desirable locale as well as a strong \
-	criminal presence stemming from centuries of poor policing and a focus on the surface by the martian government. Most Tunnellers are resilient, though distrusting \
-	and wary of outsiders, and tend to strongly dislike non-Martians."
+	description = "Eres uno de los habitantes de las Ciudades Subterraneas de Marte. Las Ciudades, originalmente viviendas 'temporales' mientras se terminaba \
+	la construccion de las urbes superficiales, han desde entonces superado su escala inicial y se han expandido por el subsuelo del planeta rojo. A pesar de tener acceso \
+	a las mismas comodidades y servicios que el resto de los Marcianos, los Subterraneos son usualmente mas pobres que sus iguales superficiales como resultado de sus entornos indeseables \
+	ademas de una intensa presencia criminal causada por siglos de prioridad a la superficie de parte del gobierno marciano. Los Subterraneos son tan duros como desconfiados de \
+	forasteros, y suelen tener una fuerte aversion a los extranjeros planetarios."
 	economic_power = 0.9
 
 /decl/cultural_info/culture/human/luna_poor
 	name = CULTURE_HUMAN_LUNAPOOR
-	description = "You are from Luna, a natural satellite of Earth and home to some of the richest, mostly highly cultured or influential people humanity has. Unfortunately, you are most certainly not one of them. \
-	While Luna is known for its richness, the arts, culture and old money, it is also home to a sizeable population of working poor or middle-lower income persons. Typically the corporate employees \
-	of one of the various corporations, persons hired in service roles in one of the many prefectures or a resident of New Vegas. The 'poor' of Luna typically resent the rich because of their \
-	financial, cultural and political power and influence over their lives."
+	description = "Eres de Luna, el unico satelite natural de la Tierra y un hogar a algunas de las personas mas ricas, cultas e influenciales de la humanidad. Lamentablemente, no eres ni lejanamente una de ellas. \
+	A pesar de ser conocida por su riqueza, cultura, arte y dinero antiguo, en Luna tambien habita una poblacion considerable de trabajadores de ingresos medianos y bajos. Son tipicamente empleados \
+	de una de las varias empresas, gente trabajando roles de servicio en una prefectura o residentes de Nueva Vegas. Los 'pobres' de Luna generalmente se resienten de los ricos \
+	por su poder politico, financial y cultural sobre sus vidas."
 	economic_power = 1
 	language = LANGUAGE_HUMAN_SELENIAN
 
 /decl/cultural_info/culture/human/luna_rich
 	name = CULTURE_HUMAN_LUNARICH
-	description = "You are from Luna, Earths only natural satellite and home to some of the richest, most highly cultured, or influential people of humanity. Fortunately for you, you are one of this elite and well \
-	off class of people. The rich of Luna are politically and economically influential not just in Luna, but in the various corporations, organizations and government bodies of the SCG. \
-	Luna's upper class isn't equal; generally divided between new, corporate money and old, dynastic money; many members of the old dynasties look down on the newly wealthy. \
-	Much of the elite of Luna is embroiled in 'The Game' a state of political manoeuvring and intrigue among various factions and persons of influence and power \
-	with implications far beyond the squabbles of the prefectures."
+	description = "Eres de Luna, el unico satelite natural de la Tierra y un hogar a algunas de las personas mas ricas, cultas e influenciales de la humanidad. Afortunadamente, eres parte de \
+	esta elite. Los ricos de Luna son influenciales politica y economicamente en Luna y en varias empresas, organizaciones y cuerpos gubernamentales del SCG. \
+	La clase alta de Luna no es pareja: esta dividida entre riqueza moderna empresarial y riqueza vieja dinastica, varios miembros de la posterior despreciando a los ricos nuevos. \
+	La minoria selecta de Luna esta involucrada en 'El Juego', una serie de manipulaciones politicas e intriga entre varias personas y facciones con poder e influencia \
+	con implicaciones infinitamente mayores que las disputas vulgares de las prefecturas."
 	economic_power = 1.3
 	language = LANGUAGE_HUMAN_SELENIAN
 
 /decl/cultural_info/culture/human/venusian_upper
 	name = CULTURE_HUMAN_VENUSIAN
-	description = "You are from one of the many zones of Venus. Floating high above the ground of the planet on massive platforms, you are one of the many who live on one of the most decadent locations in the \
-	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
-	Those above are exceptionally wealthy, being hotel, casino, resort owners, politicians, bankers or rich retirees."
+	description = "Eres de una de las varias zonas de Venus. Flotando a gran distancia de la superficie en plataformas masivas, vives en uno de los lugares mas decadentes del SCG. \
+	Como habitante de Venus, conoces lujos, fortunas y entretenimiento. Primariamente una destinacion turista popular, varios de los residentes permanentes trabajan en la industria de turismo \
+	y son notablemente de clase media. Los superiores son excepcionalmente ricos, siendo propietarios de casinos, hoteles, bancos, o politicos y jubilados ricos."
 	economic_power = 1.4
 
 /decl/cultural_info/culture/human/venusian_surfacer
 	name = CULTURE_HUMAN_VENUSLOW
-	description = "You are from the surface of Venus, one of many employed in mining, industry and services industries. Venusian Surfacers are fairly poor, especially compared to Zoners and \
-	have far lower standards of living than those above. A hardy people who spend much of their time working in mostly unpleasant conditions in order to prop up the society above, \
-	surfacers are a people who value hard work, solidarity, unity and democracy. Unfortunately, while they support noble ideals, the reality of their situation does not always \
-	match them, and much of the surface of Venus finds itself rife with organised crime, separatist groups and other criminal organisations."
+	description = "Eres de la superficie de Venus, uno de los muchos empleados en mineria, servicios o industria. Los habitantes de la superficie son considerablemente pobres, especialmente comparados a las plataformas \
+	flotantes, y tienen circumstancias de vida mucho peores. Gente duradera, pasan mucho de su tiempo trabajando en condiciones desagradables para reforzar la sociedad flotando sobre ellos. \
+	Los que habitan la superficie respetan los valores de trabajar duro, la solidaridad, la democracia y la unidad como grupo. A pesar de seguir estos ideales nobles, su situacion no siempre cuadra con \
+	ellos, y mucha de la superficie venusiana esta infestada de crimen organizado, grupos separatistas y otras organizaciones criminales."
 	economic_power = 0.9
 
 /decl/cultural_info/culture/human/belter
 	name = CULTURE_HUMAN_BELTER
-	description = "You are from Ceres. The people of Ceres and the wider asteroid belt are colloquially known as 'Belters.' Traditionally a people rooted in the mining industry, \
-	the belters of today are primarily engaged in the mechanical services, engineering, shipbuilding and maintenance industries. Belters are quite varied, and something of a melting \
-	pot owing to the sheer number of transient workers, hauler crews and government and corporate employees basing themselves around the great shipyards of Ceres. This has led to belter \
-	culture being mainly about embracing change, new people and new experiences, as well as a sense of pride in their work, as the reputation of Ceres shipbuilding is widely known across \
-	human space."
+	description = "Eres de Ceres. Los habitantes de Ceres y el cinturon de asteroides general son conocidos como Belters. Tradicionalmente basados en la industria minera, \
+	los belters de hoy en dia principalmente participan en servicios e industrias mecanicos, de ingenieria, construccion de naves y mantenimiento. Tienen cultura muy variada naciente de la \
+	enorme cantidad de trabajadores temporales, equipos de transporte, y empleados privados y gubernamentales en circulacion de las zonas de construccion de Ceres. Esto ha llevado a que \
+	la cultura Belter sea principalmente sobre aceptar cambios, y gente y experiencias nuevas, ademas de orgullo por su trabajo, pues la calidad de las naves de Ceres es muy conocida a traves \
+	del espacio humano."
 	economic_power = 1
 
 /decl/cultural_info/culture/human/plutonian
 	name = CULTURE_HUMAN_PLUTO
-	description = "You are from Pluto, one of many denizens of this cruel and unforgiving world. For centuries Pluto has been in a slow state of decay and decline, resulting in \
-	much of the planet's infrastructure being unstable or outright falling apart. This, coupled with rampant corruption and the large influence of criminal organisations across much of \
-	the planet has led to the people of Pluto having something of a seedy reputation, its citizens being viewed with disrepute. The people themselves, however, are usually \
-	just happy to get off the rock and to healthier locales. Unfortunately, despite the efforts of the wider SCG, many Plutonians tend to maintain criminal ties, even offworld."
+	description = "Habitas Pluton, un planeta cruel e injusto. Pluton se ha estado degenerando y deteriorando por siglos, perdiendo infraestructura y habitabilidad \
+	como resultado. Esto combinado con corrupcion desenfrenada y la gran influencia de organizaciones criminales a traves de todo el planeta ha causado que \
+	la gente de Pluton tenga una reputacion dudosa y sea percibida como infame. Los plutonianos en si generalmente estan contentos simplemente con irse \
+	del planeta a localidades mas sanas. A pesar de los esfuerzos del SCG, varios plutonianos mantienen relaciones criminales, aun fuera del planeta."
 	economic_power = 0.8
 
 /decl/cultural_info/culture/human/earthling
 	name = CULTURE_HUMAN_EARTH
-	description = "You are from Earth, home of humanity. Earth culture is much as it has been for centuries, with the old nation states, while no longer politically important, still \
-	culturally significant to many humans across the galaxy, as all trace their roots to somewhere on the planet. While not as geographically diverse as they were in the past, most \
-	countries have at least two arcologies which make up much of the population, with the remaining humans living in small villages or from one of the many nature preserve communes. \
-	The long recovery period of Earth has resulted in much of the population being environmentally aware and heavily conservationist, eager to avoid past mistakes. Most Earthers are \
-	a content folk who see themselves as close to nature and keepers of the heritage of humanity."
-	economic_power = 1.1
+	description = "Eres de la Tierra, el hogar de la humanidad. La cultura terrana no ha cambiado demasiado notablemente por siglos, pues a pesar de que las viejas naciones-estado perdieron \
+	importancia politica, siguen teniendo mucha relevancia cultural para los humanos de toda la galaxia, pues todos siguen su ascendencia a una de ellas. No son tan geograficamente diversas \
+	como en su tiempo, pero tienen aunque sea dos urbes habitadas por la mayoria de la poblacion, el resto de los humanos viviendo en pueblos o comunidades de preservacion natural. \
+	El gran tiempo de recuperacion de la Tierra ha afectado a la poblacion, volviendolos conscientes del medio ambiente y muy conservacionistas, para evitar errores del pasado. La mayoria de los Terricolas \
+	son gente satisfecha que se ven como los guardianes de la herencia de la humanidad, cercanos a la naturaleza."
+	economic_power = 1.1 // wtf es una arcology
 
 /decl/cultural_info/culture/human/ceti
 	name = CULTURE_HUMAN_CETI
-	description = "You are from Ceti Epsilon, the technical hub of the SCG. As a Cetite you are no stranger to the cutting edge of technology present in Sol space. \
-	Putting education and the latest tech at the forefront of their priorities the people of Ceti are some of the brightest or tech savvy around. \
-	This has afforded those from the system or planet a reputation as being a cut above the rest in technical matters, with those who attended the Ceti Institute of Technology \
-	being considered some of the best qualified technical specialists in humanity. Recently there has been a rising transhumanist element in Ceti society resulting in a large \
-	cybernetics culture; it is not uncommon to see many Cetites sporting some chrome."
+	description = "Eres de Ceti Epsilon, el centro tecnologico del SCG. Como cetita, convives con la tecnologia mas avanzada y de punta de todo el espacio de Sol. \
+	La gente de Ceti son los mas brillantes y entendidos en tecnologia de la humanidad, al tener a la educacion y la tecnologia como sus mayores prioridades. \
+	Esto les ha conseguido una merecida reputacion de saber mas sobre materias tecnicas a los cetitas, sobre todo a los que fueron al Instituto de Tecnologia de Ceti, que son considerados \
+	comno los tecnicos mejor calificados de toda la humanidad. Recientemente, ha habido una tendencia transhumanista en la sociedad cetita que da como resultado \
+	una ampla cultura cibernetica; no es poco comun ver cetitas con mejoras y aumentos."
 	economic_power = 1.1
 
 /decl/cultural_info/culture/human/spacer_core
 	name = CULTURE_HUMAN_SPACER
-	description = "You are from the void between worlds, though close to home. You are from one of the myriad space stations, orbital platforms, long haul freighters, \
-	gateway installations or other facilities that occupy the vastness of space. Spacers near the core worlds are accustomed to life in the fast lane, constantly moving between \
-	places, meeting a myriad of people and experiencing many of the cultures and worlds close to humanity's home. As such, Spacers of the core systems tend to be busy, sociable and \
-	mobile, rarely satisfied with settled life. They almost universally know how to live and work in the void and take to such jobs more readily than their planet-bound counterparts."
+	description = "Eres del vacio entre mundos, pero de un vacio cercano a casa. Vives en una de las incontables estaciones espaciales, plataformas orbitales, transportadoras a larga distancia, \
+	instalaciones de portales o otra de las estructuras que llenan la negrura del espacio. Los que habitan el espacio cercano a los mundos del nucleo solar estan acostumbrados a una vida rapida, \
+	de movimiento constantes, experimentando muchas culturas y conociendo aun mas gente en el area espacial cercana a la Tierra. Por lo tanto, suelen ser sociables, atareados y moviles, \
+	raramente satisfechos con la vida estatica. Saben casi universalmente como vivir y trabajar en el vacio, considerablemente mas que sus iguales planetarios."
 	economic_power = 1
 	language = LANGUAGE_SPACER
 
 /decl/cultural_info/culture/human/spacer_frontier
 	name = CULTURE_HUMAN_SPAFRO
-	description =  "You are from the void between worlds, though you are in the distant, vast frontier of SCG space and beyond. Out here things like national identity and culture mean less; \
-	those who live so far from anything only look to their close family and friends rather than any larger group. Raised on one of the long haul freighters that move between frontier worlds delivering \
-	vital goods, a lonely outpost on the edge of a dreary backwater, such people are raised in small, confined environments with few others, and tend to be most familiar with older, reliable but outdated \
-	technology. An independent sort, people on the frontier are more likely to be isolationist and self-driven."
+	description =  "Eres del vacio entre mundos, pero estas en la distante y amplia frontera del SCG, o aun mas lejos. Aqui afuera, las cosas como la identidad nacional y cultura tienen menos impacto; \
+	los que viven tan lejos de todo solo cuentan con su familia y amigos cercanos, y no con ningun grupo mayor. Criado en uno de los cargueros de altas distancias que se mueven entre planetas fronterizos \
+	entregando viveres vitales, en un solitario puesto de avanzada en un planeta calmado, esta gente es criada en entornos reducidos con poca gente, y suelen depender en tecnologia vieja pero confiable y duradera. \
+	Del tipo independiente, los fronterizos suelen ser autosuficientes y solitarios."
 	economic_power = 0.9
 	language = LANGUAGE_SPACER
 
 /decl/cultural_info/culture/human/confederate
 	name = CULTURE_HUMAN_CONFED
-	description = "You are from Komirov (not Earth), in the Gilgamesh system. The capital world of the United Colonies of Gilgamesh, your people embody what it means to be a part of the UCG. \
-	Unfortunately, the years since the war have not been easy on Komirov and the long period of economic recovery has not made life easy. The people of Komirov are typically employed \
-	in the military, industrial, government or service sectors, with an emphasis being placed on military service. Komirovians today are generally poor, bitter and a somewhat broken people angry and \
-	resentful about their loss in the Aigaion Conflict. An upbringing on Komirov emphasises an odd mix of service to the state, liberalism and militarism."
+	description = "Eres de Komirov (no la Tierra), del sistema Gilgamesh. Viviendo en el mundo capital de las Colonias Unidas de Gilgamesh, tu gente representa lo que significa ser parte de la misma. \
+	Desafortunadamente, el tiempo desde la guerra ha sido uno duro para Komirov, y el gran periodo de recuperacion economica no ha facilitado nada. La gente de Komirov tipicamente es empleada en los sectores \
+	militares, industriales, estatales o de servicio, con una gran estima por el servicio militar. Los komiravos de hoy son una gente generalmente pobre, amarga y en cierta manera rota, frustrada y rencorosa por su \
+	derrota en el conflicto de Gaia. Una crianza en Komirov resulta en una rara mezcla entre servicio al estado, liberalismo y militarismo."
 	language = LANGUAGE_HUMAN_RUSSIAN
 	economic_power = 0.9
 
 /decl/cultural_info/culture/human/other
 	name = CULTURE_HUMAN_OTHER
-	description = "Some people are from places no one has ever heard of or places too wild and fantastical to make it into Encyclopedia Galactica. You are one of these. "
+	description = "Algunas personas son de lugares de los cuales nadie ha escuchado, o de lugares demasiado fantasticos o salvajes para aparecer en la Enciclopedia Galactica. Eres una de estas personas."
 	economic_power = 1
 
 /decl/cultural_info/culture/human/vatgrown
 	name = CULTURE_HUMAN_VATGROWN
-	description = "You were grown in a vat, either as clone or as a gene-adapt, and your outlook diverges from baseline humanity accordingly."
+	description = "Fuiste producido en un tubo de laboratorio, ya sea como clon o como una prueba de modificacion de genes, y tu perspectiva se diferencia de la de la humanidad general acorde"
 
 /decl/cultural_info/culture/human/vatgrown/sanitize_name(name)
 	return sanitizeName(name, allow_numbers=TRUE)
@@ -159,3 +159,4 @@
 	#undef NUM
 	#undef FIRST
 	#undef NAME
+	// FI, NAL, MEN, TE. fuck, esto costo un huevo, espero por dificultad y no por habilidad. necesito un sanguche
