@@ -137,25 +137,25 @@
 	..(newloc, newmaterial, "teal")
 
 /obj/structure/bed/chair/comfy/black/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "negro")
+	..(newloc, newmaterial, "black")
 
 /obj/structure/bed/chair/comfy/green/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "verde")
+	..(newloc, newmaterial, "green")
 
 /obj/structure/bed/chair/comfy/purple/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "purpura")
+	..(newloc, newmaterial, "purple")
 
 /obj/structure/bed/chair/comfy/blue/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "azul")
+	..(newloc, newmaterial, "blue")
 
 /obj/structure/bed/chair/comfy/beige/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
 	..(newloc, newmaterial, "beige")
 
 /obj/structure/bed/chair/comfy/lime/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "lima")
+	..(newloc, newmaterial, "lime")
 
 /obj/structure/bed/chair/comfy/yellow/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "amarilla")
+	..(newloc, newmaterial, "yellow")
 
 /obj/structure/bed/chair/comfy/captain
 	name = "silla del capitán"
@@ -189,25 +189,25 @@
 	..(newloc, newmaterial, "teal")
 
 /obj/structure/bed/chair/armchair/black/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "negro")
+	..(newloc, newmaterial, "black")
 
 /obj/structure/bed/chair/armchair/green/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "verde")
+	..(newloc, newmaterial, "green")
 
 /obj/structure/bed/chair/armchair/purple/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "purpura")
+	..(newloc, newmaterial, "purple")
 
 /obj/structure/bed/chair/armchair/blue/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "azul")
+	..(newloc, newmaterial, "blue")
 
 /obj/structure/bed/chair/armchair/beige/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
 	..(newloc, newmaterial, "beige")
 
 /obj/structure/bed/chair/armchair/lime/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "lima")
+	..(newloc, newmaterial, "lime")
 
 /obj/structure/bed/chair/armchair/yellow/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "amarilla")
+	..(newloc, newmaterial, "yellow")
 
 /obj/structure/bed/chair/office
 	name = "silla de oficina"
@@ -275,25 +275,25 @@
 	..(newloc, newmaterial, "teal")
 
 /obj/structure/bed/chair/office/comfy/black/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "negro")
+	..(newloc, newmaterial, "black")
 
 /obj/structure/bed/chair/office/comfy/green/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "verde")
+	..(newloc, newmaterial, "green")
 
 /obj/structure/bed/chair/office/comfy/purple/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "purpura")
+	..(newloc, newmaterial, "purple")
 
 /obj/structure/bed/chair/office/comfy/blue/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "azul")
+	..(newloc, newmaterial, "blue")
 
 /obj/structure/bed/chair/office/comfy/beige/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
 	..(newloc, newmaterial, "beige")
 
 /obj/structure/bed/chair/office/comfy/lime/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "lima")
+	..(newloc, newmaterial, "lime")
 
 /obj/structure/bed/chair/office/comfy/yellow/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc, newmaterial, "amarillo")
+	..(newloc, newmaterial, "yellow")
 
 /obj/structure/bed/chair/shuttle
 	name = "asiento del transbordador"
@@ -319,10 +319,10 @@
 		overlays |= I
 
 /obj/structure/bed/chair/shuttle/blue/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc,MATERIAL_STEEL,"azul")
+	..(newloc,MATERIAL_STEEL,"blue")
 
 /obj/structure/bed/chair/shuttle/black/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
-	..(newloc,MATERIAL_STEEL,"negro")
+	..(newloc,MATERIAL_STEEL,"black")
 
 /obj/structure/bed/chair/shuttle/white/New(newloc, newmaterial = DEFAULT_FURNITURE_MATERIAL)
 	..(newloc,MATERIAL_STEEL,MATERIAL_CLOTH)
