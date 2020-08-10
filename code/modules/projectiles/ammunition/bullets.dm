@@ -45,7 +45,7 @@
 	spent_icon = "magnumcasing-spent"
 
 /obj/item/ammo_casing/pistol/magnum/detective
-	name = "Bala de bajo poder, para controlar posbiles intrometidos..."
+	name = "Una bala paralizante semi letal."
 	projectile_type = /obj/item/projectile/bullet/pistol/rev38
 	icon_state = "detectivecasing"
 	spent_icon = "magnumcasing-spent"
