@@ -24,6 +24,14 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/speedloader/magnum/detective
+	icon_state = "spdloader_magnum_detective"
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/pistol/magnum/detective
+	matter = list(MATERIAL_STEEL = 1440)
+	max_ammo = 6
+	multiple_sprites = 1
+
 /obj/item/ammo_magazine/speedloader/small
 	name = "speed loader"
 	icon_state = "spdloader_small"
