@@ -270,13 +270,13 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/research{
-	id_tag = "liaisondoor";
-	name = "Corporate Liaison";
-	secured_wires = 1
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/door/airlock/research{
+	id_tag = "liaisondoor";
+	name = "Magistrado";
+	secured_wires = 1
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/magistrado)
@@ -763,8 +763,8 @@
 "bu" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	id_tag = "liaisondoor3";
-	name = "Corporate Liaison";
+	id_tag = "liaisondoor";
+	name = "Magistrado";
 	secured_wires = 1
 	},
 /turf/simulated/floor/carpet/blue2,
@@ -950,7 +950,7 @@
 "bL" = (
 /obj/machinery/door/airlock/research{
 	id_tag = "liaisondoor";
-	name = "Corporate Liaison";
+	name = "Magistrado";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -12280,8 +12280,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/sol{
-	id_tag = null;
-	name = "Magistrado";
+	id_tag = "magistrado";
+	name = "Representante de Sol Gov";
 	secured_wires = 1
 	},
 /turf/simulated/floor/wood/walnut,
@@ -15782,10 +15782,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/airlock)
-"Fh" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/airless,
-/area/space)
 "Fi" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -15812,6 +15808,10 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/psiadvisor)
+"Fo" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/airless,
+/area/space)
 "Fp" = (
 /turf/simulated/wall/r_wall/hull,
 /area/bridge/storage)
@@ -16293,8 +16293,8 @@
 "HG" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	id_tag = "liaisondoor3";
-	name = "Corporate Liaison";
+	id_tag = "liaisondoor";
+	name = "Magistrado";
 	secured_wires = 1
 	},
 /turf/simulated/floor/wood/walnut,
@@ -17441,10 +17441,6 @@
 	},
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
-"Ns" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/reinforced/airless,
-/area/space)
 "Nt" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/cable/green{
@@ -18728,6 +18724,10 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
+"Ty" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/reinforced/airless,
+/area/space)
 "Tz" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -19801,7 +19801,7 @@
 "YC" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "magistrado";
-	name = "Magistrado";
+	name = "Representante de Sol Gov";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -39167,7 +39167,7 @@ aa
 aa
 aa
 aa
-Ns
+Ty
 ad
 ad
 ah
@@ -43205,7 +43205,7 @@ aa
 aa
 aa
 aa
-Fh
+Fo
 ad
 ad
 ad
