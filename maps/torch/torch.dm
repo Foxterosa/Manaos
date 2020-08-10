@@ -171,7 +171,8 @@
 	#include "torch6_bridge.dmm"
 	#include "z1_admin.dmm"
 	#include "z2_transit.dmm"
-	#include "z3_eventos.dmm"
+	#include "z3_espacio.dmm"
+	#include "z4_eventos.dmm"
 
 	#include "../away/empty.dmm"
 	#include "../away/ascent/ascent.dm"

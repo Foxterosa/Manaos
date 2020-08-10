@@ -77,6 +77,12 @@
 	base_icon = 'icons/turf/floors.dmi'
 	icon_state = "snow"
 	base_icon_state = "snow"
+	footstep_type = /decl/footsteps/snow
+
+/turf/simulated/floor/holofloor/snow/ice
+	name = "ice"
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "ice"
 
 /turf/simulated/floor/holofloor/space
 	icon = 'icons/turf/space.dmi'
@@ -134,13 +140,12 @@ turf/simulated/floor/holofloor/beach/water/update_dirt()
 /turf/simulated/floor/holofloor/desert
 	name = "desert sand"
 	base_name = "desert sand"
-	desc = "Uncomfortably gritty for a hologram."
-	base_desc = "Uncomfortably gritty for a hologram."
 	icon_state = "asteroid"
 	base_icon_state = "asteroid"
 	icon = 'icons/turf/flooring/asteroid.dmi'
 	base_icon = 'icons/turf/flooring/asteroid.dmi'
 	initial_flooring = null
+	footstep_type = /decl/footsteps/sand
 
 /turf/simulated/floor/holofloor/desert/New()
 	..()
