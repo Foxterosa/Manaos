@@ -56,6 +56,7 @@
 		/area/nieve/sec,
 		/area/nieve/med,
 		/area/nieve/cocina,
+		/area/nieve/bar,
 		/area/nieve/biblioteca,
 		/area/nieve/cambiador,
 		/area/nieve/gimnasio,

@@ -449,7 +449,7 @@ area/space/atmosalert()
 	req_access = list(access_medical)
 
 /area/nieve/cocina
-	name = "Hotel Stanlook - bar"
+	name = "Hotel Stanlook - cocina"
 	icon_state = "kitchen"
 	dynamic_lighting = 0
 	luminosity = 0
@@ -495,6 +495,13 @@ area/space/atmosalert()
 /area/nieve/sauna
 	name = "Hotel Stanlook - sauna"
 	icon_state = "surgery"
+	dynamic_lighting = 0
+	luminosity = 0
+	requires_power = 0
+
+/area/nieve/bar
+	name = "Hotel Stanlook - bar"
+	icon_state = "kitchen"
 	dynamic_lighting = 0
 	luminosity = 0
 	requires_power = 0
