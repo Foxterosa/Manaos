@@ -723,7 +723,7 @@
 
 //Vacant Areas
 /area/vacant
-	name = "\improper Área vacante"
+	name = "\improper Area vacante"
 	icon_state = "construction"
 
 /area/vacant/armory
@@ -1354,7 +1354,7 @@
 	sound_env = CONCERT_HALL
 
 /area/holodeck/source_picnicarea
-	name = "\improper Holodeck - Área de picnic"
+	name = "\improper Holodeck - Area de picnic"
 	sound_env = PLAIN
 
 /area/holodeck/source_snowfield
@@ -1589,7 +1589,7 @@
 // AI
 
 /area/ai_monitored
-	name = "Área de supervicación de la IA"
+	name = "Area de supervicación de la IA"
 
 /area/ai_monitored/storage/eva
 	name = "\improper Almacén AEV"
