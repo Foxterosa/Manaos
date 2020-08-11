@@ -44,6 +44,10 @@
 		)
 	)
 
+	autohiss_basic_map = list(
+			"r" = list("rr", "rrr", "rrrr")
+		)
+
 /datum/species/vulpkanin/proc/handle_coco(var/mob/living/carbon/human/M, var/datum/reagent/nutriment/coco, var/efficiency = 1)
 	var/effective_dose = efficiency * M.chem_doses[coco.type]
 	if(effective_dose < 5)
