@@ -901,16 +901,18 @@
 	icon_vend = "med-vend"
 	vend_delay = 18
 	base_type = /obj/machinery/vending/medical
+	req_access = list(list(access_medical,access_chemistry))
 	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
 	req_access = list(access_medical_equip)
 	products = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine = 5,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane = 5,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene = 5,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin = 5,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 5,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 3,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 3,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/adrenaline = 3,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine = 3,
 					/obj/item/weapon/reagent_containers/syringe/antiviral = 5,
 					/obj/item/stack/medical/advanced/bruise_pack = 5,
 					/obj/item/stack/medical/advanced/ointment = 5,
@@ -918,9 +920,9 @@
 					/obj/item/device/scanner/health = 5)
 	contraband = list(/obj/item/weapon/reagent_containers/pill/stox = 5,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 3,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross = 3,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton = 3,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon = 3)
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton = 1)
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
 
 
@@ -941,6 +943,7 @@
 	icon_deny = "wallmed-deny"
 	icon_vend = "wallmed-vend"
 	base_type = /obj/machinery/vending/wallmed1
+	req_access = list(access_medical_equip)
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	products = list(
 		/obj/item/weapon/storage/med_pouch/trauma,
