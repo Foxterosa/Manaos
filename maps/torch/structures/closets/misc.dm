@@ -82,24 +82,50 @@
 		/obj/item/device/radio/headset/heads/torchntcommand/alt
 		)
 
-/obj/structure/closet/secure_closet/representative
-	name = "\improper magistrado's locker"
+/obj/structure/closet/secure_closet/magistrado
+	name = "armario del Magistrado"
 	req_access = list(access_magistrado)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
 
-/obj/structure/closet/secure_closet/representative/WillContain()
+/obj/structure/closet/secure_closet/magistrado/WillContain()
 	return list(
 		/obj/item/device/flash,
+		/obj/item/device/radio/headset/magistrado,
+		/obj/item/device/radio/headset/magistrado/alt,
 		/obj/item/device/camera_film = 2,
-		/obj/item/weapon/material/clipboard,
-		/obj/item/weapon/folder,
 		/obj/item/device/tape/random = 3,
 		/obj/item/weapon/storage/secure/briefcase,
 		/obj/item/weapon/rig/light/internalaffairs,
 		/obj/item/device/radio/headset/headset_com,
 		/obj/item/clothing/shoes/laceup,
-		/obj/item/clothing/under/rank/internalaffairs/plain/solgov,
-		/obj/item/clothing/suit/storage/toggle/suit/black,
+		/obj/item/clothing/under/suit_jacket/really_black,
+		/obj/item/clothing/suit/judgerobe,
+		/obj/item/clothing/head/peluca1,
+		/obj/item/clothing/head/peluca2,
+		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/weapon/gun/energy/mag_secure,
+		/obj/item/clothing/glasses/sunglasses/sechud,
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
+		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)
+	)
+
+/obj/structure/closet/secure_closet/representative
+	name = "armario del Representante de Sol Gov"
+	req_access = list(access_captain)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
+
+/obj/structure/closet/secure_closet/representative/WillContain()
+	return list(
+		/obj/item/device/flash,
+		/obj/item/device/radio/headset/heads/torchexec,
+		/obj/item/device/radio/headset/heads/torchexec/alt,
+		/obj/item/device/camera_film = 2,
+		/obj/item/device/tape/random = 3,
+		/obj/item/weapon/storage/secure/briefcase,
+		/obj/item/weapon/rig/light/internalaffairs,
+		/obj/item/device/radio/headset/headset_com,
+		/obj/item/clothing/shoes/laceup,
+		/obj/item/clothing/under/rank/centcom_officer,
 		/obj/item/clothing/glasses/sunglasses/big,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)

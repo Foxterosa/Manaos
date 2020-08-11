@@ -336,7 +336,7 @@
 	return
 
 /obj/item/weapon/reagent_containers/food/condiment/yerba
-	name = "Yerba mate"
+	name = "yerba mate"
 	desc = "Un paquete de yerba mate, extrana marca"
 	icon = 'icons/obj/food.dmi'
 	icon_state = "yerba"

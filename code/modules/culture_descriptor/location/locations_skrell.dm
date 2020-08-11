@@ -1,27 +1,26 @@
 /decl/cultural_info/location/qerrbalak
 	name = HOME_SYSTEM_QERRBALAK
-	description = "Qerr'Balak, in the Qerr'Valis system, is the ancient home of skrellkind. A large, swampy world, it consists of two continents separated by \
-		an archipelago filled ocean. The smaller continent, and original home of the Skrell civilisation, Qorr'gloa, is mostly swampland, with most cities being \
-		built on the coast. It is separated by the Qo'rria Sea from the other, larger continent, Xi'Krri'oal, which is more populous and varied, with snowy \
-		mountains in the south to temperate zones in the inner areas. Composed of hundreds of city-states, Qerr'Balak is still home to a sizable population of Skrell. \
-		While no longer the sole powerhouse of the Skrell civilisation, it is still widely respected among skrellkind as their homeworld, and for its academic and \
-		scientific prowess."
-	capital = "None"
-	ruling_body = "None"
-	distance = "67 light years"
+	description = "Qerr'Balak, del sistema Qerr'Valis, es la patria antigua de los skrell. Es un mundo grande y pantanoso, cuya superficie consiste de dos continentes separados \
+		por un oceano manchado de archipielagos. El continente menor, Qorr'gloa, cuna original de la civilizacion skrell, es en su mayoria cienaga, \
+		con ciudades generalmente costeras. El mar Qo'rria lo separa del continente mayor, Xi'Krri'oal, una tierra mas poblada y diversa, con picos nevados en el sur \
+		a zonas mas templadas en el area central. Un planeta compuesto de cientas de ciudades estado, Qerr'Balak sigue siendo el hogar de una cantidad considerable de skrells. \
+		A pesar de no ser la potencia central de la civilizacion Skrell como lo solia ser, sigue siendo muy respetada por su gente al ser su hogar y un centro academico impresionante."
+	capital = "Ninguna"
+	ruling_body = "Ninguno"
+	distance = "67 AL"
 	economic_power = 1.5
 
 /decl/cultural_info/location/talamira
 	name = HOME_SYSTEM_TALAMIRA
-	description = "Talamira, in the Ri'Qora system, is located far on the other side of Skrell space far into what is, to humans, unchartered and unexplored territory.\
-	Established some 500 years ago Talamira is considered a trade and commerce hub in its sector. This is largely a result of its central position between a large \
-	number of established frontier city-states and the rest of Skrell space, The planet itself consists of a single swamp ridden supercontinent that is mildly \
-	warmer than Qerr'Balak, with hundreds of city-states dotting the surface, most of which are heavily invested in manufacturing and logistics, benefiting from the \
-	trade of raw resources with frontier worlds.This rising star of the Skrell territories is considered an economic powerhouse, with its city states wielding influence \
-	across the frontier."
-	capital = "None"
-	ruling_body = "None"
-	distance = "300 light years"
+	description = "Talamira, del sistema Ri'Qora, esta localizado en una zona inexplorada para la humanidad, profundamente en territorio Skrell. \
+	Establecido hace mas de cinco siglos, Talamira es un centro de intercambio y comercio en su sector. Esto es principalmente por su posicion entre varias ciudades estado fronterizas \
+	y el resto del espacio Skrell. El planeta en si consiste de un supercontinente pantanoso con clima ligeramente mas calido que Qerr'Balak, \
+	con cientos de ciudades estado dispersas a traves de su superficie, la mayoria involucradas en manufactura y logistica, beneficiandose del comercio \
+	de materia prima con mundos fronterizos. Esta estrella de la porcion Skrell de la galaxia se considera una potencia economica con ciudades estado influenciales \
+	a traves de su parte de la frontera."
+	capital = "Ninguna"
+	ruling_body = "Ninguno"
+	distance = "300 AL"
 	economic_power = 2.5
 
 /decl/cultural_info/location/roasora

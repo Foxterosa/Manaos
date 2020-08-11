@@ -1,8 +1,8 @@
 /decl/cultural_info/location/epsilon
 	name = HOME_SYSTEM_DIONAEA
-	description = "The diona home system is a trinary system, first discovered by the Skrell and later revisted by a mining \
-	consortium. It has no planets and no settled large bodies, but sports a massive debris ring composed of ancient habitats \
-	and destroyed stations. The dionaea themselves were found in scattered orbits around each of the three stars, singing to \
-	each other across the inky void."
-	ruling_body = "The Diona Chorus"
-	distance = "63 light years"
+	description = "El sistema central diona es un sistema trinario, primero descubierto por los Skrell y luego revisitado por \
+	un consorcio minero. No posee planetas ni cuerpos estelares asentados, pero tiene un anillo de escombros hecho de habitats antiguos \
+	y estaciones espaciales destrozadas. Las diona fueron encontradas en orbitas dispersas alrededor de cada una de las tres estrellas, \
+	cantando las unas para las otras a traves de las vacias tinieblas."
+	ruling_body = "El Coro Diona"
+	distance = "63 AL"

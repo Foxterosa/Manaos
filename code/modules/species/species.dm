@@ -402,7 +402,7 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 			t_him = "la"
 
 	H.visible_message("<span class='notice'>[H] abraza a [target] para hacer[t_him] sentir mejor!</span>", \
-					"<span class='notice'>Abrazas [target] para hacer[t_him] sentir mejor!</span>")
+					"<span class='notice'>Abrazas a [target] para hacer[t_him] sentir mejor!</span>")
 
 	if(H != target)
 		H.update_personal_goal(/datum/goal/achievement/givehug, TRUE)

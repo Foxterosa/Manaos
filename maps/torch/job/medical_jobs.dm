@@ -144,6 +144,10 @@
 	economic_power = 4
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	minimal_player_age = 0
+	alt_titles = list(
+		"Quimico",
+		"Farmaceutico")
+
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/chemist
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)

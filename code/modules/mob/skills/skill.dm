@@ -82,7 +82,7 @@ GLOBAL_LIST_EMPTY(skills)
 	ID = "bureaucracy"
 	name = "Burocracia"
 	desc = "Tu habilidad para escribir y rellenar papeleo, navegar en organizaciones de papeleo complejas, y entender leyes y regulaciones."
-	levels = list( "Ignorante"			= "Usualmente puedes llenar el papeleo basico con algunos errores. Tienes un vago conocimiento sobre la ley, aprendido por las noticias y experiencia personal.",
+	levels = list( "Ignorante"			= "Usualmente puedes llenar el papeleo básico con algunos errores. Tienes un vago conocimiento sobre la ley, aprendido por las noticias y experiencia personal.",
 						"Basico"				= "Estas familiarizado con el papeleo que necesitas para hacer tu trabajo, y puedes gestionarlo bien. Tienes un poco de conocimiento sobre la ley y el como se aplica en ti y quienes te rodean.",
 						"Entrenado"			= "Puedes manejar la mayoria del papeleo que te dan, incluso si no estas familiarizados con ellos. Tienes un buen entendimiento de la ley y de cualquiera regulacion o procedicimiento relevante para ti.",
 						"Experimentado"		= "Con experiencia, puedes facilmente hacer papeleo de cualquier evento, y escribir reportes cuales son limpios y entendibles. Tienes un excelente conocimiento sobre la ley, posiblemente incluyendo un entrenamiento formalmente legal.<br>- Aprendes un idioma unico.",
@@ -107,18 +107,18 @@ GLOBAL_LIST_EMPTY(skills)
 
 /decl/hierarchy/skill/general/EVA
 	ID = "EVA"
-	name = "Extra-vehicular activity"
-	desc = "This skill describes your skill and knowledge of space-suits and working in vacuum."
-	levels = list( "Ignorante"			= "You have basico safety training common to people who work in space: You know how to put on and seal your internals, and you can probably struggle into a space suit if you really need to, though you'll be clumsy at it. You're still prone to mistakes that may leave you trying to breathe vacuum.<br>- You can remove hardsuits. Its speed increases with level.<br>- You will always get floored when you enter gravity area from space. This chance decreases with level.<br>- You are likely to slip. This chance decreases with level.",
-						"Basico"				= "You have had thorough basico training in EVA operations, and are unlikely to make novice mistakes. However, you have little experience working in vacuum.",
-						"Entrenado"			= "You can comfortably use a space suit and do so regularly in the course of your work. Checking your internals is second nature to you, and you don't panic in an emergency.<br>- You can fully operate jetpacks.",
-						"Experimentado"		= "You can use all kinds of space suits, including specialized versions. Your years of experience in EVA keep you from being disoriented in space, and you have experience using a jetpack to move around. <br>- You cannot slip anymore.",
-						"Maestro"		= "You are just as much at home in a vacuum as in atmosphere. You probably do your job almost entirely EVA.<br>- You cannot get floored anymore.<br>- You get bonus speed in zero-G.")
+	name = "Actividad Extra-Vehicular"
+	desc = "Describe tu habilidad y conocimiento sobre los trajes espaciales y el trabajo en el vacio."
+	levels = list( "Ignorante"			= "Tienes un entrenamiento comun y basico de como trabajar en el espacio: Sabes como activar y desactivar tus internals, y seguramente tambien puedes ponerte un traje espacial si lo necesitas a pesar de ser torpe. Sigues siendo propenso a cometer errores que te pueden dejar respirando el vacio.<br>- Puedes quitarte los hardsuits. La velocidad se aumenta con el nivel.<br>- Siempre te quedaras atascado cuando entres en una area de gravedad desde el espacio. Esta probabilidad disminuye con el nivel.<br>- Sueles resbalar, esta probalididad se disminuye cuanto mas nivel tengas.",
+						"Basico"				= "Tienes un entrenamiento basico en operaciones con AEV, y es poco posible que cometas errores de novato. De igual forma, tienes un poco de experiencia trabajando en el vacio.",
+						"Entrenado"			= "Comodamente puedes usar un traje espacial y hacer tu trabajo de forma regular en el curso de tu trabajo. Revisar tus internals es tu segunda naturaleza, y no tienes panico en una emergencia.<br>- Puedes usar Jetpacks sin problema.",
+						"Experimentado"		= "Puedes usar todo tipo de trajes espaciales, incluido las versiones especializadas. Tus años de experencia en AEV te hacen posible no desorientarte en el espacio, y tienes experiencia usando un Jetpack para moverte. <br>- No puedes resbalarte mas.",
+						"Maestro"		= "Estas igual de comodo en el vacio como en la atmosfera. Seguramente haces tu trabajo siempre con un AEV.<br>- Ya no podras dejarte caer.<br>- Tienes un bonus de velocidad en Gravedad Cero.")
 
 /decl/hierarchy/skill/general/EVA/mech
 	ID = "exosuit"
-	name = "Exosuit Operation"
-	desc = "Te permite operar los exo-trajes bien."
+	name = "Operacion con el Exotraje"
+	desc = "Te permite operar los ex-trajes bien."
 	levels = list("Ignorante" = "Estas infamiliarizado con los controles del exo-traje, y si intentas usarlo es problable que cometas errores.",
 		"Entrenado" = "Eres lo suficientemente capaz para mantener y operar un exo-traje y usarlo sin fallos.")
 	prerequisites = list(SKILL_EVA = SKILL_ADEPT)
@@ -127,7 +127,7 @@ GLOBAL_LIST_EMPTY(skills)
 
 /decl/hierarchy/skill/general/pilot
 	ID = "pilot"
-	name = "Piloting"
+	name = "Pilotaje"
 	desc = "Describe tu experiencia y entendimiento de pilotaje en naves espaciales, de pods diminutos y de corto alcance a naves de escala corvette."
 	levels = list( "Ignorante"			= "Sabes lo que es una nave espacial, y podrias tener un conocimiento abstracto de las diferencias entre varias naves. Si a tu departamento le incumbe las naves, sabras de sus capacidades. Es probable que puedas conducir una nave en un videojuego. Si tomases el timon de una pequeña nave, podrias moverlo en un buen rumbo.<br>- Mientras mayor el nivel, menor tiempo (?) entre transiciones.<br>- Puedes volar naves, pero su movimiento probablemente sea aleatorio.<br>- La velocidad de tu nave al golpear las carpas aumentara con el nivel.",
 						"Basico"				= "Puedes pilotar una nave de alcance corto de manera segura, pero las naves grandes estan fuera de tu alcance.  No eres ningun experto, y probablemente no tienes mucho entrenamiento. La habilidades de este nivel son tipicas para la tripulacion de Deck.<br>- Puedes operar diminutas naves sin error.<br>- Puedes evitar completamente los meteoritos si vas a baja velocidad con las naves reducidas como el GUP.",
@@ -167,7 +167,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Basico"				= "Has hecho algo de jardineria. Puedes regar, desherbar, fertilizar, plantar, y cosechar, y puedes reconocer y lidiar con pestes. Tal vez la jardineria sea solo un hobby para ti.<br>- Puedes plantar y desherbar plantas normales de forma segura.<br>- Puedes diferenciar las malas hierbas de las plagas y vicevesa.",
 						"Entrenado"			= "Eres experto en botanica, puedes cultivar plantas para la produccion de alimentos u oxigeno. Tus plantas generalmente sobreviviran y prosperaran. Sabes lo basico sobre la manipulacion de genes sobre plantas.<br>- Puedes plantar y desherbar plantas exoticas de forma segura.<br>- Puedes usar las maquinas de xenoflora. La degradacion de la muestra disminuye con el nivel de habilidad.",
 						"Experimentado"		= "Eres botanico o agricultor, capaz de dirigir cultivos hidroponicos de una instalacion o hacer una investigacion botanica. Eres un experto en la creacion de hibridos personalizados y genes modificados.",
-						"Maestro"		= "Eres un botanista especializado. Eres capaz de cuidar a las mas exoticas, fragiles, o peligrosas plantas. Puedes usar la maquina de manipulacion de genes con precision, y a menudo eres capaz de evitar la degradacion de las muestras.")
+						"Maestro"		= "Eres un botanico especializado. Eres capaz de cuidar a las mas exoticas, fragiles, o peligrosas plantas. Puedes usar la maquina de manipulacion de genes con precision, y a menudo eres capaz de evitar la degradacion de las muestras.")
 
 /decl/hierarchy/skill/service/cooking
 	ID = "cooking"
@@ -177,14 +177,14 @@ GLOBAL_LIST_EMPTY(skills)
 						"Basico"				= "Puedes hacer comidas simples para tu familia, como spaghettis, quesos a la parrilla. Puedes hacer simples mezclas de bebidas que sueles tomar.<br>- Puedes usar la licuadora de forma segura.",
 						"Entrenado"			= "Puedes hacer la mayoria de las comidas siguiendo las instrucciones, y generalmente te salen bien. Tienes algo de experiencia sobre el hospedaje, catering y/o el bartending.<br>- Puedes usar completamente el dispensador de bebidas.",
 						"Experimentado"		= "Puedes cocinar profesionalmente, manteniendo toda la crew alimentada de forma sencilla. Tu comida es deliciosa y no tienes ningun problema con los platos dificiles o complicados. Se puede confiar en que haras cualquier bebida comunmente servida.",
-						"Maestro"		= "No solo eres bueno cocinando y mezclando bebidas, puedes manejar al personal de cocina y proveer en eventos. Puedes preparar de forma segura comidas y bebidas exoticas que podrian ser venenosas si se preparan de forma incorrecta.")
+						"Maestro"		= "No solo eres bueno cocinando y mezclando bebidas, puedes manejar al personal de cocina y proveer en eventos. Puedes preparar de forma segura comidas y bebidas exoticas que podrian ser venenosas si se preparasen de forma incorrecta.")
 
 // Category: Security
 
 /decl/hierarchy/skill/security/combat
 	ID = "combat"
 	name = "Close Combat"
-	desc = "This skill describes your training in hand-to-hand combat or melee weapon usage. While expertise in this area is rare in the era of firearms, experts still exist among athletes."
+	desc = "Esta habilidad describe tu entrenamiento mano a mano en combate o en el uso de armas cuerpo a cuerpo. While expertise in this area is rare in the era of firearms, experts still exist among athletes."
 	levels = list( "Ignorante"			= "You can throw a punch or a kick, but it'll knock you off-balance. You're inexperienced and have probably never been in a serious hand-to-hand fight. In a fight, you might panic and run, grab whatever's nearby and blindly strike out with it, or (if the other guy is just as much of a beginner as you are) make a fool out of yourself.<br>- You can disarm, grab, and hit. Their success chance depends on the fighters' skill difference.<br>- The chance of falling over when tackled is reduced with level.",
 						"Basico"				= "You either have some experience with fistfights, or you have some training in a martial art. You can handle yourself if you really have to, and if you're a security officer, can handle a stun baton at least well enough to get the handcuffs onto a criminal.",
 						"Trained"			= "You have had close-combat training, and can easily defeat Ignorante opponents. Close combat may not be your specialty, and you don't engage in it more than needed, but you know how to handle yourself in a fight.<br>- You can parry with weapons. This increases with level.<br>- You can do grab maneuvers (pinning, dislocating).<br>- You can grab targets when leaping at them and not fall over, if your species is able to do so.",
@@ -302,13 +302,13 @@ GLOBAL_LIST_EMPTY(skills)
 
 /decl/hierarchy/skill/research/science
 	ID = "science"
-	name = "Science"
-	desc = "Your experience and knowledge with scientific methods and processes. This also applies to sensors consoles and other scanning modules."
-	levels = list( "Ignorante"			= "You know what science is and probably have a vague idea of the scientific method from your high school science classes.<br>- Increasing science skill allows more accurate readings of the sensor console.",
-						"Basico"				= "You keep up with scientific discoveries. You know a little about most fields of research. You've learned basico laboratory skills. You may read about science as a hobby; or you may be working in a field related to science and have learned about science that way. You could design a simple experiment.",
-						"Trained"			= "You are a scientist, perhaps a graduate student or post-graduate researcher. You can design an experiment, analyze your results, publish your data, and integrate what you've learned with the research of other scientists. Your laboratory skills are reliable, and you know how to find information you need when you research a new scientific topic. You can dissect exotic xenofauna without many issues.",
-						"Experienced"		= "You are a junior researcher. You can formulate your own questions, use the tools at hand to test your hypotheses, and investigate entirely new phenomena. You likely have a track record of success in publishing your conclusions and attracting funding.",
-						"Master"		= "You are a professional researcher, and you have made multiple new discoveries in your field. Your experiments are well-designed. You are known as an authority in your specialty and your papers often appear in prestigious journals. You may be coordinating the research efforts of a team of scientists, and likely know how to make your findings appealing to investors.")
+	name = "Ciencia"
+	desc = "Tu conocimiento y experiencia con metodos y procesos cientificos. Esto tambien aplica a las consolas con sensores y otros modulos de escaneo."
+	levels = list( "Ignorante"			= "Sabes lo que es la ciencia y tienes una vaga idea de algun metodo cientifico por alguna clase de ciencias en la escuela.<br>- Aumentando tu habilidad en Ciencias te permite tener lecturas mas exactas.",
+						"Basico"				= "Te mantienes al dia con los descubrimientos cientificos. Sabes un poco de los muchos campos de investigacion. Has aprendido las habilidades basicas de laboratorio. Tal vez hayas leido algo sobre la ciencia como un simple hobby; o estes trabajando en un campo relacionado a la ciencia y hayas aprendido un poco de esta en el camino. Podrias hacer un simple experimento.",
+						"Entrenado"			= "Eres un cientifico, puede que uno recien graduado o un investigador post-graduado. Puedes hacer un experimento, analizar los resultados, publicar tus datos y instruir al resto de cientificos lo que has aprendido. Tus habilidades con el laboratorio son confiables, y sabes como encontrar la informacion que necesitas cuando investigas un nuevo tema cientifico. Puedes diseccionar xenofauna exotica sin ningun problema.",
+						"Experimentado"		= "Eres un investigador junior. Puedes formular tus propias preguntas, usar las herramientas que tienes a mano para comprobar tus hipotesis e investigar fenomenos completamente nuevos. Es probable que tengas un historial de exito publicando tus conclusiones, atrayendo inversores.",
+						"Maestro"		= "Eres un investigador profesional, y has hecho multiples descubrimientos en tu campo. Tus experimentos estan bien planteados. Eres conocido como una autoridad en tu especialidad y tus trabajos aparecen a menudo en revistas de prestigio. Puede que estes coordinando los esfuerzos de una investigacion de un equipo cientifico, y seguramente sepas como hacer que tus hallazgos sean atractivos para los inversores.")
 
 // Category: Medical
 
@@ -324,13 +324,13 @@ GLOBAL_LIST_EMPTY(skills)
 
 /decl/hierarchy/skill/medical/anatomy
 	ID = "anatomy"
-	name = "Anatomy"
-	desc = "Gives you a detailed insight of the human body. A high skill in this is required to perform surgery. This skill may also help in examining alien biology."
-	levels = list( "Ignorante"			= "You know what organsTu sabes , bones, and such are, and you know roughly where they are. You know that someone who's badly hurt or sick may need surgery.",
-						"Basico"				= "You've taken an anatomy class and you've spent at least some time poking around inside actual people. You know where everything is, more or less. You could assist in surgery, if you have the required medical skills. If you have the forensics knowledge, you could perform an autopsy. If you really had to, you could probably perform basico surgery such as an appendectomy, but you're not yet a qualified surgeon and you really shouldn't--not unless it's an emergency. If you're a xenobiologist, you know how to take out slime cores.",
-						"Trained"			= "You have some training in anatomy. Diagnosing broken bones, damaged ligaments, shrapnel wounds, and other trauma is straightforward for you. You can splint limbs with a good chance of success, operate a defibrillator competently, and perform CPR well. Surgery is still outside your training.<br>- You can do surgery (requires Trained Medicine skill too) but you are very likely to fail at every step. Its speed increases with level. You can perform the cybernethics procedures if you have Trained Complex Devices skill",
-						"Experienced"		= "You're a surgical resident, or an experienced medical doctor. You can put together broken bones, fix a damaged lung, patch up a liver, or remove an appendix without problems. But tricky surgeries, with an unstable patient or delicate manipulation of vital organs like the heart and brain, are at the edge of your ability, and you prefer to leave them to specialized surgeons. You can recognize when someone's anatomy is noticeably unusual. You're trained in working with several species, but you're probably better at surgery on your own species.<br>- You can do all surgery steps safely, if you have Experienced Medicine skill too.",
-						"Master"		= "You are an experienced surgeon. You can handle anything that gets rolled, pushed, or dragged into the OR, and you can keep a patient alive and stable even if there's no one to assist you. You can handle severe trauma cases or multiple organ failure, repair brain damage, and perform heart surgery. By now, you've probably specialized in one field, where you may have made new contributions to surgical technique. You can detect even small variations in the anatomy of a patient--even a changeling probably wouldn't slip by your notice, provided you could get one on the operating table.<br>- The penalty from operating on improper operating surfaces is reduced.")
+	name = "Anatomia"
+	desc = "Te da una vision detalla del cuerpo humano. Si quieres realizar una cirugia es requerido un nivel alto. Esta habilidad tambien te puede ayudar en examinar la biologia alienigena."
+	levels = list( "Ignorante"			= "Sabes lo que son los huesos, los organos... y no con mucha precision podrias decir donde estan. Si ves a alguien herido gravemente intuyes que necesita una cirugia.",
+						"Basico"				= "Has tenido una clase de anatomia y has pasado al menos un tiempo husmeando dentro de cuerpos. Sabes mas o menos donde esta todo. Puedes asistir en una cirugia, si tienes las habilidades medicas requeridas. Si tienes un conocimiento forense, puedes hacer una autopsia. Si realmente tuvieras que hacerlo, podrias hacer una cirugia basica como una apendicetomia, aunque no eres aun un cirujano cualificado y no deberias de hacerlo.--al menos que sea una emergencia. Si eres un xenobiologo, sabras como sacar nucleos de slime.",
+						"Entrenado"			= "Tienes un poco de entrenamiento en anatomia. Diagnosticar huesos rotos, ligamentos rotos, heridas de metralla y otros traumas es sencillo para ti. Puedes entablillar con una gran posibilidad de exito, usar de forma competente los desfibriladores, y hacer PCR bien. La cirugia sigue estando fuera de tu entrenamiento.<br>- Puedes hacer cirugia (Se requiere la habilidad de entrenado en Medicina) pero es muy probable que falles en cada paso. La velocidad aumenta con el nivel. Puedes hacer los procedimientos ciberneticos si tienes la habilidad de dispositivos complejos en entrenado.",
+						"Experimentado"		= "Eres un cirujano residente, o un medico experimentado. Puedes unir huesos, arreglar un pulmon lastimado, remendar un higado, o quitar un apendice sin ningun problema. Pero en las cirugias dificiles, como un paciente inestable o una manipulacion delicada de un organo vital como el corazon o el cerebro estan al limite de tu habilidad, y prefieres dejarlo a cirujanos mas expertos. Puedes reconocer cuando la anatomia de alguien es notablemente inusual. Estas entrenado en el trabajo de muchas especies,pero seguramente sepas mejor hacer una cirugia a alguien de tu misma especie.<br>- Puedes hacer todos los pasos de cirugia de forma segura si tienes la habilidad Experimentado en Medicina.",
+						"Maestro"		= "Eres un cirujano experimentado. Puedes manejar cualquier situacion en donde el paciente haya sido empujado, arrastrado, rodado... Al quirofano y puedes mantenerlo vivo y estable incluso si no hay nadie que te pueda ayudar. Puedes tratar traumas severos o multiples fallos de organos, reparar un cerebro deteriorado, y hacer una cirugia de corazon. A estas alturas, estaras especializado en un campo de la medicina, uno en donde puedas contribuir con tus tecnicas quirurgicas. Puedes detectar diminutos desperfectos en la anatomia del paciente--even a changeling probably wouldn't slip by your notice, provided you could get one on the operating table.<br>- The penalty from operating on improper operating surfaces is reduced.")
 
 /decl/hierarchy/skill/medical/chemistry
 	ID = "chemistry"

@@ -720,6 +720,8 @@
 	color = "";
 	desc = "F8F8F8"
 	},
+/obj/item/weapon/storage/belt/medical/emt,
+/obj/item/weapon/storage/belt/medical/emt,
 /turf/simulated/floor/tiled/white,
 /area/storage/medical)
 "bn" = (
@@ -3123,6 +3125,11 @@
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/plastic/fifty,
 /obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/aluminium/fifty,
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics/lower)
 "gi" = (
@@ -11375,6 +11382,13 @@
 	},
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod5/station)
+"wq" = (
+/obj/machinery/camera/network/second_deck{
+	c_tag = "Second Deck - Fore";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/seconddeck/fore)
 "wu" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -20542,13 +20556,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
-"Zm" = (
-/obj/machinery/camera/network/second_deck{
-	c_tag = "Second Deck - Fore";
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/hallway/primary/seconddeck/fore)
 "Zo" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -33119,7 +33126,7 @@ it
 bI
 yx
 xR
-Zm
+wq
 wT
 iM
 xS

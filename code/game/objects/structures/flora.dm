@@ -364,3 +364,8 @@
 	name = "fancy trimmed ferny potted plant"
 	desc = "This leafy desk fern seems to have been trimmed too much."
 	icon_state = "plant-30"
+
+/obj/structure/flora/pottedplant/floorleafnieve
+	name = "planta de piso frondoso de lujo nevada"
+	desc = "Esta planta tiene hojas notablemente cerosas cubiertas de nieve."
+	icon_state = "plant-31"

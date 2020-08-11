@@ -1,6 +1,6 @@
 /obj/structure/bed/chair	//YES, chairs are a type of bed, which are a type of stool. This works, believe me.	-Pete
-	name = "chair"
-	desc = "You sit in this, either by will or force."
+	name = "silla"
+	desc = "Te sientas en esto quieras o no."
 	icon_state = "chair_preview"
 	color = "#666666"
 	base_icon = "chair"
@@ -122,8 +122,8 @@
 
 // Leaving this in for the sake of compilation.
 /obj/structure/bed/chair/comfy
-	name = "comfy chair"
-	desc = "It's a chair. It looks comfy."
+	name = "silla cómoda"
+	desc = "Es una silla, parece cómoda."
 	icon_state = "comfychair_preview"
 	base_icon = "comfychair"
 
@@ -158,8 +158,8 @@
 	..(newloc, newmaterial, "yellow")
 
 /obj/structure/bed/chair/comfy/captain
-	name = "captain chair"
-	desc = "It's a chair. Only for the highest ranked asses."
+	name = "silla del capitán"
+	desc = "It's a chair.Es una silla, exclusiva solo para los culos de alto rango."
 	icon_state = "capchair_preview"
 	base_icon = "capchair"
 	buckle_movable = 1
@@ -174,8 +174,8 @@
 	..(newloc,MATERIAL_STEEL,"blue")
 
 /obj/structure/bed/chair/armchair
-	name = "armchair"
-	desc = "It's an armchair. It looks comfy."
+	name = "sillón"
+	desc = "Es un sillón. Parece cómodo."
 	icon_state = "armchair_preview"
 	base_icon = "armchair"
 
@@ -210,7 +210,7 @@
 	..(newloc, newmaterial, "yellow")
 
 /obj/structure/bed/chair/office
-	name = "office chair"
+	name = "silla de oficina"
 	icon_state = "officechair_preview"
 	base_icon = "officechair"
 	anchored = 0
@@ -260,8 +260,8 @@
 	..(newloc, newmaterial, "black")
 
 /obj/structure/bed/chair/office/comfy
-	name = "comfy office chair"
-	desc = "It's an office chair. It looks comfy."
+	name = "silla de oficina cómoda"
+	desc = "es una silla de oficina. Parece cómoda."
 	icon_state = "comfyofficechair_preview"
 	base_icon = "comfyofficechair"
 
@@ -296,8 +296,8 @@
 	..(newloc, newmaterial, "yellow")
 
 /obj/structure/bed/chair/shuttle
-	name = "shuttle seat"
-	desc = "A comfortable, secure seat. It has a sturdy-looking buckling system for smoother flights."
+	name = "asiento del transbordador"
+	desc = "Una comoda y seguro asiento. Tiene un sistema de abrochado robusto para que los vuelos sean más suaves."
 	base_icon = "shuttle_chair"
 	icon_state = "shuttle_chair_preview"
 	buckling_sound = 'sound/effects/metal_close.ogg'
@@ -328,8 +328,8 @@
 	..(newloc,MATERIAL_STEEL,MATERIAL_CLOTH)
 
 /obj/structure/bed/chair/wood
-	name = "classic chair"
-	desc = "Old is never too old to not be in fashion."
+	name = "silla clásica"
+	desc = "Lo viejo nunca es tan viejo como para no poder estar a la moda."
 	base_icon = "wooden_chair"
 	icon_state = "wooden_chair_preview"
 	color = WOOD_COLOR_GENERIC
@@ -381,8 +381,8 @@
 	chair_material = MATERIAL_WALNUT
 
 /obj/structure/bed/chair/pew
-	name = "pew"
-	desc = "A long, simple bench with a backboard, commonly found in places of worship, courtrooms and so on. Not known for being particularly comfortable."
+	name = "banco"
+	desc = "Un largo y sencillo banco con un tablero para apoyar tu espalda, usualmente está en lugares de adoración, salas de tribun y así... No es conocido por ser particularmente cómodo."
 	icon_state = "pew"
 	base_icon = "pew"
 	color = WOOD_COLOR_GENERIC
