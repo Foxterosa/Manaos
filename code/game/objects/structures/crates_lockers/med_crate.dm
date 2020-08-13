@@ -6,7 +6,6 @@
 /obj/structure/closet/crate/med_crate/trauma/WillContain()
 	return list(
 		/obj/item/stack/medical/splint = 4,
-		/obj/item/weapon/storage/pill_bottle/inaprovaline,
 		/obj/item/weapon/storage/med_pouch/trauma = 4,
 		/obj/item/weapon/storage/firstaid/trauma,
 		/obj/item/weapon/storage/pill_bottle/bicaridine
@@ -19,7 +18,6 @@
 
 /obj/structure/closet/crate/med_crate/burn/WillContain()
 	return list(
-		/obj/item/weapon/storage/pill_bottle/inaprovaline,
 		/obj/item/weapon/storage/med_pouch/burn = 4,
 		/obj/item/weapon/storage/firstaid/fire,
 		/obj/item/weapon/storage/pill_bottle/dermaline
@@ -32,7 +30,6 @@
 
 /obj/structure/closet/crate/med_crate/oxyloss/WillContain()
 	return list(
-		/obj/item/weapon/storage/pill_bottle/inaprovaline,
 		/obj/item/weapon/storage/med_pouch/oxyloss = 4,
 		/obj/item/weapon/storage/firstaid/o2,
 		/obj/item/weapon/storage/pill_bottle/dexalin_plus
@@ -44,7 +41,6 @@
 
 /obj/structure/closet/crate/med_crate/toxin/WillContain()
 	return list(
-		/obj/item/weapon/storage/pill_bottle/inaprovaline,
 		/obj/item/weapon/storage/med_pouch/toxin = 4,
 		/obj/item/weapon/storage/firstaid/toxin,
 		/obj/item/weapon/storage/pill_bottle/dylovene
