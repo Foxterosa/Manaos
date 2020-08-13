@@ -2152,9 +2152,6 @@
 /turf/simulated/wall/walnut,
 /area/maintenance/fifthdeck/fore)
 "dH" = (
-/obj/machinery/vending/coffee{
-	prices = list()
-	},
 /obj/effect/floor_decal/corner/green/border,
 /obj/effect/floor_decal/corner/green/border{
 	icon_state = "bordercolor";
@@ -2168,6 +2165,7 @@
 	icon_state = "bordercolor";
 	dir = 4
 	},
+/obj/machinery/vending/cola/manaos,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/garden)
 "dI" = (
@@ -18133,6 +18131,17 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
+"Pi" = (
+/obj/effect/floor_decal/corner/green/border{
+	icon_state = "bordercolor";
+	dir = 4
+	},
+/obj/machinery/vending/coffee{
+	dir = 4;
+	icon_state = "coffee"
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/crew_quarters/garden)
 "Pm" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -33423,7 +33432,7 @@ mA
 mA
 mI
 lP
-lP
+Pi
 mb
 lP
 mo
