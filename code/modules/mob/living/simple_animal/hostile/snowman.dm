@@ -35,3 +35,4 @@
 	. = ..()
 	if(.)
 		custom_emote(1,"nashes at [.]")
+		
