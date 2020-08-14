@@ -223,6 +223,12 @@
 	emote_message_3p= "USER oorahs!"
 	emote_message_3p_target= "USER oorahs at TARGET!"
 
+/decl/emote/audible/aslap
+	key = "aslap"
+	emote_message_1p = "Te nalgeas a ti mismo!"
+	emote_message_3p= "USER nalgea a TARGET!"
+	emote_sound = 'sound/effects/snap.ogg'
+
 /decl/emote/audible/nya
 	key = "nya"
 	emote_message_1p = "Dejas salir el Nya~"
