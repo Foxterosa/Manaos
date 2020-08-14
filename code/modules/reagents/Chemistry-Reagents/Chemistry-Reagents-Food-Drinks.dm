@@ -1350,6 +1350,84 @@
 	glass_desc = "A glass of refreshing Space Cola"
 	glass_special = list(DRINK_FIZZ)
 
+/datum/reagent/drink/manaos_cola
+	name = "Manaos Cola"
+	description = "Un refrescante bravaje, sabor Cola."
+	taste_description = "cola"
+	reagent_state = LIQUID
+	color = "#100800"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Manaos cola"
+	glass_desc = "Un refrescante vaso de Manaos Cola"
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/manaos_manzana
+	name = "Manaos de manzana"
+	description = "Un refrescante bravaje, con sabor a manzana."
+	taste_description = "cola y manzana"
+	reagent_state = LIQUID
+	color = "#600509"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Manaos de naranja"
+	glass_desc = "Un refrescante vaso de Manaos con sabor a manzana."
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/manaos_limalimon
+	name = "Manaos de lima limon"
+	description = "Un refrescante bravaje, con sabor a lima limon."
+	taste_description = "cola y lima limon"
+	reagent_state = LIQUID
+	color = "#5D822E"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Manaos de lima limon"
+	glass_desc = "Un refrescante vaso de Manaos con sabor a lima limon."
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/manaos_naranja
+	name = "Manaos de naranja"
+	description = "Un refrescante bravaje, con sabor a naranja."
+	taste_description = "cola y naranja"
+	reagent_state = LIQUID
+	color = "#AB7B0C"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Manaos de naranja"
+	glass_desc = "Un refrescante vaso de Manaos con sabor a naranja."
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/manaos_uva
+	name = "Manaos de uva"
+	description = "Un refrescante bravaje, con sabor a uva."
+	taste_description = "cola"
+	reagent_state = LIQUID
+	color = "#3B0059"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Manaos de uva"
+	glass_desc = "Un refrescante vaso de Manaos con sabor a uva... creo."
+	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/manaos_limon
+	name = "Manaos de limon"
+	description = "Un refrescante bravaje, con sabor a limon."
+	taste_description = "cola y limon"
+	reagent_state = LIQUID
+	color = "#BAB741"
+	adj_drowsy = -3
+	adj_temp = -5
+
+	glass_name = "Manaos de limon"
+	glass_desc = "Un refrescante vaso de Manaos con sabor a limon."
+	glass_special = list(DRINK_FIZZ)
+
 /datum/reagent/drink/spacemountainwind
 	name = "Mountain Wind"
 	description = "Blows right through you like a space wind."
