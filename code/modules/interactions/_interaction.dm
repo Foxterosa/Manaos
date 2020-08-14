@@ -112,6 +112,9 @@ var/list/interactions
 	return FALSE
 
 /datum/interaction/proc/do_action(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	if(user.stat)
+		to_chat(user, "<span class='warning'>¡Estás inconciente!</span>")
+		return
 	if(!user_is_target)
 		if(user == target) //tactical href fix
 			to_chat(user, "<span class='warning'>You cannot target yourself.</span>")

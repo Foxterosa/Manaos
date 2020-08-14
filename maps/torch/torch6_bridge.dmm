@@ -15378,6 +15378,10 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/bridge/fore)
+"CM" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/airless,
+/area/space)
 "CN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/bridge/aftport)
@@ -15808,10 +15812,6 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/psiadvisor)
-"Fo" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/airless,
-/area/space)
 "Fp" = (
 /turf/simulated/wall/r_wall/hull,
 /area/bridge/storage)
@@ -18724,10 +18724,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
-"Ty" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/reinforced/airless,
-/area/space)
 "Tz" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -39167,7 +39163,7 @@ aa
 aa
 aa
 aa
-Ty
+CM
 ad
 ad
 ah
@@ -43205,7 +43201,7 @@ aa
 aa
 aa
 aa
-Fo
+CM
 ad
 ad
 ad
