@@ -32,3 +32,4 @@
 	..()
 	if(stat == CONSCIOUS)
 		enrage(enrage_potency)
+		
