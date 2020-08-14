@@ -2668,7 +2668,7 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/galley)
 "fx" = (
-/obj/structure/flora/pottedplant/fern,
+/obj/machinery/vending/cola/manaos,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
 "fy" = (
@@ -8501,10 +8501,7 @@
 /obj/effect/floor_decal/corner/lime/three_quarters{
 	dir = 1
 	},
-/obj/machinery/vending/cola{
-	icon_state = "Cola_Machine";
-	dir = 8
-	},
+/obj/machinery/vending/cola/manaos,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "qu" = (
@@ -11535,6 +11532,12 @@
 	dir = 8;
 	icon_state = "alarm0";
 	pixel_x = 24
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters_boh/cabin_main)
@@ -19213,8 +19216,8 @@
 /obj/effect/floor_decal/corner/lime/three_quarters{
 	dir = 4
 	},
-/obj/machinery/vending/coffee{
-	dir = 8
+/obj/machinery/vending/snack{
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)

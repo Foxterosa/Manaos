@@ -107,7 +107,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/southright{
 	dir = 8;
-	name = "Supply Desk"
+	name = "Supply Desk";
+	req_access = list("ACCESS_CARGO")
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters{
@@ -781,7 +782,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/light,
-/obj/machinery/vending/medical/torch{
+/obj/machinery/vending/medical/abandonado{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,

@@ -11,7 +11,7 @@
 	hitsound = 'sound/items/oneding.ogg'
 	default_material = MATERIAL_ALUMINIUM
 
-/obj/item/weapon/material/gavelblock/attack_hand(mob/user as mob)
+/obj/item/weapon/material/bell/attack_hand(mob/user as mob)
 	if (user.a_intent == I_GRAB)
 		return ..()
 	else if (user.a_intent == I_HURT)
@@ -37,12 +37,12 @@
 	force_divisor = 0.8
 	thrown_force_divisor = 0.3
 	hitsound = 'sound/items/gavel.ogg'
-	default_material = MATERIAL_ALUMINIUM
+	default_material = MATERIAL_WOOD
 
 /obj/item/weapon/material/gavelblock/attack_hand(mob/user as mob)
 	if (user.a_intent == I_GRAB)
 		return ..()
-	else if (user.a_intent == I_HURT)
+	else if (user.a_intent == I_HELP)
 		user.visible_message("<span class='warning'>[user] golpea el bloque con el martillo!</span>")
 		playsound(user.loc, 'sound/items/gavel.ogg', 60)
 

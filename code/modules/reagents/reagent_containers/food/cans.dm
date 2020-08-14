@@ -13,6 +13,48 @@
 	center_of_mass = "x=16;y=10"
 	reagents_to_add = list(/datum/reagent/drink/space_cola = 30)
 
+/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_cola
+	name = "\improper Manaos cola"
+	desc = "El hijo prodigo qué comenzó una gran marca. Recuerda, bebe con moderación si aún quieres permanecer con vida para el próximo año."
+	icon_state = "Manaos_Cola"
+	center_of_mass = "x=16;y=10"
+	reagents_to_add = list(/datum/reagent/drink/manaos_cola = 30)
+
+/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_manzana
+	name = "\improper Manaos de manzana"
+	desc = "Dicen que si la agitas lo suficiente, brilla en la oscuridad."
+	icon_state = "Manaos_Manzana"
+	center_of_mass = "x=16;y=10"
+	reagents_to_add = list(/datum/reagent/drink/manaos_manzana = 30)
+
+/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limalimon
+	name = "\improper Manaos de lima limon"
+	desc = "Que no te engañe la trasparencia, es con esto que perforan el plomo."
+	icon_state = "Manaos_LimaLimon"
+	center_of_mass = "x=16;y=10"
+	reagents_to_add = list(/datum/reagent/drink/manaos_limalimon = 30)
+
+/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_naranja
+	name = "\improper Manaos de naranja"
+	desc = "Con tanta azúcar que hasta sientes como se desintegran tus dientes."
+	icon_state = "Manaos_Naranja"
+	center_of_mass = "x=16;y=10"
+	reagents_to_add = list(/datum/reagent/drink/manaos_naranja = 30)
+
+/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_uva
+	name = "\improper Manaos de uva"
+	desc = "Si puedes contra esto, puedes contra lo que sea."
+	icon_state = "Manaos_Uva"
+	center_of_mass = "x=16;y=10"
+	reagents_to_add = list(/datum/reagent/drink/manaos_uva = 30)
+
+/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limon
+	name = "\improper Manaos de limon"
+	desc = "Si no derrite la paredes, tal vez no la estés consumiendo en la fecha indicada"
+	icon_state = "Manaos_Limon"
+	center_of_mass = "x=16;y=10"
+	reagents_to_add = list(/datum/reagent/drink/manaos_limon = 30)
+
 /obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle
 	name = "bottled water"
 	desc = "Pure drinking water, imported from the Martian poles."
@@ -95,7 +137,7 @@
 	icon_state = "sodawater"
 	center_of_mass = "x=16;y=10"
 	reagents_to_add = list(/datum/reagent/drink/sodawater = 30)
-	
+
 /obj/item/weapon/reagent_containers/food/drinks/cans/beastenergy
 	name = "Beast Energy"
 	desc = "100% pure energy, and 150% pure liver disease."
