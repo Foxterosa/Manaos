@@ -4659,6 +4659,11 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/vending/wallmed1{
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = 30
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fifthdeck/fore)
 "ih" = (
@@ -12153,6 +12158,13 @@
 /obj/machinery/camera/network/fifth_deck{
 	c_tag = "Fifth Deck Hallway - Aft";
 	dir = 1
+	},
+/obj/machinery/vending/wallmed1{
+	dir = 1;
+	icon_state = "wallmed";
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)

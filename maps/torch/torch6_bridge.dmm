@@ -14850,6 +14850,25 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"At" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/vending/wallmed1{
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = 30
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/bridge/fore)
 "Aw" = (
 /obj/structure/sign/warning/high_voltage{
 	icon_state = "shock";
@@ -19762,6 +19781,11 @@
 	pixel_y = 0
 	},
 /obj/effect/floor_decal/industrial/warning/fulltile,
+/obj/machinery/vending/wallmed1{
+	dir = 8;
+	name = "Emergency NanoMed";
+	pixel_x = 30
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Yr" = (
@@ -32526,7 +32550,7 @@ mE
 mE
 mE
 mE
-gL
+At
 ga
 sL
 sL
