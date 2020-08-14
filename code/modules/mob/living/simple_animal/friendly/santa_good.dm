@@ -29,3 +29,4 @@
 	bone_amount = 8
 	skin_amount = 8
 	skin_material = MATERIAL_SKIN_FEATHERS
+	
