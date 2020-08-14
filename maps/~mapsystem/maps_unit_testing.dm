@@ -29,6 +29,7 @@
 		/area/beach/cocina,
 		/area/beach/med,
 		/area/beach/sec,
+		/area/beach/playa,
 		/area/casinojack,
 		/area/casinojack/bar,
 		/area/casinojack/sec,

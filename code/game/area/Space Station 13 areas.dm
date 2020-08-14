@@ -210,74 +210,51 @@ area/space/atmosalert()
 	name = "Keelin's private beach"
 	icon_state = "conference"
 	luminosity = 1
-	dynamic_lighting = 0
 	requires_power = 0
+	dynamic_lighting = 0
 	var/sound/mysound = null
 
 /area/beach/cuarto1
 	name = "Keelin's private beach cuarto 1"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/beach/cuarto2
 	name = "Keelin's private beach cuarto 2"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/beach/cuarto3
 	name = "Keelin's private beach cuarto 3"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/beach/principal
 	name = "Keelin's private beach principal"
 	icon_state = "bridge"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/beach/bano
 	name = "Keelin's private beach bano"
 	icon_state = "checkpoint1"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/beach/cambiador
 	name = "Keelin's private beach cambiador"
 	icon_state = "checkpoint1"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/beach/cocina
 	name = "Keelin's private beach cocina"
 	icon_state = "kitchen"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/beach/med
 	name = "Keelin's private beach med"
 	icon_state = "medbay"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 	req_access = list(access_medical)
 
 /area/beach/sec
 	name = "Keelin's private beach sec"
 	icon_state = "checkpoint1"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 	req_access = list(access_brig)
+
+/area/beach/playa
+	name = "Keelin's private beach - Playa"
+	icon_state = "conference"
 
 /area/beach/New()
 	..()
@@ -330,178 +307,115 @@ area/space/atmosalert()
 /area/casinojack
 	name = "Hotel-Casino Flamingo"
 	icon_state = "null"
+	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
 
 /area/casinojack/sec
 	name = "Hotel-Casino Flamingo Sec"
 	icon_state = "checkpoint1"
-	luminosity = 1
-	dynamic_lighting = 0
-	requires_power = 0
 	req_access = list(access_brig)
 
 /area/casinojack/bar
 	name = "Hotel-Casino Flamingo Bar"
 	icon_state = "kitchen"
-	luminosity = 1
-	dynamic_lighting = 0
-	requires_power = 0
 	req_access = list(access_bar)
 
 /area/casinojack/command
 	name = "Hotel-Casino Flamingo Command"
 	icon_state = "bridge"
-	luminosity = 1
-	dynamic_lighting = 0
-	requires_power = 0
 	req_access = list(access_bridge)
 
 /area/casinojack/principal
 	name = "Hotel-Casino Flamingo Principal"
 	icon_state = "conference"
-	luminosity = 1
-	dynamic_lighting = 0
-	requires_power = 0
 
 /area/casinojack/Med
 	name = "Hotel-Casino Flamingo Med"
 	icon_state = "medbay"
-	luminosity = 1
-	dynamic_lighting = 0
-	requires_power = 0
 	req_access = list(access_medical)
 
 /area/casinojack/cuarto1
 	name = "Hotel-Casino Flamingo cuarto 1"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/casinojack/cuarto2
 	name = "Hotel-Casino Flamingo cuarto 2"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/casinojack/cuarto3
 	name = "Hotel-Casino Flamingo cuarto 3"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/casinojack/cuarto4
 	name = "Hotel-Casino Flamingo cuarto 4"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
+
+
 
 /area/nieve
 	name = "Hotel Stanlook"
 	dynamic_lighting = 0
 	requires_power = 0
+	dynamic_lighting = 1
 	sound_env = FOREST
 
 /area/nieve/cuarto1
 	name = "Hotel Stanlook - cuarto 1"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/nieve/cuarto2
 	name = "Hotel Stanlook - cuarto 2"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/nieve/cuarto3
 	name = "Hotel Stanlook - cuarto 3"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/nieve/principal
 	name = "Hotel Stanlook - principal"
 	icon_state = "bridge"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/nieve/sec
 	name = "Hotel Stanlook - seguridad"
 	icon_state = "checkpoint1"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 	req_access = list(access_brig)
 
 /area/nieve/med
 	name = "Hotel Stanlook - medbay"
 	icon_state = "medbay"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 	req_access = list(access_medical)
 
 /area/nieve/cocina
 	name = "Hotel Stanlook - cocina"
 	icon_state = "kitchen"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 	sound_env = FOREST
 
 /area/nieve/biblioteca
 	name = "Hotel Stanlook - biblioteca"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/nieve/cambiador
 	name = "Hotel Stanlook - cambiador"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/nieve/gimnasio
 	name = "Hotel Stanlook - gimnasio"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/nieve/bosque
 	name = "Hotel Stanlook - bosque"
 	icon_state = "engineering"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 	ambience = list('sound/effects/wind/tundra0.ogg','sound/effects/wind/tundra1.ogg','sound/effects/wind/tundra2.ogg','sound/effects/wind/spooky0.ogg','sound/effects/wind/spooky1.ogg')
 
 /area/nieve/garaje
 	name = "Hotel Stanlook - garaje"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/nieve/sauna
 	name = "Hotel Stanlook - sauna"
 	icon_state = "surgery"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
 
 /area/nieve/bar
 	name = "Hotel Stanlook - bar"
 	icon_state = "kitchen"
-	dynamic_lighting = 0
-	luminosity = 0
-	requires_power = 0
