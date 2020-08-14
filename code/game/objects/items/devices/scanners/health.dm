@@ -1,5 +1,5 @@
 /obj/item/device/scanner/health
-	name = "Analizador de salud"
+	name = "analizador de salud"
 	desc = "Un escaner corporal de mano capaz de analizar los signos vitales de una persona."
 	icon_state = "health"
 	item_state = "analyzer"
