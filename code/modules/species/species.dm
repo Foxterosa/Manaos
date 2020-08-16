@@ -105,10 +105,10 @@
 	var/dusted_anim =   "dust-h"
 
 	var/death_sound = 'sound/effects/deathrattle.ogg'
-	var/death_message = "seizes up and falls limp, their eyes dead and lifeless..."
-	var/knockout_message = "collapses, having been knocked unconscious."
-	var/halloss_message = "slumps over, too weak to continue fighting..."
-	var/halloss_message_self = "The pain is too severe for you to keep going..."
+	var/death_message = "se agarrota y se debilita, sus ojos se ven muertos, vacios y sin vida..."
+	var/knockout_message = "se derrumba, quedandose inconsciente"
+	var/halloss_message = "se desploma, estando demasiado debil para seguir luchando..."
+	var/halloss_message_self = "el dolor es demasiado severo para poder seguir..."
 
 	var/limbs_are_nonsolid
 	var/spawns_with_stack = 0
@@ -135,14 +135,14 @@
 	var/heat_discomfort_level = 315                             // Aesthetic messages about feeling warm.
 	var/cold_discomfort_level = 285                             // Aesthetic messages about feeling chilly.
 	var/list/heat_discomfort_strings = list(
-		"You feel sweat drip down your neck.",
-		"You feel uncomfortably warm.",
-		"Your skin prickles in the heat."
+		"Sientes el sudor recorrer por tu cuello.",
+		"Te sientes incomodamente caliente.",
+		"Tu piel se eriza por el calor."
 		)
 	var/list/cold_discomfort_strings = list(
-		"You feel chilly.",
-		"You shiver suddenly.",
-		"Your chilly flesh stands out in goosebumps."
+		"Te sientes frio.",
+		"Tiemblas de la nada.",
+		"Tu fria cutis se pone de gallina."
 		)
 
 	var/water_soothe_amount
@@ -212,7 +212,7 @@
 	// The basic skin colours this species uses
 	var/list/base_skin_colours
 
-	var/list/genders = list(MALE, FEMALE, PLURAL)
+	var/list/genders = list(MALE, FEMALE, PLURAL, NEUTER)
 
 	// Bump vars
 	var/bump_flag = HUMAN	// What are we considered to be when bumped?
@@ -394,15 +394,15 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 
 /datum/species/proc/hug(var/mob/living/carbon/human/H,var/mob/living/target)
 
-	var/t_him = "them"
+	var/t_him = "le"
 	switch(target.gender)
 		if(MALE)
-			t_him = "him"
+			t_him = "lo"
 		if(FEMALE)
-			t_him = "her"
+			t_him = "la"
 
-	H.visible_message("<span class='notice'>[H] hugs [target] to make [t_him] feel better!</span>", \
-					"<span class='notice'>You hug [target] to make [t_him] feel better!</span>")
+	H.visible_message("<span class='notice'>[H] abraza a [target] para hacer[t_him] sentir mejor!</span>", \
+					"<span class='notice'>Abrazas a [target] para hacer[t_him] sentir mejor!</span>")
 
 	if(H != target)
 		H.update_personal_goal(/datum/goal/achievement/givehug, TRUE)
@@ -628,9 +628,9 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 		target.apply_effect(push_mod, WEAKEN, armor_check)
 		playsound(target.loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 		if(armor_check < 100)
-			target.visible_message("<span class='danger'>[attacker] has pushed [target]!</span>")
+			target.visible_message("<span class='danger'>[attacker] ha empujado [target]!</span>")
 		else
-			target.visible_message("<span class='warning'>[attacker] attempted to push [target]!</span>")
+			target.visible_message("<span class='warning'>[attacker] intento empujar [target]!</span>")
 		return
 
 	if(randn <= 60)
@@ -642,16 +642,16 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 		//Actually disarm them
 		for(var/obj/item/I in holding)
 			if(I && target.unEquip(I))
-				target.visible_message("<span class='danger'>[attacker] has disarmed [target]!</span>")
+				target.visible_message("<span class='danger'>[attacker] ha desarmado [target]!</span>")
 				playsound(target.loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 				return
 
 	playsound(target.loc, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
-	target.visible_message("<span class='danger'>[attacker] attempted to disarm \the [target]!</span>")
+	target.visible_message("<span class='danger'>[attacker] intento desarmar a \the [target]!</span>")
 
 /datum/species/proc/disfigure_msg(var/mob/living/carbon/human/H) //Used for determining the message a disfigured face has on examine. To add a unique message, just add this onto a specific species and change the "return" message.
 	var/datum/gender/T = gender_datums[H.get_gender()]
-	return "<span class='danger'>[T.His] face is horribly mangled!</span>\n"
+	return "<span class='danger'>La cara de [T.His] esta horriblemente destrozada!</span>\n"
 
 /datum/species/proc/max_skin_tone()
 	if(appearance_flags & HAS_SKIN_TONE_GRAV)
@@ -705,10 +705,10 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 
 /datum/species/proc/get_description(var/header, var/append, var/verbose = TRUE, var/skip_detail, var/skip_photo)
 	var/list/damage_types = list(
-		"physical trauma" = brute_mod,
-		"burns" = burn_mod,
-		"lack of air" = oxy_mod,
-		"poison" = toxins_mod
+		"trauma fisico" = brute_mod,
+		"quemaduras" = burn_mod,
+		"falta de aire" = oxy_mod,
+		"veneno" = toxins_mod
 	)
 	if(!header)
 		header = "<center><h2>[name]</h2></center><hr/>"
@@ -732,31 +732,31 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 		if(!skip_detail)
 			dat += "<small>"
 			if(spawn_flags & SPECIES_CAN_JOIN)
-				dat += "</br><b>Often present among humans.</b>"
+				dat += "</br><b>A menudo presente entre humanos.</b>"
 			if(spawn_flags & SPECIES_IS_WHITELISTED)
-				dat += "</br><b>Whitelist restricted.</b>"
+				dat += "</br><b>Restriccion whitelist.</b>"
 			if(!has_organ[BP_HEART])
-				dat += "</br><b>Does not have blood.</b>"
+				dat += "</br><b>No tiene sangre.</b>"
 			if(!has_organ[breathing_organ])
-				dat += "</br><b>Does not breathe.</b>"
+				dat += "</br><b>No respira.</b>"
 			if(species_flags & SPECIES_FLAG_NO_SCAN)
-				dat += "</br><b>Does not have DNA.</b>"
+				dat += "</br><b>No tiene DNA.</b>"
 			if(species_flags & SPECIES_FLAG_NO_PAIN)
-				dat += "</br><b>Does not feel pain.</b>"
+				dat += "</br><b>No siente dolor.</b>"
 			if(species_flags & SPECIES_FLAG_NO_MINOR_CUT)
-				dat += "</br><b>Has thick skin/scales.</b>"
+				dat += "</br><b>Tiene una piel/escama gruesa.</b>"
 			if(species_flags & SPECIES_FLAG_NO_SLIP)
-				dat += "</br><b>Has excellent traction.</b>"
+				dat += "</br><b>Tiene una excelente traccion.</b>"
 			if(species_flags & SPECIES_FLAG_NO_POISON)
-				dat += "</br><b>Immune to most poisons.</b>"
+				dat += "</br><b>Inmune a la mayoria de venenos.</b>"
 			if(appearance_flags & HAS_A_SKIN_TONE)
-				dat += "</br><b>Has a variety of skin tones.</b>"
+				dat += "</br><b>Tiene una variedad de tonos de piel.</b>"
 			if(appearance_flags & HAS_SKIN_COLOR)
-				dat += "</br><b>Has a variety of skin colours.</b>"
+				dat += "</br><b>Tiene una variedad de pieles de colores.</b>"
 			if(appearance_flags & HAS_EYE_COLOR)
-				dat += "</br><b>Has a variety of eye colours.</b>"
+				dat += "</br><b>Tiene una variedad de ojos de colores.</b>"
 			if(species_flags & SPECIES_FLAG_IS_PLANT)
-				dat += "</br><b>Has a plantlike physiology.</b>"
+				dat += "</br><b>Tiene una fisiologia vegetal.</b>"
 			if(slowdown)
 				dat += "</br><b>Moves [slowdown > 0 ? "slower" : "faster"] than most.</b>"
 			for(var/kind in damage_types)
@@ -764,10 +764,10 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 					dat += "</br><b>Vulnerable to [kind].</b>"
 				else if(damage_types[kind] < 1)
 					dat += "</br><b>Resistant to [kind].</b>"
-			dat += "</br><b>They breathe [gas_data.name[breath_type]].</b>"
-			dat += "</br><b>They exhale [gas_data.name[exhale_type]].</b>"
+			dat += "</br><b>Ellos respiran [gas_data.name[breath_type]].</b>"
+			dat += "</br><b>Ellos exhalan [gas_data.name[exhale_type]].</b>"
 			if(LAZYLEN(poison_types))
-				dat += "</br><b>[capitalize(english_list(poison_types))] [LAZYLEN(poison_types) == 1 ? "is" : "are"] poisonous to them.</b>"
+				dat += "</br><b>[capitalize(english_list(poison_types))] [LAZYLEN(poison_types) == 1 ? "is" : "are"] envenenandolos.</b>"
 			dat += "</small>"
 		dat += "</td>"
 	dat += "</tr>"
@@ -775,7 +775,7 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 	return jointext(dat, null)
 
 /mob/living/carbon/human/verb/check_species()
-	set name = "Check Species Information"
+	set name = "Ver la informacion de la especie"
 	set category = "IC"
 	set src = usr
 

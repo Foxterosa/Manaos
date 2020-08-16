@@ -13,7 +13,7 @@
 	bone_material = null
 	skin_material = null
 
-	genders =                 list(PLURAL)
+	genders =                 list(PLURAL, NEUTER)
 	cyborg_noun =             null
 
 	icon_template =           'icons/mob/human_races/species/adherent/template.dmi'

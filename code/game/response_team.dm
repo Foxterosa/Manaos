@@ -129,7 +129,7 @@ proc/trigger_armed_response_team(var/force = 0)
 
 /datum/evacuation_predicate/ert/New()
 	..()
-	prevent_until = world.time + 30 MINUTES
+	prevent_until = world.time + 5 MINUTES
 
 /datum/evacuation_predicate/ert/is_valid()
 	return world.time < prevent_until

@@ -961,3 +961,9 @@
 		icon_state = "unathidoublehorns"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
+
+	nose
+		name = "Colourable nose"
+		icon_state = "colornose"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)

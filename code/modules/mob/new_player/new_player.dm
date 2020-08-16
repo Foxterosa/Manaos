@@ -55,7 +55,7 @@
 			else
 				output += "<a href='byond://?src=\ref[src];showpoll=1'>Show Player Polls</A> "
 
-	output += "<hr>Current character: <b>[client.prefs.real_name]</b>[client.prefs.job_high ? ", [client.prefs.job_high]" : null]<br>"
+	output += "<hr>Personaje actual: <b>[client.prefs.real_name]</b>[client.prefs.job_high ? ", [client.prefs.job_high]" : null]<br>"
 	if(GAME_STATE <= RUNLEVEL_LOBBY)
 		if(ready)
 			output += "<a class='linkOn' href='byond://?src=\ref[src];ready=0'>Un-Ready</a>"
@@ -66,7 +66,7 @@
 
 	output += "</div>"
 
-	panel = new(src, "Welcome","Welcome to [GLOB.using_map.full_name]", 560, 280, src)
+	panel = new(src, "Bienvenido","Bienvenido a [GLOB.using_map.full_name]", 560, 280, src)
 	panel.set_window_options("can_close=0")
 	panel.set_content(JOINTEXT(output))
 	panel.open()
@@ -76,15 +76,15 @@
 
 	if(statpanel("Lobby"))
 		if(check_rights(R_INVESTIGATE, 0, src))
-			stat("Game Mode:", "[SSticker.mode ? SSticker.mode.name : SSticker.master_mode] ([SSticker.master_mode])")
+			stat("Modo de juego:", "[SSticker.mode ? SSticker.mode.name : SSticker.master_mode] ([SSticker.master_mode])")
 		else
-			stat("Game Mode:", PUBLIC_GAME_MODE)
+			stat("Modo de juego:", PUBLIC_GAME_MODE)
 		var/extra_antags = list2params(additional_antag_types)
 		stat("Added Antagonists:", extra_antags ? extra_antags : "None")
 
 		if(GAME_STATE <= RUNLEVEL_LOBBY)
 			stat("Time To Start:", "[round(SSticker.pregame_timeleft/10)][SSticker.round_progressing ? "" : " (DELAYED)"]")
-			stat("Players: [totalPlayers]", "Players Ready: [totalPlayersReady]")
+			stat("Players: [totalPlayers]", "Jugadores listos: [totalPlayersReady]")
 			totalPlayers = 0
 			totalPlayersReady = 0
 			for(var/mob/new_player/player in GLOB.player_list)
@@ -160,7 +160,7 @@
 	if(href_list["late_join"])
 
 		if(GAME_STATE != RUNLEVEL_GAME)
-			to_chat(usr, "<span class='warning'>The round is either not ready, or has already finished...</span>")
+			to_chat(usr, "<span class='warning'>La ronda no esta lista, o ya ha terminado...</span>")
 			return
 		LateChoices() //show the latejoin job selection menu
 
@@ -215,7 +215,7 @@
 			var/sql = "INSERT INTO erro_privacy VALUES (null, Now(), '[src.ckey]', '[option]')"
 			var/DBQuery/query_insert = dbcon.NewQuery(sql)
 			query_insert.Execute()
-			to_chat(usr, "<b>Thank you for your vote!</b>")
+			to_chat(usr, "<b>Gracias por tu voto!</b>")
 			usr << browse(null,"window=privacypoll")
 
 	if(!ready && href_list["preference"])
@@ -288,14 +288,14 @@
 	if(src != usr)
 		return 0
 	if(GAME_STATE != RUNLEVEL_GAME)
-		to_chat(usr, "<span class='warning'>The round is either not ready, or has already finished...</span>")
+		to_chat(usr, "<span class='warning'>La ronda no esta lista, o ya ha terminado...</span>")
 		return 0
 	if(!config.enter_allowed)
 		to_chat(usr, "<span class='notice'>There is an administrative lock on entering the game!</span>")
 		return 0
 
 	if(!job || !job.is_available(client))
-		alert("[job.title] is not available. Please try another.")
+		alert("[job.title] no esta disponible. Por favor intenta con otro.")
 		return 0
 	if(job.is_restricted(client,client.prefs,src))
 		return
@@ -311,7 +311,7 @@
 
 	// Just in case someone stole our position while we were waiting for input from alert() proc
 	if(!job || !job.is_available(client))
-		to_chat(src, alert("[job.title] is not available. Please try another."))
+		to_chat(src, alert("[job.title] no esta disponible. Por favor intenta con otro."))
 		return 0
 
 	SSjobs.assign_role(src, job.title, 1)
@@ -336,7 +336,7 @@
 		var/mob/living/silicon/ai/A = character
 		A.on_mob_init()
 
-		AnnounceCyborg(character, job.title, "has been downloaded to the empty core in \the [character.loc.loc]")
+		AnnounceCyborg(character, job.title, "se ha descargado en el nucleo vacio en \the [character.loc.loc]")
 		SSticker.mode.handle_latejoin(character)
 
 		qdel(C)

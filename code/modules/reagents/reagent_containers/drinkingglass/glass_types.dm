@@ -104,7 +104,7 @@
 	desc = "A plain white coffee cup."
 	icon = 'icons/obj/drink_glasses/coffecup.dmi'
 	icon_state = "coffeecup"
-	item_state = "coffee"
+	item_state = "coffeecup"
 	volume = 30
 	center_of_mass = "x=15;y=13"
 	filling_states = "40;80;100"
@@ -117,23 +117,27 @@
 	name = "\improper Foundation coffee cup"
 	desc = "A white coffee cup with the Cuchulain Foundation logo stencilled onto it."
 	icon_state = "coffeecup_foundation"
+	item_state = "coffeecup_foundation"
 	base_name = "\improper Foundation cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/black
 	name = "black coffee cup"
 	desc = "A sleek black coffee cup."
 	icon_state = "coffeecup_black"
+	item_state = "coffeecup_black"
 	base_name = "black cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/green
 	name = "green coffee cup"
 	desc = "A pale green and pink coffee cup."
 	icon_state = "coffeecup_green"
+	item_state = "coffeecup_green"
 	base_name = "green cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/heart
 	name = "heart coffee cup"
 	desc = "A white coffee cup, it prominently features a red heart."
+	icon_state = "coffeecup_heart"
 	icon_state = "coffeecup_heart"
 	base_name = "heart cup"
 
@@ -141,30 +145,35 @@
 	name = "\improper SCG coffee cup"
 	desc = "A blue coffee cup emblazoned with the crest of the Sol Central Government."
 	icon_state = "coffeecup_SCG"
+	item_state = "coffeecup_SCG"
 	base_name = "\improper SCG cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/NT
 	name = "\improper NT coffee cup"
 	desc = "A red NanoTrasen coffee cup."
 	icon_state = "coffeecup_NT"
+	item_state = "coffeecup_NT"
 	base_name = "\improper NT cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/corp
 	name = "\improper EXO coffee cup"
 	desc = "A tasteful coffee cup in Expeditionary Corps Organisation corporate colours."
 	icon_state = "coffeecup_corp"
+	item_state = "coffeecup_corp"
 	base_name = "\improper EXO cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/one
 	name = "#1 coffee cup"
 	desc = "A white coffee cup, prominently featuring a #1."
 	icon_state = "coffeecup_one"
+	item_state = "coffeecup_heart"
 	base_name = "#1 cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/punitelli
 	name = "#1 monkey coffee cup"
 	desc = "A white coffee cup, prominently featuring a \"#1 monkey\" decal."
 	icon_state = "coffeecup_punitelli"
+	item_state = "coffeecup_punitelli"
 	base_name = "#1 monkey cup"
 	reagents_to_add = list(/datum/reagent/drink/juice/banana = 30)
 
@@ -172,12 +181,14 @@
 	name = "rainbow coffee cup"
 	desc = "A rainbow coffee cup. The colors are almost as blinding as a welder."
 	icon_state = "coffeecup_rainbow"
+	item_state = "coffeecup_rainbow"
 	base_name = "rainbow cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/metal
 	name = "metal coffee cup"
 	desc = "A metal coffee cup. You're not sure which metal."
 	icon_state = "coffeecup_metal"
+	item_state = "coffeecup_metal"
 	base_name = "metal cup"
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -186,12 +197,14 @@
 	name = "\improper ICCG coffee cup"
 	desc = "A coffee cup adorned with the flag of the Gilgamesh Colonial Confederation, for when you need some espionage charges to go with your morning coffee."
 	icon_state = "coffeecup_STC"
+	item_state = "coffeecup_STC"
 	base_name = "\improper ICCG cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/pawn
 	name = "pawn coffee cup"
 	desc = "A black coffee cup adorned with the image of a red chess pawn."
 	icon_state = "coffeecup_pawn"
+	item_state = "coffeecup_STC"
 	base_name = "pawn cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/diona
@@ -204,6 +217,7 @@
 	name = "british coffee cup"
 	desc = "A coffee cup with the British flag emblazoned on it."
 	icon_state = "coffeecup_brit"
+	item_state = "coffeecup_brit"
 	base_name = "british cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/tall
@@ -211,6 +225,7 @@
 	desc = "An unreasonably tall coffee cup, for when you really need to wake up in the morning."
 	icon = 'icons/obj/drink_glasses/coffecup_tall.dmi'
 	icon_state = "coffeecup_tall"
+	item_state = "coffeecup_tall"
 	volume = 60
 	center_of_mass = "x=15;y=19"
 	filling_states = "50;70;90;100"
@@ -221,6 +236,7 @@
 	name = "\improper DAIS coffee cup"
 	desc = "A coffee cup imprinted with the stylish logo of Deimos Advanced Information Systems."
 	icon_state = "coffeecup_dais"
+	item_state = "coffeecup_dais"
 	base_name = "\improper DAIS cup"
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/teacup
@@ -228,7 +244,7 @@
 	desc = "A plain white porcelain teacup."
 	icon = 'icons/obj/drink_glasses/teacup.dmi'
 	icon_state = "teacup"
-	item_state = "coffee"
+	item_state = "teacup"
 	volume = 20
 	center_of_mass = "x=15;y=13"
 	filling_states = "100"
@@ -241,3 +257,17 @@
 		base_name = citem.additional_data["base_name"] || base_name
 	custom_name = citem.item_name
 	custom_desc = citem.item_desc
+
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbay
+	name = "\improper Tasa de Medbay"
+	desc = "Una tasa de cafe blanca con el logo de Medbay en ella."
+	icon_state = "coffeecup_med"
+	item_state = "coffee_med"
+	base_name = "\improper Med cup"
+
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbayheart
+	name = "\improper Tasa con corazon"
+	desc = "Una tasa de cafe blanca perteneciente a Medbay. Tiene un corazon en ella, ow..."
+	icon_state = "coffeecup_medheart"
+	item_state = "coffee_med"
+	base_name = "\improper Med cup heart"

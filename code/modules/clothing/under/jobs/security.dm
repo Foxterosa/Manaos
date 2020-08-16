@@ -77,11 +77,6 @@
 		)
 	siemens_coefficient = 0.9
 
-/obj/item/clothing/under/tactical/navy
-	name = "navy tactical jumpsuit"
-	icon_state = "swatunder_black"
-	worn_state = "swatunder_black"
-
 /*
  * Detective
  */

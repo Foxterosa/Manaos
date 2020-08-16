@@ -105,3 +105,11 @@
 /obj/item/weapon/storage/lunchbox/syndicate/filled
 	filled = TRUE
 
+/obj/item/weapon/storage/lunchbox/medbay
+	name = "\improper lonchera de Medbay"
+	icon_state = "lunchbox_med"
+	item_state = "toolbox_white"
+	desc = "Una pequeña lonchera. Esta tiene el logo de med en ella."
+
+/obj/item/weapon/storage/lunchbox/medbay/filled
+	filled = TRUE

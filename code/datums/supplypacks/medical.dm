@@ -358,3 +358,10 @@
 	containername = "\improper Auto-Compressor crate"
 	containertype = /obj/structure/closet/crate/secure
 	access = access_medical_equip
+
+/decl/hierarchy/supply_pack/medical/canister_oxygen_cryo
+	name = "Gas - Bombona de oxigeno (Cryo)"
+	contains = list(/obj/machinery/portable_atmospherics/canister/oxygen/prechilled)
+	cost = 30
+	containername = "Caja de bombona de oxigeno (Cryo)"
+	containertype = /obj/structure/largecrate

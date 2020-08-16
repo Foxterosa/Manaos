@@ -55,6 +55,17 @@
 	desc = "Sturdy mess of synthcotton belts and buckles, ready to share your burden."
 	icon_state = "webbing"
 
+/obj/item/clothing/accessory/storage/webbing
+	name = "Porta juguetes"
+	desc = "lleva a tus amigos contigo cuando te sientas solo!"
+	icon_state = "bandolier"
+	slots = 20
+/obj/item/clothing/accessory/storage/webbing/Initialize()
+	. = ..()
+		hold.can_hold = list(
+		/obj/item/toy/figure/
+		)
+
 /obj/item/clothing/accessory/storage/webbing_large
 	name = "large webbing"
 	desc = "A large collection of synthcotton pockets and pouches."

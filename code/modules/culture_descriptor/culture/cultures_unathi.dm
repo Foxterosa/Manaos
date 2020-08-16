@@ -1,12 +1,11 @@
 /decl/cultural_info/culture/unathi
 	name = CULTURE_UNATHI
-	description = "A proud people with a deep passion for their traditions, the Unathi come from a world not suited for easy life. Their \
-	society is a fractured mess divided by region, species, faith, and what clan a Unathi is in, leaving them unable to truly reach the height of \
-	their civilization. Unathi society is divided based upon what region you're from, what faith you follow, and what clan you call home. \
-	Everything about their culture is about the traditions and values of these things, and they are extremely traditionalist. To humanity, \
-	they may seem backwards, brutal, savage, sexist and xenophobic, but for them it's protecting the values and ways of life of all of \
-	their ancestors. The clan is what keeps the Unathi together, and what pushes them to build and grow, but the question remains of how \
-	they continue to do that while holding on to their traditions."
+	description = "Gente orgullosa con pasion intensa por sus tradiciones, los Unathi vienen de un mundo no adecuado para una vida facil. Su \
+	sociedad es un desastre fracturado y dividido por fe, region, especie y clan, evitando que lleguen al pico de su civilizacion. \
+	Toda su cultura orbita alrededor de estos valores y tradiciones, y son extremadamente tradicionalistas. Desde un punto de vista humano, \
+	pueden parecer atrasados, brutos, salvajes, sexistas y xenofobicos, pero para ellos estas actitudes vienen de proteger los valores y formas de vivir \
+	de sus ancestros. El clan es lo que hace a los Unathi, y lo que los empuja a construir y crecer, lo que incita la pregunta de como crecen \
+	mientras se aferran a sus tradiciones."
 	economic_power = 0.8
 	name_language = LANGUAGE_UNATHI_SINTA
 	secondary_langs = list(
@@ -15,3 +14,4 @@
 		LANGUAGE_GUTTER,
 		LANGUAGE_SPACER
 	)
+	// se deberia poder agregar culturas semifacilmente, por si no quieren ser todos boomers, estilo "criado en el espacio". (esto es para la gang, por si deciden dejar de ser genemodders)

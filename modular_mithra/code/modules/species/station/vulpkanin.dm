@@ -14,9 +14,9 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/claws)
 
-	description = "Vulpkanin is a catch-all term for all sorts of canid-like genemods. Vulpkanin genemods, initially patented by VeyMed, were made popular about the middle of the 22nd century, and have only increased in number since. It's such a prolific type of genemod that there are entire communities of naturally-reproducing, self-sustaining populations. You could be from anywhere- Sol space, or the Frontier, or maybe even the UCG, as looked down upon as you would be."
+	description = "Vulpkanin es el termino usualmente utilizado para todas las modificaciones geneticas que tengan que ver con lo canino. Modificaciones geneticas de Vulpkanin, inicialmente patentadas por VeyMed, fueron hechas populares a la mitad del siglo 22, y solo han incrementado en numero desde entonces. Es un tipo de especie tan prolifico que hay comunidades enteras de poblaciones que se reproducen de forma natural y se mantienen a si mismas. Podrias ser de cualquier parte: el espacio Sol, o la Frontera, o tal vez incluso en UCG, no se muestra bien."
 
-	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_IS_ICONBASE
+	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	sexybits_location = BP_GROIN //this is possibly my favorite variable just because of how out of place it is. - cebu | what the hell does it even do -tori | Basically it just defines where you can hit them for massive (pain) damage. An entire variable dedicated to nutshots. -cebu
@@ -43,6 +43,10 @@
 			CULTURE_SYMBIOTIC
 		)
 	)
+
+	autohiss_basic_map = list(
+			"r" = list("rr", "rrr", "rrrr")
+		)
 
 /datum/species/vulpkanin/proc/handle_coco(var/mob/living/carbon/human/M, var/datum/reagent/nutriment/coco, var/efficiency = 1)
 	var/effective_dose = efficiency * M.chem_doses[coco.type]

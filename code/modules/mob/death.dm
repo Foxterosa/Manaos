@@ -90,3 +90,11 @@
 		SSticker.mode.check_win()
 	to_chat(src,"<span class='deadsay'>[show_dead_message]</span>")
 	return 1
+
+//this is a mob verb instead of atom for performance reasons
+//see /mob/verb/examinate() in mob.dm for more info
+//overriden here and in /mob/living for different point span classes and sanity checks
+
+/mob/dead/observer/proc/incarnate_ghost()
+	if(!client)
+		return

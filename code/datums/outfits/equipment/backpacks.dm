@@ -7,13 +7,13 @@
 
 /* Setup new backpacks here */
 /decl/backpack_outfit/nothing
-	name = "Nothing"
+	name = "Nada"
 
 /decl/backpack_outfit/nothing/spawn_backpack(var/location, var/metadata, var/desired_type)
 	return
 
 /decl/backpack_outfit/backpack
-	name = "Backpack"
+	name = "Mochila"
 	path = /obj/item/weapon/storage/backpack
 	is_default = TRUE
 
@@ -23,7 +23,7 @@
 	flags = BACKPACK_HAS_TYPE_SELECTION
 
 /decl/backpack_outfit/satchel
-	name = "Satchel"
+	name = "Bolso"
 	path = /obj/item/weapon/storage/backpack/satchel
 
 /decl/backpack_outfit/satchel/New()
@@ -31,11 +31,11 @@
 	tweaks += new/datum/backpack_tweak/selection/specified_types_as_list(typesof(/obj/item/weapon/storage/backpack/satchel/leather) + /obj/item/weapon/storage/backpack/satchel/grey)
 
 /decl/backpack_outfit/messenger_bag
-	name = "Messenger bag"
+	name = "Bolsa de mensajeria"
 	path = /obj/item/weapon/storage/backpack/messenger
 
 /decl/backpack_outfit/pocketbook
-	name = "Pocketbook"
+	name = "Cartera"
 	path = /obj/item/weapon/storage/backpack/satchel/pocketbook
 	flags = BACKPACK_HAS_TYPE_SELECTION
 
@@ -126,7 +126,7 @@
 	selections += RETURN_RANDOM_BACKPACK
 
 /datum/backpack_tweak/selection/get_ui_content(var/metadata)
-	return "Type: [metadata]"
+	return "Tipo: [metadata]"
 
 /datum/backpack_tweak/selection/get_default_metadata()
 	return RETURN_GIVEN_BACKPACK
@@ -135,7 +135,7 @@
 	return (metadata in selections) ? metadata : ..()
 
 /datum/backpack_tweak/selection/get_metadata(var/user, var/metadata, var/title = CHARACTER_PREFERENCE_INPUT_TITLE)
-	return input(user, "Choose a type.", title, metadata) as null|anything in selections
+	return input(user, "Elige un tipo.", title, metadata) as null|anything in selections
 
 /datum/backpack_tweak/selection/get_backpack_type(var/given_backpack_type, var/metadata)
 	switch(metadata)

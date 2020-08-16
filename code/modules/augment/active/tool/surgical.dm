@@ -17,3 +17,22 @@
 
 /obj/item/organ/internal/augment/active/polytool/surgical/right
 	allowed_organs = list(BP_AUGMENT_R_ARM)
+
+/obj/item/organ/internal/augment/active/polytool/adherenttool
+	name = "herramientas adherentes"
+	action_button_name = "Desplegar Herramienta Cristalina"
+	desc = "Este aumento cristalino, implantado en varias unidades adherentes especializadas, contiene todo lo que un ingeniero podria necesitar."
+	paths = list(
+		/obj/item/weapon/weldingtool/electric/crystal,
+		/obj/item/weapon/wirecutters/crystal,
+		/obj/item/weapon/screwdriver/crystal,
+		/obj/item/weapon/crowbar/crystal,
+		/obj/item/weapon/wrench/crystal,
+		/obj/item/device/multitool/crystal
+	)
+/obj/item/organ/internal/augment/active/polytool/adherenttool/left
+	allowed_organs = list(BP_AUGMENT_L_ARM)
+
+/obj/item/organ/internal/augment/active/polytool/adherenttool/right
+	allowed_organs = list(BP_AUGMENT_R_ARM)
+	

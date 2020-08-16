@@ -65,6 +65,18 @@
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
+/obj/item/device/radio/headset/magistrado
+	name = "auricular del Magistrado"
+	desc = "Un auricular que le pertenese al Magistrado"
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/heads/hos
+
+/obj/item/device/radio/headset/magistrado/alt
+	name = "auricular del Magistrado"
+	icon_state = "com_headset_alt"
+	item_state = "com_headset_alt"
+
 /obj/item/device/radio/headset/headset_deckofficer
 	name = "deck officer's radio headset"
 	desc = "The headset of the chief box pusher."

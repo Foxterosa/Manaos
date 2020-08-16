@@ -1,5 +1,5 @@
 /obj/structure/adherent_bath
-	name = "mineral bath"
+	name = "baño mineral"
 	desc = "A deep, narrow basin filled with a swirling, semi-opaque liquid."
 	icon = 'icons/obj/machines/adherent.dmi'
 	icon_state = "bath"
@@ -36,13 +36,13 @@
 		return FALSE
 
 	if(occupant)
-		to_chat(user, "<span class='warning'>\The [src] is occupied.</span>")
+		to_chat(user, "<span class='warning'>[src.name] está ocupado.</span>")
 		return FALSE
 
 	if(self_drop)
-		user.visible_message("<span class='notice'>\The [user] begins climbing into \the [src].</span>")
+		user.visible_message("<span class='notice'>\The [user] empieza a subir al [src.name].</span>")
 	else
-		user.visible_message("<span class='notice'>\The [user] begins pushing \the [patient] into \the [src].</span>")
+		user.visible_message("<span class='notice'>\The [user] comienza a empujar a [patient] en el [src.name].</span>")
 
 	if(!do_after(user, 3 SECONDS, src))
 		return FALSE
@@ -51,13 +51,13 @@
 		return FALSE
 
 	if(occupant)
-		to_chat(user, "<span class='warning'>\The [src] is occupied.</span>")
+		to_chat(user, "<span class='warning'>\The [src] está ocupado.</span>")
 		return FALSE
 
 	if(self_drop)
-		user.visible_message("<span class='notice'>\The [user] climbs into \the [src].</span>")
+		user.visible_message("<span class='notice'>\The [user] sube al [src.name].</span>")
 	else
-		user.visible_message("<span class='notice'>\The [user] pushes \the [patient] into \the [src].</span>")
+		user.visible_message("<span class='notice'>\The [user] empuja a [patient] en el [src.name].</span>")
 
 	playsound(loc, 'sound/effects/slosh.ogg', 50, 1)
 	patient.forceMove(src)
@@ -117,7 +117,7 @@
 					var/obj/item/organ/O = new limb_path(H)
 					organ_data["descriptor"] = O.name
 					H.species.post_organ_rejuvenate(O, H)
-					to_chat(occupant, "<span class='notice'>You feel your [O.name] reform in the crystal bath.</span>")
+					to_chat(occupant, "<span class='notice'>Sientes tu [O.name] se reforma en el baño de cristal.</span>")
 					H.update_body()
 					repaired_organ = TRUE
 					break
@@ -129,7 +129,7 @@
 				if(BP_IS_CRYSTAL(I) && I.damage)
 					I.heal_damage(rand(3,5))
 					if(prob(25))
-						to_chat(H, "<span class='notice'>The mineral-rich bath mends your [I.name].</span>")
+						to_chat(H, "<span class='notice'>El baño mineral cura tu [I.name].</span>")
 
 		// Repair robotic external organs.
 		if(!repaired_organ && prob(25))
@@ -139,13 +139,13 @@
 					for(var/obj/implanted_object in E.implants)
 						if(!istype(implanted_object,/obj/item/weapon/implant) && !istype(implanted_object,/obj/item/organ/internal/augment) && prob(25))	// We don't want to remove REAL implants. Just shrapnel etc.
 							E.implants -= implanted_object
-							to_chat(H, "<span class='notice'>The mineral-rich bath dissolves the [implanted_object.name].</span>")
+							to_chat(H, "<span class='notice'>El baño mineral disuelve el [implanted_object.name].</span>")
 							qdel(implanted_object)
 					if(E.brute_dam || E.burn_dam)
 						E.heal_damage(rand(3,5), rand(3,5), robo_repair = 1)
 						if(prob(25))
-							to_chat(H, "<span class='notice'>The mineral-rich bath mends your [E.name].</span>")
+							to_chat(H, "<span class='notice'>El baño mineral cura tu [E.name].</span>")
 						if(!BP_IS_CRYSTAL(E) && !BP_IS_BRITTLE(E))
 							E.status |= ORGAN_BRITTLE
-							to_chat(H, "<span class='warning'>It feels a bit brittle, though...</span>")
+							to_chat(H, "<span class='warning'>Se siente un poco fragil...</span>")
 						break

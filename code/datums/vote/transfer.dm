@@ -1,6 +1,6 @@
 /datum/vote/transfer
 	name = "transfer"
-	question = "End the shift?"
+	question = "Terminar el turno?"
 
 /datum/vote/transfer/can_run(mob/creator, automatic)
 	if(!(. = ..()))
@@ -13,16 +13,16 @@
 		return //Mods bypass further checks.
 	var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
 	if (!automatic && security_state.current_security_level_is_same_or_higher_than(security_state.high_security_level))
-		to_chat(creator, "The current alert status is too high to call for a crew transfer!")
+		to_chat(creator, "La alerta actual es demasiada alta como para pedir una transferencia de la tripulacion!")
 		return FALSE
 	if(GAME_STATE <= RUNLEVEL_SETUP)
-		to_chat(creator, "The crew transfer button has been disabled!")	
+		to_chat(creator, "El boton de transferencia de la tripulacion ha sido desactivado!")
 		return FALSE
 
 /datum/vote/transfer/setup_vote(mob/creator, automatic)
-	choices = list("Initiate Crew Transfer", "Extend the Round ([config.vote_autotransfer_interval / 600] minutes)")
+	choices = list("Iniciar transferencia de la tripulacion", "Extender la ronda ([config.vote_autotransfer_interval / 600] minutes)")
 	if (config.allow_extra_antags && SSvote.is_addantag_allowed(creator, automatic))
-		choices += "Add Antagonist"
+		choices += "Agregar antagonista"
 	..()
 
 /datum/vote/transfer/handle_default_votes()
@@ -41,14 +41,14 @@
 		else
 			factor = 1.4
 	choices["Initiate Crew Transfer"] = round(choices["Initiate Crew Transfer"] * factor)
-	to_world("<font color='purple'>Crew Transfer Factor: [factor]</font>")
+	to_world("<font color='purple'>Factor de la transferencia de la tripulacion: [factor]</font>")
 
 /datum/vote/transfer/report_result()
 	if(..())
 		return 1
-	if(result[1] == "Initiate Crew Transfer")
+	if(result[1] == "Iniciar la transferencia de la tripulacion")
 		init_autotransfer()
-	else if(result[1] == "Add Antagonist")
+	else if(result[1] == "Agregar antagonista")
 		SSvote.queued_auto_vote = /datum/vote/add_antagonist
 
 /datum/vote/transfer/mob_not_participating(mob/user)

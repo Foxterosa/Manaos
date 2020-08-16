@@ -44,6 +44,12 @@
 	icon_state = "magnumcasing"
 	spent_icon = "magnumcasing-spent"
 
+/obj/item/ammo_casing/pistol/magnum/detective
+	name = "Una bala paralizante semi letal."
+	projectile_type = /obj/item/projectile/bullet/pistol/rev38
+	icon_state = "detectivecasing"
+	spent_icon = "magnumcasing-spent"
+
 /obj/item/ammo_casing/pistol/throwback
 	desc = "An antique pistol bullet casing. Somewhere between 9 and 11 mm in caliber."
 	caliber = CALIBER_PISTOL_ANTIQUE
@@ -154,13 +160,6 @@
 	desc = "A military rifle bullet casing."
 	caliber = CALIBER_RIFLE_MILITARY
 	projectile_type = /obj/item/projectile/bullet/rifle/military
-	icon_state = "rifle_mil"
-	spent_icon = "rifle_mil-spent"
-
-/obj/item/ammo_casing/rifle/military/large
-	desc = "A military sniper rifle bullet casing."
-	caliber = CALIBER_RIFLE_MILITARY_LARGE
-	projectile_type = /obj/item/projectile/bullet/rifle/military/large
 	icon_state = "rifle_mil"
 	spent_icon = "rifle_mil-spent"
 

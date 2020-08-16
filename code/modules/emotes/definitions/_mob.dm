@@ -115,6 +115,8 @@
 		/decl/emote/audible/moan,
 		/decl/emote/audible/grunt,
 		/decl/emote/audible/slap,
+		/decl/emote/audible/aslap,
+		/decl/emote/audible/nya,
 		/decl/emote/audible/oorah,
 		/decl/emote/audible/fsnap,
 		/decl/emote/audible/fsnap2,

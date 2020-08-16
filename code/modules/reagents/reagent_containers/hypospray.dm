@@ -165,58 +165,58 @@
 	reagents_to_add = list(/datum/reagent/dylovene = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain
-	name = "autoinjector (painkiller)"
+	name = "autoinyector (Tramadol)"
 	band_color = COLOR_PURPLE
 	reagents_to_add = list(/datum/reagent/tramadol = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain
-	name = "autoinjector (oxycodone)"
-	band_color = COLOR_DARK_GRAY
+	name = "autoinyector (Oxycodone)"
+	band_color = COLOR_PURPLE
 	reagents_to_add = list(/datum/reagent/tramadol/oxycodone = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad
-	name = "autoinjector (anti-rad)"
+	name = "autoinyector (Hyronalin)"
 	band_color = COLOR_AMBER
 	reagents_to_add = list(/datum/reagent/hyronalin = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/mindbreaker
-	name = "autoinjector"
+	name = "autoinyector"
 	band_color = COLOR_DARK_GRAY
 	reagents_to_add = list(/datum/reagent/mindbreaker = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/empty
-	name = "autoinjector"
+	name = "autoinyector"
 	band_color = COLOR_WHITE
 	reagents_to_add = list()
 	matter = list(MATERIAL_PLASTIC = 150, MATERIAL_GLASS = 50)
 
 //boh
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
-	name = "autoinjector (stims)"
+	name = "autoinyector (Estimulante)"
 	band_color = COLOR_DARK_GRAY
 	reagents_to_add = list(/datum/reagent/tramadol/oxycodone = 10, /datum/reagent/inaprovaline = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/zerk
-	name = "autoinjector (zerk)"
+	name = "autoinyector (Zerk)"
 	band_color = COLOR_RED
 	reagents_to_add = list(/datum/reagent/synaptizine = 3, /datum/reagent/hyperzine = 12)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross
-	name = "autoinjector (HO7)"
+	name = "autoinyector (Hypeross)"
 	band_color = COLOR_WHITE
 	reagents_to_add = list(/datum/reagent/hypeross = 3)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon
-	name = "autoinjector (peri)"
+	name = "autoinyector (Peridaxon)"
 	band_color = COLOR_PINK
 	reagents_to_add = list(/datum/reagent/peridaxon = 10)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton
-	name = "autoinjector (kompo)"
+	name = "autoinyector (Kompoton)"
 	band_color = COLOR_RED_LIGHT
 	reagents_to_add = list(/datum/reagent/kompoton = 10)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine
-	name = "autoinjector (alky)"
+	name = "autoinyector (Alkysine)"
 	band_color = COLOR_YELLOW
 	reagents_to_add = list(/datum/reagent/alkysine = 5)

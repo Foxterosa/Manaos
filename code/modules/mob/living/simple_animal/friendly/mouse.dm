@@ -27,7 +27,7 @@
 	holder_type = /obj/item/weapon/holder/mouse
 	mob_size = MOB_MINISCULE
 	possession_candidate = 1
-	can_escape = TRUE
+	can_escape = FALSE
 	can_pull_size = ITEM_SIZE_TINY
 	can_pull_mobs = MOB_PULL_NONE
 	kitchen_tag = "mouse"
@@ -46,14 +46,21 @@
 		for(var/mob/M in view())
 			sound_to(M, 'sound/effects/mousesqueek.ogg')
 
-	if(!ckey && stat == CONSCIOUS && prob(0.5))
+	if(!ckey && stat == CONSCIOUS && prob(0.4))
 		set_stat(UNCONSCIOUS)
 		icon_state = "mouse_[body_color]_sleep"
 		wander = 0
 		speak_chance = 0
 		//snuffles
 	else if(stat == UNCONSCIOUS)
-		if(ckey || prob(1))
+		if(ckey || prob(0.5))
+			set_stat(CONSCIOUS)
+			icon_state = "mouse_[body_color]"
+			wander = 1
+		else if(prob(5))
+			audible_emote("snuffles.")
+	if(stat == UNCONSCIOUS)
+		if(!ckey || prob(0.5))
 			set_stat(CONSCIOUS)
 			icon_state = "mouse_[body_color]"
 			wander = 1

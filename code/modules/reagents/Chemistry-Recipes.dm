@@ -2824,3 +2824,10 @@
 	required_reagents = list(/datum/reagent/drink/alien/unathijuice = 2, /datum/reagent/nutriment/protein = 1)
 	result_amount = 3
 	mix_message = "The mixture turns a dark green"
+
+/datum/chemical_reaction/mate
+	name = "Mate"
+	hidden_from_codex = FALSE
+	result = /datum/reagent/drink/mate
+	required_reagents = list(/datum/reagent/nutriment/yerba = 2, /datum/reagent/water = 1)
+	result_amount = 3

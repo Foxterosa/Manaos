@@ -47,6 +47,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/admin_cancel_shuttle,	//allows us to cancel the emergency shuttle, sending it back to centcomm,
 	/client/proc/cmd_admin_direct_narrate,	//send text directly to a player with no padding. Useful for narratives and fluff-text,
 	/client/proc/cmd_admin_visible_narrate,
+	/client/proc/cmd_admin_headset_message,
 	/client/proc/cmd_admin_audible_narrate,
 	/client/proc/cmd_admin_local_narrate,
 	/client/proc/cmd_admin_world_narrate,	//sends text to all players with no padding,
