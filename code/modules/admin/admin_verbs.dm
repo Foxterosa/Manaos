@@ -705,7 +705,7 @@ var/list/admin_verbs_mod = list(
 	set name = "ERP Detected Global"
 	set desc = "Alerts everyone that ERP has been detected, and that spiders /will/ be deployed."
 
-	for (mob/T as mob in SSmobs.mob_list)
+	for (var/mob/T as mob in SSmobs.mob_list)
 		T << "<br><center><span class='notice'><b><font size=4>ERP DETECTED.<br> Purge of the source of erotic roleplay will commence shortly.</font></b><br></span></center><br>"
 		T << 'sound/effects/erpdetected.wav'
 
