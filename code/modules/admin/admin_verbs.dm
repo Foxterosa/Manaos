@@ -705,14 +705,14 @@ var/list/admin_verbs_mod = list(
 	set name = "ERP Detected Global"
 	set desc = "Alerts everyone that ERP has been detected, and that spiders /will/ be deployed."
 
-	for (var/mob/T as mob in mob_list)
+	for (mob/T as mob in SSmobs.mob_list)
 		T << "<br><center><span class='notice'><b><font size=4>ERP DETECTED.<br> Purge of the source of erotic roleplay will commence shortly.</font></b><br></span></center><br>"
 		T << 'sound/effects/erpdetected.wav'
 
 	log_admin("[key_name(usr)] told everyone that ERP has been detected, and that jesus will be on their way.")
 	message_admins("\blue [key_name_admin(usr)] told everyone that ERP has been detected, and that jesus will be on their way.", 1)
 
-/client/proc/erp(mob/T as mob in mob_list)
+/client/proc/erp(mob/T as mob in SSmobs.mob_list)
 	set category = "Fun"
 	set name = "ERP Detected"
 	set desc = "Alerts someone that ERP has been detected, and that spiders /will/ be deployed."
