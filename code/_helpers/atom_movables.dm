@@ -2,6 +2,9 @@
 	if(!istype(AM))
 		return
 
+#define isatom(A) istype(A, /atom)
+#define ismovableatom(A) istype(A, /atom/movable)
+
 	//Find AM's matrix so we can use it's X/Y pixel shifts
 	var/matrix/M = matrix(AM.transform)
 
