@@ -116,13 +116,11 @@
 
 /decl/emote/audible/laugh/do_extra(var/atom/user)
 	if(iscarbon(user)) //Citadel Edit because this is hilarious
-		var/mob/living/carbon = user
-			if
-			(user.gender == FEMALE)
-				playsound(user.loc, emote_sound,'sound/voice/human/womanlaugh.ogg', 50, 0)
-			else
-			(user.gender == MALE)
-				playsound(user.loc, emote_sound, pick('sound/voice/human/manlaugh1.ogg', 'sound/voice/human/manlaugh2.ogg', 50, 0))
+		var/mob/living/carbon/C = user
+		if(C.gender == FEMALE)
+			playsound(C.loc, emote_sound,'sound/voice/human/womanlaugh.ogg', 50, 0)
+		else
+			playsound(C.loc, emote_sound, pick('sound/voice/human/manlaugh1.ogg', 'sound/voice/human/manlaugh2.ogg', 50, 0))
 
 
 /decl/emote/audible/mumble
