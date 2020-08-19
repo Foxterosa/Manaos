@@ -113,6 +113,14 @@
 	key = "laugh"
 	emote_message_3p_target = "USER laughs at TARGET."
 	emote_message_3p = "USER laughs."
+/decl/emote/audible/laugh/do_extra(var/mob/user)
+	if(iscarbon(user)) //Citadel Edit because this is hilarious
+		var/mob/living/carbon/src = user
+			if(user.gender == FEMALE)
+				playsound('sound/voice/human/womanlaugh.ogg', 50, 1)
+			else
+				playsound(pick('sound/voice/human/manlaugh1.ogg', 'sound/voice/human/manlaugh2.ogg'), 50, 1)
+
 
 /decl/emote/audible/mumble
 	key = "mumble"
