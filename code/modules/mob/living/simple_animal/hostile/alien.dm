@@ -39,8 +39,8 @@
 	icon_living = "maid"
 	icon_dead = "maid_dead"
 
-/mob/living/simple_animal/hostile/alien/maid/AttackingTarget()
-	if(ismovable(A)(target))
+/mob/living/simple_animal/hostile/alien/maid/AttackTarget()
+	if(ismovableatom(A)(target))
 		if(istype(target, /obj/effect/decal/cleanable))
 			visible_message("<span class='notice'>\The [src] cleans up \the [target].</span>")
 			qdel(target)
