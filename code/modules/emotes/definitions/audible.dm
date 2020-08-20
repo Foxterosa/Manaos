@@ -119,11 +119,8 @@
 		var/mob/living/carbon/C = user
 		if(C.gender == FEMALE)
 			playsound(C.loc, 'sound/voice/human/womanlaugh.ogg', 50, 1)
-			to_chat(usr, "llegue hasta aqui xd")
 		else
 			playsound(C.loc,pick ('sound/voice/human/manlaugh1.ogg', 'sound/voice/human/manlaugh2.ogg', 50, 1))
-			to_chat(usr, "ahora aqui")
-
 
 /decl/emote/audible/mumble
 	key = "mumble"
