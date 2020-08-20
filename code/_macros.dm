@@ -103,16 +103,20 @@
 #define to_file(file_entry, file_content)                   file_entry << file_content
 
 /// Common use
+
 #define legacy_chat(target, message)                        to_target(target, message)
 #define to_world(message)                                   to_chat(world, message)
 #define to_world_log(message)                               world.log << (message)
-#define sound_to(target, sound)                             target << (sound)
-#define show_browser(target, browser_content, browser_name) target << browse(browser_content, browser_name)
-#define send_rsc(target, rsc_content, rsc_name)             target << browse_rsc(rsc_content, rsc_name)
+#define sound_to(target, sound)                             to_target(target, sound)
+#define show_browser(target, browser_content, browser_name) to_target(target, browse(browser_content, browser_name))
+#define send_rsc(target, content, title)                    to_target(target, browse_rsc(content, title))
 #define from_file(file_entry, target_var)                   file_entry >> (target_var)
 #define close_browser(target, browser_name)                 target << browse(null, browser_name)
 #define show_image(target, image)                           target << (image)
+#define to_save(handle, value)                              to_target(handle, value) //semantics postport: what did they mean by this / ayuda ni yo se
+#define send_output(target, msg, control)                   to_target(target, output(msg, control))
 #define open_link(target, url)             					target << link(url)
+#define send_link(target, url)                              to_target(target, link(url))
 
 #define MAP_IMAGE_PATH "nano/images/[GLOB.using_map.path]/"
 
