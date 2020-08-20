@@ -104,8 +104,10 @@
 
 /// Common use
 
-#define to_chat(target, message)                        	target << (message)
-#define to_world(message)                                   world << (message)
+#define legacy_chat(target, message)                        to_target(target, message)
+#define to_world(message)                                   to_chat(world, message)
+//#define to_chat(target, message)                        	target << (message)
+//#define to_world(message)                                 world << (message)
 #define to_world_log(message)                               world.log << (message)
 #define sound_to(target, sound)                             to_target(target, sound)
 #define show_browser(target, browser_content, browser_name) to_target(target, browse(browser_content, browser_name))
