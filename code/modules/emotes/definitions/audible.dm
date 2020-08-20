@@ -241,4 +241,19 @@
 	key = "nya"
 	emote_message_1p = "Dejas salir el Nya~"
 	emote_message_3p= "USER deja salir el Nya~"
-	emote_sound = 'sound/effects/nya.ogg'
+/decl/emote/audible/nya/do_extra(var/atom/user)
+	if(iscarbon(user)) //Citadel Edit because this is hilarious
+		var/mob/living/carbon/C = user
+		if(C.gender == FEMALE)
+			playsound(C.loc, 'sound/effects/nya.ogg', 10, 1)
+
+/decl/emote/audible/awoo
+	key = "awoo"
+	emote_message_1p = "Dejas salir el Awoo~"
+	emote_message_3p= "USER deja salir el Awoo~"
+
+/decl/emote/audible/awoo/do_extra(var/atom/user)
+	if(iscarbon(user)) //Citadel Edit because this is hilarious
+		var/mob/living/carbon/C = user
+		if(C.gender == FEMALE)
+			playsound(C.loc, 'sound/voice/awoo.ogg', 10, 1)
