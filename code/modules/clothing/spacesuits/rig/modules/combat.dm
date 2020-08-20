@@ -120,7 +120,7 @@
 		to_chat(user, "<span class='danger'>Another grenade of that type will not fit into the module.</span>")
 		return 0
 
-	to_chat(H, "<span class='info'><b>You quickly fabricate \a [new_weapon].</b></span>")
+	to_chat(user, "<span class='info'><b>You slot \the [input_device] into the suit module.</b></span>")
 	qdel(input_device)
 	accepted_item.charges++
 	return 1

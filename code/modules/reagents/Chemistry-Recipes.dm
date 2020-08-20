@@ -70,7 +70,7 @@
 /datum/chemical_reaction/proc/post_reaction(var/datum/reagents/holder)
 	var/atom/container = holder.my_atom
 	if(mix_message && container && !ismob(container))
-		my_atom.visible_message("<span class='notice'>[icon2html(my_atom, viewers(my_atom))] [replace_message]</span>")
+		container.visible_message("<span class='notice'>[icon2html(container)] [mix_message]</span>")
 		playsound(container, reaction_sound, 80, 1)
 
 //obtains any special data that will be provided to the reaction products
