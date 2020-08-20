@@ -3,7 +3,7 @@ For the main html chat area
 *********************************/
 
 //Precaching a bunch of shit
-GLOBAL_DATUM_INIT(iconCache, /savefile, new("tmp/iconCache.sav")) //Cache of icons for the browser output
+GLOBAL_DATUM_INIT(iconCache, /savefile, new("data/tmp/iconCache.sav")) //Cache of icons for the browser output
 
 //Should match the value set in the browser js
 #define MAX_COOKIE_LENGTH 5
@@ -40,7 +40,8 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("tmp/iconCache.sav")) //Cache of ico
 		alert(owner.mob, "Updated chat window does not exist. If you are using a custom skin file please allow the game to update.")
 		return
 
-	if(winget(owner, "browseroutput", "is-visible") == "true") //Already setup
+	//It seems if someone disconnects while loading this can runtime, so we have to check for owner again
+	if(owner && winget(owner, "browseroutput", "is-visible") == "true") //Already setup
 		doneLoading()
 
 	else //Not setup
@@ -101,7 +102,6 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("tmp/iconCache.sav")) //Cache of ico
 	if(loaded)
 		return
 
-	testing("Chat loaded for [owner.ckey]")
 	loaded = TRUE
 	showChat()
 
