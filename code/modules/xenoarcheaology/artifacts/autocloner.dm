@@ -54,7 +54,7 @@
 		if(time_spent_spawning >= time_per_spawn)
 			time_spent_spawning = 0
 			update_use_power(POWER_USE_IDLE)
-			src.visible_message("<span class='notice'>\icon[src] [src] pings!</span>")
+			src.visible_message("<span class='notice'>[icon2html(src, viewers(get_turf(src)))] [src] pings!</span>")
 			icon_state = "cellold1"
 			desc = "Esta lleno de un liquido viscoso burbujeante y esta iluminado por un resplandor misterioso."
 			if(spawn_type)
