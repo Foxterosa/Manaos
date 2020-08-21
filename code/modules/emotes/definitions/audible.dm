@@ -19,7 +19,7 @@
 	if(iscarbon(user)) //Citadel Edit because this is hilarious
 		var/mob/living/carbon/C = user
 		if(C.gender == FEMALE)
-			playsound(C.loc,pick( 'sound/emotes_skyrat/whimper_f1','sound/emotes_skyrat/whimper_f2' 50, 1))
+			playsound(C.loc,pick( 'sound/emotes_skyrat/whimper_f1','sound/emotes_skyrat/whimper_f2', 50, 1))
 
 /decl/emote/audible/gasp
 	key ="gasp"
@@ -29,9 +29,9 @@
 	if(iscarbon(user)) //Citadel Edit because this is hilarious
 		var/mob/living/carbon/C = user
 		if(C.gender == FEMALE)
-			playsound(C.loc,pick( 'sound/emotes_skyrat/gasp_f1','sound/emotes_skyrat/gasp_f2','sound/emotes_skyrat/gasp_f3','sound/emotes_skyrat/gasp_f4','sound/emotes_skyrat/gasp_f5','sound/emotes_skyrat/gasp_f6' 50, 1))
+			playsound(C.loc,pick( 'sound/emotes_skyrat/gasp_f1','sound/emotes_skyrat/gasp_f2','sound/emotes_skyrat/gasp_f3','sound/emotes_skyrat/gasp_f4','sound/emotes_skyrat/gasp_f5','sound/emotes_skyrat/gasp_f6', 50, 1))
 		else(C.gender == MALE)
-			playsound(C.loc,pick( 'sound/emotes_skyrat/gasp_m1','sound/emotes_skyrat/gasp_m2','sound/emotes_skyrat/gasp_m3','sound/emotes_skyrat/gasp_m4','sound/emotes_skyrat/gasp_m5','sound/emotes_skyrat/gasp_m6' 50, 1))
+			playsound(C.loc,pick( 'sound/emotes_skyrat/gasp_m1','sound/emotes_skyrat/gasp_m2','sound/emotes_skyrat/gasp_m3','sound/emotes_skyrat/gasp_m4','sound/emotes_skyrat/gasp_m5','sound/emotes_skyrat/gasp_m6', 50, 1))
 
 
 /decl/emote/audible/scretch
@@ -83,13 +83,14 @@
 /decl/emote/audible/sniff
 	key = "sniff"
 	emote_message_3p = "USER sniffs."
+
 /decl/emote/audible/sniff/do_extra(var/atom/user)
 	if(iscarbon(user)) //Citadel Edit because this is hilarious
 		var/mob/living/carbon/C = user
 		if(C.gender == FEMALE)
-			playsound(C.loc 'sound/emotes_skyrat/female_sniff', 50, 1)
+			playsound(C.loc, 'sound/emotes_skyrat/female_sniff.ogg', 50, 1)
 		if(C.gender == MALE)
-			playsound(C.loc 'sound/emotes_skyrat/male_sniff', 50, 1))
+			playsound(C.loc, 'sound/emotes_skyrat/male_sniff.ogg', 50, 1)
 
 /decl/emote/audible/snore
 	key = "snore"
@@ -116,13 +117,14 @@
 	key = "cough"
 	emote_message_3p = "USER coughs!"
 	conscious = 0
+
 /decl/emote/audible/cough/do_extra(var/atom/user)
 	if(iscarbon(user)) //Citadel Edit because this is hilarious
 		var/mob/living/carbon/C = user
 		if(C.gender == FEMALE)
-			playsound(C.loc,pick 'sound/emotes_skyrat/female_cough_1','sound/emotes_skyrat/female_cough_2','sound/emotes_skyrat/female_cough_3', 50, 1))
+			playsound(C.loc,pick, ('sound/emotes_skyrat/female_cough_1','sound/emotes_skyrat/female_cough_2','sound/emotes_skyrat/female_cough_3', 50, 1))
 		if(C.gender == MALE)
-			playsound(C.loc,pick 'sound/emotes_skyrat/male_cough_1','sound/emotes_skyrat/male_cough_2','sound/emotes_skyrat/male_cough_3', 50, 1))
+			playsound(C.loc,pick, ('sound/emotes_skyrat/male_cough_1','sound/emotes_skyrat/male_cough_2','sound/emotes_skyrat/male_cough_3', 50, 1))
 
 /decl/emote/audible/cry
 	key = "cry"
