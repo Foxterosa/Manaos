@@ -213,7 +213,7 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 /*Checkers, cost takers, message makers, etc*/
 
 /spell/proc/cast_check(skipcharge = 0,mob/user = usr, var/list/targets) //checks if the spell can be cast based on its settings; skipcharge is used when an additional cast_check is called inside the spell
-	
+
 	if(silenced > 0)
 		return 0
 
@@ -307,7 +307,7 @@ var/list/spells = typesof(/spell) //needed for the badmin verb for now
 
 	var/list/valid_targets = view_or_range(range, holder, selection_type)
 	for(var/target in targets)
-		if(!target in valid_targets)
+		if(!(target in valid_targets))
 			return 0
 	return 1
 
