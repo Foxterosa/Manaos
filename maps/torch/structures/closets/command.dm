@@ -77,6 +77,8 @@
 		/obj/item/weapon/folder/blue,
 		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/weapon/sd_key,
+		/obj/item/clothing/head/caphat/hop,
+		/obj/item/clothing/under/rank/hop,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/captain, /obj/item/weapon/storage/backpack/satchel/cap)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/captain, /obj/item/weapon/storage/backpack/messenger/com))
 	)
