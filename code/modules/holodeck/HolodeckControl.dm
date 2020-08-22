@@ -146,8 +146,8 @@
 		to_chat(user, "<span class='notice'>Aumentas enormemente la potencia del proyector y anulas los protocolos de seguridad.</span>")
 		to_chat(user, "Advertencia: Los protocolos de apagado y descongelamiento automaticos se han danado. Por favor llame a [GLOB.using_map.company_name] mantenimiento y no use el simulador.")
 		log_game("[key_name(usr)] emaggeo la computadora de control del Holodeck")
-		return 1
 		src.updateUsrDialog()
+		return 1
 	else
 		..()
 
