@@ -16,7 +16,7 @@ matrix:
       cache:
         directories: $HOME/spaceman_dmm/$SPACEMAN_DMM_VERSION
       install:
-        - ./scripts/install-spaceman-dmm.sh dreamchecker
+        - chmod +x ./scripts/install-spaceman-dmm.sh dreamchecker
       script:
         - ~/dreamchecker
     - name: "Code"
