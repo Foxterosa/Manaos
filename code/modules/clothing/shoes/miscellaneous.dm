@@ -113,11 +113,6 @@
 		bomb = ARMOR_BOMB_RESISTANT)
 	siemens_coefficient = 0.7
 
-/obj/item/clothing/shoes/tactical/black
-	name = "black tactical boots"
-	desc = "Black boots with extra padding and armor."
-	icon_state = "duty"
-
 /obj/item/clothing/shoes/dress
 	name = "dress shoes"
 	desc = "The height of fashion, and they're pre-polished!"
@@ -144,6 +139,22 @@
 	desc = "A pair of magic, black shoes."
 	name = "magic shoes"
 	icon_state = "black"
+	body_parts_covered = FEET
+
+/obj/item/clothing/shoes/kasumi
+	item_icons = list(slot_shoes_str = 'icons_manaos/mob/onmob/onmob_feet.dmi')
+	icon = 'icons_manaos/mob/onmob/onmob_feet.dmi'
+	desc = "un par de botas largas negras."
+	name = "kasumiboots"
+	icon_state = "kasumiboots"
+	body_parts_covered = FEET
+
+/obj/item/clothing/shoes/jrboots
+	item_icons = list(slot_shoes_str = 'icons_manaos/mob/onmob/onmob_feet.dmi')
+	icon = 'icons_manaos/mob/onmob/onmob_feet.dmi'
+	desc = "Hm, buenas botas"
+	name = "botas grandes"
+	icon_state = "jr-boots"
 	body_parts_covered = FEET
 
 /obj/item/clothing/shoes/clown_shoes

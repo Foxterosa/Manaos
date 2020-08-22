@@ -444,11 +444,6 @@
 	icon = 'icons/obj/toy.dmi'
 	w_class = ITEM_SIZE_TINY
 
-/obj/item/toy/figure/cmo
-	name = "Chief Medical Officer action figure"
-	desc = "A \"Space Life\" brand Chief Medical Officer action figure."
-	icon_state = "cmo"
-
 /obj/item/toy/figure/assistant
 	name = "Assistant action figure"
 	desc = "A \"Space Life\" brand Assistant action figure."
@@ -458,11 +453,6 @@
 	name = "Atmospheric Technician action figure"
 	desc = "A \"Space Life\" brand Atmospheric Technician action figure."
 	icon_state = "atmos"
-
-/obj/item/toy/figure/bartender
-	name = "Bartender action figure"
-	desc = "A \"Space Life\" brand Bartender action figure."
-	icon_state = "bartender"
 
 /obj/item/toy/figure/borg
 	name = "Cyborg action figure"
@@ -534,11 +524,6 @@
 	desc = "A \"Space Life\" brand Geneticist action figure, which was recently dicontinued."
 	icon_state = "geneticist"
 
-/obj/item/toy/figure/hop
-	name = "Head of Personel action figure"
-	desc = "A \"Space Life\" brand Head of Personel action figure."
-	icon_state = "hop"
-
 /obj/item/toy/figure/hos
 	name = "Head of Security action figure"
 	desc = "A \"Space Life\" brand Head of Security action figure."
@@ -574,35 +559,15 @@
 	desc = "A \"Space Life\" brand Mime action figure."
 	icon_state = "mime"
 
-/obj/item/toy/figure/miner
-	name = "Shaft Miner action figure"
-	desc = "A \"Space Life\" brand Shaft Miner action figure."
-	icon_state = "miner"
-
 /obj/item/toy/figure/ninja
 	name = "Space Ninja action figure"
 	desc = "A \"Space Life\" brand Space Ninja action figure."
 	icon_state = "ninja"
 
-/obj/item/toy/figure/wizard
-	name = "Wizard action figure"
-	desc = "A \"Space Life\" brand Wizard action figure."
-	icon_state = "wizard"
-
 /obj/item/toy/figure/rd
 	name = "Chief Science Officer action figure"
 	desc = "A \"Space Life\" brand Chief Science Officer action figure."
 	icon_state = "rd"
-
-/obj/item/toy/figure/roboticist
-	name = "Roboticist action figure"
-	desc = "A \"Space Life\" brand Roboticist action figure."
-	icon_state = "roboticist"
-
-/obj/item/toy/figure/scientist
-	name = "Scientist action figure"
-	desc = "A \"Space Life\" brand Scientist action figure."
-	icon_state = "scientist"
 
 /obj/item/toy/figure/syndie
 	name = "Doom Operative action figure"
@@ -619,11 +584,6 @@
 	desc = "A \"Space Life\" brand Warden action figure."
 	icon_state = "warden"
 
-/obj/item/toy/figure/psychologist
-	name = "Psychologist action figure"
-	desc = "A \"Space Life\" brand Psychologist action figure."
-	icon_state = "psychologist"
-
 /obj/item/toy/figure/paramedic
 	name = "Paramedic action figure"
 	desc = "A \"Space Life\" brand Paramedic action figure."
@@ -633,6 +593,255 @@
 	name = "Emergency Response Team Commander action figure"
 	desc = "A \"Space Life\" brand Emergency Response Team Commander action figure."
 	icon_state = "ert"
+
+/obj/item/toy/figure/arkin
+	name = "figura de accion: Arkin"
+	desc = "Una figura de accion de Arkin marca \"Manaos\". Huele a nicotina."
+	icon_state = "arkin"
+
+/obj/item/toy/figure/smug
+	name = "figura dea accion: Smug"
+	desc = "Una figura de accion de Smug marca \"Manaos\"."
+	icon_state = "smug"
+
+/obj/item/toy/figure/alicia
+	name = "figura dea accion: Alicia"
+	desc = "Una figura de accion de Smug marca \"Manaos\". IS SCIENCE TIME!"
+	icon_state = "alicia"
+
+/obj/item/toy/figure/ana
+	name = "figura de accion: Ana"
+	desc = "Una figura de accion de Ana marca \"Manaos\". Chale..."
+	icon_state = "ana"
+	var/cooldown = 0
+/obj/item/toy/figure/ana/attack_self(mob/user as mob)
+	if(cooldown < world.time - 8)
+		playsound(user, 'sound/interactions/slime_squish.ogg', 20, 1)
+		cooldown = world.time
+/obj/item/toy/figure/ana/attack_hand(mob/user as mob)
+	if(loc == user)
+		if(cooldown < world.time - 8)
+			playsound(user, 'sound/interactions/slime_squish.ogg', 20, 1)
+			cooldown = world.time
+			return
+	..()
+
+/obj/item/toy/figure/sydney1
+	name = "figura de accion: Sydney"
+	desc = "Una figura de accion de Sydney marca \"Manaos\". *aslap"
+	icon_state = "sydney1"
+
+/obj/item/toy/figure/sydney2
+	name = "figura de accion: Sydney maga"
+	desc = "Una figura de accion de Sydney maga marca \"Space Life\". *aslap"
+	icon_state = "sydney2"
+
+/obj/item/toy/figure/jr
+	name = "figura de accion: Jr"
+	desc = "Una figura de accion de Jr marca \"Manaos\". Hm..."
+	icon_state = "jr"
+
+/obj/item/toy/figure/danika
+	name = "figura de accion: Danika"
+	desc = "Una figura de accion de Danika marca \"Manaos\". Soy una Laakkonen, por el amor de Dios!"
+	icon_state = "danika"
+
+/obj/item/toy/figure/bruno
+	name = "figura de accion: Bruno"
+	desc = "Una figura de accion de Bruno marca \"Manaos\"."
+	icon_state = "bruno"
+
+/obj/item/toy/figure/ariel
+	name = "figura de accion: Ariel"
+	desc = "Una figura de accion de Ariel marca \"Manaos\". Wakala..."
+	icon_state = "ariel"
+
+/obj/item/toy/figure/alysson
+	name = "figura de accion: Alysson"
+	desc = "Una figura de accion de Alysson marca \"Manaos\". Ahora con cabello 100% natural."
+	icon_state = "alysson"
+
+/obj/item/toy/figure/darkness
+	name = "figura de accion: Darkness"
+	desc = "Una figura de accion de Darkness marca \"Manaos\". Parece a una tipo secuestrador con esa mascara, pero muy elegante."
+	icon_state = "darkness"
+
+/obj/item/toy/figure/zsle
+	name = "figura de accion: Zsle"
+	desc = "Una figura de accion de Zsle marca \"Manaos\"."
+	icon_state = "zsle"
+
+/obj/item/toy/figure/slimy
+	name = "figura de accion: Slimy"
+	desc = "Una figura de accion de Slimy marca \"Manaos\". Jum..."
+	icon_state = "slimy"
+	var/cooldown = 0
+/obj/item/toy/figure/slimy/attack_self(mob/user as mob)
+	if(cooldown < world.time - 8)
+		playsound(user, 'sound/interactions/slime_squish.ogg', 20, 1)
+		cooldown = world.time
+/obj/item/toy/figure/slimy/attack_hand(mob/user as mob)
+	if(loc == user)
+		if(cooldown < world.time - 8)
+			playsound(user, 'sound/interactions/slime_squish.ogg', 20, 1)
+			cooldown = world.time
+			return
+	..()
+
+/obj/item/toy/figure/dana
+	name = "figura de accion: Dana"
+	desc = "Una figura de accion de Dana marca \"Manaos\"."
+	icon_state = "dana"
+
+/obj/item/toy/figure/uzume
+	name = "figura de accion: Uzume"
+	desc = "Una figura de accion de Uzume marca \"Manaos\"."
+	icon_state = "uzume"
+	var/cooldown = 0
+/obj/item/toy/figure/uzume/attack_self(mob/user as mob)
+	if(cooldown < world.time - 8)
+		playsound(user, 'sound/interactions/slime_squish.ogg', 20, 1)
+		cooldown = world.time
+/obj/item/toy/figure/uzume/attack_hand(mob/user as mob)
+	if(loc == user)
+		if(cooldown < world.time - 8)
+			playsound(user, 'sound/interactions/slime_squish.ogg', 20, 1)
+			cooldown = world.time
+			return
+	..()
+
+/obj/item/toy/figure/suki
+	name = "figura de accion: Suki"
+	desc = "Una figura de accion de Suki marca \"Manaos\". Ow..."
+	icon_state = "suki"
+	var/cooldown = 0
+/obj/item/toy/figure/suki/attack_self(mob/user as mob)
+	if(cooldown < world.time - 8)
+		playsound(user, 'sound/interactions/slime_squish.ogg', 20, 1)
+		cooldown = world.time
+/obj/item/toy/figure/suki/attack_hand(mob/user as mob)
+	if(loc == user)
+		if(cooldown < world.time - 8)
+			playsound(user, 'sound/interactions/slime_squish.ogg', 20, 1)
+			cooldown = world.time
+			return
+	..()
+
+/obj/item/toy/figure/connor
+	name = "figura de accion: Connor"
+	desc = "Una figura de accion de Connor marca \"Manaos\".  Tiene \"wetskrell.nt\" escrito y tachado."
+	icon_state = "connor"
+
+/obj/item/toy/figure/camilo
+	name = "figura de accion: Camilo"
+	desc = "Una figura de accion de Camilo marca \"Manaos\"."
+	icon_state = "camilo"
+
+/obj/item/toy/figure/honkito
+	name = "figura de accion: Honkito"
+	desc = "Una figura de accion de Honkito marca \"Manaos\". HONK!!"
+	icon_state = "honkito"
+	var/cooldown = 0
+/obj/item/toy/figure/honkito/attack_self(mob/user as mob)
+	if(cooldown < world.time - 8)
+		playsound(user, 'sound/items/bikehorn.ogg', 20, 1)
+		cooldown = world.time
+/obj/item/toy/figure/honkito/attack_hand(mob/user as mob)
+	if(loc == user)
+		if(cooldown < world.time - 8)
+			playsound(user, 'sound/items/bikehorn.ogg', 20, 1)
+			cooldown = world.time
+			return
+	..()
+
+/obj/item/toy/figure/wh
+	name = "figura de accion: WH-RL-W"
+	desc = "Una figura de accion de WH-RL-W marca \"Manaos\"."
+	icon_state = "wh"
+
+/obj/item/toy/figure/louie
+	name = "figura de accion: Louie"
+	desc = "Una figura de accion de Louie marca \"Manaos\"."
+	icon_state = "louie"
+
+/obj/item/toy/figure/vaum
+	name = "figura de accion: Vaum"
+	desc = "Una figura de accion de Vaum marca \"Manaos\"."
+	icon_state = "vaum"
+	var/cooldown = 0
+/obj/item/toy/figure/vaum/attack_self(mob/user as mob)
+	if(cooldown < world.time - 8)
+		playsound(user, 'sound/voice/chime.ogg', 20, 1)
+		cooldown = world.time
+/obj/item/toy/figure/vaum/attack_hand(mob/user as mob)
+	if(loc == user)
+		if(cooldown < world.time - 8)
+			playsound(user, 'sound/voice/chime.ogg', 20, 1)
+			cooldown = world.time
+			return
+	..()
+
+/obj/item/toy/figure/eerika
+	name = "figura de accion: Eerika"
+	desc = "Una figura de accion de Eerika marca \"Manaos\". Booo~"
+	icon_state = "eerika"
+
+/obj/item/toy/figure/manuel
+	name = "figura de accion: Manuel"
+	desc = "Una figura de accion de Manuel marca \"Manaos\"."
+	icon_state = "manuel"
+
+/obj/item/toy/figure/kans
+	name = "figura de accion: Kans"
+	desc = "Una figura de accion de Kans marca \"Manaos\". LOOT!!"
+	icon_state = "kans"
+
+/obj/item/toy/figure/aleph
+	name = "figura de accion: Aleph"
+	desc = "Una figura de accion de Aleph marca \"Manaos\"."
+	icon_state = "aleph"
+
+/obj/item/toy/figure/priscilla
+	name = "figura de accion: Priscilla"
+	desc = "Una figura de accion de Priscilla marca \"Manaos\"."
+	icon_state = "priscilla"
+
+/obj/item/toy/figure/hal
+	name = "figura de accion: Hal"
+	desc = "Una figura de accion de Hal marca \"Manaos\"."
+	icon_state = "hal"
+
+/obj/item/toy/figure/sam
+	name = "figura de accion: Sam"
+	desc = "Una figura de accion de Sam marca \"Manaos\"."
+	icon_state = "sam"
+
+/obj/item/toy/figure/duck
+	name = "figura de accion: Duck"
+	desc = "Una figura de accion de Duck marca \"Manaos\". *sighs..."
+	icon_state = "duck"
+
+/obj/item/toy/figure/area
+	name = "figura de accion: Area"
+	desc = "Una figura de accion de Area marca \"Manaos\". Huele a sangre."
+	icon_state = "area"
+
+/obj/item/toy/figure/vlad
+	name = "figura de accion: Vlad"
+	desc = "Una figura de accion de Vlad marca \"Manaos\". C20-R viene por separado"
+	icon_state = "vlad"
+
+/obj/item/toy/figure/franco
+	name = "figura de accion: Franco"
+	desc = "Una figura de accion de Franco marca \"Manaos\"."
+	icon_state = "franco"
+
+/obj/item/toy/figure/angelina
+	name = "figura de accion: Angelina"
+	desc = "Una figura de accion de Angelina marca \"Manaos\"."
+	icon_state = "angelina"
+
+
 
 /obj/item/toy/therapy_red
 	name = "red therapy doll"
@@ -763,6 +972,11 @@
 	desc = "A plushie of a scaly lizard! Very controversial, after being accused as \"racist\" by some Unathi."
 	icon_state = "lizardplushie"
 
+/obj/item/toy/plushie/kobold
+	name = "kobold de peluche"
+	desc = "Un peluche de un kobold rojo, se ve abrazable, la etiqueta dice hecho por cutecorp."
+	icon_state = "koboldplushie"
+
 /obj/item/toy/plushie/spider
 	name = "spider plush"
 	desc = "A plushie of a fuzzy spider! It has eight legs - all the better to hug you with."
@@ -772,6 +986,11 @@
 	name = "farwa plush"
 	desc = "A farwa plush doll. It's soft and comforting!"
 	icon_state = "farwaplushie"
+
+/obj/item/toy/plushie/slime
+	name = "Peluche slime"
+	desc = "Un peluche esponjoso y baboso!"
+	icon_state = "slimeplushie"
 
 //Toy cult sword
 /obj/item/toy/cultsword

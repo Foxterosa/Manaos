@@ -1,8 +1,8 @@
 /decl/cultural_info/location/tauwilo
 	name = HOME_SYSTEM_SERPENTIDS
-	description = "Tau-Wilo is a small planet and the origin of all serpentids. It has low gravity and a dense oxygen \
-	nitrogen atmosphere with a tinge of phoron. It is dominated by biodiverse tropical and subtropical forests, with \
-	few areas of planes. The only human settlement is a research facility built by Xynergy and used as a part of their \
-	giant armoured serpentid training program. Tau-Wilo is the only known location for breeding populations of giant \
-	armoured serpentids, and is the shared homeland of every individual of that race."
+	description = "Tau-Wilo es un planeta enano, morada de todos los serpentoides. Posee gravedad relativamente debil y una \
+	atmosfera densa, rica en oxigeno y nitrogeno, con un poco de phoron. Es en su mayoria selva tropical y subtropical, con mucha biodiversidad, \
+	y unas pocas planicies. El unico asentamiento humano es una instalacion de investigacion de Xynergy, parte de su plan de entrenamiento de \
+	serpentoides acorazados mayores. Tau-Wilo es el unico habitat conocido para criar a los SAM, \
+	y es donde cada miembro de esa raza ha nacido."
 	distance = "26 light years"

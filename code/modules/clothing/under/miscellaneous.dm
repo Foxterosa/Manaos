@@ -66,6 +66,53 @@
 	item_state = "gy_suit"
 	worn_state = "vice"
 
+/obj/item/clothing/under/maiddress2
+	name = "traje de mucama"
+	desc = "perfecto para darle a tu sirvienta."
+	icon_state = "meido_s"
+	item_state = "meido_s"
+	worn_state = "meido_s"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/maiddress
+	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	name = "uniforme de mucama"
+	desc = "perfecto para darle a tu sirvienta unathi"
+	icon_state = "maidress_s"
+	item_state = "maidress_s"
+	worn_state = "maidress_s"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/kasumioutfit
+	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	name = "traje de Kasumi"
+	desc = "eSo FuE uNa PeRsOnA rEfErEnCe!?"
+	icon_state = "kasumi-suit_s"
+	item_state = "kasumi-suit_s"
+	worn_state = "kasumi-suit_s"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/jokeroutfit
+	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	name = "traje de Joker"
+	desc = "nunca jugue persona, pero se ve bonito"
+	icon_state = "joker-suit_s"
+	item_state = "joker-suit_s"
+	worn_state = "joker-suit_s"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/jrsuit
+	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	name = "remera negra ajustada con khakis"
+	desc = "Hm, fashionable"
+	icon_state = "miner_s"
+	item_state = "miner_s"
+	worn_state = "miner_s"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
 //This set of uniforms looks fairly fancy and is generally used for high-ranking NT personnel from what I've seen, so lets give them appropriate ranks.
 /obj/item/clothing/under/rank/centcom
 	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Captain.\"."
@@ -102,6 +149,17 @@
 		)
 	siemens_coefficient = 0.9
 
+/obj/item/clothing/under/bs_uniform
+	name = "uniforme tactico Blueshield"
+	desc = "Un uniforme tactico perteneciente a un Blueshield."
+	icon_state = "ert_uniform"
+	item_state = "bl_suit"
+	worn_state = "ert_uniform"
+	armor = list(
+		melee = ARMOR_MELEE_SMALL
+		)
+	siemens_coefficient = 0.9
+
 /obj/item/clothing/under/space
 	name = "\improper NASA jumpsuit"
 	desc = "It has a NASA logo on it and is made of space-proofed materials."
@@ -125,12 +183,12 @@
 	permeability_coefficient = 0.01
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	armor = list(
-		melee = ARMOR_MELEE_SHIELDED, 
-		bullet = ARMOR_BALLISTIC_HEAVY, 
+		melee = ARMOR_MELEE_SHIELDED,
+		bullet = ARMOR_BALLISTIC_HEAVY,
 		laser = ARMOR_LASER_HEAVY,
-		energy = ARMOR_ENERGY_SHIELDED, 
-		bomb = ARMOR_BOMB_SHIELDED, 
-		bio = ARMOR_BIO_SHIELDED, 
+		energy = ARMOR_ENERGY_SHIELDED,
+		bomb = ARMOR_BOMB_SHIELDED,
+		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 		)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -204,8 +262,8 @@
 	worn_state = "black_suit"
 
 /obj/item/clothing/under/suit_jacket/really_black
-	name = "executive suit"
-	desc = "A formal black suit and red tie, intended for the galaxy's finest."
+	name = "traje de ejecutivo"
+	desc = "Un traje negro formal y corbata roja, destinado a los mejores de la galaxia."
 	icon_state = "really_black_suit"
 	item_state = "jensensuit"
 	worn_state = "really_black_suit"
@@ -730,7 +788,7 @@
 	gender_icons = 1
 	siemens_coefficient = 0.8
 	armor = list(
-		energy = ARMOR_ENERGY_SMALL, 
+		energy = ARMOR_ENERGY_SMALL,
 		rad = ARMOR_RAD_MINOR
 		)
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE

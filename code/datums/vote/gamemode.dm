@@ -1,6 +1,6 @@
 /datum/vote/gamemode
-	name = "game mode"
-	additional_header = "<td align = 'center'><b>Minimum Players</b></td></tr>"
+	name = "modo de juego"
+	additional_header = "<td align = 'center'><b>Minimo de jugadores</b></td></tr>"
 	win_x = 500
 	win_y = 1100
 	show_results = FALSE
@@ -15,7 +15,7 @@
 
 /datum/vote/gamemode/Process()
 	if(GAME_STATE >= RUNLEVEL_GAME)
-		to_world("<b>Voting aborted due to game start.</b>")
+		to_world("<b>Votacion abortada debido al inicio del juego.</b>")
 		return VOTE_PROCESS_ABORT
 	return ..()
 
@@ -40,7 +40,7 @@
 /datum/vote/gamemode/report_result()
 	if(!SSticker.round_progressing) //Unpause any holds. If the vote failed, SSticker is responsible for fielding the result.
 		SSticker.round_progressing = 1
-		to_world("<font color='red'><b>The round will start soon.</b></font>")
+		to_world("<font color='red'><b>La ronda empezara pronto.</b></font>")
 	if(..())
 		SSticker.gamemode_vote_results = list() //This signals to SSticker that the vote is over but there were no winners.
 		return 1

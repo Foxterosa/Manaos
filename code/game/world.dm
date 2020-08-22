@@ -1,4 +1,4 @@
-/var/server_name = "Bastion of Hestia"
+/var/server_name = "Manaos"
 
 /var/game_id = null
 /hook/global_init/proc/generate_gameid()
@@ -504,9 +504,14 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	Master.Shutdown()
 
+	var/datum/chatOutput/co
+	for(var/client/C in GLOB.clients)
+		co = C.chatOutput
+		if(co)
+			co.ehjax_send(data = "roundrestart")
 	if(config.server)	//if you set a server location in config.txt, it sends you there instead of trying to reconnect to the same world address. -- NeoFite
 		for(var/client/C in GLOB.clients)
-			to_chat(C, link("byond://[config.server]"))
+			send_link(C, "byond://[config.server]")
 
 	if(config.wait_for_sigusr1_reboot && reason != 3)
 		text2file("foo", "reboot_called")
@@ -592,7 +597,7 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"https://discordapp.com/invite/Rav2Z6c/\">" //Change this to wherever you want the hub to link to.
+	s += "<a href=\"https://discord.gg/Cp8httq\">" //Change this to wherever you want the hub to link to.
 //	s += "[game_version]"
 	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
@@ -603,18 +608,18 @@ var/world_topic_spam_protect_time = world.timeofday
 	if(SSticker.master_mode)
 		features += SSticker.master_mode
 	else
-		features += "<b>STARTING</b>"
+		features += "<b>COMENZANDO</b>"
 
 	if (!config.enter_allowed)
-		features += "closed"
+		features += "cerrado"
 
 	features += config.abandon_allowed ? "respawn" : "no respawn"
 
 	if (config && config.allow_vote_mode)
-		features += "vote"
+		features += "votos"
 
 	if (config && config.allow_ai)
-		features += "AI allowed"
+		features += "IA permitida"
 
 	var/n = 0
 	for (var/mob/M in GLOB.player_list)
@@ -622,13 +627,13 @@ var/world_topic_spam_protect_time = world.timeofday
 			n++
 
 	if (n > 1)
-		features += "~[n] players"
+		features += "~[n] jugadores"
 	else if (n > 0)
-		features += "~[n] player"
+		features += "~[n] jugadores"
 
 
 	if (config && config.hostedby)
-		features += "hosted by <b>[config.hostedby]</b>"
+		features += "Hosteado por <b>[config.hostedby]</b>"
 
 	if (features)
 		s += ": [jointext(features, ", ")]"

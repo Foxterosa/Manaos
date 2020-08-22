@@ -106,12 +106,12 @@
 	force = 10
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
-	caliber = CALIBER_RIFLE_MILITARY_LARGE
+	caliber = CALIBER_RIFLE
 	screen_shake = 0
 	handle_casings = EJECT_CASINGS
 	load_method = SINGLE_CASING
 	max_shells = 5
-	ammo_type = /obj/item/ammo_casing/rifle/military/large
+	ammo_type = /obj/item/ammo_casing/rifle
 	one_hand_penalty = 6
 	accuracy = -4
 	bulk = 8

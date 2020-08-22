@@ -35,8 +35,8 @@
 		I.darksight_tint = DARKTINT_GOOD
 
 /datum/trait/nonconductive
-	name = "Resistive Skin"
-	desc = "Your skin has a higher electrical resistivity than normal, making you less conductive."
+	name = "Piel resistiva"
+	desc = "Su piel tiene una resistividad electrica mas alta de lo normal, lo que lo hace menos conductor."
 	cost = 2 //This effects tasers!
 	var_changes = list("siemens_coefficient" = 0.75)
 

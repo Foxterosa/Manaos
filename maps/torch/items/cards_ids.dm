@@ -128,8 +128,8 @@
 	job_access_type = /datum/job/bartender
 
 
-/obj/item/weapon/card/id/torch/crew/adjudicator
-	job_access_type = /datum/job/adjudicator
+/obj/item/weapon/card/id/torch/crew/magistrado
+	job_access_type = /datum/job/magistrado
 	detail_color = COLOR_COMMAND_BLUE
 
 /obj/item/weapon/card/id/torch/crew/sea
@@ -230,10 +230,10 @@
 	job_access_type = /datum/job/psiadvisor
 	detail_color = COLOR_COMMAND_BLUE
 
-/obj/item/weapon/card/id/torch/crew/bailiff
+/obj/item/weapon/card/id/torch/crew/blueshield
 	color = COLOR_BOTTLE_GREEN
 	detail_color = COLOR_COMMAND_BLUE
-	job_access_type = /datum/job/bailiff
+	job_access_type = /datum/job/blueshield
 
 /obj/item/weapon/card/id/torch/contractor/service/lawyer
 	job_access_type = /datum/job/lawyer

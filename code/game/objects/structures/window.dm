@@ -30,8 +30,6 @@
 /obj/structure/window/get_material()
 	return material
 
-/obj/structure/window/New(var/newloc, var/start_dir, var/new_material, var/new_reinf_material)
-	..(newloc, start_dir, new_material, new_reinf_material)
 /obj/structure/window/Initialize(mapload, start_dir=null, constructed=0, var/new_material, var/new_reinf_material)
 	. = ..()
 	if(!new_material)
@@ -63,7 +61,10 @@
 
 	health = maxhealth
 
-	set_anchored(!constructed)
+	if (constructed)
+		set_anchored(FALSE)
+		construction_state = 0
+
 	update_connections(1)
 	update_icon()
 	update_nearby_tiles(need_rebuild=1)
@@ -468,17 +469,6 @@
 	basestate = "w"
 	reinf_basestate = "w"
 	dir = 5
-
-//Cult windows.
-/obj/structure/window/cult
-	name = "fellglass window"
-	color = "#b13d27"
-	basestate = "window"
-	init_material = MATERIAL_CULT_GLASS
-
-/obj/structure/window/cult/reinforced
-	basestate = "rwindow"
-	init_reinf_material = MATERIAL_CULT
 
 /obj/structure/window/reinforced/polarized
 	name = "electrochromic window"

@@ -12,12 +12,12 @@
 	return ..()
 
 /datum/vote/custom/setup_vote(mob/creator, automatic)
-	question = sanitizeSafe(input(creator,"What is the vote for?") as text|null)
+	question = sanitizeSafe(input(creator,"De que es el voto?") as text|null)
 	if(!question)
 		abort = 1
 		return
 	for(var/i=1,i<=10,i++)
-		var/option = capitalize(sanitize(input(creator,"Please enter an option or hit cancel to finish") as text|null))
+		var/option = capitalize(sanitize(input(creator,"Por favor, introduce una opcion o aprieta cancelar para terminar.") as text|null))
 		if(!option || !creator.client)
 			break
 		choices += option

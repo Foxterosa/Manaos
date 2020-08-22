@@ -219,7 +219,7 @@
 	if(currently_vending.price > cashmoney.worth)
 		// This is not a status display message, since it's something the character
 		// themselves is meant to see BEFORE putting the money in
-		to_chat(usr, "\icon[cashmoney] <span class='warning'>That is not enough money.</span>")
+		to_chat(usr, "[icon2html(cashmoney, usr)] <span class='warning'>That is not enough money.</span>")
 		return 0
 
 	visible_message("<span class='info'>\The [usr] inserts some cash into \the [src].</span>")
@@ -636,7 +636,9 @@
 					/obj/item/weapon/reagent_containers/food/condiment/mint = 2,
 					/obj/item/weapon/reagent_containers/food/drinks/ice = 10,
 					/obj/item/weapon/glass_extra/stick = 15,
-					/obj/item/weapon/glass_extra/straw = 15)
+					/obj/item/weapon/glass_extra/straw = 15,
+					/obj/item/weapon/reagent_containers/food/condiment/yerba = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/mate = 5)
 	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/bottle/premiumwine = 3,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/premiumvodka = 3,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/patron = 5,
@@ -731,7 +733,6 @@
 					/obj/item/weapon/reagent_containers/food/snacks/cheesiehonkers = 1, /obj/item/weapon/reagent_containers/food/snacks/tastybread = 2)
 
 
-
 /obj/machinery/vending/cola
 	name = "Robust Softdrinks"
 	desc = "A softdrink vendor provided by Robust Industries, LLC."
@@ -752,6 +753,30 @@
 					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 2,/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 1,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 1,/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 1)
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
+
+obj/machinery/vending/cola/manaos
+	name = "Manaos"
+	desc = "Una maquina de bebidas unicamente de Manaos, marca \"Manaos\"."
+	icon_state = "Manaos_Machine"
+	icon_vend = "Manaos_Machine-vend"
+	icon_deny = "Manaos_Machine-deny"
+	vend_delay = 11
+	base_type = /obj/machinery/vending/cola
+	products = list(/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_cola = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_manzana = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limalimon = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_naranja = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_uva = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limon = 5)
+	prices = list(/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_cola = 2,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_manzana = 4,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limalimon = 4,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_naranja = 4,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_uva = 4,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limon = 4)
+
+	idle_power_usage = 211
+
 
 /obj/machinery/vending/fitness
 	name = "SweatMAX"
@@ -899,18 +924,53 @@
 	icon_vend = "med-vend"
 	vend_delay = 18
 	base_type = /obj/machinery/vending/medical
+	req_access = list(list(access_medical,access_chemistry))
 	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
 	req_access = list(access_medical_equip)
-	products = list(/obj/item/weapon/reagent_containers/glass/bottle/antitoxin = 4,/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline = 4,
-					/obj/item/weapon/reagent_containers/glass/bottle/stoxin = 4,/obj/item/weapon/reagent_containers/glass/bottle/toxin = 4,
-					/obj/item/weapon/reagent_containers/syringe/antiviral = 4,/obj/item/weapon/reagent_containers/syringe = 12,
-					/obj/item/device/scanner/health = 5,/obj/item/weapon/reagent_containers/glass/beaker = 4, /obj/item/weapon/reagent_containers/dropper = 2,
-					/obj/item/stack/medical/advanced/bruise_pack = 3, /obj/item/stack/medical/advanced/ointment = 3, /obj/item/stack/medical/splint = 2,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 4)
-	contraband = list(/obj/item/clothing/mask/chewable/candy/lolli/meds = 8,
-					/obj/item/weapon/reagent_containers/pill/tox = 3,/obj/item/weapon/reagent_containers/pill/stox = 4,/obj/item/weapon/reagent_containers/pill/antitox = 6,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 2)
+	products = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine = 2,
+					/obj/item/weapon/reagent_containers/syringe/antiviral = 5,
+					/obj/item/stack/medical/advanced/bruise_pack = 5,
+					/obj/item/stack/medical/advanced/ointment = 5,
+					/obj/item/stack/medical/splint = 5,
+					/obj/item/device/scanner/health = 5)
+	contraband = list(/obj/item/weapon/reagent_containers/pill/stox = 5,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton = 1)
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
+
+/obj/machinery/vending/medical/abandonado
+	name = "NanoMed Plus abandonado"
+	desc = "Un dispensador de medicinas abandonad. Te preguntas si aun tendra algo."
+	icon_state = "med"
+	icon_deny = "med-deny"
+	icon_vend = "med-vend"
+	vend_delay = 18
+	base_type = /obj/machinery/vending/medical
+	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
+	req_access = list(access_medical_equip)
+	products = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine = 1,
+					/obj/item/weapon/reagent_containers/syringe/antiviral = 2,
+					/obj/item/stack/medical/advanced/bruise_pack = 3,
+					/obj/item/stack/medical/advanced/ointment = 2,
+					/obj/item/stack/medical/splint = 2,
+					/obj/item/device/scanner/health = 1)
+	idle_power_usage = 211
 
 
 //This one's from bay12
@@ -932,15 +992,11 @@
 	base_type = /obj/machinery/vending/wallmed1
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	products = list(
-		/obj/item/stack/medical/bruise_pack = 3,
-		/obj/item/stack/medical/ointment = 3,
-		/obj/item/weapon/reagent_containers/pill/paracetamol = 4,
-		/obj/item/weapon/storage/med_pouch/trauma,
-		/obj/item/weapon/storage/med_pouch/burn,
-		/obj/item/weapon/storage/med_pouch/oxyloss,
-		/obj/item/weapon/storage/med_pouch/toxin
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin
 		)
-	contraband = list(/obj/item/weapon/reagent_containers/syringe/antitoxin = 4,/obj/item/weapon/reagent_containers/syringe/antiviral = 4,/obj/item/weapon/reagent_containers/pill/tox = 1)
 
 /obj/machinery/vending/wallmed2
 	name = "NanoMed Mini"
@@ -952,16 +1008,11 @@
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	base_type = /obj/machinery/vending/wallmed2
 	products = list(
-		/obj/item/weapon/reagent_containers/hypospray/autoinjector = 5,
-		/obj/item/stack/medical/bruise_pack = 4,
-		/obj/item/stack/medical/ointment = 4,
-		/obj/item/weapon/storage/med_pouch/trauma,
-		/obj/item/weapon/storage/med_pouch/burn,
-		/obj/item/weapon/storage/med_pouch/oxyloss,
-		/obj/item/weapon/storage/med_pouch/toxin,
-		/obj/item/weapon/storage/med_pouch/radiation
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin
 		)
-	contraband = list(/obj/item/weapon/reagent_containers/pill/tox = 3, /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 2)
 
 /obj/machinery/vending/security
 	name = "SecTech"
@@ -982,7 +1033,9 @@
 		/obj/item/weapon/storage/box/evidence = 6,
 		/obj/item/weapon/tape_roll = 2,
 		/obj/item/ammo_magazine/pistol/double/pepperball = 6,
-		/obj/item/ammo_magazine/pistol/double/rubber = 2)
+		/obj/item/ammo_magazine/speedloader/magnum/detective  = 6,
+		/obj/item/ammo_magazine/pistol/double/rubber = 2,
+		/obj/item/clothing/mask/gas/death_commando = 3)
 	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,/obj/item/weapon/storage/box/donut = 2)
 
 /obj/machinery/vending/hydronutrients
@@ -1100,6 +1153,7 @@
 	/obj/item/weapon/storage/lunchbox/nymph = 3,
 	/obj/item/weapon/storage/lunchbox/syndicate = 3,
 	/obj/item/weapon/storage/lunchbox/dais = 3,
+	/obj/item/weapon/storage/lunchbox/medbay = 3,
 	/obj/item/weapon/material/knife/kitchen/cleaver = 2,
 	/obj/item/weapon/reagent_containers/cooking_container/oven = 7, // two spare
 	/obj/item/weapon/reagent_containers/cooking_container/fryer = 4, // two spare
@@ -1239,35 +1293,211 @@
 	products = list(/obj/structure/closet/crate/freezer = 2, /obj/structure/closet = 3, /obj/structure/closet/crate = 3)
 
 /obj/machinery/vending/fashionvend
-	name = "Smashing Fashions"
-	desc = "For all your cheap knockoff needs."
-	product_slogans = "Look smashing for your darling!;Be rich! Dress rich!"
+	name = "Vendedor de disfraces"
+	desc = "Todo tipo de disfraces."
+	product_slogans = "Mirate encantador para tu amor."
 	icon_state = "theater"
 	vend_delay = 15
 	base_type = /obj/machinery/vending/fashionvend
-	vend_reply = "Absolutely smashing!"
-	product_ads = "Impress the love of your life!;Don't look poor, look rich!;100% authentic designers!;All sales are final!;Lowest prices guaranteed!"
-	products = list(/obj/item/weapon/mirror = 8,
-					/obj/item/weapon/haircomb = 8,
-					/obj/item/clothing/glasses/monocle = 5,
-					/obj/item/clothing/glasses/sunglasses = 5,
-					/obj/item/weapon/lipstick = 3,
-					/obj/item/weapon/lipstick/black = 3,
-					/obj/item/weapon/lipstick/purple = 3,
-					/obj/item/weapon/lipstick/jade = 3,
-					/obj/item/weapon/storage/wallet/poly = 2)
-	contraband = list(/obj/item/clothing/glasses/eyepatch = 2, /obj/item/clothing/accessory/horrible = 2)
-	premium = list(/obj/item/clothing/mask/smokable/pipe = 3)
-	prices = list(/obj/item/weapon/mirror = 60,
-					/obj/item/weapon/haircomb = 40,
-					/obj/item/clothing/glasses/monocle = 700,
-					/obj/item/clothing/glasses/sunglasses = 500,
-					/obj/item/weapon/lipstick = 100,
-					/obj/item/weapon/lipstick/black = 100,
-					/obj/item/weapon/lipstick/purple = 100,
-					/obj/item/weapon/lipstick/jade = 100,
-					/obj/item/weapon/storage/wallet/poly = 600
+	vend_reply = "Absolutamente precioso"
+	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico; Los precios mas bajos estan garantizados."
+	products = list(/obj/item/clothing/head/beret = 2,
+					/obj/item/clothing/mask/gas/mime,
+					/obj/item/clothing/mask/gas/sexymime,
+					/obj/item/clothing/under/mime,
+					/obj/item/clothing/under/sexymime,
+					/obj/item/clothing/gloves/white = 2,
+					/obj/item/clothing/accessory/suspenders,
+					/obj/item/clothing/shoes/mime,
+					/obj/item/clothing/head/bandana/familiarband = 2,
+					/obj/item/clothing/head/pirate = 2,
+					/obj/item/clothing/under/pirate = 2,
+					/obj/item/clothing/glasses/eyepatch = 2,
+					/obj/item/clothing/suit/pirate = 2,
+					/obj/item/clothing/under/bluepyjamas = 2,
+					/obj/item/clothing/under/redpyjamas = 2,
+					/obj/item/clothing/glasses/blindfold,
+					/obj/item/clothing/glasses/monocle = 2,
+					/obj/item/clothing/glasses/sunglasses = 3,
+					/obj/item/clothing/glasses/threedglasses = 2,
+					/obj/item/clothing/head/soft/rainbow,
+					/obj/item/clothing/under/color/rainbow,
+					/obj/item/clothing/gloves/rainbow,
+					/obj/item/clothing/shoes/rainbow,
+					/obj/item/clothing/head/kitty = 2,
+					/obj/item/clothing/head/rabbitears = 2,
+					/obj/item/clothing/under/maiddress = 2,
+					/obj/item/clothing/under/schoolgirl = 2,
+					/obj/item/clothing/head/mailman,
+					/obj/item/clothing/under/rank/mailman,
+					/obj/item/clothing/head/nursehat = 4,
+					/obj/item/clothing/under/rank/nurse = 2,
+					/obj/item/clothing/under/rank/nursesuit = 2,
+					/obj/item/clothing/head/plaguedoctorhat = 2,
+					/obj/item/clothing/mask/gas/plaguedoctor = 2,
+					/obj/item/clothing/suit/bio_suit/plaguedoctorsuit = 2,
+					/obj/item/clothing/head/chicken = 2,
+					/obj/item/clothing/suit/chickensuit = 2,
+					/obj/item/clothing/mask/horsehead,
+					/obj/item/clothing/mask/pig,
+					/obj/item/clothing/head/ushanka = 3,
+					/obj/item/clothing/under/soviet = 3,
+					/obj/item/clothing/head/wizard/fake,
+					/obj/item/clothing/suit/wizrobe/fake,
+					/obj/item/clothing/head/wizard/marisa/fake,
+					/obj/item/clothing/suit/wizrobe/marisa/fake,
+					/obj/item/clothing/head/xenos,
+					/obj/item/clothing/suit/xenos,
+					/obj/item/clothing/mask/luchador/rudos,
+					/obj/item/clothing/mask/luchador/tecnicos,
+					/obj/item/clothing/mask/luchador,
+					/obj/item/clothing/mask/gas/clown_hat,
+					/obj/item/clothing/mask/gas/sexyclown,
+					/obj/item/clothing/under/rank/clown,
+					/obj/item/clothing/under/sexyclown,
+					/obj/item/clothing/shoes/clown_shoes,
+					/obj/item/weapon/storage/backpack/clown,
+					/obj/item/clothing/mask/jokermask,
+					/obj/item/clothing/under/jokeroutfit,
+					/obj/item/clothing/mask/kasumimask,
+					/obj/item/clothing/under/kasumioutfit,
+					/obj/item/clothing/shoes/kasumi)
+	contraband = list(/obj/item/clothing/under/stripper/mankini = 2, /obj/item/clothing/mask/muzzle = 4)
+
+/obj/machinery/vending/hatvendor
+	name = "Vendedor de sombreros"
+	desc = "Todo tipo de sombreros."
+	product_slogans = "Mirate encantador para tu amor."
+	icon_state = "hats"
+	vend_delay = 15
+	base_type = /obj/machinery/vending/hatvendor
+	vend_reply = "Absolutamente precioso"
+	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico!"
+	products = list(/obj/item/clothing/head/bandana/green,
+					/obj/item/clothing/head/beaverhat,
+					/obj/item/clothing/head/beret = 2,
+					/obj/item/clothing/head/beret/purple,
+					/obj/item/clothing/head/boaterhat,
+					/obj/item/clothing/head/cakehat,
+					/obj/item/clothing/head/cowboy_hat = 3,
+					/obj/item/clothing/head/det = 2,
+					/obj/item/clothing/head/fez = 2,
+					/obj/item/clothing/head/hairflower = 2,
+					/obj/item/clothing/head/hairflower/blue = 2,
+					/obj/item/clothing/head/hairflower/pink = 2,
+					/obj/item/clothing/head/hairflower/yellow = 2,
+					/obj/item/clothing/head/that = 3,
+					/obj/item/clothing/mask/balaclava = 2,
+					/obj/item/clothing/mask/bandana = 2,
+					/obj/item/clothing/ears/earring/dangle/diamond,
+					/obj/item/clothing/ears/earring/dangle/gold = 2,
+					/obj/item/clothing/ears/earring/dangle/iron = 3,
+					/obj/item/clothing/ears/earring/dangle/glass = 3,
+					/obj/item/clothing/ears/earring/stud/diamond,
+					/obj/item/clothing/ears/earring/stud/glass = 3,
+					/obj/item/clothing/ears/earring/stud/gold  = 2,
+					/obj/item/clothing/ears/earring/stud/iron = 3)
+
+	contraband = list(/obj/item/clothing/head/collectable/petehat)
+
+/obj/machinery/vending/shoevendor
+	name = "Vendedor de zapatos"
+	desc = "Todo tipo de zapatos."
+	product_slogans = "Mirate encantador para tu amor."
+	icon_state = "shoes"
+	vend_delay = 15
+	base_type = /obj/machinery/vending/shoevendor
+	vend_reply = "Absolutamente precioso"
+	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico!"
+	products = list(/obj/item/clothing/shoes/athletic = 3,
+					/obj/item/clothing/shoes/black = 3,
+				    /obj/item/clothing/shoes/blue = 3,
+					/obj/item/clothing/shoes/brown = 3,
+					/obj/item/clothing/shoes/green = 3,
+					/obj/item/clothing/shoes/laceup = 5,
+					/obj/item/clothing/shoes/orange = 3,
+					/obj/item/clothing/shoes/purple = 3,
+					/obj/item/clothing/shoes/red = 3,
+					/obj/item/clothing/shoes/white = 4,
+					/obj/item/clothing/shoes/yellow = 3,
+					/obj/item/clothing/shoes/dress/caretakershoes = 3,
+					/obj/item/clothing/shoes/sandal = 3,
+					/obj/item/clothing/shoes/jrboots
 					)
+
+/obj/machinery/vending/suitvendor
+	name = "Vendedor de ropa"
+	desc = "Todo tipo de ropas."
+	product_slogans = "Mirate encantador para tu amor."
+	icon_state = "suits"
+	vend_delay = 15
+	base_type = /obj/machinery/vending/suitvendor
+	vend_reply = "Absolutamente precioso"
+	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico!"
+	products = list(/obj/item/clothing/accessory/black = 3,
+					/obj/item/clothing/accessory/blue = 3,
+					/obj/item/clothing/accessory/brown = 3,
+					/obj/item/clothing/accessory/red = 3,
+					/obj/item/clothing/accessory/yellow = 3,
+					/obj/item/clothing/accessory/bowtie/ugly,
+					/obj/item/clothing/accessory/cloak = 3,
+					/obj/item/clothing/suit/apron/overalls = 2,
+					/obj/item/clothing/suit/leathercoat = 2,
+					/obj/item/clothing/under/blackskirt = 2,
+					/obj/item/clothing/under/color/black = 3,
+					/obj/item/clothing/under/color/blue = 3,
+					/obj/item/clothing/under/color/brown = 3,
+					/obj/item/clothing/under/color/green = 3,
+					/obj/item/clothing/under/color/lightpurple = 3,
+					/obj/item/clothing/under/color/orange = 3,
+					/obj/item/clothing/under/color/pink = 3,
+					/obj/item/clothing/under/color/red = 3,
+					/obj/item/clothing/under/color/white = 3,
+					/obj/item/clothing/under/color/yellow = 3,
+					/obj/item/clothing/suit/poncho/colored,
+					/obj/item/clothing/under/dress/dress_fire,
+					/obj/item/clothing/under/dress/dress_orange,
+					/obj/item/clothing/under/dress/dress_saloon,
+					/obj/item/clothing/under/dress/dress_yellow,
+					/obj/item/clothing/under/dress/plaid_blue,
+					/obj/item/clothing/under/dress/plaid_purple,
+					/obj/item/clothing/under/dress/plaid_red,
+					/obj/item/clothing/under/wedding/bride_blue = 2,
+					/obj/item/clothing/under/wedding/bride_orange = 2,
+					/obj/item/clothing/under/wedding/bride_purple = 2,
+					/obj/item/clothing/under/wedding/bride_red = 2,
+					/obj/item/clothing/under/wedding/bride_white = 2,
+					/obj/item/clothing/under/skirt_c/dress/long/black = 2,
+					/obj/item/clothing/under/formal_pants/black = 2,
+					/obj/item/clothing/under/formal_pants/khaki = 2,
+					/obj/item/clothing/under/formal_pants/red = 2,
+					/obj/item/clothing/under/formal_pants/tan = 2,
+					/obj/item/clothing/under/gentlesuit = 2,
+					/obj/item/clothing/under/kilt,
+					/obj/item/clothing/under/kimono = 2,
+					/obj/item/clothing/under/librarian,
+					/obj/item/clothing/under/scratch,
+					/obj/item/clothing/under/sundress,
+					/obj/item/clothing/under/sundress_white,
+					/obj/item/clothing/under/waiter,
+					/obj/item/clothing/under/lawyer/black = 2,
+					/obj/item/clothing/under/lawyer/blue = 2,
+					/obj/item/clothing/under/lawyer/bluesuit = 2,
+					/obj/item/clothing/under/lawyer/female,
+					/obj/item/clothing/under/lawyer/infil,
+					/obj/item/clothing/under/lawyer/infil/fem,
+					/obj/item/clothing/under/lawyer/purpsuit,
+					/obj/item/clothing/suit/storage/toggle/suit/purple,
+					/obj/item/clothing/suit/storage/toggle/suit/blue,
+					/obj/item/clothing/suit/storage/toggle/suit/black = 2,
+					/obj/item/clothing/suit/storage/toggle/bomber = 2,
+					/obj/item/clothing/suit/storage/leather_jacket = 2,
+					/obj/item/clothing/accessory/toggleable/hawaii/red = 3,
+					/obj/item/clothing/accessory/toggleable/hawaii = 3,
+					/obj/item/clothing/under/jrsuit,
+					/obj/item/clothing/gloves/fingerless = 2
+					)
+
 // eliza's attempt at a new vending machine
 /obj/machinery/vending/games
 	name = "Good Clean Fun"
@@ -1314,27 +1544,124 @@
 				  /obj/item/weapon/tape_roll = 65
 					)
 
+/obj/machinery/vending/bathvendor
+	name = "Vendedor de trajes de bano"
+	desc = "Todo tipo de trajes de bano."
+	vend_delay = 15
+	product_slogans = "Divercion en la piscina!"
+
+	icon_state = "lavatory"
+	icon_deny = "lavatory-deny"
+	icon_vend = "lavatory-vend"
+	base_type = /obj/machinery/vending/bathvendor
+	products = list(/obj/item/clothing/mask/snorkel = 3,
+					/obj/item/clothing/shoes/swimmingfins = 3,
+					/obj/item/weapon/beach_ball = 2,
+					/obj/item/clothing/under/swimsuit/black = 2,
+					/obj/item/clothing/under/swimsuit/blue = 2,
+					/obj/item/clothing/under/swimsuit/green = 2,
+					/obj/item/clothing/under/swimsuit/purple = 2,
+					/obj/item/clothing/under/swimsuit/red = 2,
+					/obj/item/clothing/under/shorts/black = 2,
+					/obj/item/clothing/under/shorts/blue = 2,
+					/obj/item/clothing/under/shorts/green = 2,
+					/obj/item/clothing/under/shorts/grey = 2,
+					/obj/item/clothing/under/shorts/red = 2,
+					/obj/item/clothing/shoes/sandal = 6,
+					/obj/item/clothing/glasses/sunglasses = 4,
+					/obj/item/clothing/glasses/sunglasses/big = 2,
+					/obj/item/clothing/glasses/sunglasses/prescription = 2)
+
 //a food variant of the boda machine - It carries slavic themed foods.. Mostly beer snacks
 /obj/machinery/vending/snix
 	name = "Snix"
-	desc = "An old snack vending machine, how did it get here? And are the snacks still good?"
+	desc = "Una maquina que vende todo tipo de objetos curiosos."
 	vend_delay = 30
 	base_type = /obj/machinery/vending/snix
 	product_slogans = "Snix!"
-
 	icon_state = "snix"
 	icon_vend = "snix-vend"
 	icon_deny = "snix-deny"
-	products = list(/obj/item/weapon/reagent_containers/food/snacks/semki = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/canned/caviar = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/squid = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/croutons = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/salo = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/driedfish = 7,
-					/obj/item/weapon/reagent_containers/food/snacks/pistachios = 7,
+	products = list(/obj/item/weapon/storage/bag/uno = 3,
+					/obj/item/weapon/deck/cards = 3,
+					/obj/item/weapon/pen/crayon/mime = 2,
+					/obj/item/weapon/pen/crayon/rainbow = 2,
+					/obj/item/weapon/bikehorn = 2,
+					/obj/item/device/boombox = 2,
+					/obj/item/device/camera/tvcamera = 2,
+					/obj/item/device/camera = 3,
+					/obj/item/device/camera_film = 6,
+					/obj/item/weapon/storage/photo_album = 2,
+					/obj/item/weapon/storage/wallet/leather = 2,
+					/obj/item/weapon/storage/wallet/poly = 2,
+					/obj/item/toy/plushie/kobold = 2,
+					/obj/item/toy/plushie/kitten = 2,
+					/obj/item/toy/plushie/farwa = 2,
+					/obj/item/toy/plushie/spider = 2,
+					/obj/item/toy/plushie/lizard = 2,
+					/obj/item/weapon/storage/box/snappops = 3,
+					/obj/item/weapon/mirror = 2,
+					/obj/item/weapon/lipstick/random = 5,
+					/obj/item/clothing/accessory/locket = 2,
+					/obj/item/device/paicard,
+					/obj/item/toy/therapy_blue = 2,
+					/obj/item/toy/therapy_red = 2,
+					/obj/item/toy/therapy_yellow = 2,
+					/obj/item/toy/therapy_green = 2,
+					/obj/item/weapon/storage/fancy/cigar,
+					/obj/item/weapon/flame/lighter/zippo/random = 2,
+					/obj/item/toy/water_balloon = 5,
+					/obj/item/toy/snappop = 5
 					)
 
-	contraband = list(/obj/item/weapon/reagent_containers/food/snacks/canned/caviar/true = 1)
+
+/obj/machinery/vending/figurevendor
+	name = "Vendedor de figuras de accion \"Manaos\""
+	desc = "Una maquina que vende figuras de accion de edicion limitada."
+	vend_delay = 30
+	base_type = /obj/machinery/vending/figurevendor
+	product_slogans = "Adorable!"
+	icon_state = "MagiVend"
+	icon_deny = "MagiVend-deny"
+	icon_vend = "MagiVend-vend"
+	products = list(/obj/item/toy/figure/aleph,
+					/obj/item/toy/figure/alicia,
+					/obj/item/toy/figure/alysson,
+					/obj/item/toy/figure/ana,
+					/obj/item/toy/figure/angelina,
+					/obj/item/toy/figure/area,
+					/obj/item/toy/figure/ariel,
+					/obj/item/toy/figure/arkin,
+					/obj/item/toy/figure/bruno,
+					/obj/item/toy/figure/camilo,
+					/obj/item/toy/figure/connor,
+					/obj/item/toy/figure/dana,
+					/obj/item/toy/figure/darkness,
+					/obj/item/toy/figure/duck,
+					/obj/item/toy/figure/franco,
+					/obj/item/toy/figure/hal,
+					/obj/item/toy/figure/honkito,
+					/obj/item/toy/figure/jr,
+					/obj/item/toy/figure/kans,
+					/obj/item/toy/figure/louie,
+					/obj/item/toy/figure/manuel,
+					/obj/item/toy/figure/priscilla,
+					/obj/item/toy/figure/sam,
+					/obj/item/toy/figure/slimy,
+					/obj/item/toy/figure/smug,
+					/obj/item/toy/figure/suki,
+					/obj/item/toy/figure/sydney1,
+					/obj/item/toy/figure/sydney2,
+					/obj/item/toy/figure/uzume,
+					/obj/item/toy/figure/vaum,
+					/obj/item/toy/figure/wh,
+					/obj/item/toy/figure/zsle)
+
+	contraband = list(/obj/item/toy/figure/vlad)
+
+
+
+
 
 /obj/machinery/vending/snix/on_update_icon()
 	..()

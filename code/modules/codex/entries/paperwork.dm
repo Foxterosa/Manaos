@@ -31,7 +31,15 @@
 \[xynlogo\] - Inserts the Xyngergy logo.<br>
 \[iccgseal\] - Inserts ICCG seal.<br>
 \[fleetlogo\] - Inserts the logo of the SCG Fleet.<br>
-\[sfplogo\] - Inserts the logo of the Sol Federal Police.<br><br>
+\[medlogo\] - Inserts a medbay logo.<br>
+\[seclogo\] - Inserts a security logo.<br>
+\[explogo\] - Inserts a exploration logo.<br>
+\[suplogo\] - Inserts a supply logo.<br>
+\[reslogo\] - Inserts a reserach logo.<br>
+\[civlogo\] - Inserts a civilian logo.<br>
+\[servlogo\] - Inserts a service logo.<br>
+\[roblogo\] - Inserts a robotic logo.<br>
+\[englogo\] - Inserts a engineer logo.<br><br>
 <b>Digital exclusive commands (NanoWord, emails, reports, text files, etc):</b><br>
 \[pre\] - \[/pre\] : Adds preformatted text, forcing the text to be fixed width.<br>
 \[fontred\] - \[/font\] : Makes the text red.<br>

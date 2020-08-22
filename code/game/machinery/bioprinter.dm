@@ -2,8 +2,8 @@
 // Flesh and robot printers are defined below this object.
 
 /obj/machinery/organ_printer
-	name = "organ printer"
-	desc = "It's a machine that prints organs."
+	name = "impresora de organos"
+	desc = "Esta es una maquina que imprime organos."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "bioprinter"
 
@@ -37,7 +37,7 @@
 
 /obj/machinery/organ_printer/examine(mob/user)
 	. = ..()
-	to_chat(user, "<span class='notice'>It is loaded with [stored_matter]/[max_stored_matter] matter units.</span>")
+	to_chat(user, "<span class='notice'>Esta cargada con [stored_matter]/[max_stored_matter] unidades de materia.</span>")
 
 /obj/machinery/organ_printer/RefreshParts()
 	print_delay = initial(print_delay)
@@ -53,7 +53,7 @@
 
 /obj/machinery/organ_printer/cannot_transition_to(path)
 	if(printing)
-		return SPAN_NOTICE("You must wait for \the [src] to finish printing first!")
+		return SPAN_NOTICE("Debes esperar a que la [src.name] termine de imprimir primero.")
 	return ..()
 
 /obj/machinery/organ_printer/physical_attack_hand(mob/user, var/choice = null)
@@ -61,7 +61,7 @@
 		return
 
 	if(!choice)
-		choice = input("What would you like to print?") as null|anything in products
+		choice = input("Que te gustaria imprimir?") as null|anything in products
 
 	if(!choice || printing || !CanPhysicallyInteract(user))
 		return TRUE
@@ -88,7 +88,7 @@
 
 /obj/machinery/organ_printer/proc/can_print(var/choice)
 	if(stored_matter < products[choice][2])
-		visible_message("<span class='notice'>\The [src] displays a warning: 'Not enough matter. [stored_matter] stored and [products[choice][2]] needed.'</span>")
+		visible_message("<span class='notice'>La [src.name] muestra una advertencia: 'No hay suficiente materia. [stored_matter] almacenada y se necesitan [products[choice][2]].'</span>")
 		return 0
 	return 1
 
@@ -101,8 +101,8 @@
 
 // ROBOT ORGAN PRINTER
 /obj/machinery/organ_printer/robot
-	name = "prosthetic organ fabricator"
-	desc = "It's a machine that prints prosthetic organs."
+	name = "fabricante de organos protesicos"
+	desc = "Es una maquina que imprime organos protesicos."
 	icon_state = "roboprinter"
 	base_type = /obj/machinery/organ_printer/robot
 
@@ -140,22 +140,22 @@
 	var/obj/item/organ/O = ..()
 	O.robotize()
 	O.status |= ORGAN_CUT_AWAY  // robotize() resets status to 0
-	visible_message("<span class='info'>\The [src] churns for a moment, then spits out \a [O].</span>")
+	visible_message("<span class='info'>El [src.name] se agita por un momento, luego escupe un [O.name].</span>")
 	return O
 
 /obj/machinery/organ_printer/robot/attackby(var/obj/item/weapon/W, var/mob/user)
 	if(istype(W, /obj/item/stack/material) && W.get_material_name() == matter_type)
 		if((max_stored_matter-stored_matter) < matter_amount_per_sheet)
-			to_chat(user, "<span class='warning'>\The [src] is too full.</span>")
+			to_chat(user, "<span class='warning'>El [src.name] esta muy lleno.</span>")
 			return
 		var/obj/item/stack/S = W
 		var/space_left = max_stored_matter - stored_matter
 		var/sheets_to_take = min(S.amount, Floor(space_left/matter_amount_per_sheet))
 		if(sheets_to_take <= 0)
-			to_chat(user, "<span class='warning'>\The [src] is too full.</span>")
+			to_chat(user, "<span class='warning'>El [src.name] esta muy lleno.</span>")
 			return
 		stored_matter = min(max_stored_matter, stored_matter + (sheets_to_take*matter_amount_per_sheet))
-		to_chat(user, "<span class='info'>\The [src] processes \the [W]. Levels of stored matter now: [stored_matter]</span>")
+		to_chat(user, "<span class='info'>El [src.name] procesa la [W.name]. Niveles de materia almacenada: [stored_matter]</span>")
 		S.use(sheets_to_take)
 		return
 	return ..()
@@ -163,8 +163,8 @@
 
 // FLESH ORGAN PRINTER
 /obj/machinery/organ_printer/flesh
-	name = "bioprinter"
-	desc = "It's a machine that prints replacement organs."
+	name = "bio-impresora"
+	desc = "Es una maquina que imprime organos de reemplazo."
 	icon_state = "bioprinter"
 	base_type = /obj/machinery/organ_printer/flesh
 	var/list/amount_list = list(
@@ -202,15 +202,15 @@
 		// This is a very hacky way of doing of what organ/New() does if it has an owner
 		O.w_class = max(O.w_class + mob_size_difference(O.species.mob_size, MOB_MEDIUM), 1)
 
-	visible_message("<span class='info'>\The [src] churns for a moment, injects its stored DNA into the biomass, then spits out \a [O].</span>")
+	visible_message("<span class='info'>La [src.name] se agita por un momento, inyecta su ADN almacenado en la biomasa, luego escupe un [O].</span>")
 	return O
 
 /obj/machinery/organ_printer/flesh/physical_attack_hand(mob/user)
 	if(!loaded_dna_datum || !loaded_species)
-		visible_message("<span class='info'>\The [src] displays a warning: 'No DNA saved. Insert a blood sample.'</span>")
+		visible_message("<span class='info'>La [src.name] muestra una advertencia: 'No se guardo ADN. Inserta una muestra de sangre.'</span>")
 		return
 
-	var/choice = input("What [loaded_species.name] organ would you like to print?") as null|anything in products
+	var/choice = input("Que organo de [loaded_species.name] te gustaria imprimir?") as null|anything in products
 
 	if(!choice)
 		return
@@ -222,12 +222,12 @@
 	for(var/path in amount_list)
 		if(istype(W, path))
 			if(max_stored_matter == stored_matter)
-				to_chat(user, "<span class='warning'>\The [src] is too full.</span>")
+				to_chat(user, "<span class='warning'>La [src.name] esta muy llena</span>")
 				return
 			if(!user.unEquip(W))
 				return
 			stored_matter += min(amount_list[path], max_stored_matter - stored_matter)
-			to_chat(user, "<span class='info'>\The [src] processes \the [W]. Levels of stored biomass now: [stored_matter]</span>")
+			to_chat(user, "<span class='info'>La [src.name] procesa la [W]. Niveles de biomasa: [stored_matter]</span>")
 			qdel(W)
 
 	// DNA sample from syringe.
@@ -242,9 +242,9 @@
 				loaded_species = H.species
 				loaded_dna_datum = H.dna && H.dna.Clone()
 				products = get_possible_products()
-				to_chat(user, "<span class='info'>You inject the blood sample into the bioprinter.</span>")
+				to_chat(user, "<span class='info'>Inyectas la muestra de sangre en la bioimpresora.</span>")
 				return TRUE
-		to_chat(user, SPAN_NOTICE("\The [src] displays an error: no viable blood sample could be obtained from \the [W]."))
+		to_chat(user, SPAN_NOTICE("La [src] muestra un error: no se pudo obtener una muestra de sangre viable de [W]."))
 	return ..()
 
 /obj/machinery/organ_printer/flesh/proc/get_possible_products()
