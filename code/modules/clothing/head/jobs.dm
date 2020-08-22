@@ -29,8 +29,8 @@
 
 //HOP
 /obj/item/clothing/head/caphat/hop
-	name = "crew resource's hat"
-	desc = "A stylish hat that both protects you from enraged former-crewmembers and gives you a false sense of authority."
+	name = "gorro de oficial ejecutivo"
+	desc = "Un sombrero elegante que te protege de los ex-tripulantes enfurecidos y te da una falsa sensación de autoridad."
 	icon_state = "hopcap"
 
 //Chaplain
