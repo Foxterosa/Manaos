@@ -9,7 +9,7 @@ env:
 
 # ALL MAPS MUST BE PRESENT HERE
 # IF THEY ARE NOT, YOUR BUILD WILL FAIL
-jobs:
+matrix:
     include:
     - name: "DreamChecker"
       env: SPACEMAN_DMM_VERSION=suite-1.4
