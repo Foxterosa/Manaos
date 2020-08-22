@@ -1,4 +1,5 @@
 language: generic
+os: linux
 dist: xenial
 jdk: openjdk8
 
@@ -9,14 +10,14 @@ env:
 
 # ALL MAPS MUST BE PRESENT HERE
 # IF THEY ARE NOT, YOUR BUILD WILL FAIL
-matrix:
+jobs:
     include:
     - name: "DreamChecker"
       env: SPACEMAN_DMM_VERSION=suite-1.4
       cache:
         directories: $HOME/spaceman_dmm/$SPACEMAN_DMM_VERSION
       install:
-        - chmod +x ./scripts/install-spaceman-dmm.sh dreamchecker
+        - chmod +x tools/travis/install_dreamchecker.sh
       script:
         - ~/dreamchecker
     - name: "Code"

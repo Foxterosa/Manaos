@@ -61,7 +61,7 @@
 	icon_state = "bandolier"
 	slots = 20
 /obj/item/clothing/accessory/storage/webbing/Initialize()
-	hold.can_hold = list(/obj/item/toy/figure/)
+	can_hold = list(/obj/item/toy/figure/)
 	. = ..()
 
 /obj/item/clothing/accessory/storage/webbing_large
