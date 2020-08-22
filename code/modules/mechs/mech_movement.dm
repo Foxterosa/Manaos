@@ -17,9 +17,9 @@
 			if(pilot.up_hint)
 				pilot.up_hint.icon_state = "uphint[(B ? B.is_open() : 0)]"
 
-//Override this and space move once a way to travel vertically is in 
+//Override this and space move once a way to travel vertically is in
 ///mob/living/exosuit/can_ztravel()
-//	if(Allow_Spacemove()) //Handle here 
+//	if(Allow_Spacemove()) //Handle here
 	// 	return 1
 
 	// for(var/turf/simulated/T in trange(1,src))
@@ -60,7 +60,7 @@
 		to_chat(mover, SPAN_WARNING("The power indicator flashes briefly."))
 		next_move = world.time + 3 //On fast exosuits this got annoying fast
 		return MOVEMENT_STOP
-	
+
 	next_move = world.time + (exosuit.legs ? exosuit.legs.move_delay : 3)
 	return MOVEMENT_PROCEED
 
@@ -78,7 +78,7 @@
 	if(failed)
 		moving_dir = pick(GLOB.cardinal - exosuit.dir)
 
-	exosuit.get_cell().use(exosuit.legs.power_use * CELLRATE)
+	exosuit.get_cell()?.use(exosuit.legs.power_use * CELLRATE)
 	if(exosuit.dir != moving_dir)
 		playsound(exosuit.loc, exosuit.mech_turn_sound, 40,1)
 		exosuit.set_dir(moving_dir)
