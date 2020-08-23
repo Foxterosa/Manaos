@@ -52,6 +52,10 @@
 	name = "corgi carrier"
 	held_type = /mob/living/simple_animal/corgi
 
+/obj/structure/largecrate/animal/fox
+	name = "fox carrier"
+	held_type = /mob/living/simple_animal/fox
+
 /obj/structure/largecrate/animal/cow
 	name = "cow crate"
 	held_type = /mob/living/simple_animal/cow
