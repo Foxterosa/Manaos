@@ -63,8 +63,8 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/mask/kasumimask
-	item_icons = list(slot_wear_mask_str = 'icons_manaos/mob/onmob/onmob_mask.dmi')
-	icon = 'icons_manaos/obj/clothing/obj_mask.dmi'
+	item_icons = list(slot_wear_mask_str = 'icons/icons_manaos/mob/onmob/onmob_mask.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_mask.dmi'
 	name = "mascara de kasumi"
 	desc = "They'll never see you coming pero mujer."
 	icon_state = "kasumi_mask"
@@ -73,8 +73,8 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/mask/jokermask
-	item_icons = list(slot_wear_mask_str = 'icons_manaos/mob/onmob/onmob_mask.dmi')
-	icon = 'icons_manaos/obj/clothing/obj_mask.dmi'
+	item_icons = list(slot_wear_mask_str = 'icons/icons_manaos/mob/onmob/onmob_mask.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_mask.dmi'
 	name = "mascara de Joker"
 	desc = "They'll never see you coming."
 	icon_state = "joker_mask"

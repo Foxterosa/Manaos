@@ -68,46 +68,46 @@
 
 /obj/item/clothing/under/maiddress2
 	name = "traje de mucama"
-	desc = "perfecto para darle a tu sirvienta."
+	desc = "Perfecto para darle a tu sirvienta."
 	icon_state = "meido_s"
 	item_state = "meido_s"
 	worn_state = "meido_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/maiddress
-	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
-	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	item_icons = list(slot_w_uniform_str = 'icons/icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
 	name = "uniforme de mucama"
-	desc = "perfecto para darle a tu sirvienta unathi"
+	desc = "Perfecto para darle a tu sirvienta unathi."
 	icon_state = "maidress_s"
 	item_state = "maidress_s"
 	worn_state = "maidress_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/kasumioutfit
-	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
-	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	item_icons = list(slot_w_uniform_str = 'icons/icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
 	name = "traje de Kasumi"
-	desc = "eSo FuE uNa PeRsOnA rEfErEnCe!?"
+	desc = "EsO fUe uNa PeRsOnA rEfErEnCe!?"
 	icon_state = "kasumi-suit_s"
 	item_state = "kasumi-suit_s"
 	worn_state = "kasumi-suit_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/jokeroutfit
-	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
-	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	item_icons = list(slot_w_uniform_str = 'icons/icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
 	name = "traje de Joker"
-	desc = "nunca jugue persona, pero se ve bonito"
+	desc = "Nunca jugue Persona, pero se ve bonito."
 	icon_state = "joker-suit_s"
 	item_state = "joker-suit_s"
 	worn_state = "joker-suit_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/jrsuit
-	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
 	name = "remera negra ajustada con khakis"
-	desc = "Hm, fashionable"
+	desc = "Hm, fashionable."
 	icon_state = "miner_s"
 	item_state = "miner_s"
 	worn_state = "miner_s"
