@@ -78,7 +78,7 @@
 	if(owner && !backup_inviable())
 		var/current_owner = owner
 		prompting = TRUE
-		var/response = alert(find_dead_player(ownerckey, 1), "Tu [src.name] ah sido colocado en un nuevo cuerpo. Deseas volver a la vida como respaldo de la mente de [backup.name]?", "Resleeving", "Si", "No")
+		var/response = alert(find_dead_player(ownerckey, 1), "Tu [src.name] ah sido colocado en un nuevo cuerpo. Deseas volver a la vida como respaldo de la mente de [backup.name]?", "Resleeving", "Yes", "No")
 		prompting = FALSE
 		if(src && response == "Yes" && owner == current_owner)
 			overwrite()
