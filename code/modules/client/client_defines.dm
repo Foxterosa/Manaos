@@ -18,7 +18,7 @@
 	var/adminhelped = 0
 
 	var/staffwarn = null
-	
+
 	var/datum/tooltip/tooltips 	= null
 
 		///////////////
@@ -52,3 +52,8 @@
 	http://www.byond.com/forum/post/1906517?page=2#comment23727144
 	*/
 	preload_rsc = 0
+
+	///goonchat chatoutput of the client
+	var/datum/chatOutput/chatOutput
+
+	var/fullscreen = FALSE
