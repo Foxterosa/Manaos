@@ -3,13 +3,12 @@
 	round_description = "The AI is behaving abnormally and must be stopped."
 	extended_round_description = "The AI will attempt to hack the APCs in order to gain as much control as possible."
 	config_tag = "malfunction"
-	required_players = 2
-	required_enemies = 1
+	required_players = 18
+	votable = 0
 	end_on_antag_death = FALSE
 	auto_recall_shuttle = FALSE
 	antag_tags = list(MODE_MALFUNCTION)
 	disabled_jobs = list("AI")
-	votable = 0
 	cinematic_icon_states = list(
 		"intro_malf" = 76,
 		"summary_malf",
