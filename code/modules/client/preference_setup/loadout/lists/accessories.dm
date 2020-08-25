@@ -1,4 +1,3 @@
-
 /datum/gear/accessory
 	sort_category = "Accessories"
 	category = /datum/gear/accessory
@@ -126,4 +125,9 @@
 	path = /obj/item/clothing/accessory/bracelet
 	cost = 1
 	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/accessory/redsuit_jacket
+	display_name = "Chaqueta de traje elegante"
+	path = /obj/item/clothing/accessory/toggleable/redsuit_jacket
+	cost = 2
 

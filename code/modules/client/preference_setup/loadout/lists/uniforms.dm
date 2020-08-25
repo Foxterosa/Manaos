@@ -213,3 +213,8 @@
 /datum/gear/uniform/frontier
 	display_name = "ropa de frontera"
 	path = /obj/item/clothing/under/frontier
+
+/datum/gear/uniform/redsuit
+	display_name = "Traje rojo elegante"
+	path = /obj/item/clothing/under/redsuit
+	cost = 2
