@@ -394,7 +394,7 @@
 	base_icon = "pew_left"
 
 /obj/structure/bed/chair/pew/New(var/newloc)
-	..(newloc, MATERIAL_WOOD)
+	..(newloc, pew_material)
 
 /obj/structure/bed/chair/pew/mahogany
 	color = WOOD_COLOR_RICH
