@@ -21,8 +21,3 @@
 	cost = 2
 
 /datum/gear/gloves/fingerless
-	display_name = "guantes sin dedos"
-	path = /obj/item/clothing/gloves/fingerless
-	cost = 2
-
-/dtum/gear/gloves/redsuit_gloves

@@ -154,8 +154,6 @@
 
 /datum/gear/clothing/flannel
 
-/datum/gear/clothing/vest
-
 /datum/gear/clothing/suspenders
 
 /datum/gear/clothing/wcoat
@@ -174,7 +172,7 @@
 
 /datum/gear/clothing/redsuit_jacket
 
-/datum/gear/clothing/charcoal_jacket
+/datum/gear/clothing/redsuit_vest
 
 /datum/gear/clothing/tangzhuang
 	allowed_branches = CASUAL_BRANCHES
