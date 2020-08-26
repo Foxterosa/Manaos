@@ -215,6 +215,6 @@
 	path = /obj/item/clothing/under/frontier
 
 /datum/gear/uniform/redsuit
-	display_name = "Traje rojo elegante"
+	display_name = "Traje rojo elegante, femenino"
 	path = /obj/item/clothing/under/redsuit
 	cost = 2

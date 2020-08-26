@@ -174,6 +174,8 @@
 
 /datum/gear/clothing/redsuit_jacket
 
+/datum/gear/clothing/charcoal_jacket
+
 /datum/gear/clothing/tangzhuang
 	allowed_branches = CASUAL_BRANCHES
 

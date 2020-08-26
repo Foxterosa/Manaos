@@ -76,6 +76,11 @@
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/clothing/redsuit_jacket
-	display_name = "Chaqueta de traje elegante"
+	display_name = "Chaqueta de traje elegante sin mangas"
 	path = /obj/item/clothing/accessory/toggleable/redsuit_jacket
+	cost = 2
+
+/datum/gear/clothing/charcoal_jacket
+	display_name = "Chaqueta de traje elegante"
+	path = /obj/item/clothing/accessory/toggleable/charcoal_jacket
 	cost = 2
