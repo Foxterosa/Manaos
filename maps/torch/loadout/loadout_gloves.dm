@@ -6,6 +6,8 @@
 /datum/gear/gloves/nitrile
 
 /datum/gear/gloves/rainbow
+	allowed_roles = CASUAL_ROLES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/gloves/evening
 
@@ -24,5 +26,3 @@
 	display_name = "guantes sin dedos"
 	path = /obj/item/clothing/gloves/fingerless
 	cost = 2
-
-/dtum/gear/gloves/redsuit_gloves

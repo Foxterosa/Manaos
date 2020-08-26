@@ -1,3 +1,4 @@
+
 /datum/gear/accessory
 	sort_category = "Accessories"
 	category = /datum/gear/accessory
@@ -125,3 +126,4 @@
 	path = /obj/item/clothing/accessory/bracelet
 	cost = 1
 	flags = GEAR_HAS_COLOR_SELECTION
+

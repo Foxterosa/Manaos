@@ -42,6 +42,7 @@
 	description = "A section-specific scarf for Survey Corps uniforms."
 	cost = 0
 	flags = GEAR_HAS_TYPE_SELECTION
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/accessory/ec_patch
 	display_name = "Surveyor Corps patch"
@@ -49,6 +50,7 @@
 	description = "A shoulder patch representing the Survey Corps."
 	cost = 0
 	flags = GEAR_HAS_TYPE_SELECTION
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/accessory/torch_patch
 	display_name = "NTSS Dagon mission patch"
@@ -101,12 +103,16 @@
 	allowed_roles = list(/datum/job/rd, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/assistant)
 
 /datum/gear/accessory/armband_nt
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/accessory/ntaward
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/accessory/tie
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/accessory/tie_color
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/accessory/stethoscope
 	allowed_roles = STERILE_ROLES
@@ -149,39 +155,55 @@
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/clothing/hawaii
+	allowed_roles = SEMIFORMAL_ROLES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/scarf
+	allowed_roles = SEMIANDFORMAL_ROLES
 
 /datum/gear/clothing/flannel
+	allowed_roles = SEMIFORMAL_ROLES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/vest
+	allowed_roles = FORMAL_ROLES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/suspenders
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/wcoat
+	allowed_roles = FORMAL_ROLES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/zhongshan
+	allowed_roles = FORMAL_ROLES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/dashiki
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/thawb
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/sherwani
+	allowed_roles = FORMAL_ROLES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/qipao
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/sweater
-
-/datum/gear/clothing/redsuit_jacket
-
-/datum/gear/clothing/charcoal_jacket
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/tangzhuang
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/accessory/bowtie
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/accessory/ftupin
+	allowed_branches = CASUAL_BRANCHES
 
 /*********************
  tactical accessories
