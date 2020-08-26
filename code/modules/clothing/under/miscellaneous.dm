@@ -811,10 +811,3 @@
 	icon_state = "kimono"
 	worn_state = "kimono"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-
-/obj/item/clothing/under/redsuit
-	desc = "Un traje rojo de negocios bastante elegante."
-	name = "traje rojo"
-	icon_state = "redsuit_f"
-	worn_state = "redsuit_f"
-	item_state = "redsuit_f"

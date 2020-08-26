@@ -41,8 +41,3 @@
 	item_state = "fingerless"
 	icon_state = "fingerless"
 
-/obj/item/clothing/gloves/redsuit_gloves
-	name = "guantes sin dedos elegantes"
-	desc = "Un par de guantes. Estos no parece tener cubierto los dedos, pero igualmente se ven elegantes."
-	item_state = "fingerless_redsuit"
-	icon_state = "fingerless_redsuit"
