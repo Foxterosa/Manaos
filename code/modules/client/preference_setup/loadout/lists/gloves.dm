@@ -61,3 +61,8 @@
 	display_name = "guantes de trabajo"
 	path = /obj/item/clothing/gloves/thick
 	cost = 2
+
+/datum/gear/gloves/redsuit_gloves
+	display_name = "Guantes elegantes sin dedos"
+	path = /obj/item/clothing/gloves/redsuit_gloves
+	cost = 2

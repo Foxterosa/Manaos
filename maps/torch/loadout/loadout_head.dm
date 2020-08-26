@@ -32,50 +32,36 @@
 	display_name = "fleet hat"
 	path = /obj/item/clothing/head/solgov/utility/fleet
 	cost = 0
-	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/head/echat
 	display_name = "SC cap"
 	path = /obj/item/clothing/head/soft/solgov/expedition
 	cost = 0
-	allowed_branches = NT_BRANCHES
 
 /datum/gear/head/surgical
 	allowed_roles = STERILE_ROLES
 
 /datum/gear/head/beret
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps, /datum/mil_branch/private_security)
 
 /datum/gear/mask/bandana
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/bandana
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/beanie
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/bow
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/cap
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/hairflower
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/hardhat
-	allowed_roles = TECHNICAL_ROLES
 
 /datum/gear/head/formalhat
-	allowed_roles = FORMAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/informalhat
-	allowed_roles = SEMIFORMAL_ROLES
 
 /datum/gear/head/welding
-	allowed_roles = TECHNICAL_ROLES
 
 /datum/gear/tactical/balaclava
 

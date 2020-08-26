@@ -173,6 +173,11 @@
 	desc = "Strict suit jacket."
 	icon_state = "charcoal_jacket"
 
+/obj/item/clothing/accessory/toggleable/redsuit_jacket
+	name = "chaleco con corbata negro"
+	desc = "Un chaleco con una corbata, bastante elegantes en el traje adecuado."
+	icon_state = "redsuit_jacket"
+
 /obj/item/clothing/accessory/toggleable/navy_jacket
 	name = "navy suit jacket"
 	desc = "Official suit jacket."
