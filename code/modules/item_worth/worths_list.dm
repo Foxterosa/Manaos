@@ -451,7 +451,6 @@ var/list/worths = list(
 					/obj/item/clothing/accessory/medal = 100,
 					/obj/item/clothing/accessory/armband = 30,
 					/obj/item/clothing/accessory/badge = 60,
-					/obj/item/clothing/accessory/toggleable/vest = 50,
 					/obj/item/clothing/accessory/toggleable/tan_jacket = 210,
 					/obj/item/clothing/accessory/toggleable/charcoal_jacket = 300,
 					/obj/item/clothing/accessory/toggleable/navy_jacket = 170,
