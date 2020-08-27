@@ -241,8 +241,8 @@
 	build_type = /obj/item/stack/tile/ridge
 
 /decl/flooring/wood
-	name = "piso de madera"
-	desc = "Un lindo conjunto de placas de madera en el piso. Inflamable"
+	name = "suelo de madera"
+	desc = "Un lindo conjunto de placas de madera en el suelo. Inflamable"
 	icon = 'icons/turf/flooring/wood.dmi'
 	icon_base = "wood"
 	has_damage_range = 6
@@ -310,7 +310,7 @@
 
 /decl/flooring/reinforced/cult
 	name = "suelo infernal"
-	desc = "Escuchas susurros y lamentos viniendo del piso..."
+	desc = "Escuchas susurros y lamentos viniendo del suelo..."
 	icon = 'icons/turf/flooring/cult.dmi'
 	icon_base = "cult"
 	build_type = null
