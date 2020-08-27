@@ -27,7 +27,7 @@
 	var/build_cost = 1  // Stack units.
 	var/build_time = 0  // BYOND ticks.
 
-	var/descriptor = "tiles"
+	var/descriptor = "baldosas"
 	var/flags
 	var/can_paint
 	var/can_engrave = TRUE
@@ -50,8 +50,8 @@
 	return
 
 /decl/flooring/grass
-	name = "grass"
-	desc = "Do they smoke grass out in space, Bowie? Or do they smoke AstroTurf?"
+	name = "pasto"
+	desc = "Pasto, comunmente se ve en planetas habitables o simplemente en un jardin."
 	icon = 'icons/turf/flooring/grass.dmi'
 	icon_base = "grass"
 	has_base_range = 3
@@ -65,8 +65,8 @@
 	decal_layer = ABOVE_WIRE_LAYER
 
 /decl/flooring/dirt
-	name = "dirt"
-	desc = "Extra dirty."
+	name = "suciedad"
+	desc = "Suciedad acumulada en un solo sitio. Quizas deberian de limpiar eso."
 	icon = 'icons/turf/flooring/grass.dmi'
 	icon_base = "dirt"
 	has_base_range = 3
@@ -74,8 +74,8 @@
 	can_engrave = FALSE
 
 /decl/flooring/asteroid
-	name = "coarse sand"
-	desc = "Gritty and unpleasant."
+	name = "arena"
+	desc = "Cuidado con que te entre arena en tus botas."
 	icon = 'icons/turf/flooring/asteroid.dmi'
 	icon_base = "asteroid"
 	flags = TURF_HAS_EDGES | TURF_REMOVE_SHOVEL
@@ -83,8 +83,8 @@
 	can_engrave = FALSE
 
 /decl/flooring/carpet
-	name = "brown carpet"
-	desc = "Comfy and fancy carpeting."
+	name = "alfombra marron"
+	desc = "Una elegante, y comoda, alfombra, de color marron"
 	icon = 'icons/turf/flooring/carpet.dmi'
 	icon_base = "brown"
 	build_type = /obj/item/stack/tile/carpet
@@ -97,48 +97,48 @@
 	space_smooth = SMOOTH_NONE
 
 /decl/flooring/carpet/blue
-	name = "blue carpet"
+	name = "alfombra azul"
 	icon_base = "blue1"
 	build_type = /obj/item/stack/tile/carpetblue
 
 /decl/flooring/carpet/blue2
-	name = "pale blue carpet"
+	name = "alfombra celeste"
 	icon_base = "blue2"
 	build_type = /obj/item/stack/tile/carpetblue2
 
 /decl/flooring/carpet/blue3
-	name = "sea blue carpet"
+	name = "alfombra celeste mejorada"
 	icon_base = "blue3"
 	build_type = /obj/item/stack/tile/carpetblue3
 
 /decl/flooring/carpet/magenta
-	name = "magenta carpet"
+	name = "alfombra rosa"
 	icon_base = "purple"
 	build_type = /obj/item/stack/tile/carpetmagenta
 
 /decl/flooring/carpet/purple
-	name = "purple carpet"
+	name = "alfombra purpura"
 	icon_base = "purple"
 	build_type = /obj/item/stack/tile/carpetpurple
 
 /decl/flooring/carpet/orange
-	name = "orange carpet"
+	name = "alfombra naranja"
 	icon_base = "orange"
 	build_type = /obj/item/stack/tile/carpetorange
 
 /decl/flooring/carpet/green
-	name = "green carpet"
+	name = "alfombra verde"
 	icon_base = "green"
 	build_type = /obj/item/stack/tile/carpetgreen
 
 /decl/flooring/carpet/red
-	name = "red carpet"
+	name = "alfombra roja"
 	icon_base = "red"
 	build_type = /obj/item/stack/tile/carpetred
 
 /decl/flooring/linoleum
-	name = "linoleum"
-	desc = "It's like the 2090's all over again."
+	name = "linoleo"
+	desc = "Se ve de buena calidad, limpio y lindo."
 	icon = 'icons/turf/flooring/linoleum.dmi'
 	icon_base = "lino"
 	can_paint = 1
@@ -147,8 +147,8 @@
 	footstep_type = /decl/footsteps/tiles
 
 /decl/flooring/tiling
-	name = "floor"
-	desc = "A solid, heavy set of flooring plates."
+	name = "suelo"
+	desc = "Un conjunto solido y pesado de baldosas."
 	icon = 'icons/turf/flooring/tiles.dmi'
 	icon_base = "tiled"
 	color = COLOR_DARK_GUNMETAL
@@ -174,12 +174,12 @@
 
 /decl/flooring/tiling/white
 	icon_base = "tiled_light"
-	desc = "How sterile."
+	desc = "La contraparte del color negro."
 	color = COLOR_OFF_WHITE
 	build_type = /obj/item/stack/tile/floor_white
 
 /decl/flooring/tiling/dark
-	desc = "How ominous."
+	desc = "Un suelo de color oscuro, la oscuridad le rodea."
 	color = COLOR_DARK_GRAY
 	build_type = /obj/item/stack/tile/floor_dark
 
@@ -188,7 +188,7 @@
 	build_type = null
 
 /decl/flooring/tiling/freezer
-	desc = "Don't slip."
+	desc = "El frio se acumula aqui..."
 	icon_base = "freezer"
 	color = null
 	has_damage_range = null
@@ -241,8 +241,8 @@
 	build_type = /obj/item/stack/tile/ridge
 
 /decl/flooring/wood
-	name = "wooden floor"
-	desc = "Polished wood planks."
+	name = "suelo de madera"
+	desc = "Un lindo conjunto de placas de madera en el suelo. Inflamable"
 	icon = 'icons/turf/flooring/wood.dmi'
 	icon_base = "wood"
 	has_damage_range = 6
@@ -278,8 +278,8 @@
 	build_type = /obj/item/stack/tile/yew
 
 /decl/flooring/reinforced
-	name = "reinforced floor"
-	desc = "Heavily reinforced with steel plating."
+	name = "suelo reforzado"
+	desc = "Altamente reforzado con placas de acero."
 	icon = 'icons/turf/flooring/tiles.dmi'
 	icon_base = "reinforced"
 	flags = TURF_REMOVE_WRENCH | TURF_ACID_IMMUNE
@@ -292,7 +292,7 @@
 	footstep_type = /decl/footsteps/plating
 
 /decl/flooring/reinforced/circuit
-	name = "processing strata"
+	name = "suelo de alta-tecnologia"
 	icon = 'icons/turf/flooring/circuit.dmi'
 	icon_base = "bcircuit"
 	build_type = null
@@ -309,8 +309,8 @@
 	can_paint = 0
 
 /decl/flooring/reinforced/cult
-	name = "engraved floor"
-	desc = "Unsettling whispers waver from the surface..."
+	name = "suelo infernal"
+	desc = "Escuchas susurros y lamentos viniendo del suelo..."
 	icon = 'icons/turf/flooring/cult.dmi'
 	icon_base = "cult"
 	build_type = null
@@ -322,7 +322,7 @@
 	GLOB.cult.remove_cultiness(CULTINESS_PER_TURF)
 
 /decl/flooring/reinforced/shuttle
-	name = "floor"
+	name = "suelo de lanzadera espacial"
 	icon = 'icons/turf/shuttle.dmi'
 	build_type = null
 	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_CROWBAR
@@ -370,7 +370,7 @@
 	icon_base = "skrellgreen"
 
 /decl/flooring/crystal
-	name = "crystal floor"
+	name = "suelo de cristal"
 	icon = 'icons/turf/flooring/crystal.dmi'
 	build_type = null
 	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_CROWBAR
