@@ -708,3 +708,8 @@
 	name = "Zieglertail"
 	icon_state = "hair_ziegler"
 	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/cerberus
+	name = "Cerberus"
+	icon_state = "hair_cerberus"
+	flags = HAIR_TIEABLE

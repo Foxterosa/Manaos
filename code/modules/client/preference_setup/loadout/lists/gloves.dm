@@ -61,3 +61,9 @@
 	display_name = "guantes de trabajo"
 	path = /obj/item/clothing/gloves/thick
 	cost = 2
+
+/datum/gear/gloves/fingerless
+	display_name = "guantes sin dedos, coloreable"
+	path = /obj/item/clothing/gloves/fingerless
+	flags = GEAR_HAS_COLOR_SELECTION
+	cost = 2

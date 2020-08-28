@@ -41,3 +41,5 @@
 	item_state = "fingerless"
 	icon_state = "fingerless"
 
+/obj/item/clothing/gloves/fingerless/modified
+	item_flags = ITEM_FLAG_PREMODIFIED
