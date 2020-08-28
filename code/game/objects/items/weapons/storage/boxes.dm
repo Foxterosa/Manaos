@@ -234,8 +234,8 @@
 	name = "box of frag shells"
 	desc = "A box containing 12 military grade fragmentation shells.<br> WARNING: Live explosive munitions. Misuse may result in serious injury or death."
 	icon_state = "flashbang"
-	startswith = list(/obj/item/weapon/grenade/frag/shell = 12)
-	max_storage_space = 24
+	startswith = list(/obj/item/weapon/grenade/frag/shell = 6)
+	max_storage_space = 12
 
 /obj/item/weapon/storage/box/smokes
 	name = "box of smoke bombs"
