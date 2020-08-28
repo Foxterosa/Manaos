@@ -707,7 +707,7 @@
 	req_access = list(access_engine_equip)
 
 /area/engineering/hardstorage
-	name = "\improper Íngenieria- Almacén"
+	name = "\improper Ingenieria - Almacén"
 	icon_state = "engineering_storage"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_engine_equip)
