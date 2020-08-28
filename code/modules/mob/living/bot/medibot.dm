@@ -25,8 +25,16 @@
 
 /mob/living/bot/medbot/handleIdle()
 	if(vocal && prob(1))
-		var/message = pick("Radar, put a mask on!", "There's always a catch, and it's the best there is.", "I knew it, I should've been a plastic surgeon.", "What kind of infirmary is this? Everyone's dropping like dead flies.", "Delicious!")
+		var/message_options = list(
+			"Radar, put a mask on!" = 'sound/voice/mradar.ogg',
+			"There's always a catch, and it's the best there is." = 'sound/voice/mcatch.ogg',
+			"I knew it, I should've been a plastic surgeon." = 'sound/voice/msurgeon.ogg',
+			"What kind of medbay is this? Everyone's dropping like flies." = 'sound/voice/mflies.ogg',
+			"Delicious!" = 'sound/voice/mdelicious.ogg'
+			)
+		var/message = pick(message_options)
 		say(message)
+		playsound(src.loc, message_options[message], 50, 0)
 
 /mob/living/bot/medbot/handleAdjacentTarget()
 	UnarmedAttack(target)
@@ -35,9 +43,16 @@
 	for(var/mob/living/carbon/human/H in view(7, src)) // Time to find a patient!
 		if(confirmTarget(H))
 			target = H
-			if(last_newpatient_speak + 300 < world.time)
-				var/message = pick("Hey, [H.name]! Hold on, I'm coming.", "Wait [H.name]! I want to help!", "[H.name], you appear to be injured!")
-				say(message)
+			if(last_newpatient_speak + 30 SECONDS < world.time)
+				if(vocal)
+					var/message_options = list(
+						"Hey, [H.name]! Hold on, I'm coming." = 'sound/voice/mcoming.ogg',
+						"Wait [H.name]! I want to help!" = 'sound/voice/mhelp.ogg',
+						"[H.name], you appear to be injured!" = 'sound/voice/minjured.ogg'
+						)
+					var/message = pick(message_options)
+					say(message)
+					playsound(loc, message_options[message], 50, 0)
 				custom_emote(1, "points at [H.name].")
 				last_newpatient_speak = world.time
 			break
@@ -56,17 +71,30 @@
 		return
 
 	if(H.stat == DEAD)
-		var/death_message = pick("No! NO!", "Live, damnit! LIVE!", "I... I've never lost a patient before. Not today, I mean.")
-		say(death_message)
 		target = null
-		return
+		if(vocal)
+			var/death_messages = list(
+				"No! Stay with me!" = 'sound/voice/mno.ogg',
+				"Live, damnit! LIVE!" = 'sound/voice/mlive.ogg',
+				"I... I've never lost a patient before. Not today, I mean." = 'sound/voice/mlost.ogg'
+				)
+			var/message = pick(death_messages)
+			say(message)
+			playsound(src.loc, death_messages[message], 50, 0)
 
-	var/t = confirmTarget(H)
-	if(!t)
-		var/message = pick("All patched up!", "An apple a day keeps me away.", "Feel better soon!")
-		say(message)
-		target = null
-		return
+	else
+		target = confirmTarget(H)
+		if(target)
+			target = null
+			if(vocal)
+				var/possible_messages = list(
+					"All patched up!" = 'sound/voice/mpatchedup.ogg',
+					"An apple a day keeps me away." = 'sound/voice/mapple.ogg',
+					"Feel better soon!" = 'sound/voice/mfeelbetter.ogg'
+					)
+				var/message = pick(possible_messages)
+				say(message)
+				playsound(src.loc, possible_messages[message], 50, 0)
 
 	icon_state = "medibots"
 	visible_message("<span class='warning'>[src] is trying to inject [H]!</span>")
@@ -76,10 +104,10 @@
 	busy = 1
 	update_icons()
 	if(do_mob(src, H, 30))
-		if(t == 1)
+		if(target == 1)
 			reagent_glass.reagents.trans_to_mob(H, injection_amount, CHEM_BLOOD)
 		else
-			H.reagents.add_reagent(t, injection_amount)
+			H.reagents.add_reagent(target, injection_amount)
 		visible_message("<span class='warning'>[src] injects [H] with the syringe!</span>")
 	busy = 0
 	update_icons()
