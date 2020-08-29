@@ -549,9 +549,6 @@ datum/projectile_data
 /proc/round_is_spooky(var/spookiness_threshold = config.cult_ghostwriter_req_cultists)
 	return (GLOB.cult.current_antagonists.len > spookiness_threshold)
 
-/proc/get_dist_bounds(var/target, var/source) // Alternative to get_dist for multi-turf objects
-	return Ceiling(bounds_dist(target, source)/world.icon_size) + 1
-
 /proc/getviewsize(view)
 	var/viewX
 	var/viewY
@@ -564,3 +561,6 @@ datum/projectile_data
 		viewX = text2num(viewrangelist[1])
 		viewY = text2num(viewrangelist[2])
 	return list(viewX, viewY)
+
+/proc/get_dist_bounds(var/target, var/source) // Alternative to get_dist for multi-turf objects
+	return Ceiling(bounds_dist(target, source)/world.icon_size) + 1

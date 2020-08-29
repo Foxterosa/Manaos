@@ -36,7 +36,7 @@
 	if(!istype(communicator))
 		return FALSE
 	if(communicator.mob.stat != DEAD)
-		to_chat(communicator, "<span class='warning'>You're not sufficiently dead to use DSAY!</span>")
+		to_chat(communicator, "<span class='warning'>No estas suficientemente muerto para poder usar!</span>")
 		return FALSE
 	return DSAY_ASK_BASE
 
@@ -68,7 +68,7 @@
 			if(C.mob.mind.original && C.mob.mind.original.real_name)
 				realname = C.mob.mind.original.real_name
 		if(mindname && mindname != realname)
-			name = "[realname] died as [mindname]"
+			name = "[realname] ha muerto como [mindname]"
 		else
 			name = realname
 
@@ -80,7 +80,7 @@
 		lname = "[keyname][(DM && DM.anonsay) ? "*" : (DM ? "" : "^")] ([name])"
 	else
 		if(DM && DM.anonsay)						// If the person is actually observer they have the option to be anonymous
-			lname = "Ghost of [name]"
+			lname = "Fantasma de [name]"
 		else if(DM)									// Non-anons
 			lname = "[keyname] ([name])"
 		else										// Everyone else (dead people who didn't ghost yet, etc.)
@@ -88,11 +88,11 @@
 	return "<span class='name'>[lname]</span>"
 
 /decl/dsay_communication/proc/get_message(var/client/C, var/mob/M, var/message)
-	var say_verb = pick("complains","moans","whines","laments","blubbers")
-	return "[get_name(C, M)] [say_verb], <span class='message'>\"[message]\"</span>"
+	var say_verb = pick("se queja","gime","se lamenta","balbucea","lloriquea")
+	return "[get_name(C, M)] [say_verb], <span class='message linkify'>\"[message]\"</span>"
 
 /decl/dsay_communication/emote/get_message(var/client/C, var/mob/M, var/message)
-	return "[get_name(C, M)] <span class='message'>[message]</span>"
+	return "[get_name(C, M)] <span class='message linkify'>[message]</span>"
 
 /decl/dsay_communication/proc/adjust_channel(var/decl/communication_channel/dsay)
 	dsay.flags |= COMMUNICATION_ADMIN_FOLLOW|COMMUNICATION_GHOST_FOLLOW // Add admin and ghost follow
@@ -109,13 +109,13 @@
 	if(!istype(communicator))
 		return FALSE
 	if(!communicator.holder)
-		to_chat(communicator, "<span class='warning'>You do not have sufficent permissions to use DSAY!</span>")
+		to_chat(communicator, "<span class='warning'>No tienes los suficientes permisos para usar DSAY!</span>")
 		return FALSE
 	return DSAY_ASK_BASE
 
 /decl/dsay_communication/admin/get_message(var/client/communicator, var/mob/M, var/message)
 	var/stafftype = uppertext(communicator.holder.rank)
-	return "<span class='name'>[stafftype]([communicator.key])</span> says, <span class='message'>\"[message]\"</span>"
+	return "<span class='name'>[stafftype]([communicator.key])</span> says, <span class='message linkify'>\"[message]\"</span>"
 
 /decl/dsay_communication/admin/adjust_channel(var/decl/communication_channel/dsay)
 	dsay.log_proc = /proc/log_say

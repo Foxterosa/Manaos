@@ -12,13 +12,13 @@
 	pda_type = /obj/item/modular_computer/pda/cargo
 
 /decl/hierarchy/outfit/job/cargo/cargo_tech
-	name = OUTFIT_JOB_NAME("Cargo technician")
+	name = OUTFIT_JOB_NAME("Tecnico de cargo")
 	uniform = /obj/item/clothing/under/rank/cargotech
 	id_type = /obj/item/weapon/card/id/cargo
 	pda_type = /obj/item/modular_computer/pda/cargo
 
 /decl/hierarchy/outfit/job/cargo/mining
-	name = OUTFIT_JOB_NAME("Shaft miner")
+	name = OUTFIT_JOB_NAME("Minero")
 	uniform = /obj/item/clothing/under/rank/miner
 	id_type = /obj/item/weapon/card/id/cargo/mining
 	pda_type = /obj/item/modular_computer/pda/science
@@ -30,7 +30,7 @@
 	BACKPACK_OVERRIDE_ENGINEERING
 
 /decl/hierarchy/outfit/job/cargo/mining/void
-	name = OUTFIT_JOB_NAME("Shaft miner - Voidsuit")
+	name = OUTFIT_JOB_NAME("Minero - Voidsuit")
 	head = /obj/item/clothing/head/helmet/space/void/mining
 	mask = /obj/item/clothing/mask/breath
 	suit = /obj/item/clothing/suit/space/void/mining

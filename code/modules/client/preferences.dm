@@ -14,6 +14,7 @@ datum/preferences
 
 	//game-preferences
 	var/lastchangelog = ""				//Saved changlog filesize to detect if there was a change
+	var/toggles = TOGGLES_DEFAULT
 
 		//Mob preview
 	var/icon/preview_icon = null

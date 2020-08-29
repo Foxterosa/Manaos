@@ -1,6 +1,6 @@
 /obj/machinery/computer/HolodeckControl
-	name = "holodeck control console"
-	desc = "A computer used to control a nearby holodeck."
+	name = "Consola de control del Holodeck"
+	desc = "Una consola para controlar Holodecks cercanos."
 	icon_keyboard = "tech_key"
 	icon_screen = "holocontrol"
 	var/lock_access = list(access_bridge)
@@ -40,25 +40,25 @@
 	user.set_machine(src)
 	var/dat
 
-	dat += "<B>Holodeck Control System</B><BR>"
+	dat += "<B>Sistema del control del Holodeck</B><BR>"
 	if(!islocked)
-		dat += "Holodeck is <A href='?src=\ref[src];togglehololock=1'><font color=green>(UNLOCKED)</font></A><BR>"
+		dat += "El Holodeck esta <A href='?src=\ref[src];togglehololock=1'><font color=green>(DESBLOQUEADO)</font></A><BR>"
 	else
-		dat += "Holodeck is <A href='?src=\ref[src];togglehololock=1'><font color=red>(LOCKED)</font></A><BR>"
+		dat += "El Holodeck esta <A href='?src=\ref[src];togglehololock=1'><font color=red>(BLOQUEADO)</font></A><BR>"
 		show_browser(user, dat, "window=computer;size=400x500")
 		onclose(user, "computer")
 		return
 
-	dat += "<HR>Current Loaded Programs:<BR>"
+	dat += "<HR>Programas cargados actualmente:<BR>"
 
 	if(!linkedholodeck)
-		dat += "<span class='danger'>Warning: Unable to locate holodeck.<br></span>"
+		dat += "<span class='danger'>Advertencia: incapaz de localizar el Holodeck<br></span>"
 		user << browse(dat, "window=computer;size=400x500")
 		onclose(user, "computer")
 		return
 
 	if(!supported_programs.len)
-		dat += "<span class='danger'>Warning: No supported holo-programs loaded.<br></span>"
+		dat += "<span class='danger'>Advertencia: Warning: No hay holo-programas compatibles cargados.<br></span>"
 		user << browse(dat, "window=computer;size=400x500")
 		onclose(user, "computer")
 		return
@@ -70,33 +70,33 @@
 	dat += "<A href='?src=\ref[src];program=turnoff'>(Turn Off)</A><BR>"
 
 	dat += "<BR>"
-	dat += "Please ensure that only holographic weapons are used in the holodeck if a combat simulation has been loaded.<BR>"
+	dat += "Asegurate de que solo se usen armas holograficas en el holodeck si se ha cargado una simulacion de combate.<BR>"
 
 	if(issilicon(user))
 		dat += "<BR>"
 		if(safety_disabled)
 			if (emagged)
-				dat += "<font color=red><b>ERROR</b>: Cannot re-enable Safety Protocols.</font><BR>"
+				dat += "<font color=red><b>ERROR</b>: No se pueden volver a habilitar los protocolos de seguridad.</font><BR>"
 			else
-				dat += "<A href='?src=\ref[src];AIoverride=1'>(<font color=green>Re-Enable Safety Protocols?</font>)</A><BR>"
+				dat += "<A href='?src=\ref[src];AIoverride=1'>(<font color=green>Volver a habilitar los protocolos de seguridad?</font>)</A><BR>"
 		else
-			dat += "<A href='?src=\ref[src];AIoverride=1'>(<font color=red>Override Safety Protocols?</font>)</A><BR>"
+			dat += "<A href='?src=\ref[src];AIoverride=1'>(<font color=red>Anular protocolos de seguridad?</font>)</A><BR>"
 
 	dat += "<BR>"
 
 	if(safety_disabled)
 		for(var/prog in restricted_programs)
 			dat += "<A href='?src=\ref[src];program=[restricted_programs[prog]]'>(<font color=red>Begin [prog]</font>)</A><BR>"
-			dat += "Ensure the holodeck is empty before testing.<BR>"
+			dat += "Asegurese de que el holodeck este vacio antes de realizar la prueba.<BR>"
 			dat += "<BR>"
-		dat += "Safety Protocols are <font color=red> DISABLED </font><BR>"
+		dat += "Los protocolos de seguridad estan <font color=red> DESACTIVADOS </font><BR>"
 	else
-		dat += "Safety Protocols are <font color=green> ENABLED </font><BR>"
+		dat += "Los protocolos de seguridad estan <font color=green> ACTIVADOS </font><BR>"
 
 	if(linkedholodeck.has_gravity)
-		dat += "Gravity is <A href='?src=\ref[src];gravity=1'><font color=green>(ON)</font></A><BR>"
+		dat += "La gravedad esta <A href='?src=\ref[src];gravity=1'><font color=green>(ACTIVADA)</font></A><BR>"
 	else
-		dat += "Gravity is <A href='?src=\ref[src];gravity=1'><font color=blue>(OFF)</font></A><BR>"
+		dat += "La gravedad esta <A href='?src=\ref[src];gravity=1'><font color=blue>(DESACTIVADA)</font></A><BR>"
 	user << browse(dat, "window=computer;size=400x500")
 	onclose(user, "computer")
 	return
@@ -143,9 +143,9 @@
 		emagged = 1
 		safety_disabled = 1
 		update_projections()
-		to_chat(user, "<span class='notice'>You vastly increase projector power and override the safety and security protocols.</span>")
-		to_chat(user, "Warning.  Automatic shutoff and derezing protocols have been corrupted.  Please call [GLOB.using_map.company_name] maintenance and do not use the simulator.")
-		log_game("[key_name(usr)] emagged the Holodeck Control Computer")
+		to_chat(user, "<span class='notice'>Aumentas enormemente la potencia del proyector y anulas los protocolos de seguridad.</span>")
+		to_chat(user, "Advertencia: Los protocolos de apagado y descongelamiento automaticos se han danado. Por favor llame a [GLOB.using_map.company_name] mantenimiento y no use el simulador.")
+		log_game("[key_name(usr)] emaggeo la computadora de control del Holodeck")
 		return 1
 		src.updateUsrDialog()
 	else
@@ -202,7 +202,7 @@
 			active = 0
 			update_use_power(POWER_USE_IDLE)
 			for(var/mob/M in range(10,src))
-				M.show_message("The holodeck overloads!")
+				M.show_message("El Holodeck se sobrecarga!")
 
 
 			for(var/turf/T in linkedholodeck)
@@ -221,7 +221,7 @@
 
 	if(!silent)
 		var/obj/oldobj = obj
-		visible_message("The [oldobj.name] fades away!")
+		visible_message("El [oldobj.name] desaparece!")
 	qdel(obj)
 
 /obj/machinery/computer/HolodeckControl/proc/checkInteg(var/area/A)
@@ -234,9 +234,9 @@
 //Why is it called toggle if it doesn't toggle?
 /obj/machinery/computer/HolodeckControl/proc/togglePower(var/toggleOn = 0)
 	if(toggleOn)
-		loadProgram(GLOB.using_map.holodeck_programs["emptycourt"], 0)
+		loadProgram(GLOB.using_map.holodeck_programs["Cuarto vacio"], 0)
 	else
-		loadProgram(GLOB.using_map.holodeck_programs["turnoff"], 0)
+		loadProgram(GLOB.using_map.holodeck_programs["Apagar"], 0)
 
 		if(!linkedholodeck.has_gravity)
 			linkedholodeck.gravitychange(1)
@@ -257,7 +257,7 @@
 			if(world.time < (last_change + 15))//To prevent super-spam clicking, reduced process size and annoyance -Sieve
 				return
 			for(var/mob/M in range(3,src))
-				M.show_message("<span class='warning'>ERROR. Recalibrating projection apparatus.</span>")
+				M.show_message("<span class='warning'>ERROR: Recalibrando aparatos de proyeccion.</span>")
 				last_change = world.time
 				return
 
@@ -317,7 +317,7 @@
 		if(world.time < (last_gravity_change + 15))//To prevent super-spam clicking
 			return
 		for(var/mob/M in range(3,src))
-			M.show_message("<span class='warning'>ERROR. Recalibrating gravity field.</span>")
+			M.show_message("<span class='warning'>ERROR: Recalibrando campo de gravedad.</span>")
 			last_change = world.time
 			return
 
@@ -345,10 +345,10 @@
 /obj/machinery/computer/HolodeckControl/proc/togglelock(var/mob/user)
 	if(cantogglelock(user))
 		islocked = !islocked
-		audible_message("<span class='notice'>\The [src] emits a series of beeps to announce it has been [islocked ? null : "un"]locked.</span>", hearing_distance = 3)
+		audible_message("<span class='notice'>El [src.name] emite una serie de pitidos para anunciar que ha sido [islocked ? null : "des"]bloqueado.</span>", hearing_distance = 3)
 		return 0
 	else
-		to_chat(user, "<span class='warning'>Access denied.</span>")
+		to_chat(user, "<span class='warning'>Acceso denegado.</span>")
 		return 1
 
 /obj/machinery/computer/HolodeckControl/proc/cantogglelock(var/mob/user)

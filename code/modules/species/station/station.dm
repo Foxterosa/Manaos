@@ -111,7 +111,7 @@
 	health_hud_intensity = 1.75
 	meat_type = /obj/item/weapon/reagent_containers/food/snacks/fish/octopus
 	bone_material = MATERIAL_BONE_CARTILAGE
-	genders = list(PLURAL)
+	genders = list(PLURAL, NEUTER)
 	hidden_from_codex = FALSE
 	min_age = 19
 	max_age = 90
@@ -297,7 +297,7 @@
 	flesh_color = "#907e4a"
 
 	reagent_tag = IS_DIONA
-	genders = list(PLURAL)
+	genders = list(PLURAL, NEUTER)
 
 	available_cultural_info = list(
 		TAG_CULTURE =   list(CULTURE_DIONA),

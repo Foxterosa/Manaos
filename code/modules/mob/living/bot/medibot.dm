@@ -1,6 +1,6 @@
 /mob/living/bot/medbot
 	name = "Medibot"
-	desc = "A little medical robot. He looks somewhat underwhelmed."
+	desc = "Un pequeño robot médico. Parece algo decepcionado."
 	icon = 'icons/mob/bot/medibot.dmi'
 	icon_state = "medibot0"
 	req_access = list(list(access_medical, access_robotics))
@@ -25,8 +25,16 @@
 
 /mob/living/bot/medbot/handleIdle()
 	if(vocal && prob(1))
-		var/message = pick("Radar, put a mask on!", "There's always a catch, and it's the best there is.", "I knew it, I should've been a plastic surgeon.", "What kind of infirmary is this? Everyone's dropping like dead flies.", "Delicious!")
+		var/message_options = list(
+			"Radar, ponte una máscara!" = 'sound/voice/mradar.ogg',
+			"There's always a catch, and it's the best there is." = 'sound/voice/mcatch.ogg',
+			"Lo sabía, debería haber sido cirujano plástico." = 'sound/voice/msurgeon.ogg',
+			"Qué tipo de bahía médica es esta? Todos caen como moscas." = 'sound/voice/mflies.ogg',
+			"Delicioso!" = 'sound/voice/mdelicious.ogg'
+			)
+		var/message = pick(message_options)
 		say(message)
+		playsound(src.loc, message_options[message], 50, 0)
 
 /mob/living/bot/medbot/handleAdjacentTarget()
 	UnarmedAttack(target)
@@ -35,9 +43,16 @@
 	for(var/mob/living/carbon/human/H in view(7, src)) // Time to find a patient!
 		if(confirmTarget(H))
 			target = H
-			if(last_newpatient_speak + 300 < world.time)
-				var/message = pick("Hey, [H.name]! Hold on, I'm coming.", "Wait [H.name]! I want to help!", "[H.name], you appear to be injured!")
-				say(message)
+			if(last_newpatient_speak + 30 SECONDS < world.time)
+				if(vocal)
+					var/message_options = list(
+						"Hey [H.name]! Espera, estoy en camino!" = 'sound/voice/mcoming.ogg',
+						"Espera [H.name]! Quiero ayudar!" = 'sound/voice/mhelp.ogg',
+						"[H.name], pareces estar herido!" = 'sound/voice/minjured.ogg'
+						)
+					var/message = pick(message_options)
+					say(message)
+					playsound(loc, message_options[message], 50, 0)
 				custom_emote(1, "points at [H.name].")
 				last_newpatient_speak = world.time
 			break
@@ -56,31 +71,44 @@
 		return
 
 	if(H.stat == DEAD)
-		var/death_message = pick("No! NO!", "Live, damnit! LIVE!", "I... I've never lost a patient before. Not today, I mean.")
-		say(death_message)
 		target = null
-		return
+		if(vocal)
+			var/death_messages = list(
+				"No! Quédate conmigo!" = 'sound/voice/mno.ogg',
+				"Vive, maldita sea! VIVE!" = 'sound/voice/mlive.ogg',
+				"Yo ... nunca he perdido a un paciente antes. Hoy no, quiero decir." = 'sound/voice/mlost.ogg'
+				)
+			var/message = pick(death_messages)
+			say(message)
+			playsound(src.loc, death_messages[message], 50, 0)
 
-	var/t = confirmTarget(H)
-	if(!t)
-		var/message = pick("All patched up!", "An apple a day keeps me away.", "Feel better soon!")
-		say(message)
-		target = null
-		return
+	else
+		target = confirmTarget(H)
+		if(target)
+			target = null
+			if(vocal)
+				var/possible_messages = list(
+					"Todo remendado!" = 'sound/voice/mpatchedup.ogg',
+					"Una manzana al día me mantiene alejado." = 'sound/voice/mapple.ogg',
+					"Te sentiras mejor pronto!" = 'sound/voice/mfeelbetter.ogg'
+					)
+				var/message = pick(possible_messages)
+				say(message)
+				playsound(src.loc, possible_messages[message], 50, 0)
 
 	icon_state = "medibots"
-	visible_message("<span class='warning'>[src] is trying to inject [H]!</span>")
+	visible_message("<span class='warning'>[src] intenta injectar a [H]!</span>")
 	if(declare_treatment)
 		var/area/location = get_area(src)
-		broadcast_medical_hud_message("[src] is treating <b>[H]</b> in <b>[location]</b>", src)
+		broadcast_medical_hud_message("[src] esta tratando a <b>[H]</b> en <b>[location]</b>", src)
 	busy = 1
 	update_icons()
 	if(do_mob(src, H, 30))
-		if(t == 1)
+		if(target == 1)
 			reagent_glass.reagents.trans_to_mob(H, injection_amount, CHEM_BLOOD)
 		else
-			H.reagents.add_reagent(t, injection_amount)
-		visible_message("<span class='warning'>[src] injects [H] with the syringe!</span>")
+			H.reagents.add_reagent(target, injection_amount)
+		visible_message("<span class='warning'>[src] inyecta a [H] con la jeringa!</span>")
 	busy = 0
 	update_icons()
 
@@ -96,16 +124,16 @@
 /mob/living/bot/medbot/attackby(var/obj/item/O, var/mob/user)
 	if(istype(O, /obj/item/weapon/reagent_containers/glass))
 		if(locked)
-			to_chat(user, "<span class='notice'>You cannot insert a beaker because the panel is locked.</span>")
+			to_chat(user, "<span class='notice'>No puede insertar un recipiente porque el panel está bloqueado.</span>")
 			return
 		if(!isnull(reagent_glass))
-			to_chat(user, "<span class='notice'>There is already a beaker loaded.</span>")
+			to_chat(user, "<span class='notice'>Ya hay un recipiente cargado.</span>")
 			return
 
 		if(!user.unEquip(O, src))
 			return
 		reagent_glass = O
-		to_chat(user, "<span class='notice'>You insert [O].</span>")
+		to_chat(user, "<span class='notice'>Insertas [O].</span>")
 		return
 	else
 		..()
@@ -170,7 +198,7 @@
 						reagent_glass.dropInto(src.loc)
 						reagent_glass = null
 					else
-						to_chat(user, "<span class='notice'>You cannot eject the beaker because the panel is locked.</span>")
+						to_chat(user, "<span class='notice'>No puedes expulsar el recipiente porque el panel está bloqueado.</span>")
 			if("togglevoice")
 				if(!locked || issilicon(user))
 					vocal = !vocal
@@ -190,7 +218,7 @@
 		if(user)
 			to_chat(user, "<span class='warning'>You short out [src]'s reagent synthesis circuits.</span>")
 			ignore_list |= user
-		visible_message("<span class='warning'>[src] buzzes oddly!</span>")
+		visible_message("<span class='warning'>[src] zumba extrañamente!</span>")
 		flick("medibot_spark", src)
 		target = null
 		busy = 0
@@ -201,7 +229,7 @@
 
 /mob/living/bot/medbot/explode()
 	on = 0
-	visible_message("<span class='danger'>[src] blows apart!</span>")
+	visible_message("<span class='danger'>[src] explota!</span>")
 	var/turf/Tsec = get_turf(src)
 
 	new /obj/item/weapon/storage/firstaid(Tsec)

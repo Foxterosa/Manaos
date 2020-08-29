@@ -11,7 +11,7 @@
 	BACKPACK_OVERRIDE_SECURITY
 
 /decl/hierarchy/outfit/job/security/hos
-	name = OUTFIT_JOB_NAME("Head of security")
+	name = OUTFIT_JOB_NAME("Oficial Maestro de Seguridad en Jefe")
 	l_ear = /obj/item/device/radio/headset/heads/hos
 	uniform = /obj/item/clothing/under/rank/head_of_security
 	id_type = /obj/item/weapon/card/id/security/head
@@ -19,7 +19,7 @@
 	backpack_contents = list(/obj/item/weapon/handcuffs = 1)
 
 /decl/hierarchy/outfit/job/security/warden
-	name = OUTFIT_JOB_NAME("Warden")
+	name = OUTFIT_JOB_NAME("Carcelero")
 	uniform = /obj/item/clothing/under/rank/warden
 	l_pocket = /obj/item/device/flash
 	id_type = /obj/item/weapon/card/id/security/warden
@@ -42,12 +42,12 @@
 	backpack_overrides.Cut()
 
 /decl/hierarchy/outfit/job/security/detective/forensic
-	name = OUTFIT_JOB_NAME("Forensic technician")
+	name = OUTFIT_JOB_NAME("Tecnico Forense")
 	head = null
 	suit = /obj/item/clothing/suit/storage/forensics/blue
 
 /decl/hierarchy/outfit/job/security/officer
-	name = OUTFIT_JOB_NAME("Security Officer")
+	name = OUTFIT_JOB_NAME("Oficial de seguridad")
 	uniform = /obj/item/clothing/under/rank/security
 	l_pocket = /obj/item/device/flash
 	r_pocket = /obj/item/weapon/handcuffs

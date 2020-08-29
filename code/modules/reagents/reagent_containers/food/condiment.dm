@@ -335,6 +335,18 @@
 /obj/item/weapon/reagent_containers/food/condiment/flour/on_reagent_change()
 	return
 
+/obj/item/weapon/reagent_containers/food/condiment/yerba
+	name = "yerba mate"
+	desc = "Un paquete de yerba mate, extrana marca"
+	icon = 'icons/obj/food.dmi'
+	icon_state = "yerba"
+	item_state = "yerba"
+	randpixel = 10
+	starting_reagents = list(/datum/reagent/nutriment/yerba = 50)
+
+/obj/item/weapon/reagent_containers/food/condiment/yerba/on_reagent_change()
+	return
+
 /obj/item/weapon/reagent_containers/food/condiment/salt
 	name = "big bag of salt"
 	desc = "A nonsensically large bag of salt. Carefully refined from countless shifts."

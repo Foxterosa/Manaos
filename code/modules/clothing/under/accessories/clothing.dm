@@ -150,15 +150,6 @@
 
 	update_clothing_icon()	//so our overlays update
 
-/obj/item/clothing/accessory/toggleable/vest
-	name = "vest"
-	desc = "A slick suit vest."
-	icon_state = "det_vest"
-
-/obj/item/clothing/accessory/toggleable/vest/black
-	name = "black vest"
-	color = COLOR_GRAY15
-
 /obj/item/clothing/accessory/toggleable/tan_jacket
 	name = "tan suit jacket"
 	desc = "Cozy suit jacket."
@@ -172,6 +163,26 @@
 	name = "charcoal suit jacket"
 	desc = "Strict suit jacket."
 	icon_state = "charcoal_jacket"
+
+/obj/item/clothing/accessory/toggleable/redsuit_vest
+	name = "chaleco de traje"
+	desc = "Un chaleco, bastante elegantes en el traje adecuado."
+	icon_state = "redsuit_vest"
+
+	/obj/item/clothing/accessory/toggleable/redsuit_vest/modified
+	item_flags = ITEM_FLAG_PREMODIFIED
+
+/obj/item/clothing/accessory/toggleable/redsuit_vest/black
+	name = "chaleco de traje negro"
+	color = COLOR_GRAY15
+
+/obj/item/clothing/accessory/toggleable/redsuit_jacket
+	name = "chaqueta de traje"
+	desc = "Una chaqueta, bastante elegantes en el traje adecuado."
+	icon_state = "redsuit_jacket"
+
+	/obj/item/clothing/accessory/toggleable/redsuit_jacket/modified
+	item_flags = ITEM_FLAG_PREMODIFIED
 
 /obj/item/clothing/accessory/toggleable/navy_jacket
 	name = "navy suit jacket"

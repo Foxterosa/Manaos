@@ -77,6 +77,12 @@
 	base_icon = 'icons/turf/floors.dmi'
 	icon_state = "snow"
 	base_icon_state = "snow"
+	footstep_type = /decl/footsteps/snow
+
+/turf/simulated/floor/holofloor/snow/ice
+	name = "ice"
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "ice"
 
 /turf/simulated/floor/holofloor/space
 	icon = 'icons/turf/space.dmi'
@@ -93,38 +99,53 @@
 	icon_state = "[((x + y) ^ ~(x * y) + z) % 25]"
 
 /turf/simulated/floor/holofloor/beach
-	desc = "Uncomfortably gritty for a hologram."
-	base_desc = "Uncomfortably gritty for a hologram."
 	icon = 'icons/misc/beach.dmi'
 	base_icon = 'icons/misc/beach.dmi'
 	initial_flooring = null
 
 /turf/simulated/floor/holofloor/beach/sand
-	name = "sand"
+	name = "arena"
+	desc = "Esto es arena."
 	icon_state = "desert0"
 	base_icon_state = "desert0"
+	footstep_type = /decl/footsteps/sand
 
 /turf/simulated/floor/holofloor/beach/coastline
-	name = "coastline"
+	name = "costa"
+	desc = "Esta es la costa."
 	icon = 'icons/misc/beach2.dmi'
 	icon_state = "sandwater"
 	base_icon_state = "sandwater"
 
 /turf/simulated/floor/holofloor/beach/water
 	name = "water"
+	desc = "Esto es agua."
 	icon_state = "seashallow"
 	base_icon_state = "seashallow"
+	turf_flags = TURF_IS_WET
+	footstep_type = /decl/footsteps/water
+	var/reagent_type = /datum/reagent/water
+
+/turf/simulated/floor/holofloor/beach/water/attackby(obj/item/O, var/mob/living/user)
+	var/obj/item/weapon/reagent_containers/RG = O
+	if (reagent_type && istype(RG) && RG.is_open_container() && RG.reagents)
+		RG.reagents.add_reagent(reagent_type, min(RG.volume - RG.reagents.total_volume, RG.amount_per_transfer_from_this))
+		user.visible_message("<span class='notice'>[user] fills \the [RG] from \the [src].</span>","<span class='notice'>You fill \the [RG] from \the [src].</span>")
+	else
+		return ..()
+
+turf/simulated/floor/holofloor/beach/water/update_dirt()
+	return	// Water doesn't become dirty
 
 /turf/simulated/floor/holofloor/desert
 	name = "desert sand"
 	base_name = "desert sand"
-	desc = "Uncomfortably gritty for a hologram."
-	base_desc = "Uncomfortably gritty for a hologram."
 	icon_state = "asteroid"
 	base_icon_state = "asteroid"
 	icon = 'icons/turf/flooring/asteroid.dmi'
 	base_icon = 'icons/turf/flooring/asteroid.dmi'
 	initial_flooring = null
+	footstep_type = /decl/footsteps/sand
 
 /turf/simulated/floor/holofloor/desert/New()
 	..()
