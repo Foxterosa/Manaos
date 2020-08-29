@@ -4,7 +4,7 @@
 
 /mob/living/bot/secbot
 	name = "Securitron"
-	desc = "A little security robot.  He looks less than thrilled."
+	desc = "Un pequeño robot de seguridad. Parece menos que emocionado."
 	icon = 'icons/mob/bot/secbot.dmi'
 	icon_state = "secbot0"
 	var/attack_state = "secbot-c"
@@ -32,11 +32,12 @@
 	var/obj/item/weapon/handcuffs/cyborg/handcuffs
 
 	var/list/threat_found_sounds = list('sound/voice/bcriminal.ogg', 'sound/voice/bjustice.ogg', 'sound/voice/bfreeze.ogg')
-	var/list/preparing_arrest_sounds = list('sound/voice/bfreeze.ogg')
+	var/list/preparing_arrest_sounds = list('sound/voice/bgod.ogg', 'sound/voice/biamthelaw.ogg', 'sound/voice/bsecureday.ogg', 'sound/voice/bradio.ogg', 'sound/voice/bcreep.ogg')
+	var/list/fighting_sounds = list('sound/voice/biamthelaw.ogg', 'sound/voice/bradio.ogg', 'sound/voice/bjustice.ogg')
 
 /mob/living/bot/secbot/beepsky
-	name = "Officer Beepsky"
-	desc = "It's Officer Beep O'sky! Powered by a potato and a shot of whiskey."
+	name = "Oficial Beepsky"
+	desc = "Es el oficial Beep O'sky! Alimentado por una patata y un trago de whisky."
 	will_patrol = 1
 
 /mob/living/bot/secbot/Initialize()
@@ -133,8 +134,8 @@
 /mob/living/bot/secbot/proc/begin_arrest(mob/target, var/threat)
 	var/suspect_name = target_name(target)
 	if(declare_arrests)
-		broadcast_security_hud_message("[src] is arresting a level [threat] suspect <b>[suspect_name]</b> in <b>[get_area(src)]</b>.", src)
-	say("Down on the floor, [suspect_name]! You have [SECBOT_WAIT_TIME] seconds to comply.")
+		broadcast_security_hud_message("[src] está arrestando a una amenaza nivel [threat], el sospechosa <b>[suspect_name]</b> en <b>[get_area(src)]</b>.", src)
+	say("En el suelo, [suspect_name]! Tienes [SECBOT_WAIT_TIME] segundos para cumplir.")
 	playsound(src.loc, pick(preparing_arrest_sounds), 50)
 	GLOB.moved_event.register(target, src, /mob/living/bot/secbot/proc/target_moved)
 
@@ -146,7 +147,7 @@
 /mob/living/bot/secbot/proc/react_to_attack(mob/attacker)
 	if(!target)
 		playsound(src.loc, pick(threat_found_sounds), 50)
-		broadcast_security_hud_message("[src] was attacked by a hostile <b>[target_name(attacker)]</b> in <b>[get_area(src)]</b>.", src)
+		broadcast_security_hud_message("[src] Fue atacado por el hostil <b>[target_name(attacker)]</b> en <b>[get_area(src)]</b>.", src)
 	target = attacker
 	awaiting_surrender = INFINITY
 
@@ -174,7 +175,7 @@
 			var/threat = check_threat(M)
 			target = M
 			awaiting_surrender = -1
-			say("Level [threat] infraction alert!")
+			say("Amenaza nivel [threat], alerta de infracción!")
 			custom_emote(1, "points at [M.name]!")
 			return
 
@@ -214,7 +215,7 @@
 	flick(attack_state, src)
 
 /mob/living/bot/secbot/explode()
-	visible_message("<span class='warning'>[src] blows apart!</span>")
+	visible_message("<span class='warning'>[src] explota!</span>")
 	var/turf/Tsec = get_turf(src)
 	new /obj/item/device/assembly/prox_sensor(Tsec)
 	new /obj/item/weapon/melee/baton(Tsec)
