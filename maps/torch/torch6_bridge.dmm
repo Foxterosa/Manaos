@@ -2857,6 +2857,12 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/obj/item/device/binoculars,
+/obj/item/device/taperecorder,
+/obj/random/maintenance/solgov/clean,
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
 "eG" = (
@@ -8537,9 +8543,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "nZ" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
 /obj/machinery/button/blast_door{
 	name = "Checkpoint Window Shutters";
 	desc = "A remote control-switch for shutters.";
@@ -8561,6 +8564,7 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
 "oa" = (
@@ -9639,10 +9643,6 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/dark,
-/area/security/bridgecheck)
-"pG" = (
-/obj/machinery/status_display,
-/turf/simulated/wall/prepainted,
 /area/security/bridgecheck)
 "pH" = (
 /obj/machinery/power/smes/buildable{
@@ -14450,6 +14450,25 @@
 /obj/effect/shuttle_landmark/torch/deck5/guppy,
 /turf/space,
 /area/space)
+"zc" = (
+/obj/machinery/computer/modular/preset/cardslot/command{
+	icon_state = "console";
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/machinery/recharger/wallcharger{
+	dir = 8;
+	pixel_x = 23;
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/bridgecheck)
 "zf" = (
 /obj/structure/bed/chair/comfy/blue{
 	icon_state = "comfychair_preview";
@@ -14594,14 +14613,6 @@
 /obj/machinery/door/window/brigdoor/northleft{
 	dir = 8;
 	name = "Security Checkpoint"
-	},
-/obj/item/weapon/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/weapon/pen{
-	pixel_x = 4;
-	pixel_y = 4
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
@@ -14774,6 +14785,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
+"Al" = (
+/obj/machinery/status_display,
+/turf/simulated/wall/r_wall/prepainted,
+/area/security/bridgecheck)
 "Am" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -14850,25 +14865,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"At" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/vending/wallmed1{
-	name = "Emergency NanoMed";
-	pixel_x = 0;
-	pixel_y = 30
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/bridge/fore)
 "Aw" = (
 /obj/structure/sign/warning/high_voltage{
 	icon_state = "shock";
@@ -14888,12 +14884,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "AA" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/machinery/recharger{
-	pixel_y = 4
-	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
@@ -14901,6 +14891,7 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
 "AB" = (
@@ -15631,8 +15622,6 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/table/rack,
-/obj/item/device/binoculars,
 /obj/machinery/light,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -15641,7 +15630,6 @@
 	pixel_x = 0;
 	pixel_y = -32
 	},
-/obj/item/weapon/crowbar/prybar,
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
@@ -15649,6 +15637,10 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen,
+/obj/item/weapon/folder/red,
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
 "Es" = (
@@ -17326,6 +17318,25 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
+"MG" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/vending/wallmed1{
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = 30
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/bridge/fore)
 "MU" = (
 /obj/machinery/light{
 	dir = 4
@@ -19512,9 +19523,6 @@
 	pixel_x = 0;
 	pixel_y = -32
 	},
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/random/medical,
 /obj/random/drinkbottle,
 /obj/structure/cable/green{
 	d2 = 4;
@@ -19524,6 +19532,7 @@
 	icon_state = "techfloor_edges";
 	dir = 10
 	},
+/obj/item/weapon/storage/firstaid/stab,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
 "Xb" = (
@@ -32550,7 +32559,7 @@ mE
 mE
 mE
 mE
-At
+MG
 ga
 sL
 sL
@@ -33356,7 +33365,7 @@ mN
 AA
 nZ
 Wa
-pE
+zc
 mN
 rg
 yb
@@ -33554,11 +33563,11 @@ La
 iX
 Lk
 gl
-ck
+Al
 mO
 oK
 zM
-pG
+yW
 yW
 rk
 qz
