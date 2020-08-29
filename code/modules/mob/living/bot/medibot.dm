@@ -27,7 +27,7 @@
 	if(vocal && prob(1))
 		var/message_options = list(
 			"Radar, ponte una máscara!" = 'sound/voice/mradar.ogg',
-			"Siempre hay una trampa, y es la mejor que hay." = 'sound/voice/mcatch.ogg',
+			"There's always a catch, and it's the best there is." = 'sound/voice/mcatch.ogg',
 			"Lo sabía, debería haber sido cirujano plástico." = 'sound/voice/msurgeon.ogg',
 			"Qué tipo de bahía médica es esta? Todos caen como moscas." = 'sound/voice/mflies.ogg',
 			"Delicioso!" = 'sound/voice/mdelicious.ogg'
@@ -46,8 +46,8 @@
 			if(last_newpatient_speak + 30 SECONDS < world.time)
 				if(vocal)
 					var/message_options = list(
-						"Hey, [H.name]! Espera, yo ya voy!" = 'sound/voice/mcoming.ogg',
-						"Wait [H.name]! Quiero ayudar!" = 'sound/voice/mhelp.ogg',
+						"Hey [H.name]! Espera, estoy en camino!" = 'sound/voice/mcoming.ogg',
+						"Espera [H.name]! Quiero ayudar!" = 'sound/voice/mhelp.ogg',
 						"[H.name], pareces estar herido!" = 'sound/voice/minjured.ogg'
 						)
 					var/message = pick(message_options)
