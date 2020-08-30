@@ -19,6 +19,12 @@ Y ahora... ellos han de temerte."
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 	)
+
+	allowed = list(/obj/item/device/flashlight, /obj/item/weapon/tank,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/handcuffs,/obj/item/device/t_scanner, /obj/item/weapon/rcd, /obj/item/weapon/crowbar, \
+	/obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench, /obj/item/device/multitool, \
+	/obj/item/device/radio, /obj/item/device/scanner/gas,/obj/item/weapon/storage/briefcase/inflatable, /obj/item/weapon/melee/baton, /obj/item/weapon/gun, \
+	/obj/item/weapon/storage/firstaid, /obj/item/weapon/reagent_containers/hypospray, /obj/item/roller, /obj/item/device/suit_cooling_unit, /obj/item/weapon/storage/)
+
 	chest_type = /obj/item/clothing/suit/space/rig/doom
 	helm_type = /obj/item/clothing/head/helmet/space/rig/doom
 	boot_type = /obj/item/clothing/shoes/magboots/rig/doom
@@ -60,3 +66,4 @@ Y ahora... ellos han de temerte."
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/maneuvering_jets
 	)
+
