@@ -34,19 +34,19 @@ Y ahora... ellos han de temerte."
 	item_icons = list(slot_head_str = 'icons/mob/onmob/onmob_head.dmi')
 	icon = 'icons/obj/clothing/obj_head.dmi'
 	light_overlay = "helmet_light_dual_green"
-	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_SERGAL,SPECIES_VATGROWN,SPECIES_AKULA,SPECIES_VULP,SPECIES_TAJ)
 
 /obj/item/clothing/suit/space/rig/doom
 	item_icons = list(slot_wear_suit_str = 'icons/mob/onmob/onmob_suit.dmi')
 	icon = 'icons/obj/clothing/obj_suit.dmi'
-	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_SERGAL,SPECIES_VATGROWN,SPECIES_AKULA,SPECIES_VULP,SPECIES_TAJ)
 
 /obj/item/clothing/shoes/magboots/rig/doom
-	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_SERGAL,SPECIES_VATGROWN,SPECIES_AKULA,SPECIES_VULP,SPECIES_TAJ)
 
 /obj/item/clothing/gloves/rig/doom
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_NOCUFFS
-	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_SERGAL,SPECIES_VATGROWN,SPECIES_AKULA,SPECIES_VULP,SPECIES_TAJ)
 
 /obj/item/weapon/rig/doom/equipped
 	initial_modules = list(
