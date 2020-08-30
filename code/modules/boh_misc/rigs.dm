@@ -5,9 +5,9 @@
 /obj/item/weapon/rig/doom		//Deathsquad only, considering you're basically unkillable.
 	name = "modulo de control clase praetor"
 	desc = "Un pesado, pero extraordinariamente eficiente traje con tecnologia de punta y armadura de ultima generacion. \
-    Jesus, esto es MUCHA armadura. Comienzas a sospechar de que, ni si quiera una armada tan organizada como la de Sol podria ser capaz de enfrentarse a esto. \
-    El revestimiento ablativo y la armadura compuesta harian sobrevivir esta armadura al mismisimo infierno de entrada y de regreso. \
-    Y ahora... ellos han de temerte."
+Jesus, esto es MUCHA armadura. Comienzas a sospechar de que, ni si quiera una armada tan organizada como la de Sol podria ser capaz de enfrentarse a esto. \
+El revestimiento ablativo y la armadura compuesta harian sobrevivir esta armadura al mismisimo infierno de entrada y de regreso. \
+Y ahora... ellos han de temerte."
 	suit_type = "doom hardsuit"
 	icon_state = "doom_rig"
 	armor = list(
