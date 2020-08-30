@@ -19,7 +19,6 @@
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 	)
-
 	chest_type = /obj/item/clothing/suit/space/rig/doom
 	helm_type = /obj/item/clothing/head/helmet/space/rig/doom
 	boot_type = /obj/item/clothing/shoes/magboots/rig/doom
@@ -61,4 +60,3 @@
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/maneuvering_jets
 	)
-
