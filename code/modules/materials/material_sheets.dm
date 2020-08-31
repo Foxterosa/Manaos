@@ -513,6 +513,12 @@
 	name = "borosilicate glass"
 	default_type = MATERIAL_PHORON_GLASS
 
+/obj/item/stack/material/glass/phoronglass/ten
+	amount = 10
+
+/obj/item/stack/material/glass/phoronglass/fifty
+	amount = 50
+
 /obj/item/stack/material/glass/phoronrglass
 	name = "reinforced borosilicate glass"
 	default_type = MATERIAL_PHORON_GLASS
