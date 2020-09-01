@@ -164,6 +164,8 @@
 
 /datum/gear/clothing/thawb
 
+/datum/gear/clothing/turtleneck_color
+
 /datum/gear/clothing/sherwani
 
 /datum/gear/clothing/qipao
