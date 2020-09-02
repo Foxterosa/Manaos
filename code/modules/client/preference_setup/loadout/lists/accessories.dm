@@ -125,8 +125,3 @@
 	path = /obj/item/clothing/accessory/bracelet
 	cost = 1
 	flags = GEAR_HAS_COLOR_SELECTION
-
-/datum/gear/clothing/turtleneck_color
-	display_name = "Turtleneck, coloreable"
-	path = /obj/item/clothing/accessory/turtleneck_color
-	flags = GEAR_HAS_COLOR_SELECTION
