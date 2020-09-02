@@ -818,3 +818,24 @@
 	icon_state = "redsuit_f"
 	worn_state = "redsuit_f"
 	item_state = "redsuit_f"
+
+/obj/item/clothing/under/redsuitskirt
+	desc = "Un traje rojo de negocios con una falda, bastante elegante."
+	name = "traje rojo con falda"
+	icon_state = "redsuitskirt_f"
+	worn_state = "redsuitskirt_f"
+	item_state = "redsuitskirt_f"
+
+/obj/item/clothing/under/camoshirt
+	desc = "Una camisa militar con unos pantalones de camuflaje militar en ella. Talves no la mejor opcion para el espacio."
+	name = "traje militar"
+	icon_state = "camo_s"
+	worn_state = "camo_s"
+	item_state = "camo_s"
+
+/obj/item/clothing/under/camosuit
+	desc = "Un traje con camuflaje militar en ella. Talves no la mejor opcion para el espacio."
+	name = "traje militar"
+	icon_state = "camogreen_s"
+	worn_state = "camogreen_s"
+	item_state = "camogreen_s"
