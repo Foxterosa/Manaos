@@ -218,3 +218,18 @@
 	display_name = "Traje rojo elegante, femenino"
 	path = /obj/item/clothing/under/redsuit
 	cost = 2
+
+/datum/gear/uniform/redsuitskirt
+	display_name = "Traje rojo elegante con falda"
+	path = /obj/item/clothing/under/redsuitskirt
+	cost = 2
+
+/datum/gear/uniform/camosuit
+	display_name = "Traje camuflado de Marine"
+	path = /obj/item/clothing/under/camosuit
+	cost = 2
+
+/datum/gear/uniform/camoshirt
+	display_name = "Traje camuflado de Marin, con remera"
+	path = /obj/item/clothing/under/camoshirt
+	cost = 2

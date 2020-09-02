@@ -69,3 +69,11 @@
 	allowed_roles = list(/datum/job/liaison, /datum/job/bodyguard)
 
 /datum/gear/uniform/redsuit
+
+/datum/gear/uniform/redsuitskirt
+
+/datum/gear/uniform/camosuit
+	allowed_roles = list(/datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt)
+
+/datum/gear/uniform/camoshirt
+	allowed_roles = list(/datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt)
