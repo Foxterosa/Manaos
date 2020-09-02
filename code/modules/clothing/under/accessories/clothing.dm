@@ -347,11 +347,3 @@
 
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
-
-/obj/item/clothing/accessory/turtleneck_color
-	name = "turtleneck"
-	desc = "Un suéter de aspecto cálido. Y es de tu color preferido!"
-	icon_state = "turtleneck_color"
-
-	/obj/item/clothing/accessory/turtleneck_color/modified
-	item_flags = ITEM_FLAG_PREMODIFIED
