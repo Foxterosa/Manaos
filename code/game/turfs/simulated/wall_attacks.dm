@@ -223,7 +223,7 @@
 
 		if(dismantle_verb && !dismantling)
 
-		dismantling = TRUE
+			dismantling = TRUE
 			to_chat(user, "<span class='notice'>You begin [dismantle_verb] through the outer plating.</span>")
 			if(dismantle_sound)
 				playsound(src, dismantle_sound, 100, 1)
