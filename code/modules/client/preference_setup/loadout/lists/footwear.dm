@@ -71,3 +71,13 @@
 	display_name = "zapatos de taco alto, coloreables"
 	path = /obj/item/clothing/shoes/heels
 	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/shoes/bootscolor
+	display_name = "Botas, coloreables"
+	path = /obj/item/clothing/shoes/dutybootscolor
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/shoes/laceupcolor
+	display_name = "Zapatos de encaje, coloreables"
+	path = /obj/item/clothing/shoes/laceupcolor
+	flags = GEAR_HAS_COLOR_SELECTION

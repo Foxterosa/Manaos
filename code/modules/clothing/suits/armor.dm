@@ -80,11 +80,11 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
-		bullet = ARMOR_BALLISTIC_SMALL,
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_MINOR
+		bomb = ARMOR_BOMB_PADDED
 		)
 
 /obj/item/clothing/suit/armor/bs_coat
@@ -94,11 +94,11 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
-		bullet = ARMOR_BALLISTIC_SMALL,
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_MINOR
+		bomb = ARMOR_BOMB_PADDED
 		)
 
 

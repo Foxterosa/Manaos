@@ -24,3 +24,8 @@
 /datum/gear/shoes/heels
 
 /datum/gear/shoes/boots
+
+/datum/gear/shoes/bootscolor
+
+/datum/gear/shoes/laceupcolor
+

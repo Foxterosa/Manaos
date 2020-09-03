@@ -17,27 +17,27 @@
 
 //Fifth Deck (Z-0)
 /area/hallway/primary/fifthdeck/fore
-	name = "\improper Cubierta 5 - Pasillo delantero"
+	name = "\improper Cubierta 5 - Pasillo oeste"
 	icon_state = "hallF"
 
 /area/hallway/primary/fifthdeck/aft
-	name = "\improper Cubierta 5 - Pasillo de popa"
+	name = "\improper Cubierta 5 - Pasillo este"
 	icon_state = "hallA"
 
 /area/maintenance/fifthdeck
-	name = "Cubierta 5 -  Mantenimiento"
+	name = "Cubierta 5 - Mantenimiento"
 	icon_state = "maintcentral"
 
 /area/maintenance/fifthdeck/aftport
-	name = "Cubierta 5 - Pasillo de popa - Mantenimiento"
+	name = "Cubierta 5 - Mantenimiento sureste"
 	icon_state = "apmaint"
 
 /area/maintenance/fifthdeck/aftstarboard
-	name = "Cubierta 5 - Popa a estribor - Mantenimiento"
+	name = "Cubierta 5 - Mantenimiento norte"
 	icon_state = "asmaint"
 
 /area/maintenance/fifthdeck/fore
-	name = "Cubierta 5 - Delantero - Mantenimiento"
+	name = "Cubierta 5 - Mantenimiento suroeste"
 	icon_state = "fmaint"
 
 /area/maintenance/substation/fifthdeck
@@ -45,7 +45,7 @@
 
 //Fourth Deck (Z-1)
 /area/hallway/primary/fourthdeck/fore
-	name = "\improper Cubierta 4 - Pasillo delantero"
+	name = "\improper Cubierta 4 - Pasillo oeste"
 	icon_state = "hallF"
 
 /area/hallway/primary/fourthdeck/center
@@ -53,7 +53,7 @@
 	icon_state = "hallC3"
 
 /area/hallway/primary/fourthdeck/aft
-	name = "\improper Cubierta 4 - Pasillo de popa"
+	name = "\improper Cubierta 4 - Pasillo este"
 	icon_state = "hallA"
 
 /area/maintenance/fourthdeck
@@ -61,23 +61,23 @@
 	icon_state = "maintcentral"
 
 /area/maintenance/fourthdeck/aft
-	name = "Cubierta 4 - Popa Mantenimiento"
+	name = "Cubierta 4 - Mantenimiento este"
 	icon_state = "amaint"
 
 /area/maintenance/fourthdeck/foreport
-	name = "Cubierta 4 - Puerto delantero - Mantenimiento"
+	name = "Cubierta 4 - Mantenimiento sureste"
 	icon_state = "fpmaint"
 
 /area/maintenance/fourthdeck/forestarboard
-	name = "Cubierta 4 - Estribor delantero - Mantenimiento"
+	name = "Cubierta 4 - Mantenimiento noreste"
 	icon_state = "fsmaint"
 
 /area/maintenance/fourthdeck/starboard
-	name = "Cubierta 4 - Estribor - Mantenimiento"
+	name = "Cubierta 4 - Mantenimiento norte"
 	icon_state = "smaint"
 
 /area/maintenance/fourthdeck/port
-	name = "Cubierta 4 - Puerto - Mantenimiento"
+	name = "Cubierta 4 - Mantenimiento sur"
 	icon_state = "pmaint"
 
 /area/teleporter/fourthdeck
@@ -92,7 +92,7 @@
 
 //Third Deck (Z-2)
 /area/hallway/primary/thirddeck/fore
-	name = "\improper Cubierta 3 - Pasillo delantero"
+	name = "\improper Cubierta 3 - Pasillo oeste"
 	icon_state = "hallF"
 
 /area/hallway/primary/thirddeck/center
@@ -100,7 +100,7 @@
 	icon_state = "hallC3"
 
 /area/hallway/primary/thirddeck/aft
-	name = "\improper Cubierta 3 - Pasillo de popa"
+	name = "\improper Cubierta 3 - Pasillo este"
 	icon_state = "hallA"
 
 /area/maintenance/thirddeck
@@ -108,27 +108,27 @@
 	icon_state = "maintcentral"
 
 /area/maintenance/thirddeck/foreport
-	name = "Cubierta 3 - Puerto delantero - Mantenimiento"
+	name = "Cubierta 3 - Mantenimiento suroeste"
 	icon_state = "fpmaint"
 
 /area/maintenance/thirddeck/forestarboard
-	name = "Cubierta 3 - Estribor delantero - Mantenimiento"
+	name = "Cubierta 3 - Mantenimiento noroeste"
 	icon_state = "fsmaint"
 
 /area/maintenance/thirddeck/starboard
-	name = "Cubierta 3 - Estribor - Mantenimiento"
+	name = "Cubierta 3 - Mantenimiento norte"
 	icon_state = "smaint"
 
 /area/maintenance/thirddeck/port
-	name = "Cubierta 3 - Puerto - Mantenimiento"
+	name = "Cubierta 3 - Puerto - Mantenimiento sur"
 	icon_state = "pmaint"
 
 /area/maintenance/thirddeck/aftstarboard
-	name = "Cubierta  3 - Popa de estribor - Mantenimiento"
+	name = "Cubierta  3 - Mantenimiento noreste"
 	icon_state = "asmaint"
 
 /area/maintenance/thirddeck/aftport
-	name = "Cubierta 3 - Puerto de popa - Mantenimiento"
+	name = "Cubierta 3 - Mantenimiento - sureste"
 	icon_state = "apmaint"
 
 /area/teleporter/thirddeck
@@ -145,7 +145,7 @@
 	name = "\improper Cubierta 3 - Cuarto seguro"
 
 /area/crew_quarters/garden
-	name = "\improper Jardin"
+	name = "\improper Cubierta 5 - Jardin"
 
 //Second Deck (Z-3)
 /area/maintenance/seconddeck
@@ -153,23 +153,23 @@
 	icon_state = "maintcentral"
 
 /area/maintenance/seconddeck/aftstarboard
-	name = "Cubierta 2 - Popa de estribor - Mantenimiento"
+	name = "Cubierta 2 - Mantenimiento noreste"
 	icon_state = "asmaint"
 
 /area/maintenance/seconddeck/aftport
-	name = "Cubierta 2 - Puerto de popa - Mantenimiento"
+	name = "Cubierta 2 - Mantenimiento sureste"
 	icon_state = "apmaint"
 
 /area/maintenance/seconddeck/foreport
-	name = "Cubierta 2 - Pasillo de popa - Mantenimiento"
+	name = "Cubierta 2 - Mantenimiento suroeste"
 	icon_state = "fpmaint"
 
 /area/maintenance/seconddeck/forestarboard
-	name = "Cubierta 2 - Pasillo de estribor - Mantenimiento"
+	name = "Cubierta 2 - Mantenimiento noroeste"
 	icon_state = "fsmaint"
 
 /area/maintenance/seconddeck/central
-	name = "Cubierta 2 - Centro - Mantenimiento"
+	name = "Cubierta 2 - Mantenimiento norte"
 	icon_state = "maintcentral"
 
 /area/hallway/primary/seconddeck
@@ -184,7 +184,7 @@
 	icon_state = "hallC2_e"
 
 /area/hallway/primary/seconddeck/fore
-	name = "Cubierta 2 - Pasillo delantero"
+	name = "Cubierta 2 - Pasillo oeste"
 	icon_state = "hallF2"
 
 /area/teleporter/seconddeck
@@ -200,27 +200,27 @@
 	icon_state = "maintcentral"
 
 /area/maintenance/firstdeck/aftstarboard
-	name = "Cubierta 1 - Popa de estribor - Mantenimiento"
+	name = "Cubierta 1 - Mantenimiento noreste"
 	icon_state = "asmaint"
 
 /area/maintenance/firstdeck/aftport
-	name = "Cubierta 1 - Puerto de popa - Mantenimiento"
+	name = "Cubierta 1 - Mantenimiento sureste"
 	icon_state = "apmaint"
 
 /area/maintenance/firstdeck/forestarboard
-	name = "Cubierta 1 - Estribor delantero - Mantenimiento"
+	name = "Cubierta 1 - Mantenimiento noroeste"
 	icon_state = "fsmaint"
 
 /area/maintenance/firstdeck/foreport
-	name = "Cubierta 1 - Puerto delantero Mantenimiento"
+	name = "Cubierta 1 - Mantenimiento suroeste"
 	icon_state = "fpmaint"
 
 /area/maintenance/firstdeck/centralstarboard
-	name = "Cubierta 1 - Estribor - Mantenimiento"
+	name = "Cubierta 1 - Mantenimiento norte"
 	icon_state = "smaint"
 
 /area/maintenance/firstdeck/centralport
-	name = "Cubierta 1 - Port - Mantenimiento"
+	name = "Cubierta 1 - Mantenimiento sur"
 	icon_state = "pmaint"
 
 /area/teleporter/firstdeck
@@ -228,7 +228,7 @@
 	icon_state = "teleporter"
 
 /area/hallway/primary/firstdeck/fore
-	name = "\improper Cubierta 1 - Pasillo delantero"
+	name = "\improper Cubierta 1 - Pasillo oeste"
 	icon_state = "hallF"
 
 /area/hallway/primary/firstdeck/center
@@ -236,7 +236,7 @@
 	icon_state = "hallC1"
 
 /area/hallway/primary/firstdeck/aft
-	name = "\improper Cubierta 1 - Pasillo de popa"
+	name = "\improper Cubierta 1 - Pasillo este"
 	icon_state = "hallA"
 
 /area/crew_quarters/safe_room/firstdeck
@@ -251,27 +251,27 @@
 	icon_state = "maintcentral"
 
 /area/maintenance/bridge/aftstarboard
-	name = "Puente - Popa de estribor - Mantenimiento"
+	name = "Puente - Mantenimiento noreste"
 	icon_state = "asmaint"
 
 /area/maintenance/bridge/aftport
-	name = "Puente - Puerto de popa - Mantenimiento"
+	name = "Puente - Mantenimiento sureste"
 	icon_state = "apmaint"
 
 /area/maintenance/bridge/forestarboard
-	name = "Puente - Estribor delantero - Mantenimiento"
+	name = "Puente - Mantenimiento suroeste"
 	icon_state = "fsmaint"
 
 /area/maintenance/bridge/foreport
-	name = "Puente - Puerto delantero - Mantenimiento"
+	name = "Puente - Mantenimiento noroeste"
 	icon_state = "fpmaint"
 
 /area/hallway/primary/bridge/fore
-	name = "\improper Puente - Pasillo delantero"
+	name = "\improper Puente - oeste"
 	icon_state = "hallF"
 
 /area/hallway/primary/bridge/aft
-	name = "\improper Puente - Pasillo de popa"
+	name = "\improper Puente - Pasillo este"
 	icon_state = "hallA"
 
 /area/maintenance/substation/bridge // First Deck (Z-4)
@@ -532,7 +532,7 @@
 	base_turf = /turf/simulated/open
 
 /area/turbolift/robotics_lift
-	name = "\improper Elevador de robótica"
+	name = "\improper Robotica - Elevador"
 	icon_state = "shuttle3"
 	base_turf = /turf/simulated/open
 
@@ -546,67 +546,62 @@
 
 // Elevator areas.
 /area/turbolift/torch_top
-	name = "Elevador - Puente"
+	name = "Puente - Elevador"
 	lift_floor_label = "Bridge"
 	lift_floor_name = "Bridge"
 	lift_announce_str = "Arriving at Command Deck: Bridge. Meeting Room. Command Offices. AI Core. Landing Area. Auxiliary EVA."
 
 /area/turbolift/torch_fourth
-	name = "Elevador - Cubierta 1"
+	name = "Cubierta 1 - Elevador"
 	lift_floor_label = "Deck 1"
 	lift_floor_name = "Operations Deck"
 	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Research Wing. Auxiliary Cryogenic Storage. Emergency Armory."
 
 /area/turbolift/torch_third
-	name = "Elevador - Cubierta 2"
+	name = "Cubierta 2 - Elevador"
 	lift_floor_label = "Deck 2"
 	lift_floor_name = "Maintenance Deck"
 	lift_announce_str = "Arriving at Maintenance Deck: Engineering. Atmospherics. Sanitation. Storage."
 
 /area/turbolift/torch_second
-	name = "Elevador - Cubierta 3"
+	name = "Cubierta 3 - Elevador"
 	lift_floor_label = "Deck 3"
 	lift_floor_name = "Habitation Deck"
 	lift_announce_str = "Arriving at Habitation Deck: EVA. Telecommunications. Mess Hall. Officer's Mess. Lounge. Diplomatic Quarters. Hydroponics. Cryogenic Storage. Holodeck. Gym."
 
 /area/turbolift/torch_first
-	name = "Elevador - Cubierta 4"
+	name = "Cubierta 4 - Elevador"
 	lift_floor_label = "Deck 4"
 	lift_floor_name = "Supply Deck"
 	lift_announce_str = "Arriving at Supply Deck: Shuttle Docks. Pathfinder's Office. Cargo Storage. Supply Office. Laundry."
 
 /area/turbolift/torch_ground
-	name = "Elevador - Cubierta 5"
+	name = "Cubierta 5 - Elevador"
 	lift_floor_label = "Deck 5"
 	lift_floor_name = "Hangar Deck"
 	lift_announce_str = "Arriving at Hangar Deck: Main Hangar. Supply Warehouse. Expedition Preparation. Mineral Processing."
 	base_turf = /turf/simulated/floor
 
 // Command
-/area/command/conference
-	name = "Sala de reuniones"
-	icon_state = "head_quarters"
-	sound_env = MEDIUM_SOFTFLOOR
-
 /area/command/captainmess
-	name = "Comedor de oficiales"
+	name = "Cubierta 4 - Comedor de oficiales"
 	icon_state = "bar"
 	sound_env = MEDIUM_SOFTFLOOR
 
 /area/command/pathfinder
-	name = "\improper Oficina del Pathfinder"
+	name = "\improper Cubierta 4 - Oficina del Pathfinder"
 	icon_state = "head_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_pathfinder)
 
 /area/command/pilot
-	name = "\improper Sala del piloto"
+	name = "\improper Cubierta 5 - Sala del piloto"
 	icon_state = "head_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_pilot)
 
 /area/command/armoury
-	name = "\improper Armeria de emergencia"
+	name = "\improper Cubierta 1 - Armeria de emergencia"
 	icon_state = "Warden"
 	req_access = list(list(access_bridge, access_emergency_armory))
 
@@ -629,58 +624,58 @@
 
 /area/crew_quarters/heads/cobed
 	icon_state = "heads_cap"
-	name = "\improper Comando - Cuartos del OC"
+	name = "\improper Puente - Cuartos del OC"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_captain)
 
 /area/crew_quarters/heads/office/co
 	icon_state = "heads_cap"
-	name = "\improper Comando - Oficina del OC"
+	name = "\improper Puente - Oficina del OC"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_captain)
 
 /area/crew_quarters/heads/office/xo
 	icon_state = "heads_hop"
-	name = "\improper Comando - Oficina del OE"
+	name = "\improper Puente - Oficina del OE"
 	req_access = list(access_hop)
 
 /area/crew_quarters/heads/office/rd
 	icon_state = "heads_rd"
-	name = "\improper Comando - Oficina del OCJ"
+	name = "\improper Puente - Oficina del OCJ"
 	req_access = list(access_rd)
 
 /area/crew_quarters/heads/office/cmo
 	icon_state = "heads_cmo"
-	name = "\improper Comando - Oficina del OMJ"
+	name = "\improper Puente - Oficina del OMJ"
 	req_access = list(access_cmo)
 
 /area/crew_quarters/heads/office/ce
 	icon_state = "heads_ce"
-	name = "\improper Comando - Oficina del OIJ"
+	name = "\improper Puente - Oficina del OIJ"
 	req_access = list(access_ce)
 
 /area/crew_quarters/heads/office/cos
 	icon_state = "heads_hos"
-	name = "\improper Comando - Oficina del OMSJ"
+	name = "\improper Puente - Oficina del OMSJ"
 	req_access = list(access_hos)
 
 /area/crew_quarters/heads/office/representative
 	icon_state = "heads_cl"
-	name = "\improper Comando - Oficina del Representante de Sol Gov"
+	name = "\improper Puente - Oficina del Representante de Sol Gov"
 	req_access = list(access_captain)
 
 /area/crew_quarters/heads/office/magistrado
 	icon_state = "heads_sr"
-	name = "\improper Comando - Oficina del Magistrado"
+	name = "\improper Puente - Oficina del Magistrado"
 	req_access = list(access_magistrado)
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
-	name = "\improper Comando - Oficina del SAA de Flota"
+	name = "\improper Puente - Oficina del SAA de Flota"
 	req_access = list(access_senadv)
 
 /area/crew_quarters/heads/office/sea/marine
-	name = "\improper Comando - Oficina del SAA de Marina"
+	name = "\improper Puente - Oficina del SAA de Marina"
 
 // Engineering
 
@@ -712,7 +707,7 @@
 	req_access = list(access_engine_equip)
 
 /area/engineering/hardstorage
-	name = "\improper "
+	name = "\improper Ingenieria - Almacén"
 	icon_state = "engineering_storage"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_engine_equip)
@@ -727,34 +722,34 @@
 	icon_state = "construction"
 
 /area/vacant/armory
-	name = "\improper Armería auxiliar"
+	name = "\improper Cubierta 2 - Mantenimiento - Armería auxiliar"
 	icon_state = "Tactical"
 
 /area/vacant/mess
-	name = "\improper Comedor antiguo"
+	name = "\improper Cubierta 3 - Mantenimiento - Comedor antiguo"
 	icon_state = "bar"
 
 /area/vacant/chapel
-	name = "\improper Capilla inutilizada"
+	name = "\improper Cubierta 2 - Mantenimiento - Capilla inutilizada"
 	icon_state = "chapel"
 
 /area/vacant/prototype
 	req_access = list(access_engine)
 
 /area/vacant/prototype/control
-	name = "\improper Sala de control del reactor de fusión prototipo"
+	name = "\improper Cubierta 2 - Sala de control del reactor de fusión prototipo"
 	icon_state = "engine_monitoring"
 
 /area/vacant/prototype/engine
-	name = "\improper Cámara de reactor de fusión prototipo"
+	name = "\improper Cubierta 2 - Cámara de reactor de fusión prototipo"
 	icon_state = "toxstorage"
 
 /area/vacant/cargo
-	name = "\improper Oficina de requisiciones"
+	name = "\improper Cubierta 2 - Mantenimiento - Oficina de requisiciones"
 	icon_state = "quart"
 
 /area/vacant/bar
-	name = "\improper Bar escondido"
+	name = "\improper Cubierta 5 - Mantenimiento - Bar escondido"
 	icon_state = "bar"
 
 // Storage
@@ -762,11 +757,11 @@
 	req_access = list(access_cargo)
 
 /area/storage/auxillary/port
-	name = "Puerto de almacenamiento auxiliar "
+	name = "Cubierta 4 - Almacén auxiliar suroeste"
 	icon_state = "auxstorage"
 
 /area/storage/auxillary/starboard
-	name = "Almacén auxiliar de estribor"
+	name = "Cubierta 4 - Almacén auxiliar noroeste"
 	icon_state = "auxstorage"
 
 /area/storage/cargo
@@ -776,7 +771,7 @@
 	req_access = list(access_cargo)
 
 /area/storage/expedition
-	name = "Almacén de expedición auxiliar"
+	name = "Cubierta 2 - Almacén de expedición auxiliar"
 	icon_state = "storage"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(list(access_mining, access_xenoarch))
@@ -820,32 +815,32 @@
 	req_access = list(access_qm)
 
 /area/quartermaster/expedition
-	name = "\improper Preparación de la expedición"
+	name = "\improper Mineria - Preparación"
 	icon_state = "mining"
 	req_access = list(list(access_mining, access_nanotrasen, access_xenoarch))
 
 /area/quartermaster/expedition/eva
-	name = "\improper AEV de la expedición"
+	name = "\improper Mineria - Almacén AEV"
 	icon_state = "mining"
 	req_access = list(list(access_mining, access_xenoarch))
 
 /area/quartermaster/expedition/storage
-	name = "\improper Almacenamiento de expedición del hangar"
+	name = "\improper Hangar - Almacenamiento de expedición"
 	icon_state = "mining"
 	req_access = list(list(access_mining, access_explorer, access_xenoarch))
 
 /area/quartermaster/expedition/atmos
-	name = "\improper Almacenamiento atmosférico del hangar"
+	name = "\improper Hangar - Almacenamiento atmosférico"
 	icon_state = "mining"
 	req_access = list(list(access_mining, access_explorer, access_xenoarch))
 
 /area/quartermaster/exploration
-	name = "\improper Equipo de exploración"
+	name = "\improper Exploracion - Preparación"
 	icon_state = "exploration"
 	req_access = list(list(access_explorer, access_pathfinder, access_pilot))
 
 /area/quartermaster/shuttlefuel
-	name = "\improper Bahia de combustible de transbordadores"
+	name = "\improper Hangar - Bahia de combustible de transbordadores"
 	icon_state = "toxstorage"
 	req_access = list(list(access_hangar, access_cargo))
 
@@ -856,11 +851,11 @@
 	req_access = list(access_hangar)
 
 /area/quartermaster/hangar/top
-	name = "\improper Pasarela superior del hangar"
+	name = "\improper Cubierta 4 - Pasarela superior del hangar"
 	req_access = list()
 
 /area/quartermaster/flightcontrol
-	name = "\improper Torre de control de vuelo"
+	name = "\improper Cubierta 4 - Torre de control de vuelo"
 	icon_state = "hangar"
 	req_access = list(access_hangar)
 
@@ -889,18 +884,18 @@
 
 // Crew areas
 /area/crew_quarters/bar
-	name = "\improper Bar"
+	name = "\improper Cubierta 3 -Bar"
 	icon_state = "bar"
 	sound_env = LARGE_SOFTFLOOR
 	req_access = list(access_bar)
 
 // Crew areas
 /area/crew_quarters/bar/storage
-	name = "\improper Almacen de servicio"
+	name = "\improper Cubierta 3 - Almacen de servicio"
 	req_access = list(access_bar, access_kitchen)
 
 /area/crew_quarters/cryolocker
-	name = "\improper Armario de almacenamiento criogénico"
+	name = "\improper Cubierta 3 Armario de almacenamiento criogénico"
 	icon_state = "locker"
 
 /area/crew_quarters/head
@@ -912,19 +907,19 @@
 	name = "\improper Cubierta 1 - Cabecera"
 
 /area/crew_quarters/head/sauna
-	name = "\improper Sauna"
+	name = "\improper Cubierta 3 - Sauna"
 	icon_state = "sauna"
 
 /area/crew_quarters/gym
-	name = "\improper Gimnasio"
+	name = "\improper Cubierta 3 - Gimnasio"
 	icon_state = "fitness"
 
 /area/crew_quarters/mess
-	name = "\improper Comedor"
+	name = "\improper Cubierta 3 - Comedor"
 	icon_state = "cafeteria"
 
 /area/crew_quarters/galley
-	name = "\improper Galeria"
+	name = "\improper Cubierta 3 - Cocina"
 	icon_state = "kitchen"
 	req_access = list(access_kitchen)
 
@@ -934,12 +929,12 @@
 	req_access = list(access_kitchen)
 
 /area/crew_quarters/commissary
-	name = "\improper Comisaria"
+	name = "\improper Cubierta 4 - Comisaria"
 	icon_state = "crew_quarters"
 	req_access = list(access_commissary)
 
 /area/crew_quarters/lounge
-	name = "\improper Salón"
+	name = "\improper Cubierta 4 - Salón"
 	icon_state = "crew_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
 
@@ -950,16 +945,16 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/crew_quarters/adherent
-	name = "\improper Mantenimiento de adherentes"
+	name = "\improper Cubbierta 4 - Mantenimiento de adherentes"
 	icon_state = "robotics"
 
 /area/holocontrol
-	name = "\improper Control del Holodeck"
+	name = "\improper Cubierta 3 - Control del Holodeck"
 	icon_state = "Holodeck"
 
 // Tcomms
 /area/tcommsat/storage
-	name = "\improper Almacenamiento de telecomunicaciones"
+	name = "\improper Cubierta 3 - Almacenamiento de telecomunicaciones"
 	icon_state = "tcomsatstore"
 
 // Security
@@ -970,7 +965,7 @@
 	req_access = list(access_armory)
 
 /area/security/storage
-	name = "\improper Seguridad - Almacén de equipamiento"
+	name = "\improper Seguridad - Almacén"
 	icon_state = "security"
 	req_access = list(access_brig)
 
@@ -980,13 +975,13 @@
 	req_access = list(access_armory)
 
 /area/security/detectives_office
-	name = "\improper Seguridad - Oficina de investifaciones"
+	name = "\improper Seguridad - Oficina de investigaciones"
 	icon_state = "detective"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_forensics_lockers)
 
 /area/security/locker
-	name = "\improper Seguridad - Sala de armarios"
+	name = "\improper Seguridad - Sala de preparación"
 	icon_state = "security"
 
 /area/security/evidence
@@ -998,11 +993,11 @@
 	icon_state = "security"
 
 /area/security/questioning
-	name = "\improper Security - Sala de entrevistas"
+	name = "\improper Seguridad - Sala de entrevistas"
 	icon_state = "security"
 
 /area/security/wing
-	name = "\improper Ala de seguridad"
+	name = "\improper Seguridad - Pasillo"
 	icon_state = "security"
 
 /area/security/bridgecheck
@@ -1021,6 +1016,14 @@
 	name = "\improper Cubierta 4 - Checkpoint de seguridad"
 	icon_state = "checkpoint"
 
+/area/security/lounge
+	name = "\improper Seguridad - Sala de descanso"
+	icon_state = "security"
+
+/area/security/shooting
+	name = "\improper Seguridad - Campo de tiro"
+	icon_state = "security"
+
 /area/security/brig/perma
 	name = "\improper Celda permanente"
 	icon_state = "brig"
@@ -1028,7 +1031,7 @@
 	req_access = list(access_brig)
 
 /area/security/brig/psionic
-	name = "\improper Celda de psiónicos"
+	name = "\improper Celda para psiónicos"
 	icon_state = "misclab"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
@@ -1139,7 +1142,7 @@
 	icon_state = "panelsS"
 
 /area/aux_eva
-	name = "\improper Comando - Almacén AEV"
+	name = "\improper Puente - Almacén AEV"
 	icon_state = "eva"
 	req_access = list(access_eva)
 
@@ -1160,12 +1163,12 @@
 	name = "\improper Cubierta 3 - Góndola de estribor"
 
 /area/engineering/fuelbay
-	name = "\improper Bahia de combustible"
+	name = "\improper Cubierta 2 - Bahia de combustible"
 	icon_state = "engineering"
 	req_access = list(access_construction)
 
 /area/engineering/wastetank
-	name = "\improper Tanque de residuos"
+	name = "\improper Cubierta 2 - Tanque de residuos"
 	icon_state = "engineering"
 	req_access = list(access_atmospherics)
 
@@ -1204,7 +1207,7 @@
 	req_access = list(access_engine_equip)
 
 /area/maintenance/exterior
-	name = "\improper Refuerzos exteriores"
+	name = "\improper Cubierta 2 - Refuerzos exteriores"
 	icon_state = "maint_exterior"
 	area_flags = AREA_FLAG_EXTERNAL
 	has_gravity = FALSE
@@ -1212,7 +1215,7 @@
 	req_access = list(access_external_airlocks, access_maint_tunnels)
 
 /area/crew_quarters_boh/cabin_main/officerbunk
-	name = "\improper Bridge - Cuartos de oficiales"
+	name = "\improper Puente - Cuartos de oficiales"
 	icon_state = "Sleep"
 	req_access = list(access_bridge)
 	sound_env = SMALL_SOFTFLOOR
@@ -1243,13 +1246,13 @@
 
 // Solars
 /area/maintenance/auxsolarport
-	name = "Mantenimiento Solar - Puerto"
+	name = "Mantenimiento Solares - Puerto"
 	icon_state = "SolarcontrolP"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_engine_equip, access_maint_tunnels)
 
 /area/maintenance/auxsolarstarboard
-	name = "Mantenimiento Solar - Estribor"
+	name = "Mantenimiento Solares - Estribor"
 	icon_state = "SolarcontrolS"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_engine_equip, access_maint_tunnels)
@@ -1263,17 +1266,17 @@
 	req_access = list(access_engine_equip)
 
 /area/solar/auxstarboard
-	name = "\improper Matriz solar de proa estribor"
+	name = "\improper Solares - Matriz solar de proa estribor"
 	icon_state = "panelsA"
 
 /area/solar/port
-	name = "\improper Matriz solar auxiliar del puerto"
+	name = "\improper Solares - Matriz solar auxiliar del puerto"
 	icon_state = "panelsP"
 
 // Maintenance
 
 /area/maintenance/disposal
-	name = "Deposito de basura"
+	name = "DCubierta 2 - Mantenimiento - eposito de basura"
 	icon_state = "disposal"
 
 /area/maintenance/incinerator
@@ -1282,26 +1285,25 @@
 	req_access = list(list(access_engine, access_medical, access_cargo))
 
 /area/maintenance/waterstore
-	name = "\improper Cisterna"
+	name = "\improper Cubierta 4 - Almacén de agua"
 	icon_state = "disposal"
 
 /area/maintenance/aux_med
-	name = "\improper Aux. Medical"
+	name = "\improper Cubierta 4 - Enfermeria auxiliar"
 	icon_state = "disposal"
 
 // Storage
-
 /area/storage/primary
-	name = "Primary Almacén de herramientas"
+	name = "Cubierta 4 - Almacén de herramientas primario"
 	icon_state = "primarystorage"
 
 /area/storage/tech
-	name = "Almacén técnico"
+	name = "Cubierta 2 - Almacén técnico"
 	icon_state = "storage"
 	req_access = list(access_tech_storage)
 
 /area/storage/tools
-	name = "Almacén de herramientas auxiliar"
+	name = "Cubierta 4 - Almacén de herramientas auxiliar"
 	icon_state = "auxstorage"
 
 // Holodecks
@@ -1562,16 +1564,16 @@
 	icon_state = "Sleep"
 
 /area/hydroponics
-	name = "\improper Botánica"
+	name = "\improper Cubierta 3 - Botánica"
 	icon_state = "hydro"
 
 /area/janitor
-	name = "\improper Conserjería"
+	name = "\improper Cubierta 2 - Conserjería"
 	icon_state = "janitor"
 	req_access = list(access_janitor)
 
 /area/janitor/aux
-	name = "\improper Armario auxiliar de conserjería"
+	name = "\improper Cubierta 4 - Armario de conserjería auxiliar"
 
 // Tcomm
 /area/tcommsat/
@@ -1579,11 +1581,11 @@
 	req_access = list(access_tcomsat)
 
 /area/tcommsat/chamber
-	name = "\improper Compartimento central de telecomunicaciones"
+	name = "\improper Cubierta 3 - Compartimento central de telecomunicaciones"
 	icon_state = "tcomsatcham"
 
 /area/tcommsat/computer
-	name = "\improper Sala de control de telecomunicaciones"
+	name = "\improper Cubierta 3 - Sala de control de telecomunicaciones"
 	icon_state = "tcomsatcomp"
 
 // AI
@@ -1592,7 +1594,7 @@
 	name = "Area de supervicación de la IA"
 
 /area/ai_monitored/storage/eva
-	name = "\improper Almacén AEV"
+	name = "\improper Cubierta 3 - Almacén AEV"
 	icon_state = "eva"
 	req_access = list(access_eva)
 
@@ -1603,7 +1605,7 @@
 	req_access = list(access_ai_upload)
 
 /area/turret_protected/ai_upload
-	name = "\improper AI Upload Chamber"
+	name = "\improper Cubierta 3 - Camara de subida de la IA"
 	icon_state = "ai_upload"
 	ambience = list('sound/ambience/ambimalf.ogg')
 	req_access = list(access_ai_upload)
@@ -1618,13 +1620,13 @@
 // Chapel
 
 /area/chapel/main
-	name = "\improper Capilla"
+	name = "\improper Cubierta 3 - Capilla"
 	icon_state = "chapel"
 	ambience = list('sound/ambience/ambicha1.ogg','sound/ambience/ambicha2.ogg','sound/ambience/ambicha3.ogg','sound/ambience/ambicha4.ogg','sound/music/traitor.ogg')
 	sound_env = LARGE_ENCLOSED
 
 /area/chapel/office
-	name = "\improper Oficina del capellán"
+	name = "\improper Cubierta 3 - Oficina del capellán"
 	req_access = list(access_chapel_office)
 	color = COLOR_GRAY80
 	sound_env = SMALL_SOFTFLOOR
@@ -1696,13 +1698,13 @@
 	req_access = list(access_infcom)
 
 /area/security/infantry/armory
-	name = "\improper Infanteria - Almacén"
+	name = "\improper Infanteria - Armeria"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
 	req_access = list(access_infcom)
 
 /area/defturrets
-	name = "\improper Control anti-embarque"
+	name = "\improper Cubierta 2 - Control anti-embarque"
 	icon_state = "security_sub"
 	base_turf = /turf/simulated/floor/reinforced/airless
 	requires_power = 1
@@ -1741,42 +1743,42 @@
 /////////
 
 /area/crew_quarters_boh/cabin_main
-	name = "\improper Cabina primaria"
+	name = "\improper Cubierta 3 - Pasillo de dormitorios"
 	icon_state = "crew_quarters"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	sound_env = MEDIUM_SOFTFLOOR
 
 /area/crew_quarters_boh/cabin_main/c1
-	name = "\improper Dormitorio 1"
+	name = "\improper Cubierta 3 - Dormitorio 1"
 	icon_state = "Sleep"
 
 /area/crew_quarters_boh/cabin_main/c2
-	name = "\improper Dormitorio 2"
+	name = "\improper Cubierta 3 - Dormitorio 2"
 	icon_state = "Sleep"
 
 /area/crew_quarters_boh/cabin_main/cambiador
-	name = "\improper Cambiador"
+	name = "\improper Cubierta 3 - Cambiador"
 	icon_state = "Sleep"
 
 /area/crew_quarters_boh/cabin_main/janitorial
-	name = "\improper Limpieza de cabina"
+	name = "\improper Cubierta 3 - Comedor de dormitorios"
 	icon_state = "janitor"
 
 //Psionic Advisor
 /area/crew_quarters/heads/office/psiadvisor
-	name = "\improper Commando - Asesor psiónico"
+	name = "\improper Puente - Asesor psiónico"
 	icon_state = "heads"
 	req_access = list(access_psiadvisor)
 
 //Lawyer Office
 /area/crew_quarters/heads/office/lawyer_office
-	name = "\improper Oficina de abogados"
+	name = "\improper Cubierta 3 - Oficina de abogados"
 	icon_state = "heads"
 	req_access = list(access_lawyer)
 
 /area/crew_quarters/courtroom
-	name = "\improper Corte"
+	name = "\improper Cubierta 1 - Corte"
 
 /area/crew_quarters/courtroom_private
-	name = "\improper Sala de audiencias privada"
+	name = "\improper Cubierta 1 - Sala de audiencias privada"
 	req_access = list(access_lawyer)

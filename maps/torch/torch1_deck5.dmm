@@ -1650,9 +1650,6 @@
 	dir = 1
 	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/launcher/grenade,
-/obj/item/weapon/storage/box/fragshells,
-/obj/item/weapon/storage/box/fragshells,
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
@@ -1662,6 +1659,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/weapon/storage/box/frags,
 /turf/simulated/floor/tiled/dark,
 /area/security/infantry/armory)
 "cU" = (
@@ -3336,7 +3334,7 @@
 /obj/random/illegaltwo,
 /obj/item/clothing/under/carp,
 /turf/simulated/floor/plating,
-/area/security/infantry/armory)
+/area/maintenance/fifthdeck/aftstarboard)
 "fD" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/blue{
 	icon_state = "map";
@@ -3442,7 +3440,7 @@
 	},
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
-/area/security/infantry/armory)
+/area/maintenance/fifthdeck/aftstarboard)
 "fP" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	controlled = 0;
@@ -12765,6 +12763,7 @@
 /obj/item/device/multitool,
 /obj/item/weapon/storage/belt/utility/full,
 /obj/machinery/light,
+/obj/item/clothing/gloves/insulated,
 /turf/simulated/floor/tiled/dark,
 /area/security/infantry/gear)
 "uV" = (
@@ -13485,7 +13484,7 @@
 /obj/structure/catwalk,
 /obj/machinery/vending/sovietsoda,
 /turf/simulated/floor/plating,
-/area/security/infantry/com)
+/area/maintenance/fifthdeck/aftstarboard)
 "xu" = (
 /obj/machinery/floodlight,
 /obj/structure/handrai{
@@ -14719,7 +14718,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/security{
-	id_tag = "infprepmain";
+	id_tag = "";
 	name = "Armeria"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
@@ -16334,7 +16333,7 @@
 /obj/random/single/playing_cards,
 /obj/random/closet,
 /turf/simulated/floor/plating,
-/area/security/infantry/armory)
+/area/maintenance/fifthdeck/aftstarboard)
 "IA" = (
 /obj/machinery/lapvend,
 /turf/simulated/floor/tiled/white/monotile,
@@ -17735,7 +17734,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/security/infantry/com)
+/area/maintenance/fifthdeck/aftstarboard)
 "NF" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19854,7 +19853,7 @@
 "WB" = (
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
-/area/security/infantry/com)
+/area/maintenance/fifthdeck/aftstarboard)
 "WD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -33217,10 +33216,10 @@ aa
 aa
 aa
 aa
-If
-If
-If
-If
+ZG
+HJ
+HJ
+HJ
 HJ
 HJ
 HJ
@@ -33419,8 +33418,8 @@ aa
 aa
 aa
 aa
-If
-If
+ZG
+ZG
 fC
 xt
 gY
@@ -33621,8 +33620,8 @@ aa
 aa
 aa
 aa
-If
-If
+ZG
+ZG
 Ix
 NE
 he
@@ -33823,8 +33822,8 @@ aa
 aa
 aa
 ZG
-If
-If
+ZG
+ZG
 fO
 WB
 gY
