@@ -839,3 +839,33 @@
 	icon_state = "camogreen_s"
 	worn_state = "camogreen_s"
 	item_state = "camogreen_s"
+
+/obj/item/clothing/under/turtleneck
+	item_icons = list(slot_w_uniform_str = 'icons/icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
+	desc = "Un bonito turtleneck del color de su departamento."
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/turtleneck/sci
+	name = "science turtleneck"
+	icon_state = "turtle_sci"
+	worn_state = "turtle_sci"
+	item_state = "turtle_sci_s"
+
+/obj/item/clothing/under/turtleneck/sec
+	name = "security turtleneck"
+	icon_state = "turtle_sec"
+	worn_state = "turtle_sec"
+	item_state = "turtle_sec_s"
+
+/obj/item/clothing/under/turtleneck/med
+	name = "medical turtleneck"
+	icon_state = "turtle_med"
+	worn_state = "turtle_med"
+	item_state = "turtle_med_s"
+
+/obj/item/clothing/under/turtleneck/eng
+	name = "engineering turtleneck"
+	icon_state = "turtle_eng"
+	worn_state = "turtle_eng"
+	item_state = "turtle_eng_s"
