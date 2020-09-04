@@ -1300,7 +1300,7 @@ obj/machinery/vending/cola/manaos
 	vend_delay = 15
 	base_type = /obj/machinery/vending/fashionvend
 	vend_reply = "Absolutamente precioso"
-	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico; Los precios mas bajos estan garantizados."
+	product_ads = "Impresiona al amor de tu vida;No te veas pobre, luce rico;Los precios mas bajos estan garantizados."
 	products = list(/obj/item/clothing/head/beret = 2,
 					/obj/item/clothing/mask/gas/mime,
 					/obj/item/clothing/mask/gas/sexymime,
@@ -1372,7 +1372,7 @@ obj/machinery/vending/cola/manaos
 	vend_delay = 15
 	base_type = /obj/machinery/vending/hatvendor
 	vend_reply = "Absolutamente precioso"
-	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico!"
+	product_ads = "Impresiona al amor de tu vida;No te veas pobre, luce rico!"
 	products = list(/obj/item/clothing/head/bandana/green,
 					/obj/item/clothing/head/beaverhat,
 					/obj/item/clothing/head/beret = 2,
@@ -1408,7 +1408,7 @@ obj/machinery/vending/cola/manaos
 	vend_delay = 15
 	base_type = /obj/machinery/vending/shoevendor
 	vend_reply = "Absolutamente precioso"
-	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico!"
+	product_ads = "Impresiona al amor de tu vida;No te veas pobre, luce rico!"
 	products = list(/obj/item/clothing/shoes/athletic = 3,
 					/obj/item/clothing/shoes/black = 3,
 				    /obj/item/clothing/shoes/blue = 3,
@@ -1433,7 +1433,7 @@ obj/machinery/vending/cola/manaos
 	vend_delay = 15
 	base_type = /obj/machinery/vending/suitvendor
 	vend_reply = "Absolutamente precioso"
-	product_ads = "Impresiona al amor de tu vida; No te veas pobre, luce rico!"
+	product_ads = "Impresiona al amor de tu vida;No te veas pobre, luce rico!"
 	products = list(/obj/item/clothing/accessory/black = 3,
 					/obj/item/clothing/accessory/blue = 3,
 					/obj/item/clothing/accessory/brown = 3,
@@ -1441,8 +1441,8 @@ obj/machinery/vending/cola/manaos
 					/obj/item/clothing/accessory/yellow = 3,
 					/obj/item/clothing/accessory/bowtie/ugly,
 					/obj/item/clothing/accessory/cloak = 3,
-					/obj/item/clothing/suit/apron/overalls = 2,
-					/obj/item/clothing/suit/leathercoat = 2,
+					/obj/item/clothing/accessory/toggleable/hawaii/red = 3,
+					/obj/item/clothing/accessory/toggleable/hawaii = 3,
 					/obj/item/clothing/under/blackskirt = 2,
 					/obj/item/clothing/under/color/black = 3,
 					/obj/item/clothing/under/color/blue = 3,
@@ -1454,7 +1454,6 @@ obj/machinery/vending/cola/manaos
 					/obj/item/clothing/under/color/red = 3,
 					/obj/item/clothing/under/color/white = 3,
 					/obj/item/clothing/under/color/yellow = 3,
-					/obj/item/clothing/suit/poncho/colored,
 					/obj/item/clothing/under/dress/dress_fire,
 					/obj/item/clothing/under/dress/dress_orange,
 					/obj/item/clothing/under/dress/dress_saloon,
@@ -1487,14 +1486,19 @@ obj/machinery/vending/cola/manaos
 					/obj/item/clothing/under/lawyer/infil,
 					/obj/item/clothing/under/lawyer/infil/fem,
 					/obj/item/clothing/under/lawyer/purpsuit,
+					/obj/item/clothing/under/jrsuit,
+					/obj/item/clothing/under/turtleneck/sci = 2,
+					/obj/item/clothing/under/turtleneck/sec = 2,
+					/obj/item/clothing/under/turtleneck/med = 2,
+					/obj/item/clothing/under/turtleneck/eng = 2,
 					/obj/item/clothing/suit/storage/toggle/suit/purple,
 					/obj/item/clothing/suit/storage/toggle/suit/blue,
 					/obj/item/clothing/suit/storage/toggle/suit/black = 2,
 					/obj/item/clothing/suit/storage/toggle/bomber = 2,
 					/obj/item/clothing/suit/storage/leather_jacket = 2,
-					/obj/item/clothing/accessory/toggleable/hawaii/red = 3,
-					/obj/item/clothing/accessory/toggleable/hawaii = 3,
-					/obj/item/clothing/under/jrsuit,
+					/obj/item/clothing/suit/apron/overalls = 2,
+					/obj/item/clothing/suit/leathercoat = 2,
+					/obj/item/clothing/suit/poncho/colored,
 					/obj/item/clothing/gloves/fingerless = 2
 					)
 
@@ -1548,7 +1552,7 @@ obj/machinery/vending/cola/manaos
 	name = "Vendedor de trajes de bano"
 	desc = "Todo tipo de trajes de bano."
 	vend_delay = 15
-	product_slogans = "Divercion en la piscina!"
+	product_slogans = "Diversion en la piscina!"
 
 	icon_state = "lavatory"
 	icon_deny = "lavatory-deny"
@@ -1658,10 +1662,6 @@ obj/machinery/vending/cola/manaos
 					/obj/item/toy/figure/zsle)
 
 	contraband = list(/obj/item/toy/figure/vlad)
-
-
-
-
 
 /obj/machinery/vending/snix/on_update_icon()
 	..()
