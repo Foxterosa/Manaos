@@ -850,22 +850,22 @@
 	name = "science turtleneck"
 	icon_state = "turtle_sci"
 	worn_state = "turtle_sci"
-	item_state = "turtle_sci"
+	item_state = "turtle_sci_s"
 
 /obj/item/clothing/under/turtleneck/sec
 	name = "security turtleneck"
 	icon_state = "turtle_sec"
 	worn_state = "turtle_sec"
-	item_state = "turtle_sec"
+	item_state = "turtle_sec_s"
 
 /obj/item/clothing/under/turtleneck/med
 	name = "medical turtleneck"
 	icon_state = "turtle_med"
 	worn_state = "turtle_med"
-	item_state = "turtle_med"
+	item_state = "turtle_med_s"
 
 /obj/item/clothing/under/turtleneck/eng
 	name = "engineering turtleneck"
 	icon_state = "turtle_eng"
 	worn_state = "turtle_eng"
-	item_state = "turtle_eng"
+	item_state = "turtle_eng_s"
