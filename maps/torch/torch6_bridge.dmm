@@ -15348,25 +15348,6 @@
 /obj/item/device/radio,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
-"CF" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/vending/wallmed1{
-	name = "Emergency NanoMed";
-	pixel_x = 0;
-	pixel_y = 30
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/bridge/fore)
 "CH" = (
 /obj/structure/sign/directions/bridge{
 	dir = 8;
@@ -15867,10 +15848,6 @@
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
 /area/aquila/airlock)
-"FM" = (
-/obj/structure/grille,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/forestarboard)
 "FS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -16770,10 +16747,6 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/psiadvisor)
-"Jp" = (
-/obj/machinery/status_display,
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/bridgecheck)
 "Jt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -16915,6 +16888,25 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
+"Kn" = (
+/obj/machinery/computer/modular/preset/cardslot/command{
+	icon_state = "console";
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/machinery/recharger/wallcharger{
+	dir = 8;
+	pixel_x = 23;
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/bridgecheck)
 "Kz" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark,
@@ -17106,6 +17098,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
+"Lq" = (
+/obj/structure/grille,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/forestarboard)
 "Lr" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17708,25 +17704,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
-"OT" = (
-/obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 6
-	},
-/obj/machinery/recharger/wallcharger{
-	dir = 8;
-	pixel_x = 23;
-	pixel_y = -3
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/bridgecheck)
 "Pc" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -18740,6 +18717,25 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aux_eva)
+"Tj" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/vending/wallmed1{
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = 30
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/bridge/fore)
 "Tl" = (
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
@@ -19307,13 +19303,12 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/bridge)
 "Wa" = (
-/obj/structure/bed/chair/padded/red{
-	icon_state = "chair_preview";
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 6
+	},
+/obj/structure/bed/chair/comfy/red{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
@@ -19574,6 +19569,10 @@
 "Xr" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/bridge/forestarboard)
+"Xv" = (
+/obj/machinery/status_display,
+/turf/simulated/wall/r_wall/prepainted,
+/area/security/bridgecheck)
 "Xx" = (
 /obj/machinery/door/airlock/medical{
 	id_tag = "cmodoor";
@@ -30699,7 +30698,7 @@ af
 af
 YI
 VB
-FM
+Lq
 aO
 FG
 YA
@@ -32540,7 +32539,7 @@ mE
 mE
 mE
 mE
-CF
+Tj
 ga
 sL
 sL
@@ -33346,7 +33345,7 @@ mN
 AA
 nZ
 Wa
-OT
+Kn
 mN
 rg
 yb
@@ -33544,7 +33543,7 @@ La
 iX
 Lk
 gl
-Jp
+Xv
 mO
 oK
 zM
