@@ -35,8 +35,6 @@
 	projectilesound = 'sound/weapons/laser.ogg'
 	ranged = 1
 	rapid = 0
-	maxHealth = 50
-	health = 50
 	projectiletype = /obj/item/projectile/beam
 	corpse = /obj/effect/landmark/corpse/pirate/ranged
 	weapon1 = /obj/item/weapon/gun/energy/retro
