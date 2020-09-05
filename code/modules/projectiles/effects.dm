@@ -177,6 +177,21 @@
 	icon_state = "impact_particle"
 
 //----------------------------
+// shock beam
+//----------------------------
+/obj/effect/projectile/shock/
+	light_color = "#FFFF92"
+
+/obj/effect/projectile/shock/tracer
+	icon_state = "stun"
+
+/obj/effect/projectile/shock/muzzle
+	icon_state = "muzzle_stun"
+
+/obj/effect/projectile/shock/impact
+	icon_state = "impact_stun"
+
+//----------------------------
 // Bullet
 //----------------------------
 /obj/effect/projectile/bullet/muzzle
