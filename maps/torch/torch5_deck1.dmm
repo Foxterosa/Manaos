@@ -31430,10 +31430,12 @@
 /area/security/bo)
 "rjb" = (
 /obj/machinery/door/window/brigdoor/northright{
-	name = "Test Chamber"
+	name = "Test Chamber";
+	req_access = newlist()
 	},
 /obj/machinery/door/window/brigdoor/southright{
-	name = "Test Chamber"
+	name = "Test Chamber";
+	req_access = newlist()
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;
