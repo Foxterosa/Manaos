@@ -1110,7 +1110,7 @@
 
 /area/medical/reslab
 	name = "\improper Bahia Medica - Laboratorio de resurección"
-	req_access = list(access_surgery)
+	req_access = list(access_morgue)
 
 /area/medical/virology
 	name = "\improper Bahia Medica - Virologia"
