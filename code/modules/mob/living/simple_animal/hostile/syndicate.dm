@@ -6,11 +6,11 @@
 	icon_dead = "syndicate_dead"
 	icon_gib = "syndicate_gib"
 	speak_chance = 0
-	turns_per_move = 5
+	turns_per_move = 6
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 4
+	speed = 2
 	stop_automated_movement_when_pulled = 0
 	maxHealth = 100
 	health = 100
@@ -21,6 +21,7 @@
 	attacktext = "punched"
 	a_intent = I_HURT
 	var/corpse = /obj/effect/landmark/corpse/syndicate
+	var/weapon1
 	unsuitable_atmos_damage = 15
 	environment_smash = 1
 	faction = "syndicate"
@@ -30,6 +31,8 @@
 	..(gibbed, deathmessage, show_dead_message)
 	if(corpse)
 		new corpse (src.loc)
+	if(weapon1)
+		new weapon1 (src.loc)
 	qdel(src)
 	return
 
@@ -40,6 +43,7 @@
 	melee_damage_upper = 25
 	icon_state = "syndicatemelee"
 	icon_living = "syndicatemelee"
+	weapon1 = /obj/item/weapon/melee/energy/sword/red
 	attacktext = "slashed"
 	status_flags = 0
 
@@ -83,8 +87,11 @@
 	rapid = 1
 	icon_state = "syndicateranged"
 	icon_living = "syndicateranged"
+	casingtype = /obj/item/ammo_casing/pistol
 	projectilesound = 'sound/weapons/gunshot/gunshot_smg.ogg'
 	projectiletype = /obj/item/projectile/bullet/pistol
+
+	weapon1 = /obj/item/weapon/gun/projectile/automatic/merc_smg
 
 /mob/living/simple_animal/hostile/syndicate/ranged/space
 	icon_state = "syndicaterangedpsace"
