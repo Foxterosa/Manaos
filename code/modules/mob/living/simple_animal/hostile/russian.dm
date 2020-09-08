@@ -6,11 +6,11 @@
 	icon_dead = "russianmelee_dead"
 	icon_gib = "syndicate_gib"
 	speak_chance = 0
-	turns_per_move = 5
+	turns_per_move = 6
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 4
+	speed = 2
 	stop_automated_movement_when_pulled = 0
 	maxHealth = 100
 	health = 100
@@ -32,6 +32,8 @@
 	icon_living = "russianranged"
 	corpse = /obj/effect/landmark/corpse/russian/ranged
 	ranged = 1
+	maxHealth = 50
+	health = 50
 	projectiletype = /obj/item/projectile/bullet
 	projectilesound = 'sound/weapons/gunshot/gunshot2.ogg'
 
