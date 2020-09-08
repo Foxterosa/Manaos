@@ -287,6 +287,18 @@
 	name = "Cell 6"
 	id = "Cell 6"
 
+/obj/machinery/door_timer/cell_beach
+	name = "Celda - Playa"
+	id = "Cell playa"
+
+/obj/machinery/door_timer/cell_casino
+	name = "Celda - Casino"
+	id = "Cell casino"
+
+/obj/machinery/door_timer/cell_hotel
+	name = "Celda - Hotel"
+	id = "Cell hotel"
+
 #undef FONT_SIZE
 #undef FONT_COLOR
 #undef FONT_STYLE
