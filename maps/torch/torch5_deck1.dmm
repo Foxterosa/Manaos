@@ -1032,7 +1032,7 @@
 /area/security/wing)
 "abx" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/vending/medical/torch,
+/obj/machinery/vending/medical,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "aby" = (
@@ -5125,11 +5125,6 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "air" = (
-/obj/structure/hygiene/sink{
-	dir = 8;
-	pixel_x = -12;
-	pixel_y = 2
-	},
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
@@ -16991,10 +16986,6 @@
 	icon_state = "4-8"
 	},
 /obj/item/device/scanner/xenobio,
-/obj/machinery/vending/wallmed2{
-	pixel_y = 32;
-	req_access = newlist()
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -17009,6 +17000,10 @@
 /obj/effect/floor_decal/industrial/outline/grey{
 	color = "";
 	desc = "F8F8F8"
+	},
+/obj/machinery/vending/wallmed1{
+	name = "Emergency NanoMed";
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
@@ -17815,6 +17810,11 @@
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
+	},
+/obj/machinery/button/alternate/door{
+	id_tag = "counselordoors";
+	name = "Counselor Doors";
+	pixel_y = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
@@ -27102,6 +27102,7 @@
 "mpi" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical{
+	id_tag = "counselordoors";
 	name = "Counselor's Office"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow{
@@ -27256,6 +27257,13 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/aft)
+"mxd" = (
+/obj/machinery/door/airlock/medical{
+	id_tag = "counselordoors";
+	name = "Counselor's Office"
+	},
+/turf/simulated/floor/carpet/orange,
+/area/medical/counselor)
 "mxn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -31494,12 +31502,12 @@
 /area/security/bo)
 "rjb" = (
 /obj/machinery/door/window/brigdoor/northright{
-	name = "Test Chamber";
-	req_access = newlist()
+	autoset_access = 1;
+	name = "Test Chamber"
 	},
 /obj/machinery/door/window/brigdoor/southright{
-	name = "Test Chamber";
-	req_access = newlist()
+	autoset_access = 1;
+	name = "Test Chamber"
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -60640,7 +60648,7 @@ ase
 asw
 asw
 asw
-scr
+mxd
 uFk
 hnN
 cgu
