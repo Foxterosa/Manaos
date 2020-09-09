@@ -8147,7 +8147,10 @@
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/hop,
 /obj/effect/landmark/start{
-	name = "Merchant"
+	name = "Comerciante"
+	},
+/obj/effect/landmark{
+	name = "Comerciante"
 	},
 /turf/simulated/floor/carpet,
 /area/merchant_station)
@@ -8200,7 +8203,10 @@
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/rd,
 /obj/effect/landmark/start{
-	name = "Merchant"
+	name = "Comerciante"
+	},
+/obj/effect/landmark{
+	name = "Comerciante"
 	},
 /turf/simulated/floor/carpet/blue,
 /area/merchant_station)
@@ -8584,7 +8590,6 @@
 /area/merchant_station)
 "aNW" = (
 /obj/machinery/firealarm{
-	dir = 1;
 	pixel_y = 24
 	},
 /turf/simulated/floor/wood,
@@ -10255,7 +10260,6 @@
 /area/merchant_station)
 "aUi" = (
 /obj/machinery/firealarm{
-	dir = 1;
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
@@ -10429,7 +10433,6 @@
 	dir = 1
 	},
 /obj/machinery/firealarm{
-	dir = 1;
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,

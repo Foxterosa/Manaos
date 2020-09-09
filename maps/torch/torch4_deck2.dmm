@@ -849,6 +849,7 @@
 /area/storage/tech)
 "bC" = (
 /obj/random/torchcloset,
+/obj/random/loot,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
 "bD" = (
@@ -1962,11 +1963,6 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "dT" = (
@@ -1986,11 +1982,6 @@
 	dir = 10
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "dU" = (
@@ -2008,11 +1999,6 @@
 	},
 /obj/machinery/meter,
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "dV" = (
@@ -2052,11 +2038,6 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "dX" = (
@@ -2088,11 +2069,6 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/central)
 "ea" = (
@@ -2114,11 +2090,6 @@
 	},
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "eb" = (
@@ -2350,11 +2321,6 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/forestarboard)
 "et" = (
@@ -2452,9 +2418,9 @@
 "eC" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -2463,6 +2429,11 @@
 	dir = 5
 	},
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "eE" = (
@@ -2471,6 +2442,11 @@
 	},
 /obj/machinery/meter,
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "eF" = (
@@ -2514,9 +2490,9 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
@@ -2619,6 +2595,11 @@
 "eT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/assembly/robotics/lower)
@@ -4760,6 +4741,7 @@
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
+/obj/random/loot,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "jr" = (
@@ -11716,11 +11698,6 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "xK" = (
@@ -14420,6 +14397,14 @@
 /obj/structure/sign/warning/fire,
 /turf/simulated/wall/ocp_wall,
 /area/maintenance/incinerator)
+"EX" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/r_wall/prepainted,
+/area/assembly/robotics/lower)
 "Fb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -15653,6 +15638,7 @@
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/random/loot,
 /turf/simulated/floor/tiled/monotile,
 /area/vacant/cargo)
 "IW" = (
@@ -37718,7 +37704,7 @@ gr
 hn
 bJ
 dW
-XR
+EX
 RW
 fx
 Yk
@@ -37920,7 +37906,7 @@ gQ
 hn
 bJ
 dW
-XR
+EX
 Bp
 gg
 XR
@@ -38122,7 +38108,7 @@ bJ
 hr
 bJ
 xJ
-XR
+EX
 Kl
 gg
 XR
@@ -38324,7 +38310,7 @@ dY
 dY
 dY
 dW
-XR
+EX
 Yr
 gg
 UX
@@ -38526,7 +38512,7 @@ bK
 bK
 dw
 dW
-XR
+EX
 Me
 RH
 gh
@@ -38728,7 +38714,7 @@ aC
 bK
 bK
 dW
-XR
+EX
 jv
 VF
 OQ
@@ -38930,7 +38916,7 @@ aC
 UB
 bf
 dZ
-XR
+EX
 XR
 XR
 XR
