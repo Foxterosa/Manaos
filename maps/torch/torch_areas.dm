@@ -899,12 +899,15 @@
 	icon_state = "locker"
 
 /area/crew_quarters/head
-	name = "\improper Cubierta 3 - Cabecera"
+	name = "\improper Cubierta 3 - Baños"
 	icon_state = "toilet"
 	sound_env = SMALL_ENCLOSED
 
 /area/crew_quarters/head/aux
-	name = "\improper Cubierta 1 - Cabecera"
+	name = "\improper Cubierta 1 - Baños"
+
+/area/crew_quarters/head/aux2
+	name = "\improper Cubierta 2 - Baños"
 
 /area/crew_quarters/head/sauna
 	name = "\improper Cubierta 3 - Sauna"
