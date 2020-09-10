@@ -13,14 +13,14 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 	requires_ntnet = 1
 	available_on_ntnet = 1
 	required_access = access_security
-	nanomodule_path = /datum/nano_module/digitalwarrant/
+	nanomodule_path = /datum/nano_module/program/digitalwarrant/
 	category = PROG_SEC
 
-/datum/nano_module/digitalwarrant/
+/datum/nano_module/program/digitalwarrant/
 	name = "Warrant Assistant"
 	var/datum/computer_file/data/warrant/activewarrant
 
-/datum/nano_module/digitalwarrant/ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = 1, var/datum/topic_state/state = GLOB.default_state)
+/datum/nano_module/program/digitalwarrant/ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = 1, var/datum/topic_state/state = GLOB.default_state)
 	var/list/data = host.initial_data()
 
 	if(activewarrant)
@@ -62,15 +62,15 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 		ui.set_initial_data(data)
 		ui.open()
 
-/datum/nano_module/digitalwarrant/Topic(href, href_list)
+/datum/nano_module/program/digitalwarrant/Topic(href, href_list)
 	if(..())
-		return 1
+		return TRUE
 
 	if(href_list["sw_menu"])
 		activewarrant = null
 
 	if(href_list["editwarrant"])
-		. = 1
+		. = TRUE
 		for(var/datum/computer_file/data/warrant/W in GLOB.all_warrants)
 			if(W.uid == text2num(href_list["editwarrant"]))
 				activewarrant = W
@@ -89,21 +89,21 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 		return
 
 	if(href_list["sendtoarchive"])
-		. = 1
+		. = TRUE
 		for(var/datum/computer_file/data/warrant/W in GLOB.all_warrants)
 			if(W.uid == text2num(href_list["sendtoarchive"]))
 				W.archived = TRUE
 				break
 
 	if(href_list["restore"])
-		. = 1
+		. = TRUE
 		for(var/datum/computer_file/data/warrant/W in GLOB.all_warrants)
 			if(W.uid == text2num(href_list["restore"]))
 				W.archived = FALSE
 				break
 
 	if(href_list["addwarrant"])
-		. = 1
+		. = TRUE
 		var/datum/computer_file/data/warrant/W = new()
 		if(CanInteract(user, GLOB.default_state))
 			W.fields["namewarrant"] = "Unknown"
@@ -120,7 +120,7 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 			activewarrant = W
 
 	if(href_list["savewarrant"])
-		. = 1
+		. = TRUE
 		if(!activewarrant)
 			return
 		broadcast_security_hud_message("\A [activewarrant.fields["arrestsearch"]] warrant for <b>[activewarrant.fields["namewarrant"]]</b> has been [(activewarrant in GLOB.all_warrants) ? "edited" : "uploaded"].", ui_host())
@@ -128,7 +128,7 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 		activewarrant = null
 
 	if(href_list["deletewarrant"])
-		. = 1
+		. = TRUE
 		if(!activewarrant)
 			for(var/datum/computer_file/data/warrant/W in GLOB.all_warrants)
 				if(W.uid == text2num(href_list["deletewarrant"]))
@@ -137,8 +137,25 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 		GLOB.all_warrants -= activewarrant
 		activewarrant = null
 
+	if(href_list["printwarrant"])
+		. = TRUE
+		if(!program.computer.has_component(PART_PRINTER))
+			to_chat(src, SPAN_WARNING("Hardware Error: Printer not found."))
+			return
+		if(!activewarrant)
+			var/puid = text2num(href_list["printwarrant"])
+			for(var/datum/computer_file/data/warrant/W in GLOB.all_warrants)
+				if(W.uid == puid)
+					activewarrant = W
+					break
+		if(activewarrant)
+			program.computer.print_paper(warranttotext(activewarrant), capitalize(activewarrant.fields["arrestsearch"]) + " Warrant - " + activewarrant.fields["namewarrant"])
+		else
+			to_chat(src, SPAN_WARNING("Internal error: Warrant not found."))
+
+
 	if(href_list["editwarrantname"])
-		. = 1
+		. = TRUE
 		var/namelist = list()
 		for(var/datum/computer_file/report/crew_record/CR in GLOB.all_crew_records)
 			namelist += "[CR.get_name()] \[[CR.get_job()]\]"
@@ -154,7 +171,7 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 			activewarrant.fields["jobwarrant"] = job
 
 	if(href_list["editwarrantnamecustom"])
-		. = 1
+		. = TRUE
 		var/new_name = sanitize(input("Please input name") as null|text)
 		var/new_job = sanitize(input("Please input job") as null|text)
 		if(CanInteract(user, GLOB.default_state))
@@ -164,7 +181,7 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 			activewarrant.fields["jobwarrant"] = new_job
 
 	if(href_list["editwarrantcharges"])
-		. = 1
+		. = TRUE
 		var/new_charges = sanitize(input("Please input charges", "Charges", activewarrant.fields["charges"]) as null|text)
 		if(CanInteract(user, GLOB.default_state))
 			if (!new_charges || !activewarrant)
@@ -172,13 +189,13 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 			activewarrant.fields["charges"] = new_charges
 
 	if(href_list["editwarrantauth"])
-		. = 1
+		. = TRUE
 		if(!activewarrant)
 			return
 		activewarrant.fields["auth"] = "[I.registered_name] - [I.assignment ? I.assignment : "(Unknown)"]"
 
 	if(href_list["editwarrantidauth"])
-		. = 1
+		. = TRUE
 		if(!activewarrant)
 			return
 		// access-granting is only available for arrest warrants
@@ -210,5 +227,16 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 		activewarrant.fields["access"] = warrant_access
 
 	if(href_list["back"])
-		. = 1
+		. = TRUE
 		activewarrant = null
+
+/datum/nano_module/program/digitalwarrant/proc/warranttotext(var/datum/computer_file/data/warrant/warrant)
+	. += "\[center]\[seclogo] \[/center]"
+	. += "\n\[center]\[large]\[b]\[u]" + "Orden de arresto \[/center]\[/large]\[/b]\[/u]"
+	. += "\n\n\[small]Esta orden de arresto solo es valida con la autorizacion adecuada y valida a los oficiales a arrestar al sospechoso por los cargos mencionados debajo. Se espera la cooperacion de todo el personal para el cumplimiento de esta orden.\[/small]"
+	. += "\n\n\[b]\[u]Sistema:\[/b]\[/u] " + GLOB.using_map.system_name
+	. += "\n\[b]\[u]Nombre del sospechoso:\[/b]\[/u] " + warrant.fields["namewarrant"]
+	. += "\n\[b]\[u]Trabajo del sospechoso:\[/b]\[/u] "  + warrant.fields["jobwarrant"]
+	. += "\n\[b]\[u]Cargos:\[/b]\[/u] " + warrant.fields["charges"]
+	. += "\n\[b]\[u]Autorizado por:\[/b]\[/u] " + warrant.fields["auth"]
+	. += "\n\[b]\[u]Acceso autorizado por:\[/b]\[/u] " + warrant.fields["idauth"]

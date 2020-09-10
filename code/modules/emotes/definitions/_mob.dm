@@ -117,6 +117,7 @@
 		/decl/emote/audible/slap,
 		/decl/emote/audible/aslap,
 		/decl/emote/audible/nya,
+		/decl/emote/audible/awoo,
 		/decl/emote/audible/oorah,
 		/decl/emote/audible/fsnap,
 		/decl/emote/audible/fsnap2,
@@ -199,7 +200,9 @@
 		/decl/emote/audible/synth/confirm,
 		/decl/emote/audible/synth/deny,
 		/decl/emote/audible/synth/security,
-		/decl/emote/audible/synth/security/halt
+		/decl/emote/audible/synth/security/halt,
+		/decl/emote/audible/awoo,
+		/decl/emote/audible/nya
 		)
 
 /mob/living/silicon/robot/flying/ascent

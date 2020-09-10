@@ -241,7 +241,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 28)
 
 	access = list(access_magistrado, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
-			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
+			            access_bridge, access_cargo, access_solgov_crew, access_hangar, access_eva)
 
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
@@ -274,7 +274,7 @@
 
 	skill_points = 25
 	access = list(access_magistrado, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
-			            access_bridge, access_cargo, access_solgov_crew, access_hangar, access_bs)
+			            access_bridge, access_cargo, access_solgov_crew, access_hangar, access_bs, access_eva)
 	defer_roundstart_spawn = TRUE
 
 /datum/job/blueshield/get_description_blurb()

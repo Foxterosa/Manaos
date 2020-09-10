@@ -196,3 +196,10 @@
 	icon_state = "miner"
 	item_state = "lb_suit"
 	worn_state = "miner"
+
+/obj/item/clothing/under/rank/hop
+	desc = "Un traje clasico de oficial ejecutivo"
+	name = "traje de oficial ejecutivo"
+	icon_state = "hopwhimsy_s"
+	item_state = "hopwhimsy_s"
+	worn_state = "hopwhimsy_s"

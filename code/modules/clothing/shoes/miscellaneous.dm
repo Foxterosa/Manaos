@@ -100,6 +100,27 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 
+/obj/item/clothing/shoes/dutybootscolor
+	name = "Botas"
+	desc = "Un par de botas de piel sintética con punta de acero y brillo de espejo. Del color perfecto para ti!"
+	icon_state = "duty_coloreable"
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_PADDED,
+		rad = ARMOR_RAD_MINOR
+		)
+	siemens_coefficient = 0.7
+	gas_transfer_coefficient = 0.90
+	permeability_coefficient = 0.50
+	body_parts_covered = FEET
+	heat_protection = FEET
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	max_pressure_protection = FIRESUIT_MAX_PRESSURE
+
+/obj/item/clothing/shoes/dutybootscolor/modified
+	item_flags = ITEM_FLAG_PREMODIFIED
+
 /obj/item/clothing/shoes/tactical
 	name = "tactical boots"
 	desc = "Tan boots with extra padding and armor."
@@ -142,17 +163,17 @@
 	body_parts_covered = FEET
 
 /obj/item/clothing/shoes/kasumi
-	item_icons = list(slot_shoes_str = 'icons_manaos/mob/onmob/onmob_feet.dmi')
-	icon = 'icons_manaos/mob/onmob/onmob_feet.dmi'
-	desc = "un par de botas largas negras."
+	item_icons = list(slot_shoes_str = 'icons/icons_manaos/mob/onmob/onmob_feet.dmi')
+	icon = 'icons/icons_manaos/mob/onmob/onmob_feet.dmi'
+	desc = "Un par de botas largas negras."
 	name = "kasumiboots"
 	icon_state = "kasumiboots"
 	body_parts_covered = FEET
 
 /obj/item/clothing/shoes/jrboots
-	item_icons = list(slot_shoes_str = 'icons_manaos/mob/onmob/onmob_feet.dmi')
-	icon = 'icons_manaos/mob/onmob/onmob_feet.dmi'
-	desc = "Hm, buenas botas"
+	item_icons = list(slot_shoes_str = 'icons/icons_manaos/mob/onmob/onmob_feet.dmi')
+	icon = 'icons/icons_manaos/mob/onmob/onmob_feet.dmi'
+	desc = "Hm, buenas botas."
 	name = "botas grandes"
 	icon_state = "jr-boots"
 	body_parts_covered = FEET
@@ -223,6 +244,17 @@
 	icon_state = "laceups"
 	can_add_hidden_item = FALSE
 	can_add_cuffs = FALSE
+
+/obj/item/clothing/shoes/laceupcolor
+	name = "Zapatos de encaje"
+	desc = "La altura de la moda, y están prepulidos! Del color perfecto para ti!"
+	icon_state = "laceups_coloreable"
+	can_add_hidden_item = FALSE
+	can_add_cuffs = FALSE
+
+/obj/item/clothing/shoes/laceupcolor/modified
+	item_flags = ITEM_FLAG_PREMODIFIED
+
 
 /obj/item/clothing/shoes/swimmingfins
 	desc = "Help you swim good."

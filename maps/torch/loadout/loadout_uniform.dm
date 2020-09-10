@@ -1,74 +1,54 @@
 
 /datum/gear/uniform
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/uniform/utility
 	display_name = "Contractor Utility Uniform"
 	path = /obj/item/clothing/under/solgov/utility
 
 /datum/gear/uniform/shortjumpskirt
-	allowed_roles = CASUAL_ROLES
 
 /datum/gear/uniform/blackjumpshorts
-	allowed_roles = CASUAL_ROLES
 
 /datum/gear/uniform/roboticist_skirt
 	allowed_roles = list(/datum/job/roboticist)
 
 /datum/gear/uniform/suit
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/scrubs
 	allowed_roles = STERILE_ROLES
 	allowed_branches = null
 
 /datum/gear/uniform/dress
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/kimono
 	display_name = "kimono, colour select"
 	path = /obj/item/clothing/under/kimono
 	flags = GEAR_HAS_COLOR_SELECTION
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/cheongsam
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/abaya
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/skirt
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/skirt_c
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/skirt_c/dress
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/casual_pants
-	allowed_roles = SEMIFORMAL_ROLES
 
 /datum/gear/uniform/formal_pants
-	allowed_roles = FORMAL_ROLES
-
 /datum/gear/uniform/formal_pants/custom
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/formal_pants/baggycustom
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/shorts
-	allowed_roles = CASUAL_ROLES
 
 /datum/gear/uniform/shorts/custom
-	allowed_roles = CASUAL_ROLES
 
 /datum/gear/uniform/turtleneck
-	allowed_roles = SEMIFORMAL_ROLES
 
 /datum/gear/tactical/tacticool
-	allowed_roles = CASUAL_ROLES
 
 /datum/gear/uniform/sterile
 	allowed_roles = MEDICAL_ROLES
@@ -87,3 +67,13 @@
 
 /datum/gear/uniform/corp_exec_jacket
 	allowed_roles = list(/datum/job/liaison, /datum/job/bodyguard)
+
+/datum/gear/uniform/redsuit
+
+/datum/gear/uniform/redsuitskirt
+
+/datum/gear/uniform/camosuit
+	allowed_roles = list(/datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt)
+
+/datum/gear/uniform/camoshirt
+	allowed_roles = list(/datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt)

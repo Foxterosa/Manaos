@@ -68,46 +68,46 @@
 
 /obj/item/clothing/under/maiddress2
 	name = "traje de mucama"
-	desc = "perfecto para darle a tu sirvienta."
+	desc = "Perfecto para darle a tu sirvienta."
 	icon_state = "meido_s"
 	item_state = "meido_s"
 	worn_state = "meido_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/maiddress
-	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
-	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	item_icons = list(slot_w_uniform_str = 'icons/icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
 	name = "uniforme de mucama"
-	desc = "perfecto para darle a tu sirvienta unathi"
+	desc = "Perfecto para darle a tu sirvienta unathi."
 	icon_state = "maidress_s"
 	item_state = "maidress_s"
 	worn_state = "maidress_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/kasumioutfit
-	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
-	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	item_icons = list(slot_w_uniform_str = 'icons/icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
 	name = "traje de Kasumi"
-	desc = "eSo FuE uNa PeRsOnA rEfErEnCe!?"
+	desc = "EsO fUe uNa PeRsOnA rEfErEnCe!?"
 	icon_state = "kasumi-suit_s"
 	item_state = "kasumi-suit_s"
 	worn_state = "kasumi-suit_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/jokeroutfit
-	item_icons = list(slot_w_uniform_str = 'icons_manaos/mob/onmob/onmob_under.dmi')
-	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	item_icons = list(slot_w_uniform_str = 'icons/icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
 	name = "traje de Joker"
-	desc = "nunca jugue persona, pero se ve bonito"
+	desc = "Nunca jugue Persona, pero se ve bonito."
 	icon_state = "joker-suit_s"
 	item_state = "joker-suit_s"
 	worn_state = "joker-suit_s"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/jrsuit
-	icon = 'icons_manaos/obj/clothing/obj_under.dmi'
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
 	name = "remera negra ajustada con khakis"
-	desc = "Hm, fashionable"
+	desc = "Hm, fashionable."
 	icon_state = "miner_s"
 	item_state = "miner_s"
 	worn_state = "miner_s"
@@ -811,3 +811,61 @@
 	icon_state = "kimono"
 	worn_state = "kimono"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/under/redsuit
+	desc = "Un traje rojo de negocios bastante elegante."
+	name = "traje rojo"
+	icon_state = "redsuit_f"
+	worn_state = "redsuit_f"
+	item_state = "redsuit_f"
+
+/obj/item/clothing/under/redsuitskirt
+	desc = "Un traje rojo de negocios con una falda, bastante elegante."
+	name = "traje rojo con falda"
+	icon_state = "redsuitskirt_f"
+	worn_state = "redsuitskirt_f"
+	item_state = "redsuitskirt_f"
+
+/obj/item/clothing/under/camoshirt
+	desc = "Una camisa militar con unos pantalones de camuflaje militar en ella. Talves no la mejor opcion para el espacio."
+	name = "traje militar"
+	icon_state = "camo_s"
+	worn_state = "camo_s"
+	item_state = "camo_s"
+
+/obj/item/clothing/under/camosuit
+	desc = "Un traje con camuflaje militar en ella. Talves no la mejor opcion para el espacio."
+	name = "traje militar"
+	icon_state = "camogreen_s"
+	worn_state = "camogreen_s"
+	item_state = "camogreen_s"
+
+/obj/item/clothing/under/turtleneck
+	item_icons = list(slot_w_uniform_str = 'icons/icons_manaos/mob/onmob/onmob_under.dmi')
+	icon = 'icons/icons_manaos/obj/clothing/obj_under.dmi'
+	desc = "Un bonito turtleneck del color de su departamento."
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/turtleneck/sci
+	name = "science turtleneck"
+	icon_state = "turtle_sci"
+	worn_state = "turtle_sci"
+	item_state = "turtle_sci_s"
+
+/obj/item/clothing/under/turtleneck/sec
+	name = "security turtleneck"
+	icon_state = "turtle_sec"
+	worn_state = "turtle_sec"
+	item_state = "turtle_sec_s"
+
+/obj/item/clothing/under/turtleneck/med
+	name = "medical turtleneck"
+	icon_state = "turtle_med"
+	worn_state = "turtle_med"
+	item_state = "turtle_med_s"
+
+/obj/item/clothing/under/turtleneck/eng
+	name = "engineering turtleneck"
+	icon_state = "turtle_eng"
+	worn_state = "turtle_eng"
+	item_state = "turtle_eng_s"

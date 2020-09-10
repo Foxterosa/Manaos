@@ -80,6 +80,8 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/show_skills,
 	/client/proc/man_up,
 	/client/proc/global_man_up,
+	/client/proc/global_erp,
+	/client/proc/erp,
 	/client/proc/response_team, // Response Teams admin verb,
 	/client/proc/toggle_antagHUD_use,
 	/client/proc/toggle_antagHUD_restrictions,
@@ -98,6 +100,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/add_trader,
 	/client/proc/remove_trader,
 	/datum/admins/proc/sendFax,
+	/client/proc/check_fax_history
 )
 var/list/admin_verbs_ban = list(
 	/client/proc/unban_panel,
@@ -405,6 +408,7 @@ var/list/admin_verbs_mod = list(
 	/client/proc/cmd_admin_direct_narrate,
 	/client/proc/aooc,
 	/datum/admins/proc/sendFax,
+	/client/proc/check_fax_history,
 	/datum/admins/proc/paralyze_mob,
 	/datum/admins/proc/view_persistent_data
 )
@@ -698,6 +702,31 @@ var/list/admin_verbs_mod = list(
 		message_admins("[src] re-admined themself.", 1)
 		to_chat(src, "<span class='interface'>You now have the keys to control the planet, or at least [GLOB.using_map.full_name].</span>")
 		verbs -= /client/proc/readmin_self
+
+/client/proc/global_erp()
+	set category = "Fun"
+	set name = "ERP Detected Global"
+	set desc = "Alerts everyone that ERP has been detected, and that spiders /will/ be deployed."
+
+	for (var/mob/T as mob in SSmobs.mob_list)
+		T << "<br><center><span class='notice'><b><font size=4>ERP DETECTED.<br> Purge of the source of erotic roleplay will commence shortly.</font></b><br></span></center><br>"
+		T << 'sound/effects/erpdetected.wav'
+
+	log_admin("[key_name(usr)] told everyone that ERP has been detected, and that jesus will be on their way.")
+	message_admins("\blue [key_name_admin(usr)] told everyone that ERP has been detected, and that jesus will be on their way.", 1)
+
+/client/proc/erp(mob/T as mob in SSmobs.mob_list)
+	set category = "Fun"
+	set name = "ERP Detected"
+	set desc = "Alerts someone that ERP has been detected, and that spiders /will/ be deployed."
+
+	T << "<span class='danger'><b><font size=3>ERP DETECTED.</font></b></span>"
+	T << "<span class='danger'>Jesus will be visiting shortly...</span>"
+	T << 'sound/effects/erpdetected.wav'
+
+
+	log_admin("[key_name(usr)] told [key_name(T)] that ERP has been detected, and that jesus will be on their way.")
+	message_admins("\blue [key_name_admin(usr)] told [key_name(T)] that ERP has been detected, and that jesus will be on their way.", 1)
 
 /client/proc/deadmin_self()
 	set name = "De-admin self"

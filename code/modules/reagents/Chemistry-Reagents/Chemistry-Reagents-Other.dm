@@ -310,6 +310,7 @@
 		else
 			H.clean_blood(1)
 			return
+	M.update_icons()
 	M.clean_blood()
 
 /datum/reagent/lube
