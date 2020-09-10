@@ -2816,20 +2816,15 @@
 /area/maintenance/seconddeck/central)
 "fx" = (
 /obj/structure/table/rack,
+/obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
 /obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
+	dir = 9
 	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 5
-	},
-/obj/item/stack/material/plasteel/fifty,
-/obj/item/stack/material/plasteel/fifty,
-/obj/item/stack/material/plasteel/fifty,
-/obj/item/stack/material/steel/fifty,
-/obj/item/stack/material/steel/fifty,
-/obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "fy" = (
@@ -4809,8 +4804,7 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
+	dir = 6
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
@@ -7540,13 +7534,10 @@
 	icon_state = "1-2"
 	},
 /obj/structure/table/steel,
-/obj/effect/floor_decal/corner/yellow{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 9
-	},
 /obj/item/device/robotanalyzer,
+/obj/effect/floor_decal/corner/yellow{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "pg" = (
@@ -10279,12 +10270,9 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 5
+	dir = 6
 	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "tX" = (
@@ -11659,14 +11647,11 @@
 	c_tag = "Robotics - Lower"
 	},
 /obj/machinery/cell_charger,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen,
 /obj/effect/floor_decal/corner/yellow{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 9
+	icon_state = "corner_white";
+	dir = 5
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
@@ -13009,6 +12994,7 @@
 	icon_state = "corner_white";
 	dir = 5
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "Bq" = (
@@ -16005,13 +15991,7 @@
 	icon_state = "corner_white";
 	dir = 5
 	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "Km" = (
@@ -16157,9 +16137,11 @@
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/locker_room)
 "KY" = (
-/obj/effect/floor_decal/industrial/hatch/yellow{
-	color = "#b19664"
+/obj/effect/floor_decal/corner/yellow{
+	icon_state = "corner_white";
+	dir = 10
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "KZ" = (
@@ -16269,14 +16251,15 @@
 	id = 2;
 	name = "robotics fabrication console"
 	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 9
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
 	},
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
 	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
+/obj/effect/floor_decal/corner/yellow{
+	icon_state = "corner_white";
+	dir = 5
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
@@ -16480,10 +16463,6 @@
 /obj/effect/floor_decal/corner/yellow{
 	icon_state = "corner_white";
 	dir = 5
-	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
 	},
 /obj/item/device/flash/synthetic,
 /obj/item/device/flash/synthetic,
@@ -17336,9 +17315,6 @@
 /obj/structure/table/steel,
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
-	},
-/obj/effect/floor_decal/corner/yellow{
-	dir = 9
 	},
 /obj/item/weapon/aicard,
 /obj/item/organ/internal/posibrain,
@@ -18388,20 +18364,19 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/aluminium/fifty,
+/obj/item/stack/material/aluminium/fifty,
+/obj/item/stack/material/aluminium/fifty,
+/obj/effect/floor_decal/corner/yellow{
+	dir = 9
+	},
 /obj/effect/floor_decal/corner/yellow{
 	icon_state = "corner_white";
 	dir = 5
 	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
-	},
-/obj/item/stack/material/glass/fifty,
-/obj/item/stack/material/glass/fifty,
-/obj/item/stack/material/glass/fifty,
-/obj/item/stack/material/aluminium/fifty,
-/obj/item/stack/material/aluminium/fifty,
-/obj/item/stack/material/aluminium/fifty,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "RY" = (
@@ -19265,9 +19240,11 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow{
-	color = "#b19664"
+/obj/effect/floor_decal/corner/yellow{
+	icon_state = "corner_white";
+	dir = 10
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "UX" = (
@@ -19279,9 +19256,6 @@
 	name = "Robotics RC";
 	pixel_x = -30;
 	pixel_y = 0
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow{
-	color = "#b19664"
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
@@ -19926,12 +19900,10 @@
 	icon_state = "corner_white";
 	dir = 10
 	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/corner/yellow{
 	icon_state = "corner_white";
-	dir = 5
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
+	dir = 10
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
@@ -20212,13 +20184,7 @@
 	icon_state = "corner_white";
 	dir = 10
 	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 5
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "XL" = (
@@ -20440,10 +20406,6 @@
 /obj/effect/floor_decal/corner/yellow{
 	icon_state = "corner_white";
 	dir = 5
-	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
