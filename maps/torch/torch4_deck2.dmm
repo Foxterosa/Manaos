@@ -7546,6 +7546,7 @@
 /obj/effect/floor_decal/corner/yellow{
 	dir = 9
 	},
+/obj/item/device/robotanalyzer,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "pg" = (
@@ -11378,6 +11379,10 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
+"wA" = (
+/obj/item/weapon/folder/blue,
+/turf/simulated/wall/r_wall/prepainted,
+/area/assembly/robotics/lower)
 "wE" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/head/aux2)
@@ -11654,11 +11659,6 @@
 	c_tag = "Robotics - Lower"
 	},
 /obj/machinery/cell_charger,
-/obj/item/organ/internal/posibrain,
-/obj/item/organ/internal/posibrain,
-/obj/item/organ/internal/posibrain,
-/obj/item/device/robotanalyzer,
-/obj/item/weapon/aicard,
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
 	},
@@ -16485,6 +16485,8 @@
 	icon_state = "corner_white";
 	dir = 10
 	},
+/obj/item/device/flash/synthetic,
+/obj/item/device/flash/synthetic,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "Mf" = (
@@ -17338,6 +17340,10 @@
 /obj/effect/floor_decal/corner/yellow{
 	dir = 9
 	},
+/obj/item/weapon/aicard,
+/obj/item/organ/internal/posibrain,
+/obj/item/organ/internal/posibrain,
+/obj/item/organ/internal/posibrain,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics/lower)
 "OR" = (
@@ -39324,7 +39330,7 @@ eK
 fu
 gj
 XR
-XR
+wA
 XR
 XR
 XR
