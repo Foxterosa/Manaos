@@ -22,7 +22,6 @@
 	stop_automated_movement_when_pulled = 0
 	var/destroy_surroundings = 1
 	var/retreat_distance = null //If our mob runs from players when they're too close, set in tile distance. By default, mobs do not retreat.
-	var/retreat_distance = null //If our mob runs from players when they're too close, set in tile distance. By default, mobs do not retreat.
 	var/minimum_distance = 1 //Minimum approach distance, so ranged mobs chase targets down, but still keep their distance set in tiles to the target, set higher to make mobs keep distance
 	a_intent = I_HURT
 

@@ -247,6 +247,10 @@
 	Proj.on_hit(src)
 	return 0
 
+/mob/living/simple_animal/proc/handle_automated_action()
+	set waitfor = FALSE
+	return
+
 /mob/living/simple_animal/attack_hand(mob/living/carbon/human/M as mob)
 	..()
 
