@@ -934,7 +934,6 @@ obj/machinery/vending/cola/manaos
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 2,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 2,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad = 2,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine = 2,
 					/obj/item/weapon/reagent_containers/syringe/antiviral = 5,
 					/obj/item/stack/medical/advanced/bruise_pack = 5,
 					/obj/item/stack/medical/advanced/ointment = 5,
@@ -942,9 +941,7 @@ obj/machinery/vending/cola/manaos
 					/obj/item/device/scanner/health = 5)
 	contraband = list(/obj/item/weapon/reagent_containers/pill/stox = 5,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 1,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon = 1,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross = 1,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton = 1)
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon = 1,)
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
 
 /obj/machinery/vending/medical/abandonado
@@ -992,22 +989,11 @@ obj/machinery/vending/cola/manaos
 	base_type = /obj/machinery/vending/wallmed1
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	products = list(
-		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine,
-		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane,
-		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene,
-		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin
-		)
-
-/obj/machinery/vending/wallmed2
-	name = "NanoMed Mini"
-	desc = "A wall-mounted version of the NanoMed, containing only vital first aid equipment."
-	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?"
-	icon_state = "wallmed"
-	icon_deny = "wallmed-deny"
-	icon_vend = "wallmed-vend"
-	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
-	base_type = /obj/machinery/vending/wallmed2
-	products = list(
+		/obj/item/weapon/storage/med_pouch/trauma,
+		/obj/item/weapon/storage/med_pouch/burn,
+		/obj/item/weapon/storage/med_pouch/oxyloss,
+		/obj/item/weapon/storage/med_pouch/toxin,
+		/obj/item/weapon/storage/med_pouch/radiation,
 		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine,
 		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane,
 		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene,
