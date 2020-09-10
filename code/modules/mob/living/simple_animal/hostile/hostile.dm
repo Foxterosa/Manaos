@@ -21,6 +21,9 @@
 	var/break_stuff_probability = 10
 	stop_automated_movement_when_pulled = 0
 	var/destroy_surroundings = 1
+	var/retreat_distance = null //If our mob runs from players when they're too close, set in tile distance. By default, mobs do not retreat.
+	var/retreat_distance = null //If our mob runs from players when they're too close, set in tile distance. By default, mobs do not retreat.
+	var/minimum_distance = 1 //Minimum approach distance, so ranged mobs chase targets down, but still keep their distance set in tiles to the target, set higher to make mobs keep distance
 	a_intent = I_HURT
 
 	var/shuttletarget = null
@@ -68,6 +71,11 @@
 			stance = HOSTILE_STANCE_ATTACK
 			face_atom(A)
 			return A
+
+/mob/living/simple_animal/hostile/handle_automated_action()
+	if(AIStatus == AI_OFF)
+		return 0
+	var/list/possible_targets = ListTargets() //we look around for potential targets and make it a list for later use.
 
 /mob/living/simple_animal/hostile/proc/ValidTarget(var/atom/A)
 	if(A == src)

@@ -13,6 +13,13 @@
 #define FAKEDEATH   0x2000  // Replaces stuff like changeling.changeling_fakedeath.
 #define NO_ANTAG    0x4000  // Players are restricted from gaining antag roles when occupying this mob
 
+//If you add a new status, be sure to add a list for it to the simple_animals global in _globalvars/lists/mobs.dm
+//Hostile Mob AI Status
+#define AI_ON       1
+#define AI_IDLE     2
+#define AI_OFF      3
+#define AI_Z_OFF    4
+
 // Grab Types
 #define GRAB_NORMAL			"normal"
 #define GRAB_NAB			"nab"

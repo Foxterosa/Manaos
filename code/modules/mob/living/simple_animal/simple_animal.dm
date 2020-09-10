@@ -33,6 +33,10 @@
 	var/wander = 1	// Does the mob wander around when idle?
 	var/stop_automated_movement_when_pulled = 1 //When set to 1 this stops the animal from moving when someone is pulling it.
 
+	// IA GENERAL DE PARA
+	var/AIStatus = AI_ON //The Status of our AI, can be set to AI_ON (On, usual processing), AI_IDLE (Will not process, but will return to AI_ON if an enemy comes near), AI_OFF (Off, Not processing ever)
+	var/can_have_ai = TRUE //once we have become sentient, we can never go back
+
 	//Interaction
 	var/response_help   = "pokes"
 	var/response_disarm = "shoves"
