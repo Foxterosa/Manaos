@@ -1057,7 +1057,7 @@ something, make sure it's not in one of the other lists.*/
 				/obj/random/hardsuit = 10,
 				/obj/item/clothing/mask/muzzle = 7,
 				/obj/item/clothing/mask/gas/vox = 8,
-				/obj/item/clothing/mask/gas/syndicate = 10,
+				/obj/item/clothing/mask/gas/syndicate = 8,
 				/obj/item/clothing/glasses/night = 3,
 				/obj/item/clothing/glasses/thermal = 1,
 				/obj/item/clothing/glasses/welding/superior = 7,
@@ -1066,8 +1066,9 @@ something, make sure it's not in one of the other lists.*/
 				/obj/item/clothing/head/helmet/merc = 3,
 				/obj/item/stack/material/diamond/ten = 7,
 				/obj/item/stack/material/glass/phoronrglass/ten = 7,
-				/obj/item/stack/material/marble/ten = 8,
+				/obj/item/stack/material/marble/ten = 7,
 				/obj/item/stack/material/phoron/ten = 7,
+				/obj/item/stack/material/uranium/ten = 7,
 				/obj/item/stack/material/gold/ten = 7,
 				/obj/item/stack/material/silver/ten = 7,
 				/obj/item/stack/material/osmium/ten = 7,
@@ -1093,8 +1094,8 @@ something, make sure it's not in one of the other lists.*/
 				/obj/item/weapon/bonegel = 7,
 				/obj/item/weapon/circular_saw = 7,
 				/obj/item/weapon/scalpel = 7,
-				/obj/item/weapon/melee/baton/loaded = 9,
-				/obj/item/device/radio/headset/syndicate = 6)
+				/obj/item/weapon/melee/baton/loaded = 6,
+				/obj/item/device/radio/headset/syndicate = 5)
 
 /obj/random/voidhelmet
 	name = "Random Voidsuit Helmet"
