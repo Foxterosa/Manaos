@@ -1,78 +1,13 @@
 // haha credits song go *tuba sounds*
 
-/music_track/cumzone
-	title = "Cum zone"
-	song = 'sound/music/manaos/cumzone.ogg'
-	license = /decl/license/grandfathered
-
 /music_track/curb
 	title = "Curb your enthusiasm"
 	song = 'sound/music/manaos/curbyour.ogg'
 	license = /decl/license/grandfathered
 
-/music_track/spacechannel
-	title = "Space channel 5"
-	song = 'sound/music/manaos/spacechannel.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/dust
-	title = "Dust"
-	song = 'sound/music/manaos/dust.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/spesscowboy
-	title = "Space cowboy"
-	song = 'sound/music/manaos/spesscowboy.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/virtualinsanity
-	title = "Virtual insanity"
-	song = 'sound/music/manaos/virtualinsanity.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/hlife
-	title = "Triage at dawn"
-	song = 'sound/music/manaos/hlife.ogg'
-	license = /decl/license/grandfathered
-
 /music_track/gangstapara
 	title = "Gangster's paradise"
 	song = 'sound/music/manaos/gangsterpara.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/acecombat
-	title = "Sitting duck"
-	song = 'sound/music/manaos/acecombat.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/dragons
-	title = "Dragons"
-	song = 'sound/music/manaos/dragons.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/everydayisnight
-	title = "Every day is night"
-	song = 'sound/music/manaos/everydayisnight.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/hollowfaces
-	title = "Hollow faces"
-	song = 'sound/music/manaos/hollowfaces.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/secondtrumpet
-	title = "Second trumpet"
-	song = 'sound/music/manaos/secondtrumpet.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/sneakman
-	title = "Sneakman"
-	song = 'sound/music/manaos/sneakman.ogg'
-	license = /decl/license/grandfathered
-
-/music_track/gungodz
-	title = "Gun godz"
-	song = 'sound/music/manaos/gungodz.ogg'
 	license = /decl/license/grandfathered
 
 /music_track/dizzy
@@ -85,7 +20,72 @@
 	song = 'sound/music/manaos/fear.ogg'
 	license = /decl/license/grandfathered
 
-/music_track/seeingyourname
-	title = "Seeing your name makes me happy"
-	song = 'sound/music/manaos/seeingyourname.ogg'
+/music_track/arabesque
+	title = "Why no reply"
+	song = 'sound/music/manaos/arabesque.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/bandit
+	title = "Bandit radio"
+	song = 'sound/music/manaos/bandit.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/blackholes
+	title = "Black holes"
+	song = 'sound/music/manaos/blackholes.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/blackinblack
+	title = "Black in black"
+	song = 'sound/music/manaos/blackinblack.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/bluesky
+	title = "Mr. blue sky"
+	song = 'sound/music/manaos/bluesky.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/ciudadmagica
+	title = "Ciudad magica"
+	song = 'sound/music/manaos/ciudadmagica.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/domo
+	title = "Domo - cafe"
+	song = 'sound/music/manaos/domo.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/doom
+	title = "Doom - Kitchen Ace"
+	song = 'sound/music/manaos/doom.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/fallout
+	title = "Dear hearts of gentle people"
+	song = 'sound/music/manaos/fallout.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/flyme
+	title = "Fly me to the moon"
+	song = 'sound/music/manaos/flyme.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/gimmeshelther
+	title = "Gimme Shelter"
+	song = 'sound/music/manaos/gimmeshelter.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/spaceasshole
+	title = "Space asshole"
+	song = 'sound/music/manaos/spaceasshole.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/sundayclothes
+	title = "Put on your sunday clothes"
+	song = 'sound/music/manaos/sundayclothes.ogg'
+	license = /decl/license/grandfathered
+
+/music_track/somebodysmiami
+	title = "Somebody's Miami"
+	song = 'sound/music/manaos/somebodysmiami.ogg'
 	license = /decl/license/grandfathered
