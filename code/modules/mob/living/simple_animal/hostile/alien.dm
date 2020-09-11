@@ -76,7 +76,7 @@
 	retreat_distance = 5
 	minimum_distance = 5
 	move_to_delay = 4
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/xenomeat = 4, /obj/item/stack/sheet/animalhide/xeno = 1)
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/corgi
 	projectiletype = /obj/item/projectile/neurotox
 	projectilesound = 'sound/weapons/pierce.ogg'
 	status_flags = 0
@@ -123,9 +123,7 @@
 	move_to_delay = 4
 	maxHealth = 400
 	health = 400
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/xenomeat = 10, /obj/item/stack/sheet/animalhide/xeno = 2)
-	mob_size = MOB_SIZE_LARGE
-	gold_core_spawnable = NO_SPAWN
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/corgi
 
 /obj/item/projectile/neurotox
 	name = "neurotoxin"

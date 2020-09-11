@@ -45,6 +45,7 @@
 #define HIDETAIL        0x10
 #define HIDETIE         0x20
 #define HIDEHOLSTER     0x40 //Some clothing hides holsters, but not all accessories
+#define NODROP			0x80 // This flag makes it so that an item literally cannot be removed at all, or at least that's how it should be. Only deleted.
 
 // WARNING: The following flags apply only to the helmets and masks!
 #define HIDEMASK 0x1

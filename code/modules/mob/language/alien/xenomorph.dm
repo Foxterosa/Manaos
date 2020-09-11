@@ -17,5 +17,5 @@
 	exclaim_verb = "hisses"
 	colour = "alien"
 	key = "a"
-	flags = RESTRICTED | HIVEMIND | NOBABEL
-	follow = TRUE
+	flags = RESTRICTED | HIVEMIND
+
