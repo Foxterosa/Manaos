@@ -310,6 +310,7 @@ proc/get_radio_key_from_channel(var/channel)
 			if(M.client)
 				speech_bubble_recipients += M.client
 
+	INVOKE_ASYNC(src, /atom/movable/proc/animate_chat, message, speaking, italics, speech_bubble_recipients, 40)
 
 	for(var/obj/O in listening_obj)
 		spawn(0)
