@@ -639,3 +639,27 @@
 
 /obj/item/weapon/storage/box/canned/tomato
 	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/canned/tomato = 6)
+
+/obj/item/weapon/storage/box/ammo/rubber
+	name = "caja de cargadores de goma (10mm)"
+	startswith = list(/obj/item/ammo_magazine/pistol/double/rubber = 7)
+
+/obj/item/weapon/storage/box/ammo/double
+	name = "caja de cargadores (10mm)"
+	startswith = list(/obj/item/ammo_magazine/pistol/double = 7)
+
+/obj/item/weapon/storage/box/ammo/smg_ruber
+	name = "caja de cargadores de goma (7mm)"
+	startswith = list(/obj/item/ammo_magazine/smg_top/rubber = 6)
+
+/obj/item/weapon/storage/box/ammo/smg_mag
+	name = "caja de cargadores (7mm)"
+	startswith = list(/obj/item/ammo_magazine/smg_top = 6)
+
+/obj/item/weapon/storage/box/ammo/rifle_mag
+	name = "caja de cargadores (5.56mm)"
+	startswith = list(/obj/item/ammo_magazine/rifle = 6)
+
+/obj/item/weapon/storage/box/ammo/mil_mag
+	name = "caja de cargadores (5mm)"
+	startswith = list(/obj/item/ammo_magazine/mil_rifle = 6)

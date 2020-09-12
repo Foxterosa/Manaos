@@ -14,11 +14,13 @@
 	desc = "A rubber pistol bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/rubber
 	icon_state = "pistolcasing_r"
+	spent_icon = "pistolcasing_r-spent"
 
 /obj/item/ammo_casing/pistol/practice
 	desc = "A practice pistol bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/practice
 	icon_state = "pistolcasing_p"
+	spent_icon = "pistolcasing_r-spent"
 
 /obj/item/ammo_casing/pistol/small
 	desc = "A small pistol bullet casing."
@@ -31,11 +33,13 @@
 	desc = "A small pistol rubber bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/rubber/holdout
 	icon_state = "pistolcasing_r"
+	spent_icon = "pistolcasing_r-spent"
 
 /obj/item/ammo_casing/pistol/small/practice
 	desc = "A small pistol practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/practice
 	icon_state = "pistolcasing_p"
+	spent_icon = "pistolcasing_r-spent"
 
 /obj/item/ammo_casing/pistol/magnum
 	desc = "A high-power pistol bullet casing."
@@ -167,6 +171,7 @@
 	desc = "A military rifle practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/military/practice
 	icon_state = "rifle_mil_p"
+	spent_icon = "rifle_mil_p-spent"
 
 /obj/item/ammo_casing/rocket
 	name = "rocket shell"
