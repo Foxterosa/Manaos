@@ -174,6 +174,11 @@
 /obj/item/ammo_magazine/pistol/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/pistol/rubber
+	name = "doublestack pistol magazine"
+	icon_state = "enforcer_p"
+	ammo_type = /obj/item/ammo_casing/pistol/rubber
+
 /obj/item/ammo_magazine/pistol/double
 	name = "doublestack pistol magazine"
 	icon_state = "enforcer"
@@ -318,6 +323,7 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/mil_rifle/practice
+	icon_state = "bullup_pr"
 	labels = list("practice")
 	ammo_type = /obj/item/ammo_casing/rifle/military/practice
 
