@@ -36,6 +36,7 @@
 //casing
 /obj/item/ammo_casing/pistol/magnum/rubber
 	desc = "A high-power pistol rubber bullet casing."
+	icon_state = "magnumcasing_r"
 	caliber = CALIBER_PISTOL_MAGNUM
 	projectile_type = /obj/item/projectile/bullet/pistol/strong/rubber
 
@@ -48,6 +49,7 @@
 //mag
 /obj/item/ammo_magazine/magnum/rubber
 	name = "less-lethal magazine"
+	icon_state = "magnum_r"
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/rubber
 
 /////////

@@ -207,12 +207,12 @@
 /////////
 
 /obj/item/weapon/gun/projectile/pistol/command
-	name = "pistol"
+	name = "pistol NT Mk58"
 	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. This one appears to be ID locked."
 	icon = 'icons/obj/guns/pistol.dmi'
 	icon_state = "secguncomp"
 	safety_icon = "safety"
-	magazine_type = /obj/item/ammo_magazine/pistol/rubber
+	magazine_type = /obj/item/ammo_magazine/pistol/double
 	accuracy = -1
 	fire_delay = 6
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
