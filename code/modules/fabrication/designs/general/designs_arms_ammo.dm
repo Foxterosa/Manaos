@@ -57,7 +57,7 @@
 	path = /obj/item/ammo_magazine/speedloader/large
 
 /datum/fabricator_recipe/arms_ammo/hidden/speedloader_magnum
-	name = "speedloader (15mm)"
+	name = "speedloader (.357 Magnum)"
 	path = /obj/item/ammo_magazine/speedloader/magnum
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_small
@@ -89,11 +89,11 @@
 	path = /obj/item/ammo_magazine/pistol/double/practice
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_magnum
-	name = "pistol magazine (15mm)"
+	name = "pistol magazine (.357 Magnum)"
 	path = /obj/item/ammo_magazine/magnum
 
 /datum/fabricator_recipe/arms_ammo/hidden/magrub
-	name = "pistol magazine (15mm), (rubber)"
+	name = "pistol magazine (.357 Magnum), (rubber)"
 	path = /obj/item/ammo_magazine/magnum/rubber
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_machinepistol
