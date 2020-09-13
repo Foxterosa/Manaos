@@ -146,12 +146,13 @@
 	distance_falloff = 2.5
 	armor_penetration = 15
 
-/obj/item/projectile/bullet/pistol/rev38 //balas para el detective, especiales - Fox
+/obj/item/projectile/bullet/pistol/rev38 //Efectos de bala para el detective - Fox
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 5
-	shrapnel_chance_multiplier = 0.8
-	arterial_bleed_chance_multiplier = 0.8
-	distance_falloff = 3
+	damage_flags = 0
+	damage = 10
+	agony = 35
+	embed = 0
+	distance_falloff = 5
 
 //"rubber" bullets
 //Armor pen is to prevent them from being invalidated by ARMOR_BALLISTIC_MINOR, as has been the case.

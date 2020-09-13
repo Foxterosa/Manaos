@@ -81,7 +81,7 @@
 	path = /obj/item/ammo_magazine/pistol/double/pepperball
 
 /datum/fabricator_recipe/arms_ammo/hidden/detective
-	name = "Cargador Rápido para la Mars (10mm)"
+	name = "speedloader para la Mars de Goma(.357mm)"
 	path = /obj/item/ammo_magazine/speedloader/magnum/detective
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol_double_practice
