@@ -662,7 +662,7 @@
 /area/crew_quarters/heads/office/representative
 	icon_state = "heads_cl"
 	name = "\improper Puente - Oficina del Representante de Sol Gov"
-	req_access = list(access_captain)
+	req_access = list(access_representative)
 
 /area/crew_quarters/heads/office/magistrado
 	icon_state = "heads_sr"

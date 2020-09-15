@@ -55,10 +55,10 @@
 	desc = "Emergency Armory"
 	region = ACCESS_REGION_COMMAND
 
-/var/const/access_liaison = "ACCESS_TORCH_CORPORATE_LIAISON" //84
-/datum/access/liaison
-	id = access_liaison
-	desc = "Corporate Liaison"
+/var/const/access_representative = "ACCESS_TORCH_REPRESENTATIVE" //84
+/datum/access/representative
+	id = access_representative
+	desc = "Representante de Sol Gov"
 	region = ACCESS_REGION_COMMAND
 	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO and RD cannot enter
 
