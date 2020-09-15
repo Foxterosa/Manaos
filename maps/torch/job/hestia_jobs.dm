@@ -259,10 +259,13 @@
 	minimal_player_age = 5
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/blueshield
-	allowed_branches = list(/datum/mil_branch/civilian,
-							/datum/mil_branch/solgov)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor,
-						 /datum/mil_rank/sol/agent)
+	allowed_branches = list(/datum/mil_branch/private_security, /datum/mil_branch/civilian)
+	allowed_ranks = list(
+		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent,
+		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare,
+		/datum/mil_rank/civ/contractor
+	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -274,7 +277,7 @@
 
 	skill_points = 25
 	access = list(access_magistrado, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
-			            access_bridge, access_cargo, access_solgov_crew, access_hangar, access_bs, access_eva)
+			            access_bridge, access_cargo, access_solgov_crew, access_hangar, access_bs, access_eva, access_representative)
 	defer_roundstart_spawn = TRUE
 
 /datum/job/blueshield/get_description_blurb()

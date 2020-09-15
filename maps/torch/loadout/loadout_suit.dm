@@ -22,7 +22,7 @@
 	allowed_roles = list(/datum/job/scientist, /datum/job/submap/unishi_researcher, /datum/job/senior_scientist, /datum/job/scientist_assistant)
 
 /datum/gear/suit/nanotrasen_poncho
-	allowed_roles = list(/datum/job/scientist, /datum/job/liaison, /datum/job/bodyguard, /datum/job/scientist_assistant, /datum/job/senior_scientist, /datum/job/merchant)
+	allowed_roles = list(/datum/job/scientist, /datum/job/representative, /datum/job/scientist_assistant, /datum/job/senior_scientist, /datum/job/merchant)
 
 /datum/gear/suit/cargo_poncho
 	allowed_roles = list(/datum/job/cargo_tech, /datum/job/qm, /datum/job/mining, /datum/job/merchant)

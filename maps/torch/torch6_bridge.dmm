@@ -4008,10 +4008,10 @@
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
 	id_tag = "magistrado";
-	name = "Magistrado's Office Door Control";
+	name = "Control de puerta de oficina trasera del Representante de Sol Gov";
 	pixel_x = 27;
 	pixel_y = 5;
-	req_access = list("ACCESS_ADJUDICATOR")
+	req_access = list("ACCESS_TORCH_REPRESENTATIVE")
 	},
 /obj/machinery/button/windowtint{
 	pixel_x = 25;
@@ -14119,6 +14119,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
+"xA" = (
+/obj/machinery/status_display,
+/turf/simulated/wall/r_wall/prepainted,
+/area/security/bridgecheck)
 "xD" = (
 /obj/structure/cable{
 	d1 = 32;
@@ -14961,25 +14965,6 @@
 "AN" = (
 /turf/simulated/floor/tiled/dark,
 /area/aquila/mess)
-"AP" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/vending/wallmed1{
-	name = "Emergency NanoMed";
-	pixel_x = 0;
-	pixel_y = 30
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/bridge/fore)
 "AR" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -15082,12 +15067,12 @@
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "BB" = (
 /obj/machinery/button/alternate/door/bolts{
-	name = "CL's Backroom Door Bolt Control";
 	desc = "A remote control-switch for the office door.";
+	id_tag = "liaisondoor3";
+	name = "Control de pernos del cuarto trasero del Magistrado";
 	pixel_x = -26;
 	pixel_y = -7;
-	req_access = list("ACCESS_TORCH_CORPORATE_LIAISON");
-	id_tag = "liaisondoor3"
+	req_access = list("ACCESS_ADJUDICATOR")
 	},
 /obj/machinery/light_switch{
 	pixel_x = -24;
@@ -16161,6 +16146,12 @@
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftport)
+"Hk" = (
+/obj/effect/floor_decal/scglogo{
+	icon_state = "top-center"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/bridge)
 "Ho" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "hopdoor";
@@ -16351,6 +16342,25 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
+"HY" = (
+/obj/machinery/computer/modular/preset/cardslot/command{
+	icon_state = "console";
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/machinery/recharger/wallcharger{
+	dir = 8;
+	pixel_x = 23;
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/bridgecheck)
 "Ia" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -16504,10 +16514,6 @@
 /obj/effect/floor_decal/corner/blue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea)
-"Ir" = (
-/obj/structure/grille,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/forestarboard)
 "Is" = (
 /obj/structure/bed/chair/padded/blue,
 /obj/structure/cable/green{
@@ -16534,6 +16540,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
+"Iw" = (
+/obj/structure/grille,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/forestarboard)
 "IA" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -16832,25 +16842,6 @@
 /obj/item/weapon/pen/multi/cmd,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/officerbunk)
-"JM" = (
-/obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 6
-	},
-/obj/machinery/recharger/wallcharger{
-	dir = 8;
-	pixel_x = 23;
-	pixel_y = -3
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/bridgecheck)
 "JR" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/machinery/chemical_dispenser/tac_coffee/full/good,
@@ -17184,6 +17175,12 @@
 /obj/item/weapon/material/ashtray/glass,
 /turf/simulated/floor/carpet/blue2,
 /area/bridge/meeting_room)
+"LX" = (
+/obj/effect/floor_decal/scglogo{
+	icon_state = "bottom-center"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/bridge)
 "Mb" = (
 /obj/machinery/computer/modular/preset/cardslot{
 	icon_state = "computer";
@@ -17736,10 +17733,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
-"OV" = (
-/obj/machinery/status_display,
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/bridgecheck)
 "Pc" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -17843,17 +17836,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
-"PN" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/scglogo{
-	icon_state = "bottom-left"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -18620,8 +18602,13 @@
 /turf/simulated/floor/airless,
 /area/aquila/medical)
 "SR" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /obj/effect/floor_decal/scglogo{
-	icon_state = "top-center"
+	icon_state = "bottom-left"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -18911,20 +18898,20 @@
 	pixel_x = 32
 	},
 /obj/machinery/button/alternate/door/bolts{
-	name = "CL's Rear Office Door Bolt Control";
 	desc = "A remote control-switch for the office door.";
+	id_tag = "liaisondoor2";
+	name = "Control de pernos de la puerta de oficina trasera del Magistrado";
 	pixel_x = 6;
 	pixel_y = 26;
-	req_access = list("ACCESS_TORCH_CORPORATE_LIAISON");
-	id_tag = "liaisondoor2"
+	req_access = list("ACCESS_ADJUDICATOR")
 	},
 /obj/machinery/button/alternate/door{
-	name = "CL's Rear Office Door Control";
 	desc = "A remote control-switch for the office door.";
+	id_tag = "liaisondoor2";
+	name = "Control de puerta de oficina trasera del Magistrado";
 	pixel_x = -5;
 	pixel_y = 26;
-	req_access = list("ACCESS_TORCH_CORPORATE_LIAISON");
-	id_tag = "liaisondoor2"
+	req_access = list("ACCESS_ADJUDICATOR")
 	},
 /obj/machinery/light_switch{
 	pixel_x = 1;
@@ -19251,12 +19238,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
-"Vp" = (
-/obj/effect/floor_decal/scglogo{
-	icon_state = "bottom-center"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge)
 "Vs" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 1
@@ -19312,6 +19293,25 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
+"VV" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/vending/wallmed1{
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = 30
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/bridge/fore)
 "VW" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/captain,
@@ -19359,12 +19359,12 @@
 	},
 /obj/item/modular_computer/tablet/lease/preset/command,
 /obj/machinery/button/alternate/door{
-	name = "CL's Front Office Door Control";
 	desc = "A remote control-switch for the office door.";
+	id_tag = "liaisondoor";
+	name = "CL's Front Office Door Control";
 	pixel_x = 27;
 	pixel_y = -7;
-	req_access = list("ACCESS_TORCH_CORPORATE_LIAISON");
-	id_tag = "liaisondoor"
+	req_access = list("ACCESS_ADJUDICATOR")
 	},
 /obj/machinery/button/windowtint{
 	pixel_x = 25;
@@ -28732,7 +28732,7 @@ EV
 vH
 vM
 vN
-PN
+SR
 vR
 vV
 vW
@@ -28932,9 +28932,9 @@ eP
 hV
 eP
 jy
-SR
+Hk
 px
-Vp
+LX
 dW
 eP
 wa
@@ -30734,7 +30734,7 @@ af
 af
 YI
 VB
-Ir
+Iw
 aO
 FG
 YA
@@ -32575,7 +32575,7 @@ mE
 mE
 mE
 mE
-AP
+VV
 ga
 sL
 sL
@@ -33381,7 +33381,7 @@ mN
 AA
 nZ
 Wa
-JM
+HY
 mN
 rg
 yb
@@ -33579,7 +33579,7 @@ La
 iX
 Lk
 gl
-OV
+xA
 mO
 oK
 zM
