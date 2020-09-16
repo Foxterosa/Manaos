@@ -1,7 +1,7 @@
 //generic procs copied from obj/effect/alien
 /obj/effect/spider
-	name = "web"
-	desc = "It's stringy and sticky."
+	name = "tela"
+	desc = "Es pegajoso."
 	icon = 'icons/effects/effects.dmi'
 	anchored = 1
 	density = 0
@@ -24,9 +24,9 @@
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 	if(W.attack_verb.len)
-		visible_message("<span class='warning'>\The [src] have been [pick(W.attack_verb)] with \the [W][(user ? " by [user]." : ".")]</span>")
+		visible_message("<span class='warning'>\The [src] ha sido [pick(W.attack_verb)] con [W.name][(user ? " por [user]." : ".")]</span>")
 	else
-		visible_message("<span class='warning'>\The [src] have been attacked with \the [W][(user ? " by [user]." : ".")]</span>")
+		visible_message("<span class='warning'>\The [src] ha sido atacado con [W.name][(user ? " por [user]." : ".")]</span>")
 
 	var/damage = W.force / 4.0
 
@@ -71,15 +71,15 @@
 		return 1
 	else if(istype(mover, /mob/living))
 		if(prob(50))
-			to_chat(mover, "<span class='warning'>You get stuck in \the [src] for a moment.</span>")
+			to_chat(mover, "<span class='warning'>Te has quedado atrapado en [src.name] por un momento.</span>")
 			return 0
 	else if(istype(mover, /obj/item/projectile))
 		return prob(30)
 	return 1
 
 /obj/effect/spider/eggcluster
-	name = "egg cluster"
-	desc = "They seem to pulse slightly with an inner life."
+	name = "camada de huevos"
+	desc = "Parece que se mueven ligeramente... con vida a su interior."
 	icon_state = "eggs"
 	var/amount_grown = 0
 
@@ -284,7 +284,7 @@
 			amount_grown = 20 //reset amount_grown so that people have some time to react to spiderlings before they grow big
 			O.implants -= src
 			forceMove(O.owner ? O.owner.loc : O.loc)
-			src.visible_message("<span class='warning'>\A [src] emerges from inside [O.owner ? "[O.owner]'s [O.name]" : "\the [O]"]!</span>")
+			src.visible_message("<span class='warning'>\A [src.name] emerge dentro de [O.owner ? "[O.owner]'s [O.name]" : "\the [O]"]!</span>")
 			if(O.owner)
 				O.owner.apply_damage(5, BRUTE, O.organ_tag)
 				O.owner.apply_damage(3, TOX, O.organ_tag)
@@ -292,7 +292,7 @@
 			O.owner.apply_damage(1, TOX, O.organ_tag)
 			if(world.time > last_itch + 30 SECONDS)
 				last_itch = world.time
-				to_chat(O.owner, "<span class='notice'>Your [O.name] itches...</span>")
+				to_chat(O.owner, "<span class='notice'>Tu [O.name] pica...</span>")
 	else if(prob(1))
 		src.visible_message("<span class='notice'>\The [src] skitters.</span>")
 
@@ -300,16 +300,16 @@
 		amount_grown += rand(0,2)
 
 /obj/effect/decal/cleanable/spiderling_remains
-	name = "spiderling remains"
-	desc = "Green squishy mess."
+	name = "restos de arañas"
+	desc = "Suciedad verde."
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "greenshatter"
 	anchored = 1
 	layer = BLOOD_LAYER
 
 /obj/effect/spider/cocoon
-	name = "cocoon"
-	desc = "Something wrapped in silky spider web."
+	name = "capullo"
+	desc = "Algo envuelto en sedosa tela de araña."
 	icon_state = "cocoon1"
 	health = 60
 
@@ -318,7 +318,7 @@
 	icon_state = pick("cocoon1","cocoon2","cocoon3")
 
 /obj/effect/spider/cocoon/Destroy()
-	src.visible_message("<span class='warning'>\The [src] splits open.</span>")
+	src.visible_message("<span class='warning'>\The [src] se abre de par en par.</span>")
 	for(var/atom/movable/A in contents)
 		A.dropInto(loc)
 	return ..()
