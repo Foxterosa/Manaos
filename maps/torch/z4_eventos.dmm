@@ -307,16 +307,7 @@
 /turf/simulated/floor/carpet/blue2,
 /area/beach/med)
 "bm" = (
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
+/obj/effect/wingrille_spawn/reinforced,
 /turf/simulated/floor/wood/walnut,
 /area/beach/med)
 "bn" = (
@@ -448,16 +439,6 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/beach/med)
-"bF" = (
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
-/area/beach/med)
 "bG" = (
 /turf/simulated/wall/prepainted,
 /area/casinojack/bar)
@@ -542,17 +523,6 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/beach/med)
-"bU" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
 /area/beach/med)
 "bV" = (
 /obj/structure/table/rack/shelf,
@@ -845,14 +815,7 @@
 /turf/simulated/floor/carpet/orange,
 /area/beach/principal)
 "cT" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/grille,
+/obj/effect/wingrille_spawn/reinforced,
 /turf/simulated/floor/wood/walnut,
 /area/beach/principal)
 "cU" = (
@@ -1325,17 +1288,6 @@
 	icon_state = "desert4"
 	},
 /area/beach/playa)
-"ep" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
-/area/beach/principal)
 "eq" = (
 /obj/structure/bed/chair/office/light{
 	dir = 4
@@ -1564,19 +1516,6 @@
 	},
 /turf/simulated/floor/carpet/green,
 /area/beach/med)
-"eY" = (
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
-/area/beach/principal)
 "eZ" = (
 /obj/machinery/door/airlock/sol{
 	name = "Briefing Room"
@@ -1728,16 +1667,6 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/carpet/orange,
-/area/beach/principal)
-"ft" = (
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
 /area/beach/principal)
 "fu" = (
 /obj/structure/table/glass,
@@ -2362,17 +2291,6 @@
 /obj/effect/overlay/palmtree_l,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/beach/playa)
-"hg" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
-/area/beach/principal)
 "hh" = (
 /obj/structure/bed/chair{
 	icon_state = "chair_preview";
@@ -2589,20 +2507,6 @@
 	icon_state = "desert2"
 	},
 /area/beach/playa)
-"hL" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/turf/simulated/floor/wood/walnut,
-/area/beach/med)
 "hM" = (
 /obj/structure/bed/chair{
 	icon_state = "chair_preview";
@@ -2926,14 +2830,6 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/beach/sec)
-"iH" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
-/area/beach/principal)
 "iI" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 5
@@ -3239,20 +3135,6 @@
 	icon_state = "solgovflag-left";
 	pixel_y = -32
 	},
-/turf/simulated/floor/wood/walnut,
-/area/beach/principal)
-"ju" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
 /turf/simulated/floor/wood/walnut,
 /area/beach/principal)
 "jv" = (
@@ -3624,16 +3506,7 @@
 /turf/simulated/floor/carpet/red,
 /area/beach/sec)
 "km" = (
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
+/obj/effect/wingrille_spawn/reinforced,
 /turf/simulated/floor/wood/walnut,
 /area/beach/sec)
 "kn" = (
@@ -6688,17 +6561,6 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/nieve/med)
-"sc" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
-/area/beach/sec)
 "sd" = (
 /obj/structure/curtain/open/bed{
 	pixel_x = 32;
@@ -6716,20 +6578,6 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/nieve/med)
-"sf" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/turf/simulated/floor/wood/walnut,
-/area/beach/sec)
 "sh" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -6782,36 +6630,6 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/carpet/red,
-/area/beach/sec)
-"so" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
-/area/beach/sec)
-"sp" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
-/area/beach/sec)
-"sq" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
 /area/beach/sec)
 "sr" = (
 /obj/structure/curtain/open/bed{
@@ -9228,14 +9046,7 @@
 	},
 /area/nieve/bosque)
 "DA" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/grille,
-/obj/structure/window/reinforced/crescent{
-	dir = 8
-	},
+/obj/effect/wingrille_spawn/reinforced,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/cuarto4)
 "DD" = (
@@ -9327,17 +9138,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
-"En" = (
-/obj/structure/window/reinforced/crescent,
-/obj/structure/window/reinforced/crescent{
-	dir = 1
-	},
-/obj/structure/window/reinforced/crescent{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/simulated/floor/wood/walnut,
-/area/nieve/cuarto4)
 "Eo" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/remains,
@@ -11819,11 +11619,6 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/carpet,
 /area/nieve/bosque)
-"Xw" = (
-/obj/effect/wingrille_spawn/reinforced,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/space)
 "Xz" = (
 /obj/machinery/door/window/brigdoor/eastleft{
 	dir = 4;
@@ -13299,7 +13094,7 @@ ag
 ag
 Du
 cS
-ep
+cT
 kW
 kW
 lF
@@ -14096,14 +13891,14 @@ eP
 eP
 ag
 ag
-ju
+cT
 ag
 hJ
 hJ
 ag
-eY
-ft
-hg
+cT
+cT
+cT
 ag
 ag
 ag
@@ -14902,7 +14697,7 @@ dA
 ac
 cj
 cS
-ep
+cT
 dp
 dp
 he
@@ -15508,7 +15303,7 @@ ac
 ac
 ck
 cS
-iH
+cT
 dp
 dp
 dG
@@ -15710,7 +15505,7 @@ dC
 cR
 cj
 cS
-ep
+cT
 dp
 dp
 dp
@@ -16316,7 +16111,7 @@ cP
 cR
 cj
 cS
-ep
+cT
 dp
 dp
 eR
@@ -17926,7 +17721,7 @@ ae
 ae
 ck
 cS
-ep
+cT
 dp
 dp
 em
@@ -18734,7 +18529,7 @@ az
 af
 Du
 cS
-ep
+cT
 dp
 dp
 dp
@@ -19542,7 +19337,7 @@ bf
 bO
 cj
 cS
-ep
+cT
 dp
 dp
 eo
@@ -20151,14 +19946,14 @@ fq
 ag
 ag
 ag
-eY
-ft
-hg
+cT
+cT
+cT
 ag
 fL
 fL
 km
-sc
+km
 fL
 fL
 fL
@@ -20166,7 +19961,7 @@ fL
 fL
 fL
 fL
-sf
+km
 fL
 fL
 lv
@@ -20572,7 +20367,7 @@ jM
 gr
 gr
 sr
-sf
+km
 lv
 ab
 ab
@@ -21378,7 +21173,7 @@ gr
 gr
 gr
 sk
-so
+km
 ak
 ab
 ab
@@ -21580,7 +21375,7 @@ fL
 gr
 gr
 sn
-sp
+km
 ak
 ab
 ab
@@ -21782,7 +21577,7 @@ fL
 jx
 gr
 sn
-sq
+km
 ak
 ab
 ab
@@ -22588,7 +22383,7 @@ sd
 in
 fL
 fL
-sf
+km
 fL
 fL
 ak
@@ -22786,7 +22581,7 @@ gw
 hl
 fL
 fL
-sf
+km
 fL
 fL
 ak
@@ -22981,7 +22776,7 @@ aN
 dM
 es
 fJ
-hL
+bm
 ak
 fL
 fL
@@ -23587,7 +23382,7 @@ eW
 dM
 es
 gp
-hL
+bm
 ak
 ab
 ab
@@ -23780,12 +23575,12 @@ qf
 ah
 ah
 bm
-bF
-bU
+bm
+bm
 ah
 ah
 bm
-bU
+bm
 ah
 ah
 ah
@@ -29153,7 +28948,7 @@ ud
 Ju
 zR
 zW
-En
+DA
 rW
 rW
 rW
@@ -32152,7 +31947,7 @@ ab
 ab
 ab
 ab
-Xw
+ab
 ab
 ab
 ab
