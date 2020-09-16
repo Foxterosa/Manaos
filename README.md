@@ -1,49 +1,48 @@
-# Bastion of Hestia
+# Manaos
 
 [Website]() - [Code](https://github.com/Foxterosa/BoH-Bay) - [Discord]() - [IRC]()
 
-This is a fork of Baystation12's code for BYOND on Space Station 13.
+Esta es una versión del código de Baystation12 para byond en Space Station 13.
 
 ---
 
-### CONTRIBUTING GUIDELINES
+### Reglas para contribuir
 
-**Please refrain from making non code related comments in pull requests on GitHub.**
--Basically:
-Don't be a dick.
-Make a logical argument.
-Maintainer has final say on code issues.
-Lore head has final say on lore issues.
-Make sure you read: https://github.com/Baystation12/Baystation12/wiki/Automatic-changelog-generation and https://github.com/Baystation12/Baystation12/wiki/Changelog-rules-and-guidelines for Changelog rules.
-
-
-Maintainers have the right to punish you for breaking these rules.
+**Absténgase de hacer comentarios no relacionados con el código en las solicitudes de PR en GitHub.**
+-Basicamente:
+No seas idiota.
+Haz argumentos lógicos.
+Los Maintainer tienen la última palabra en los PR.
+Los jefes de Lore tienen la última palabra en estas cuestiones.
+Asegúrate de leer el: https://github.com/Baystation12/Baystation12/wiki/Automatic-changelog-generation y https://github.com/Baystation12/Baystation12/wiki/Changelog-rules-and-guidelines para las reglas del Changelog.
 
 
----
+Los Maintainers tienen el derecho de castigarte si rompes las reglas.
 
-### SECURITY
-
-Please see [/docs/SECURITY.md](/docs/SECURITY.md) for this repository's security policy, and how to report security issues.
 
 ---
 
-### LICENSE
+### SEGURIDAD
 
-The code for Baystation12 is licensed under the [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl.html), which can be found in full in [/LICENSE](/LICENSE).
-
-Code with a git authorship date prior to `1420675200 +0000` (2015/01/08 00:00 GMT) is licensed under the GNU General Public License version 3, which can be found in full in [/docs/GPL3.txt](/docs/GPL3.txt)
-
-All code where the authorship dates on or after `1420675200 +0000` is assumed to be licensed under AGPL v3, if you wish to license under GPL v3 please make this clear in the commit message and any added files.
-
-If you wish to develop and host this codebase in a closed source manner you may use all commits prior to `1420675200 +0000`, which are licensed under GPL v3.  The major change here is that if you host a server using any code licensed under AGPLv3 you are required to provide full source code for your servers users as well including addons and modifications you have made.
-
-See [here](https://www.gnu.org/licenses/why-affero-gpl.html) for more information.
-
-All assets including icons and sound are under a [Creative Commons 3.0 BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/) unless otherwise indicated.
+Por favor, revise [/docs/SECURITY.md](/docs/SECURITY.md) para ver la política de seguridad de este server, y como reportar problemas de seguridad.
 
 ---
 
-### GETTING THE CODE AND INSTALLING
+### Licencia
 
-Please see [/docs/installation.md](/docs/installation.md) for instructions on obtaining, installing, updating, and running this code.
+El código para Baystation12 está licenciado bajo el [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl.html), el cual puede encontrarse completo en [/LICENSE](/LICENSE).
+
+Código git anterior a la versión `1420675200 +0000` (2015/01/08 00:00 GMT) está licenciado bajo el GNU General Public License version 3, el cual puede encontrarse completo en [/docs/GPL3.txt](/docs/GPL3.txt)
+
+Todo el código donde la autoría data en o después de la versión `1420675200 +0000` es asumida bajo la licencia AGPL v3, si te quieres licenciar bajo GPL v3 por favor dejalo claro en el commit o PR.
+
+Si desea desarrollar y alojar esta database de una manera cerrada, puede utilizar todas las confirmaciones anteriores a `1420675200 + 0000`, que están bajo licencia GPL v3. El cambio principal aquí es que si aloja un servidor utilizando cualquier código con licencia de AGPLv3, debe proporcionar el código fuente completo para los usuarios de sus servidores, además de los complementos y modificaciones que haya realizado.
+
+Mira [Aqui](https://www.gnu.org/licenses/why-affero-gpl.html) para mas información
+
+Todos los activos, incluidos los iconos y el sonido, están bajo la [Creative Commons 3.0 BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/) A menos que sea indicado.
+
+---
+
+### CONSEGUIR EL CÓDIGO E INSTALAR
+Por favor, vea [/docs/installation.md](/docs/installation.md) para instrucciones de como obtener, instalar, actualizar, y correr este código.
