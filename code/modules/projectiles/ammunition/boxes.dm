@@ -336,3 +336,24 @@
 	matter = list(MATERIAL_STEEL = 600)
 	max_ammo = 7
 	multiple_sprites = 1
+
+/// Mateba Speedloader by Danaleja2005
+
+/obj/item/ammo_magazine/speedloader/mateba
+	name = "Cargador de Velocidad de Mateba"
+	desc = "Un Cargador de Velocidad para Autorevolvers Mateba Unica"
+	icon_state = "spdloader_mateba"
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/mateba
+	matter = list(MATERIAL_STEEL = 2000)
+	max_ammo = 6
+
+/obj/item/ammo_magazine/speedloader/mateba/special
+	name = "Cargador de Velocidad de Munición especial para Autorevolvers Mateba"
+	desc = "Un Cargador de Velocidad para Autorevolver Mateba Unica Edición Especial"
+	icon_state = "spdloader_mateba_special"
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/mateba/special
+	matter = list(MATERIAL_STEEL = 2000)
+	max_ammo = 6
+

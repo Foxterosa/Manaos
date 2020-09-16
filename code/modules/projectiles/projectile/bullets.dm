@@ -412,3 +412,26 @@ Thanks a bunch! :n
 			if(prob(33))
 				to_chat(M, "<span class='warning'>The exposed flesh on your feet burns!</span>")
 			M.apply_effect(effective_strength / 2, PAIN, 0)
+
+///Mateba Bullets by Danaleja2005
+
+/obj/item/projectile/bullet/mateba
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	icon_state = "mateba"
+	damage = 62
+	shrapnel_chance_multiplier = 0.6
+	arterial_bleed_chance_multiplier = 0.4
+	distance_falloff = 3.0
+	armor_penetration = 10
+
+///Special Bullets
+
+/obj/item/projectile/bullet/mateba/special
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	icon_state = "matebaspecial"
+	damage = 70
+	shrapnel_chance_multiplier = 0.8
+	arterial_bleed_chance_multiplier = 0.4
+	distance_falloff = 2.5
+	armor_penetration = 20
+	agony = 60

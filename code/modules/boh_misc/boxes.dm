@@ -71,6 +71,7 @@
 
 /obj/item/gunbox/captain/attack_self(mob/living/user)
 	var/list/options = list()
+	options["Ballistic - Autorevolver Mateba"] = list(/obj/item/weapon/gun/projectile/revolver/mateba/special,/obj/item/ammo_magazine/speedloader/mateba/special,/obj/item/ammo_magazine/speedloader/mateba/special,/obj/item/ammo_magazine/speedloader/mateba/special)
 	options["Ballistic - .454 Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain/large,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader/large)
 	options["Ballistic - SA Lumoco P3"] = list(/obj/item/weapon/gun/projectile/pistol/holdout/cap,/obj/item/ammo_magazine/pistol/small,/obj/item/clothing/mask/smokable/ecig/deluxe)
 	options["Ballistic - ID locked Mk58"] = list(/obj/item/weapon/gun/projectile/pistol/command,/obj/item/ammo_magazine/pistol,/obj/item/weapon/storage/fancy/cigar)
