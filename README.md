@@ -1,6 +1,6 @@
 # Manaos
 
-[Website]() - [Code](https://github.com/Foxterosa/BoH-Bay) - [Discord]() - [IRC]()
+[Code](https://github.com/Foxterosa/BoH-Bay) - [Discord](https://discord.com/invite/Cp8httq)
 
 Esta es una versión del código de Baystation12 para byond en Space Station 13.
 
