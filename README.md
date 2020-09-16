@@ -2,7 +2,7 @@
 
 [Code](https://github.com/Foxterosa/BoH-Bay) - [Discord](https://discord.com/invite/Cp8httq)
 
-Esta es una versión del código de Baystation12 para byond en Space Station 13.
+Esta es una versión del código de Baystation12 y Bastion of Hestia para byond en Space Station 13.
 
 ---
 
