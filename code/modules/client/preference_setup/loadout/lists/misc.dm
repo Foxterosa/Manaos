@@ -78,7 +78,7 @@
 
 /datum/gear/lunchbox
 	display_name = "lunchera"
-	description = "Una pequena lunchera."
+	description = "Una pequeña lunchera."
 	cost = 2
 	path = /obj/item/weapon/storage/lunchbox
 

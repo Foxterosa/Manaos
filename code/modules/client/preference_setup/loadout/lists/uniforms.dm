@@ -25,6 +25,22 @@
 	display_name = "ropas varias"
 	path = /obj/item/clothing/under
 
+/datum/gear/uniform/maiddress
+	display_name = "traje de mucama"
+	path = /obj/item/clothing/under/maiddress
+
+/datum/gear/uniform/kasumioutfit
+	display_name = "traje de Kasumi"
+	path = /obj/item/clothing/under/kasumioutfit
+
+/datum/gear/uniform/jokeroutfit
+	display_name = "traje de Joker"
+	path = /obj/item/clothing/under/jokeroutfit
+
+/datum/gear/uniform/jrsuit
+	display_name = "uniforme de jr"
+	path = /obj/item/clothing/under/jrsuit
+
 /datum/gear/uniform/suit/New()
 	..()
 	var/suits = list()
@@ -197,3 +213,23 @@
 /datum/gear/uniform/frontier
 	display_name = "ropa de frontera"
 	path = /obj/item/clothing/under/frontier
+
+/datum/gear/uniform/redsuit
+	display_name = "Traje rojo elegante, femenino"
+	path = /obj/item/clothing/under/redsuit
+	cost = 2
+
+/datum/gear/uniform/redsuitskirt
+	display_name = "Traje rojo elegante con falda"
+	path = /obj/item/clothing/under/redsuitskirt
+	cost = 2
+
+/datum/gear/uniform/camosuit
+	display_name = "Traje camuflado de Marine"
+	path = /obj/item/clothing/under/camosuit
+	cost = 2
+
+/datum/gear/uniform/camoshirt
+	display_name = "Traje camuflado de Marin, con remera"
+	path = /obj/item/clothing/under/camoshirt
+	cost = 2

@@ -171,6 +171,8 @@
 	#include "torch6_bridge.dmm"
 	#include "z1_admin.dmm"
 	#include "z2_transit.dmm"
+	#include "z3_espacio.dmm"
+	#include "z4_eventos.dmm"
 
 	#include "../away/empty.dmm"
 	#include "../away/ascent/ascent.dm"
@@ -189,7 +191,7 @@
 	#include "../away/errant_pisces/errant_pisces.dm"
 	#include "../away/lar_maria/lar_maria.dm"
 	#include "../away/unishi/unishi.dm"
-	#include "../away/voxship/voxship.dm"
+	//#include "../away/voxship/voxship.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
 
 

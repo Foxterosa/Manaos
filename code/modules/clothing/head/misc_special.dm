@@ -213,3 +213,16 @@
 	icon_state = "richard"
 	body_parts_covered = HEAD|FACE
 	flags_inv = BLOCKHAIR
+
+/obj/item/clothing/head/peluca1
+	name = "peluca en polvo"
+	desc = "Una peluca en polvo."
+	icon_state = "pwig_s"
+	item_state = "jwig_s"
+
+
+/obj/item/clothing/head/peluca2
+	name = "peluca de la justicia"
+	desc = "Una elegante peluca en polvo dada a los árbitros de la ley. Se ve que da picazón."
+	icon_state = "jwig_s"
+	item_state = "jwig_s"

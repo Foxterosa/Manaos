@@ -6,8 +6,6 @@
 /datum/gear/gloves/nitrile
 
 /datum/gear/gloves/rainbow
-	allowed_roles = CASUAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/gloves/evening
 
@@ -21,3 +19,5 @@
 	display_name = "gloves, duty"
 	path = /obj/item/clothing/gloves/thick/duty
 	cost = 2
+
+/datum/gear/gloves/fingerless

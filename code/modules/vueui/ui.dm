@@ -133,7 +133,7 @@ main ui datum.
 <html>
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta charset="UTF-8">
+		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" type="text/css" href="vueui.css">
 	</head>
 	<body class="theme-nano dark-theme">
@@ -279,7 +279,6 @@ main ui datum.
 /datum/vueui/proc/push_change(var/list/ndata)
 	if(ndata && status > STATUS_DISABLED)
 		src.data = ndata
-	to_chat(user, output(list2params(list(generate_data_json())),"[windowid].browser:receiveUIState"))
 
 /**
   * Check for change and push that change of data

@@ -27,7 +27,7 @@
 	holder_type = /obj/item/weapon/holder/mouse
 	mob_size = MOB_MINISCULE
 	possession_candidate = 1
-	can_escape = TRUE
+	can_escape = FALSE
 	can_pull_size = ITEM_SIZE_TINY
 	can_pull_mobs = MOB_PULL_NONE
 	kitchen_tag = "mouse"
@@ -107,7 +107,7 @@
 	if( ishuman(AM) )
 		if(!stat)
 			var/mob/M = AM
-			to_chat(M, "<span class='warning'>\icon[src] Squeek!</span>")
+			to_chat(M, "<span class='warning'>[icon2html(src, M)] Squeek!</span>")
 			sound_to(M, 'sound/effects/mousesqueek.ogg')
 	..()
 

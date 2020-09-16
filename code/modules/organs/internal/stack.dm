@@ -5,7 +5,7 @@
 	to_chat(src, "<span class='notice'>You feel a faint sense of vertigo as your neural lace boots.</span>")
 
 /obj/item/organ/internal/stack
-	name = "neural lace"
+	name = "enlace neural"
 	parent_organ = BP_HEAD
 	icon_state = "cortical-stack"
 	organ_tag = BP_STACK
@@ -31,13 +31,13 @@
 	if(istype(backup)) // Do we have a backup?
 		if(user.skill_check(SKILL_DEVICES, SKILL_EXPERT)) // Can we even tell what the blinking means?
 			if(find_dead_player(ownerckey, 1)) // Is the player still around and dead?
-				to_chat(user, "<span class='notice'>The light on [src] is blinking rapidly. Someone might have a second chance.</span>")
+				to_chat(user, "<span class='notice'>La luz del [src.name] parpadea rapidamente. Alguien puede que tenga una segunda oportunidad.</span>")
 			else
-				to_chat(user, "The light on [src] is blinking slowly. Maybe wait a while...")
+				to_chat(user, "La luz del [src.name] parpadea lentamente. Talves debas esperar...")
 		else
-			to_chat(user, "The light on [src] is blinking, but you don't know what it means.")
+			to_chat(user, "La luz del [src.name] parpadea, pero no tienes idea de lo que significa.")
 	else
-		to_chat(user, "The light on [src] is off. " + (user.skill_check(SKILL_DEVICES, SKILL_EXPERT) ? "It doesn't have a backup." : "Wonder what that means."))
+		to_chat(user, "La luz del [src.name] esta apagada. " + (user.skill_check(SKILL_DEVICES, SKILL_EXPERT) ? "No tiene un respaldo." : "Te preguntas que significara."))
 
 /obj/item/organ/internal/stack/emp_act()
 	return
@@ -58,6 +58,16 @@
 	do_backup()
 	robotize()
 
+/obj/item/organ/internal/stack/Destroy()
+	. = ..()
+	var/obj/gore
+	playsound(src, "shatter", 70, 1)
+	gore = new /obj/item/weapon/material/shard(get_turf(owner), MATERIAL_GLASS)
+	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
+	gore = new /obj/effect/decal/cleanable/blood/gibs(get_turf(owner))
+	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
+	owner.visible_message(SPAN_WARNING("[owner]'s neck explodes in a shower of strange blue liquid and metallic fragments!"))
+
 /obj/item/organ/internal/stack/proc/backup_inviable()
 	return 	(!istype(backup) || backup == owner.mind || (backup.current && backup.current.stat != DEAD))
 
@@ -68,17 +78,17 @@
 	if(owner && !backup_inviable())
 		var/current_owner = owner
 		prompting = TRUE
-		var/response = alert(find_dead_player(ownerckey, 1), "Your neural backup has been placed into a new body. Do you wish to return to life as the mind of [backup.name]?", "Resleeving", "Yes", "No")
+		var/response = alert(find_dead_player(ownerckey, 1), "Tu [src.name] ah sido colocado en un nuevo cuerpo. Deseas volver a la vida como respaldo de la mente de [backup.name]?", "Resleeving", "Yes", "No")
 		prompting = FALSE
 		if(src && response == "Yes" && owner == current_owner)
 			overwrite()
 	sleep(-1)
 	do_backup()
-	to_chat(owner,SPAN_WARNING("You feel sluggish and your limbs are heavy as your new body adjusts to the neural lace - you'll probably be pretty useless until your lace has acclimated."))
+	to_chat(owner,SPAN_WARNING("Te sientes lento y tus extremidades son pesadas a medida que tu nuevo cuerpo se adapta al enlace neural; probablemente seras bastante inutil hasta que tu enlace se haya aclimatado."))
 	owner.buff_skill(skilldecay, 30 MINUTES, buff_type)//Debuff applied
 	relacetime = world.time
 	if(world.time >= relacetime + 30 MINUTES)
-		to_chat(owner, SPAN_NOTICE("You feel like you have recovered slightly from your ordeal, still wouldn't make a habit of dying."))
+		to_chat(owner, SPAN_NOTICE("Te sientes como si te hubieras recuperado un poco de tu terrible experiencia, todavia no harias el hábito de morir."))
 	return 1
 
 /obj/item/organ/internal/stack/removed()
@@ -89,9 +99,9 @@
 	if(owner.mind && owner.ckey) //Someone is already in this body!
 		if(owner.mind == backup) // Oh, it's the same mind in the backup. Someone must've spammed the 'Start Procedure' button in a panic.
 			return
-		owner.visible_message("<span class='danger'>\The [owner] spasms violently!</span>")
+		owner.visible_message("<span class='danger'>A [owner.name] le dan violentos espasmos!</span>")
 		if(prob(66))
-			to_chat(owner, "<span class='danger'>You fight off the invading tendrils of another mind, holding onto your own body!</span>")
+			to_chat(owner, "<span class='danger'>Luchas contra los zarcillos invasores de otra mente, sosteniendo tu propio cuerpo!</span>")
 			return
 		owner.ghostize() // Remove the previous owner to avoid their client getting reset.
 	//owner.dna.real_name = backup.name
@@ -102,4 +112,4 @@
 	backup.transfer_to(owner)
 	if(default_language) owner.default_language = default_language
 	owner.languages = languages.Copy()
-	to_chat(owner, "<span class='notice'>Consciousness slowly creeps over you as your new body awakens.</span>")
+	to_chat(owner, "<span class='notice'>La conciencia se arrastra lentamente sobre ti a medida que tu nuevo cuerpo se despierta.</span>")

@@ -51,7 +51,7 @@
 
 /obj/item/organ/internal/lungs/robotize()
 	. = ..()
-	icon_state = "pulmones-protesis"
+	icon_state = "lungs-prosthetic"
 
 /obj/item/organ/internal/lungs/set_dna(var/datum/dna/new_dna)
 	..()

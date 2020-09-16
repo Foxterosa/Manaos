@@ -27,11 +27,6 @@
 	shirts["camisa hawaiiana random"] = /obj/item/clothing/accessory/toggleable/hawaii/random
 	gear_tweaks += new/datum/gear_tweak/path(shirts)
 
-/datum/gear/clothing/vest
-	display_name = "chaleco de traje, coloreable"
-	path = /obj/item/clothing/accessory/toggleable/vest/
-	flags = GEAR_HAS_COLOR_SELECTION
-
 /datum/gear/clothing/suspenders
 	display_name = "tirantes"
 	path = /obj/item/clothing/accessory/suspenders
@@ -73,4 +68,14 @@
 /datum/gear/clothing/tangzhuang
 	display_name = "campera tangzhuang, coloreable"
 	path = /obj/item/clothing/accessory/tangzhuang
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/clothing/redsuit_jacket
+	display_name = "Chaqueta de traje, coloreable"
+	path = /obj/item/clothing/accessory/toggleable/redsuit_jacket
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/clothing/redsuit_vest
+	display_name = "Chaleco de traje, coloreable"
+	path = /obj/item/clothing/accessory/toggleable/redsuit_vest
 	flags = GEAR_HAS_COLOR_SELECTION

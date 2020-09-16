@@ -504,9 +504,14 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	Master.Shutdown()
 
+	var/datum/chatOutput/co
+	for(var/client/C in GLOB.clients)
+		co = C.chatOutput
+		if(co)
+			co.ehjax_send(data = "roundrestart")
 	if(config.server)	//if you set a server location in config.txt, it sends you there instead of trying to reconnect to the same world address. -- NeoFite
 		for(var/client/C in GLOB.clients)
-			to_chat(C, link("byond://[config.server]"))
+			send_link(C, "byond://[config.server]")
 
 	if(config.wait_for_sigusr1_reboot && reason != 3)
 		text2file("foo", "reboot_called")
@@ -592,7 +597,7 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"https://discord.gg/6r6UP4a/\">" //Change this to wherever you want the hub to link to.
+	s += "<a href=\"https://discord.gg/Cp8httq\">" //Change this to wherever you want the hub to link to.
 //	s += "[game_version]"
 	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"

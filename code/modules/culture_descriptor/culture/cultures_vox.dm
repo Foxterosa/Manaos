@@ -3,7 +3,7 @@
 	description = "La gran mayoria de los vox nacen y mueren en las enormes arquinaves de magnitudes lunares que forman los unicos hogares permanentes \
 	que cualquiera de las criaturas llega a tener. Tratar las vastas naves decadentes es un trabajo de tiempo completo para tripulaciones \
 	de miles de vox, y aunque el glamour y encanto de la vida de un invasor atrae a muchos, quedarse en las naves es visto como un acto \
-	maduro y responsable que escapar a las estrellas a atacar la carne y robar sus bienes."
+	mas maduro y responsable que escapar a las estrellas a atacar la carne y robar sus bienes."
 	hidden_from_codex = TRUE
 	language = LANGUAGE_VOX
 	secondary_langs = list(

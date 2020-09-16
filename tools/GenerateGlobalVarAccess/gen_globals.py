@@ -67,7 +67,7 @@ def main():
 	code = GenCode(variables)
 	
 	with open(namespace.outfile, 'wb') as outfile:
-		outfile.write(code.encode('utf-8'))
+		outfile.write(code.encode('ISO-8859-1'))
 	
 	hash = GenerateMD5(namespace.outfile)
 	print("Global var generation complete. MD5 is: " + hash)

@@ -30,12 +30,9 @@
 				var/turf/T = get_turf(src)
 				if(!locate(/obj/structure/lattice) in T)
 					T.ReplaceWithLattice()
-				return
 	update_icon()
 
-
 	set_extension(src, /datum/extension/turf_hand)
-
 
 /obj/structure/ladder/Destroy()
 	if(target_down)
@@ -58,6 +55,8 @@
 	..()
 
 /obj/structure/ladder/hitby(obj/item/I)
+	if (istype(src, /obj/structure/ladder/up))
+		return
 	var/area/room = get_area(src)
 	if(!room.has_gravity())
 		return

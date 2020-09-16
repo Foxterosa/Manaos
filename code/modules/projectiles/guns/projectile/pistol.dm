@@ -23,7 +23,7 @@
 			return
 		else
 			overlays += image(icon, "ammo_ok")
-	
+
 /obj/item/weapon/gun/projectile/pistol/military
 	name = "military pistol"
 	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service with the SCGDF."
@@ -31,7 +31,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/pistol/double
 	icon = 'icons/obj/guns/military_pistol.dmi'
 	icon_state = "military"
-	item_state = "secgundark"
+	item_state = "milgun"
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 	fire_delay = 7
@@ -41,6 +41,7 @@
 	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the ICCG Navy."
 	icon = 'icons/obj/guns/military_pistol2.dmi'
 	icon_state = "military-alt"
+	item_state = "secgundark"
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
 	fire_delay = 8
@@ -51,7 +52,7 @@
 	icon = 'icons/obj/guns/pistol.dmi'
 	icon_state = "secguncomp"
 	safety_icon = "safety"
-	magazine_type = /obj/item/ammo_magazine/pistol/rubber
+	magazine_type = /obj/item/ammo_magazine/pistol/double/rubber
 	accuracy = -1
 	fire_delay = 6
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)

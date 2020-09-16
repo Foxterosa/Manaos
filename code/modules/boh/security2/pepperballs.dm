@@ -5,11 +5,13 @@
 //casing
 /obj/item/ammo_casing/pistol/rubber/pepperball
 	name = "pepperball casing"
+	icon_state = "peppercasing"
 	projectile_type = /obj/item/projectile/bullet/pistol/pepperball
 
 //magazine
 /obj/item/ammo_magazine/pistol/double/pepperball
 	name = "pepperball magazine"
+	icon_state = "enforcer_pp"
 	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball
 
 //box

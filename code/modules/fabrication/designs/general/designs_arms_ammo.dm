@@ -57,7 +57,7 @@
 	path = /obj/item/ammo_magazine/speedloader/large
 
 /datum/fabricator_recipe/arms_ammo/hidden/speedloader_magnum
-	name = "speedloader (15mm)"
+	name = "speedloader (.357 Magnum)"
 	path = /obj/item/ammo_magazine/speedloader/magnum
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_small
@@ -67,10 +67,6 @@
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol
 	name = "pistol magazine (10mm)"
 	path = /obj/item/ammo_magazine/pistol
-
-/datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol_rubber
-	name = "pistol magazine (10mm), (rubber)"
-	path = /obj/item/ammo_magazine/pistol/rubber
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol_double
 	name = "pistol magazine (10mm), (extended)"
@@ -84,16 +80,20 @@
 	name = "pistol magazine (10mm), (extended), (pepperball)"
 	path = /obj/item/ammo_magazine/pistol/double/pepperball
 
+/datum/fabricator_recipe/arms_ammo/hidden/detective
+	name = "speedloader para la Mars de Goma(.357mm)"
+	path = /obj/item/ammo_magazine/speedloader/magnum/detective
+
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol_double_practice
 	name = "pistol magazine (10mm), (extended), (practice)"
 	path = /obj/item/ammo_magazine/pistol/double/practice
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_magnum
-	name = "pistol magazine (15mm)"
+	name = "pistol magazine (.357 Magnum)"
 	path = /obj/item/ammo_magazine/magnum
 
 /datum/fabricator_recipe/arms_ammo/hidden/magrub
-	name = "pistol magazine (15mm), (rubber)"
+	name = "pistol magazine (.357 Magnum), (rubber)"
 	path = /obj/item/ammo_magazine/magnum/rubber
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_machinepistol
@@ -121,23 +121,23 @@
 	path = /obj/item/ammo_magazine/smg
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_carbine
-	name = "rifle magazine (5mmR)"
+	name = "rifle magazine (5mm)"
 	path = /obj/item/ammo_magazine/mil_rifle
 
 /datum/fabricator_recipe/arms_ammo/hidden/bullpupbad
-	name = "rifle magazine (5mmR), (frangible)"
+	name = "rifle magazine (5mm), (frangible)"
 	path = /obj/item/ammo_magazine/mil_rifle/sec
 
 /datum/fabricator_recipe/arms_ammo/hidden/bullpupbad_extended
-	name = "rifle magazine (5mmR), (extended), (frangible)"
+	name = "rifle magazine (5mm), (extended), (frangible)"
 	path = /obj/item/ammo_magazine/mil_rifle/sec/large
 
 /datum/fabricator_recipe/arms_ammo/hidden/bullpupbad_practice
-	name = "rifle magazine (5mmR), (practice)"
+	name = "rifle magazine (5mm), (practice)"
 	path = /obj/item/ammo_magazine/mil_rifle/practice
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_arifle
-	name = "rifle magazine (7mmR)"
+	name = "rifle magazine (5.56mm)"
 	path = /obj/item/ammo_magazine/rifle
 
 /datum/fabricator_recipe/arms_ammo/hidden/skrellian_rifle_flechette
@@ -149,7 +149,7 @@
 	path = /obj/item/weapon/magnetic_ammo/skrell/slug
 
 /datum/fabricator_recipe/arms_ammo/hidden/lmg
-	name = "lmg box magazine (7mmR)"
+	name = "lmg box magazine (5.56mm)"
 	path = /obj/item/ammo_magazine/box/machinegun
 
 /datum/fabricator_recipe/arms_ammo/hidden/rcr

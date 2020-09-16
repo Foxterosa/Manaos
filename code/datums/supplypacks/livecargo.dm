@@ -1,5 +1,5 @@
 /decl/hierarchy/supply_pack/livecargo
-	name = "Cargamiento con vida"
+	name = "Cargamento con vida"
 	containertype = /obj/structure/closet/crate/hydroponics
 
 /decl/hierarchy/supply_pack/livecargo/monkey
@@ -49,6 +49,13 @@
 	containertype = /obj/structure/largecrate/animal/corgi
 	containername = "caja de corgi"
 
+/decl/hierarchy/supply_pack/livecargo/fox
+	name = "Vivo - Zorro"
+	contains = list()
+	cost = 50
+	containertype = /obj/structure/largecrate/animal/fox
+	containername = "caja de zorro"
+
 //farm animals - useless and annoying, but potentially a good source of food. expensive because they're live animals and their produce is available cheaper
 /decl/hierarchy/supply_pack/livecargo/cow
 	name = "Vivo - Vaca"
@@ -76,4 +83,18 @@
 	cost = 70
 	containertype = /obj/structure/largecrate/animal/chick
 	containername = "caja con gallina"
+	access = access_hydroponics
+
+/decl/hierarchy/supply_pack/livecargo/pug
+	name = "Vivo - Pug"
+	cost = 50
+	containertype = /mob/living/simple_animal/corgi/pug
+	containername = "caja con pug"
+	access = access_hydroponics
+
+/decl/hierarchy/supply_pack/livecargo/kanguro
+	name = "Vivo - Kanguro"
+	cost = 100
+	containertype = /mob/living/simple_animal/hostile/retaliate/Kanguro
+	containername = "caja con kanguro"
 	access = access_hydroponics

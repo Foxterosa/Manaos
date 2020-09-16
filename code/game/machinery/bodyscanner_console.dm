@@ -109,6 +109,7 @@
 
 		stored_scan_subject = connected.occupant
 		user.visible_message("<span class='notice'>[user] realiza un escaneo a [connected.occupant] usando el [connected].</span>")
+		playsound(connected.loc, 'sound/machines/medbayscanner.ogg', 50)
 		return TOPIC_REFRESH
 
 	if (href_list["print"])

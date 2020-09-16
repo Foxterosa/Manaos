@@ -140,14 +140,14 @@
 	icon_living = "extremist"
 	icon_dead = "extremist_dead"
 	speak_chance = 0
-	turns_per_move = 5
+	turns_per_move = 6
 	response_help = "pushes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 4
+	speed = 2
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 100
-	health = 100
+	maxHealth = 75
+	health = 75
 	harm_intent_damage = 5
 	melee_damage_lower = 10
 	melee_damage_upper = 30
@@ -186,8 +186,8 @@
 	item_icons = list(slot_w_uniform_str = 'maps/away/slavers/slavers_base_sprites.dmi')
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES, 
-		bullet = ARMOR_BALLISTIC_PISTOL, 
-		laser = ARMOR_LASER_MINOR, 
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_MINOR,
 		energy = ARMOR_ENERGY_MINOR
 		)

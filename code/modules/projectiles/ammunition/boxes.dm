@@ -10,9 +10,11 @@
 
 /obj/item/ammo_magazine/speedloader/xo
 	labels = list("custom")
+	icon_state = "spdloader_magnum"
 	ammo_type = /obj/item/ammo_casing/pistol/xo
 
 /obj/item/ammo_magazine/speedloader/rubber
+	icon_state = "spdloader_small"
 	labels = list("rubber")
 	ammo_type = /obj/item/ammo_casing/pistol/rubber
 
@@ -24,9 +26,17 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/speedloader/magnum/detective
+	icon_state = "spdloader_magnum_detective"
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/pistol/magnum/detective
+	matter = list(MATERIAL_STEEL = 1440)
+	max_ammo = 6
+	multiple_sprites = 1
+
 /obj/item/ammo_magazine/speedloader/small
 	name = "speed loader"
-	icon_state = "spdloader_small"
+	icon_state = "spdloader_magnum"
 	caliber = CALIBER_PISTOL_SMALL
 	ammo_type = /obj/item/ammo_casing/pistol/small
 	matter = list(MATERIAL_STEEL = 1060)
@@ -128,10 +138,12 @@
 
 /obj/item/ammo_magazine/smg_top/rubber
 	labels = list("rubber")
+	icon_state = "smg_top_r"
 	ammo_type = /obj/item/ammo_casing/pistol/small/rubber
 
 /obj/item/ammo_magazine/smg_top/practice
 	labels = list("practice")
+	icon_state = "smg_top_pr"
 	ammo_type = /obj/item/ammo_casing/pistol/small/practice
 
 /obj/item/ammo_magazine/smg
@@ -150,7 +162,7 @@
 
 /obj/item/ammo_magazine/pistol
 	name = "pistol magazine"
-	icon_state = "pistol"
+	icon_state = "enforcer"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = CALIBER_PISTOL
@@ -163,21 +175,23 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/pistol/rubber
-	labels = list("rubber")
+	name = "doublestack pistol magazine"
+	icon_state = "enforcer_p"
 	ammo_type = /obj/item/ammo_casing/pistol/rubber
 
 /obj/item/ammo_magazine/pistol/double
 	name = "doublestack pistol magazine"
-	icon_state = "pistol"
+	icon_state = "enforcer"
 	matter = list(MATERIAL_STEEL = 1050)
-	max_ammo = 15
 
 /obj/item/ammo_magazine/pistol/double/rubber
 	labels = list("rubber")
+	icon_state = "enforcer_p"
 	ammo_type = /obj/item/ammo_casing/pistol/rubber
 
 /obj/item/ammo_magazine/pistol/double/practice
 	labels = list("practice")
+	icon_state = "enforcer_pr"
 	ammo_type = /obj/item/ammo_casing/pistol/practice
 
 /obj/item/ammo_magazine/pistol/small
@@ -227,6 +241,7 @@
 
 /obj/item/ammo_magazine/pistol/throwback
 	name = "pistol magazine"
+	icon_state = "pistol"
 	caliber = CALIBER_PISTOL_ANTIQUE
 	ammo_type = /obj/item/ammo_casing/pistol/throwback
 
@@ -308,6 +323,7 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/mil_rifle/practice
+	icon_state = "bullup_pr"
 	labels = list("practice")
 	ammo_type = /obj/item/ammo_casing/rifle/military/practice
 

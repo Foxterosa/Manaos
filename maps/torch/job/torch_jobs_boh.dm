@@ -453,33 +453,14 @@
 	)
 /***/
 
-// Corporate
-/datum/job/bodyguard
-	allowed_branches = list(/datum/mil_branch/private_security, /datum/mil_branch/civilian)
-	allowed_ranks = list(
-		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc,
-		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent,
-		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare,
-		/datum/mil_rank/civ/contractor
-	)
-
-/datum/job/bodyguard/get_description_blurb()
-	return "You are the Loss Prevention Associate. Your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
-/***/
 
 // Law
-/datum/job/bailiff
+/datum/job/blueshield
 	allowed_branches = list(/datum/mil_branch/private_security, /datum/mil_branch/civilian, /datum/mil_branch/solgov)
-	allowed_ranks = list(
-		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/crew/command/bailiff/pcrc,
-		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/crew/command/bailiff/pcrc/agent,
-		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/crew/command/bailiff/saare,
-		/datum/mil_rank/sol/agent = /decl/hierarchy/outfit/job/torch/crew/command/bailiff/agent,
-		/datum/mil_rank/civ/contractor
-	)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
 /datum/job/bodyguard/get_description_blurb()
-	return "You are the Bailiff. You are the assistant of the Chief Adjudicator. Your job is to assist and protect him in his endeavours. Good luck."
+	return "Eres un Blueshield, te encargas de proteger la vida del personal de Alto riesgo abordo del NTSS Dagon, NO eres seguridad. Respondes directamente al comandante oficial y a Comando Central."
 
 /***/
 
@@ -496,7 +477,7 @@
 /////////
 /datum/job/flag
 	title = "Flag Officer"
-	department = "Support"
+	department = "Soporte"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
