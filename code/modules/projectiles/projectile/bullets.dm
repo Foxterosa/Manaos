@@ -414,11 +414,11 @@ Thanks a bunch! :n
 			M.apply_effect(effective_strength / 2, PAIN, 0)
 
 ///Mateba Bullets by Danaleja2005
-
+	
 /obj/item/projectile/bullet/mateba
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	icon_state = "mateba"
-	damage = 62
+	damage = 58
 	shrapnel_chance_multiplier = 0.6
 	arterial_bleed_chance_multiplier = 0.4
 	distance_falloff = 3.0
@@ -429,9 +429,8 @@ Thanks a bunch! :n
 /obj/item/projectile/bullet/mateba/special
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	icon_state = "matebaspecial"
-	damage = 70
+	damage = 68
 	shrapnel_chance_multiplier = 0.8
-	arterial_bleed_chance_multiplier = 0.4
 	distance_falloff = 2.5
 	armor_penetration = 18
 	agony = 60
