@@ -219,9 +219,3 @@
 	display_name = "Abrigo de invierno, marines."
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army
 	cost = 2
-
-
-/datum/gear/suit/wintercoat_fleet
-	display_name = "Abrigo de invierno, flota"
-	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet
-	cost = 2
