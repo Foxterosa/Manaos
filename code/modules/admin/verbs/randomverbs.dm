@@ -581,17 +581,21 @@ Traitors and the like can also be revived with the previous role mostly intact.
 /client/proc/cmd_admin_create_centcom_report()
 	set category = "Special Verbs"
 	set name = "Create Command Report"
+
+	if(!check_rights(R_FUN))
+		return
+
+//the stuff on the list is |"report type" = "report title"|, if that makes any sense
 	var/list/MsgType = list("Central Command Report" = "Nanotrasen Update",
 		"Syndicate Communique" = "Syndicate Message",
 		"Space Wizard Federation Message" = "Sorcerous Message",
 		"Enemy Communications" = "Unknown Message",
 		"Custom" = "Cryptic Message")
+
 	var/list/MsgSound = list("Beep" = 'sound/misc/notice2.ogg',
 		"Enemy Communications Intercepted" = 'sound/AI/intercept.ogg',
 		"New Command Report Created" = 'sound/AI/commandreport.ogg')
-	if(!holder)
-		to_chat(src, "Only administrators may use this command.")
-		return
+
 	var/type = input(usr, "Pick a type of report to send", "Report Type", "") as anything in MsgType
 
 	if(type == "Custom")
@@ -604,17 +608,17 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(!input)
 		return
 
-	//New message handling
-	post_comm_message(customname, replacetext(input, "\n", "<br/>"))
-
-	switch(alert("Should this be announced to the general population?",,"Yes","No"))
+	switch(alert("Should this be announced to the general population?",,"Yes","No", "Cancel"))
 		if("Yes")
 			var/beepsound = input(usr, "What sound should the announcement make?", "Announcement Sound", "") as anything in MsgSound
 
-			command_announcement.Announce(input, customname, MsgSound[beepsound], , , type);
+			command_announcement.Announce(input, customname, MsgSound[beepsound], , , type)
+			post_comm_message(input, "[command_name()] Update")
 		if("No")
 			//same thing as the blob stuff - it's not public, so it's classified, dammit
 			minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")
+		else
+			return
 
 	log_admin("[key_name(src)] has created a command report: [input]")
 	message_admins("[key_name_admin(src)] has created a command report", 1)
