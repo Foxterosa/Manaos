@@ -322,6 +322,55 @@
 		else
 			O.attack(src, user, user.zone_sel.selecting)
 
+/mob/living/simple_animal/proc/CanAttack(atom/the_target)
+	if(see_invisible < the_target.invisibility)
+		return FALSE
+	if(ismob(the_target))
+		var/mob/M = the_target
+		if(M.status_flags & GODMODE)
+			return FALSE
+	if(isliving(the_target))
+		var/mob/living/L = the_target
+		if(L.stat != CONSCIOUS)
+			return FALSE
+	return TRUE
+
+/mob/living/simple_animal/proc/handle_automated_speech(override)
+	set waitfor = FALSE
+	if(speak_chance)
+		if(prob(speak_chance) || override)
+			if(speak && speak.len)
+				if((emote_hear && emote_hear.len) || (emote_see && emote_see.len))
+					var/length = speak.len
+					if(emote_hear && emote_hear.len)
+						length += emote_hear.len
+					if(emote_see && emote_see.len)
+						length += emote_see.len
+					var/randomValue = rand(1,length)
+					if(randomValue <= speak.len)
+						say(pick(speak))
+					else
+						randomValue -= speak.len
+						if(emote_see && randomValue <= emote_see.len)
+							custom_emote(1, pick(emote_see))
+						else
+							custom_emote(2, pick(emote_hear))
+				else
+					say(pick(speak))
+			else
+				if(!(emote_hear && emote_hear.len) && (emote_see && emote_see.len))
+					custom_emote(1, pick(emote_see))
+				if((emote_hear && emote_hear.len) && !(emote_see && emote_see.len))
+					custom_emote(2, pick(emote_hear))
+				if((emote_hear && emote_hear.len) && (emote_see && emote_see.len))
+					var/length = emote_hear.len + emote_see.len
+					var/pick = rand(1,length)
+					if(pick <= emote_see.len)
+						custom_emote(1, pick(emote_see))
+					else
+						custom_emote(2,pick(emote_hear))
+
+
 /mob/living/simple_animal/hit_with_weapon(obj/item/O, mob/living/user, var/effective_force, var/hit_zone)
 
 	visible_message("<span class='danger'>\The [src] has been attacked with \the [O] by [user]!</span>")

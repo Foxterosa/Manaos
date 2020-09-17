@@ -1,5 +1,6 @@
 /mob/living/carbon/human
 	hud_type = /datum/hud/human
+	var/dies_at_threshold = FALSE // Do they die or get knocked out at specific thresholds, or do they go through complex crit?
 
 /datum/hud/human/FinalizeInstantiation(var/ui_style='icons/mob/screen/white.dmi', var/ui_color = "#ffffff", var/ui_alpha = 255)
 	var/mob/living/carbon/human/target = mymob
