@@ -7094,7 +7094,6 @@
 	name = "Secure Evidence Locker";
 	req_access = list("ACCESS_SECURITY")
 	},
-/obj/random/illegal,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "amc" = (
@@ -7819,6 +7818,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/under/color/orange,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "anj" = (
@@ -7835,6 +7836,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/under/color/orange,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "ank" = (
@@ -7854,6 +7857,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/under/color/orange,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "anl" = (
@@ -7869,6 +7874,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/under/color/orange,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "anm" = (
@@ -19050,16 +19057,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
-"cMY" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/camera/network/security{
-	c_tag = "Seguridad - Campo de tiro";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/shooting)
 "cNb" = (
 /obj/machinery/light/spot{
 	dir = 8
@@ -19209,6 +19206,26 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/reslab)
+"cWi" = (
+/obj/structure/closet/secure_closet/security_torch/cadet,
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/ointment,
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/obj/item/clothing/mask/gas/half,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/locker)
 "cWR" = (
 /obj/machinery/camera/network/security{
 	c_tag = "Security Wing - Interview Room 1";
@@ -19322,6 +19339,28 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/lounge)
+"dbM" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/obj/structure/closet/secure_closet{
+	name = "Secure Evidence Locker";
+	req_access = list("ACCESS_SECURITY")
+	},
+/obj/random/illegal,
+/turf/simulated/floor/tiled/dark,
+/area/security/evidence)
 "dcb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -20324,10 +20363,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
-"eIO" = (
-/obj/structure/flora/pottedplant/decorative,
-/turf/simulated/floor/tiled/dark,
-/area/security/brig/psionic)
 "eJs" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
@@ -22268,6 +22303,16 @@
 /obj/effect/floor_decal/corner/paleblue,
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
+"hjc" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/camera/network/security{
+	c_tag = "Seguridad - Campo de tiro";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/shooting)
 "hjq" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
@@ -28071,26 +28116,6 @@
 /obj/effect/floor_decal/corner/red,
 /turf/simulated/floor/tiled/dark,
 /area/security/wing)
-"nDZ" = (
-/obj/structure/closet/secure_closet/security_torch/cadet,
-/obj/item/stack/medical/advanced/bruise_pack,
-/obj/item/stack/medical/advanced/ointment,
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 9
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
-/obj/item/clothing/mask/gas/half,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/locker)
 "nEb" = (
 /obj/structure/table/standard,
 /obj/machinery/firealarm{
@@ -31172,7 +31197,6 @@
 	name = "Secure Evidence Locker";
 	req_access = list("ACCESS_SECURITY")
 	},
-/obj/random/illegal,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "qTX" = (
@@ -33028,6 +33052,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
+"sJS" = (
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/tiled/dark,
+/area/security/wing)
 "sLb" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -34654,6 +34682,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/aft)
+"vey" = (
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/tiled/dark,
+/area/security/brig/psionic)
 "veF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -35870,10 +35902,6 @@
 /obj/machinery/portable_atmospherics/canister/oxygen/prechilled,
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/sleeper)
-"xZB" = (
-/obj/structure/flora/pottedplant/decorative,
-/turf/simulated/floor/tiled/dark,
-/area/security/wing)
 "ybv" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -43912,7 +43940,7 @@ oDg
 goa
 frA
 rnp
-nDZ
+cWi
 aaF
 dZx
 daB
@@ -44124,7 +44152,7 @@ eZX
 nHR
 sOp
 flF
-cMY
+hjc
 uwi
 gGO
 aga
@@ -45149,7 +45177,7 @@ anA
 aoF
 nJo
 arj
-xZB
+sJS
 tkr
 tAS
 aaa
@@ -46123,7 +46151,7 @@ qSD
 amb
 ape
 apM
-amb
+dbM
 qSD
 vMw
 nBD
@@ -48982,7 +49010,7 @@ akq
 amT
 anc
 alU
-eIO
+vey
 arc
 arc
 arr
