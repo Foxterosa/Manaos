@@ -209,13 +209,3 @@
 	trenchcoats += /obj/item/clothing/suit/storage/det_trench/grey
 	trenchcoats += /obj/item/clothing/suit/leathercoat
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(trenchcoats)
-
-/datum/gear/suit/wintercoat_solgov
-	display_name = "Abrigo de invierno, expedicion"
-	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov
-	cost = 2
-
-/datum/gear/suit/wintercoat_marines
-	display_name = "Abrigo de invierno, marines."
-	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army
-	cost = 2
