@@ -261,9 +261,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/blueshield
 	allowed_branches = list(/datum/mil_branch/private_security, /datum/mil_branch/civilian)
 	allowed_ranks = list(
-		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc,
-		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent,
-		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare,
+		/datum/mil_rank/private_security/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt,
+		/datum/mil_rank/private_security/saare,
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
