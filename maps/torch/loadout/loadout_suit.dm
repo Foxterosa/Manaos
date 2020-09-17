@@ -134,4 +134,3 @@
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army
 	cost = 2
 	allowed_roles = list(/datum/job/squad_lead, /datum/job/grunt, /datum/job/sea, /datum/job/combat_tech)
-
