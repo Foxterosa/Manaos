@@ -116,7 +116,7 @@
 	path = /obj/item/clothing/suit/storage/toggle/agent_jacket
 	allowed_roles = list(/datum/job/detective)
 
-/datum/gear/suit/wintercoat_solgov
+/* /datum/gear/suit/wintercoat_solgov
 	display_name = "Abrigo de invierno, expedicion"
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov
 	cost = 2
@@ -134,3 +134,4 @@
 	cost = 2
 	allowed_branches = NT_BRANCHES
 	allowed_roles = COMMAND_ROLES
+//
