@@ -166,7 +166,9 @@
 		/obj/item/clothing/gloves/thick,
 		/obj/item/device/holowarrant,
 		/obj/item/device/flashlight/maglight,
-		/obj/item/weapon/storage/belt/security)
+		/obj/item/weapon/storage/belt/security,
+		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/gas/tacmask)
 
 /////////
 // Triage Locker

@@ -909,6 +909,9 @@
 /area/crew_quarters/head/aux2
 	name = "\improper Cubierta 2 - Baños"
 
+/area/crew_quarters/head/aux4
+	name = "\improper Cubierta 4 - Baños"
+
 /area/crew_quarters/head/sauna
 	name = "\improper Cubierta 3 - Sauna"
 	icon_state = "sauna"
@@ -930,11 +933,6 @@
 	name = "\improper Galeria - Congelador"
 	icon_state = "locker"
 	req_access = list(access_kitchen)
-
-/area/crew_quarters/commissary
-	name = "\improper Cubierta 4 - Comisaria"
-	icon_state = "crew_quarters"
-	req_access = list(access_commissary)
 
 /area/crew_quarters/lounge
 	name = "\improper Cubierta 4 - Salón"
