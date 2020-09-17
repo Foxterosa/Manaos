@@ -86,6 +86,7 @@
 		/obj/item/device/gps,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/gas/tacmask,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/weapon/crowbar/prybar
 		)
@@ -104,6 +105,7 @@
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/suit/armor/pcarrier/light/sol,
 		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/gas/tacmask,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/weapon/crowbar/prybar
 		)
@@ -138,6 +140,7 @@
 		/obj/item/device/megaphone,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/gas/tacmask,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/weapon/crowbar/prybar
 		)
@@ -193,6 +196,7 @@
 		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/weapon/storage/belt/medical/emt,
 		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/gas/tacmask,
 		/obj/item/weapon/storage/box/autoinjectors,
 		/obj/item/device/scanner/health,
 		/obj/item/clothing/glasses/hud/health,
