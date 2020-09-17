@@ -24,6 +24,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army,
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
+		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
 		/obj/item/clothing/head/soft/solgov
 	)
 
