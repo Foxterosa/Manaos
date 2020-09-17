@@ -1816,7 +1816,7 @@
 /area/engineering/hardstorage)
 "dK" = (
 /obj/machinery/door/airlock/civilian{
-	name = "Head"
+	name = "Baño"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -2580,7 +2580,7 @@
 "fl" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/civilian{
-	name = "Head"
+	name = "Baño"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/head)
@@ -2960,7 +2960,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/civilian{
-	name = "Head"
+	name = "Baño"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/freezer,
@@ -8694,11 +8694,6 @@
 	dir = 8
 	},
 /obj/effect/catwalk_plated,
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
 "qG" = (
@@ -10596,9 +10591,6 @@
 /obj/effect/floor_decal/corner/green{
 	dir = 10
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -32
-	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "tT" = (
@@ -11211,10 +11203,6 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/lime/three_quarters,
-/obj/item/device/radio/intercom/entertainment{
-	dir = 1;
-	pixel_y = -28
-	},
 /obj/machinery/camera/network/third_deck{
 	c_tag = "Third Deck Hallway - Observation Bubble";
 	dir = 4
@@ -11344,6 +11332,12 @@
 /obj/effect/floor_decal/corner/paleblue{
 	icon_state = "corner_white";
 	dir = 9
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	locked = 0;
+	pixel_x = -25;
+	pixel_y = 0
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
@@ -12041,9 +12035,6 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
-	},
-/obj/machinery/camera/network/third_deck{
-	c_tag = "Third Deck Hallway - Teleporter"
 	},
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
@@ -16662,6 +16653,10 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/corner/paleblue/half,
+/obj/machinery/camera/network/third_deck{
+	c_tag = "Cubierta 3 - Pasillo oeste";
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
 "IS" = (

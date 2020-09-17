@@ -9,14 +9,15 @@
 	var/sound
 	var/newscast = 0
 	var/channel_name = "Announcements"
+	var/admin_announcement = 0
 	var/announcement_type = "Announcement"
 
 /datum/announcement/priority
-	title = "Priority Announcement"
+	title = "Anuncio Prioritario"
 	announcement_type = "Priority Announcement"
 
 /datum/announcement/priority/security
-	title = "Security Announcement"
+	title = "Anuncio de Seguridad"
 	announcement_type = "Security Announcement"
 
 /datum/announcement/New(var/do_log = 0, var/new_sound = null, var/do_newscast = 0)
@@ -29,7 +30,7 @@
 	title = "[command_name()] Update"
 	announcement_type = "[command_name()] Update"
 
-/datum/announcement/proc/Announce(var/message as text, var/new_title = "", var/new_sound = null, var/do_newscast = newscast, var/msg_sanitized = 0, var/zlevels = GLOB.using_map.contact_levels)
+/datum/announcement/proc/Announce(var/message as text, var/new_title = "", var/new_sound = null, var/do_newscast = newscast, var/msg_sanitized = 0, var/from, var/msg_language, var/zlevels = GLOB.using_map.contact_levels)
 	if(!message)
 		return
 	var/message_title = new_title ? new_title : title
@@ -39,7 +40,11 @@
 		message = sanitize(message, extra = 0)
 	message_title = sanitizeSafe(message_title)
 
-	var/msg = FormMessage(message, message_title)
+	var/message_announcer = null
+	if(announcer)
+		message_announcer = html_encode(announcer)
+
+	var/msg = FormMessage(message, message_title, message_announcer, from)
 	for(var/mob/M in GLOB.player_list)
 		if((M.z in (zlevels | GLOB.using_map.admin_levels)) && !istype(M,/mob/new_player) && !isdeaf(M))
 			to_chat(M, msg)
@@ -69,8 +74,8 @@ datum/announcement/priority/FormMessage(message as text, message_title as text)
 		. += "<br><span class='alert'> -[html_encode(announcer)]</span>"
 	. += "<br>"
 
-datum/announcement/priority/command/FormMessage(message as text, message_title as text)
-	. = "<h1 class='alert'>[command_name()] Update</h1>"
+datum/announcement/priority/command/FormMessage(message as text, message_title as text, message_announcer, from)
+	. = "<h1 class='alert'>[from]</h1>"
 	if (message_title)
 		. += "<br><h2 class='alert'>[message_title]</h2>"
 
@@ -144,3 +149,4 @@ datum/announcement/proc/NewsCast(message as text, message_title as text)
 	if(job.department_flag & INF)
 		return "Infantry"
 	return "Common"
+	

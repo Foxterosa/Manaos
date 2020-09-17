@@ -107,7 +107,6 @@
 /obj/machinery/atmospherics/valve/shutoff{
 	dir = 4
 	},
-/obj/machinery/light,
 /obj/effect/floor_decal/industrial/shutoff{
 	dir = 4
 	},
@@ -213,6 +212,34 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/medical/descanso)
+"aar" = (
+/obj/machinery/camera/network/security{
+	c_tag = "Security Wing - Locker Room";
+	dir = 8
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 26
+	},
+/obj/machinery/light_switch{
+	pixel_x = 22;
+	pixel_y = -10
+	},
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/ointment,
+/obj/structure/closet/secure_closet/security_torch,
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/locker)
 "aas" = (
 /obj/machinery/fabricator,
 /turf/simulated/floor/wood/walnut,
@@ -391,6 +418,23 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
+"aaF" = (
+/obj/structure/closet/secure_closet/security_torch/cadet,
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/ointment,
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/obj/item/clothing/mask/gas/half,
+/turf/simulated/floor/tiled/dark,
+/area/security/locker)
 "aaG" = (
 /obj/machinery/vending/snack{
 	dir = 4
@@ -579,6 +623,22 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/medical/descanso)
+"aaS" = (
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/ointment,
+/obj/structure/closet/secure_closet/security_torch,
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/locker)
 "aaT" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/device/radio/intercom/department/security{
@@ -708,6 +768,32 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
+"abb" = (
+/obj/item/device/radio,
+/obj/item/weapon/crowbar,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24
+	},
+/obj/machinery/light,
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -28
+	},
+/obj/structure/cable/green,
+/obj/structure/closet/secure_closet/brigchief,
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/bo)
 "abc" = (
 /obj/machinery/camera/network/medbay{
 	c_tag = "Infirmary - Emergency Treatment Center Aft";
@@ -1100,9 +1186,6 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "abD" = (
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -2184,6 +2267,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/green,
+/obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
 "ady" = (
@@ -3939,34 +4023,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
-"agB" = (
-/obj/machinery/camera/network/security{
-	c_tag = "Security Wing - Locker Room";
-	dir = 8
-	},
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 26
-	},
-/obj/machinery/light_switch{
-	pixel_x = 22;
-	pixel_y = -10
-	},
-/obj/item/stack/medical/advanced/bruise_pack,
-/obj/item/stack/medical/advanced/ointment,
-/obj/structure/closet/secure_closet/security_torch,
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 9
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/locker)
 "agD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /obj/structure/railing/mapped{
@@ -4409,38 +4465,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/medical/surgery2)
-"aho" = (
-/obj/structure/closet/secure_closet/security_torch/cadet,
-/obj/item/stack/medical/advanced/bruise_pack,
-/obj/item/stack/medical/advanced/ointment,
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 9
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/locker)
-"ahp" = (
-/obj/item/stack/medical/advanced/bruise_pack,
-/obj/item/stack/medical/advanced/ointment,
-/obj/structure/closet/secure_closet/security_torch,
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 9
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/locker)
 "ahq" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/courtroom)
@@ -7052,9 +7076,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/wing)
 "amb" = (
-/obj/structure/closet{
-	name = "Evidence Closet"
-	},
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -7069,6 +7090,11 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/structure/closet/secure_closet{
+	name = "Secure Evidence Locker";
+	req_access = list("ACCESS_SECURITY")
+	},
+/obj/random/illegal,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "amc" = (
@@ -7122,33 +7148,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
-"amf" = (
-/obj/item/device/radio,
-/obj/item/weapon/crowbar,
-/obj/item/clothing/mask/gas/half,
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24
-	},
-/obj/machinery/light,
-/obj/machinery/power/apc{
-	name = "south bump";
-	pixel_y = -28
-	},
-/obj/structure/cable/green,
-/obj/structure/closet/secure_closet/brigchief,
-/obj/effect/floor_decal/corner/red{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 6
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/bo)
 "amg" = (
 /obj/structure/hygiene/toilet{
 	dir = 1
@@ -9483,7 +9482,6 @@
 	},
 /obj/random/junk,
 /obj/structure/table/rack,
-/obj/random/illegal,
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 9
@@ -10484,10 +10482,6 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
-	},
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
 	},
 /obj/machinery/light,
 /obj/structure/cable/green{
@@ -12627,9 +12621,6 @@
 /turf/simulated/floor/plating,
 /area/security/bo)
 "axx" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/paleblue/half{
 	dir = 1
 	},
@@ -19059,6 +19050,16 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
+"cMY" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/camera/network/security{
+	c_tag = "Seguridad - Campo de tiro";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/shooting)
 "cNb" = (
 /obj/machinery/light/spot{
 	dir = 8
@@ -19522,10 +19523,10 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
-/obj/structure/flora/pottedplant/minitree,
 /obj/effect/floor_decal/corner/red{
 	dir = 1
 	},
+/obj/structure/flora/pottedplant/decorative,
 /turf/simulated/floor/tiled/dark,
 /area/security/detectives_office)
 "dnb" = (
@@ -20323,6 +20324,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
+"eIO" = (
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/tiled/dark,
+/area/security/brig/psionic)
 "eJs" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
@@ -20731,9 +20736,6 @@
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
-	},
-/obj/machinery/light{
-	dir = 8
 	},
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
@@ -23964,10 +23966,6 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck Hallway - Aft";
-	dir = 1
-	},
 /obj/machinery/light,
 /obj/effect/floor_decal/corner/research/half,
 /turf/simulated/floor/tiled/monotile,
@@ -24246,6 +24244,10 @@
 /obj/effect/floor_decal/corner/research{
 	dir = 10;
 	tag = "icon-corner_white (SOUTHWEST)"
+	},
+/obj/machinery/camera/network/first_deck{
+	c_tag = "First Deck Hallway - Aft";
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
@@ -25831,6 +25833,7 @@
 	pixel_x = -21
 	},
 /obj/effect/floor_decal/corner/red,
+/obj/structure/flora/pottedplant/decorative,
 /turf/simulated/floor/tiled/dark,
 /area/security/questioning)
 "kWb" = (
@@ -26948,6 +26951,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
 "mke" = (
@@ -28064,6 +28071,26 @@
 /obj/effect/floor_decal/corner/red,
 /turf/simulated/floor/tiled/dark,
 /area/security/wing)
+"nDZ" = (
+/obj/structure/closet/secure_closet/security_torch/cadet,
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/ointment,
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/obj/item/clothing/mask/gas/half,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/locker)
 "nEb" = (
 /obj/structure/table/standard,
 /obj/machinery/firealarm{
@@ -28296,7 +28323,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
 "nQS" = (
-/obj/machinery/light/spot,
 /obj/machinery/button/alternate/door{
 	desc = "A remote control switch for the medbay foyer.";
 	id_tag = "MedbayER";
@@ -28311,6 +28337,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "nRb" = (
@@ -29617,6 +29644,10 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
+/obj/machinery/camera/network/security{
+	c_tag = "Seguridad - Sala de descanso";
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/lounge)
 "pjb" = (
@@ -30682,6 +30713,7 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/corner/red,
+/obj/structure/flora/pottedplant/decorative,
 /turf/simulated/floor/tiled/dark,
 /area/security/lounge)
 "qsz" = (
@@ -31125,9 +31157,6 @@
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "qSD" = (
-/obj/structure/closet{
-	name = "Evidence Closet"
-	},
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 6
@@ -31139,6 +31168,11 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/structure/closet/secure_closet{
+	name = "Secure Evidence Locker";
+	req_access = list("ACCESS_SECURITY")
+	},
+/obj/random/illegal,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "qTX" = (
@@ -31344,6 +31378,7 @@
 	dir = 1;
 	light_color = "#aa5f61"
 	},
+/obj/structure/flora/pottedplant/decorative,
 /turf/simulated/floor/tiled/dark,
 /area/security/lounge)
 "rhb" = (
@@ -34442,6 +34477,10 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
+/obj/machinery/newscaster{
+	pixel_x = -32;
+	pixel_y = 0
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "uRO" = (
@@ -35831,6 +35870,10 @@
 /obj/machinery/portable_atmospherics/canister/oxygen/prechilled,
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/sleeper)
+"xZB" = (
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/tiled/dark,
+/area/security/wing)
 "ybv" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -43869,8 +43912,8 @@ oDg
 goa
 frA
 rnp
-aho
-aho
+nDZ
+aaF
 dZx
 daB
 bpM
@@ -44081,7 +44124,7 @@ eZX
 nHR
 sOp
 flF
-sOp
+cMY
 uwi
 gGO
 aga
@@ -44474,10 +44517,10 @@ sxT
 oDg
 saS
 njb
-agB
-ahp
-ahp
-ahp
+aar
+aaS
+aaS
+aaS
 aex
 uwi
 adw
@@ -45106,7 +45149,7 @@ anA
 aoF
 nJo
 arj
-rOE
+xZB
 tkr
 tAS
 aaa
@@ -45700,7 +45743,7 @@ cwQ
 nFh
 hDp
 aHY
-amf
+abb
 cHj
 akQ
 amh
@@ -48939,7 +48982,7 @@ akq
 amT
 anc
 alU
-arc
+eIO
 arc
 arc
 arr
