@@ -86,7 +86,7 @@
 /obj/structure/closet/secure_closet/prospector/WillContain()
 	return list(
 		/obj/item/clothing/accessory/storage/brown_vest,
-		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/breath/scba,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/device/radio/headset/headset_mining,
 		/obj/item/device/radio/headset/headset_mining/alt,

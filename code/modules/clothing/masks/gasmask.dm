@@ -225,3 +225,31 @@
 	filter_water = TRUE
 	body_parts_covered = FACE
 	w_class = 2
+
+/obj/item/clothing/mask/gas/swat
+	name = "\improper SWAT mask"
+	desc = "A close-fitting tactical mask that can be connected to an air supply."
+	icon_state = "swat"
+	item_state = "swat"
+	siemens_coefficient = 0.7
+	body_parts_covered = FACE|EYES
+	armor = list(
+		melee = ARMOR_MELEE_SMALL,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		laser = ARMOR_LASER_MINOR,
+		bio = ARMOR_BIO_STRONG
+		)
+
+/obj/item/clothing/mask/gas/tacmask
+	name = "máscara táctica"
+	desc = "Una máscara táctica ajustada que se puede conectar a un suministro de aire."
+	icon_state = "tacmask"
+	item_state = "tacmask"
+	siemens_coefficient = 0.7
+	body_parts_covered = FACE|EYES
+	armor = list(
+		melee = ARMOR_MELEE_SMALL,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		laser = ARMOR_LASER_MINOR,
+		bio = ARMOR_BIO_STRONG
+		)

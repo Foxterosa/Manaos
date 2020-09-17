@@ -11207,11 +11207,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/sign/deck/fifth{
-	dir = 8;
-	icon_state = "deck-5";
-	pixel_x = 40
-	},
 /obj/effect/floor_decal/corner/mauve{
 	icon_state = "corner_white";
 	dir = 6
@@ -18229,6 +18224,18 @@
 /obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
 /area/shuttle/petrov/hallwaya)
+"Pu" = (
+/obj/effect/floor_decal/corner/mauve/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
+	},
+/obj/structure/sign/deck/fifth{
+	dir = 1;
+	icon_state = "deck-5";
+	pixel_y = -38
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/fifthdeck/fore)
 "Px" = (
 /obj/machinery/radiocarbon_spectrometer,
 /obj/machinery/alarm{
@@ -34382,7 +34389,7 @@ fl
 ct
 oZ
 pk
-oZ
+Pu
 rd
 iy
 iy

@@ -2043,6 +2043,38 @@
 "dm" = (
 /turf/simulated/wall/r_wall/hull,
 /area/turret_protected/ai_foyer)
+"dn" = (
+/obj/item/weapon/book/manual/sol_sop,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/camera/network/command{
+	c_tag = "Head of Security - Office";
+	network = list("Command","Security")
+	},
+/obj/machinery/button/alternate/door{
+	name = "COS's Office Door Control";
+	desc = "A remote control-switch for the office door.";
+	pixel_x = 0;
+	pixel_y = 27;
+	req_access = list("ACCESS_HEAD_OF_SECURITY");
+	id_tag = "cosdoor"
+	},
+/obj/item/device/binoculars,
+/obj/item/device/radio,
+/obj/item/ammo_magazine/magnum/rubber,
+/obj/item/ammo_magazine/magnum/rubber,
+/obj/item/ammo_magazine/magnum/rubber,
+/obj/structure/closet/secure_closet/cos,
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/item/clothing/accessory/medal/solgov/silver/sol,
+/turf/simulated/floor/tiled/dark,
+/area/crew_quarters/heads/office/cos)
 "do" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -4470,38 +4502,6 @@
 "hn" = (
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
-"ho" = (
-/obj/item/weapon/book/manual/sol_sop,
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/machinery/camera/network/command{
-	c_tag = "Head of Security - Office";
-	network = list("Command","Security")
-	},
-/obj/machinery/button/alternate/door{
-	name = "COS's Office Door Control";
-	desc = "A remote control-switch for the office door.";
-	pixel_x = 0;
-	pixel_y = 27;
-	req_access = list("ACCESS_HEAD_OF_SECURITY");
-	id_tag = "cosdoor"
-	},
-/obj/item/device/binoculars,
-/obj/item/device/radio,
-/obj/item/ammo_magazine/magnum/rubber,
-/obj/item/ammo_magazine/magnum/rubber,
-/obj/item/ammo_magazine/magnum/rubber,
-/obj/structure/closet/secure_closet/cos,
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 9
-	},
-/obj/item/clothing/accessory/medal/solgov/silver/sol,
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/cos)
 "hp" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 9
@@ -31964,7 +31964,7 @@ Ia
 iR
 dN
 mE
-ho
+dn
 oF
 em
 pA
