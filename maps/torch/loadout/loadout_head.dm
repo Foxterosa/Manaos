@@ -93,3 +93,9 @@
 	berets["field operation beret"] = /obj/item/clothing/head/beret/solgov/expedition/branch
 	berets["observatory beret"] = /obj/item/clothing/head/beret/solgov/expedition/branch/observatory
 	gear_tweaks += new/datum/gear_tweak/path(berets)
+
+/datum/gear/head/pilothelmet
+	display_name = "Casco Aviador"
+	path = /obj/item/clothing/mask/pilothelmet
+	slot = slot_wear_mask
+	allowed_branches = NT_BRANCHES
