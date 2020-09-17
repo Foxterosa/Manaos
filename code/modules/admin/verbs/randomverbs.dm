@@ -579,26 +579,46 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	SSstatistics.add_field_details("admin_verb","REJU") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_create_centcom_report()
-	set category = "Special Verbs"
+	set category = "Fun"
 	set name = "Create Command Report"
-	if(!holder)
-		to_chat(src, "Only administrators may use this command.")
+
+	if(!check_rights(R_FUN))
 		return
-	var/input = sanitize(input(usr, "Please enter anything you want. Anything. Serious.", "What?", "") as message|null, extra = 0)
-	var/customname = sanitizeSafe(input(usr, "Pick a title for the report.", "Title") as text|null)
+
+//the stuff on the list is |"report type" = "report title"|, if that makes any sense
+	var/list/MsgType = list("Actualizacion del Comando Central" = "Informe",
+		"Comunicado del Sindicato" = "Mensaje del Sindicato",
+		"Federacion de Magos" = "Mensaje Magico",
+		"Comunicacion Enemiga" = "Mensaje Desconocido",
+		"Custom" = "Mensaje Criptico")
+
+	var/list/MsgSound = list("Beep" = 'sound/misc/notice2.ogg',
+		"Enemy Communications Intercepted" = 'sound/AI/intercept2.ogg',
+		"New Command Report Created" = 'sound/AI/commandreport.ogg')
+
+	var/type = input(usr, "Elige un tipo de reporte", "Tipo de reporte", "") as anything in MsgType
+
+	if(type == "Custom")
+		type = input("Que tipo de reporte te gustaria que sea?", "Tipo de reporte", "Transmision Encriptada")
+
+	var/customname = input(usr, "Elige un titulo para el reporte.", "Titulo", MsgType[type]) as text|null
+	if(!customname)
+		return
+	var/input = input(usr, "Por favor, ingresa lo que quieras. Cualquier cosa. Seriamente.", "Cual es el mensaje?") as message|null
 	if(!input)
 		return
-	if(!customname)
-		customname = "[command_name()] Update"
 
-	//New message handling
-	post_comm_message(customname, replacetext(input, "\n", "<br/>"))
+	switch(alert("Esto deberia ser anunciado a la poblacion general?",,"Si","No", "Cancelar"))
+		if("Si")
+			var/beepsound = input(usr, "Que sonido deberia hacer?", "Sonido del Anuncio", "") as anything in MsgSound
 
-	switch(alert("Should this be announced to the general population?",,"Yes","No"))
-		if("Yes")
-			command_announcement.Announce(input, customname, new_sound = GLOB.using_map.command_report_sound, msg_sanitized = 1);
+			command_announcement.Announce(input, customname, MsgSound[beepsound], , , type)
 		if("No")
-			minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")
+			//same thing as the blob stuff - it's not public, so it's classified, dammit
+			GLOB.global_announcer.autosay("Un mensaje clasificado ha sido impreso a todas las consolas de comunicaciones.");
+			post_comm_message(input, "Classified [command_name()] Update")
+		else
+			return
 
 	log_admin("[key_name(src)] has created a command report: [input]")
 	message_admins("[key_name_admin(src)] has created a command report", 1)
