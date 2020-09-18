@@ -1,3 +1,3 @@
 /decl/cultural_info/culture
-	desc_type = "Culture"
+	desc_type = "Cultura"
 	category = TAG_CULTURE

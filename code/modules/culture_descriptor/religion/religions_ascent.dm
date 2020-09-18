@@ -1,6 +1,6 @@
 /decl/cultural_info/religion/kharmaani
 	name = RELIGION_KHARMAANI
-	description = "To the Kharmaani, the gyne is the embodiment of both the soul of the land she rules, and the \
-	power and prosperity of the genetic lineage she contains. The closest thing they have to spirituality is the \
-	veneration of their mother, and the protection and preservation of their worlds."
+	description = "Para los Kharmaani, la gyne es la forma fisica de tanto el alma de las tierras que gobierna, \
+	como del poder y prosperidad que lleva su linaje genetico. Lo mas cercano que tienen a espiritualidad es \
+	la veneracion de su madre, y la proteccion y preservacion de sus mundos."
 	hidden = TRUE

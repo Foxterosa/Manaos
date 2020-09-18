@@ -1,7 +1,7 @@
 //The effect when you wrap a dead body in gift wrap
 /obj/effect/spresent
-	name = "strange present"
-	desc = "It's a ... present?"
+	name = "misterioso regalo"
+	desc = "Es un... regalo?"
 	icon = 'icons/obj/items.dmi'
 	icon_state = "strangepresent"
 	density = 1
@@ -15,7 +15,7 @@
 
 //Paints the wall it spawns on, then dies
 /obj/effect/paint
-	name = "coat of paint"
+	name = "capa de pintura"
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "wall_paint_effect"
 	layer = TURF_DETAIL_LAYER
@@ -62,7 +62,7 @@
 
 //Stripes the wall it spawns on, then dies
 /obj/effect/paint_stripe
-	name = "stripe of paint"
+	name = "raya de pintura"
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "white"
 	layer = TURF_DETAIL_LAYER

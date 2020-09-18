@@ -100,19 +100,21 @@ client
 	var/chunksize = 0
 	if(!GLOB.end_credits_title)
 		/* Establish a big-ass list of potential titles for the "episode". */
-		possible_titles += "THE [pick("DOWNFALL OF", "RISE OF", "TROUBLE WITH", "FINAL STAND OF", "DARK SIDE OF", "DESOLATION OF", "DESTRUCTION OF", "CRISIS OF")]\
-							 [pick("SPACEMEN", "HUMANITY", "DIGNITY", "SANITY", "THE CHIMPANZEES", "THE VENDOMAT PRICES", "GIANT ARMORED", "THE GAS JANITOR",\
-							"THE SUPERMATTER CRYSTAL", "MEDICAL", "ENGINEERING", "SECURITY", "RESEARCH", "THE SERVICE DEPARTMENT", "COMMAND", "THE EXPLORERS", "THE PATHFINDER",\
+		possible_titles += "[pick("LA CAIDA DE", "EL ASCENSO DE", "PROBLEMAS CON", "EL ULTIMO BASTION DE", "EL LADO OSCURO DE", "LA DESOLACION DE", "LA DESTRUCCION DE", "LA CRISIS DE")]\
+							 [pick("LOS ASTRONAUTAS", "LA HUMANIDAD", "LA DIGNIDAD", "LA CORDURA", "LOS MONOS", "LOS PRECIOS DE EXPENDEDORAS", "EL SERPENTOIDE CONSERJE",\
+							"EL CRISTAL DE SUPERMATERIA", "LA SINGULARIDAD", "EL DEPARTAMENTO MEDICO", "LAS ANOMALIAS", "INGENIERIA", "SEGURIDAD", "CIENCIAS", "EL DEPARTAMENTO DE SERVICIO", "COMANDO", "EXPLORACION", "EL JEFE DE EXPLORADORES",\
 							"[uppertext(GLOB.using_map.station_name)]")]"
-		possible_titles += "THE CREW GETS [pick("RACIST", "PICKLED", "AN INCURABLE DISEASE", "PIZZA", "A VALUABLE HISTORY LESSON", "A BREAK", "HIGH", "TO LIVE", "TO RELIVE THEIR CHILDHOOD", "EMBROILED IN CIVIL WAR", "A BAD HANGOVER", "SERIOUS ABOUT [pick("DRUG ABUSE", "CRIME", "PRODUCTIVITY", "ANCIENT AMERICAN CARTOONS", "SPACEBALL", "DECOMPRESSION PROCEDURES")]")]"
-		possible_titles += "THE CREW LEARNS ABOUT [pick("LOVE", "DRUGS", "THE DANGERS OF MONEY LAUNDERING", "XENIC SENSITIVITY", "INVESTMENT FRAUD", "KELOTANE ABUSE", "RADIATION PROTECTION", "SACRED GEOMETRY", "STRING THEORY", "ABSTRACT MATHEMATICS", "[pick("UNATHI", "SKRELLIAN", "DIONAN", "KHAARMANI", "VOX", "SERPENTID")] MATING RITUALS", "ANCIENT CHINESE MEDICINE")]"
-		possible_titles += "A VERY [pick("CORPORATE", "NANOTRASEN", "FLEET", "HAPHAESTUS", "DAIS", "XENOLIFE", "EXPEDITIONARY", "DIONA", "PHORON", "MARTIAN", "SERPENTID")] [pick("CHRISTMAS", "EASTER", "HOLIDAY", "WEEKEND", "THURSDAY", "VACATION")]"
-		possible_titles += "[pick("GUNS, GUNS EVERYWHERE", "THE LITTLEST ARMALIS", "WHAT HAPPENS WHEN YOU MIX MAINTENANCE DRONES AND COMMERCIAL-GRADE PACKING FOAM", "ATTACK! ATTACK! ATTACK!", "SEX BOMB", "THE LEGEND OF THE ALIEN ARTIFACT: PART [pick("I","II","III","IV","V","VI","VII","VIII","IX", "X", "C","M","L")]")]"
-		possible_titles += "[pick("SPACE", "SEXY", "DRAGON", "WARLOCK", "LAUNDRY", "GUN", "ADVERTISING", "DOG", "CARBON MONOXIDE", "NINJA", "WIZARD", "SOCRATIC", "JUVENILE DELIQUENCY", "POLITICALLY MOTIVATED", "RADTACULAR SICKNASTY")] [pick("QUEST", "FORCE", "ADVENTURE")]"
-		possible_titles += "[pick("THE DAY [uppertext(GLOB.using_map.station_short)] STOOD STILL", "HUNT FOR THE GREEN WEENIE", "ALIEN VS VENDOMAT", "SPACE TRACK")]"
-		titles += "<center><h1>EPISODE [rand(1,1000)]<br>[pick(possible_titles)]<h1></h1></h1></center>"
+		possible_titles += "LA TRIPULACION [pick("SE PONE RACISTA", "SE PONE NOIR", "IGNORA LECCIONES DE ETICA BASICAS", "LUCHA CONTRA EL BULLYING ESPACIAL", "ENTRA A LA ZONA", "ES FUNADA", "REVIVE EL HUMOR DEL SIGLO XXI", "INTENTA HACER SU TRABAJO, FRACASA", "PULVERIZA LA CUARTA PARED", "ES ESCABECHADA", "CONTRAE UNA ENFERMEDAD INCURABLE", "OBTIENE PIZZA", "APRENDE UNA LECCION SOBRE HISTORIA", "SE TOMA UN DESCANSO", "SE COLOCA", "TIENE EL LUJO DE SOBREVIVIR", "RECUERDA SU INFANCIA", "SE INVOLUCRA EN UNA GUERRA CIVIL", "PASA POR UNA MALA RESACA", "SE PONE SERIA SOBRE [pick("EL ABUSO DE DROGAS", "EL CRIMEN", "LA LEY SOLAR", "EL ABUSO DE INTELIGENCIAS ARTIFICIALES", "SPACEBALL", "PROCEDIMIENTOS DE DESCOMPRESION")]")]"
+		possible_titles += "LA TRIPULACION APRENDE SOBRE [pick("EL AMOR", "EL USO APROPIADO DE BENGALAS BLUESPACE", "LOS MODALES EN LA MESA", "EL USO APROPIADO DE GRANADAS", "LAS CONSECUENCIAS DE SUS ACCIONES", "LA RELACION ENTRE PERROS, ZORROS, CYBORGS Y ANFIBIOS", "LA ALARMANTE FRECUENCIA DE MUERTES UNATHI", "INSULTOS LEVES EN IBERIANO", "COMO JODER UNA NAVE EN 5 SIMPLES PASOS", "LA IMPORTANCIA DE HIDRATARSE", "CLONES", "DROGAS", "LA NADA MISMA", "LA RELACION ENTRE LANGOSTAS Y XENO-ORGANISMOS", "LA DIFERENCIA ENTRE ADHERENTES Y ADHESIVOS", "LOS PELIGROS DEL LAVADO DE DINERO", "XENOSENSIBILIDAD", "EL FRAUDE DE INVERSION", "EL ABUSO DE OXICODONA", "PROTECCION ANTIRADIACION", "LA TEORIA DE LAS CUERDAS", "MATEMATICA ABSTRACTA", "LOS RITOS DE REPRODUCCION [pick("UNATHI", "SKRELL", "DIONA", "KHAARMANI", "VOX", "DE SERPENTOIDES")]", "MEDICINA CHINA ANTIGUA")]"
+		possible_titles += "[pick("UNA NAVIDAD", "UNA CELEBRACION DE PASCUA", "UNA FESTIVIDAD", "UNA SEMANA", "UNA CELEBRACION", "UNA VACACION")] [pick("MUY CORPORATIVA", "DE NANOTRASEN", "DE LA FLOTA", "MARINE", "VENUSIANA", "ANFIBIA", "EXPEDICIONARIA", "DIONA", "INFERNAL", "DE PHORON", "MARCIANA", "SERPENTOIDE")]"
+		possible_titles += "[pick("ARMAS, ARMAS POR DOQUIER", "LA PEOR NAVE DE SOL", "EL LAGARTO MAS ALTO", "EL RESULTADO DE MEZCLAR DRONES DE MANTENIMIENTO E IDEOLOGIAS DEL SIGLO XIX", "ATAQUEN! ATAQUEN! ATAQUEN!", "MIL HORAS", "MANAOS, GUERRA CIVIL: PARTE [pick("I","II","III","IV","V","VI","VII","VIII","IX", "X", "C","M","L")]")]"
+		possible_titles += "[pick("MISION", "EQUIPO", "ESCUADRON", "NOMBRE CLAVE:")] [pick("ESPACIAL", "M.A.N.A.O.S.", "SEXO", "MERCENARIO", "MINERIA", "DRAGON", "BRUJA", "LAVANDERIA", "ARMAS", "PUBLICIDAD", "PERRO", "MONOXIDO DE CARBONO", "NINJA", "MAGO", "MUERTE", "DELINCUENCIA JUVENIL", "POLITICA", "EPICARDO PICANTE", "SERBIA")]" //no me maten
+		possible_titles += "[pick("EL DIA QUE SACUDIO A LA [uppertext(GLOB.using_map.station_short)]", "UNA LECCION SOBRE EL VANDALISMO", "SPACE KART", "DEMONIOS BIEN VESTIDOS", "M.E.R.C.S.", "EFECTOS BLUESPACE", "UNA EXPOSICION DE AVES ACUATICAS ESPACIALES", "EL [pick("PEOR", "MEJOR")] [pick("LUNES", "MARTES", "MIERCOLES", "JUEVES", "VIERNES", "SABADO", "DOMINGO")]", "H ES DE HONK", "LA [pick("PRIMERA", "SEGUNDA", "TERCERA", "CUARTA", "DECIMA", "SEXAGESIMA", "ENESIMA")] DELAMINACION DEL DIA", "UN ABOGADO, UN PSICOLOGO Y UN OFICIAL DE SEGURIDAD ENTRAN A UN BAR", "UNA DISCUSION INTENSA SOBRE NOMENCLATURA FELINA",\
+							"NOS VEMOS, GAUCHO ESPACIAL", "POR LA CIENCIA!", "MINEROS, NO MUERAN!", "SLIMES, CRIMEN Y PECADO", "DROGAS, ALCOHOL Y CABRAS", "LAS BIZARRAS AVENTURAS DE LA [uppertext(GLOB.using_map.station_short)]: [pick("PROMETHEAN BLOOD", "VALID TENDENCY", "BLUESPACE CRUSADERS", "PHORON IS UNBREAKABLE", "GOLDEN SHIP", "XENO OCEAN", "PLASTEEL BALL RUN", "GIDEOLION")]", "DISPARAR PRIMERO, PREGUNTAR DESPUES", "ES NECROFORMO, NO NECROMORFO", "LOS LOCOS DOS MIL QUINIENTOS SESENTAS", "FRACASADO LOCAL FRACASA", "UNA GRAN FAMILIA", "LAS OTRAS DOCE ESTACIONES ESPACIALES", "UNA HISTORIA REAL, AMBIENTADA EN UN SIMULADOR DE ATMOSFERA DEL SIGLO XXI", "EL AUTOR MUERE", "LA RAZON POR LA CUAL [pick("NO SE HIERVE EL MATE", "MINAR ES PESIMA IDEA", "NO SE MEZCLA BLUESPACE CON REDSPACE",\
+							"SE USA BARBIJO", "EXISTE EL SSD", "NO SE ARRASTRA A LOS HERIDOS", "EXISTIR FUE MALA IDEA")]", "ABRAZOS MECANICOS", "EL TERMOSTATO DE LA CAPITANA", "MANAOS HIGH", "KOMIROV FRIED VOX", "SPACE ATTORNEY", "EL EXTRAVAGANTE CASO DEL PAJARO Y EL MILLONARIO", "EL GATO [pick("MULTITAREAS", "RUSO", "HUMANO")]", "EL SERPENTOIDE INCOMPRENDIDO", "AQUEL AMOR DE MUSICA LIGERA")]" //jeje, fracasado local fracasa
+		titles += "<center><h1>EPISODIO [rand(1,10000)]<br>[pick(possible_titles)]<h1></h1></h1></center>" //puta madre, me diverti con esto
 	else
-		titles += "<center><h1>EPISODE [rand(1,1000)]<br>[GLOB.end_credits_title]<h1></h1></h1></center>"
+		titles += "<center><h1>EPISODIO [rand(1,10000)]<br>[GLOB.end_credits_title]<h1></h1></h1></center>"
 
 	for(var/mob/living/carbon/human/H in GLOB.living_mob_list_|GLOB.dead_mob_list_)
 		if(findtext(H.real_name,"(mannequin)"))
@@ -122,9 +124,9 @@ client
 		if(H.timeofdeath && H.timeofdeath < 5 MINUTES) //don't mention these losers (prespawned corpses mostly)
 			continue
 		if(!cast.len && !chunksize)
-			chunk += "CAST:"
+			chunk += "ELENCO:"
 		var/job = ""
-		if(GetAssignment(H) != "Unassigned")
+		if(GetAssignment(H) != "No Asignado")
 			job = ", [uppertext(GetAssignment(H))]"
 		var/used_name = H.real_name
 		var/datum/computer_file/report/crew_record/R = get_crewmember_record(H.real_name)
@@ -170,10 +172,10 @@ client
 		var/datum/species/S = all_species[spec]
 		corpses += "[monkies[spec]] [lowertext(monkies[spec] > 1 ? S.name_plural : S.name)]"
 	if(corpses.len)
-		titles += "<center>BASED ON REAL EVENTS<br>In memory of [english_list(corpses)].</center>"
+		titles += "<center>BASADO EN HECHOS REALES<br>En memoria de [english_list(corpses)].</center>"
 
-	var/list/staff = list("PRODUCTION STAFF:")
-	var/list/staffjobs = list("Coffe Fetcher", "Cameraman", "Angry Yeller", "Chair Operator", "Choreographer", "Historical Consultant", "Costume Designer", "Chief Editor", "Executive Assistant")
+	var/list/staff = list("PERSONAL DE PRODUCCION:")
+	var/list/staffjobs = list("Busca-Cafes", "Camarografo", "Asistente de Asistencia", "Abusador Asignado", "Apoyo Moral", "Operador de Sillas", "Coreografo", "Consultor Historico", "Jefe de Vestuario", "Jefe de Edicion", "Experto en Organismos Blob", "Jefe de Jefatura")
 	var/list/goodboys = list()
 	for(var/client/C)
 		if(!C.holder)
@@ -186,24 +188,29 @@ client
 
 	titles += "<center>[jointext(staff,"<br>")]</center>"
 	if(goodboys.len)
-		titles += "<center>STAFF'S GOOD BOYS:<br>[english_list(goodboys)]</center><br>"
+		titles += "<center>LOS NENES ESPECIALES DE LOS PRODUCTORES:<br>[english_list(goodboys)]</center><br>"
 
-	var/disclaimer = "<br>Sponsored by [GLOB.using_map.company_name].<br>All rights reserved.<br>\
-					 This motion picture is protected under the copyright laws of the Sol Central Government<br> and other nations throughout the galaxy.<br>\
-					 Colony of First Publication: [pick("Mars", "Luna", "Earth", "Venus", "Phobos", "Ceres", "Tiamat", "Ceti Epsilon", "Eos", "Pluto", "Ouere",\
+	var/disclaimer = "<br>Patrocinado por [GLOB.using_map.company_name].<br>Todos los derechos reservados.<br>\
+					 Esta pieza cinematografica es protegida por las leyes de derechos de autor del Gobierno Central Solar y de otras naciones a traves de la galaxia.<br>\
+					 Publicacion Inicial: [pick("Marte", "Luna", "Tierra", "Venus", "Fobos", "Ceres", "Tiamat", "Ceti Epsilon", "Eos", "Pluton", "Ouere",\
 					 "Lordania", "Kingston", "Cinu", "Yuklid V", "Lorriman", "Tersten", "Aigaion")].<br>"
-	disclaimer += pick("Use for parody prohibited. PROHIBITED.",
-					   "All stunts were performed by underpaid interns. Do NOT try at home.",
-					   "[GLOB.using_map.company_name] does not endorse behaviour depicted. Attempt at your own risk.",
-					   "Any unauthorized exhibition, distribution, or copying of this film or any part thereof (including soundtrack)<br>\
-						may result in an ERT being called to storm your home and take it back by force.",
-						"The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual<br>\
-						persons (living or deceased), places, buildings, and products is intended or should be inferred.<br>\
-						This film is based on a true story and all individuals depicted are based on real people, despite what we just said.",
-						"No person or entity associated	with this film received payment or anything of value, or entered into any agreement, in connection<br>\
-						with the depiction of tobacco products, despite the copious amounts	of smoking depicted within.<br>\
-						(This disclaimer sponsored by Carcinoma - Carcinogens are our Business!(TM)).",
-						"No animals were harmed in the making of this motion picture except for those listed previously as dead. Do not try this at home.")
+	disclaimer += pick("El uso del material demostrado para parodias esta prohibido. PROHIBIDO.",
+					   "Todas las acrobacias fueron ejecutadas por trabajadores no remunerados. NO las intenten en casa.",
+					   "[GLOB.using_map.company_name] no aprueba el comportamiento representado en esta obra. Intentar bajo su propio riesgo.",
+					   "Toda exhibicion, distribucion o copia de esta pieza o cualquier parte de la misma (incluyendo su banda sonora)<br>\
+						puede justificar el llamado de un ERT a su domicilio para recuperar el material reservado a la fuerza.",
+						"Esta historia y todos los incidentes, nombres, personajes representados en la misma son ficticios. Cualquier similaridad con<br>\
+						personas (vivas o muertas), lugares, edificios y productos es casualidad, y no deberia ser asumida.<br>\
+						A pesar de lo recien aclarado, esta obra esta basada en una historia real y todos los individuos representados estan basados en personas existentes.",
+						"Ninguna persona o entidad asociada con esta obra recibio pago, recompensa de valor, o entrada en cualquier arreglo relacionado<br>\
+						con la promocion de productos de tabaco, a pesar de la cantidad absurda de fumadores representados.<br>\
+						(Esta advertencia fue patrocinada por Carcinoma - Los Carcinogenos son Nuestro Negocio!(TM)).",
+						"Ningun menor fue explotado en la produccion de esta pieza. Todo menor representado es un actor adulto o una divergencia espacio-temporal.",
+						"Cualquier similitud con marcas registradas de bebidas carbonatadas saborizadas es una coincidencia.",
+						"Todo afecto, apego, amor y ternura demostrado en esta obra es genuino, y deberia ser tomado como tal.",
+						"Ningun animal fue lastimado en la produccion de esta obra excepto los lastimados en la produccion de esta obra.",
+						"Todo traductor involucrado en la traduccion de esta obra se divirtio demasiado, pero no fue remunerado de cualquier forma.", // este seria yo
+						"Ningun animal fue lastimado en la produccion de esta obra excepto los previamente denominados muertos. No intenten esto en casa.")
 	titles += "<hr>"
 	titles += "<center><span style='font-size:6pt;'>[JOINTEXT(disclaimer)]</span></center>"
 
