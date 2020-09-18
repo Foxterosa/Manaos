@@ -9,6 +9,8 @@
 	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely orange accent color."
 	icon_state = "duty_gloves_eng"
 	item_state = "duty_gloves_eng"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
 
 /obj/item/clothing/gloves/thick/duty/solgov/cmd
 	name = "command duty gloves"

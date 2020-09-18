@@ -3,55 +3,55 @@
 /////////
 
 /obj/item/gunbox/infantry
-	name = "Standard Kit"
-	desc = "A secure box containing a sidearm and primary."
+	name = "Kit estandar"
+	desc = "Una caja segura que contiene un arma secundaria y una primaria."
 
 /obj/item/gunbox/infantry/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic - Bullpup Rifle"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/ammo_magazine/mil_rifle/sec,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell)
-	options["Energy - Laser Carbine"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
-	var/choice = input(user,"What type of equipment?") as null|anything in options
+	options["Balistica - Rifle Bullpup"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/ammo_magazine/mil_rifle/sec,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell,/obj/item/weapon/grenade/frag/shell)
+	options["Energia - Carabina laser"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
+	var/choice = input(user,"¿Que tipo de equipamiento?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
 		for(var/new_type in things_to_spawn)
 			var/atom/movable/AM = new new_type(get_turf(src))
 			if(istype(AM, /obj/item/weapon/gun/))
-				to_chat(user, "You have chosen \the [AM].")
+				to_chat(user, "Has elegido [AM].")
 		qdel(src)
 
 /obj/item/gunbox/infcom
-	name = "Squad Leader Kit"
-	desc = "A secure box containing a sidearm and primary."
+	name = "Kit del lider de escuadron"
+	desc = "Una caja segura que contiene un arma secundaria y una primaria."
 
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic - Tectonic"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure)
-	options["Ballistic - SMG"] = list(/obj/item/weapon/gun/projectile/automatic/merc_smg/sec,/obj/item/weapon/gun/energy/revolver/secure)
-	options["Energy - Laser Carbine (has burst fire)"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl,/obj/item/weapon/gun/energy/revolver/secure)
-	var/choice = input(user,"What type of equipment?") as null|anything in options
+	options["Balistica - Escopeta"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Balistica - Subfusil"] = list(/obj/item/weapon/gun/projectile/automatic/p90/sec,/obj/item/ammo_magazine/p90, /obj/item/weapon/gun/energy/revolver/secure)
+	options["Energia - Carabina laser (Disparo rapido)"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl,/obj/item/weapon/gun/energy/revolver/secure)
+	var/choice = input(user,"¿Que tipo de equipamiento?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
 		for(var/new_type in things_to_spawn)
 			var/atom/movable/AM = new new_type(get_turf(src))
 			if(istype(AM, /obj/item/weapon/gun/))
-				to_chat(user, "You have chosen \the [AM].")
+				to_chat(user, "Has elegido [AM].")
 		qdel(src)
 
 /obj/item/gunbox/inftech
-	name = "Technician Kit"
-	desc = "A secure box containing a sidearm and primary."
+	name = "Kit tecnico"
+	desc = "Una caja segura que contiene un arma secundaria y una primaria."
 
 /obj/item/gunbox/inftech/attack_self(mob/living/user)
 	var/list/options = list()
 //	options["Rocket Launcher"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
-	options["Combat Medic"] = list(/obj/item/weapon/storage/firstaid/stab,/obj/item/weapon/storage/belt/medical/emt,/obj/item/bodybag/cryobag)
-	var/choice = input(user,"What type of equipment?") as null|anything in options
+	options["Medico de combate"] = list(/obj/item/weapon/storage/firstaid/stab,/obj/item/weapon/storage/belt/medical/emt,/obj/item/bodybag/cryobag)
+	var/choice = input(user,"¿Que tipo de equipamiento?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
 		for(var/new_type in things_to_spawn)
 			var/atom/movable/AM = new new_type(get_turf(src))
 			if(istype(AM, /obj/item/weapon/gun/))
-				to_chat(user, "You have chosen \the [AM].")
+				to_chat(user, "Has elegido [AM].")
 		qdel(src)
 
 /////////

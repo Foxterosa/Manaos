@@ -1,24 +1,23 @@
 /decl/cultural_info/religion/unathi
 	name = RELIGION_UNATHI_VINE
-	description = "A faith of semi-nomadic travelers who believe the destruction of Moghes is meant to be a chance for the Unathi to \
-	turn it into their own paradise. They're always looking for new ways to grow life on their world and often refer to themselves as \
-	'her hands'."
+	description = "La fe de viajeros semi nomadas, que creen que la destruccion de Moghes era una oportunidad para que los Unathi lo conviertan \
+	en su propio paraiso. Siempre estan buscando maneras de hacer crecer vida en su planeta y se autodenominan 'Sus Manos'."
 
 /decl/cultural_info/religion/unathi_precursors
 	name = RELIGION_UNATHI_PRECURSOR
-	description = "Focused primarily with learning and understanding everything they can about the Precursors, Unathi of this faith want \
-	to make sure that the Unathi do not repeat the mistakes of the past, and want to build a better world for their people with the tools \
-	that the Precursors left for them."
+	description = "Los Unathi de esta fe estan concentrados principalmente en aprender y entender todo lo posible relacionado a los Precursores, \
+	y quieren asegurarse de que su especie no vuelva a cometer los errores de su pasado. Desean construir un mejor mundo para su gente con \
+	las herramientas que sus Precursores les dejaron."
 
 /decl/cultural_info/religion/unathi_strat
 	name = RELIGION_UNATHI_STRATAGEM
-	description = "Conflict defines this faith. Be it war, internal struggle, arguments and discourse- to the followers of the Grand \
-	Stratagem these events should always be opportunities to grow and learn so that you can be the pinnacle of the Unathi, and your children \
-	can then be even stronger. How else will the Unathi fully conquer a world like Moghes."
+	description = "Esta fe se define por su conflicto. Ya sea guerra, disputas interiores, discusiones y debate- para los seguidores \
+	de la Gran Estratagema estos eventos son oportunidades de desarrollarse y aprender para llegar a la cumbre de los Unathi, y que tus hijos \
+	puedan ser aun mas fuertes. De que otra forma podrian los Unathi conquistar un mundo tan hostil como Moghes?"
 
 /decl/cultural_info/religion/unathi_lights
 	name = RELIGION_UNATHI_LIGHTS
-	description = "Followers of the Lights stress the importance of what -You- can do with your hands and mind. How can you create a better \
-	world for yourself and your clan? The Fruitful Lights want to create that world for the Unathi. Similar to the followers of the Precursors \
-	in a sense, but rather than relying on them and what they made entirely, the followers of the Lights believe it should Unathi ingenuity and \
-	engineering that brings the Golden Age for their people."
+	description = "Los seguidores de las Luces ponen enfasis en la importancia de lo que -Tu- puedes hacer con tu mente y manos. Como puedes crear \
+	un mejor mundo para tu y tu clan? Las Luces Fructuosas quieren crear ese mundo para los Unathi. Son similares a los seguidores de los Precursores \
+	de alguna forma, pero creen que en vez de depender en tecnologia antigua, deberia ser la inteligencia e ingenieria Unathi la que \
+	traiga su Edad Dorada."

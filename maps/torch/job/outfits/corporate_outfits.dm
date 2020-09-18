@@ -31,3 +31,12 @@
 /decl/hierarchy/outfit/job/torch/passenger/research/assist/testsubject
 	name = OUTFIT_JOB_NAME("Testing Assistant")
 	uniform = /obj/item/clothing/under/rank/ntwork
+
+/decl/hierarchy/outfit/job/torch/passenger/representative
+	name = OUTFIT_JOB_NAME("Representante de Sol Gov")
+	l_ear = /obj/item/device/radio/headset/headset_sgr
+	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
+	suit = /obj/item/clothing/suit/storage/toggle/suit/black
+	shoes = /obj/item/clothing/shoes/laceup
+	id_type = /obj/item/weapon/card/id/torch/passenger/corporate/representative
+	pda_type = /obj/item/modular_computer/pda/heads/paperpusher

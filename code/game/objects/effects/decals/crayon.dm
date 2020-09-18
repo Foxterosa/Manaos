@@ -1,13 +1,13 @@
 /obj/effect/decal/cleanable/crayon
-	name = "rune"
-	desc = "A rune drawn in crayon."
+	name = "runa"
+	desc = "Una runa dibujada con crayon."
 	icon = 'icons/obj/rune.dmi'
 
 	New(location,main = "#ffffff",shade = "#000000",var/type = "rune")
 		..()
 
 		name = type
-		desc = "A [type] drawn in crayon."
+		desc = "Una [type] dibujada en crayon."
 
 		switch(type)
 			if("rune")
