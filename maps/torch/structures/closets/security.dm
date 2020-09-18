@@ -151,7 +151,7 @@
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/clothing/suit/armor/pcarrier/medium/security,
-		/obj/item/gunbox,
+		/obj/item/gunbox/detective,
 		/obj/item/device/flash,
 		/obj/item/weapon/melee/baton/loaded,
 		/obj/item/weapon/reagent_containers/spray/pepper,
