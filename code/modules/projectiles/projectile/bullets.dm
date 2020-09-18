@@ -418,7 +418,7 @@ Thanks a bunch! :n
 /obj/item/projectile/bullet/mateba
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	icon_state = "mateba"
-	damage = 58
+	damage = 52
 	shrapnel_chance_multiplier = 0.6
 	arterial_bleed_chance_multiplier = 0.4
 	distance_falloff = 3.0
@@ -427,10 +427,8 @@ Thanks a bunch! :n
 ///Special Bullets
 
 /obj/item/projectile/bullet/mateba/special
-	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	icon_state = "matebaspecial"
-	damage = 68
+	damage = 58
 	shrapnel_chance_multiplier = 0.8
-	distance_falloff = 2.5
-	armor_penetration = 18
-	agony = 60
+	armor_penetration = 15
+	agony = 50
