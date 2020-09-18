@@ -713,7 +713,7 @@
 	pow_cat = 3
 
 /datum/mil_rank/civ/ntr
-	name = "NanoTrasen Representative"
+	name = "Representante de Sol Gov"
 	name_short = "NTR"
 	pow_cat = 5
 

@@ -4040,7 +4040,7 @@
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
 	id_tag = "magistrado";
-	name = "Control de puerta de oficina trasera del Representante de Sol Gov";
+	name = "Control de puerta de oficina del Representante de Sol Gov";
 	pixel_x = 27;
 	pixel_y = 5;
 	req_access = list("ACCESS_TORCH_REPRESENTATIVE")
@@ -12290,7 +12290,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/sol{
-	id_tag = "magistrado";
+	id_tag = "";
 	name = "Representante de Sol Gov";
 	secured_wires = 1
 	},

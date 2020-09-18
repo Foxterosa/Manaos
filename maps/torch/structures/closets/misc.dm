@@ -52,16 +52,17 @@
 /obj/structure/closet/secure_closet/representative/WillContain()
 	return list(
 		/obj/item/device/flash,
-		/obj/item/device/radio/headset/heads/torchexec,
-		/obj/item/device/radio/headset/heads/torchexec/alt,
+		/obj/item/device/radio/headset/headset_sgr,
+		/obj/item/device/radio/headset/headset_sgr/alt,
 		/obj/item/device/camera_film = 2,
 		/obj/item/device/tape/random = 3,
 		/obj/item/weapon/storage/secure/briefcase,
 		/obj/item/weapon/rig/light/internalaffairs,
-		/obj/item/device/radio/headset/headset_com,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/centcom_officer,
+		/obj/item/clothing/head/beret/centcom/officer,
 		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/weapon/cane,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)
 	)

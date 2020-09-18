@@ -382,3 +382,15 @@
 			radio_text += ", "
 
 	radio_desc = radio_text
+
+/obj/item/device/radio/headset/headset_sgr
+	name = "auricular del representante de sol gov"
+	desc = "Un auricular con todos los canales de la nave."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/heads/captain
+
+/obj/item/device/radio/headset/headset_sgr/alt
+	name = "auricular del representante de sol gov"
+	icon_state = "com_headset_alt"
+	item_state = "com_headset_alt"
