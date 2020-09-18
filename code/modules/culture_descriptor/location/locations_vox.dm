@@ -1,26 +1,26 @@
 /decl/cultural_info/location/vox
 	name = HOME_SYSTEM_VOX_ARK
-	description = "The moon-sized arkships are home to the vast, vast majority of vox, and represent the closest thing to \
-	a stable planetary culture the far-flung nomadic species has. Arkborn vox can expect to enjoy long lives, infrequent \
-	re-embodiment, and a rich and varied social life amongst the rambunctious ark clans and families. Raiders and salvagers \
-	may look upon the arkborn as lazy and passive, but they tend to return to them for rest and recuperation after each \
-	mission without too many complaints."
-	ruling_body = "the Apex"
-	distance = "multiple systems"
+	description = "Las arcas de proporciones lunares son la morada de la gran mayoria de los Vox, y representan lo mas \
+	cercano a una cultura planetaria estable que esta raza nomada y dispersa puede demostrar. Los vox nativos a estas arcas \
+	pueden esperar vivir vidas largas, con reencarnaciones infrecuentes y una vida social rica y variada en sus caoticas estructuras familiares. Son vistos \
+	como unos vagos pasivos por sus camaradas incursores, a pesar de que los mismos suelen volver a las arcas para descansar y recuperarse \
+	despues de cada mision sin quejarse."
+	ruling_body = "los Apex"
+	distance = "varios sistemas"
 	hidden_from_codex = TRUE
 
 /decl/cultural_info/location/vox/shroud
 	name = HOME_SYSTEM_VOX_SHROUD
-	description = "The shroud of an arkship is an unstable and dangerous place to live, and those vox stationed there are \
-	often salvagers, scavengers, engineers and technicians, struggling with the endless burden of keeping the decay of the ark \
-	from progressing beyond the shroud and into more critical systems. By comparison to arkborn, they are quiet, self-supporting and \
-	independant, with few cares for clan politics, family squabbles, or contest challenges. They know their task is critical to \
-	the survival of the vox as a species, and next to that, tussling with your peers seems a bit immature."
+	description = "El velo de una arca es una morada inestable y peligrosa, y los vox asignados al mismo son usualmente saqueadores, \
+	ingenieros y tecnicos, los cuales pelean una guerra perpetua contra el deterioro del arca, intentando limitarlo al velo \
+	y evitar que pase a sistemas mas vitales. Comparados a los nacidos en arcas, son silenciosos, autosuficientes e independientes, \
+	con poco interes en temas como politica familiar, peleas de clanes o concursos. Saben que sus tareas son vitales para la supervivencia \
+	de los Vox como especie, y comparado a eso, pelearse con tus iguales parece un poco inmaduro."
 
 /decl/cultural_info/location/vox/ship
 	name = HOME_SYSTEM_VOX_SHIP
-	description = "Shipborn vox are often purpose-grown for their assigned tasks, frequently under the direct supervision of \
-	an apex or their servants. They are often seen as 'disposable' in vox culture, as they rarely survive their incarnation \
-	beyond the tour of the vessel. Those that do, however, are generally thrown straight back into long-distance shipside \
-	duties, as their success shows their masters that they are well suited to it. The life of a shipborn vox is arduous and \
-	bloody, and they will be killed and reborn more often than even the most reckless of arkborn raiders."
+	description = "Los vox nacidos en naves suelen ser generados para cumplir tareas especificas, frecuentemente bajo la supervision directa \
+	de un Apex o uno de sus sirvientes. Son vistos como mano de obra desechable por la sociedad vox, pues sus cuerpos rara vez sobreviven \
+	la excursion de su nave. Los pocos que si sobreviven, son generalmente enviados inmediatamente a otra mision, \
+	pues su exito revela a sus maestros que son perfectos para ese tipo de trabajo. La vida de un vox naval es ardua y encarnizada, \
+	y moriran y renaceran mas seguido aun que el incursor mas atrevido."
