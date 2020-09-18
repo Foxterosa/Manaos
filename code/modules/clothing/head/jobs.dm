@@ -143,7 +143,7 @@
 /obj/item/clothing/head/beret/centcom/officer
 	name = "asset protection beret"
 	desc = "A navy blue beret adorned with the crest of corporate asset protection. For asset protection agents that are more inclined towards style than safety."
-	icon_state = "beret_corporate_navy"
+	icon_state = "beret_corporate_hos"
 
 /obj/item/clothing/head/beret/centcom/captain
 	name = "asset protection command beret"
