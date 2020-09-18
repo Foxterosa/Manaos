@@ -1662,7 +1662,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
-/obj/item/weapon/storage/box/frags,
+/obj/item/weapon/storage/box/fragshells,
 /turf/simulated/floor/tiled/dark,
 /area/security/infantry/armory)
 "cU" = (
@@ -15970,6 +15970,18 @@
 	},
 /turf/simulated/floor/lino,
 /area/shuttle/petrov/rd)
+"Hh" = (
+/obj/effect/floor_decal/corner/mauve/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
+	},
+/obj/structure/sign/deck/fifth{
+	dir = 1;
+	icon_state = "deck-5";
+	pixel_y = -38
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/fifthdeck/fore)
 "Hk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -18224,18 +18236,6 @@
 /obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
 /area/shuttle/petrov/hallwaya)
-"Pu" = (
-/obj/effect/floor_decal/corner/mauve/half{
-	icon_state = "bordercolorhalf";
-	dir = 4
-	},
-/obj/structure/sign/deck/fifth{
-	dir = 1;
-	icon_state = "deck-5";
-	pixel_y = -38
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/fifthdeck/fore)
 "Px" = (
 /obj/machinery/radiocarbon_spectrometer,
 /obj/machinery/alarm{
@@ -34389,7 +34389,7 @@ fl
 ct
 oZ
 pk
-Pu
+Hh
 rd
 iy
 iy
