@@ -40,3 +40,13 @@
 	desc = "Worn by robust fighters who are willing to do anything to win."
 	icon_state = "luchar"
 	item_state = "luchar"
+
+/obj/item/clothing/mask/pilothelmet
+	name = "Casco Aviador"
+	desc = "Casco usado por los pilotos de la tercer flota. No se ve como el nombre indicaria."
+	icon_state = "pilothelmet"
+	item_state = "pilothelmet"
+	flags_inv = HIDEFACE|BLOCKHAIR|HIDEEARS
+	body_parts_covered = HEAD|FACE
+	w_class = ITEM_SIZE_SMALL
+
