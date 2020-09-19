@@ -27,12 +27,12 @@
 	if(..() && !stat)
 		if(!is_zombie && isturf(src.loc))
 			for(var/mob/living/carbon/human/H in oview(src, 1)) //Only for corpse right next to/on same tile
-				if(H.stat == DEAD && H.health <= HEALTH_THRESHOLD_DEAD)
+				if(H.stat == DEAD)
 					Zombify(H)
 					break
 		if(times_fired % 4 == 0)
 			for(var/mob/living/simple_animal/K in oview(src, 1)) //Only for corpse right next to/on same tile
-				if(K.stat == DEAD && K.health <= HEALTH_THRESHOLD_DEAD)
+				if(K.stat == DEAD)
 					visible_message("<span class='danger'>[src] consumes [K] whole!</span>")
 					if(health < maxHealth)
 						health += 10
@@ -40,7 +40,7 @@
 					break
 
 /mob/living/simple_animal/hostile/headcrab/proc/Zombify(mob/living/carbon/human/H)
-	if(!H.check_death_method())
+	if(!H.stat == DEAD)
 		H.death()
 	is_zombie = TRUE
 	if(H.wear_suit)
@@ -63,7 +63,6 @@
 	attack_sound = 'sound/creatures/zombie_attack.ogg'
 	icon_state = "zombie2_s"
 	H.update_hair()
-	host_species = H.dna.species.name
 	human_overlays = H.overlays
 	update_icons()
 	H.forceMove(src)
@@ -164,6 +163,7 @@
 		else if(host_species == "Gray")
 			I = image('icons/mob/headcrab.dmi', icon_state = "poison_headcrabpod_gray")
 		overlays += I
+
 
 /mob/living/simple_animal/hostile/headcrab/poison/AttackingTarget()
 	. = ..()

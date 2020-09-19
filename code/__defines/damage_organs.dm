@@ -36,10 +36,6 @@
 #define FIRE_DAMAGE_MODIFIER 0.0215 // Higher values result in more external fire damage to the skin. (default 0.0215)
 #define  AIR_DAMAGE_MODIFIER 2.025  // More means less damage from hot air scalding lungs, less = more damage. (default 2.025)
 
-//Health Defines
-#define HEALTH_THRESHOLD_CRIT 0
-#define HEALTH_THRESHOLD_DEAD -100
-
 // Organ defines.
 #define ORGAN_CUT_AWAY   (1<<0)  // The organ is in the process of being surgically removed.
 #define ORGAN_BLEEDING   (1<<1)  // The organ is currently bleeding.
