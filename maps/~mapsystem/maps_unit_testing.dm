@@ -53,6 +53,7 @@
 		/area/nieve/cuarto1,
 		/area/nieve/cuarto2,
 		/area/nieve/cuarto3,
+		/area/nieve/cuarto4,
 		/area/nieve/principal,
 		/area/nieve/sec,
 		/area/nieve/med,
