@@ -9,7 +9,7 @@
 	maxHealth = 60
 	melee_damage_lower = 5
 	melee_damage_upper = 10
-	ranged = 1
+	ranged = 0
 	ranged_message = "leaps"
 	ranged_cooldown_time = 40
 	var/jumpdistance = 4
@@ -38,17 +38,6 @@
 						health += 10
 					qdel(K)
 					break
-
-/mob/living/simple_animal/hostile/headcrab/OpenFire(atom/A)
-	if(check_friendly_fire)
-		for(var/turf/T in getline(src,A)) // Not 100% reliable but this is faster than simulating actual trajectory
-			for(var/mob/living/L in T)
-				if(L == src || L == A)
-					continue
-
-	visible_message("<span class='danger'><b>[src]</b> [ranged_message] at [A]!</span>")
-	throw_at(A, jumpdistance, jumpspeed, spin = FALSE, diagonals_first = TRUE)
-	ranged_cooldown = world.time + ranged_cooldown_time
 
 /mob/living/simple_animal/hostile/headcrab/proc/Zombify(mob/living/carbon/human/H)
 	if(!H.check_death_method())
@@ -175,7 +164,6 @@
 		else if(host_species == "Gray")
 			I = image('icons/mob/headcrab.dmi', icon_state = "poison_headcrabpod_gray")
 		overlays += I
-
 
 /mob/living/simple_animal/hostile/headcrab/poison/AttackingTarget()
 	. = ..()
