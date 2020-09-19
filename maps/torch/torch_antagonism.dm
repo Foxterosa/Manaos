@@ -59,4 +59,4 @@
 	return 1
 
 /datum/antagonist/deathsquad
-	uniform_type = /obj/item/clothing/under/solgov/pt/army
+	outfit_type = /decl/hierarchy/outfit/death_command

@@ -22,7 +22,6 @@ GLOBAL_DATUM_INIT(deathsquad, /datum/antagonist/deathsquad, new)
 	initial_spawn_req = 4
 	initial_spawn_target = 6
 
-	faction = deathsquad
 	var/outfit_type = /decl/hierarchy/outfit/death_command
 
 	base_to_load = /datum/map_template/ruin/antag_spawn/ert
