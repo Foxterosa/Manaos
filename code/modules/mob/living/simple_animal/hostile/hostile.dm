@@ -2,6 +2,7 @@
 	faction = "hostile"
 	var/stance = HOSTILE_STANCE_IDLE	//Used to determine behavior
 	var/mob/living/target_mob
+	var/atom/target
 	var/attack_same = 0
 	var/ranged = 0
 	var/rapid = 0
@@ -17,6 +18,14 @@
 	var/move_to_delay = 4 //delay for the automated movement.
 	var/attack_delay = DEFAULT_ATTACK_COOLDOWN
 	var/list/friends = list()
+	var/search_objects = 0 //If we want to consider objects when searching around, set this to 1. If you want to search for objects while also ignoring mobs until hurt, set it to 2. To completely ignore mobs, even when attacked, set it to 3
+	var/robust_searching = 0 //By default, mobs have a simple searching method, set this to 1 for the more scrutinous searching (stat_attack, stat_exclusive, etc), should be disabled on most mobs
+	var/stat_attack = CONSCIOUS //Mobs with stat_attack to UNCONSCIOUS will attempt to attack things that are unconscious, Mobs with stat_attack set to DEAD will attempt to attack the dead.
+	var/stat_exclusive = FALSE //Mobs with this set to TRUE will exclusively attack things defined by stat_attack, stat_attack DEAD means they will only attack corpses
+	var/ranged_message
+	var/ranged_cooldown = 0	//What the current cooldown on ranged attacks is, generally world.time + ranged_cooldown_time
+	var/ranged_cooldown_time = 30 //How long, in deciseconds, the cooldown of ranged attacks is
+	var/check_friendly_fire = 0 // Should the ranged mob check for friendlies when shooting
 	var/break_stuff_probability = 10
 	stop_automated_movement_when_pulled = 0
 	var/destroy_surroundings = 1
@@ -129,6 +138,43 @@
 		AttackingTarget()
 		return 1
 
+// Please do not add one-off mob AIs here, but override this function for your mob
+/mob/living/simple_animal/hostile/CanAttack(atom/the_target)//Can we actually attack a possible target?
+	if(isturf(the_target) || !the_target || the_target.type == /atom/movable/) // bail out on invalids
+		return FALSE
+
+	if(ismob(the_target)) //Target is in godmode, ignore it.
+		var/mob/M = the_target
+		if(M.status_flags & GODMODE)
+			return FALSE
+
+	if(see_invisible < the_target.invisibility) //Target's invisible to us, forget it
+		return FALSE
+	if(search_objects < 2)
+		if(isliving(the_target))
+			var/mob/living/L = the_target
+			if(robust_searching)
+				if(!attack_same)
+					return FALSE
+				if(L.stat > stat_attack)
+					return FALSE
+				if(L in friends)
+					return FALSE
+			else
+				if(!attack_same || L.stat)
+					return FALSE
+			return TRUE
+
+		if(istype(the_target, /obj/machinery/porta_turret))
+			var/obj/machinery/porta_turret/P = the_target
+			if(!P.raised) //Don't attack invincible turrets
+				return FALSE
+			if(P.stat & BROKEN) //Or turrets that are already broken
+				return FALSE
+			return TRUE
+
+	return FALSE
+
 /mob/living/simple_animal/hostile/proc/AttackingTarget()
 	face_atom(target_mob)
 	setClickCooldown(attack_delay)
@@ -161,6 +207,23 @@
 /mob/living/simple_animal/hostile/death(gibbed, deathmessage, show_dead_message)
 	..(gibbed, deathmessage, show_dead_message)
 	walk(src, 0)
+
+/mob/living/simple_animal/hostile/proc/sidestep()
+	if(!target || !isturf(target.loc) || !isturf(loc) || stat == DEAD)
+		return
+	var/target_dir = get_dir(src, target)
+
+	var/static/list/cardinal_sidestep_directions = list(-90, -45, 0, 45, 90)
+	var/static/list/diagonal_sidestep_directions = list(-45, 0, 45)
+	var/chosen_dir = 0
+	if (target_dir & (target_dir - 1))
+		chosen_dir = pick(diagonal_sidestep_directions)
+	else
+		chosen_dir = pick(cardinal_sidestep_directions)
+	if(chosen_dir)
+		chosen_dir = turn(target_dir, chosen_dir)
+		Move(get_step(src, chosen_dir))
+		face_atom(target) //Looks better if they keep looking at you when dodging
 
 /mob/living/simple_animal/hostile/Life()
 	. = ..()

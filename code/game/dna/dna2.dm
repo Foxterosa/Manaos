@@ -106,6 +106,7 @@ var/global/list/datum/dna/gene/dna_genes[0]
 
 	// New stuff
 	var/species = SPECIES_HUMAN
+	var/dies_at_threshold = FALSE // Do they die or get knocked out at specific thresholds, or do they go through complex crit?
 	var/s_base = ""
 	var/list/body_markings = list()
 
