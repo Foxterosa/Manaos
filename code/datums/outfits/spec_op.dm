@@ -39,6 +39,18 @@
 
 /decl/hierarchy/outfit/death_command
 	name = "Spec Ops - Death commando"
+	uniform = /obj/item/clothing/under/ert
+	shoes = /obj/item/clothing/shoes/swat
+	gloves = /obj/item/clothing/gloves/thick/swat
+	l_ear = /obj/item/device/radio/headset/specops
+	l_hand = /obj/item/weapon/disk/nuclear
+	belt = /obj/item/weapon/gun/energy/gun
+	glasses = /obj/item/clothing/glasses/sunglasses
+	mask = /obj/item/clothing/mask/gas/death_commando
+	back = /obj/item/weapon/storage/backpack/satchel
+
+	id_slot = slot_wear_id
+	id_type = /obj/item/weapon/card/id/centcom/ERT
 
 /decl/hierarchy/outfit/death_command/equip(var/mob/living/carbon/human/H)
 	GLOB.deathsquad.equip(H)
