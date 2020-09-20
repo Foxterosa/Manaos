@@ -86,7 +86,7 @@
 	department = "el Lider de Escuadron"
 	department = "Infanteria"
 	department_flag = INF
-	total_positions = 1
+	total_positions = 2
 	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
