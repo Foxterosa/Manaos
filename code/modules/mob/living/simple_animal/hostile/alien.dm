@@ -1,4 +1,4 @@
-/mob/living/simple_animal/hostile/ali
+/mob/living/simple_animal/hostile/al
 	name = "alien hunter"
 	desc = "Hiss!"
 	icon = 'icons/mob/alien.dmi'
