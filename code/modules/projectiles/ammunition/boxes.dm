@@ -347,3 +347,24 @@
 	ammo_type = /obj/item/ammo_casing/pistol
 	max_ammo = 50
 	multiple_sprites = 1
+
+
+///Mateba Bullets by Danaleja2005
+
+/obj/item/projectile/bullet/mateba
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	icon_state = "mateba"
+	damage = 52
+	shrapnel_chance_multiplier = 0.6
+	arterial_bleed_chance_multiplier = 0.4
+	distance_falloff = 3.0
+	armor_penetration = 10
+
+///Special Bullets
+
+/obj/item/projectile/bullet/mateba/special
+	icon_state = "matebaspecial"
+	damage = 54
+	shrapnel_chance_multiplier = 0.8
+	armor_penetration = 15
+	agony = 50
