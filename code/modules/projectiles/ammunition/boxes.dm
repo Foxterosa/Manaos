@@ -348,23 +348,22 @@
 	max_ammo = 50
 	multiple_sprites = 1
 
+/// Mateba Speedloader by Danaleja2005
 
-///Mateba Bullets by Danaleja2005
+/obj/item/ammo_magazine/speedloader/mateba
+	name = "Cargador de Velocidad de Mateba"
+	desc = "Un Cargador de Velocidad para Autorevolvers Mateba Unica"
+	icon_state = "spdloader_mateba"
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/mateba
+	matter = list(MATERIAL_STEEL = 2000)
+	max_ammo = 6
 
-/obj/item/projectile/bullet/mateba
-	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	icon_state = "mateba"
-	damage = 52
-	shrapnel_chance_multiplier = 0.6
-	arterial_bleed_chance_multiplier = 0.4
-	distance_falloff = 3.0
-	armor_penetration = 10
-
-///Special Bullets
-
-/obj/item/projectile/bullet/mateba/special
-	icon_state = "matebaspecial"
-	damage = 54
-	shrapnel_chance_multiplier = 0.8
-	armor_penetration = 15
-	agony = 50
+/obj/item/ammo_magazine/speedloader/mateba/special
+	name = "Cargador de Velocidad de Munición especial para Autorevolvers Mateba"
+	desc = "Un Cargador de Velocidad para Autorevolver Mateba Unica Edición Especial"
+	icon_state = "spdloader_mateba_special"
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/mateba/special
+	matter = list(MATERIAL_STEEL = 2000)
+	max_ammo = 6
