@@ -199,20 +199,3 @@
 		to_chat(target, SPAN_WARNING("You feel a wave of heat wash over you!"))
 		L.adjust_fire_stacks(rand(5,8))
 		L.IgniteMob()
-
-/obj/item/projectile/acid
-	name = "acid"
-	icon_state = "toxin"
-	damage = 40
-	damage_type = BURN
-	damage_flags = 0
-	agony = 35
-
-/obj/item/projectile/mentalata
-	name = "ataque mental"
-	icon_state = "r_beam"
-	damage = 90
-	damage_type = BURN
-	damage_flags = 0
-	throwforce = 15
-	agony = 70
