@@ -48,7 +48,7 @@
 		return 1
 	if(result[1] == "Iniciar transferencia de la tripulacion.")
 		init_autotransfer()
-	else if(result[1] == "Agregar antagonista")
+	else if(result[1] == "Agregar antagonista.")
 		SSvote.queued_auto_vote = /datum/vote/add_antagonist
 
 /datum/vote/transfer/mob_not_participating(mob/user)

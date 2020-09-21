@@ -359,18 +359,19 @@ area/space/atmosalert()
 	requires_power = 0
 	dynamic_lighting = 1
 	sound_env = FOREST
+	icon_state = "surgery"
 
 /area/nieve/cuarto1
 	name = "Hotel Stanlook - cuarto 1"
-	icon_state = "surgery"
 
 /area/nieve/cuarto2
 	name = "Hotel Stanlook - cuarto 2"
-	icon_state = "surgery"
 
 /area/nieve/cuarto3
 	name = "Hotel Stanlook - cuarto 3"
-	icon_state = "surgery"
+
+/area/nieve/cuarto4
+	name = "Hotel Stanlook - cuarto 4"
 
 /area/nieve/principal
 	name = "Hotel Stanlook - principal"
@@ -389,19 +390,15 @@ area/space/atmosalert()
 /area/nieve/cocina
 	name = "Hotel Stanlook - cocina"
 	icon_state = "kitchen"
-	sound_env = FOREST
 
 /area/nieve/biblioteca
 	name = "Hotel Stanlook - biblioteca"
-	icon_state = "surgery"
 
 /area/nieve/cambiador
 	name = "Hotel Stanlook - cambiador"
-	icon_state = "surgery"
 
 /area/nieve/gimnasio
 	name = "Hotel Stanlook - gimnasio"
-	icon_state = "surgery"
 
 /area/nieve/bosque
 	name = "Hotel Stanlook - bosque"
@@ -410,11 +407,9 @@ area/space/atmosalert()
 
 /area/nieve/garaje
 	name = "Hotel Stanlook - garaje"
-	icon_state = "surgery"
 
 /area/nieve/sauna
 	name = "Hotel Stanlook - sauna"
-	icon_state = "surgery"
 
 /area/nieve/bar
 	name = "Hotel Stanlook - bar"
