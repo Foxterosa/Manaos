@@ -208,3 +208,22 @@
 	spent_icon = "empshell-spent"
 	projectile_type  = /obj/item/projectile/ion
 	matter = list(MATERIAL_STEEL = 260, MATERIAL_URANIUM = 200)
+
+/// Mateba ammo by danaleja2005
+
+/obj/item/ammo_casing/mateba
+	desc = "Municion de Autorevolver Mateba Unica"
+	caliber = CALIBER_PISTOL_MAGNUM
+	projectile_type = /obj/item/projectile/bullet/mateba
+	icon_state = "mateba"
+	spent_icon = "mateba_spent"
+
+/// Special
+
+/obj/item/ammo_casing/mateba/special
+	desc = "Municion de Especial de Autorevolver Mateba (Munición Altamente Letal)."
+	caliber = CALIBER_PISTOL_MAGNUM
+	projectile_type = /obj/item/projectile/bullet/mateba/special
+	icon_state = "matebaspecial"
+	spent_icon = "matebaspecial_spent"
+
