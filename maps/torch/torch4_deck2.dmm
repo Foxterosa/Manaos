@@ -347,6 +347,17 @@
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarstarboard)
+"aF" = (
+/obj/machinery/door/airlock/external/escapepod{
+	frequency = 1380;
+	icon_state = "closed";
+	id_tag = "escape_pod6_berth_hatch";
+	locked = 1;
+	name = "Escape Pod Six"
+	},
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/shuttle/pod_airlock/pod5)
 "aG" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/blast/regular{
@@ -752,6 +763,15 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/engine_room)
+"bq" = (
+/obj/machinery/shield_diffuser,
+/obj/machinery/door/airlock/external/escapepod{
+	id_tag = "escape_pod5_berth_hatch";
+	locked = 1;
+	name = "Escape Pod Five"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/shuttle/pod_airlock/pod6)
 "br" = (
 /obj/machinery/light{
 	dir = 4
@@ -4967,17 +4987,6 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /turf/simulated/floor/plating,
-/area/maintenance/seconddeck/forestarboard)
-"jQ" = (
-/obj/machinery/door/airlock/external/escapepod{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "escape_pod6_berth_hatch";
-	locked = 1;
-	name = "Escape Pod Six"
-	},
-/obj/machinery/shield_diffuser,
-/turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/seconddeck/forestarboard)
 "jR" = (
 /obj/machinery/light{
@@ -10709,15 +10718,6 @@
 /obj/effect/floor_decal/corner/yellow,
 /turf/simulated/floor/tiled,
 /area/engineering/locker_room)
-"uL" = (
-/obj/machinery/shield_diffuser,
-/obj/machinery/door/airlock/external/escapepod{
-	id_tag = "escape_pod5_berth_hatch";
-	locked = 1;
-	name = "Escape Pod Five"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/maintenance/seconddeck/foreport)
 "uN" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -31211,7 +31211,7 @@ gH
 Up
 ip
 fU
-JX
+qw
 mb
 mb
 Xe
@@ -31413,7 +31413,7 @@ WC
 fn
 iq
 fU
-JX
+qw
 OY
 mb
 Tg
@@ -31615,7 +31615,7 @@ gH
 Up
 hz
 jk
-jQ
+aF
 kA
 Qe
 Ok
@@ -31627,7 +31627,7 @@ Oj
 Qe
 Qe
 uc
-uL
+bq
 vv
 wl
 Pq
