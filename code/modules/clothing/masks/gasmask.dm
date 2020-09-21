@@ -3,7 +3,6 @@
 	desc = "A face-covering mask that can be connected to an air supply. Filters harmful gases from the air."
 	icon_state = "fullgas"
 	item_state = "fullgas"
-	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	body_parts_covered = FACE|EYES
 	w_class = ITEM_SIZE_NORMAL
@@ -65,6 +64,7 @@
 	item_state = "halfgas"
 	siemens_coefficient = 0.7
 	body_parts_covered = FACE
+	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT
 	w_class = ITEM_SIZE_SMALL
 	armor = list(
 		melee = ARMOR_MELEE_SMALL,
@@ -93,6 +93,7 @@
 	icon_state = "gas_alt"
 	item_state = "gas_alt"
 	body_parts_covered = FACE|EYES
+	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT
 	armor = list(
 		melee = ARMOR_MELEE_MINOR,
 		bio = ARMOR_BIO_SMALL
@@ -131,12 +132,14 @@
 	icon_state = "death"
 	item_state = "death"
 	siemens_coefficient = 0.2
+	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT
 
 /obj/item/clothing/mask/gas/cyborg
 	name = "cyborg visor"
 	desc = "Beep boop!"
 	icon_state = "death"
 	item_state = "death"
+	filtered_gases = 0
 
 //Plague Dr suit can be found in clothing/suits/bio.dm
 /obj/item/clothing/mask/gas/plaguedoctor
@@ -148,24 +151,28 @@
 		bio = ARMOR_BIO_SHIELDED
 		)
 	body_parts_covered = HEAD|FACE|EYES
+	filtered_gases = 0
 
 /obj/item/clothing/mask/gas/clown_hat
 	name = "clown wig and mask"
 	desc = "A true prankster's facial attire. A clown is incomplete without their wig and mask."
 	icon_state = "clown"
 	item_state = "clown"
+	filtered_gases = 0
 
 /obj/item/clothing/mask/gas/sexyclown
 	name = "sexy-clown wig and mask"
 	desc = "A feminine clown mask for the dabbling crossdressers or female entertainers."
 	icon_state = "sexyclown"
 	item_state = "sexyclown"
+	filtered_gases = 0
 
 /obj/item/clothing/mask/gas/mime
 	name = "mime mask"
 	desc = "The traditional mime's mask. It has an eerie facial posture."
 	icon_state = "mime"
 	item_state = "mime"
+	filtered_gases = 0
 
 /obj/item/clothing/mask/gas/monkeymask
 	name = "monkey mask"
@@ -173,6 +180,7 @@
 	icon_state = "monkeymask"
 	item_state = "monkeymask"
 	body_parts_covered = HEAD|FACE|EYES
+	filtered_gases = 0
 
 /obj/item/clothing/mask/gas/sexymime
 	name = "sexy mime mask"
@@ -186,6 +194,7 @@
 	icon_state = "owl"
 	item_state = "owl"
 	body_parts_covered = HEAD|FACE|EYES
+	filtered_gases = 0
 
 //Vox Unique Masks
 
@@ -195,6 +204,7 @@
 	icon_state = "respirator"
 	item_state = "respirator"
 	flags_inv = 0
+	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT
 	body_parts_covered = 0
 	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
 	filtered_gases = list(GAS_OXYGEN)
@@ -233,6 +243,7 @@
 	item_state = "swat"
 	siemens_coefficient = 0.7
 	body_parts_covered = FACE|EYES
+	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT
 	armor = list(
 		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,

@@ -41,6 +41,7 @@
 	species_restricted = list(SPECIES_MANTID_ALATE,SPECIES_MANTID_GYNE)
 	filtered_gases = list(GAS_PHORON,GAS_N2O,GAS_CHLORINE,GAS_AMMONIA,GAS_CO,GAS_METHANE)
 	flags_inv = 0
+	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT
 
 /obj/item/clothing/mask/gas/ascent/monarch
 	name = "serpentid facemask"
