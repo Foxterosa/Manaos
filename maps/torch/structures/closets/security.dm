@@ -57,6 +57,8 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/storage/belt/security,
 		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/gas/tacmask,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/security, /obj/item/weapon/storage/backpack/satchel/sec)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/sec, /obj/item/weapon/storage/backpack/messenger/sec))
 	)
@@ -97,6 +99,8 @@
 		/obj/item/weapon/hand_labeler,
 		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/weapon/sd_key,
+		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/gas/tacmask,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/security, /obj/item/weapon/storage/backpack/satchel/sec)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/sec, /obj/item/weapon/storage/backpack/messenger/sec))
 	)
@@ -129,6 +133,8 @@
 		/obj/item/clothing/gloves/thick/duty/solgov/sec,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/clothing/mask/gas/half,
+		/obj/item/clothing/mask/gas/tacmask,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/security, /obj/item/weapon/storage/backpack/satchel/sec)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/sec, /obj/item/weapon/storage/backpack/messenger/sec))
 	)
@@ -145,7 +151,7 @@
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/clothing/suit/armor/pcarrier/medium/security,
-		/obj/item/gunbox,
+		/obj/item/gunbox/detective,
 		/obj/item/device/flash,
 		/obj/item/weapon/melee/baton/loaded,
 		/obj/item/weapon/reagent_containers/spray/pepper,

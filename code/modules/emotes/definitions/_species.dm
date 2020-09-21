@@ -1,5 +1,7 @@
 /datum/species
 	var/list/default_emotes = list()
+	var/can_revive_by_healing	// Determines whether or not this species can be revived by simply healing them
+	var/dies_at_threshold = FALSE // Do they die or get knocked out at specific thresholds, or do they go through complex crit?
 
 /mob/living/carbon/update_emotes()
 	. = ..(skip_sort=1)

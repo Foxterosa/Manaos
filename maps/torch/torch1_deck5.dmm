@@ -1662,7 +1662,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
-/obj/item/weapon/storage/box/frags,
+/obj/item/weapon/storage/box/fragshells,
 /turf/simulated/floor/tiled/dark,
 /area/security/infantry/armory)
 "cU" = (
@@ -11207,11 +11207,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/sign/deck/fifth{
-	dir = 8;
-	icon_state = "deck-5";
-	pixel_x = 40
-	},
 /obj/effect/floor_decal/corner/mauve{
 	icon_state = "corner_white";
 	dir = 6
@@ -15975,6 +15970,18 @@
 	},
 /turf/simulated/floor/lino,
 /area/shuttle/petrov/rd)
+"Hh" = (
+/obj/effect/floor_decal/corner/mauve/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
+	},
+/obj/structure/sign/deck/fifth{
+	dir = 1;
+	icon_state = "deck-5";
+	pixel_y = -38
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/fifthdeck/fore)
 "Hk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -34382,7 +34389,7 @@ fl
 ct
 oZ
 pk
-oZ
+Hh
 rd
 iy
 iy

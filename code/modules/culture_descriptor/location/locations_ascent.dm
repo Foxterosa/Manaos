@@ -1,9 +1,9 @@
 /decl/cultural_info/location/kharmaani
 	name = HOME_SYSTEM_KHARMAANI
 	language =    LANGUAGE_MANTID_NONVOCAL
-	description = "The Kharmaani are not terribly imaginative when it comes to naming their worlds. Core, \
-	their birth star, supports the humid greenhouse-gas-choked giant called Home, which the majority of the \
-	populace call their motherland. While the planet's orbit is thickly populated with habitats, factories \
-	and defense platforms, each belonging to a different node in the ever-shifting political web of Ascent \
-	social culture, the surface itself is a pristine monument to the Kharmaan evolutionary past."
+	description = "Los Kharmaani no tienen mucha imaginacion al momento de nombrar cosas. Nucleo, su estrella natal, \
+	contiene a su patria, Hogar, un humedo, toxico y masivo planeta. \
+	Si bien la orbita planetaria esta densamente poblada con habitats, fabricas y plataformas de defensa, \
+	cada una perteneciente a un nodo distinto en la intrincada y volatil red politica de la sociedad \
+	del Ascent, la superficie en si es un monumento intacto a la historia natural evolutiva Kharmaan."
 	hidden = TRUE

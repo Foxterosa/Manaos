@@ -107,7 +107,6 @@
 /obj/machinery/atmospherics/valve/shutoff{
 	dir = 4
 	},
-/obj/machinery/light,
 /obj/effect/floor_decal/industrial/shutoff{
 	dir = 4
 	},
@@ -213,6 +212,15 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/medical/descanso)
+"aar" = (
+/obj/machinery/door/airlock/external/escapepod{
+	icon_state = "closed";
+	id_tag = "escape_pod7_berth_hatch";
+	name = "Escape Pod Seven"
+	},
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/plating,
+/area/shuttle/pod_airlock/pod7)
 "aas" = (
 /obj/machinery/fabricator,
 /turf/simulated/floor/wood/walnut,
@@ -391,6 +399,15 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
+"aaF" = (
+/obj/machinery/door/airlock/external/escapepod{
+	icon_state = "closed";
+	id_tag = "escape_pod8_berth_hatch";
+	name = "Escape Pod Eight"
+	},
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/plating,
+/area/shuttle/pod_airlock/pod8)
 "aaG" = (
 /obj/machinery/vending/snack{
 	dir = 4
@@ -579,6 +596,15 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/medical/descanso)
+"aaS" = (
+/obj/machinery/door/airlock/external/escapepod{
+	icon_state = "closed";
+	id_tag = "escape_pod9_berth_hatch";
+	name = "Escape Pod Nine"
+	},
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/plating,
+/area/shuttle/pod_airlock/pod9)
 "aaT" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/device/radio/intercom/department/security{
@@ -708,6 +734,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
+"abb" = (
+/obj/machinery/door/airlock/external/escapepod{
+	icon_state = "closed";
+	id_tag = "escape_pod10_berth_hatch";
+	name = "Escape Pod Ten"
+	},
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/plating,
+/area/shuttle/pod_airlock/pod10)
 "abc" = (
 /obj/machinery/camera/network/medbay{
 	c_tag = "Infirmary - Emergency Treatment Center Aft";
@@ -937,6 +972,15 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
+"abs" = (
+/obj/machinery/door/airlock/external/escapepod{
+	icon_state = "closed";
+	id_tag = "escape_pod11_berth_hatch";
+	name = "Escape Pod Eleven"
+	},
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/plating,
+/area/shuttle/pod_airlock/pod11)
 "abt" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -1100,9 +1144,6 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "abD" = (
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -2184,6 +2225,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/green,
+/obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
 "ady" = (
@@ -3442,33 +3484,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
-"afV" = (
-/obj/machinery/door/airlock/external/escapepod{
-	icon_state = "closed";
-	id_tag = "escape_pod7_berth_hatch";
-	name = "Escape Pod Seven"
-	},
-/obj/machinery/shield_diffuser,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/forestarboard)
-"afW" = (
-/obj/machinery/door/airlock/external/escapepod{
-	icon_state = "closed";
-	id_tag = "escape_pod8_berth_hatch";
-	name = "Escape Pod Eight"
-	},
-/obj/machinery/shield_diffuser,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
-"afX" = (
-/obj/machinery/door/airlock/external/escapepod{
-	icon_state = "closed";
-	id_tag = "escape_pod9_berth_hatch";
-	name = "Escape Pod Nine"
-	},
-/obj/machinery/shield_diffuser,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
 "afY" = (
 /obj/machinery/camera/network/medbay{
 	c_tag = "Infirmary - Staff Lounge";
@@ -4422,6 +4437,10 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
+	},
+/obj/item/clothing/mask/gas/half,
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/locker)
@@ -7052,9 +7071,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/wing)
 "amb" = (
-/obj/structure/closet{
-	name = "Evidence Closet"
-	},
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -7068,6 +7084,10 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
+	},
+/obj/structure/closet/secure_closet{
+	name = "Secure Evidence Locker";
+	req_access = list("ACCESS_SECURITY")
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
@@ -7125,7 +7145,6 @@
 "amf" = (
 /obj/item/device/radio,
 /obj/item/weapon/crowbar,
-/obj/item/clothing/mask/gas/half,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
@@ -7820,6 +7839,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/under/color/orange,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "anj" = (
@@ -7836,6 +7857,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/under/color/orange,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "ank" = (
@@ -7855,6 +7878,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/under/color/orange,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "anl" = (
@@ -7870,6 +7895,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/under/color/orange,
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
 "anm" = (
@@ -9483,7 +9510,6 @@
 	},
 /obj/random/junk,
 /obj/structure/table/rack,
-/obj/random/illegal,
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 9
@@ -10484,10 +10510,6 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
-	},
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
 	},
 /obj/machinery/light,
 /obj/structure/cable/green{
@@ -12627,9 +12649,6 @@
 /turf/simulated/floor/plating,
 /area/security/bo)
 "axx" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/paleblue/half{
 	dir = 1
 	},
@@ -15630,24 +15649,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
-"aQI" = (
-/obj/machinery/door/airlock/external/escapepod{
-	icon_state = "closed";
-	id_tag = "escape_pod10_berth_hatch";
-	name = "Escape Pod Ten"
-	},
-/obj/machinery/shield_diffuser,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/foreport)
-"aQK" = (
-/obj/machinery/door/airlock/external/escapepod{
-	icon_state = "closed";
-	id_tag = "escape_pod11_berth_hatch";
-	name = "Escape Pod Eleven"
-	},
-/obj/machinery/shield_diffuser,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
 "aRb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -19522,10 +19523,10 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
-/obj/structure/flora/pottedplant/minitree,
 /obj/effect/floor_decal/corner/red{
 	dir = 1
 	},
+/obj/structure/flora/pottedplant/decorative,
 /turf/simulated/floor/tiled/dark,
 /area/security/detectives_office)
 "dnb" = (
@@ -20731,9 +20732,6 @@
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
-	},
-/obj/machinery/light{
-	dir = 8
 	},
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
@@ -23964,10 +23962,6 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck Hallway - Aft";
-	dir = 1
-	},
 /obj/machinery/light,
 /obj/effect/floor_decal/corner/research/half,
 /turf/simulated/floor/tiled/monotile,
@@ -24247,6 +24241,10 @@
 	dir = 10;
 	tag = "icon-corner_white (SOUTHWEST)"
 	},
+/obj/machinery/camera/network/first_deck{
+	c_tag = "First Deck Hallway - Aft";
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "jom" = (
@@ -24471,6 +24469,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
+"jyY" = (
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/tiled/dark,
+/area/security/wing)
 "jzb" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -24853,6 +24855,16 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"jVi" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/camera/network/security{
+	c_tag = "Seguridad - Campo de tiro";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/shooting)
 "jWb" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/corner/research{
@@ -25831,6 +25843,7 @@
 	pixel_x = -21
 	},
 /obj/effect/floor_decal/corner/red,
+/obj/structure/flora/pottedplant/decorative,
 /turf/simulated/floor/tiled/dark,
 /area/security/questioning)
 "kWb" = (
@@ -26717,10 +26730,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
-"mbn" = (
-/obj/structure/sign/warning/pods/south,
-/turf/simulated/wall/r_wall/hull,
-/area/maintenance/firstdeck/forestarboard)
 "mbK" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 8
@@ -26947,6 +26956,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
@@ -28296,7 +28309,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
 "nQS" = (
-/obj/machinery/light/spot,
 /obj/machinery/button/alternate/door{
 	desc = "A remote control switch for the medbay foyer.";
 	id_tag = "MedbayER";
@@ -28311,6 +28323,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "nRb" = (
@@ -29200,6 +29213,10 @@
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/steel_grid,
 /area/turbolift/robotics_lift)
+"oMH" = (
+/obj/structure/flora/pottedplant/decorative,
+/turf/simulated/floor/tiled/dark,
+/area/security/brig/psionic)
 "oNm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -29616,6 +29633,10 @@
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9
+	},
+/obj/machinery/camera/network/security{
+	c_tag = "Seguridad - Sala de descanso";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/lounge)
@@ -30682,6 +30703,7 @@
 	dir = 5
 	},
 /obj/effect/floor_decal/corner/red,
+/obj/structure/flora/pottedplant/decorative,
 /turf/simulated/floor/tiled/dark,
 /area/security/lounge)
 "qsz" = (
@@ -31125,9 +31147,6 @@
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "qSD" = (
-/obj/structure/closet{
-	name = "Evidence Closet"
-	},
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 6
@@ -31138,6 +31157,10 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
+	},
+/obj/structure/closet/secure_closet{
+	name = "Secure Evidence Locker";
+	req_access = list("ACCESS_SECURITY")
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
@@ -31344,6 +31367,7 @@
 	dir = 1;
 	light_color = "#aa5f61"
 	},
+/obj/structure/flora/pottedplant/decorative,
 /turf/simulated/floor/tiled/dark,
 /area/security/lounge)
 "rhb" = (
@@ -33745,6 +33769,28 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology)
+"tvc" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/obj/structure/closet/secure_closet{
+	name = "Secure Evidence Locker";
+	req_access = list("ACCESS_SECURITY")
+	},
+/obj/random/illegal,
+/turf/simulated/floor/tiled/dark,
+/area/security/evidence)
 "tvu" = (
 /obj/machinery/ai_status_display,
 /turf/simulated/wall/prepainted,
@@ -34441,6 +34487,10 @@
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 9
+	},
+/obj/machinery/newscaster{
+	pixel_x = -32;
+	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/brig/perma)
@@ -35305,6 +35355,23 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
+"wxc" = (
+/obj/structure/closet/secure_closet/security_torch/cadet,
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/ointment,
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/obj/item/clothing/mask/gas/half,
+/turf/simulated/floor/tiled/dark,
+/area/security/locker)
 "wyb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -43870,7 +43937,7 @@ goa
 frA
 rnp
 aho
-aho
+wxc
 dZx
 daB
 bpM
@@ -44081,7 +44148,7 @@ eZX
 nHR
 sOp
 flF
-sOp
+jVi
 uwi
 gGO
 aga
@@ -45106,7 +45173,7 @@ anA
 aoF
 nJo
 arj
-rOE
+jyY
 tkr
 tAS
 aaa
@@ -46080,7 +46147,7 @@ qSD
 amb
 ape
 apM
-amb
+tvc
 qSD
 vMw
 nBD
@@ -48939,7 +49006,7 @@ akq
 amT
 anc
 alU
-arc
+oMH
 arc
 arc
 arr
@@ -52339,7 +52406,7 @@ akb
 bNb
 bQb
 aeT
-afV
+aar
 agS
 ahW
 aji
@@ -52373,7 +52440,7 @@ rAj
 aoP
 ahq
 aPL
-aQI
+abb
 aRC
 bTb
 bWb
@@ -52541,7 +52608,7 @@ act
 act
 act
 aeS
-hBr
+abP
 agT
 ahX
 aji
@@ -52738,12 +52805,12 @@ aaa
 aaa
 aaa
 aaa
-hBr
-hBr
-hBr
-hBr
-hBr
-mbn
+abP
+abP
+abP
+abP
+abP
+xEq
 rhO
 ahY
 aji
@@ -52945,7 +53012,7 @@ acw
 acw
 acw
 aeU
-hBr
+abP
 agV
 bjI
 aji
@@ -53147,7 +53214,7 @@ anb
 bOb
 bRb
 aeV
-afW
+aaF
 agW
 aia
 aji
@@ -53955,7 +54022,7 @@ aMb
 bPb
 bSb
 aeX
-afX
+aaS
 agY
 ahX
 acD
@@ -53989,7 +54056,7 @@ aoM
 qPH
 ahq
 aPR
-aQK
+abs
 aRG
 bVb
 bYb

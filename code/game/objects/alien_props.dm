@@ -2,7 +2,7 @@
 
 // Power cells
 /obj/item/weapon/cell/alien
-	name = "alien device"
+	name = "artefacto alien"
 	desc = "It hums with power."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "unknown1"
@@ -19,14 +19,14 @@
 #define APC_UPDATE_ALLGOOD 128
 
 /obj/machinery/power/apc/alien
-	name = "alien device"
-	desc = "It's affixed to the floor, with a thick wire going into it."
+	name = "artefacto alien"
+	desc = "Esta fijado en el suelo, con un cable grueso entrando."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "ano10"
 	update_state = 0 //Don't pixelshift us on wall
 	cell_type = /obj/item/weapon/cell/alien
 	autoname = 0
-	
+
 /obj/machinery/power/apc/alien/on_update_icon()
 	check_updates()
 	if(update_state & APC_UPDATE_ALLGOOD)
@@ -38,8 +38,8 @@
 
 // Lights
 /obj/machinery/light/alien
-	name = "glowbulb"
-	desc = "An alien device, perhaps some sort of light source."
+	name = "bombilla de luz"
+	desc = "un artefacto alien, a cierto punto parece una fuente de luz."
 	icon_state = "bulb_map"
 	base_state = "bulb"
 	color = COLOR_PURPLE
@@ -50,10 +50,10 @@
 	. = ..()
 
 /obj/item/weapon/light/alien
-	name = "glowbulb"
+	name = "bombilla de luz"
 	icon_state = "lbulb"
 	base_state = "lbulb"
-	desc = "A simple alien device, perhaps some sort of light source."
+	desc = "Un simple artefacto alien, a cierto punto parece una fuente de luz."
 	color = COLOR_PURPLE
 	var/global/random_light_color
 
@@ -66,8 +66,8 @@
 
 //Airlock
 /obj/machinery/door/airlock/alien
-	name = "airlock"
-	desc = "It's made of some odd metal."
+	name = "esclusa"
+	desc = "Esta hecho de un metal inusual."
 
 /obj/machinery/door/airlock/alien/Initialize()
 	. = ..()

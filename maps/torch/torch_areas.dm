@@ -909,6 +909,9 @@
 /area/crew_quarters/head/aux2
 	name = "\improper Cubierta 2 - Baños"
 
+/area/crew_quarters/head/aux4
+	name = "\improper Cubierta 4 - Baños"
+
 /area/crew_quarters/head/sauna
 	name = "\improper Cubierta 3 - Sauna"
 	icon_state = "sauna"
@@ -930,11 +933,6 @@
 	name = "\improper Galeria - Congelador"
 	icon_state = "locker"
 	req_access = list(access_kitchen)
-
-/area/crew_quarters/commissary
-	name = "\improper Cubierta 4 - Comisaria"
-	icon_state = "crew_quarters"
-	req_access = list(access_commissary)
 
 /area/crew_quarters/lounge
 	name = "\improper Cubierta 4 - Salón"
@@ -1785,3 +1783,21 @@
 /area/crew_quarters/courtroom_private
 	name = "\improper Cubierta 1 - Sala de audiencias privada"
 	req_access = list(access_lawyer)
+
+//pods
+/area/shuttle/pod_airlock
+	name = "\improper Pods de escape - Esculsa de aire"
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/shuttle/pod_airlock/pod1
+/area/shuttle/pod_airlock/pod2
+/area/shuttle/pod_airlock/pod3
+/area/shuttle/pod_airlock/pod4
+/area/shuttle/pod_airlock/pod5
+/area/shuttle/pod_airlock/pod6
+/area/shuttle/pod_airlock/pod7
+/area/shuttle/pod_airlock/pod8
+/area/shuttle/pod_airlock/pod9
+/area/shuttle/pod_airlock/pod10
+/area/shuttle/pod_airlock/pod11

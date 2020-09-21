@@ -1,7 +1,7 @@
 //generic procs copied from obj/effect/alien
 /obj/effect/spider
-	name = "web"
-	desc = "It's stringy and sticky."
+	name = "tela"
+	desc = "Es pegajosa y sedosa."
 	icon = 'icons/effects/effects.dmi'
 	anchored = 1
 	density = 0
@@ -24,9 +24,9 @@
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 	if(W.attack_verb.len)
-		visible_message("<span class='warning'>\The [src] have been [pick(W.attack_verb)] with \the [W][(user ? " by [user]." : ".")]</span>")
+		visible_message("<span class='warning'>\The [src.name] fue [pick(W.attack_verb)] con [W.name][(user ? " by [user]." : ".")]</span>")
 	else
-		visible_message("<span class='warning'>\The [src] have been attacked with \the [W][(user ? " by [user]." : ".")]</span>")
+		visible_message("<span class='warning'>\The [src.name] fue atacado con [W.name][(user ? " by [user]." : ".")]</span>")
 
 	var/damage = W.force / 4.0
 
@@ -78,8 +78,8 @@
 	return 1
 
 /obj/effect/spider/eggcluster
-	name = "egg cluster"
-	desc = "They seem to pulse slightly with an inner life."
+	name = "razimo de huevos"
+	desc = "Parecen moverse ligeramente con una vida a su interior."
 	icon_state = "eggs"
 	var/amount_grown = 0
 
@@ -113,8 +113,8 @@
 		qdel(src)
 
 /obj/effect/spider/spiderling
-	name = "spiderling"
-	desc = "It never stays still for long."
+	name = "aracnido"
+	desc = "Nunca se queda en un mismo lugar por mucho tiempo."
 	icon_state = "guard"
 	anchored = 0
 	layer = BELOW_OBJ_LAYER
@@ -189,7 +189,7 @@
 		..()
 
 /obj/effect/spider/spiderling/proc/die()
-	visible_message("<span class='alert'>[src] dies!</span>")
+	visible_message("<span class='alert'>[src] muere!</span>")
 	new /obj/effect/decal/cleanable/spiderling_remains(loc)
 	qdel(src)
 
@@ -207,7 +207,7 @@
 	if(check_vent(exit_vent))
 		return
 	if(prob(50))
-		src.visible_message("<span class='notice'>You hear something squeezing through the ventilation ducts.</span>",2)
+		src.visible_message("<span class='notice'>Escuchas algo a través de los conductos de ventilación.</span>",2)
 	forceMove(exit_vent)
 	addtimer(CALLBACK(src, .proc/end_vent_moving, exit_vent), travel_time)
 
@@ -257,7 +257,7 @@
 				var/target_atom = pick(nearby)
 				walk_to(src, target_atom, 5)
 				if(prob(10))
-					src.visible_message("<span class='notice'>\The [src] skitters[pick(" away"," around","")].</span>")
+					src.visible_message("<span class='notice'>\The [src] zigzagea [pick(" lejos"," alrededor","")].</span>")
 					// Reduces the risk of spiderlings hanging out at the extreme ranges of the shift range.
 					var/min_x = pixel_x <= -shift_range ? 0 : -2
 					var/max_x = pixel_x >=  shift_range ? 0 :  2
@@ -284,7 +284,7 @@
 			amount_grown = 20 //reset amount_grown so that people have some time to react to spiderlings before they grow big
 			O.implants -= src
 			forceMove(O.owner ? O.owner.loc : O.loc)
-			src.visible_message("<span class='warning'>\A [src] emerges from inside [O.owner ? "[O.owner]'s [O.name]" : "\the [O]"]!</span>")
+			src.visible_message("<span class='warning'>\A [src.name] emerge dentro de [O.owner ? "[O.owner] [O.name]" : "\the [O]"]!</span>")
 			if(O.owner)
 				O.owner.apply_damage(5, BRUTE, O.organ_tag)
 				O.owner.apply_damage(3, TOX, O.organ_tag)
@@ -300,16 +300,16 @@
 		amount_grown += rand(0,2)
 
 /obj/effect/decal/cleanable/spiderling_remains
-	name = "spiderling remains"
-	desc = "Green squishy mess."
+	name = "restos de aracnido"
+	desc = "Eww... Mugre verde"
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "greenshatter"
 	anchored = 1
 	layer = BLOOD_LAYER
 
 /obj/effect/spider/cocoon
-	name = "cocoon"
-	desc = "Something wrapped in silky spider web."
+	name = "capullo"
+	desc = "Algo envuelto en una sedosa tela"
 	icon_state = "cocoon1"
 	health = 60
 
@@ -318,7 +318,7 @@
 	icon_state = pick("cocoon1","cocoon2","cocoon3")
 
 /obj/effect/spider/cocoon/Destroy()
-	src.visible_message("<span class='warning'>\The [src] splits open.</span>")
+	src.visible_message("<span class='warning'>[src.name] se abre por la mitad.</span>")
 	for(var/atom/movable/A in contents)
 		A.dropInto(loc)
 	return ..()

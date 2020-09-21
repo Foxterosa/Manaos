@@ -600,7 +600,7 @@
 	icon_state = "arkin"
 
 /obj/item/toy/figure/smug
-	name = "figura dea accion: Smug"
+	name = "figura de accion: Smug"
 	desc = "Una figura de accion de Smug marca \"Manaos\"."
 	icon_state = "smug"
 
