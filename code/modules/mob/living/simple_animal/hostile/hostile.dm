@@ -123,23 +123,23 @@
 	stop_automated_movement = 1
 	if(!target_mob || SA_attackable(target_mob))
 		LoseTarget()
-		return 0
+		return FALSE
 	if(!(target_mob in ListTargets(10)))
 		LostTarget()
-		return 0
+		return FALSE
 	if (ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
 		if (H.is_cloaked())
 			LoseTarget()
-			return 0
+			return FALSE
 	if(next_move >= world.time)
-		return 0
+		return FALSE
 	if(get_dist(src, target_mob) >= 7)
 		LoseTarget()
-		return 0
+		return FALSE
 	if(get_dist(src, target_mob) <= 1)	//Attacking
 		AttackingTarget()
-		return 1
+		return TRUE
 
 // Please do not add one-off mob AIs here, but override this function for your mob
 /mob/living/simple_animal/hostile/CanAttack(atom/the_target)//Can we actually attack a possible target?
