@@ -134,6 +134,9 @@
 			return 0
 	if(next_move >= world.time)
 		return 0
+	if(get_dist(src, target_mob) >= 7)
+		LoseTarget()
+		return 0
 	if(get_dist(src, target_mob) <= 1)	//Attacking
 		AttackingTarget()
 		return 1

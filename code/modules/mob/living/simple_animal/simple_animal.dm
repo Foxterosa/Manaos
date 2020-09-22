@@ -100,8 +100,6 @@
 	. = ..()
 	if(!.)
 		return FALSE
-	if(!living_observers_present(GetConnectedZlevels(z)))
-		return
 	//Health
 	if(stat == DEAD)
 		if(health > 0)
@@ -119,6 +117,9 @@
 
 	if(health > maxHealth)
 		health = maxHealth
+
+	if(!living_observers_present(GetConnectedZlevels(z)))
+		return
 
 	handle_stunned()
 	handle_weakened()
