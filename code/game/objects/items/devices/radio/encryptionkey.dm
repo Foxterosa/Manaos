@@ -119,7 +119,7 @@
 /obj/item/device/encryptionkey/specops //for events
 	name = "special operations radio encryption key"
 	icon_state = "bin_cypherkey"
-	channels = list("Special Ops" = 1,"Response Team" = 1, "Science" = 1, "Command" = 1, "Infantry" = 1, "Medical" = 1, "Engineering" = 1, "Security" = 1, "Supply" = 1, "Service" = 1)
+	channels = list("Special Ops" = 1)
 	origin_tech = list(TECH_ESOTERIC = 2)
 
 /obj/item/device/encryptionkey/entertainment
