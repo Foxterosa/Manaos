@@ -125,12 +125,30 @@
 		bio = ARMOR_BIO_STRONG
 		)
 
-/obj/item/clothing/mask/gas/death_commando
-	name = "\improper Death Commando Mask"
+/obj/item/clothing/mask/gas/fake_commando
+	name = "\improper Fake Death Commando Mask"
 	desc = "A grim tactical mask worn by the fictional Death Commandos, elites of the also fictional Space Syndicate. Saturdays at 10!"
 	icon_state = "death"
 	item_state = "death"
 	siemens_coefficient = 0.2
+
+/obj/item/clothing/mask/gas/death_commando
+	name = "\improper Death Commando Mask"
+	desc = "Una poderosa mascara diseñada con la mas alta tecnologia militar disponible por Sol, todos han de temerte al llevar esto puesto."
+	icon_state = "death"
+	item_state = "death"
+	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_PHORONGUARD
+	siemens_coefficient = 0.7
+	body_parts_covered = FACE|EYES
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_RIFLES,
+		energy = ARMOR_ENERGY_SHIELDED,
+		bomb = ARMOR_BOMB_SHIELDED,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+		)
 
 /obj/item/clothing/mask/gas/cyborg
 	name = "cyborg visor"
