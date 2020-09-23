@@ -58,11 +58,5 @@
 
 	return 1
 
-/datum/antagonist/deathsquad/equip(var/mob/living/carbon/human/player)
-	if(!..())
-		return 0
-
-	var/decl/hierarchy/outfit/death_command = outfit_by_type(/decl/hierarchy/outfit/death_command)
-	death_command.equip(player)
-	
-	return 1
+/datum/antagonist/deathsquad
+	uniform_type = /obj/item/clothing/under/solgov/pt/army
