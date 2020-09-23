@@ -134,9 +134,6 @@
 			return FALSE
 	if(next_move >= world.time)
 		return FALSE
-	if(get_dist(src, target_mob) >= 7)
-		LoseTarget()
-		return FALSE
 	if(get_dist(src, target_mob) <= 1)	//Attacking
 		AttackingTarget()
 		return TRUE
@@ -232,13 +229,16 @@
 	. = ..()
 	if(!.)
 		walk(src, 0)
-		return 0
+		return FALSE
 	if(client)
-		return 0
+		return FALSE
 	if(!can_act())
 		walk(src, 0)
 		kick_stance()
-		return 0
+		return FALSE
+
+	if(target_mob && !(target_mob.loc in view(src)))
+		LoseTarget()
 
 	if(isturf(src.loc) && !src.buckled)
 		switch(stance)
