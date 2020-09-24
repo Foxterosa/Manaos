@@ -11,7 +11,7 @@
 	materials = list(MATERIAL_STEEL = 400, MATERIAL_GLASS = 100)
 	build_path = /obj/item/weapon/stock_parts/computer/hard_drive/
 	sort_string = "VBAAA"
-	design_class = "Hard Drives"
+	design_class = "Computer Accessories"
 
 /datum/design/item/modularcomponent/disk/advanced
 	name = "advanced hard drive"
@@ -72,7 +72,7 @@
 	chemicals = list(/datum/reagent/acid = 20)
 	build_path = /obj/item/weapon/stock_parts/computer/network_card
 	sort_string = "VBABA"
-	design_class = "Network Cards"
+	design_class = "Computer Accessories"
 
 /datum/design/item/modularcomponent/netcard/advanced
 	name = "advanced network card"
@@ -108,7 +108,6 @@
 	chemicals = list(/datum/reagent/acid = 20)
 	build_path = /obj/item/weapon/stock_parts/computer/hard_drive/portable
 	sort_string = "VBACA"
-	design_class = "Data Crystals"
 
 /datum/design/item/modularcomponent/portabledrive/advanced
 	name = "advanced data crystal"
@@ -143,7 +142,6 @@
 	materials = list(MATERIAL_STEEL = 600)
 	build_path = /obj/item/weapon/stock_parts/computer/card_slot
 	sort_string = "VBADA"
-	design_class = "Computer Accessories"
 
 // Card Broadcaster
 /datum/design/item/modularcomponent/accessory/cardbroadcaster
@@ -236,6 +234,7 @@
 	materials = list(MATERIAL_STEEL = 400)
 	build_path = /obj/item/weapon/stock_parts/computer/battery_module
 	sort_string = "VBAEA"
+	design_class = "Batteries"
 
 /datum/design/item/modularcomponent/battery/advanced
 	name = "advanced battery module"

@@ -87,7 +87,7 @@
 /datum/design/item/tool/oxycandle
 	name = "oxycandle"
 	desc = "a device which, via a chemical reaction, can pressurise small areas."
-	id="oxycandle"
+	id = "oxycandle"
 	req_tech = list(TECH_ENGINEERING = 2)
 	materials = list(MATERIAL_STEEL = 3000)
 	chemicals = list(/datum/reagent/sodiumchloride = 20, /datum/reagent/acetone = 20)
@@ -103,11 +103,11 @@
 	build_path = /obj/item/weapon/mop/advanced
 	sort_string = "VAGAK"
 
-/datum/design/item/blutrash
+/datum/design/item/blutrashbag
 	name = "Trashbag of Holding"
 	desc = "An advanced trash bag with bluespace properties; capable of holding a plethora of garbage."
-	id = "blutrash"
-	req_tech = list(TECH_BLUESPACE = 5, TECH_MATERIALS = 6)
+	id = "blutrashbag"
+	req_tech = list(TECH_BLUESPACE = 5, TECH_MATERIAL = 6)
 	materials = list(MATERIAL_PLASTIC = 5000, MATERIAL_GOLD = 1500, MATERIAL_URANIUM = 250, MATERIAL_PHORON = 1500)
 	build_path = /obj/item/weapon/storage/bag/trash/bluespace
 	sort_string = "VAGAL"

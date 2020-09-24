@@ -12,7 +12,6 @@
 	materials = list(MATERIAL_STEEL = 200, MATERIAL_GLASS = 100, MATERIAL_PLASTIC = 150)
 	build_path = /obj/item/device/scanner/xenobio
 	sort_string = "MACFA"
-	design_class = "Medical Tools"
 
 /datum/design/item/medical/robot_scanner
 	desc = "A hand-held scanner able to diagnose robotic injuries."
@@ -28,6 +27,7 @@
 	req_tech = list(TECH_BIO = 2, TECH_MAGNET = 2)
 	build_path = /obj/item/device/scanner/spectrometer
 	sort_string = "MACAA"
+	design_class = "Medical Tools"
 
 /datum/design/item/medical/adv_mass_spectrometer
 	desc = "A device for analyzing chemicals in blood and their quantities."

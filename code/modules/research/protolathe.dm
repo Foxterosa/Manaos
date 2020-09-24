@@ -65,7 +65,6 @@
 	speed = T / 2
 	..()
 
-
 /obj/machinery/r_n_d/protolathe/on_update_icon()
 	if(panel_open)
 		icon_state = "protolathe_t"

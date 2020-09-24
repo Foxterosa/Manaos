@@ -13,7 +13,22 @@
 	id = "aicore"
 	req_tech = list(TECH_DATA = 4, TECH_BIO = 3)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/aicore
-	sort_string = "XABAA"
+	sort_string = "XAAAA"
+	design_class = "AI Modules"
+
+/datum/design/aimodule/reset
+	name = "Reset"
+	id = "reset"
+	req_tech = list(TECH_DATA = 3, TECH_MATERIAL = 6)
+	build_path = /obj/item/weapon/aiModule/reset
+	sort_string = "XAAAB"
+
+/datum/design/aimodule/purge
+	name = "Purge"
+	id = "purge"
+	req_tech = list(TECH_DATA = 4, TECH_MATERIAL = 6)
+	build_path = /obj/item/weapon/aiModule/purge
+	sort_string = "XAAAC"
 
 /datum/design/aimodule/safeguard
 	name = "Safeguard"
@@ -63,21 +78,6 @@
 	req_tech = list(TECH_DATA = 4, TECH_MATERIAL = 4)
 	build_path = /obj/item/weapon/aiModule/freeform
 	sort_string = "XABAH"
-
-/datum/design/aimodule/reset
-	name = "Reset"
-	id = "reset"
-	req_tech = list(TECH_DATA = 3, TECH_MATERIAL = 6)
-	build_path = /obj/item/weapon/aiModule/reset
-	sort_string = "XAAAA"
-	design_class = "AI Modules"
-
-/datum/design/aimodule/purge
-	name = "Purge"
-	id = "purge"
-	req_tech = list(TECH_DATA = 4, TECH_MATERIAL = 6)
-	build_path = /obj/item/weapon/aiModule/purge
-	sort_string = "XAAAB"
 
 // Core modules
 /datum/design/aimodule/core
