@@ -45,6 +45,8 @@
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
 	fire_delay = 8
+	magazine_type = /obj/item/ammo_magazine/pistol/double/rubber
+	allowed_magazines = /obj/item/ammo_magazine/pistol/double
 
 /obj/item/weapon/gun/projectile/pistol/sec
 	name = "pistol"
