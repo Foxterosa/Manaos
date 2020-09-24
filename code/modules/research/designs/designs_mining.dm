@@ -8,6 +8,7 @@
 	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 500, MATERIAL_SILVER = 500)
 	build_path = /obj/item/weapon/pickaxe/jackhammer
 	sort_string = "KAAAA"
+	design_class = "Mining Tools"
 
 /datum/design/item/mining/drill
 	id = "drill"

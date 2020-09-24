@@ -65,6 +65,7 @@
 	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 1000, MATERIAL_PLASTIC = 1000, MATERIAL_GOLD = 700, MATERIAL_PHORON = 500)
 	build_path = /obj/item/rig_module/mounted/plasmacutter
 	sort_string = "VCCAB"
+	design_class = "RIG Modules"
 
 /datum/design/item/rig/orescanner
 	name = "Ore Scanner"

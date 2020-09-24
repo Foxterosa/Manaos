@@ -8,54 +8,61 @@
 /datum/design/aimodule/AssembleDesignDesc()
 	desc = "Allows for the construction of \a '[name]' AI module."
 
+/datum/design/circuit/aicore
+	name = "AI core"
+	id = "aicore"
+	req_tech = list(TECH_DATA = 4, TECH_BIO = 3)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/aicore
+	sort_string = "XABAA"
+
 /datum/design/aimodule/safeguard
 	name = "Safeguard"
 	id = "safeguard"
 	req_tech = list(TECH_DATA = 3, TECH_MATERIAL = 4)
 	build_path = /obj/item/weapon/aiModule/safeguard
-	sort_string = "XABAA"
+	sort_string = "XABAB"
 
 /datum/design/aimodule/onehuman
 	name = "OneCrewMember"
 	id = "onehuman"
 	req_tech = list(TECH_DATA = 4, TECH_MATERIAL = 6)
 	build_path = /obj/item/weapon/aiModule/oneHuman
-	sort_string = "XABAB"
+	sort_string = "XABAC"
 
 /datum/design/aimodule/protectstation
 	name = "ProtectInstallation"
 	id = "protectstation"
 	req_tech = list(TECH_DATA = 3, TECH_MATERIAL = 6)
 	build_path = /obj/item/weapon/aiModule/protectStation
-	sort_string = "XABAC"
+	sort_string = "XABAD"
 
 /datum/design/aimodule/notele
 	name = "TeleporterOffline"
 	id = "notele"
 	req_tech = list(TECH_DATA = 3)
 	build_path = /obj/item/weapon/aiModule/teleporterOffline
-	sort_string = "XABAD"
+	sort_string = "XABAE"
 
 /datum/design/aimodule/quarantine
 	name = "Quarantine"
 	id = "quarantine"
 	req_tech = list(TECH_DATA = 3, TECH_BIO = 2, TECH_MATERIAL = 4)
 	build_path = /obj/item/weapon/aiModule/quarantine
-	sort_string = "XABAE"
+	sort_string = "XABAF"
 
 /datum/design/aimodule/oxygen
 	name = "OxygenIsToxicToHumans"
 	id = "oxygen"
 	req_tech = list(TECH_DATA = 3, TECH_BIO = 2, TECH_MATERIAL = 4)
 	build_path = /obj/item/weapon/aiModule/oxygen
-	sort_string = "XABAF"
+	sort_string = "XABAG"
 
 /datum/design/aimodule/freeform
 	name = "Freeform"
 	id = "freeform"
 	req_tech = list(TECH_DATA = 4, TECH_MATERIAL = 4)
 	build_path = /obj/item/weapon/aiModule/freeform
-	sort_string = "XABAG"
+	sort_string = "XABAH"
 
 /datum/design/aimodule/reset
 	name = "Reset"
@@ -63,6 +70,7 @@
 	req_tech = list(TECH_DATA = 3, TECH_MATERIAL = 6)
 	build_path = /obj/item/weapon/aiModule/reset
 	sort_string = "XAAAA"
+	design_class = "AI Modules"
 
 /datum/design/aimodule/purge
 	name = "Purge"

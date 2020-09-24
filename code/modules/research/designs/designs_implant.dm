@@ -11,6 +11,7 @@
 	req_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3)
 	build_path = /obj/item/weapon/implantcase/chem
 	sort_string = "MFAAA"
+	design_class = "Implants"
 
 /datum/design/item/implant/death_alarm
 	name = "death alarm"

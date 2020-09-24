@@ -12,6 +12,7 @@
 	materials = list(MATERIAL_STEEL = 200, MATERIAL_GLASS = 100, MATERIAL_PLASTIC = 150)
 	build_path = /obj/item/device/scanner/xenobio
 	sort_string = "MACFA"
+	design_class = "Medical Tools"
 
 /datum/design/item/medical/robot_scanner
 	desc = "A hand-held scanner able to diagnose robotic injuries."

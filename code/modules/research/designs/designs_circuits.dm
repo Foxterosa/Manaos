@@ -26,6 +26,7 @@
 	req_tech = list(TECH_DATA = 1)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/arcade/battle
 	sort_string = "MAAAA"
+	design_class = "Arcades"
 
 /datum/design/circuit/oriontrail
 	name = "orion trail arcade machine"
@@ -45,6 +46,7 @@
 	id = "operating"
 	build_path = /obj/item/weapon/stock_parts/circuitboard/operating
 	sort_string = "FACAA"
+	design_class = "Medical Machinery"
 
 /datum/design/circuit/optable
 	name = "operating table"
@@ -136,6 +138,7 @@
 	req_tech = list(TECH_DATA = 3, TECH_BLUESPACE = 5)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/teleporter
 	sort_string = "HAAAA"
+	design_class = "Consoles"
 
 /datum/design/circuit/robocontrol
 	name = "robotics control console"
@@ -150,27 +153,6 @@
 	req_tech = list(TECH_DATA = 4)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/rdconsole
 	sort_string = "HAAAE"
-
-/datum/design/circuit/comm_monitor
-	name = "telecommunications monitoring console"
-	id = "comm_monitor"
-	req_tech = list(TECH_DATA = 3)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/comm_monitor
-	sort_string = "HAACA"
-
-/datum/design/circuit/comm_server
-	name = "telecommunications server monitoring console"
-	id = "comm_server"
-	req_tech = list(TECH_DATA = 3)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/comm_server
-	sort_string = "HAACB"
-
-/datum/design/circuit/message_monitor
-	name = "messaging monitor console"
-	id = "message_monitor"
-	req_tech = list(TECH_DATA = 5)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/message_monitor
-	sort_string = "HAACD"
 
 /datum/design/circuit/guestpass
 	name = "guest pass terminal"
@@ -225,6 +207,7 @@
 	req_tech = list(TECH_DATA = 2, TECH_MAGNET = 2, TECH_ENGINEERING = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/destructive_analyzer
 	sort_string = "HABAA"
+	design_class = "R&D Consoles"
 
 /datum/design/circuit/protolathe
 	name = "protolathe"
@@ -246,6 +229,7 @@
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/autolathe
 	sort_string = "HABAD"
+	design_class = "Lathes"
 
 /datum/design/circuit/replicator
 	name = "replicator board"
@@ -260,34 +244,6 @@
 	req_tech = list(TECH_DATA = 1, TECH_ENGINEERING = 1)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/autolathe/micro
 	sort_string = "HABAF"
-
-/datum/design/circuit/mining_console
-	name = "mining console board"
-	id = "mining_console"
-	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/mineral_processing
-	sort_string = "HABAG"
-
-/datum/design/circuit/mining_processor
-	name = "mining processor board"
-	id = "mining_processor"
-	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/mining_processor
-	sort_string = "HABAH"
-
-/datum/design/circuit/mining_unloader
-	name = "ore unloader board"
-	id = "mining_unloader"
-	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/mining_unloader
-	sort_string = "HABAI"
-
-/datum/design/circuit/mining_stacker
-	name = "sheet stacker board"
-	id = "mining_stacker"
-	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/mining_stacker
-	sort_string = "HABAJ"
 
 /datum/design/circuit/suspension_gen
 	name = "suspension generator"
@@ -436,6 +392,7 @@
 	id = "alerts"
 	build_path = /obj/item/weapon/stock_parts/circuitboard/stationalert
 	sort_string = "JBACA"
+	design_class = "Atmos Consoles"
 
 /datum/design/circuit/gas_heater
 	name = "gas heating system"
@@ -534,6 +491,7 @@
 	req_tech = list(TECH_POWER = 1, TECH_ENGINEERING = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/unary_atmos/engine
 	sort_string = "JFAAA"
+	design_class = "Navigation Consoles"
 
 /datum/design/circuit/helms
 	name = "helm control console"
@@ -589,6 +547,7 @@
 	req_tech = list(TECH_DATA = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/biogenerator
 	sort_string = "KBAAA"
+	design_class = "Hydroponics Machines"
 
 /datum/design/circuit/hydro_tray
 	name = "hydroponics tray"
@@ -597,12 +556,27 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/tray
 	sort_string = "KBAAB"
 
+/datum/design/circuit/honey_extractor
+	name = "honey extractor"
+	id = "honey_extractor"
+	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 1)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/honey
+	sort_string = "KBAAC"
+
+/datum/design/circuit/seed_extractor
+	name = "seed extractor"
+	id = "seed_extractor"
+	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 1)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/honey/seed
+	sort_string = "KBAAD"
+
 /datum/design/circuit/miningdrill
 	name = "mining drill head"
 	id = "mining drill head"
 	req_tech = list(TECH_DATA = 1, TECH_ENGINEERING = 1)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/miningdrill
 	sort_string = "KCAAA"
+	design_class = "Mining Machines"
 
 /datum/design/circuit/miningdrillbrace
 	name = "mining drill brace"
@@ -618,12 +592,41 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/floodlight
 	sort_string = "KCAAC"
 
+/datum/design/circuit/mining_console
+	name = "mining console board"
+	id = "mining_console"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/mineral_processing
+	sort_string = "KCAAD"
+
+/datum/design/circuit/mining_processor
+	name = "mining processor board"
+	id = "mining_processor"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/mining_processor
+	sort_string = "KCAAE"
+
+/datum/design/circuit/mining_unloader
+	name = "ore unloader board"
+	id = "mining_unloader"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/mining_unloader
+	sort_string = "KCAAF"
+
+/datum/design/circuit/mining_stacker
+	name = "sheet stacker board"
+	id = "mining_stacker"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/mining_stacker
+	sort_string = "KCAAG"
+
 /datum/design/circuit/disperserfront
 	name = "obstruction field disperser beam generator"
 	id = "disperserfront"
 	req_tech = list(TECH_ENGINEERING = 2, TECH_COMBAT = 2, TECH_BLUESPACE = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/disperserfront
 	sort_string = "KCAAD"
+	design_class = "Engineering Machinery"
 
 /datum/design/circuit/dispersermiddle
 	name = "obstruction field disperser fusor"
@@ -654,50 +657,72 @@
 /datum/design/circuit/tcom/AssembleDesignDesc()
 	desc = "Allows for the construction of a telecommunications [name] circuit board."
 
+/datum/design/circuit/comm_monitor
+	name = "telecommunications monitoring console"
+	id = "comm_monitor"
+	req_tech = list(TECH_DATA = 3)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/comm_monitor
+	sort_string = "PAAAA"
+
+/datum/design/circuit/comm_server
+	name = "telecommunications server monitoring console"
+	id = "comm_server"
+	req_tech = list(TECH_DATA = 3)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/comm_server
+	sort_string = "PAAAB"
+
+/datum/design/circuit/message_monitor
+	name = "messaging monitor console"
+	id = "message_monitor"
+	req_tech = list(TECH_DATA = 5)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/message_monitor
+	sort_string = "PAAAC"
+
 /datum/design/circuit/tcom/server
 	name = "server mainframe"
 	id = "tcom-server"
 	build_path = /obj/item/weapon/stock_parts/circuitboard/telecomms/server
-	sort_string = "PAAAA"
+	sort_string = "PAAAD"
+	design_class = "Telecomms Machines"
 
 /datum/design/circuit/tcom/processor
 	name = "processor unit"
 	id = "tcom-processor"
 	build_path = /obj/item/weapon/stock_parts/circuitboard/telecomms/processor
-	sort_string = "PAAAB"
+	sort_string = "PAAAF"
 
 /datum/design/circuit/tcom/bus
 	name = "bus mainframe"
 	id = "tcom-bus"
 	build_path = /obj/item/weapon/stock_parts/circuitboard/telecomms/bus
-	sort_string = "PAAAC"
+	sort_string = "PAAAG"
 
 /datum/design/circuit/tcom/hub
 	name = "hub mainframe"
 	id = "tcom-hub"
 	build_path = /obj/item/weapon/stock_parts/circuitboard/telecomms/hub
-	sort_string = "PAAAD"
+	sort_string = "PAAAH"
 
 /datum/design/circuit/tcom/broadcaster
 	name = "subspace broadcaster"
 	id = "tcom-broadcaster"
 	req_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 4, TECH_BLUESPACE = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/telecomms/broadcaster
-	sort_string = "PAAAF"
+	sort_string = "PAAAI"
 
 /datum/design/circuit/tcom/receiver
 	name = "subspace receiver"
 	id = "tcom-receiver"
 	req_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 3, TECH_BLUESPACE = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/telecomms/receiver
-	sort_string = "PAAAG"
+	sort_string = "PAAAJ"
 
 /datum/design/circuit/bluespace_relay
 	name = "bluespace relay"
 	id = "bluespacerelay"
 	req_tech = list(TECH_DATA = 5, TECH_BLUESPACE = 5, TECH_PHORON = 5)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/bluespacerelay
-	sort_string = "PAAAH"
+	sort_string = "PAAAK"
 
 /datum/design/circuit/shield_generator
 	name = "Shield Generator"
@@ -705,7 +730,8 @@
 	id = "shield_generator"
 	req_tech = list(TECH_MAGNET = 3, TECH_POWER = 4)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/shield_generator
-	sort_string = "VAAAC"
+	sort_string = "VAAAB"
+	design_class = "Shields Machines"
 
 /datum/design/circuit/shield_diffuser
 	name = "Shield Diffuser"
@@ -713,7 +739,7 @@
 	id = "shield_diffuser"
 	req_tech = list(TECH_MAGNET = 3, TECH_POWER = 4)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/shield_diffuser
-	sort_string = "VAAAB"
+	sort_string = "VAAAC"
 
 /datum/design/circuit/pointdefense
 	name = "Point defense battery"
@@ -721,7 +747,7 @@
 	id = "pointdefense"
 	req_tech = list(TECH_COMBAT = 2, TECH_ENGINEERING = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/pointdefense
-	sort_string = "VAAAC"
+	sort_string = "VAAAD"
 
 /datum/design/circuit/pointdefense_control
 	name = "Fire Assist Mainframe"
@@ -751,6 +777,7 @@
 	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/microwave
 	sort_string = "WAAAT"
+	design_class = "Kitchen Appliance"
 
 /datum/design/circuit/gibber
 	name = "kitchen appliance (meat gibber)"
@@ -795,33 +822,12 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/mixer
 	sort_string = "WAAAX"
 
-/datum/design/circuit/honey_extractor
-	name = "honey extractor"
-	id = "honey_extractor"
-	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 1)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/honey
-	sort_string = "WAABA"
-
-/datum/design/circuit/seed_extractor
-	name = "seed extractor"
-	id = "seed_extractor"
-	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 1)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/honey/seed
-	sort_string = "WAABB"
-
 /datum/design/circuit/vending
 	name = "vending machine"
 	id = "vending"
 	req_tech = list(TECH_ENGINEERING = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/vending
 	sort_string = "WAACA"
-
-/datum/design/circuit/aicore
-	name = "AI core"
-	id = "aicore"
-	req_tech = list(TECH_DATA = 4, TECH_BIO = 3)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/aicore
-	sort_string = "XAAAA"
 
 /datum/design/circuit/ionengine
 	name = "ion propulsion system"

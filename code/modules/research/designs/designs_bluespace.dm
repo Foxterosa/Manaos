@@ -9,6 +9,7 @@
 	materials = list (MATERIAL_ALUMINIUM = 20, MATERIAL_GLASS = 10)
 	build_path = /obj/item/device/radio/beacon
 	sort_string = "VADAA"
+	design_class = "Bluespace Devices"
 
 /datum/design/item/bluespace/gps
 	name = "triangulating device"
