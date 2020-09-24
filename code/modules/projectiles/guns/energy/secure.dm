@@ -109,8 +109,8 @@
 	modifystate = "laywerstun"
 	item_state = null
 	firemodes = list(
-		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="lawyerkill"),
 		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="lawyerstun"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="lawyerkill")
 		)
 	req_access = list(access_bridge)
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
