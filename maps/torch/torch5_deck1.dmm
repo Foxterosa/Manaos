@@ -654,8 +654,6 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/gun/energy/taser/carbine,
-/obj/item/weapon/gun/energy/stunrevolver/rifle,
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 6
@@ -667,6 +665,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow{
 	color = "#404040"
 	},
+/obj/item/weapon/gun/energy/gun/smg,
+/obj/item/weapon/gun/energy/gun/smg,
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "aaW" = (
@@ -3593,6 +3593,7 @@
 	},
 /obj/item/weapon/storage/box/ammo/pepperball/full,
 /obj/item/weapon/storage/box/ammo/rubber,
+/obj/item/weapon/storage/box/ammo/smg_ruber,
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "agd" = (
@@ -4000,9 +4001,6 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
@@ -4617,10 +4615,6 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/item/device/radio/intercom{
-	dir = 8;
-	pixel_x = 21
-	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -17749,6 +17743,7 @@
 	icon_state = "railing0-1";
 	tag = "icon-railing0 (EAST)"
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
 "bmJ" = (
@@ -18535,6 +18530,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 8
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "cbb" = (
@@ -19049,6 +19045,21 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralport)
+"cKr" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/white,
+/area/medical/infirmary)
 "cLb" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -20472,7 +20483,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/light,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
@@ -20691,6 +20701,7 @@
 	pixel_y = -32;
 	req_access = list("ACCESS_MEDICAL")
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "foh" = (
@@ -32501,6 +32512,22 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/wing)
+"skU" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
+/obj/effect/catwalk_plated,
+/obj/item/device/radio/intercom{
+	dir = 8;
+	pixel_x = 21
+	},
+/turf/simulated/floor/plating,
+/area/hallway/primary/firstdeck/fore)
 "slb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -46958,7 +46985,7 @@ ahI
 aiU
 ajV
 kju
-akW
+skU
 ast
 qKH
 akW
@@ -58273,7 +58300,7 @@ lEf
 afK
 mEj
 hEb
-fub
+cKr
 aqQ
 fXb
 lrG

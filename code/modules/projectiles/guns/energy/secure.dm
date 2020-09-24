@@ -121,3 +121,34 @@
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
 	icon_state = "lasersec"
 	req_access = list(list(access_brig, access_bridge))
+
+/////////
+// SMG Laser
+/////////
+
+/obj/item/weapon/gun/energy/gun/smg
+	name = "Subfusil FNV-600"
+	desc = "El FNV-600 es un arma de energia de autodefensa barata, producida en masa por Ward-Takahashi para uso paramilitar y privado. La variacion perfecta para los que prefieron el calido tacto de un laser."
+	icon = 'icons/obj/guns/sec_smg.dmi'
+	icon_state = "smgstun100"
+	safety_icon = "safety"
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 3)
+	slot_flags = SLOT_BELT
+	force = 5
+	max_shots = 20
+	accuracy_power = 7
+	one_hand_penalty = 3
+	modifystate= "smgstun"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns.dmi',
+		)
+	item_state = null
+	req_access = list(list(access_brig, access_bridge))
+	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="smgstun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="smgshock"),
+		list(mode_name="kill", burst=2, projectile_type=/obj/item/projectile/beam, modifystate="smgkill"),
+		)
