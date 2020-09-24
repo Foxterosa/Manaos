@@ -11,6 +11,7 @@
 	materials = list(MATERIAL_STEEL = 400, MATERIAL_GLASS = 100)
 	build_path = /obj/item/weapon/stock_parts/computer/hard_drive/
 	sort_string = "VBAAA"
+	design_class = "Computer Accessories"
 
 /datum/design/item/modularcomponent/disk/advanced
 	name = "advanced hard drive"
@@ -71,6 +72,7 @@
 	chemicals = list(/datum/reagent/acid = 20)
 	build_path = /obj/item/weapon/stock_parts/computer/network_card
 	sort_string = "VBABA"
+	design_class = "Computer Accessories"
 
 /datum/design/item/modularcomponent/netcard/advanced
 	name = "advanced network card"
@@ -232,6 +234,7 @@
 	materials = list(MATERIAL_STEEL = 400)
 	build_path = /obj/item/weapon/stock_parts/computer/battery_module
 	sort_string = "VBAEA"
+	design_class = "Batteries"
 
 /datum/design/item/modularcomponent/battery/advanced
 	name = "advanced battery module"

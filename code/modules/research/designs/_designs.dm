@@ -31,6 +31,7 @@ other types of metals and chemistry for reagents).
 	var/time = 10					//How many ticks it requires to build
 	var/category = null 			//Primarily used for Mech Fabricators, but can be used for anything.
 	var/sort_string = "ZZZZZ"		//Sorting order
+	var/design_class = null			//Name of the class of the designs. Used to order the console.
 
 /datum/design/New()
 	..()
