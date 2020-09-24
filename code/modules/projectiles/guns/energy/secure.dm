@@ -54,8 +54,8 @@
 		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
 		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="energyrevolverkill"),
 		)
-	req_access = list(access_hop)
-	authorized_modes = list(UNAUTHORIZED)
+	req_access = list(list(access_brig, access_heads))
+	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 
 /obj/item/weapon/gun/energy/revolver/inf
 	name = "smart service revolver"
