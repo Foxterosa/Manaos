@@ -57,6 +57,25 @@
 	req_access = list(list(access_brig, access_heads))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 
+/obj/item/weapon/gun/energy/revolver/inf
+	name = "smart service revolver"
+	desc = "The INFL420-S, un revólver de servicio de emisión estándar comúnmente utilizado por oficiales de mayor rango entre infanteria. Equipado con un chip NT1019 que permite la autorización remota de la funcionalidad del arma."
+	icon = 'icons/obj/guns/energy_revolver.dmi'
+	icon_state = "energyrevolverstun100"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns_secure.dmi',
+		)
+	modifystate = "energyrevolverstun"
+	item_state = null
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="energyrevolverstun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="energyrevolverkill"),
+		)
+	req_access = list(access_hop)
+	authorized_modes = list(UNAUTHORIZED)
+
 /obj/item/weapon/gun/energy/bs_secure
 	name = "revolver avanzado BS-650-S"
 	desc = "El BS-650-S es un revolver avanzado  utilizado por los oficiales Blueshield."
@@ -81,17 +100,17 @@
 /obj/item/weapon/gun/energy/mag_secure
 	name = "lawyer-x3ph"
 	desc = "Una pistola de energía de pequeño tamaño hecha para defensa personal, en la parte posterior hay escrito: \"Que la ley te acompañe...\" Tiene solo 2 cargos de desactivador."
-	icon = 'icons/obj/guns/energy_revolver.dmi'
-	icon_state = "energyrevolverstun100"
+	icon = 'icons/obj/guns/lawyer.dmi'
+	icon_state = "lawyerstun100"
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns_secure.dmi',
 		)
-	modifystate = "energyrevolverstun"
+	modifystate = "laywerstun"
 	item_state = null
 	firemodes = list(
-		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
-	list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="energyrevolverstun"),
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="lawyerstun"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="lawyerkill")
 		)
 	req_access = list(access_bridge)
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
