@@ -37,3 +37,10 @@
 				   "48"='code/modules/synthesized_instruments/samples/guitar/crisis_muted/c3.ogg',
 				   "60"='code/modules/synthesized_instruments/samples/guitar/crisis_muted/c4.ogg',
 				   "72"='code/modules/synthesized_instruments/samples/guitar/crisis_muted/c5.ogg')
+
+/datum/instrument/guitar/elec_crisis
+	name = "Guitarra electrica Crisis"
+	id = "celecdgt"
+	samples = list("36"='code/modules/synthesized_instruments/samples/guitar/crisis_elec/c2.ogg',
+				   "48"='code/modules/synthesized_instruments/samples/guitar/crisis_elec/c3.ogg',
+				   "60"='code/modules/synthesized_instruments/samples/guitar/crisis_elec/c4.ogg')
