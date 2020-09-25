@@ -19,7 +19,7 @@
 #define FACTION_XYNERGY        "Xynergy"
 #define FACTION_FLEET          "Flota del GCS"
 #define FACTION_MARINES        "Fuerza Marine Solar" // BoH Addon
-#define FACTION_EXPEDITIONARY  "Flota Expedicionaria"
+#define FACTION_EXPEDITIONARY  "Expeditionary Corps"
 #define FACTION_PCRC           "Control de Riesgo Proxima Centauri"
 #define FACTION_CORPORATE       "Organizacion Corporativa Expedicionaria"
 #define FACTION_DAIS           "Sistemas Avanzados de Informatica Deimos"
