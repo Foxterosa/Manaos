@@ -8867,6 +8867,24 @@
 /obj/machinery/floodlight,
 /turf/simulated/floor/holofloor/concrete,
 /area/nieve/garaje)
+"Ci" = (
+/obj/effect/floor_decal/corner/green{
+	icon_state = "corner_white";
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/obj/machinery/vending/wallmed1{
+	dir = 1;
+	icon_state = "wallmed";
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/obj/structure/table/glass,
+/turf/simulated/floor/tiled/white,
+/area/casinojack/Med)
 "Cm" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -40797,7 +40815,7 @@ ht
 iP
 kA
 ht
-lm
+Ci
 hW
 gS
 gS
