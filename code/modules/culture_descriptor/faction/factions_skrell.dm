@@ -1,39 +1,39 @@
 /decl/cultural_info/faction/skrell
 	name = FACTION_SKRELL_QERRVOAL
-	description = "A famous name within the Raskinta-Katish community, the Qerr'voal is the SDTF in charge of defending the Qerr'Vallis system,\
-	a task the Qerr'Voal has carried out with distinction for 600 years. Despite the relative safety and stability of the system many young Skrell \
-	of Qerr'balak and the surrounding colonies try to enter the prestigious organisation in order to gain status and influence with their brethren."
+	description = "Famoso dentro de la comunidad Raskinta-Katish, Qerr'voal es el DDS a cargo de la defensa del sistema Qerr'Vallis,\
+	una tarea que ha cumplido sobresalientemente por 6 siglos. A pesar de la relativa seguridad y estabilidad del sistema, varios Skrell jovenes \
+	de Qerr'balak y las colonias de su periferia intentan entrar a la prestigiosa organizacion para lograr ganar posicion e influencia entre sus pares."
 
 /decl/cultural_info/faction/skrell/qalaoa
 	name = FACTION_SKRELL_QALAOA
-	description = "Relatively recent, this particular group was funded shortly after the first contact between Skrell and humans. Patrolling \
-	several worlds at the border between the two species this SDTF has, like the colonies it protects, started to slowly adopt some human customs \
-	and views, for better and for worse. Still growing today, some expect it to become the largest SDTF along the skrell-human border within the next thirty years."
+	description = "Relativamente joven, este grupo en particular, Qala'oa, fue fundado poco despues del primer contacto entre los Skrell y la humanidad. Al patrullar la frontera \
+	entre las dos especies, este DDS ha desarrollado una cultura y vision del mundo un tanto humana, como las colonias que defiende. \
+	Creciendo al dia de hoy, se especula que es probable que se convierta en el mayor DDS fronterizo en menos de tres decadas."
 
 /decl/cultural_info/faction/skrell/yiitalana
 	name = FACTION_SKRELL_YIITALANA
-	description = "An SDTF from the far side of skrell territory, deep into what is, to humanity, uncharted space. Yii'talana is the SDTF for the \
-	Ri'Qora system. Heavily funded and well equipped, Yii'Talana has a number of mutual assistance and cooperation agreements with a large number of \
-	frontier colony SDTF's, or functions as an intermediary SDTF for systems where a presence has yet to be established. The Skrell of Yii'Talana \
-	are some of the more experienced on the far skrellian frontier."
+	description = "Yii'talana, un particular destacamento, de territorio skrell tan profundo que es desconocido a la humanidad, es el encargado de \
+	la defensa del sistema Ri'Qora. Bien financiados y con equipo de ultima, tienen varios arreglos de asistencia y cooperacion con un gran numero de \
+	destacamentos de colonias fronterizas, ademas de la funcion de actuar como una cubierta para sistemas sin un DDS asignado. Los Skrell de Yii'Talana \
+	son los mas experimentados de su lado de la frontera."
 
 /decl/cultural_info/faction/skrell/krrigli
 	name = FACTION_SKRELL_KRRIGLI
-	description = "Krri'gli is a Skrell aerospace manufacturing and research corporation from the city-state of Tibrivuu in the Go'kal system,\
-	and one of the more well known Skrell corporations in human space as a result of its contribution to the SEV Torch Project.\
-	Krri'gli is mostly concerned with the design and construction of bluespace drives, and is one of the largest providers in the human side \
-	of Skrell space. Their participation in the Torch project is their first human venture, and has resulted in their sending science staff \
-	as a part of the Expeditionary Corps Organization to provide expertise and gather mission data firsthand."
+	description = "Krri'gli es una empresa de fabricacion e investigacion de la ciudad-estado de Tibrivuu, en el sistema Go'kal,\
+	y es una de las empresas Skrell mas conocidas en el espacio humano por su colaboracion al proyecto NTSS Dagon.\
+	Krri'gli se concentra principalmente en el estudio y construccion de motores bluespace, y es una de las mayores proveedoras de ese producto \
+	en la frontera humana del territorio Skrell. Su participacion en el proyecto Dagon es su primera inversion en humanos, y por lo tanto han enviado \
+	personal cientifico como parte de la Organizacion de Corporaciones Expedicionaria para colaborar y revisar informacion de primera mano."
 	additional_langs = list(LANGUAGE_HUMAN_EURO)
 	economic_power = 1.5
 	subversive_potential = 60
 
 /decl/cultural_info/faction/skrell/qonprri
 	name = FACTION_SKRELL_QONPRRI
-	description = "Qon'prri is, officially an independent security services corporation that operates in the Harr'Kelm system, providing private \
-	security services to a variety of Skrell vessels, traders and organisations, and, more recently, human corporations. Unofficially, it is rumoured that \
-	Qonn'prri is a for-profit offshoot of Qala'oa tasked with information gathering in human space and along the frontier.So far such claims have been \
-	unfounded, and Qonn'prri is known for offering a professional, reliable and able service to Humans and Skrell alike."
+	description = "Qon'prri es oficialmente una empresa especializada en seguridad, que opera en el sistema Harr'Kelm system, ofreciendo servicios \
+	privados de seguridad a numerosas naves, mercaderes y organizaciones Skrell, recientemente incluyendo corporaciones humanas. Extraoficialmente, hay rumores \
+	que sugieren que Qon'prri es una rama del famoso destacamento Qala'oa, con el proposito de conseguir informacion de la humanidad, operando en la frontera y territorio humano. Por ahora, estas habladurias \
+	no han demostrado tener base solida, y Qon'prri sigue siendo conocida por su servicio profesional, confiable y competente a tanto humanos como Skrell."
 	additional_langs = list(LANGUAGE_HUMAN_EURO)
 	economic_power = 1.4
 	subversive_potential = 60
