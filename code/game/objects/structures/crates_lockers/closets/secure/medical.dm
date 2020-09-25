@@ -26,7 +26,6 @@
 		/obj/item/weapon/storage/box/gloves,
 		/obj/item/weapon/storage/box/beakers/insulated,
 		/obj/item/weapon/storage/box/beakers,
-		/obj/item/weapon/storage/box/syringes,
 		/obj/item/weapon/storage/box/pillbottles,
 		/obj/item/weapon/storage/box/monkeycubes,
 		/obj/item/weapon/storage/box/freezer,

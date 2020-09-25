@@ -19045,21 +19045,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralport)
-"cKr" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/white,
-/area/medical/infirmary)
 "cLb" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -24445,6 +24430,21 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
 /area/medical/reslab)
+"jxe" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/white,
+/area/medical/infirmary)
 "jxG" = (
 /obj/effect/floor_decal/corner/paleblue/half{
 	dir = 4
@@ -30135,6 +30135,8 @@
 /obj/item/weapon/tank/anesthetic,
 /obj/item/clothing/mask/breath/anesthetic,
 /obj/item/clothing/mask/breath/anesthetic,
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/clothing/mask/surgical,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "pIA" = (
@@ -32512,22 +32514,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/wing)
-"skU" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/obj/effect/catwalk_plated,
-/obj/item/device/radio/intercom{
-	dir = 8;
-	pixel_x = 21
-	},
-/turf/simulated/floor/plating,
-/area/hallway/primary/firstdeck/fore)
 "slb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -33934,6 +33920,22 @@
 "tAS" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/firstdeck/foreport)
+"tBp" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
+/obj/effect/catwalk_plated,
+/obj/item/device/radio/intercom{
+	dir = 8;
+	pixel_x = 21
+	},
+/turf/simulated/floor/plating,
+/area/hallway/primary/firstdeck/fore)
 "tCu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -46985,7 +46987,7 @@ ahI
 aiU
 ajV
 kju
-skU
+tBp
 ast
 qKH
 akW
@@ -58300,7 +58302,7 @@ lEf
 afK
 mEj
 hEb
-cKr
+jxe
 aqQ
 fXb
 lrG
