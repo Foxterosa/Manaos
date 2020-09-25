@@ -5,6 +5,7 @@ var/list/ai_list = list()
 var/list/ai_verbs_default = list(
 	/mob/living/silicon/ai/proc/ai_announcement,
 	/mob/living/silicon/ai/proc/ai_call_shuttle,
+	/mob/living/silicon/ai/proc/ai_recall_shuttle,
 	/mob/living/silicon/ai/proc/ai_emergency_message,
 	/mob/living/silicon/ai/proc/ai_camera_track,
 	/mob/living/silicon/ai/proc/ai_camera_list,
