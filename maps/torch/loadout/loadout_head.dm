@@ -2,7 +2,6 @@
 	display_name = "SolGov beret selection"
 	description = "A beret denoting service in an organization within SolGov."
 	path = /obj/item/clothing/head/beret/solgov
-	allowed_branches = SOLGOV_BRANCHES
 
 /datum/gear/head/solberet/New()
 	..()
@@ -26,7 +25,6 @@
 /datum/gear/head/solhat
 	display_name = "sol central government hat"
 	path = /obj/item/clothing/head/soft/solgov
-	allowed_branches = SOLGOV_BRANCHES
 
 /datum/gear/head/fleethat
 	display_name = "fleet hat"
@@ -85,7 +83,6 @@
 	display_name = "SC sections beret selection"
 	description = "A beret denoting service in one of the branches within the NTSC."
 	path = /obj/item/clothing/head/beret/solgov/expedition/branch
-	allowed_branches = NT_BRANCHES
 
 /datum/gear/head/ECberet/New()
 	..()
@@ -98,4 +95,3 @@
 	display_name = "Casco Aviador"
 	path = /obj/item/clothing/mask/pilothelmet
 	slot = slot_wear_mask
-	allowed_branches = NT_BRANCHES
