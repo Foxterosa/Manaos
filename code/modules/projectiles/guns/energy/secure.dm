@@ -136,10 +136,12 @@
 	. = ..()
 
 /obj/item/weapon/gun/energy/laser/secure
-	name = "laser carbine"
-	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
+	name = "carabina G40E-S"
+	desc = "Una carabina laser de Hephaestus Industries G40E-S, diseñada para una alternativa a la balistica para el personal de seguridad. Equipado con un chip NT1019 para asegurarse de que se realice un seguimiento adecuado del recuento de muertes."
 	icon_state = "lasersec"
 	req_access = list(list(access_brig, access_bridge))
+	wielded_item_state = "lasersec-wielded"
+	item_state = "lasersec"
 
 /////////
 // SMG Laser
@@ -167,7 +169,7 @@
 	req_access = list(list(access_brig, access_bridge))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 	firemodes = list(
-		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="smgstun"),
-		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="smgshock"),
+		list(mode_name="stun", burst=2, projectile_type=/obj/item/projectile/beam/stun, modifystate="smgstun"),
+		list(mode_name="shock", burst=2, projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="smgshock"),
 		list(mode_name="kill", burst=2, projectile_type=/obj/item/projectile/beam, modifystate="smgkill"),
 		)
