@@ -10,6 +10,7 @@
 	materials = list(MATERIAL_GLASS = 500, MATERIAL_STEEL = 500)
 	build_path = /obj/item/device/paicard
 	sort_string = "VABAI"
+	design_class = "Synthetic Intelligence Storage"
 
 /datum/design/item/synthstorage/intelicard
 	name = "inteliCard"

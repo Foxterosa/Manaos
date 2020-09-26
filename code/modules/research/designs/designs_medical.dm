@@ -27,6 +27,7 @@
 	req_tech = list(TECH_BIO = 2, TECH_MAGNET = 2)
 	build_path = /obj/item/device/scanner/spectrometer
 	sort_string = "MACAA"
+	design_class = "Medical Tools"
 
 /datum/design/item/medical/adv_mass_spectrometer
 	desc = "A device for analyzing chemicals in blood and their quantities."

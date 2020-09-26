@@ -14,6 +14,7 @@
 	req_tech = list(TECH_BIO = 2, TECH_MAGNET = 3)
 	build_path = /obj/item/clothing/glasses/hud/health
 	sort_string = "GAAAA"
+	design_class = "HUD Glasses"
 
 /datum/design/item/hud/security
 	name = "security records"

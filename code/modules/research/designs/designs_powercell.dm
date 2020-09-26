@@ -25,6 +25,7 @@
 	req_tech = list(TECH_POWER = 1)
 	build_path = /obj/item/weapon/cell
 	sort_string = "DAAAA"
+	design_class = "Power Cells"
 
 /datum/design/item/powercell/high
 	name = "high-capacity"

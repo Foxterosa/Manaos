@@ -7,6 +7,7 @@
 	You'd probably be safe wagering that nothing but breathable air will be permited inside."
 	icon_state = "swat"
 	item_state = "swat"
+	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT
 	armor = list(
 		melee = ARMOR_MELEE_MINOR,
 		bullet = ARMOR_BALLISTIC_MINOR,

@@ -10,6 +10,7 @@
 	materials = list(MATERIAL_STEEL = 1500, MATERIAL_SILVER = 150, MATERIAL_GLASS = 3000)
 	build_path = /obj/item/device/lightreplacer
 	sort_string = "VAGAB"
+	design_class = "General Tools"
 
 /datum/design/item/tool/airlock_brace
 	name = "airlock brace"
@@ -45,6 +46,7 @@
 	req_tech = list(TECH_POWER = 6, TECH_ENGINEERING = 4)
 	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 100)
 	build_path = /obj/item/inducer
+	sort_string = "VAGAK"
 
 /datum/design/item/tool/price_scanner
 	name = "price scanner"
@@ -85,9 +87,36 @@
 /datum/design/item/tool/oxycandle
 	name = "oxycandle"
 	desc = "a device which, via a chemical reaction, can pressurise small areas."
-	id="oxycandle"
+	id = "oxycandle"
 	req_tech = list(TECH_ENGINEERING = 2)
 	materials = list(MATERIAL_STEEL = 3000)
 	chemicals = list(/datum/reagent/sodiumchloride = 20, /datum/reagent/acetone = 20)
 	build_path = /obj/item/device/oxycandle
 	sort_string = "VAGAJ"
+
+/datum/design/item/advmop
+	name = "Advanced Mop"
+	desc = "An upgraded mop with a large internal capacity for holding water or other cleaning chemicals."
+	id = "advmop"
+	req_tech = list(TECH_ENGINEERING = 4, TECH_MATERIAL = 4, TECH_POWER = 3)
+	materials = list(MATERIAL_ALUMINIUM = 2500, MATERIAL_STEEL = 500, MATERIAL_PLASTIC = 200)
+	build_path = /obj/item/weapon/mop/advanced
+	sort_string = "VAGAK"
+
+/datum/design/item/blutrashbag
+	name = "Trashbag of Holding"
+	desc = "An advanced trash bag with bluespace properties; capable of holding a plethora of garbage."
+	id = "blutrashbag"
+	req_tech = list(TECH_BLUESPACE = 5, TECH_MATERIAL = 6)
+	materials = list(MATERIAL_PLASTIC = 5000, MATERIAL_GOLD = 1500, MATERIAL_URANIUM = 250, MATERIAL_PHORON = 1500)
+	build_path = /obj/item/weapon/storage/bag/trash/bluespace
+	sort_string = "VAGAL"
+
+/datum/design/item/holosign
+	name = "Holographic Sign Projector"
+	desc = "A holograpic projector used to project various warning signs."
+	id = "holosign"
+	req_tech = list(TECH_ENGINEERING = 5, TECH_BLUESPACE = 4, TECH_POWER = 4)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 1000)
+	build_path = /obj/item/holosign_creator
+	sort_string = "VAGAM"

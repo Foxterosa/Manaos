@@ -15,6 +15,7 @@
 	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
 	build_path = /obj/item/weapon/stock_parts/capacitor
 	sort_string = "CAAAA"
+	design_class = "Machine Components"
 
 /datum/design/item/stock_part/adv_capacitor
 	id = "adv_capacitor"
@@ -129,6 +130,7 @@
 	materials = list(MATERIAL_STEEL = 80, MATERIAL_SILVER = 20)
 	build_path = /obj/item/weapon/stock_parts/subspace/ansible
 	sort_string = "UAAAA"
+	design_class = "Telecomms Components"
 
 /datum/design/item/stock_part/hyperwave_filter
 	id = "s-filter"

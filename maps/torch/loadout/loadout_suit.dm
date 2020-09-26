@@ -120,7 +120,6 @@
 	display_name = "Abrigo de invierno, flota"
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet
 	cost = 2
-	allowed_branches = NT_BRANCHES
 	allowed_roles = COMMAND_ROLES
 
 /datum/gear/suit/wintercoat_solgov
