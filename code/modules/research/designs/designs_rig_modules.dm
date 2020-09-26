@@ -11,6 +11,7 @@
 	materials = list(MATERIAL_STEEL = 100, MATERIAL_GLASS = 200, MATERIAL_PLASTIC = 300)
 	build_path = /obj/item/rig_module/vision/meson
 	sort_string = "WCAAA"
+	design_class = "RIG Modules"
 
 /datum/design/item/rig/medhud
 	name = "Medical HUD"
@@ -64,8 +65,7 @@
 	req_tech = list(TECH_MATERIAL = 4, TECH_PHORON = 3, TECH_ENGINEERING = 6, TECH_COMBAT = 4)
 	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 1000, MATERIAL_PLASTIC = 1000, MATERIAL_GOLD = 700, MATERIAL_PHORON = 500)
 	build_path = /obj/item/rig_module/mounted/plasmacutter
-	sort_string = "VCCAB"
-	design_class = "RIG Modules"
+	sort_string = "WCCAB"
 
 /datum/design/item/rig/orescanner
 	name = "Ore Scanner"

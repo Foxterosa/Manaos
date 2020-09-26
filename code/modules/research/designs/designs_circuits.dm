@@ -712,7 +712,6 @@
 	id = "tcom-server"
 	build_path = /obj/item/weapon/stock_parts/circuitboard/telecomms/server
 	sort_string = "PAAAD"
-	design_class = "Telecomms Machinery"
 
 /datum/design/circuit/tcom/processor
 	name = "processor unit"
@@ -759,6 +758,7 @@
 	req_tech = list(TECH_DATA = 3)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/comm_monitor
 	sort_string = "PAAAL"
+	design_class = "Telecomms Machinery"
 
 /datum/design/circuit/comm_server
 	name = "telecommunications server monitoring console"
