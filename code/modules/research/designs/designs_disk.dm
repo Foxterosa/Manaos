@@ -10,6 +10,7 @@
 	req_tech = list(TECH_DATA = 1)
 	build_path = /obj/item/weapon/disk/design_disk
 	sort_string = "AAAAA"
+	design_class = "Disks"
 
 /datum/design/item/disk/tech
 	name = "technology data"

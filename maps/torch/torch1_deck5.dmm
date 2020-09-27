@@ -1795,6 +1795,30 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
+"dd" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/table/rack,
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/obj/effect/floor_decal/industrial/outline/yellow{
+	color = "#404040"
+	},
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec,
+/turf/simulated/floor/tiled/dark,
+/area/security/infantry/armory)
 "de" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -3733,30 +3757,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
-"gv" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/automatic/bullpup_rifle,
-/obj/item/weapon/gun/projectile/automatic/bullpup_rifle,
-/obj/effect/floor_decal/corner/red{
-	dir = 5
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 10
-	},
-/obj/effect/floor_decal/industrial/outline/yellow{
-	color = "#404040"
-	},
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/infantry/armory)
 "gw" = (
 /obj/machinery/light/spot{
 	dir = 1
@@ -33166,7 +33166,7 @@ aa
 If
 If
 cT
-gv
+dd
 hR
 If
 mC

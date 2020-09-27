@@ -19,15 +19,15 @@
 				to_chat(user, "Has elegido [AM].")
 		qdel(src)
 
-/obj/item/gunbox/infcom
+/obj/item/gunbox/infcoml
 	name = "Kit del lider de escuadron"
 	desc = "Una caja segura que contiene un arma secundaria y una primaria."
 
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Balistica - Escopeta"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure)
-	options["Balistica - Subfusil"] = list(/obj/item/weapon/gun/projectile/automatic/p90/sec,/obj/item/ammo_magazine/p90, /obj/item/weapon/gun/energy/revolver/secure)
-	options["Energia - Carabina laser (Disparo rapido)"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Balistica - Escopeta"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/projectile/pistol/military/sec)
+	options["Balistica - Subfusil"] = list(/obj/item/weapon/gun/projectile/automatic/p90/sec,/obj/item/ammo_magazine/p90, /obj/item/weapon/gun/projectile/pistol/military/sec)
+	options["Energia - Carabina laser (Disparo rapido)"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl,/obj/item/weapon/gun/energy/revolver/inf)
 	var/choice = input(user,"¿Que tipo de equipamiento?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]

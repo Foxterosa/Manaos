@@ -12,6 +12,7 @@
 	req_tech = list(TECH_MATERIAL = 7, TECH_POWER = 7, TECH_ENGINEERING = 5)
 	build_path = /obj/item/weapon/stock_parts/smes_coil
 	sort_string = "VAXAA"
+	design_class = "SMES Coils"
 
 /datum/design/item/smes_coil/super_capacity
 	name = "capacitance"

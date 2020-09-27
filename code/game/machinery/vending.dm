@@ -938,7 +938,8 @@ obj/machinery/vending/cola/manaos
 					/obj/item/stack/medical/advanced/bruise_pack = 5,
 					/obj/item/stack/medical/advanced/ointment = 5,
 					/obj/item/stack/medical/splint = 5,
-					/obj/item/device/scanner/health = 5)
+					/obj/item/device/scanner/health = 5,
+					/obj/item/weapon/reagent_containers/syringe = 6)
 	contraband = list(/obj/item/weapon/reagent_containers/pill/stox = 5,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 1,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon = 1,)

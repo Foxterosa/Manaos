@@ -57,6 +57,25 @@
 	req_access = list(list(access_brig, access_heads))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 
+/obj/item/weapon/gun/energy/revolver/inf
+	name = "smart service revolver"
+	desc = "The INFL420-S, un revólver de servicio de emisión estándar comúnmente utilizado por oficiales de mayor rango entre infanteria. Equipado con un chip NT1019 que permite la autorización remota de la funcionalidad del arma."
+	icon = 'icons/obj/guns/energy_revolver.dmi'
+	icon_state = "energyrevolverstun100"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns_secure.dmi',
+		)
+	modifystate = "energyrevolverstun"
+	item_state = null
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="energyrevolverstun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="energyrevolverkill"),
+		)
+	req_access = list(access_hop)
+	authorized_modes = list(UNAUTHORIZED)
+
 /obj/item/weapon/gun/energy/bs_secure
 	name = "revolver avanzado BS-650-S"
 	desc = "El BS-650-S es un revolver avanzado  utilizado por los oficiales Blueshield."
@@ -81,17 +100,17 @@
 /obj/item/weapon/gun/energy/mag_secure
 	name = "lawyer-x3ph"
 	desc = "Una pistola de energía de pequeño tamaño hecha para defensa personal, en la parte posterior hay escrito: \"Que la ley te acompañe...\" Tiene solo 2 cargos de desactivador."
-	icon = 'icons/obj/guns/energy_revolver.dmi'
-	icon_state = "energyrevolverstun100"
+	icon = 'icons/obj/guns/lawyer.dmi'
+	icon_state = "lawyerstun100"
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns_secure.dmi',
 		)
-	modifystate = "energyrevolverstun"
+	modifystate = "laywerstun"
 	item_state = null
 	firemodes = list(
-		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
-	list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="energyrevolverstun"),
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="lawyerstun"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="lawyerkill")
 		)
 	req_access = list(access_bridge)
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
@@ -121,3 +140,34 @@
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
 	icon_state = "lasersec"
 	req_access = list(list(access_brig, access_bridge))
+
+/////////
+// SMG Laser
+/////////
+
+/obj/item/weapon/gun/energy/gun/smg
+	name = "Subfusil FNV-600"
+	desc = "El FNV-600 es un arma de energia de autodefensa barata, producida en masa por Ward-Takahashi para uso paramilitar y privado. La variacion perfecta para los que prefieron el calido tacto de un laser."
+	icon = 'icons/obj/guns/sec_smg.dmi'
+	icon_state = "smgstun100"
+	safety_icon = "safety"
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 3)
+	slot_flags = SLOT_BELT
+	force = 5
+	max_shots = 20
+	accuracy_power = 7
+	one_hand_penalty = 3
+	modifystate= "smgstun"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns.dmi',
+		)
+	item_state = null
+	req_access = list(list(access_brig, access_bridge))
+	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="smgstun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="smgshock"),
+		list(mode_name="kill", burst=2, projectile_type=/obj/item/projectile/beam, modifystate="smgkill"),
+		)
