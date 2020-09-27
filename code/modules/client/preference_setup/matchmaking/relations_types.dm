@@ -1,17 +1,17 @@
 /datum/relation/friend
-	name = "Amistad"
-	desc = "Se conocen desde hace tiempo, y se llevan bastante bien."
+	name = "Friend"
+	desc = "You have known the fellow for a while now, and you get along pretty well."
 	incompatible = list(/datum/relation/enemy)
 
 /datum/relation/friend/get_desc_string()
-	return "[holder] y [other.holder] parecen llevarse bien."
+	return "[holder] and [other.holder] seem to be on good terms."
 
 /datum/relation/kid_friend
-	name = "Amistad de la Infancia"
-	desc = "Se conocen de su juventud o infancia."
+	name = "Childhood Friend"
+	desc = "You have known them since you were both young."
 
 /datum/relation/kid_friend/get_desc_string()
-	return "[holder] y [other.holder] se conocen desde la infancia."
+	return "[holder] and [other.holder] knew each other when they were both young."
 
 /datum/relation/kid_friend/get_candidates()
 	var/list/creche = ..()
@@ -32,51 +32,51 @@
 	return creche
 
 /datum/relation/enemy
-	name = "Enemistad"
-	desc = "Se conocen desde hace tiempo, y genuinamente no se soportan."
+	name = "Enemy"
+	desc = "You have known the fellow for a while now, and you really can't stand each other."
 	incompatible = list(/datum/relation/friend, /datum/relation/so)
 
 /datum/relation/enemy/get_desc_string()
-	return "[holder] y [other.holder] no se llevan bien."
+	return "[holder] and [other.holder] do not get along well."
 
 /datum/relation/had_crossed
-	name = "Resentido"
-	desc = "Le has contrariado en algun momento, y lo mas probable es que te tenga rencor."
+	name = "Crossed"
+	desc = "You have slighted them in the past, and they most likely hold a grudge against you."
 	can_connect_to = list(/datum/relation/was_crossed)
 
 /datum/relation/had_crossed/get_desc_string()
-	return "Algo paso entre [holder] y [other.holder] en el pasado, y [other.holder] guarda rencor."
+	return "Something has happened between [holder] and [other.holder] in the past, and [other.holder] is upset about it."
 
 /datum/relation/was_crossed
-	name = "Rencoroso"
-	desc = "Te ha contrariado en algun momento, y lo recuerdas vividamente."
+	name = "Was Crossed"
+	desc = "You have been slighted by them in the past, and you remember it."
 	can_connect_to = list(/datum/relation/had_crossed)
 
 /datum/relation/was_crossed/get_desc_string()
-	return "Algo paso entre [holder] y [other.holder] en el pasado, y [holder] guarda rencor."
+	return "Something has happened between [holder] and [other.holder] in the past, and [holder] is upset about it."
 
 /datum/relation/nope
-	name = "Eludiendo"
-	desc = "Paso algo entre tu y la otra persona en el pasado, y la eludes por ese evento."
+	name = "Avoiding"
+	desc = "You or they have done something in the past, and you avoid them because of it."
 	can_connect_to = list(/datum/relation/is_nope)
 
 /datum/relation/nope/get_desc_string()
-	return "[holder] elude a [other.holder], por alguna razon."
+	return "[holder] avoids [other.holder], for some reason."
 
 /datum/relation/is_nope
-	name = "Experiencia Desafortunada"
-	desc = "Paso algo entre tu y la otra persona en el pasado, y por eso te evita."
+	name = "Had Unfortunate Experience"
+	desc = "You or they have done something in the past, and they avoid you because of it."
 	can_connect_to = list(/datum/relation/nope)
 
 /datum/relation/is_nope/get_desc_string()
-	return "[other.holder] elude a [holder], por alguna razon."
+	return "[other.holder] avoids [holder], for some reason."
 
 /datum/relation/rival
-	name = "Rivalidad"
-	desc = "Estan en una contienda constante para demostrar quien manda."
+	name = "Rival"
+	desc = "You are engaged in a constant struggle to show who's number one."
 
 /datum/relation/rival/get_desc_string()
-	return "[holder] y [other.holder] parecen estar en una intensa competencia."
+	return "[holder] and [other.holder] are fiercely competitive towards one another."
 
 /datum/relation/rival/get_candidates()
 	var/list/rest = ..()
@@ -96,12 +96,12 @@
 	return rest
 
 /datum/relation/lover
-	name = "Amante"
-	desc = "Tienen algo interesante entre ustedes."
+	name = "Lover"
+	desc = "You have a thing going."
 	incompatible = list(/datum/relation/xenolover, /datum/relation/ex)
 
 /datum/relation/lover/get_desc_string()
-	return "[holder] y [other.holder] parecen estar en algo romantico."
+	return "[holder] and [other.holder] seem to have a thing going."
 
 /datum/relation/lover/get_candidates()
 	var/list/lovers = ..()
@@ -119,12 +119,12 @@
 	return lovers
 
 /datum/relation/xenolover
-	name = "Amante Xenofilico"
-	desc = "Tienen algo interesante entre ustedes, a pesar de sus marcadas diferencias."
+	name = "Xenophilic Lover"
+	desc = "You have a thing going, despite the fact you are different."
 	incompatible = list(/datum/relation/lover, /datum/relation/ex)
 
 /datum/relation/xenolover/get_desc_string()
-	return "[holder] y [other.holder] parecen estar en algo romantico, a pesar de ser tan distintos."
+	return "[holder] and [other.holder] seem to have a thing going, though they look alien to each other."
 
 /datum/relation/xenolover/get_candidates()
 	var/list/xlovers = ..()
@@ -142,32 +142,32 @@
 	return xlovers
 
 /datum/relation/xenolover/wholesome
-	name = "Amigo Alien"
-	desc = "Se han conocido por un tiempo, y sus diferencias solo los unen."
+	name = "Alien Friend"
+	desc = "You have known the fellow for a while now, and differences only boost your friendship."
 	incompatible = list(/datum/relation/enemy)
 
 /datum/relation/xenolover/wholesome/get_desc_string()
-	return "[holder] y [other.holder] parecen llevarse bien, aun con sus diferencias."
+	return "[holder] and [other.holder] seem to be on good terms, even if they differ from each other."
 
 /datum/relation/so
-	name = "Pareja"
-	desc = "Estan involucrados romanticamente."
+	name = "Significiant Other"
+	desc = "You are romantically involved."
 	incompatible = list(/datum/relation/enemy, /datum/relation/ex)
 
 /datum/relation/so/get_desc_string()
-	return "[holder] y [other.holder] parecen ser pareja."
+	return "[holder] and [other.holder] seem to be an item."
 
 /datum/relation/ex
 	name = "Ex"
-	desc = "Solian tener algo romantico, pero eso termino."
+	desc = "You used to be romantically involved, but not anymore."
 	incompatible = list(/datum/relation/lover, /datum/relation/xenolover, /datum/relation/so)
 
 /datum/relation/ex/get_desc_string()
-	return "[holder] y [other.holder] solian tener algo, pero ya no."
+	return "[holder] and [other.holder] used to be an item, but not anymore."
 
-/datum/relation/spessnam //CUANDO LOS ARBOLES EMPIEZAN A HABLAR PAN-SLAV
-	name = "Amistad del Servicio Militar"
-	desc = "Coincidieron al estar en servicio militar activo."
+/datum/relation/spessnam
+	name = "Served Together"
+	desc = "You have crossed paths while in active military service."
 
 /datum/relation/spessnam/get_candidates()
 	var/list/warbuds = ..()
@@ -183,4 +183,4 @@
 	return branchmates.len ? branchmates : warbuds
 
 /datum/relation/spessnam/get_desc_string()
-	return "[holder] y [other.holder] hicieron su servicio militar juntos en algun momento."
+	return "[holder] and [other.holder] served in military together at some point in the past."

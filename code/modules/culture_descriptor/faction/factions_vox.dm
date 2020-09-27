@@ -1,23 +1,24 @@
 /decl/cultural_info/faction/vox
 	name = FACTION_VOX_CREW
-	description = "La mayor parte de los vox se contentan con vivir y trabajar en las arquinaves, haciendo sus deberes asignados \
-	bajo la vigilante mirada de sus superiores, quienes a su vez sirven a los Apex. Aun si suele haber cierto nivel de alboroto \
-	social entre familias del arca, con frecuentes desafios y concursos cambiando las jerarquias constantemente, no suele ir mas lejos \
-	que el caos esperado de seres tan freneticos como los vox. El trabajador promedio de las arcas no es ambicioso, y sabe que las cosas \
-	podrian ser mucho peores."
+	description = "Most vox are content to live and work on the arkships, serving their alloted span under the watchful \
+	eye of their betters, who in turn serve the apex. Although there is always some degree of social turmoil amongst the \
+	ark families, with contests and challenges resulting in shifting heirarchies, it usually does not go any further than \
+	the general day-to-day energy exhibited by all vox. The average ark labourer is not ambitious, and knows things could \
+	be a lot worse."
 	hidden_from_codex = TRUE
 
 /decl/cultural_info/faction/vox/raider
 	name = FACTION_VOX_RAIDER
-	description = "Los incursores vox son famosos por su porte incansable, su crueldad y su ambicion, rasgos notables y destacados aun \
-	entre su propia gente. Un incursor exitoso puede esperar tanto una posicion elevada como influencia personal intensificada al volver \
-	triunfante a las arquinaves, pero un incursor fracasado disfrutara solo muerte o verguenza; por consiguiente, es natural que los incursores \
-	experimentados sean asesinos y ladrones expertos, con el sexto sentido de saber cuando huir y cuando pelear."
+	description = "Vox raiders are known for their restless energy, their cruelty, and their ambition, even amongst their \
+	own people. A successful raider can look forward to heightened social standing and personal power upon their triumphant \
+	return to the ark, but an unsuccessful raider enjoys only death or shame; it follows that experienced raiders are vicious, \
+	callous killers and thieves with a discerning eye for when to fight and when to flee."
 
-/decl/cultural_info/faction/vox/apex //la existencia duele
+/decl/cultural_info/faction/vox/apex
 	name = FACTION_VOX_APEX
-	description = "Es poco comun, pero no extraordinario, el raro evento de una intervencion directa de los Apex en las vidas de \
-	sus 'hijos'. Los pocos vox que son elegidos y marcados por los dioses maquina de las arcas disfrutan una alta posicion social, \
-	y son considerados 'intocables' de cierta forma, pero a la vez, se separan de su grupo social anterior. \
-	Ser el elegido de los dioses es solitario y agotador, pero no es infructuoso. Los peones favoritos de los apex \
-	recibiran aumentacion mental y fisica, tecnologia auralis antigua y modificaciones mentales avanzadas."
+	description = "It is rare, but not completely unheard of, for the apex to take a direct hand in the lives of \
+	their 'children'. Those vox who are singled out and marked by the machine-gods of the ark enjoy a heightened social \
+	standing, as they are seen as 'untouchable' in a way, but in turn are detatched from their previous social network. \
+	Being god-touched is lonely work and often backbreakingly difficult, but it is not without rewards. Physical and mental \
+	augmentation, ancient auralis technology and mind-enhancing persona editing may all be distributed by the apex to their \
+	favoured pawns."
