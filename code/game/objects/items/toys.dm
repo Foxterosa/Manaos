@@ -853,7 +853,7 @@
 /obj/item/toy/figure/lazy/attack_hand(mob/user as mob)
 	if(loc == user)
 		if(cooldown < world.time - 8)
-			playsound(user, 'sound/creatures/dog_bark1.ogg', 20, 1)
+			playsound(user, 'sound/creatures/pug_bark1.ogg', 20, 1)
 			cooldown = world.time
 			return
 	..()
