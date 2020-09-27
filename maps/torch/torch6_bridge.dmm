@@ -9641,16 +9641,16 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
 "pE" = (
-/obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 6
+	},
+/obj/machinery/computer/modular/preset/security{
+	icon_state = "console";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
@@ -16343,10 +16343,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "HY" = (
-/obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
@@ -16358,6 +16354,10 @@
 	dir = 8;
 	pixel_x = 23;
 	pixel_y = -3
+	},
+/obj/machinery/computer/modular/preset/security{
+	icon_state = "console";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
@@ -19347,7 +19347,8 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
-/obj/structure/bed/chair/comfy/red{
+/obj/structure/bed/chair/office/comfy/red{
+	icon_state = "comfyofficechair_preview";
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
@@ -27908,7 +27909,7 @@ Oo
 mt
 QJ
 Nu
-cE
+nL
 nS
 zU
 qO
@@ -28110,7 +28111,7 @@ Nu
 Nu
 Nu
 np
-nL
+cE
 nT
 JR
 qO

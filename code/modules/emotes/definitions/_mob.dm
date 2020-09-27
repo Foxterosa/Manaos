@@ -118,6 +118,8 @@
 		/decl/emote/audible/aslap,
 		/decl/emote/audible/nya,
 		/decl/emote/audible/awoo,
+		/decl/emote/audible/bark,
+		/decl/emote/audible/bark2,
 		/decl/emote/audible/oorah,
 		/decl/emote/audible/fsnap,
 		/decl/emote/audible/fsnap2,

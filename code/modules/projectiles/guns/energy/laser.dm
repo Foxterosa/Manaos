@@ -21,11 +21,13 @@
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/laser/practice
-	name = "practice laser carbine"
-	desc = "A modified version of the HI G40E, this one fires less concentrated energy bolts designed for target practice."
+	name = "carabina G40E-P"
+	desc = "Una versión modificada del HI G40E, este dispara rayos de energía menos concentrados diseñados para prácticas de tiro."
 	icon_state = "laserp"
 	projectile_type = /obj/item/projectile/beam/practice
 	charge_cost = 10 //How much energy is needed to fire.
+	wielded_item_state = "lasersecp-wielded"
+	item_state = "lasersecp"
 
 /obj/item/weapon/gun/energy/laser/practice/proc/hacked()
 	return projectile_type != /obj/item/projectile/beam/practice

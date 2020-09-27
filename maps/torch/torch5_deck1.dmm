@@ -4257,13 +4257,13 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/item/weapon/gun/energy/stunrevolver/rifle,
-/obj/item/weapon/gun/energy/taser/carbine,
 /obj/effect/floor_decal/industrial/outline/grey{
 	color = "";
 	desc = "F8F8F8"
 	},
 /obj/structure/window/reinforced,
+/obj/item/weapon/gun/energy/gun/smg,
+/obj/item/weapon/gun/energy/gun/smg,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "ahb" = (
@@ -24430,21 +24430,6 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
 /area/medical/reslab)
-"jxe" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/white,
-/area/medical/infirmary)
 "jxG" = (
 /obj/effect/floor_decal/corner/paleblue/half{
 	dir = 4
@@ -27839,6 +27824,22 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"nlX" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
+/obj/effect/catwalk_plated,
+/obj/item/device/radio/intercom{
+	dir = 8;
+	pixel_x = 21
+	},
+/turf/simulated/floor/plating,
+/area/hallway/primary/firstdeck/fore)
 "nmb" = (
 /obj/structure/cable/green,
 /obj/structure/cable/green{
@@ -29063,6 +29064,21 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/lounge)
+"oFu" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/white,
+/area/medical/infirmary)
 "oFw" = (
 /obj/structure/window/reinforced,
 /turf/simulated/floor/wood/walnut,
@@ -33920,22 +33936,6 @@
 "tAS" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/firstdeck/foreport)
-"tBp" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/obj/effect/catwalk_plated,
-/obj/item/device/radio/intercom{
-	dir = 8;
-	pixel_x = 21
-	},
-/turf/simulated/floor/plating,
-/area/hallway/primary/firstdeck/fore)
 "tCu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -46987,7 +46987,7 @@ ahI
 aiU
 ajV
 kju
-tBp
+nlX
 ast
 qKH
 akW
@@ -58302,7 +58302,7 @@ lEf
 afK
 mEj
 hEb
-jxe
+oFu
 aqQ
 fXb
 lrG
