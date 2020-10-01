@@ -2,15 +2,25 @@
 	..()
 	name = "Tool design ([item_name])"
 
+/datum/design/item/tool/oxycandle
+	name = "oxycandle"
+	desc = "a device which, via a chemical reaction, can pressurise small areas."
+	id = "oxycandle"
+	req_tech = list(TECH_ENGINEERING = 2)
+	materials = list(MATERIAL_STEEL = 3000)
+	chemicals = list(/datum/reagent/sodiumchloride = 20, /datum/reagent/acetone = 20)
+	build_path = /obj/item/device/oxycandle
+	sort_string = "VAGAA"
+	design_class = "General Tools"
+
 /datum/design/item/tool/light_replacer
 	name = "light replacer"
 	desc = "A device to automatically replace lights. Refill with working lightbulbs."
 	id = "light_replacer"
-	req_tech = list(TECH_MAGNET = 3, TECH_MATERIAL = 4)
+	req_tech = list(TECH_MAGNET = 3, TECH_MATERIAL = 3)
 	materials = list(MATERIAL_STEEL = 1500, MATERIAL_SILVER = 150, MATERIAL_GLASS = 3000)
 	build_path = /obj/item/device/lightreplacer
 	sort_string = "VAGAB"
-	design_class = "General Tools"
 
 /datum/design/item/tool/airlock_brace
 	name = "airlock brace"
@@ -83,16 +93,6 @@
 	materials = list(MATERIAL_STEEL = 15000, MATERIAL_GLASS = 10000, MATERIAL_SILVER = 2000)
 	build_path = /obj/item/weapon/rpd
 	sort_string = "VAGAI"
-
-/datum/design/item/tool/oxycandle
-	name = "oxycandle"
-	desc = "a device which, via a chemical reaction, can pressurise small areas."
-	id = "oxycandle"
-	req_tech = list(TECH_ENGINEERING = 2)
-	materials = list(MATERIAL_STEEL = 3000)
-	chemicals = list(/datum/reagent/sodiumchloride = 20, /datum/reagent/acetone = 20)
-	build_path = /obj/item/device/oxycandle
-	sort_string = "VAGAJ"
 
 /datum/design/item/advmop
 	name = "Advanced Mop"

@@ -134,7 +134,7 @@
 
 /datum/design/item/stock_part/hyperwave_filter
 	id = "s-filter"
-	req_tech = list(TECH_DATA = 3, TECH_MAGNET = 3)
+	req_tech = list(TECH_DATA = 3, TECH_MAGNET = 3, TECH_MATERIAL = 3, TECH_BLUESPACE = 2)
 	materials = list(MATERIAL_STEEL = 40, MATERIAL_SILVER = 10)
 	build_path = /obj/item/weapon/stock_parts/subspace/filter
 	sort_string = "UAAAB"

@@ -677,6 +677,7 @@
 	req_tech = list(TECH_ENGINEERING = 2, TECH_COMBAT = 2, TECH_BLUESPACE = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/dispersermiddle
 	sort_string = "KCAAH"
+	design_class = "Obstruction Field Machinery"
 
 /datum/design/circuit/disperserback
 	name = "obstruction field disperser material deconstructor"
