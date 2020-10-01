@@ -16,7 +16,7 @@
 	name = "command duty gloves"
 	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely gold accent color."
 	icon_state = "duty_gloves_cmd"
-	item_state = "duty_gloves_cmd"
+	item_state = "duty_gloves_cmd"	
 
 /obj/item/clothing/gloves/thick/duty/solgov/exp
 	name = "exploration duty gloves"
@@ -29,9 +29,6 @@
 	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely blue accent color."
 	icon_state = "duty_gloves_med"
 	item_state = "duty_gloves_med"
-	siemens_coefficient = 1.1
-	permeability_coefficient = 0.01
-	germ_level = 0
 
 /obj/item/clothing/gloves/thick/duty/solgov/sec
 	name = "security duty gloves"
