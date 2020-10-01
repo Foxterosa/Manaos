@@ -258,6 +258,7 @@
 	item_state = "tacmask"
 	siemens_coefficient = 0.7
 	body_parts_covered = FACE|EYES
+	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT
 	armor = list(
 		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,
