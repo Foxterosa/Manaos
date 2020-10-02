@@ -475,4 +475,5 @@
 	name = "boina negra de servicio médico"
 	desc = "Una boina negra que denota en el Servicio de Salud Interestelar. Para tus necesidades... edgys."
 	icon_state = "beret_med_black"
+	item_icons = list(slot_head_str = 'icons/mob/onmob/onmob_head.dmi')
 	item_state = "beret_corporate_officer"
