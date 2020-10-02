@@ -130,10 +130,10 @@ var/list/gear_datums = list()
 	. += "<a href='?src=\ref[src];prev_slot=1'>\<\<</a><b><font color = '[fcolor]'>\[[pref.gear_slot]\]</font> </b><a href='?src=\ref[src];next_slot=1'>\>\></a>"
 
 	if(config.max_gear_cost < INFINITY)
-		. += "<b><font color = '[fcolor]'>[total_cost]/[config.max_gear_cost]</font> loadout points spent.</b>"
+		. += "<b><font color = '[fcolor]'>[total_cost]/[config.max_gear_cost]</font> puntos de equipamiento usados.</b>"
 
-	. += "<a href='?src=\ref[src];clear_loadout=1'>Clear Loadout</a>"
-	. += "<a href='?src=\ref[src];toggle_hiding=1'>[hide_unavailable_gear ? "Show all" : "Hide unavailable"]</a></center></td></tr>"
+	. += "<a href='?src=\ref[src];clear_loadout=1'>Limpiar equipamiento</a>"
+	. += "<a href='?src=\ref[src];toggle_hiding=1'>[hide_unavailable_gear ? "Mostrar todo" : "Ocultar lo no disponible"]</a></center></td></tr>"
 
 	. += "<tr><td colspan=3><center><b>"
 	var/firstcat = 1
@@ -183,7 +183,7 @@ var/list/gear_datums = list()
 		if(allowed && G.banned_species)
 			if(pref.species in G.banned_species)
 				allowed = FALSE
-				entry += "<br><i><font color=cc5555>Not supported by current species.</font></i>"
+				entry += "<br><i><font color=cc5555>No es posible en la especie actual.</font></i>"
 		if(allowed && G.allowed_roles)
 			var/good_job = 0
 			var/bad_job = 0
@@ -409,13 +409,13 @@ var/list/gear_datums = list()
 		return //avoids weird stuff.
 	var/atom/placed_in = H.equip_to_storage(item)
 	if(placed_in)
-		to_chat(H, "<span class='notice'>Placing \the [item] in your [placed_in.name]!</span>")
+		to_chat(H, "<span class='notice'>Colocando \the [item] en tu [placed_in.name]...</span>")
 	else if(H.equip_to_appropriate_slot(item))
-		to_chat(H, "<span class='notice'>Placing \the [item] in your inventory!</span>")
+		to_chat(H, "<span class='notice'>Colocando \the [item] en tu inventario...</span>")
 	else if(H.put_in_hands(item))
-		to_chat(H, "<span class='notice'>Placing \the [item] in your hands!</span>")
+		to_chat(H, "<span class='notice'>Colocando \the [item] en tus manos...</span>")
 	else
-		to_chat(H, "<span class='danger'>Dropping \the [item] on the ground!</span>")
+		to_chat(H, "<span class='danger'>Colocando \the [item] en el suelo...</span>")
 
 /datum/gear/proc/implant_into_mob(var/mob/living/carbon/human/H, obj/item/I)
 	var/obj/item/organ/external/organ_to_implant_into = H.get_organ(BP_CHEST)
@@ -427,14 +427,14 @@ var/list/gear_datums = list()
 		organ_to_implant_into = H.get_organ(implantloc)
 		if(A.augment_flags == AUGMENTATION_MECHANIC)
 			if(!BP_IS_ROBOTIC(organ_to_implant_into))
-				to_chat(H, SPAN_WARNING("Your [organ_to_implant_into.name] is not robotic, and therefore the [A] can not be installed!"))
+				to_chat(H, SPAN_WARNING("Tu [organ_to_implant_into.name] no es robotico, por lo tanto el [A] no puede ser instalado!"))
 				qdel(A)
 				return
 		A.replaced(H, organ_to_implant_into)
-		to_chat(H, SPAN_NOTICE("Implanting you with [A] in your [organ_to_implant_into.name]!"))
+		to_chat(H, SPAN_NOTICE("Implantando el [A] en tu [organ_to_implant_into.name]..."))
 
 	if(istype(I, /obj/item/weapon/implant))
 		var/obj/item/weapon/implant/IM = I
 		IM.forceMove(organ_to_implant_into)
 		IM.implanted(H) //just in case
-		to_chat(H, SPAN_NOTICE("Implanting you with [IM] in your [organ_to_implant_into.name]!"))
+		to_chat(H, SPAN_NOTICE("Implantando el [IM] en tu [organ_to_implant_into.name]..."))

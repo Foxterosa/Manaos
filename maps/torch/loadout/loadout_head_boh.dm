@@ -1,6 +1,6 @@
 /datum/gear/head/misc_military_cover
-	display_name = "marine cover selection"
-	description = "A selection of marine covers."
+	display_name = "Gorras de uniforme Marine"
+	description = "Una seleccion de gorras de uniforme, rama Marine."
 	path = /obj/item/clothing/head
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/marine_corps)
@@ -15,17 +15,17 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(cover)
 
 /datum/gear/head/self_protection_helmet
-	display_name = "civilian self-protection helmet"
+	display_name = "Casco de autodefensa civil"
 	path = /obj/item/clothing/head/hardhat/self_protection
 	cost = 2
 	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/head/fleetcap
-	display_name = "fleet cap"
+	display_name = "Gorra de la Flota"
 	path = /obj/item/clothing/head/soft/solgov/fleet
 	cost = 0
 
 /datum/gear/head/corpsecberet
-	display_name = "corporate security beret"
+	display_name = "Boina de seguridad privada"
 	path = /obj/item/clothing/head/beret/guard
 	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/private_security)

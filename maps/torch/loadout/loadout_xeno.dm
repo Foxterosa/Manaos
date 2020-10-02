@@ -2,15 +2,15 @@
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/gloves/dress/modified
-	display_name = "modified gloves, dress"
+	display_name = "Guantes modificados de gala"
 	path = /obj/item/clothing/gloves/color/white/modified
-	sort_category = "Xenowear"
+	sort_category = "Vestimenta No Humana"
 	whitelisted = list(SPECIES_UNATHI)
 
 /datum/gear/gloves/duty/modified
-	display_name = "modified gloves, duty"
+	display_name = "Guantes modificados de trabajo"
 	path = /obj/item/clothing/gloves/thick/duty/modified
-	sort_category = "Xenowear"
+	sort_category = "Vestimenta No Humana"
 	whitelisted = list(SPECIES_UNATHI)
 
 /datum/gear/suit/unathi/savage_hunter
@@ -34,23 +34,23 @@
 	allowed_branches = null
 
 /datum/gear/uniform/skrell_bodysuit
-	display_name = "Skrellian uniform"
+	display_name = "Uniforme Skrell"
 	path = /obj/item/clothing/under/skrelljumpsuit
-	sort_category = "Xenowear"
+	sort_category = "Vestimenta No Humana"
 
 // Patches
 /datum/gear/accessory/cultex_patch
-	display_name = "Cultural Exchange patch"
+	display_name = "Parche de Intercambio Cultural"
 	path = /obj/item/clothing/accessory/solgov/cultex_patch
-	description = "A shoulder patch representing the Expeditionary Corps."
+	description = "Un parche de hombro que representa a la Flota Expedicionaria."
 	allowed_branches = NT_BRANCHES
 	whitelisted = list(SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_IPC)
-	sort_category = "Xenowear"
+	sort_category = "Vestimenta No Humana"
 
 /datum/gear/accessory/nabber_gloves
-	display_name = "GAS Insuls"
+	display_name = "Guantes insulados para SAM"
 	path = /obj/item/clothing/gloves/nabber
-	description = "A set of insulated gloves meant for GAS."
+	description = "Un par de guantes insulados creados para uso serpentoide."
 	whitelisted = list(SPECIES_NABBER)
-	sort_category = "Xenowear"
+	sort_category = "Vestimenta No Humana"
 

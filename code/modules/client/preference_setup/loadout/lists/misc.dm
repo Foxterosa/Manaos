@@ -1,9 +1,9 @@
 /datum/gear/cane
-	display_name = "baston"
+	display_name = "Baston"
 	path = /obj/item/weapon/cane
 
 /datum/gear/union_card
-	display_name = "membresia de union"
+	display_name = "Membresia de union"
 	path = /obj/item/weapon/card/union
 
 /datum/gear/union_card/spawn_on_mob(var/mob/living/carbon/human/H, var/metadata)
@@ -13,35 +13,35 @@
 		card.signed_by = H.real_name
 
 /datum/gear/dice
-	display_name = "pack de dados"
+	display_name = "Pack de dados"
 	path = /obj/item/weapon/storage/pill_bottle/dice
 
 /datum/gear/dice/nerd
-	display_name = "pack de dados (gaming)"
+	display_name = "Pack de dados (gaming)"
 	path = /obj/item/weapon/storage/pill_bottle/dice_nerd
 
 /datum/gear/cards
-	display_name = "baraja de cartas"
+	display_name = "Baraja de cartas"
 	path = /obj/item/weapon/deck/cards
 
 /datum/gear/tarot
-	display_name = "baraja de cartas de tarot"
+	display_name = "Baraja de cartas de tarot"
 	path = /obj/item/weapon/deck/tarot
 
 /datum/gear/holder
-	display_name = "sostienecartas"
+	display_name = "Sostienecartas"
 	path = /obj/item/weapon/deck/holder
 
 /datum/gear/cardemon_pack
-	display_name = "booster pack de Cardemon"
+	display_name = "Booster pack de Cardemon"
 	path = /obj/item/weapon/pack/cardemon
 
 /datum/gear/spaceball_pack
-	display_name = "booster pack de Spaceball"
+	display_name = "Booster pack de Spaceball"
 	path = /obj/item/weapon/pack/spaceball
 
 /datum/gear/flask
-	display_name = "petaca"
+	display_name = "Petaca"
 	path = /obj/item/weapon/reagent_containers/food/drinks/flask/barflask
 
 /datum/gear/flask/New()
@@ -49,7 +49,7 @@
 	gear_tweaks += new/datum/gear_tweak/reagents(lunchables_ethanol_reagents())
 
 /datum/gear/vacflask
-	display_name = "petaca de vacio"
+	display_name = "Petaca de vacio"
 	path = /obj/item/weapon/reagent_containers/food/drinks/flask/vacuumflask
 
 /datum/gear/vacflask/New()
@@ -57,28 +57,28 @@
 	gear_tweaks += new/datum/gear_tweak/reagents(lunchables_drink_reagents())
 
 /datum/gear/coffeecup
-	display_name = "taza de cafe"
+	display_name = "Taza de cafe"
 	path = /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/knife
-	display_name = "cuchillo plegable"
+	display_name = "Cuchillo plegable"
 	path = /obj/item/weapon/material/knife/folding
 	cost = 3
 
 /datum/gear/knife_wood
-	display_name = "cuchillo campesino"
+	display_name = "Cuchillo campesino"
 	path = /obj/item/weapon/material/knife/folding/wood
 	cost = 3
 
 /datum/gear/knife_tacticool
-	display_name = "cuchillo plegable tactico"
+	display_name = "Cuchillo plegable tactico"
 	path = /obj/item/weapon/material/knife/folding/tacticool
 	cost = 3
 
 /datum/gear/lunchbox
-	display_name = "lunchera"
-	description = "Una pequeña lunchera."
+	display_name = "Lunchera"
+	description = "Una adorable lunchera."
 	cost = 2
 	path = /obj/item/weapon/storage/lunchbox
 
@@ -101,9 +101,9 @@
 /datum/gear/mre/New()
 	..()
 	var/mre = list()
-	mre["mre estandar"] = /obj/item/weapon/storage/mre/random
-	mre["mre vegano"] = /obj/item/weapon/storage/mre/menu9
-	mre["mre de proteina"] = /obj/item/weapon/storage/mre/menu10
+	mre["MRE estandar"] = /obj/item/weapon/storage/mre/random
+	mre["MRE vegano"] = /obj/item/weapon/storage/mre/menu9
+	mre["MRE de proteina"] = /obj/item/weapon/storage/mre/menu10
 	gear_tweaks += new /datum/gear_tweak/path(mre)
 
 /datum/gear/towel
@@ -112,127 +112,126 @@
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/plush_toy
-	display_name = "peluche"
-	description = "Un peluche."
+	display_name = "Peluche"
+	description = "Un peluche. Abrazar a discrecion."
 	path = /obj/item/toy/plushie
 
 /datum/gear/plush_toy/New()
 	..()
 	var/plushes = list()
-	plushes["peluche de ninfa de Diona"] = /obj/item/toy/plushie/nymph
-	plushes["peluche de raton"] = /obj/item/toy/plushie/mouse
-	plushes["peluche de gatito"] = /obj/item/toy/plushie/kitten
-	plushes["peluche de lagarto"] = /obj/item/toy/plushie/lizard
-	plushes["peluche de arana"] = /obj/item/toy/plushie/spider
-	plushes["peluche de farwa"] = /obj/item/toy/plushie/farwa
-	plushes["peluche de kobold"] = /obj/item/toy/plushie/kobold
+	plushes["Peluche de ninfa de Diona"] = /obj/item/toy/plushie/nymph
+	plushes["Peluche de raton"] = /obj/item/toy/plushie/mouse
+	plushes["Peluche de gatito"] = /obj/item/toy/plushie/kitten
+	plushes["Peluche de lagarto"] = /obj/item/toy/plushie/lizard
+	plushes["Peluche de arana"] = /obj/item/toy/plushie/spider
+	plushes["Peluche de farwa"] = /obj/item/toy/plushie/farwa
+	plushes["Peluche de kobold"] = /obj/item/toy/plushie/kobold
 	gear_tweaks += new /datum/gear_tweak/path(plushes)
 
 /datum/gear/workvisa
-	display_name = "visa de trabajo"
-	description = "Una visa de trabajo entregada por el Sol Central Government para el proposito de trabajar."
+	display_name = "Visa de trabajo"
+	description = "Una visa de trabajo entregada por el Gobierno Central Solar para propositos laborales."
 	path = /obj/item/weapon/paper/workvisa
 
 /datum/gear/mirror/
-	display_name = "espejo de mano"
-	sort_category = "Cosmetics"
+	display_name = "Espejo de mano"
 	path = /obj/item/weapon/mirror
 
 /datum/gear/lipstick
-	display_name = "lapices labiales"
+	display_name = "Lapices labiales"
 	path = /obj/item/weapon/lipstick
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/comb
-	display_name = "peine de plastico"
+	display_name = "Peine de plastico"
 	path = /obj/item/weapon/haircomb
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/mask
-	display_name = "mascarilla esteril"
+	display_name = "Mascarilla esteril"
 	path = /obj/item/clothing/mask/surgical
 	cost = 2
 
 /datum/gear/smokingpipe
-	display_name = "pipa de fumar"
+	display_name = "Pipa de fumar"
 	path = /obj/item/clothing/mask/smokable/pipe
 
 /datum/gear/cornpipe
-	display_name = "pipa de maiz"
+	display_name = "Pipa de maiz"
 	path = /obj/item/clothing/mask/smokable/pipe/cobpipe
 
 /datum/gear/matchbook
-	display_name = "fosforos"
+	display_name = "Fosforos"
 	path = /obj/item/weapon/storage/box/matches
 
 /datum/gear/lighter
-	display_name = "encendedor barato"
+	display_name = "Encendedor barato"
 	path = /obj/item/weapon/flame/lighter
 
 /datum/gear/lighter/New()
 	..()
 	var/colours = list()
 	colours["random"] = /obj/item/weapon/flame/lighter/random
-	colours["rojo"] = /obj/item/weapon/flame/lighter/red
-	colours["amarillo"] = /obj/item/weapon/flame/lighter/yellow
-	colours["cian"] = /obj/item/weapon/flame/lighter/cyan
-	colours["verde"] = /obj/item/weapon/flame/lighter/green
-	colours["rosa"] = /obj/item/weapon/flame/lighter/pink
+	colours["Rojo"] = /obj/item/weapon/flame/lighter/red
+	colours["Amarillo"] = /obj/item/weapon/flame/lighter/yellow
+	colours["Cian"] = /obj/item/weapon/flame/lighter/cyan
+	colours["Verde"] = /obj/item/weapon/flame/lighter/green
+	colours["Rosa"] = /obj/item/weapon/flame/lighter/pink
 	gear_tweaks += new/datum/gear_tweak/path(colours)
 
 /datum/gear/zippo
-	display_name = "zippo"
+	display_name = "Encendedor Zippo"
 	path = /obj/item/weapon/flame/lighter/zippo
 
 /datum/gear/zippo/New()
 	..()
 	var/colours = list()
 	colours["random"] = /obj/item/weapon/flame/lighter/zippo/random
-	colours["plata"] = /obj/item/weapon/flame/lighter/zippo
-	colours["ennegrecido"] = /obj/item/weapon/flame/lighter/zippo/black
-	colours["gunmetal"] = /obj/item/weapon/flame/lighter/zippo/gunmetal
-	colours["bronce"] = /obj/item/weapon/flame/lighter/zippo/bronze
-	colours["rosa"] = /obj/item/weapon/flame/lighter/zippo/pink
+	colours["Plateado"] = /obj/item/weapon/flame/lighter/zippo
+	colours["Negro"] = /obj/item/weapon/flame/lighter/zippo/black
+	colours["Gris"] = /obj/item/weapon/flame/lighter/zippo/gunmetal
+	colours["Bronce"] = /obj/item/weapon/flame/lighter/zippo/bronze
+	colours["Magenta"] = /obj/item/weapon/flame/lighter/zippo/pink
 	gear_tweaks += new/datum/gear_tweak/path(colours)
 
 /datum/gear/ashtray
-	display_name = "cenicero de plastico"
+	display_name = "Cenicero de plastico"
 	path = /obj/item/weapon/material/ashtray/plastic
 
 /datum/gear/cigars
-	display_name = "caja de cigarros"
+	display_name = "Caja de cigarros"
 	path = /obj/item/weapon/storage/fancy/cigar
 	cost = 2
 
 /datum/gear/cigar
-	display_name = "cigarro premium"
+	display_name = "Cigarro premium"
 	path = /obj/item/clothing/mask/smokable/cigarette/cigar
 
 /datum/gear/cigar/New()
 	..()
 	var/cigar_type = list()
-	cigar_type["premium"] = /obj/item/clothing/mask/smokable/cigarette/cigar
+	cigar_type["Cigarro Premium"] = /obj/item/clothing/mask/smokable/cigarette/cigar
 	cigar_type["Cohiba Robusto"] = /obj/item/clothing/mask/smokable/cigarette/cigar/cohiba
 	gear_tweaks += new/datum/gear_tweak/path(cigar_type)
 
 /datum/gear/ecig
-	display_name = "cigarrillo electronico"
+	display_name = "Cigarrillo electronico"
 	path = /obj/item/clothing/mask/smokable/ecig/util
 
 /datum/gear/ecig/deluxe
-	display_name = "cigarrillo electronico deluxe"
+	display_name = "Cigarrillo electronico deluxe"
 	path = /obj/item/clothing/mask/smokable/ecig/deluxe
 	cost = 2
 
 /datum/gear/bible
-	display_name = "libro sagrado"
+	display_name = "Libro sagrado"
 	path = /obj/item/weapon/storage/bible
 	cost = 2
 
 /datum/gear/bible/New()
 	..()
 	var/books = list()
-	books["biblia (ajustable)"] = /obj/item/weapon/storage/bible
+	books["Biblia (ajustable)"] = /obj/item/weapon/storage/bible
 	books["Biblia"] = /obj/item/weapon/storage/bible/bible
 	books["Tanakh"] = /obj/item/weapon/storage/bible/tanakh
 	books["Coran"] = /obj/item/weapon/storage/bible/quran
@@ -241,28 +240,28 @@
 	gear_tweaks += new/datum/gear_tweak/path(books)
 
 /datum/gear/swiss
-	display_name = "combi-knife"
+	display_name = "Navaja suiza coloreable"
 	path = /obj/item/weapon/material/knife/folding/swiss
 	cost = 4
 	flags = GEAR_HAS_COLOR_SELECTION
 
 
 /datum/gear/cross
-	display_name = "cruz"
+	display_name = "Cruz"
 	path = /obj/item/weapon/material/cross
 	cost = 2
 
 /datum/gear/cross/New()
 	..()
 	var/crosstype = list()
-	crosstype["cross, madera"] = /obj/item/weapon/material/cross/wood
-	crosstype["cross, plata"] = /obj/item/weapon/material/cross/silver
-	crosstype["cross, oro"] = /obj/item/weapon/material/cross/gold
+	crosstype["Cruz de madera"] = /obj/item/weapon/material/cross/wood
+	crosstype["Cruz de plata"] = /obj/item/weapon/material/cross/silver
+	crosstype["Cruz de oro"] = /obj/item/weapon/material/cross/gold
 	gear_tweaks += new/datum/gear_tweak/path(crosstype)
 
 /datum/gear/cigarettes //haha copypaste go brrrrrrrr
-	display_name = "cigarette pack selection"
-	description = "A selection of cigarette packets from several cigarette brands, each containing 6 cigarettes. Got a light?"
+	display_name = "Paquetes de cigarrillos"
+	description = "Una seleccion de paquetes de cigarrillos de varias marcas, cada uno conteniendo 6 cigarrillos. Tiene fuego?"
 	cost = 1
 	path = /obj/item/weapon/storage/fancy/cigarettes
 

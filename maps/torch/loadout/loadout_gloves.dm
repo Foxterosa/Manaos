@@ -1,5 +1,5 @@
 /datum/gear/gloves/colored
-	display_name = "gloves, colored"
+	display_name = "Guantes a color"
 
 /datum/gear/gloves/latex
 
@@ -12,11 +12,11 @@
 /datum/gear/gloves/botany
 
 /datum/gear/gloves/dress
-	display_name = "gloves, dress"
+	display_name = "Guantes de gala"
 	path = /obj/item/clothing/gloves/color/white
 
 /datum/gear/gloves/duty
-	display_name = "gloves, duty"
+	display_name = "Guantes de trabajo"
 	path = /obj/item/clothing/gloves/thick/duty
 	cost = 2
 

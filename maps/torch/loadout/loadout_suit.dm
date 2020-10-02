@@ -45,17 +45,17 @@
 	allowed_roles = DOCTOR_ROLES
 
 /datum/gear/suit/labcoat_ec
-	display_name = "labcoat, Expeditionary Corps"
+	display_name = "Bata de laboratorio, Flota Expedicionaria"
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/science/ec
 	allowed_branches = NT_BRANCHES
 
 /datum/gear/suit/labcoat_ec_cso
-	display_name = "labcoat, chief science officer, Expeditionary Corps"
+	display_name = "Bata de laboratorio del Oficial Cientifico en Jefe, Flota Expedicionaria"
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec
 	allowed_roles = list(/datum/job/rd)
 
 /datum/gear/suit/wintercoat_dais
-	display_name = "winter coat, DAIS"
+	display_name = "Abrigo invernal, SAID"
 	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/rd)
 
 /datum/gear/suit/coat
@@ -94,8 +94,8 @@
 	allowed_roles = RESEARCH_ROLES
 
 /datum/gear/tactical/pcarrier
-	display_name = "plate carrier selection"
-	description = "A selection of military plate carriers. They can be equipped with armor plates, but provides no protection of their own."
+	display_name = "Portaplacas militares"
+	description = "Una seleccion de portaplacas militares. Pueden ser reforzados con placas de armadura, pero no poseen proteccion propia."
 	path = /obj/item/clothing/suit/armor/pcarrier
 	cost = 1
 	slot = slot_wear_suit
@@ -104,32 +104,32 @@
 /datum/gear/tactical/pcarrier/New()
 	..()
 	var/armors = list()
-	armors["black plate carrier"] = /obj/item/clothing/suit/armor/pcarrier
-	armors["navy plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/navy
-	armors["blue plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/blue
-	armors["green plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/green
-	armors["tan plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/tan
+	armors["Portaplacas negro"] = /obj/item/clothing/suit/armor/pcarrier
+	armors["Portaplacas azul marino"] = /obj/item/clothing/suit/armor/pcarrier/navy
+	armors["Portaplacas azul"] = /obj/item/clothing/suit/armor/pcarrier/blue
+	armors["Portaplacas verde"] = /obj/item/clothing/suit/armor/pcarrier/green
+	armors["Portaplacas color cafe"] = /obj/item/clothing/suit/armor/pcarrier/tan
 	gear_tweaks += new/datum/gear_tweak/path(armors)
 
 /datum/gear/suit/sfp
-	display_name = "Agent's jacket"
-	path = /obj/item/clothing/suit/storage/toggle/agent_jacket
+	display_name = "Abrigo de Agente"
+	path = /obj/item/clothing/suit/storage/toggle/agent_jacket //agente 22, por favor volve
 	allowed_roles = list(/datum/job/detective)
 
 /datum/gear/suit/wintercoat_fleet
-	display_name = "Abrigo de invierno, flota"
+	display_name = "Abrigo invernal, Flota"
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet
 	cost = 2
 	allowed_roles = COMMAND_ROLES
 
 /datum/gear/suit/wintercoat_solgov
-	display_name = "Abrigo de invierno, expedicion"
+	display_name = "Abrigo invernal expedicionario"
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov
 	cost = 2
 	allowed_roles = COMMAND_ROLES
 
 /datum/gear/suit/wintercoat_marines
-	display_name = "Abrigo de invierno, marines."
+	display_name = "Abrigo invernal Marine"
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army
 	cost = 2
 	allowed_roles = list(/datum/job/squad_lead, /datum/job/grunt, /datum/job/sea, /datum/job/combat_tech)
