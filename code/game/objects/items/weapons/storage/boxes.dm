@@ -413,6 +413,18 @@
 
 	startswith = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector = 7)
 
+/obj/item/weapon/storage/box/autoinjectors/advanced
+	name = "box of advanced injectors"
+	desc = "Contiene diferentes tipos de quimicos avanzados en pequeñas dosis."
+
+	startswith = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin = 2,)
+
 /obj/item/weapon/storage/box/lights
 	name = "box of replacement bulbs"
 	icon = 'icons/obj/storage.dmi'

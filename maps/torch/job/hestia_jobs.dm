@@ -86,7 +86,7 @@
 	department = "el Lider de Escuadron"
 	department = "Infanteria"
 	department_flag = INF
-	total_positions = 2
+	total_positions = 1
 	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
@@ -94,17 +94,21 @@
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 22)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
-	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
-						SKILL_ELECTRICAL   = SKILL_ADEPT,
+	min_skill = list(	SKILL_CONSTRUCTION = SKILL_BASIC,
+						SKILL_ELECTRICAL   = SKILL_BASIC,
 						SKILL_MEDICAL      = SKILL_BASIC,
+						SKILL_ANATOMY      = SKILL_BASIC,
 						SKILL_COMBAT       = SKILL_ADEPT,
 						SKILL_WEAPONS      = SKILL_ADEPT)
 
 	max_skill = list(	SKILL_COMBAT       = SKILL_MAX,
 						SKILL_WEAPONS      = SKILL_MAX,
 						SKILL_EVA		   = SKILL_MAX,
-						SKILL_CONSTRUCTION = SKILL_MAX,
-						SKILL_ELECTRICAL   = SKILL_MAX)
+						SKILL_CONSTRUCTION = SKILL_EXPERT,
+						SKILL_ELECTRICAL   = SKILL_EXPERT,
+						SKILL_MEDICAL      = SKILL_EXPERT,
+						SKILL_ANATOMY      = SKILL_EXPERT)
+
 
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
@@ -119,12 +123,6 @@
 		"Ingeniero de Combate",
 		"Medico de Combate")
 
-/datum/job/combat_tech/is_position_available()
-	if(..())
-		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Lider de Escuadron")
-				return TRUE
-	return FALSE
 
 /datum/job/combat_tech/get_description_blurb()
 	return "<span class='warning'>NO eres seguridad. Ignorar esto puede conllevar a un Jobban o algo peor...</span> - Eres el unico Tecnico de Combate en el escuadron. Tu trabajo es proveer tanto tu asistencia militar como demoliciones tacticas, en caso de ser necesarias. Puedes asumir el mando si no hay un Lider de Escuadron presente."
