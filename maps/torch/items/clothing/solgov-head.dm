@@ -470,3 +470,9 @@
 		SPECIES_UNATHI = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
 		SPECIES_SKRELL = 'maps/torch/icons/obj/skrell/obj_head_solgov_skrell.dmi',
 		)
+
+/obj/item/clothing/head/beret/solgov/med
+	name = "boina negra de servicio médico"
+	desc = "Una boina negra que denota en el Servicio de Salud Interestelar. Para tus necesidades... edgys."
+	icon_state = "beret_med_black"
+	item_state = "beret_corporate_officer"

@@ -210,9 +210,3 @@
 	desc = "Un gorro que te identifica como la enfermera del lugar."
 	icon_state = "nurse_cmo_s"
 	item_state = "nurse_cmo_s"
-
-/obj/item/clothing/head/beret/med
-	name = "boina negra de servicio médico"
-	desc = "Una boina negra que denota en el Servicio de Salud Interestelar. Para tus necesidades... edgys."
-	icon_state = "beret_med_black"
-	item_state = "beret_corporate_officer"

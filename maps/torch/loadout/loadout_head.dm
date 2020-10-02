@@ -15,7 +15,7 @@
 	berets["diplomatic security beret"] = /obj/item/clothing/head/beret/solgov/diplomatic
 	berets["border security beret"] = /obj/item/clothing/head/beret/solgov/borderguard
 	berets["orbital assault beret"] = /obj/item/clothing/head/beret/solgov/orbital
-	berets["boina negra de servicio médico"] = /obj/item/clothing/head/beret/med
+	berets["boina negra de servicio medico"] = /obj/item/clothing/head/beret/solgov/med
 	gear_tweaks += new/datum/gear_tweak/path(berets)
 
 /datum/gear/head/veteranhat
