@@ -107,7 +107,7 @@
 	gear_tweaks += new /datum/gear_tweak/path(mre)
 
 /datum/gear/towel
-	display_name = "toalla"
+	display_name = "Toalla"
 	path = /obj/item/weapon/towel
 	flags = GEAR_HAS_COLOR_SELECTION
 
