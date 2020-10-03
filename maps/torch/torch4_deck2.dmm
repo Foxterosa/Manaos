@@ -1307,6 +1307,24 @@
 "cp" = (
 /turf/simulated/wall/prepainted,
 /area/storage/medical)
+"cq" = (
+/obj/structure/table/steel,
+/obj/item/device/radio/intercom{
+	pixel_y = 23
+	},
+/obj/machinery/camera/network/engineering{
+	c_tag = "Robotics - Lower"
+	},
+/obj/machinery/cell_charger,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen,
+/obj/effect/floor_decal/corner/yellow{
+	icon_state = "corner_white";
+	dir = 5
+	},
+/obj/item/weapon/folder/blue,
+/turf/simulated/floor/tiled,
+/area/assembly/robotics/lower)
 "cr" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -11367,10 +11385,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
-"wA" = (
-/obj/item/weapon/folder/blue,
-/turf/simulated/wall/r_wall/prepainted,
-/area/assembly/robotics/lower)
 "wE" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/head/aux2)
@@ -11638,23 +11652,6 @@
 	},
 /turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/atmos)
-"xF" = (
-/obj/structure/table/steel,
-/obj/item/device/radio/intercom{
-	pixel_y = 23
-	},
-/obj/machinery/camera/network/engineering{
-	c_tag = "Robotics - Lower"
-	},
-/obj/machinery/cell_charger,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 5
-	},
-/turf/simulated/floor/tiled,
-/area/assembly/robotics/lower)
 "xG" = (
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/corner/blue{
@@ -38884,7 +38881,7 @@ EX
 XR
 XR
 XR
-xF
+cq
 gg
 KY
 XR
@@ -39288,7 +39285,7 @@ eK
 fu
 gj
 XR
-wA
+XR
 XR
 XR
 XR

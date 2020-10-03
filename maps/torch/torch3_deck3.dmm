@@ -371,6 +371,11 @@
 "aT" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/thirddeck/aftstarboard)
+"aU" = (
+/obj/item/weapon/stool/wood,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/freezer,
+/area/crew_quarters/head)
 "aV" = (
 /obj/structure/lattice,
 /obj/structure/grille,
@@ -4836,11 +4841,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters_boh/cabin_main)
-"ju" = (
-/obj/machinery/light/small,
-/obj/item/weapon/stool/wood,
-/turf/simulated/floor/tiled/freezer,
-/area/crew_quarters/head)
 "jv" = (
 /obj/random/trash,
 /obj/structure/railing/mapped{
@@ -41680,7 +41680,7 @@ fV
 Fq
 gO
 iD
-ju
+aU
 uU
 UE
 UZ

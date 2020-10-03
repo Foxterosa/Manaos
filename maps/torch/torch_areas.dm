@@ -765,7 +765,7 @@
 	icon_state = "auxstorage"
 
 /area/storage/cargo
-	name = "Cargo - Almacén"
+	name = "Cargo - Almacén superior"
 	icon_state = "quartstorage"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_cargo)
@@ -884,7 +884,7 @@
 
 // Crew areas
 /area/crew_quarters/bar
-	name = "\improper Cubierta 3 -Bar"
+	name = "\improper Cubierta 3 - Bar"
 	icon_state = "bar"
 	sound_env = LARGE_SOFTFLOOR
 	req_access = list(access_bar)
@@ -961,7 +961,7 @@
 // Security
 
 /area/security/bo
-	name = "\improper Seguridad - Jefe de Brig"
+	name = "\improper Seguridad - Guardian de Brig"
 	icon_state = "Warden"
 	req_access = list(access_armory)
 
@@ -1281,7 +1281,7 @@
 	icon_state = "disposal"
 
 /area/maintenance/incinerator
-	name = "\improper Incinerador"
+	name = "\improper Cubierta 2 - Incinerador"
 	icon_state = "disposal"
 	req_access = list(list(access_engine, access_medical, access_cargo))
 
@@ -1720,15 +1720,15 @@
 	req_access = list(access_gunnery)
 
 /area/command/gunnery/ob
-	name = "\improper KOSMAG Exterior"
+	name = "\improper Cubierta 3 - KOSMAG Exterior"
 	icon_state = "kosmag1"
 
 /area/command/gunnery/ob/inside
-	name = "\improper KOSMAG Interior"
+	name = "\improper Cubierta 3 - KOSMAG Interior"
 	icon_state = "kosmag2"
 
 /area/command/gunnery/ob/airlock
-	name = "\improper KOSMAG Esclusa de aire"
+	name = "\improper Cubierta 3 - KOSMAG Esclusa de aire"
 	icon_state = "kosmagairlock"
 
 /area/command/gunnery/mim
