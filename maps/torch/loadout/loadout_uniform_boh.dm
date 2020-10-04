@@ -1,6 +1,6 @@
 /datum/gear/uniform/misc_military
-	display_name = "marine fatigue selection"
-	description = "A selection of marine uniforms."
+	display_name = "Uniformes Marine"
+	description = "Una seleccion de uniformes Marine estandar"
 	path = /obj/item/clothing/under
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/marine_corps)
@@ -14,12 +14,12 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(uniform)
 
 /datum/gear/uniform/fleet
-	display_name = "fleet fatigue"
+	display_name = "Uniforme de la Flota"
 	path = /obj/item/clothing/under/solgov/utility/fleet
 	cost = 0
 
 /datum/gear/uniform/fleet/officer
-	display_name = "fleet officer fatigues"
+	display_name = "Uniforme de Oficial de la Flota"
 	path = /obj/item/clothing/under/solgov/utility/fleet/officer
 	cost = 0
 	allowed_roles = COMMANDANDOFFICER_ROLES

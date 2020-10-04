@@ -2,7 +2,7 @@
 /datum/gear/uniform
 
 /datum/gear/uniform/utility
-	display_name = "Contractor Utility Uniform"
+	display_name = "Uniforme utilitario de Contratista"
 	path = /obj/item/clothing/under/solgov/utility
 
 /datum/gear/uniform/shortjumpskirt
@@ -21,7 +21,7 @@
 /datum/gear/uniform/dress
 
 /datum/gear/uniform/kimono
-	display_name = "kimono, colour select"
+	display_name = "Kimono, coloreable"
 	path = /obj/item/clothing/under/kimono
 	flags = GEAR_HAS_COLOR_SELECTION
 
