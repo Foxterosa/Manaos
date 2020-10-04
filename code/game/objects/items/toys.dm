@@ -605,7 +605,7 @@
 	icon_state = "smug"
 
 /obj/item/toy/figure/alicia
-	name = "figura dea accion: Alicia"
+	name = "figura de accion: Alicia"
 	desc = "Una figura de accion de Smug marca \"Manaos\". IS SCIENCE TIME!"
 	icon_state = "alicia"
 
