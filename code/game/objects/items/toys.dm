@@ -605,7 +605,7 @@
 	icon_state = "smug"
 
 /obj/item/toy/figure/alicia
-	name = "figura dea accion: Alicia"
+	name = "figura de accion: Alicia"
 	desc = "Una figura de accion de Smug marca \"Manaos\". IS SCIENCE TIME!"
 	icon_state = "alicia"
 
@@ -633,7 +633,7 @@
 
 /obj/item/toy/figure/sydney2
 	name = "figura de accion: Sydney maga"
-	desc = "Una figura de accion de Sydney maga marca \"Space Life\". *aslap"
+	desc = "Una figura de accion de Sydney maga marca \"Manaos\". *aslap"
 	icon_state = "sydney2"
 
 /obj/item/toy/figure/jr
@@ -840,6 +840,50 @@
 	name = "figura de accion: Angelina"
 	desc = "Una figura de accion de Angelina marca \"Manaos\"."
 	icon_state = "angelina"
+
+/obj/item/toy/figure/lazy
+	name = "figura de accion: Lazy"
+	desc = "Una figura de accion de Lazy marca \"Manaos\"."
+	icon_state = "lazy"
+	var/cooldown = 0
+/obj/item/toy/figure/lazy/attack_self(mob/user as mob)
+	if(cooldown < world.time - 8)
+		playsound(user, 'sound/creatures/dog_bark1.ogg', 20, 1)
+		cooldown = world.time
+/obj/item/toy/figure/lazy/attack_hand(mob/user as mob)
+	if(loc == user)
+		if(cooldown < world.time - 8)
+			playsound(user, 'sound/creatures/pug_bark1.ogg', 20, 1)
+			cooldown = world.time
+			return
+	..()
+
+/obj/item/toy/figure/gabriel
+	name = "figura de accion: Gabriel"
+	desc = "Una figura de accion de Gabriel marca \"Manaos\"."
+	icon_state = "gabriel"
+	var/cooldown = 0
+/obj/item/toy/figure/gabriel/attack_self(mob/user as mob)
+	if(cooldown < world.time - 8)
+		playsound(user, 'sound/effects/sparks1.ogg', 20, 1)
+		cooldown = world.time
+/obj/item/toy/figure/gabriel/attack_hand(mob/user as mob)
+	if(loc == user)
+		if(cooldown < world.time - 8)
+			playsound(user, 'sound/effects/sparks1.ogg', 20, 1)
+			cooldown = world.time
+			return
+	..()
+
+/obj/item/toy/figure/azazel
+	name = "figura de accion: Azazel"
+	desc = "Una figura de accion de Azazel marca \"Manaos\"."
+	icon_state = "azazel"
+
+/obj/item/toy/figure/iryna
+	name = "figura de accion: Iryna"
+	desc = "Una figura de accion de Iryna marca \"Manaos\"."
+	icon_state = "iryna"
 
 
 

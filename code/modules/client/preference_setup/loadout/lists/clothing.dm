@@ -1,72 +1,72 @@
 
 /datum/gear/clothing/
-	sort_category = "Ropa y Accesorios Superiores"
+	sort_category = "Accesorios Superiores"
 	category = /datum/gear/clothing/
 	slot = slot_tie
 
 /datum/gear/clothing/flannel
-	display_name = "sueter de franela, coloreable"
+	display_name = "Sueter de franela, coloreable"
 	path = /obj/item/clothing/accessory/toggleable/flannel
 	slot = slot_tie
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/clothing/scarf
-	display_name = "bufanda"
+	display_name = "Bufanda"
 	path = /obj/item/clothing/accessory/scarf
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/clothing/hawaii
-	display_name = "camisa hawaiiana"
+	display_name = "Camisa hawaiiana"
 	path = /obj/item/clothing/accessory/toggleable/hawaii
 
 /datum/gear/clothing/hawaii/New()
 	..()
 	var/list/shirts = list()
-	shirts["camisa hawaiiana azul"] = /obj/item/clothing/accessory/toggleable/hawaii
-	shirts["camisa hawaiiana roja"] = /obj/item/clothing/accessory/toggleable/hawaii/red
-	shirts["camisa hawaiiana random"] = /obj/item/clothing/accessory/toggleable/hawaii/random
+	shirts["Camisa hawaiiana azul"] = /obj/item/clothing/accessory/toggleable/hawaii
+	shirts["Camisa hawaiiana roja"] = /obj/item/clothing/accessory/toggleable/hawaii/red
+	shirts["Camisa hawaiiana random"] = /obj/item/clothing/accessory/toggleable/hawaii/random
 	gear_tweaks += new/datum/gear_tweak/path(shirts)
 
 /datum/gear/clothing/suspenders
-	display_name = "tirantes"
+	display_name = "Tirantes"
 	path = /obj/item/clothing/accessory/suspenders
 
 /datum/gear/clothing/wcoat
-	display_name = "chaleco, coloreable"
+	display_name = "Chaleco, coloreable"
 	path = /obj/item/clothing/accessory/wcoat
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/clothing/zhongshan
-	display_name = "campera zhongshan, coloreable"
+	display_name = "Campera zhongshan, coloreable"
 	path = /obj/item/clothing/accessory/toggleable/zhongshan
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/clothing/dashiki
-	display_name = "daishikis"
+	display_name = "Daishikis"
 	path = /obj/item/clothing/accessory/dashiki
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/clothing/thawb
-	display_name = "thawb"
+	display_name = "Thawb"
 	path = /obj/item/clothing/accessory/thawb
 
 /datum/gear/clothing/sherwani
-	display_name = "sherwani, coloreable"
+	display_name = "Sherwani, coloreable"
 	path = /obj/item/clothing/accessory/sherwani
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/clothing/qipao
-	display_name = "blusa qipao, coloreable"
+	display_name = "Blusa qipao, coloreable"
 	path = /obj/item/clothing/accessory/qipao
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/clothing/sweater
-	display_name = "sueter de tortuga, coloreable"
+	display_name = "Sueter de tortuga, coloreable"
 	path = /obj/item/clothing/accessory/sweater
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/clothing/tangzhuang
-	display_name = "campera tangzhuang, coloreable"
+	display_name = "Campera tangzhuang, coloreable"
 	path = /obj/item/clothing/accessory/tangzhuang
 	flags = GEAR_HAS_COLOR_SELECTION
 

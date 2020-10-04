@@ -5,13 +5,13 @@
 	banned_species = list(SPECIES_PLASMASANS)
 
 /datum/gear/head/beret
-	display_name = "boina, coloreable"
+	display_name = "Boiina, coloreable"
 	path = /obj/item/clothing/head/beret/plaincolor
 	flags = GEAR_HAS_COLOR_SELECTION
 	description = "Una boina simple de color liso. Esta no tiene ningun emblema o insignia."
 
 /datum/gear/head/bandana
-	display_name = "bandanas"
+	display_name = "Bandanas"
 	path = /obj/item/clothing
 
 /datum/gear/head/bandana/New()
@@ -19,136 +19,136 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(typesof(/obj/item/clothing/mask/bandana) + typesof(/obj/item/clothing/head/bandana))
 
 /datum/gear/head/beanie
-	display_name = "gorro, "
+	display_name = "Gorro de lana, coloreable"
 	path = /obj/item/clothing/head/beanie
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/head/bow
-	display_name = "lazo para pelo, coloreable"
+	display_name = "Lazo para pelo, coloreable"
 	path = /obj/item/clothing/head/hairflower/bow
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/head/flat_cap
-	display_name = "gorra plana, coloreable"
+	display_name = "Gorra plana, coloreable"
 	path = /obj/item/clothing/head/flatcap
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/head/cap
-	display_name = "gorras"
+	display_name = "Gorras varias"
 	path = /obj/item/clothing/head
 
 /datum/gear/head/cap/New()
 	..()
 	var/caps = list()
-	caps["gorra negra"] = /obj/item/clothing/head/soft/black
-	caps["gorra azul"] = /obj/item/clothing/head/soft/blue
-	caps["gorra verde"] = /obj/item/clothing/head/soft/green
-	caps["gorra gris"] = /obj/item/clothing/head/soft/grey
-	caps["gorra de cartero"] = /obj/item/clothing/head/mailman
-	caps["gorra naranja"] = /obj/item/clothing/head/soft/orange
-	caps["gorra purpura"] = /obj/item/clothing/head/soft/purple
-	caps["gorra arcoiris"] = /obj/item/clothing/head/soft/rainbow
-	caps["gorra roja"] = /obj/item/clothing/head/soft/red
-	caps["gorra blanca"] = /obj/item/clothing/head/soft/mime
-	caps["gorra amarilla"] = /obj/item/clothing/head/soft/yellow
-	caps["gorra de correo de major bill"] = /obj/item/clothing/head/soft/mbill
+	caps["Gorra negra"] = /obj/item/clothing/head/soft/black
+	caps["Gorra azul"] = /obj/item/clothing/head/soft/blue
+	caps["Gorra verde"] = /obj/item/clothing/head/soft/green
+	caps["Gorra gris"] = /obj/item/clothing/head/soft/grey
+	caps["Gorra de cartero"] = /obj/item/clothing/head/mailman
+	caps["Gorra naranja"] = /obj/item/clothing/head/soft/orange
+	caps["Gorra purpura"] = /obj/item/clothing/head/soft/purple
+	caps["Gorra arcoiris"] = /obj/item/clothing/head/soft/rainbow
+	caps["Gorra roja"] = /obj/item/clothing/head/soft/red
+	caps["Gorra blanca"] = /obj/item/clothing/head/soft/mime
+	caps["Gorra amarilla"] = /obj/item/clothing/head/soft/yellow
+	caps["Gorra de Major Bill"] = /obj/item/clothing/head/soft/mbill
 	gear_tweaks += new/datum/gear_tweak/path(caps)
 
 /datum/gear/head/hairflower
-	display_name = "horquilla de flor"
+	display_name = "Horquilla de flor"
 	path = /obj/item/clothing/head/hairflower
 
 /datum/gear/head/hairflower/New()
 	..()
 	var/pins = list()
-	pins["horquilla azul"] = /obj/item/clothing/head/hairflower/blue
-	pins["horquilla rosa"] = /obj/item/clothing/head/hairflower/pink
-	pins["horquilla roja"] = /obj/item/clothing/head/hairflower
-	pins["horquilla amarilla"] = /obj/item/clothing/head/hairflower/yellow
+	pins["Horquilla azul"] = /obj/item/clothing/head/hairflower/blue
+	pins["Horquilla rosa"] = /obj/item/clothing/head/hairflower/pink
+	pins["Horquilla roja"] = /obj/item/clothing/head/hairflower
+	pins["Horquilla amarilla"] = /obj/item/clothing/head/hairflower/yellow
 	gear_tweaks += new/datum/gear_tweak/path(pins)
 
 /datum/gear/head/hardhat
-	display_name = "cascos de construccion"
+	display_name = "Cascos de construccion"
 	path = /obj/item/clothing/head/hardhat
 	cost = 2
 
 /datum/gear/head/hardhat/New()
 	..()
 	var/hardhats = list()
-	hardhats["casco azul"] = /obj/item/clothing/head/hardhat/dblue
-	hardhats["casco naranja"] = /obj/item/clothing/head/hardhat/orange
-	hardhats["casco rojo"] = /obj/item/clothing/head/hardhat/red
-	hardhats["casco liviando de control de daño"] = /obj/item/clothing/head/hardhat/EMS/DC_light
-	hardhats["casco del Emergency Management Bureau"] = /obj/item/clothing/head/hardhat/damage_control/EMB
-	hardhats["casco rojo antiguo del Emergency Management Bureau"] = /obj/item/clothing/head/hardhat/damage_control/EMB_Ancient
-	hardhats["casco amarillo antiguo del Emergency Management Bureau"] = /obj/item/clothing/head/hardhat/damage_control/EMB_Ancient/yellow
-	hardhats["casco blanco antiguo del Emergency Management Bureau"] = /obj/item/clothing/head/hardhat/damage_control/EMB_Ancient/white
-	hardhats["casco viejo de autoproteccion"] = /obj/item/clothing/head/hardhat/self_protection/old
+	hardhats["Casco azul"] = /obj/item/clothing/head/hardhat/dblue
+	hardhats["Casco naranja"] = /obj/item/clothing/head/hardhat/orange
+	hardhats["Casco rojo"] = /obj/item/clothing/head/hardhat/red
+	hardhats["Casco liviando de control de daño"] = /obj/item/clothing/head/hardhat/EMS/DC_light
+	hardhats["Casco de la Oficina de Gestion de Emergencias"] = /obj/item/clothing/head/hardhat/damage_control/EMB
+	hardhats["Casco rojo de la Oficina de Gestion de Emergencias"] = /obj/item/clothing/head/hardhat/damage_control/EMB_Ancient
+	hardhats["Casco amarillo de la Oficina de Gestion de Emergencias"] = /obj/item/clothing/head/hardhat/damage_control/EMB_Ancient/yellow
+	hardhats["Casco blanco de la Oficina de Gestion de Emergencias"] = /obj/item/clothing/head/hardhat/damage_control/EMB_Ancient/white
+	hardhats["Casco viejo de autoproteccion"] = /obj/item/clothing/head/hardhat/self_protection/old
 	gear_tweaks += new/datum/gear_tweak/path(hardhats)
 
 /datum/gear/head/formalhat
-	display_name = "sombreros formales"
+	display_name = "Sombreros formales"
 	path = /obj/item/clothing/head
 
 /datum/gear/head/formalhat/New()
 	..()
 	var/formalhats = list()
-	formalhats["sombrero de barquero"] = /obj/item/clothing/head/boaterhat
-	formalhats["bombin"] = /obj/item/clothing/head/bowler
-	formalhats["fedora"] = /obj/item/clothing/head/fedora //m'lady
-	formalhats["trilby de pluma"] = /obj/item/clothing/head/feathertrilby
-	formalhats["fez"] = /obj/item/clothing/head/fez
-	formalhats["sombrero de copa"] = /obj/item/clothing/head/that
-	formalhats["fedora marron"] = /obj/item/clothing/head/det
-	formalhats["fedora gris"] = /obj/item/clothing/head/det/grey
+	formalhats["Sombrero de barquero"] = /obj/item/clothing/head/boaterhat
+	formalhats["Bombin"] = /obj/item/clothing/head/bowler
+	formalhats["Fedora"] = /obj/item/clothing/head/fedora //m'lady
+	formalhats["Trilby de pluma"] = /obj/item/clothing/head/feathertrilby
+	formalhats["Fez"] = /obj/item/clothing/head/fez
+	formalhats["Sombrero de copa"] = /obj/item/clothing/head/that
+	formalhats["Fedora marron"] = /obj/item/clothing/head/det
+	formalhats["Fedora gris"] = /obj/item/clothing/head/det/grey
 	gear_tweaks += new/datum/gear_tweak/path(formalhats)
 
 /datum/gear/head/informalhat
-	display_name = "sombreros casuales"
+	display_name = "Sombreros casuales"
 	path = /obj/item/clothing/head
 
 /datum/gear/head/informalhat/New()
 	..()
 	var/informalhats = list()
-	informalhats["sombrero cowboy"] = /obj/item/clothing/head/cowboy_hat
-	informalhats["ushanka"] = /obj/item/clothing/head/ushanka
+	informalhats["Sombrero cowboy"] = /obj/item/clothing/head/cowboy_hat
+	informalhats["Ushanka"] = /obj/item/clothing/head/ushanka
 	gear_tweaks += new/datum/gear_tweak/path(informalhats)
 
 /datum/gear/head/hijab
-	display_name = "hijab, coloreable"
+	display_name = "Hijab, coloreable"
 	path = /obj/item/clothing/head/hijab
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/head/kippa
-	display_name = "kippa, coloreable"
+	display_name = "Kippa, coloreable"
 	path = /obj/item/clothing/head/kippa
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/head/turban
-	display_name = "turbante, coloreable"
+	display_name = "Turbante, coloreable"
 	path = /obj/item/clothing/head/turban
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/head/taqiyah
-	display_name = "taqiyah, coloreable"
+	display_name = "Taqiyah, coloreable"
 	path = /obj/item/clothing/head/taqiyah
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/head/rastacap
-	display_name = "gorro de rastafari"
+	display_name = "Gorro de rastafari"
 	path = /obj/item/clothing/head/rastacap
 
 /datum/gear/head/surgical
-	display_name = "gorras estandar de cirugia"
+	display_name = "Gorras estandar de cirugia"
 	path = /obj/item/clothing/head/surgery
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/head/surgical/custom
-	display_name = "gorra de cirugia, coloreable"
+	display_name = "Gorra de cirugia, coloreable"
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/head/welding
-	display_name = "mascaras de soldar"
+	display_name = "Mascaras de soldar"
 	path = /obj/item/clothing/head/welding
 
 /datum/gear/head/welding/New()
@@ -162,10 +162,10 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(welding_masks)
 
 /datum/gear/head/tankccap
-	display_name = "gorra acolchada"
+	display_name = "Gorra acolchada"
 	path = /obj/item/clothing/head/tank
 
 /datum/gear/tactical/balaclava
-	display_name = "balaclava"
+	display_name = "Balaclava"
 	path = /obj/item/clothing/mask/balaclava
 	slot = slot_wear_mask

@@ -35,20 +35,22 @@
 /turf/unsimulated/arena2,
 /area/beach/playa)
 "al" = (
-/turf/simulated/floor/wood/walnut,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "am" = (
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#aa5f61"
 	},
-/turf/simulated/floor/wood/walnut,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "an" = (
 /obj/structure/table/standard,
 /obj/item/weapon/material/hatchet,
 /obj/item/weapon/material/minihoe,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "ao" = (
 /obj/structure/closet/secure_closet/personal/empty,
@@ -191,13 +193,13 @@
 /area/beach/med)
 "aR" = (
 /obj/machinery/portable_atmospherics/hydroponics,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "aS" = (
 /obj/machinery/seed_storage/garden{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "aU" = (
 /obj/machinery/washing_machine,
@@ -301,13 +303,11 @@
 /obj/structure/table/standard,
 /obj/item/weapon/storage/firstaid/toxin,
 /obj/item/weapon/storage/firstaid/toxin,
-/obj/structure/curtain/open/privacy{
-	pixel_x = 32
-	},
 /turf/simulated/floor/carpet/blue2,
 /area/beach/med)
 "bm" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/privacy,
 /turf/simulated/floor/wood/walnut,
 /area/beach/med)
 "bn" = (
@@ -315,13 +315,14 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/simulated/floor/wood/walnut,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "bo" = (
 /obj/machinery/vending/hydronutrients{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "bp" = (
 /turf/simulated/floor/wood/walnut,
@@ -434,9 +435,6 @@
 /obj/structure/table/standard,
 /obj/item/weapon/storage/firstaid/trauma,
 /obj/item/weapon/storage/firstaid/trauma,
-/obj/structure/curtain/open/privacy{
-	pixel_x = 32
-	},
 /turf/simulated/floor/carpet/blue2,
 /area/beach/med)
 "bG" = (
@@ -444,20 +442,21 @@
 /area/casinojack/bar)
 "bH" = (
 /obj/machinery/light,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "bI" = (
 /obj/machinery/light_switch{
 	pixel_x = 0;
 	pixel_y = -24
 	},
-/turf/simulated/floor/wood/walnut,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "bJ" = (
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/beach/cocina)
 "bK" = (
 /obj/machinery/door/unpowered/simple/walnut,
@@ -519,9 +518,6 @@
 /obj/structure/table/standard,
 /obj/item/weapon/storage/firstaid/fire,
 /obj/item/weapon/storage/firstaid/fire,
-/obj/structure/curtain/open/privacy{
-	pixel_x = 32
-	},
 /turf/simulated/floor/carpet/blue2,
 /area/beach/med)
 "bV" = (
@@ -808,14 +804,9 @@
 "cR" = (
 /turf/simulated/wall/walnut,
 /area/beach/cuarto1)
-"cS" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
-/turf/simulated/floor/carpet/orange,
-/area/beach/principal)
 "cT" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/wood/walnut,
 /area/beach/principal)
 "cU" = (
@@ -1234,7 +1225,7 @@
 /obj/structure/table/standard,
 /obj/item/weapon/material/hatchet,
 /obj/item/weapon/material/minihoe,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/casinojack/bar)
 "eg" = (
 /obj/structure/flora/pottedplant/smalltree,
@@ -1420,11 +1411,11 @@
 /area/casinojack/command)
 "eJ" = (
 /obj/machinery/portable_atmospherics/hydroponics,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/casinojack/bar)
 "eK" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/casinojack/bar)
 "eL" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
@@ -1472,13 +1463,6 @@
 	icon_state = "desert1"
 	},
 /area/beach/playa)
-"eS" = (
-/obj/structure/flora/pottedplant/floorleaf,
-/obj/structure/curtain/open/privacy{
-	pixel_x = 32
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/beach/med)
 "eT" = (
 /obj/machinery/light,
 /turf/simulated/floor/carpet/blue2,
@@ -1502,12 +1486,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/green,
-/area/beach/med)
-"eW" = (
-/obj/structure/curtain/open/privacy{
-	pixel_x = 32
-	},
-/turf/simulated/floor/carpet/blue2,
 /area/beach/med)
 "eX" = (
 /obj/structure/table/glass,
@@ -1642,7 +1620,7 @@
 /obj/machinery/vending/hydronutrients{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/casinojack/bar)
 "fp" = (
 /obj/structure/extinguisher_cabinet{
@@ -1665,13 +1643,6 @@
 	icon_state = "desert4"
 	},
 /area/beach/playa)
-"fs" = (
-/obj/structure/curtain/open/bed{
-	pixel_x = -32;
-	pixel_y = 0
-	},
-/turf/simulated/floor/carpet/orange,
-/area/beach/principal)
 "fu" = (
 /obj/structure/table/glass,
 /obj/item/weapon/tableflag,
@@ -1739,7 +1710,7 @@
 /obj/machinery/seed_storage/garden{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/casinojack/bar)
 "fF" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
@@ -1773,10 +1744,6 @@
 "fJ" = (
 /obj/item/weapon/bedsheet/medical,
 /obj/structure/bed/padded,
-/obj/structure/curtain/open/privacy{
-	pixel_x = 0;
-	pixel_y = -32
-	},
 /turf/simulated/floor/carpet/green,
 /area/beach/med)
 "fK" = (
@@ -1841,7 +1808,7 @@
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/holofloor/grass,
 /area/casinojack/bar)
 "fU" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
@@ -1895,12 +1862,12 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/weapon/gun/projectile/shotgun/pump/combat,
-/obj/item/weapon/gun/projectile/shotgun/pump/combat,
 /obj/structure/window/reinforced{
 	dir = 1;
 	health = 1e+006
 	},
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,
 /turf/simulated/floor/carpet/red,
 /area/beach/sec)
 "gb" = (
@@ -1946,12 +1913,12 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/weapon/gun/energy/taser/carbine,
-/obj/item/weapon/gun/energy/taser/carbine,
 /obj/structure/window/reinforced{
 	dir = 1;
 	health = 1e+006
 	},
+/obj/item/weapon/gun/energy/gun/smg,
+/obj/item/weapon/gun/energy/gun/smg,
 /turf/simulated/floor/carpet/red,
 /area/beach/sec)
 "ge" = (
@@ -1991,6 +1958,7 @@
 /area/casinojack/command)
 "gj" = (
 /obj/structure/table/glass,
+/obj/machinery/recharger,
 /turf/simulated/floor/wood,
 /area/casinojack/command)
 "gk" = (
@@ -2035,10 +2003,6 @@
 	dir = 4
 	},
 /obj/structure/bed/padded,
-/obj/structure/curtain/open/privacy{
-	pixel_x = 0;
-	pixel_y = -32
-	},
 /turf/simulated/floor/carpet/green,
 /area/beach/med)
 "gq" = (
@@ -2454,6 +2418,7 @@
 /area/casinojack/command)
 "hA" = (
 /obj/structure/table/marble,
+/obj/machinery/recharger,
 /turf/simulated/floor/wood/walnut,
 /area/casinojack/command)
 "hB" = (
@@ -3073,13 +3038,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/beach/principal)
-"jm" = (
-/obj/structure/curtain/open/bed{
-	pixel_x = 32;
-	pixel_y = 0
-	},
-/turf/simulated/floor/carpet/orange,
-/area/beach/principal)
 "jn" = (
 /obj/machinery/vending/coffee{
 	icon_state = "coffee";
@@ -3186,6 +3144,7 @@
 	},
 /obj/structure/closet/crate/trashcart,
 /obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/reagent_containers/spray/cleaner,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/casinojack/sec)
 "jB" = (
@@ -3457,13 +3416,6 @@
 /obj/structure/table/standard,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/casinojack/sec)
-"ke" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 5
-	},
-/obj/structure/flora/pottedplant/floorleaf,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/casinojack/sec)
 "kf" = (
 /obj/machinery/door/airlock/glass/medical{
 	name = "Staff Lounge"
@@ -3515,14 +3467,8 @@
 /area/beach/sec)
 "km" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/wood/walnut,
-/area/beach/sec)
-"kn" = (
-/obj/structure/curtain/open/bed{
-	pixel_x = -32;
-	pixel_y = 0
-	},
-/turf/simulated/floor/carpet/red,
 /area/beach/sec)
 "ko" = (
 /obj/structure/table/rack,
@@ -3879,6 +3825,9 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood/walnut,
 /area/beach/playa)
 "kZ" = (
@@ -3910,8 +3859,6 @@
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
-/obj/item/weapon/gun/projectile/shotgun/pump/combat,
-/obj/item/weapon/gun/projectile/shotgun/pump/combat,
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 6
@@ -3920,6 +3867,8 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/casinojack/sec)
 "ld" = (
@@ -3958,8 +3907,6 @@
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
-/obj/item/weapon/gun/energy/taser,
-/obj/item/weapon/gun/energy/taser,
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 6
@@ -3968,6 +3915,8 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/casinojack/sec)
 "lf" = (
@@ -3982,8 +3931,6 @@
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
-/obj/item/weapon/gun/energy/taser/carbine,
-/obj/item/weapon/gun/energy/taser/carbine,
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 6
@@ -3992,6 +3939,8 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
+/obj/item/weapon/gun/energy/gun/smg,
+/obj/item/weapon/gun/energy/gun/smg,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/casinojack/sec)
 "lg" = (
@@ -4328,6 +4277,16 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor/wood/walnut,
 /area/beach/playa)
+"mb" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/structure/closet/hydrant{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/sec)
 "mg" = (
 /obj/structure/casino/roulette_chart,
 /obj/structure/table/gamblingtable,
@@ -5661,6 +5620,9 @@
 	dir = 5;
 	tag = "icon-corner_white (NORTHEAST)"
 	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/casinojack/principal)
 "pF" = (
@@ -6176,6 +6138,7 @@
 /area/nieve/sec)
 "qJ" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/sec)
 "qL" = (
@@ -6208,18 +6171,9 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/nieve/sec)
-"qO" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = 32
-	},
-/turf/simulated/floor/carpet/red,
-/area/nieve/sec)
 "qP" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/orange,
-/obj/structure/curtain/open/bed{
-	pixel_y = 32
-	},
 /turf/simulated/floor/carpet/red,
 /area/nieve/sec)
 "qQ" = (
@@ -6561,21 +6515,9 @@
 /area/nieve/bosque)
 "sa" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/privacy,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
-"sb" = (
-/obj/structure/curtain/open/privacy{
-	pixel_x = -32
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/nieve/med)
-"sd" = (
-/obj/structure/curtain/open/bed{
-	pixel_x = 32;
-	pixel_y = 0
-	},
-/turf/simulated/floor/carpet/red,
-/area/beach/sec)
 "se" = (
 /obj/machinery/door/airlock/multi_tile/glass/medical{
 	autoset_access = 0;
@@ -6597,10 +6539,6 @@
 	icon_state = "snack";
 	dir = 8
 	},
-/obj/structure/curtain/open/bed{
-	pixel_x = 32;
-	pixel_y = 0
-	},
 /turf/simulated/floor/carpet/orange,
 /area/beach/principal)
 "sj" = (
@@ -6608,21 +6546,8 @@
 	icon_state = "Cola_Machine";
 	dir = 8
 	},
-/obj/structure/curtain/open/bed{
-	pixel_x = 32;
-	pixel_y = 0
-	},
 /turf/simulated/floor/carpet/orange,
 /area/beach/principal)
-"sk" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
-/turf/simulated/floor/carpet/red,
-/area/beach/sec)
 "sl" = (
 /obj/structure/flora/tree/pine,
 /turf/unsimulated/mineral,
@@ -6632,19 +6557,6 @@
 /obj/structure/flora/grass/both,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
-"sn" = (
-/obj/structure/table/woodentable/walnut,
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
-/turf/simulated/floor/carpet/red,
-/area/beach/sec)
-"sr" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
-/turf/simulated/floor/carpet/red,
-/area/beach/sec)
 "ss" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -6827,6 +6739,7 @@
 /area/nieve/cuarto1)
 "sU" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/cuarto1)
 "sW" = (
@@ -6852,16 +6765,10 @@
 "ta" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/heart,
-/obj/structure/curtain/open/bed{
-	pixel_y = 32
-	},
 /turf/simulated/floor/carpet/orange,
 /area/nieve/cuarto1)
 "tb" = (
 /obj/structure/table/woodentable/walnut,
-/obj/structure/curtain/open/bed{
-	pixel_y = 32
-	},
 /turf/simulated/floor/carpet/orange,
 /area/nieve/cuarto1)
 "tc" = (
@@ -7251,6 +7158,7 @@
 "uu" = (
 /obj/structure/closet/crate/trashcart,
 /obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/reagent_containers/spray/cleaner,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
 "uv" = (
@@ -7283,9 +7191,6 @@
 /area/nieve/cuarto3)
 "uA" = (
 /obj/machinery/papershredder,
-/obj/structure/curtain/open/privacy{
-	pixel_x = -32
-	},
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
 "uB" = (
@@ -7311,13 +7216,18 @@
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
 "uF" = (
-/obj/structure/curtain/open/privacy{
-	pixel_x = 32
-	},
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/chemical_dispenser/tac_coffee/full/good,
 /turf/simulated/floor/carpet/orange,
 /area/nieve/med)
+"uG" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32;
+	pixel_y = 0;
+	pixel_z = 0
+	},
+/turf/simulated/floor/carpet/blue2,
+/area/beach/med)
 "uH" = (
 /obj/structure/flora/grass/green,
 /obj/structure/flora/grass/green,
@@ -7325,9 +7235,6 @@
 /area/nieve/bosque)
 "uJ" = (
 /obj/structure/table/woodentable/walnut,
-/obj/structure/curtain/open/privacy{
-	pixel_x = -32
-	},
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
 "uK" = (
@@ -7340,48 +7247,27 @@
 /turf/simulated/floor/carpet/orange,
 /area/nieve/med)
 "uM" = (
-/obj/structure/curtain/open/privacy{
-	pixel_x = 32
-	},
 /obj/structure/table/woodentable/walnut,
 /obj/item/weapon/storage/box/donut,
 /turf/simulated/floor/carpet/orange,
 /area/nieve/med)
 "uO" = (
 /obj/structure/table/woodentable/walnut,
-/obj/structure/curtain/open/privacy{
-	pixel_x = 0;
-	pixel_y = -32
-	},
+/obj/machinery/recharger,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
 "uP" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine,
-/obj/structure/curtain/open/privacy{
-	pixel_x = 0;
-	pixel_y = -32
-	},
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
 "uQ" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
-"uR" = (
-/obj/structure/curtain/open/privacy{
-	pixel_x = 0;
-	pixel_y = -32
-	},
-/turf/simulated/floor/wood/walnut,
-/area/nieve/med)
 "uS" = (
 /obj/structure/bed/chair/armchair/brown{
 	dir = 1
-	},
-/obj/structure/curtain/open/privacy{
-	pixel_x = 0;
-	pixel_y = -32
 	},
 /turf/simulated/floor/carpet/orange,
 /area/nieve/med)
@@ -7392,6 +7278,12 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
+"uV" = (
+/obj/structure/closet/crate/trashcart,
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor/carpet/red,
+/area/beach/sec)
 "uW" = (
 /obj/structure/bed/chair{
 	icon_state = "chair_preview";
@@ -7491,6 +7383,13 @@
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
+"vw" = (
+/obj/machinery/recharger/wallcharger{
+	dir = 4;
+	pixel_x = -24
+	},
+/turf/simulated/floor/carpet/red,
+/area/nieve/sec)
 "vz" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/grass/both,
@@ -7739,9 +7638,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/nieve/med)
 "wm" = (
-/obj/structure/curtain/open/privacy{
-	pixel_x = 32
-	},
 /obj/structure/table/woodentable/walnut,
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbay,
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbay,
@@ -7887,9 +7783,6 @@
 /turf/simulated/floor/carpet/orange,
 /area/nieve/principal)
 "wM" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
 /obj/structure/fitness/punchingbag,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/gimnasio)
@@ -7897,6 +7790,14 @@
 /obj/machinery/space_heater,
 /turf/simulated/floor/carpet/orange,
 /area/nieve/biblioteca)
+"wO" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32;
+	pixel_y = 0;
+	pixel_z = 0
+	},
+/turf/simulated/floor/wood/walnut,
+/area/beach/cambiador)
 "wQ" = (
 /obj/machinery/libraryscanner,
 /turf/simulated/floor/carpet/orange,
@@ -7914,6 +7815,7 @@
 /area/nieve/biblioteca)
 "wS" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/principal)
 "wT" = (
@@ -7924,6 +7826,7 @@
 /obj/machinery/atm{
 	pixel_x = -32
 	},
+/obj/machinery/recharger,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/principal)
 "wU" = (
@@ -8144,17 +8047,11 @@
 /area/nieve/biblioteca)
 "xB" = (
 /obj/structure/table/woodentable/walnut,
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
 /obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/biblioteca)
 "xC" = (
 /obj/structure/table/woodentable/walnut,
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
 /turf/simulated/floor/wood/walnut,
 /area/nieve/biblioteca)
 "xD" = (
@@ -8230,19 +8127,6 @@
 /obj/item/weapon/storage/bag/trash,
 /turf/simulated/floor/carpet/orange,
 /area/nieve/principal)
-"xR" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
-/turf/simulated/floor/wood/walnut,
-/area/nieve/biblioteca)
-"xS" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
-/obj/structure/table/woodentable/walnut,
-/turf/simulated/floor/carpet/orange,
-/area/nieve/principal)
 "xT" = (
 /obj/machinery/atm{
 	pixel_y = 32
@@ -8254,6 +8138,7 @@
 /obj/machinery/atm{
 	pixel_x = -32
 	},
+/obj/machinery/recharger,
 /turf/simulated/floor/carpet/orange,
 /area/nieve/principal)
 "xV" = (
@@ -8281,19 +8166,13 @@
 	},
 /turf/simulated/floor/carpet/orange,
 /area/nieve/principal)
-"xZ" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
-/turf/simulated/floor/carpet/orange,
-/area/nieve/principal)
-"ya" = (
-/obj/structure/curtain/open/bed{
+"yc" = (
+/obj/structure/closet/hydrant{
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/turf/simulated/floor/wood/walnut,
-/area/nieve/principal)
+/turf/simulated/floor/carpet/blue2,
+/area/beach/med)
 "yd" = (
 /obj/machinery/light{
 	dir = 8
@@ -8318,6 +8197,18 @@
 /obj/structure/flora/pottedplant/floorleafnieve,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/biblioteca)
+"yi" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
+"yk" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach/principal)
 "yl" = (
 /obj/structure/bed/chair/wood/walnut{
 	dir = 8
@@ -8453,6 +8344,12 @@
 /obj/item/device/flashlight/maglight,
 /turf/simulated/floor/holofloor/concrete,
 /area/nieve/garaje)
+"zg" = (
+/obj/structure/closet/crate/trashcart,
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor/carpet/red,
+/area/nieve/sec)
 "zi" = (
 /obj/item/clothing/suit/space/cult,
 /obj/effect/decal/cleanable/dirt,
@@ -8568,9 +8465,6 @@
 	},
 /area/nieve/bosque)
 "zW" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
 /obj/structure/table/woodentable/walnut,
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/heart,
 /turf/simulated/floor/carpet/orange,
@@ -8615,6 +8509,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/nieve/bosque)
+"Am" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/holofloor/grass,
+/area/casinojack/bar)
 "Aq" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/vehicle/train/atv/engine{
@@ -8669,12 +8567,6 @@
 	icon_state = "wood_broken3"
 	},
 /area/nieve/bosque)
-"AB" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
-/turf/simulated/floor/wood/walnut,
-/area/nieve/gimnasio)
 "AE" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -8710,6 +8602,7 @@
 /area/nieve/bosque)
 "AU" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/biblioteca)
 "AV" = (
@@ -8767,6 +8660,14 @@
 	},
 /turf/simulated/floor/wood,
 /area/nieve/bosque)
+"Bq" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32;
+	pixel_y = 0;
+	pixel_z = 0
+	},
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/principal)
 "Br" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
@@ -8833,6 +8734,19 @@
 	icon_state = "wood_broken1"
 	},
 /area/nieve/bosque)
+"BS" = (
+/obj/structure/flora/pottedplant/floorleaf,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32;
+	pixel_y = 0;
+	pixel_z = 0
+	},
+/turf/simulated/floor/carpet/red,
+/area/beach/sec)
+"BT" = (
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor/wood/walnut,
+/area/nieve/med)
 "BV" = (
 /obj/structure/flora/grass/both,
 /obj/structure/flora/grass/green,
@@ -8867,24 +8781,9 @@
 /obj/machinery/floodlight,
 /turf/simulated/floor/holofloor/concrete,
 /area/nieve/garaje)
-"Ci" = (
-/obj/effect/floor_decal/corner/green{
-	icon_state = "corner_white";
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/green{
-	dir = 5
-	},
-/obj/machinery/vending/wallmed1{
-	dir = 1;
-	icon_state = "wallmed";
-	name = "Emergency NanoMed";
-	pixel_x = 0;
-	pixel_y = -32
-	},
-/obj/structure/table/glass,
-/turf/simulated/floor/tiled/white,
-/area/casinojack/Med)
+"Ch" = (
+/turf/simulated/floor/holofloor/grass,
+/area/casinojack/bar)
 "Cm" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -8918,6 +8817,10 @@
 "Cz" = (
 /turf/simulated/wall/r_wall/hull,
 /area/casinojack/principal)
+"CA" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/holofloor/grass,
+/area/beach/cocina)
 "CB" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/janitorialcart,
@@ -8949,6 +8852,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/desert,
 /area/nieve/bosque)
+"CP" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/holofloor/grass,
+/area/beach/cocina)
 "CQ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/snow,
@@ -8987,6 +8894,12 @@
 /obj/structure/table/standard,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/casinojack/sec)
+"Da" = (
+/obj/structure/closet/crate/trashcart,
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor/carpet/blue2,
+/area/beach/med)
 "Dc" = (
 /obj/structure/table/marble,
 /obj/item/weapon/material/knife/kitchen,
@@ -9016,6 +8929,7 @@
 /area/nieve/bosque)
 "Dj" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/sauna)
 "Dk" = (
@@ -9046,6 +8960,15 @@
 	},
 /turf/simulated/floor/carpet/blue3,
 /area/casinojack/principal)
+"Dr" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white,
+/area/casinojack/Med)
 "Ds" = (
 /obj/machinery/button/blast_door{
 	id_tag = "garaje";
@@ -9073,6 +8996,7 @@
 /area/nieve/bosque)
 "DA" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/cuarto4)
 "DD" = (
@@ -9088,6 +9012,10 @@
 /obj/structure/flora/grass/green,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
+"DH" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/holofloor/grass,
+/area/casinojack/bar)
 "DK" = (
 /obj/structure/hygiene/toilet,
 /obj/item/device/radio,
@@ -9099,6 +9027,12 @@
 	icon_state = "wood_broken3"
 	},
 /area/nieve/bosque)
+"DM" = (
+/obj/structure/closet/hydrant{
+	pixel_y = 32
+	},
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/principal)
 "DN" = (
 /obj/structure/bed,
 /obj/effect/decal/cleanable/dirt,
@@ -9177,6 +9111,14 @@
 	},
 /turf/simulated/floor/carpet,
 /area/nieve/bosque)
+"Er" = (
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#aa5f61"
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/holofloor/grass,
+/area/beach/cocina)
 "Et" = (
 /obj/structure/closet/crate/medical,
 /obj/item/weapon/storage/firstaid/fire{
@@ -9203,6 +9145,12 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/holofloor/concrete,
 /area/nieve/garaje)
+"Eu" = (
+/obj/structure/closet/crate/trashcart,
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
 "Ev" = (
 /obj/structure/table/rack,
 /obj/item/weapon/pickaxe,
@@ -9236,6 +9184,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/desert,
 /area/nieve/bosque)
+"EJ" = (
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/simulated/floor/carpet/red,
+/area/beach/sec)
 "EN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -9412,6 +9367,12 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/nieve/bosque)
+"FZ" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet/red,
+/area/beach/sec)
 "Ga" = (
 /obj/machinery/light_switch{
 	pixel_x = 0;
@@ -9670,6 +9631,12 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/holofloor/concrete,
 /area/nieve/garaje)
+"HY" = (
+/obj/structure/closet/hydrant{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet/orange,
+/area/nieve/principal)
 "Ia" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/device/flashlight/lamp/green,
@@ -9785,6 +9752,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/casinojack/Med)
+"IJ" = (
+/obj/structure/closet/hydrant{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet/orange,
+/area/beach/principal)
 "IL" = (
 /obj/structure/closet/secure_closet/personal/empty,
 /obj/machinery/light{
@@ -9857,13 +9830,6 @@
 	icon_state = "wood_broken2"
 	},
 /area/nieve/bosque)
-"Je" = (
-/obj/structure/curtain/open/bed{
-	pixel_y = 32
-	},
-/obj/item/weapon/stool/wood,
-/turf/simulated/floor/wood/walnut,
-/area/nieve/sauna)
 "Jg" = (
 /obj/structure/bed/double/padded,
 /obj/effect/decal/cleanable/dirt,
@@ -9902,13 +9868,6 @@
 "Ju" = (
 /turf/simulated/floor/carpet/orange,
 /area/nieve/cuarto4)
-"Jv" = (
-/obj/structure/flora/pottedplant/floorleafnieve,
-/obj/structure/curtain/open/bed{
-	pixel_y = -32
-	},
-/turf/simulated/floor/wood/walnut,
-/area/nieve/biblioteca)
 "Jw" = (
 /obj/structure/table/woodentable/walnut,
 /obj/effect/decal/cleanable/dirt,
@@ -10052,6 +10011,11 @@
 /obj/structure/ore_box,
 /turf/simulated/floor/holofloor/desert,
 /area/nieve/bosque)
+"Kw" = (
+/obj/structure/table/standard,
+/obj/machinery/recharger,
+/turf/simulated/floor/holofloor/concrete,
+/area/nieve/garaje)
 "Ky" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/carpet,
@@ -10077,6 +10041,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/desert,
 /area/nieve/bosque)
+"KR" = (
+/obj/structure/table/woodentable/walnut,
+/obj/machinery/recharger,
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
 "KS" = (
 /obj/machinery/light{
 	dir = 1;
@@ -10173,6 +10142,11 @@
 	icon_state = "wood_broken1"
 	},
 /area/nieve/bosque)
+"LC" = (
+/obj/machinery/light,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/holofloor/grass,
+/area/beach/cocina)
 "LE" = (
 /turf/simulated/floor/holofloor/snow/ice,
 /area/nieve/bosque)
@@ -10307,10 +10281,6 @@
 /turf/simulated/floor/holofloor/desert,
 /area/nieve/bosque)
 "MH" = (
-/obj/structure/curtain/open/bed{
-	pixel_x = 32;
-	pixel_y = 0
-	},
 /obj/machinery/vending/cola/manaos{
 	dir = 8
 	},
@@ -10388,6 +10358,12 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/nieve/garaje)
+"No" = (
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet/red,
+/area/nieve/sec)
 "Nr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9;
@@ -10508,6 +10484,14 @@
 	icon_state = "wood_broken6"
 	},
 /area/nieve/bosque)
+"Oq" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32;
+	pixel_y = 0;
+	pixel_z = 0
+	},
+/turf/simulated/floor/wood,
+/area/casinojack/command)
 "Or" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/carpet/orange,
@@ -10706,6 +10690,12 @@
 /obj/structure/flora/grass/brown,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
+"PG" = (
+/obj/machinery/recharger/wallcharger{
+	pixel_y = 24
+	},
+/turf/simulated/floor/carpet/red,
+/area/nieve/sec)
 "PO" = (
 /obj/structure/closet/cabinet,
 /obj/machinery/light{
@@ -10743,6 +10733,12 @@
 /obj/machinery/door/unpowered/simple/walnut,
 /turf/simulated/floor/holofloor/concrete,
 /area/nieve/garaje)
+"PX" = (
+/obj/structure/closet/hydrant{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet,
+/area/casinojack/principal)
 "PY" = (
 /obj/machinery/vending/wallmed1{
 	name = "Emergency NanoMed";
@@ -10798,6 +10794,12 @@
 /obj/item/weapon/material/kitchen/utensil/fork,
 /turf/simulated/floor/wood,
 /area/nieve/bosque)
+"QB" = (
+/obj/structure/closet/hydrant{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet/red,
+/area/nieve/sec)
 "QD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/white,
@@ -10874,17 +10876,44 @@
 	icon_state = "wood_broken1"
 	},
 /area/nieve/bosque)
+"Ri" = (
+/obj/structure/table/marble,
+/obj/machinery/recharger,
+/turf/simulated/floor/wood/walnut,
+/area/nieve/bar)
 "Rj" = (
 /obj/structure/flora/tree/dead,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
+"Rp" = (
+/obj/effect/floor_decal/corner/green{
+	icon_state = "corner_white";
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/obj/machinery/vending/wallmed1{
+	dir = 1;
+	icon_state = "wallmed";
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/obj/structure/table/glass,
+/turf/simulated/floor/tiled/white,
+/area/casinojack/Med)
 "Rr" = (
 /obj/structure/flora/grass/green,
 /obj/structure/flora/grass/green,
 /obj/structure/flora/grass/brown,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
+"Rs" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/holofloor/grass,
+/area/casinojack/bar)
 "Rw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -10907,6 +10936,15 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/nieve/med)
+"RA" = (
+/obj/item/weapon/bedsheet/hos,
+/obj/structure/bed/padded,
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#aa5f61"
+	},
+/turf/simulated/floor/carpet/red,
+/area/nieve/sec)
 "RB" = (
 /obj/structure/flora/grass/both,
 /obj/item/weapon/stool/wood,
@@ -10935,15 +10973,34 @@
 /obj/machinery/space_heater,
 /turf/simulated/floor/holofloor/concrete,
 /area/nieve/garaje)
+"RL" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/machinery/recharger/wallcharger{
+	pixel_y = 24
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/sec)
 "RM" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/mineral,
 /area/nieve/bosque)
+"RP" = (
+/turf/simulated/floor/holofloor/grass,
+/area/beach/cocina)
 "RQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/remains,
 /turf/simulated/floor/holofloor/desert,
 /area/nieve/bosque)
+"RR" = (
+/obj/structure/closet/hydrant{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/principal)
 "RV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -11020,6 +11077,10 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/nieve/sauna)
+"Sx" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/holofloor/grass,
+/area/beach/cocina)
 "Sy" = (
 /obj/machinery/light{
 	dir = 8
@@ -11123,6 +11184,10 @@
 /obj/machinery/light,
 /turf/simulated/wall/walnut,
 /area/nieve/sauna)
+"Tg" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/holofloor/grass,
+/area/casinojack/bar)
 "Th" = (
 /obj/structure/flora/grass/green,
 /obj/structure/flora/grass/green,
@@ -11134,6 +11199,18 @@
 /obj/structure/curtain/open/privacy,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/sauna)
+"Tl" = (
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/structure/flora/pottedplant/floorleaf,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/sec)
 "Tn" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/weapon/paper_bin,
@@ -11160,6 +11237,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/desert,
 /area/nieve/bosque)
+"Tw" = (
+/obj/structure/flora/grass/both,
+/turf/simulated/floor/holofloor/snow,
+/area/nieve/cocina)
 "Tx" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/structure/grille,
@@ -11246,6 +11327,16 @@
 	},
 /turf/simulated/floor/carpet/orange,
 /area/nieve/principal)
+"Uh" = (
+/obj/structure/table/marble,
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32;
+	pixel_y = 0;
+	pixel_z = 0
+	},
+/turf/simulated/floor/tiled/white,
+/area/casinojack/bar)
 "Ui" = (
 /turf/simulated/floor/tiled/freezer,
 /area/nieve/sauna)
@@ -11345,6 +11436,12 @@
 /mob/living/simple_animal/hostile/bear,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
+"Vg" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
+/turf/simulated/floor/wood/walnut,
+/area/casinojack/principal)
 "Vh" = (
 /turf/simulated/floor/tiled/white/monotile,
 /area/nieve/bosque)
@@ -11468,6 +11565,17 @@
 /obj/item/device/flashlight/lantern,
 /turf/simulated/floor/holofloor/desert,
 /area/nieve/bosque)
+"Wa" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32;
+	pixel_y = 0;
+	pixel_z = 0
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/sec)
 "Wc" = (
 /obj/item/icarus/dead_personnel,
 /obj/effect/decal/cleanable/blood,
@@ -11489,6 +11597,7 @@
 /area/nieve/bosque)
 "Wn" = (
 /obj/effect/wingrille_spawn/reinforced,
+/obj/structure/curtain/open/bed,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/gimnasio)
 "Wq" = (
@@ -11502,6 +11611,15 @@
 	},
 /turf/simulated/floor/carpet/orange,
 /area/nieve/principal)
+"Wt" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = 32
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/sec)
 "Wv" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/oxygen/prechilled,
@@ -11583,6 +11701,15 @@
 /obj/item/weapon/material/cross/nullglass,
 /turf/simulated/floor/wood,
 /area/nieve/bosque)
+"WM" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/hygiene/sink/kitchen{
+	dir = 4;
+	icon_state = "sink_alt";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/white,
+/area/nieve/cocina)
 "WQ" = (
 /turf/simulated/wall/r_wall/hull,
 /area/casinojack/bar)
@@ -11872,6 +11999,15 @@
 /obj/structure/closet/secure_closet/personal/empty,
 /turf/simulated/floor/wood/walnut,
 /area/nieve/cambiador)
+"Yv" = (
+/obj/effect/floor_decal/corner/grey/diagonal,
+/obj/structure/hygiene/sink/kitchen{
+	dir = 4;
+	icon_state = "sink_alt";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/white,
+/area/casinojack/bar)
 "Yw" = (
 /obj/structure/flora/grass/both,
 /obj/structure/flora/grass/both,
@@ -11946,6 +12082,21 @@
 /obj/structure/flora/grass/green,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
+"YT" = (
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/structure/table/standard,
+/obj/machinery/recharger/wallcharger{
+	pixel_y = 24
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/casinojack/sec)
 "YY" = (
 /obj/effect/decal/remains,
 /obj/effect/decal/cleanable/dirt,
@@ -11991,6 +12142,12 @@
 /obj/structure/ore_box,
 /turf/simulated/floor/holofloor/snow,
 /area/nieve/bosque)
+"Zn" = (
+/obj/machinery/recharger/wallcharger{
+	pixel_y = 24
+	},
+/turf/simulated/floor/carpet/red,
+/area/beach/sec)
 "Zp" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/orange,
@@ -12301,9 +12458,9 @@ qf
 (2,1,1) = {"
 aa
 al
-al
+RP
 bn
-al
+CP
 aa
 cq
 cH
@@ -12704,7 +12861,7 @@ qf
 "}
 (4,1,1) = {"
 aa
-al
+RP
 aR
 aR
 al
@@ -12906,7 +13063,7 @@ qf
 "}
 (5,1,1) = {"
 aa
-al
+CP
 aR
 aR
 bI
@@ -12930,7 +13087,7 @@ jl
 jt
 ag
 cj
-cS
+cj
 cT
 kW
 kW
@@ -13108,10 +13265,10 @@ qf
 "}
 (6,1,1) = {"
 aa
-al
+RP
 aR
 aR
-al
+RP
 aa
 aa
 cI
@@ -13132,7 +13289,7 @@ ag
 ag
 ag
 Du
-cS
+cj
 cT
 kW
 kW
@@ -13310,10 +13467,10 @@ qf
 "}
 (7,1,1) = {"
 aa
-al
+Sx
 aR
 aR
-al
+Sx
 aa
 cu
 cJ
@@ -13512,10 +13669,10 @@ qf
 "}
 (8,1,1) = {"
 aa
-am
-al
-al
-bH
+Er
+RP
+RP
+LC
 aa
 cv
 cJ
@@ -13714,10 +13871,10 @@ qf
 "}
 (9,1,1) = {"
 aa
-al
-al
-al
-al
+CA
+RP
+Sx
+CP
 aa
 cw
 cJ
@@ -13728,7 +13885,7 @@ cj
 cj
 fI
 fX
-jm
+cj
 hc
 cj
 cj
@@ -14533,7 +14690,7 @@ ac
 cd
 ac
 cj
-cS
+cj
 cT
 dp
 eR
@@ -14735,7 +14892,7 @@ di
 dA
 ac
 cj
-cS
+cj
 cT
 dp
 dp
@@ -15130,7 +15287,7 @@ qf
 ac
 ao
 bp
-bp
+wO
 bp
 ce
 cz
@@ -15139,7 +15296,7 @@ dj
 dB
 ac
 cj
-cS
+cj
 cT
 dp
 dp
@@ -15341,7 +15498,7 @@ ac
 ac
 ac
 ck
-cS
+cj
 cT
 dp
 dp
@@ -15543,7 +15700,7 @@ dk
 dC
 cR
 cj
-cS
+cj
 cT
 dp
 dp
@@ -15947,7 +16104,7 @@ dm
 dD
 cR
 cj
-cS
+cj
 cT
 dp
 dp
@@ -16051,7 +16208,7 @@ rW
 rW
 rY
 LT
-Gz
+Kw
 Gz
 Gz
 Gz
@@ -16148,8 +16305,8 @@ cP
 cP
 cP
 cR
+IJ
 cj
-cS
 cT
 dp
 dp
@@ -16350,7 +16507,7 @@ cQ
 dn
 dE
 cR
-cj
+yk
 cj
 ag
 dp
@@ -16832,7 +16989,7 @@ qk
 qF
 qF
 qF
-qF
+vw
 qj
 qF
 qF
@@ -17048,8 +17205,8 @@ rL
 rN
 rV
 rP
-sb
-sb
+rU
+rU
 st
 rU
 sG
@@ -17241,7 +17398,7 @@ qj
 qT
 qF
 qj
-qF
+PG
 qF
 rz
 rz
@@ -17557,7 +17714,7 @@ ba
 bv
 ae
 cj
-cS
+cj
 cT
 dp
 dp
@@ -17759,7 +17916,7 @@ ae
 ae
 ae
 ck
-cS
+cj
 cT
 dp
 dp
@@ -17846,7 +18003,7 @@ qX
 qj
 qF
 qF
-rm
+zg
 qj
 ru
 rC
@@ -18043,10 +18200,10 @@ rW
 rW
 rW
 qJ
-qO
+qF
 qF
 qj
-qF
+QB
 qF
 qY
 qj
@@ -18069,9 +18226,9 @@ rU
 Ry
 ZD
 rU
-sb
-sb
-sb
+rU
+rU
+rU
 uq
 rL
 uE
@@ -18252,7 +18409,7 @@ qF
 qF
 QG
 qj
-rv
+RA
 XF
 FO
 rv
@@ -18365,7 +18522,7 @@ bd
 bx
 af
 cj
-cS
+cj
 cT
 dp
 dp
@@ -18454,7 +18611,7 @@ JM
 qF
 qF
 qj
-qT
+No
 qF
 qF
 qF
@@ -18567,7 +18724,7 @@ az
 az
 af
 Du
-cS
+cj
 cT
 dp
 dp
@@ -18858,7 +19015,7 @@ qF
 qF
 qY
 qj
-qF
+PG
 qF
 qF
 qY
@@ -18970,7 +19127,7 @@ ag
 ag
 ag
 ag
-cj
+IJ
 cA
 ag
 dr
@@ -19087,7 +19244,7 @@ rL
 ut
 ur
 ur
-uR
+ur
 sa
 rW
 rW
@@ -19173,7 +19330,7 @@ aB
 aB
 ag
 cj
-cS
+cj
 cT
 dp
 dp
@@ -19286,10 +19443,10 @@ rU
 rU
 uf
 rL
+BT
 ur
 ur
 ur
-uR
 sa
 rW
 rW
@@ -19375,7 +19532,7 @@ bf
 bf
 bO
 cj
-cS
+cj
 cT
 dp
 dp
@@ -19681,7 +19838,7 @@ rU
 rU
 SB
 rL
-tk
+Ri
 tm
 tk
 rL
@@ -20187,22 +20344,22 @@ cj
 cj
 cj
 dH
-fs
-fs
-fs
+cj
+cj
+cj
 dH
 fZ
 gr
-kn
-kn
+gr
+gr
 ii
 fL
-ii
+uV
 jn
 jw
 jL
 ka
-kn
+gr
 kH
 fL
 lv
@@ -20399,13 +20556,13 @@ gr
 gr
 ij
 fL
-gr
+FZ
 gr
 gr
 jM
 gr
 gr
-sr
+gr
 km
 lv
 ab
@@ -20698,7 +20855,7 @@ tk
 tk
 tk
 XI
-sP
+HY
 sP
 rL
 sa
@@ -20794,7 +20951,7 @@ aN
 ds
 dI
 aN
-cn
+Da
 ah
 fL
 fM
@@ -20989,8 +21146,8 @@ ah
 aG
 bi
 aN
-aN
-aN
+yc
+uG
 aN
 aN
 dt
@@ -21075,7 +21232,7 @@ rW
 Zs
 rW
 Dj
-Je
+ZH
 IS
 IS
 Vm
@@ -21103,7 +21260,7 @@ sP
 sP
 sP
 sP
-xZ
+sP
 wS
 rW
 rW
@@ -21211,7 +21368,7 @@ gs
 gr
 gr
 gr
-sk
+gu
 km
 ak
 ab
@@ -21277,7 +21434,7 @@ rW
 rW
 rW
 Dj
-Je
+ZH
 IS
 IS
 Yq
@@ -21411,9 +21568,9 @@ fL
 fL
 fL
 fL
+Zn
 gr
-gr
-sn
+il
 km
 ak
 ab
@@ -21610,12 +21767,12 @@ gv
 hi
 fL
 im
-gr
+EJ
 im
 fL
 jx
 gr
-sn
+il
 km
 ak
 ab
@@ -21681,7 +21838,7 @@ rW
 rW
 rW
 Dj
-Je
+ZH
 IS
 IS
 YJ
@@ -21883,7 +22040,7 @@ rW
 rW
 rW
 Dj
-Je
+ZH
 IS
 IS
 Vm
@@ -21905,11 +22062,11 @@ Ts
 Qw
 Ir
 Ts
-sP
+HY
 sP
 qi
 ES
-xS
+wu
 wS
 rW
 rW
@@ -22090,7 +22247,7 @@ IS
 IS
 Ki
 qi
-sP
+HY
 sP
 sP
 sP
@@ -22219,8 +22376,8 @@ io
 gr
 im
 fL
-gs
-sd
+BS
+gr
 gs
 fL
 ak
@@ -22418,7 +22575,7 @@ gr
 sS
 fL
 in
-sd
+gr
 in
 fL
 fL
@@ -23416,8 +23573,8 @@ bE
 bT
 co
 bQ
-eS
-eW
+aG
+aN
 dM
 es
 gp
@@ -23929,7 +24086,7 @@ xj
 Iw
 GJ
 KE
-AB
+KE
 Wn
 rW
 rW
@@ -24535,7 +24692,7 @@ sP
 DV
 KE
 KE
-AB
+KE
 Wn
 rW
 rW
@@ -24933,7 +25090,7 @@ sP
 sP
 sE
 qi
-sP
+HY
 sP
 sP
 Iw
@@ -25956,7 +26113,7 @@ xh
 xh
 xh
 xh
-xR
+xh
 AU
 rW
 rW
@@ -26562,7 +26719,7 @@ PS
 xh
 xh
 xo
-Jv
+yg
 AU
 rW
 rW
@@ -27139,8 +27296,8 @@ sY
 sY
 vV
 vU
-vU
-vU
+WM
+WM
 vU
 wb
 sY
@@ -27551,7 +27708,7 @@ sY
 wC
 sE
 sE
-ya
+sE
 sE
 Lf
 sE
@@ -28147,7 +28304,7 @@ rW
 rW
 rW
 xF
-xH
+Tw
 xH
 xH
 xH
@@ -28755,10 +28912,10 @@ rY
 xF
 xH
 xK
-xH
+Tw
 xK
 xH
-xH
+Tw
 xF
 rW
 rW
@@ -29564,7 +29721,7 @@ xF
 xI
 xH
 xH
-xH
+Tw
 xH
 xI
 xF
@@ -36566,7 +36723,7 @@ Gs
 gy
 jz
 Gs
-gy
+Wt
 ho
 jz
 jo
@@ -36772,7 +36929,7 @@ ja
 ho
 ja
 Gs
-gy
+RL
 ho
 ho
 le
@@ -36961,7 +37118,7 @@ ab
 ab
 ab
 Gs
-kd
+YT
 kq
 kq
 OO
@@ -36994,7 +37151,7 @@ gR
 gR
 lJ
 gS
-lQ
+KR
 ie
 ab
 ab
@@ -37396,7 +37553,7 @@ nZ
 ox
 oQ
 gR
-gS
+PX
 gS
 lS
 ie
@@ -37580,7 +37737,7 @@ ho
 ho
 jz
 ip
-kd
+Tl
 ks
 ks
 kd
@@ -37782,7 +37939,7 @@ ho
 ho
 jB
 ip
-ke
+gy
 ho
 ho
 lg
@@ -38388,7 +38545,7 @@ ho
 ho
 jB
 ip
-ke
+gy
 ho
 ho
 jz
@@ -38580,22 +38737,22 @@ ev
 ev
 ev
 fQ
-dv
+dX
 gB
-hr
-hr
+Wa
+mb
 hr
 iL
 jd
 hr
 hP
 ip
-kd
+Tl
 kt
 kt
 kd
 ge
-gS
+yi
 gS
 gS
 gR
@@ -39197,7 +39354,7 @@ jp
 ht
 iP
 hW
-gF
+Dr
 ht
 iP
 hW
@@ -40011,7 +40168,7 @@ ll
 ly
 lK
 gS
-lS
+Eu
 gR
 mB
 mB
@@ -40397,7 +40554,7 @@ dT
 ez
 dR
 dR
-dR
+Oq
 gj
 gD
 dX
@@ -40426,7 +40583,7 @@ oi
 oj
 oX
 gR
-gS
+yi
 gS
 lT
 ie
@@ -40607,7 +40764,7 @@ hW
 hW
 hW
 hW
-gF
+Dr
 ht
 ht
 kg
@@ -40628,7 +40785,7 @@ oj
 oF
 oY
 gR
-gS
+PX
 gS
 lQ
 ie
@@ -40815,7 +40972,7 @@ ht
 iP
 kA
 ht
-Ci
+Rp
 hW
 gS
 gS
@@ -41019,7 +41176,7 @@ kA
 ht
 ln
 hW
-gS
+PX
 gS
 gS
 gR
@@ -41221,7 +41378,7 @@ kA
 kO
 kO
 hW
-gS
+yi
 gS
 gS
 gR
@@ -42626,7 +42783,7 @@ hy
 dV
 dV
 dv
-gQ
+DM
 gQ
 gQ
 jS
@@ -42828,7 +42985,7 @@ hz
 dV
 dV
 dv
-gQ
+Vg
 gQ
 gQ
 jT
@@ -43456,7 +43613,7 @@ oq
 gR
 pd
 gR
-gQ
+Vg
 gQ
 gQ
 gR
@@ -45647,8 +45804,8 @@ da
 bG
 ed
 ec
-ec
-ec
+Yv
+Yv
 ec
 gl
 gQ
@@ -46050,7 +46207,7 @@ cp
 cp
 bG
 dZ
-dZ
+Uh
 ec
 fD
 fS
@@ -46074,8 +46231,8 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+Bq
+RR
 gQ
 gQ
 gQ
@@ -46453,11 +46610,11 @@ bG
 bG
 bG
 bG
-ee
-ee
-ee
-ee
-ee
+Rs
+Tg
+Am
+DH
+Rs
 bG
 gS
 hD
@@ -46655,11 +46812,11 @@ bG
 bG
 bG
 bG
-ee
+DH
 eJ
-ee
+Ch
 eJ
-ee
+Tg
 bG
 gR
 gR
@@ -46857,11 +47014,11 @@ bG
 bG
 bG
 bG
-ee
+Am
 eJ
-ee
+Rs
 eJ
-ee
+Ch
 bG
 gT
 hE
@@ -47059,11 +47216,11 @@ ab
 bG
 bG
 bG
-ee
+DH
 eJ
-ee
+Am
 eJ
-ee
+Am
 bG
 gU
 hE
@@ -47085,7 +47242,7 @@ gS
 gS
 gS
 gR
-gS
+PX
 gS
 kQ
 gS
@@ -47261,11 +47418,11 @@ ab
 ab
 bG
 bG
-ee
-ee
-ee
-ee
-ee
+Tg
+Ch
+Ch
+Ch
+DH
 bG
 gV
 hE
@@ -47277,7 +47434,7 @@ Hx
 gR
 gS
 gR
-gS
+PX
 gS
 qs
 qr
@@ -47287,7 +47444,7 @@ qz
 gS
 gS
 gR
-gS
+yi
 gS
 gR
 gS
@@ -47463,11 +47620,11 @@ ab
 ab
 bG
 bG
-ee
-ee
-ee
-ee
-ee
+Rs
+DH
+Am
+Tg
+Rs
 bG
 gW
 hE
@@ -47479,7 +47636,7 @@ Hx
 gR
 gS
 gR
-gS
+yi
 gS
 qs
 qr

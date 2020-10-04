@@ -5,20 +5,20 @@
 	category = /datum/gear/shoes
 
 /datum/gear/shoes/athletic
-	display_name = "zapatillas atleticas, coloreables"
+	display_name = "Zapatillas atleticas, coloreables"
 	path = /obj/item/clothing/shoes/athletic
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/shoes/kasumi
-	display_name = "botas de Kasumi largas"
+	display_name = "Botas de Kasumi largas"
 	path = /obj/item/clothing/shoes/kasumi
 
 /datum/gear/shoes/jrboots
-	display_name = "botas grandes"
+	display_name = "Botas grandes"
 	path = /obj/item/clothing/shoes/jrboots
 
 /datum/gear/shoes/boots
-	display_name = "botas"
+	display_name = "Botas varias"
 	path = /obj/item/clothing/shoes
 
 /datum/gear/shoes/boots/New()
@@ -32,7 +32,7 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(boots)
 
 /datum/gear/shoes/color
-	display_name = "zapatos"
+	display_name = "Zapatos varios"
 	path = /obj/item/clothing/shoes
 
 /datum/gear/shoes/color/New()
@@ -54,21 +54,21 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(shoes)
 
 /datum/gear/shoes/flats
-	display_name = "zapatos planos, coloreables"
+	display_name = "Zapatos planos, coloreables"
 	path = /obj/item/clothing/shoes/flats
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/shoes/high
-	display_name = "zapatos high tops"
+	display_name = "Zapatos high tops"
 	path = /obj/item/clothing/shoes/hightops
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/shoes/sandal
-	display_name = "sandalias de madera"
+	display_name = "Sandalias de madera"
 	path = /obj/item/clothing/shoes/sandal
 
 /datum/gear/shoes/heels
-	display_name = "zapatos de taco alto, coloreables"
+	display_name = "Zapatos de taco alto, coloreables"
 	path = /obj/item/clothing/shoes/heels
 	flags = GEAR_HAS_COLOR_SELECTION
 

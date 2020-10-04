@@ -273,21 +273,40 @@
 
 /decl/emote/audible/nya
 	key = "nya"
-	emote_message_1p = "Dejas salir el Nya~"
 	emote_message_3p= "USER deja salir el Nya~"
 /decl/emote/audible/nya/do_extra(var/atom/user)
-	if(iscarbon(user)) //Citadel Edit because this is hilarious
+	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if(C.gender == FEMALE)
-			playsound(C.loc, 'sound/effects/nya.ogg', 10, 1)
+			playsound(C.loc, 'sound/effects/nya.ogg', 25, 1)
 
 /decl/emote/audible/awoo
 	key = "awoo"
-	emote_message_1p = "Dejas salir el Awoo~"
 	emote_message_3p= "USER deja salir el Awoo~"
-
 /decl/emote/audible/awoo/do_extra(var/atom/user)
-	if(iscarbon(user)) //Citadel Edit because this is hilarious
+	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if(C.gender == FEMALE)
-			playsound(C.loc, 'sound/voice/awoo.ogg', 10, 1)
+			playsound(C.loc, 'sound/voice/awoo.ogg', 25, 1)
+
+/decl/emote/audible/bark
+	key = "bark"
+	emote_message_3p= "USER ladra!"
+/decl/emote/audible/bark/do_extra(var/atom/user)
+	if(iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(C.gender == FEMALE)
+			playsound(C.loc,pick( 'sound/creatures/pug_bark1.ogg', 15, 1))
+		if(C.gender == MALE)
+			playsound(C.loc,pick( 'sound/creatures/dog_bark1.ogg', 15, 1))
+
+/decl/emote/audible/bark2
+	key = "bark2"
+	emote_message_3p= "USER ladra!"
+/decl/emote/audible/bark2/do_extra(var/atom/user)
+	if(iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(C.gender == FEMALE)
+			playsound(C.loc,pick( 'sound/creatures/pug_bark2.ogg', 15, 1))
+		if(C.gender == MALE)
+			playsound(C.loc,pick( 'sound/creatures/dog_bark2.ogg', 15, 1))
