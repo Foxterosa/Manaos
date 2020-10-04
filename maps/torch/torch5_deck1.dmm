@@ -1349,7 +1349,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 2;
 	name = "Brig Chief Desk";
-	req_access = list("access_armory")
+	req_access = newlist()
 	},
 /obj/machinery/door/blast/shutters/open{
 	dir = 2;
@@ -1415,7 +1415,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/brigdoor/westright{
 	name = "Brig Chief Desk";
-	req_access = list("access_armory")
+	req_access = newlist()
 	},
 /obj/item/weapon/material/bell,
 /obj/machinery/door/blast/shutters/open{
@@ -1607,7 +1607,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 1;
 	name = "Brig Chief Desk";
-	req_access = list("access_armory")
+	req_access = newlist()
 	},
 /obj/machinery/door/blast/shutters/open{
 	dir = 2;
@@ -2988,7 +2988,7 @@
 	},
 /obj/machinery/door/window/southleft{
 	name = "ventanilla de tiro";
-	req_access = list("ACCESS_BRIG")
+	req_access = newlist()
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/shooting)
@@ -2998,7 +2998,7 @@
 	},
 /obj/machinery/door/window/eastright{
 	name = "campo de tiro";
-	req_access = list("access_brig")
+	req_access = newlist()
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/shooting)
@@ -19531,23 +19531,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
-"dcT" = (
-/obj/structure/table/steel_reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow{
-	color = "#aa5f61"
-	},
-/obj/machinery/door/window/southleft{
-	name = "ventanilla de tiro";
-	req_access = list("access_brig")
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/shooting)
 "ddb" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
 	color = "";
@@ -44595,7 +44578,7 @@ aew
 uwi
 adw
 wkl
-dcT
+aeC
 uuz
 uuz
 tJM
@@ -44797,7 +44780,7 @@ hGs
 uwi
 gon
 vmn
-dcT
+aeC
 uuz
 uuz
 jtu
