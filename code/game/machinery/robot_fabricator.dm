@@ -19,7 +19,7 @@
 			var/amount = min(stack.get_amount(), round((150000.0 - metal_amount) / SHEET_MATERIAL_AMOUNT))
 			use_power_oneoff(max(1000, (SHEET_MATERIAL_AMOUNT * amount / 10)))
 			if(amount < 1)
-				to_chat(user, "The [src] is full.")
+				to_chat(user, "The [src] is cannot hold more metal.")
 				return
 
 			if(stack.use(amount))
