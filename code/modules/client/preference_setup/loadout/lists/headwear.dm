@@ -5,7 +5,7 @@
 	banned_species = list(SPECIES_PLASMASANS)
 
 /datum/gear/head/beret
-	display_name = "Boiina, coloreable"
+	display_name = "Boina"
 	path = /obj/item/clothing/head/beret/plaincolor
 	flags = GEAR_HAS_COLOR_SELECTION
 	description = "Una boina simple de color liso. Esta no tiene ningun emblema o insignia."
