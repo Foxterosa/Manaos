@@ -1346,15 +1346,15 @@
 "abT" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/brigdoor/westright{
-	dir = 2;
-	name = "Brig Chief Desk";
-	req_access = newlist()
-	},
 /obj/machinery/door/blast/shutters/open{
 	dir = 2;
 	id_tag = "bo_pshutters";
 	name = "Privacy Shutters"
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 2;
+	name = "escritorio del Guardia de Brig";
+	req_access = list("ACCESS_ARMORY")
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
@@ -1413,15 +1413,15 @@
 "abY" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/brigdoor/westright{
-	name = "Brig Chief Desk";
-	req_access = newlist()
-	},
 /obj/item/weapon/material/bell,
 /obj/machinery/door/blast/shutters/open{
 	dir = 2;
 	id_tag = "bo_pshutters";
 	name = "Privacy Shutters"
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	name = "escritorio del Guardia de Brig";
+	req_access = list("ACCESS_ARMORY")
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
@@ -1604,15 +1604,15 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/machinery/door/window/brigdoor/westright{
-	dir = 1;
-	name = "Brig Chief Desk";
-	req_access = newlist()
-	},
 /obj/machinery/door/blast/shutters/open{
 	dir = 2;
 	id_tag = "bo_pshutters";
 	name = "Privacy Shutters"
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 1;
+	name = "escritorio del Guardia de Brig";
+	req_access = list("ACCESS_ARMORY")
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
