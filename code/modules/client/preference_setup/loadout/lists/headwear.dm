@@ -78,7 +78,7 @@
 	hardhats["Casco azul"] = /obj/item/clothing/head/hardhat/dblue
 	hardhats["Casco naranja"] = /obj/item/clothing/head/hardhat/orange
 	hardhats["Casco rojo"] = /obj/item/clothing/head/hardhat/red
-	hardhats["Casco liviando de control de daño"] = /obj/item/clothing/head/hardhat/EMS/DC_light
+	hardhats["Casco liviano de control de daño"] = /obj/item/clothing/head/hardhat/EMS/DC_light
 	hardhats["Casco de la Oficina de Gestion de Emergencias"] = /obj/item/clothing/head/hardhat/damage_control/EMB
 	hardhats["Casco rojo de la Oficina de Gestion de Emergencias"] = /obj/item/clothing/head/hardhat/damage_control/EMB_Ancient
 	hardhats["Casco amarillo de la Oficina de Gestion de Emergencias"] = /obj/item/clothing/head/hardhat/damage_control/EMB_Ancient/yellow
