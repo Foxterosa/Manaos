@@ -1,79 +1,79 @@
 /datum/gear/accessory/solawardmajor
-	display_name = "major award selection"
-	description = "A medal or ribbon awarded to military and paramilitary personnel for significant accomplishments."
+	display_name = "Seleccion de condecoraciones mayores"
+	description = "Una medalla o liston entregada a personal tanto militar como paramilitar por logros importantes."
 	path = /obj/item/clothing/accessory
 	cost = 4
 
 /datum/gear/accessory/solawardmajor/New()
 	..()
 	var/solmajors = list()
-	solmajors["iron star"] = /obj/item/clothing/accessory/medal/solgov/iron/star
-	solmajors["bronze heart"] = /obj/item/clothing/accessory/medal/solgov/bronze/heart
-	solmajors["silver sword"] = /obj/item/clothing/accessory/medal/solgov/silver/sword
-	solmajors["medical heart"] = /obj/item/clothing/accessory/medal/solgov/heart
-	solmajors["valor medal"] = /obj/item/clothing/accessory/medal/solgov/silver/sol
-	solmajors["sapienterian medal"] = /obj/item/clothing/accessory/medal/solgov/gold/sol
-	solmajors["peacekeeper ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/peace
-	solmajors["marksman ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/marksman
+	solmajors["Estrella de hierro"] = /obj/item/clothing/accessory/medal/solgov/iron/star
+	solmajors["Corazon de bronce"] = /obj/item/clothing/accessory/medal/solgov/bronze/heart
+	solmajors["Espada de plata"] = /obj/item/clothing/accessory/medal/solgov/silver/sword
+	solmajors["Corazon de medicina"] = /obj/item/clothing/accessory/medal/solgov/heart
+	solmajors["Medalla al valor"] = /obj/item/clothing/accessory/medal/solgov/silver/sol
+	solmajors["Medalla de sentientarismo"] = /obj/item/clothing/accessory/medal/solgov/gold/sol
+	solmajors["Liston de la paz"] = /obj/item/clothing/accessory/ribbon/solgov/peace
+	solmajors["Liston de tirador"] = /obj/item/clothing/accessory/ribbon/solgov/marksman
 	gear_tweaks += new/datum/gear_tweak/path(solmajors)
 
 /datum/gear/accessory/solawardminor
-	display_name = "minor award selection"
-	description = "A medal or ribbon awarded to military and paramilitary personnel for minor accomplishments."
+	display_name = "Seleccion de condecoraciones menores"
+	description = "Una medalla o liston entregada a personal tanto militar como paramilitar por logros menores."
 	path = /obj/item/clothing/accessory
 	cost = 2
 
 /datum/gear/accessory/solawardminor/New()
 	..()
 	var/solminors = list()
-	solminors["expeditionary medal"] = /obj/item/clothing/accessory/medal/solgov/iron/sol
-	solminors["operations medal"] = /obj/item/clothing/accessory/medal/solgov/bronze/sol
-	solminors["frontier ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/frontier
-	solminors["instructor ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/instructor
+	solminors["Medalla expedicionaria"] = /obj/item/clothing/accessory/medal/solgov/iron/sol
+	solminors["Medalla de operaciones"] = /obj/item/clothing/accessory/medal/solgov/bronze/sol
+	solminors["Liston de frontera"] = /obj/item/clothing/accessory/ribbon/solgov/frontier
+	solminors["Liston de instructor"] = /obj/item/clothing/accessory/ribbon/solgov/instructor
 	gear_tweaks += new/datum/gear_tweak/path(solminors)
 
 /datum/gear/accessory/tags
-	display_name = "dog tags"
+	display_name = "Placas de identificacion"
 	path = /obj/item/clothing/accessory/badge/solgov/tags
 
 /datum/gear/accessory/ec_scarf
-	display_name = "Surveyor Corps scarf"
+	display_name = "Bufanda de las Fuerzas de Inspeccion"
 	path = /obj/item/clothing/accessory/solgov/ec_scarf
-	description = "A section-specific scarf for Survey Corps uniforms."
+	description = "Una bufanda especificamente para las Fuerzas de Inspeccion."
 	cost = 0
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/accessory/ec_patch
-	display_name = "Surveyor Corps patch"
+	display_name = "Parche de las Fuerzas de Inspeccion"
 	path = /obj/item/clothing/accessory/solgov/ec_patch
-	description = "A shoulder patch representing the Survey Corps."
+	description = "Un parche de hombro que representa a las Fuerzas de Inspeccion."
 	cost = 0
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/accessory/torch_patch
-	display_name = "NTSS Dagon mission patch"
+	display_name = "Parche de la NTSS Dagon"
 	path = /obj/item/clothing/accessory/solgov/torch_patch
-	description = "A shoulder patch representing the NTSS Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
+	description = "Un parche de hombro que representa a la NTSS Dagon y a su mision. Entregado a los desafortunados sacados de ramas lejanas y variadas para su labor en la Dagon."
 
 /datum/gear/accessory/pilot_pin
-	display_name = "pilot's qualification pin"
+	display_name = "Insignia de calificacion de pilotaje"
 	path = /obj/item/clothing/accessory/solgov/specialty/pilot
 	allowed_skills = list(SKILL_PILOT = SKILL_ADEPT)
 
 /datum/gear/accessory/fleetpatch
-	display_name = "fleet patch"
+	display_name = "Parche de la Flota"
 	path = /obj/item/clothing/accessory/solgov/fleet_patch
 	flags = GEAR_HAS_TYPE_SELECTION
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/accessory/armband_ma
-	display_name = "master-at-arms brassard"
+	display_name = "Brazalete de Maestro en Armas"
 	path = /obj/item/clothing/accessory/armband/solgov/ma
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/accessory/armband_mp
-	display_name = "military police brassard"
+	display_name = "Brazalete de Policia Militar"
 	path = /obj/item/clothing/accessory/armband/solgov/mp
 	allowed_roles = SECURITY_ROLES
 
@@ -90,7 +90,7 @@
 	allowed_roles = list(/datum/job/doctor, /datum/job/medical_trainee)
 
 /datum/gear/accessory/armband_corpsman
-	display_name = "medical armband"
+	display_name = "Brazalete de medicina"
 	path = /obj/item/clothing/accessory/armband/medblue
 	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/medical_trainee)
 
@@ -128,11 +128,11 @@
 /datum/gear/tactical/holster/New()
 	..()
 	var/holsters = list()
-	holsters["shoulder holster"] = /obj/item/clothing/accessory/storage/holster
-	holsters["armpit holster"] = /obj/item/clothing/accessory/storage/holster/armpit
-	holsters["waist holster"] = /obj/item/clothing/accessory/storage/holster/waist
-	holsters["hip holster"] = /obj/item/clothing/accessory/storage/holster/hip
-	holsters["thigh holster"] = /obj/item/clothing/accessory/storage/holster/thigh
+	holsters["Funda de hombro"] = /obj/item/clothing/accessory/storage/holster
+	holsters["Funda axilar"] = /obj/item/clothing/accessory/storage/holster/armpit
+	holsters["Funda de cintura"] = /obj/item/clothing/accessory/storage/holster/waist
+	holsters["Funda de cadera"] = /obj/item/clothing/accessory/storage/holster/hip
+	holsters["Funda de muslo"] = /obj/item/clothing/accessory/storage/holster/thigh
 	gear_tweaks += new/datum/gear_tweak/path(holsters)
 
 /datum/gear/tactical/sheath
@@ -141,7 +141,7 @@
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/tactical/press_tag
-	display_name = "Press tag"
+	display_name = "Identificador de prensa"
 	path = /obj/item/clothing/accessory/armor/tag/press
 	allowed_roles = list(/datum/job/assistant)
 
@@ -185,23 +185,23 @@
  tactical accessories
 *********************/
 /datum/gear/tactical/ubac
-	display_name = "UBAC shirt selection"
-	description = "A selection of combat shirts."
+	display_name = "Camisas de combate"
+	description = "Una seleccion de camisas de combate, para su uso debajo de proteccion corporal."
 	path = /obj/item/clothing/accessory/ubac
 	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/tactical/ubac/New()
 	..()
 	var/shirts = list()
-	shirts["black UBAC shirt"] = /obj/item/clothing/accessory/ubac
-	shirts["blue UBAC shirt"] = /obj/item/clothing/accessory/ubac/blue
-	shirts["green UBAC shirt"] = /obj/item/clothing/accessory/ubac/green
-	shirts["tan UBAC shirt"] = /obj/item/clothing/accessory/ubac/tan
+	shirts["Camisa de combate negra"] = /obj/item/clothing/accessory/ubac
+	shirts["Camisa de combate azul"] = /obj/item/clothing/accessory/ubac/blue
+	shirts["Camisa de combate verde"] = /obj/item/clothing/accessory/ubac/green
+	shirts["Camisa de combate color cafe"] = /obj/item/clothing/accessory/ubac/tan
 	gear_tweaks += new/datum/gear_tweak/path(shirts)
 
 /datum/gear/tactical/armor_pouches
-	display_name = "armor pouches selection"
-	description = "A selection of military armor pouches. Attaches to plate carrier."
+	display_name = "Morrales para armadura"
+	description = "Una seleccion de morrales de grado militar para armadura. Se acoplan al portaplacas."
 	path = /obj/item/clothing/accessory/storage/pouches
 	cost = 1
 	allowed_branches = TACTICOOL_BRANCHES
@@ -209,16 +209,16 @@
 /datum/gear/tactical/armor_pouches/New()
 	..()
 	var/pouches = list()
-	pouches["black armor pouches"] = /obj/item/clothing/accessory/storage/pouches
-	pouches["navy armor pouches"] = /obj/item/clothing/accessory/storage/pouches/navy
-	pouches["blue armor pouches"] = /obj/item/clothing/accessory/storage/pouches/blue
-	pouches["green armor pouches"] = /obj/item/clothing/accessory/storage/pouches/green
-	pouches["tan armor pouches"] = /obj/item/clothing/accessory/storage/pouches/tan
+	pouches["Morrales de armadura negros"] = /obj/item/clothing/accessory/storage/pouches
+	pouches["Morrales de armadura azul marino"] = /obj/item/clothing/accessory/storage/pouches/navy
+	pouches["Morrales de armadura azules"] = /obj/item/clothing/accessory/storage/pouches/blue
+	pouches["Morrales de armadura verdes"] = /obj/item/clothing/accessory/storage/pouches/green
+	pouches["Morrales de armadura cafe"] = /obj/item/clothing/accessory/storage/pouches/tan
 	gear_tweaks += new/datum/gear_tweak/path(pouches)
 
 /datum/gear/tactical/large_pouches
-	display_name = "large armor pouches selection"
-	description = "A selection of military large armor pouches. Attaches to plate carrier."
+	display_name = "Morrales para armadura grandes"
+	description = "Una seleccion de morrales grandes de grado militar para armadura. Se acoplan al portaplacas."
 	path = /obj/item/clothing/accessory/storage/pouches/large
 	cost = 2
 	allowed_branches = TACTICOOL_BRANCHES
@@ -226,9 +226,9 @@
 /datum/gear/tactical/large_pouches/New()
 	..()
 	var/lpouches = list()
-	lpouches["black large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large
-	lpouches["navy large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/navy
-	lpouches["blue large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/blue
-	lpouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
-	lpouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
+	lpouches["Morrales de armadura grandes negros"] = /obj/item/clothing/accessory/storage/pouches/large
+	lpouches["Morrales de armadura grandes azul marino"] = /obj/item/clothing/accessory/storage/pouches/large/navy
+	lpouches["Morrales de armadura grandes azules"] = /obj/item/clothing/accessory/storage/pouches/large/blue
+	lpouches["Morrales de armadura grandes verdes"] = /obj/item/clothing/accessory/storage/pouches/large/green
+	lpouches["Morrales de armadura grandes cafe"] = /obj/item/clothing/accessory/storage/pouches/large/tan
 	gear_tweaks += new/datum/gear_tweak/path(lpouches)

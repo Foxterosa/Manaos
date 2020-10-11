@@ -283,7 +283,6 @@
 /decl/emote/audible/awoo
 	key = "awoo"
 	emote_message_3p= "USER deja salir el Awoo~"
-
 /decl/emote/audible/awoo/do_extra(var/atom/user)
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
@@ -293,9 +292,21 @@
 /decl/emote/audible/bark
 	key = "bark"
 	emote_message_3p= "USER ladra!"
-	emote_sound = 'sound/creatures/dog_bark1.ogg'
+/decl/emote/audible/bark/do_extra(var/atom/user)
+	if(iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(C.gender == FEMALE)
+			playsound(C.loc,pick( 'sound/creatures/pug_bark1.ogg', 15, 1))
+		if(C.gender == MALE)
+			playsound(C.loc,pick( 'sound/creatures/dog_bark1.ogg', 15, 1))
 
 /decl/emote/audible/bark2
 	key = "bark2"
 	emote_message_3p= "USER ladra!"
-	emote_sound = 'sound/creatures/dog_bark2.ogg'
+/decl/emote/audible/bark2/do_extra(var/atom/user)
+	if(iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(C.gender == FEMALE)
+			playsound(C.loc,pick( 'sound/creatures/pug_bark2.ogg', 15, 1))
+		if(C.gender == MALE)
+			playsound(C.loc,pick( 'sound/creatures/dog_bark2.ogg', 15, 1))

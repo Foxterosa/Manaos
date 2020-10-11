@@ -4,24 +4,24 @@
 	slot = slot_glasses
 
 /datum/gear/eyes/glasses
-	display_name = "anteojos de prescripcion"
+	display_name = "Anteojos de prescripcion"
 	path = /obj/item/clothing/glasses/prescription
 
 /datum/gear/eyes/eyepatch
-	display_name = "parche de ojo"
+	display_name = "Parche de ojo"
 	path = /obj/item/clothing/glasses/eyepatch
 
 /datum/gear/eyes/fashionglasses
-	display_name = "anteojos"
+	display_name = "Anteojos"
 	path = /obj/item/clothing/glasses
 
 /datum/gear/eyes/fashionglasses/New()
 	..()
 	var/glasses = list()
-	glasses["anteojos verdes"] = /obj/item/clothing/glasses/prescription/gglasses
-	glasses["anteojos hipster"] = /obj/item/clothing/glasses/prescription/hipster
-	glasses["monoculo"] = /obj/item/clothing/glasses/monocle
-	glasses["gafas escaner"] = /obj/item/clothing/glasses/prescription/scanners
+	glasses["Anteojos verdes"] = /obj/item/clothing/glasses/prescription/gglasses
+	glasses["Anteojos hipster"] = /obj/item/clothing/glasses/prescription/hipster
+	glasses["Monoculo"] = /obj/item/clothing/glasses/monocle
+	glasses["Gafas escaner"] = /obj/item/clothing/glasses/prescription/scanners
 	gear_tweaks += new/datum/gear_tweak/path(glasses)
 
 /datum/gear/eyes/sciencegoggles
@@ -95,17 +95,17 @@
 	allowed_roles = list(/datum/job/chief_engineer, /datum/job/engineer, /datum/job/mining)
 
 /datum/gear/eyes/shades/
-	display_name = "gafas de sol"
+	display_name = "Gafas de sol"
 	path = /obj/item/clothing/glasses/sunglasses
 	cost = 3
 
 /datum/gear/eyes/shades/sunglasses
-	display_name = "gafas de sol gruesas"
+	display_name = "Gafas de sol gruesas"
 	path = /obj/item/clothing/glasses/sunglasses/big
 	cost = 3
 
 /datum/gear/eyes/shades/prescriptionsun
-	display_name = "gafas de sol de prescripcion"
+	display_name = "Gafas de sol de prescripcion"
 	path = /obj/item/clothing/glasses/sunglasses/prescription
 	cost = 3
 
@@ -114,7 +114,7 @@
 	path = /obj/item/clothing/glasses/eyepatch/hud
 
 /datum/gear/eyes/blindfold
-	display_name = "venda para ojos"
+	display_name = "Venda para ojos"
 	path = /obj/item/clothing/glasses/blindfold
 	flags = GEAR_HAS_COLOR_SELECTION
 
