@@ -8,6 +8,7 @@
 	buckle_lying = 0 //force people to sit up in chairs when buckled
 	obj_flags = OBJ_FLAG_ROTATABLE
 	var/propelled = 0 // Check for fire-extinguisher-driven chairs
+	var/item_chair = /obj/item/chair // if null it can't be picked up
 
 /obj/structure/bed/chair/do_simple_ranged_interaction(var/mob/user)
 	if(!buckled_mob && user)
@@ -76,6 +77,27 @@
 					I.color = padding_material.icon_colour
 				stool_cache[cache_key] = I
 			overlays |= stool_cache[cache_key]
+
+/obj/structure/chair/MouseDrop(over_object, src_location, over_location)
+	. = ..()
+	if(over_object == usr && Adjacent(usr))
+		if(!item_chair || has_buckled_mobs())
+			return
+		if(usr.incapacitated())
+			to_chat(usr, "<span class='warning'>You can't do that right now!</span>")
+			return
+		if(!usr.has_r_hand() && !usr.has_l_hand())
+			to_chat(usr, "<span class='warning'>You try to grab the chair, but you are missing both of your hands!</span>")
+			return
+		if(usr.get_active_hand() && usr.get_inactive_hand())
+			to_chat(usr, "<span class='warning'>You try to grab the chair, but your hands are already full!</span>")
+			return
+		if(!ishuman(usr))
+			return
+		usr.visible_message("<span class='notice'>[usr] grabs \the [src.name].</span>", "<span class='notice'>You grab \the [src.name].</span>")
+		var/C = new item_chair(loc)
+		usr.put_in_hands(C)
+		qdel(src)
 
 /obj/structure/bed/chair/rotate(mob/user)
 	if(!CanPhysicallyInteract(user))
