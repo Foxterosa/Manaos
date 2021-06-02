@@ -2,6 +2,24 @@
 	path = /obj/item/weapon/crowbar
 	category = "Tools"
 
+/datum/fabricator_recipe/tool/gas_analyzer
+	path = /obj/item/device/scanner/gas
+
+/datum/fabricator_recipe/tool/plant_analyzer
+	path = /obj/item/device/scanner/plant
+
+/datum/fabricator_recipe/tool/mining_analyzer
+	path = /obj/item/device/scanner/mining
+
+/datum/fabricator_recipe/tool/health_analyzer
+	path = /obj/item/device/scanner/health
+
+/datum/fabricator_recipe/tool/xenobio_analyzer
+	path = /obj/item/device/scanner/xenobio
+
+/datum/fabricator_recipe/tool/robot_analyzer
+	path = /obj/item/device/robotanalyzer
+
 /datum/fabricator_recipe/tool/prybar
 	path = /obj/item/weapon/crowbar/prybar
 

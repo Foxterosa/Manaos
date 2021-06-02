@@ -5,7 +5,7 @@
 
 /obj/machinery/mineral/processing_unit
 	name = "mineral processor"
-	icon_state = "furnace"
+	icon_state = "furnace-off"
 	console = /obj/machinery/computer/mining
 	input_turf =  NORTH
 	output_turf = SOUTH
@@ -15,6 +15,7 @@
 	var/list/ores_stored
 	var/report_all_ores
 	var/active = FALSE
+	var/efficiency = 1
 
 /obj/machinery/mineral/processing_unit/Initialize()
 	ores_processing = list()
@@ -23,6 +24,16 @@
 		ores_processing[orename] = 0
 		ores_stored[orename] = 0
 	. = ..()
+
+/obj/machinery/mineral/processing_unit/RefreshParts()
+	var/L = 0
+	var/M = 0
+
+	L = Clamp(total_component_rating_of_type(/obj/item/weapon/stock_parts/micro_laser), 0, 6)
+	sheets_per_tick = 5 * L
+
+	M = Clamp(total_component_rating_of_type(/obj/item/weapon/stock_parts/manipulator), 0, 3)
+	efficiency = 0.75 + M * 0.25
 
 /obj/machinery/mineral/processing_unit/Process()
 	//Grab some more ore to process this tick.
@@ -33,7 +44,7 @@
 			if(LAZYLEN(I.matter))
 				for(var/o_material in I.matter)
 					if(!isnull(ores_stored[o_material]))
-						ores_stored[o_material] += I.matter[o_material]
+						ores_stored[o_material] += I.matter[o_material] * efficiency
 			qdel(I)
 
 	if(!active)
@@ -162,12 +173,20 @@
 		. = TRUE
 	else if(href_list["toggle_power"])
 		active = !active
+		update_icon()
 		. = TRUE
 	else if(href_list["toggle_ores"])
 		report_all_ores = !report_all_ores
 		. = TRUE
 	if(. && console)
 		console.updateUsrDialog()
+
+/obj/machinery/mineral/processing_unit/on_update_icon()
+	if(active)
+		icon_state = "furnace-on"
+	else
+		icon_state = "furnace-off"
+	..()
 
 #undef ORE_DISABLED
 #undef ORE_SMELT
