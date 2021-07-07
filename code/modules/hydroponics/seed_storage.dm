@@ -291,6 +291,7 @@
 					piles -= N
 					qdel(N)
 			else if (task == "purge")
+				(alert("Are you sure? This will remove the seeds!",,"Yes","No") != "Yes")
 				for (var/obj/O in N.seeds)
 					qdel(O)
 					piles -= N

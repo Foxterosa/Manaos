@@ -65,7 +65,7 @@
 	var/sheet_name = istype(sheet, /obj/item/weapon/photo) ? "photo" : "sheet of paper"
 	bundle_name = (bundle_name == name) ? "the [bundle_name]" : name
 	sheet_name = (sheet_name == sheet.name) ? "the [sheet_name]" : sheet.name
-	
+
 	to_chat(user, "<span class='notice'>You add [sheet_name] to [bundle_name].</span>")
 	pages.Insert(index, sheet)
 	if(index <= page)
