@@ -191,7 +191,7 @@
 	colours["Negro"] = /obj/item/weapon/flame/lighter/zippo/black
 	colours["Gris"] = /obj/item/weapon/flame/lighter/zippo/gunmetal
 	colours["Bronce"] = /obj/item/weapon/flame/lighter/zippo/bronze
-	colours["Magenta"] = /obj/item/weapon/flame/lighter/zippo/pink
+	colours["Rosa"] = /obj/item/weapon/flame/lighter/zippo/pink
 	gear_tweaks += new/datum/gear_tweak/path(colours)
 
 /datum/gear/ashtray

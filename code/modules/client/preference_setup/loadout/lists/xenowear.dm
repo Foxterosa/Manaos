@@ -16,7 +16,7 @@
 	cost = 1
 
 /datum/gear/suit/unathi/knifeharness
-	display_name = "Srnes decorado"
+	display_name = "Arnes decorado"
 	path = /obj/item/clothing/accessory/storage/knifeharness
 	cost = 5
 
