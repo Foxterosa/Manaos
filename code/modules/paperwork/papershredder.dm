@@ -64,7 +64,7 @@
 	empty_bin(usr)
 
 /obj/machinery/papershredder/proc/empty_bin(var/mob/living/user, var/obj/item/weapon/storage/empty_into)
-	
+
 	if(empty_into) // If the user tries to empty the bin into something
 
 		if(paperamount == 0) // Can't empty what is already empty
@@ -102,31 +102,10 @@
 /obj/machinery/papershredder/proc/get_shredded_paper()
 	if(paperamount)
 		paperamount--
-		return new /obj/item/weapon/shreddedp(get_turf(src))		
+		return new /obj/item/weapon/shreddedp(get_turf(src))
 
 /obj/machinery/papershredder/on_update_icon()
 	icon_state = "papershredder[max(0,min(5,Floor(paperamount/2)))]"
-
-/obj/item/weapon/shreddedp/attackby(var/obj/item/W as obj, var/mob/user)
-	if(istype(W, /obj/item/weapon/flame/lighter))
-		burnpaper(W, user)
-	else
-		..()
-
-/obj/item/weapon/shreddedp/proc/burnpaper(var/obj/item/weapon/flame/lighter/P, var/mob/user)
-	if(user.restrained())
-		return
-	if(!P.lit)
-		to_chat(user, "<span class='warning'>\The [P] is not lit.</span>")
-		return
-	user.visible_message("<span class='warning'>\The [user] holds \the [P] up to \the [src]. It looks like \he's trying to burn it!</span>", \
-		"<span class='warning'>You hold \the [P] up to \the [src], burning it slowly.</span>")
-	if(!do_after(user,20, src))
-		to_chat(user, "<span class='warning'>You must hold \the [P] steady to burn \the [src].</span>")
-		return
-	user.visible_message("<span class='danger'>\The [user] burns right through \the [src], turning it to ash. It flutters through the air before settling on the floor in a heap.</span>", \
-		"<span class='danger'>You burn right through \the [src], turning it to ash. It flutters through the air before settling on the floor in a heap.</span>")
-	FireBurn()
 
 /obj/item/weapon/shreddedp/proc/FireBurn()
 	new /obj/effect/decal/cleanable/ash(get_turf(src))

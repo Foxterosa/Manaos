@@ -73,6 +73,10 @@
 	add_fingerprint(user)
 	return
 
+/obj/item/paper_bin/burn()
+	amount = 0
+	extinguish()
+	update_icon()
 
 /obj/item/weapon/paper_bin/attackby(obj/item/weapon/i as obj, mob/user as mob)
 	if(istype(i, /obj/item/weapon/paper))
