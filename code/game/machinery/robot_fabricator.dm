@@ -11,24 +11,23 @@
 	active_power_usage = 10000
 
 /obj/machinery/robotic_fabricator/attackby(var/obj/item/O as obj, var/mob/user as mob)
-	if (istype(O, /obj/item/stack/material) && O.get_material_name() == MATERIAL_STEEL)
-		var/obj/item/stack/M = O
-		if (src.metal_amount < 150000.0)
-			var/count = 0
-			src.overlays += "fab-load-metal"
-			spawn(15)
-				if(M)
-					if(!M.get_amount())
-						return
-					while(metal_amount < 150000 && M.use(1))
-						src.metal_amount += O.matter[MATERIAL_STEEL] /*O:height * O:width * O:length * 100000.0*/
-						count++
+	if (istype(O, /obj/item/stack/material/steel) && O.get_material_name() == MATERIAL_STEEL)
 
-					to_chat(user, "You insert [count] metal sheet\s into the fabricator.")
-					src.overlays -= "fab-load-metal"
-					updateDialog()
-		else
-			to_chat(user, "The robot part maker is full. Please remove metal from the robot part maker in order to insert more.")
+		if (src.metal_amount < 150000.0)
+			var/obj/item/stack/material/steel/stack = O
+
+			var/amount = min(stack.get_amount(), round((150000.0 - metal_amount) / SHEET_MATERIAL_AMOUNT))
+			use_power_oneoff(max(1000, (SHEET_MATERIAL_AMOUNT * amount / 10)))
+			if(amount < 1)
+				to_chat(user, "The [src] is cannot hold more metal.")
+				return
+
+			if(stack.use(amount))
+				metal_amount += amount * SHEET_MATERIAL_AMOUNT /*O:height * O:width * O:length * 100000.0*/
+				to_chat(user, "<span class='notice'>You add [amount] sheet\s to \the [src].</span>")
+				src.overlays -= "fab-load-metal"
+				updateDialog()
+
 
 /obj/machinery/robotic_fabricator/interface_interact(mob/user)
 	interact(user)

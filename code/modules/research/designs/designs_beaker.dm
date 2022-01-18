@@ -5,7 +5,7 @@
 	name = "cryostasis"
 	desc = "A cryostasis beaker that allows for chemical storage without reactions. Can hold up to 50 units."
 	id = "splitbeaker"
-	req_tech = list(TECH_MATERIAL = 2)
+	req_tech = list(TECH_MATERIAL = 3)
 	materials = list(MATERIAL_STEEL = 3000)
 	build_path = /obj/item/weapon/reagent_containers/glass/beaker/noreact
 	sort_string = "MCAAA"
